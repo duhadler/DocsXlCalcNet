@@ -53,8 +53,8 @@ copybutton_prompt_text = ">>> "
 
 bibtex_bibliography_header = ".. rubric:: Footnotes"
 
-#bibtex_bibfiles = ['refs.bib']
-bibtex_bibfiles = ['../../refs.bib']
+bibtex_bibfiles = ['refs.bib']
+#bibtex_bibfiles = ['../../refs.bib']
 
 
 bibtex_reference_style = 'label'

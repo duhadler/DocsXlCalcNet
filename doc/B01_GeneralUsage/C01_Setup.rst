@@ -38,6 +38,19 @@ or some specific version with
 
 The git repository is https://github.com/duhadler/xlcalcnet)
 
+
+
+The pdf can be downloaded from
+
+https://github.com/duhadler/xlcalcnet/blob/master/pdfdoc/xlcalcnet.pdf
+
+In the preview on github, click on the symbol for downloading the file, to get a local copy of the pdf.
+
+
+https://github.com/duhadler/xlcalcnet/blob/master/htmldoc
+
+
+
 **Checking that it works**
 
 
