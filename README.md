@@ -1,4 +1,4 @@
-### Welcome to DocsXlCalcNet!
+### DocsXlCalcNet
 
 This repository contains source code and the pdf of the manual of the [XlCalcNet](https://duhadler.github.io/XlCalcNet/) library.
 
