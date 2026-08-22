@@ -129,7 +129,7 @@ See also  Wikipedia :cite:p:`WikipediaDis11`, MathWorld :cite:p:`WolframDis11`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", cauchy(mu, sigma).pdf(x))
@@ -150,7 +150,7 @@ See also  Wikipedia :cite:p:`WikipediaDis11`, MathWorld :cite:p:`WolframDis11`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", cauchy(mu, sigma).pdf(x))
@@ -171,7 +171,7 @@ See also  Wikipedia :cite:p:`WikipediaDis11`, MathWorld :cite:p:`WolframDis11`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", cauchy(mu, sigma).pdf(x))
@@ -197,7 +197,7 @@ See also  Wikipedia :cite:p:`WikipediaDis11`, MathWorld :cite:p:`WolframDis11`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", cauchy(mu, sigma).qtf(q))
@@ -224,7 +224,7 @@ See also  Wikipedia :cite:p:`WikipediaDis11`, MathWorld :cite:p:`WolframDis11`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", cauchy(mu, sigma).isf(q))
@@ -245,7 +245,7 @@ See also  Wikipedia :cite:p:`WikipediaDis11`, MathWorld :cite:p:`WolframDis11`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", cauchy(mu, sigma).c_x(t))

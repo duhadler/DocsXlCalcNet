@@ -47,7 +47,7 @@ Matrix Exponential
 
     Basic examples::
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> expm(zeros(3))
         [1.0  0.0  0.0]
@@ -115,7 +115,7 @@ Matrix Sine
 
     Examples::
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> X = eye(3)
         >>> cosm(X)
@@ -184,7 +184,7 @@ Matrix Cosine
 
     Examples::
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> X = eye(3)
         >>> cosm(X)
@@ -274,7 +274,7 @@ Matrix Square Root
 
     Square roots of some simple matrices::
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> sqrtm([[1,0], [0,1]])
         [1.0  0.0]
@@ -395,7 +395,7 @@ Matrix Logarithm
 
     Logarithms of some simple matrices::
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> X = eye(3)
         >>> logm(X)
@@ -492,7 +492,7 @@ Matrix power
 
     Powers and inverse powers of a matrix::
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> A = matrix([[4,1,4],[7,8,9],[10,2,11]])
         >>> powm(A, 2)

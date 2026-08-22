@@ -59,7 +59,7 @@ Normal maximum modulus distribution, `\rho_{ij, i \ne j} = 0`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", mp_smm(mu, sigma).pdf(x))
@@ -81,7 +81,7 @@ Normal maximum modulus distribution, `\rho_{ij, i \ne j} = 0`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", mp_smm(mu, sigma).pdf(x))
@@ -101,7 +101,7 @@ Normal maximum modulus distribution, `\rho_{ij, i \ne j} = 0`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", mp_smm(mu, sigma).pdf(x))
@@ -120,7 +120,7 @@ Normal maximum modulus distribution, `\rho_{ij, i \ne j} = 0`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", mp_smm(mu, sigma).qtf(q))
@@ -140,7 +140,7 @@ Normal maximum modulus distribution, `\rho_{ij, i \ne j} = 0`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", mp_smm(mu, sigma).isf(q))
@@ -160,7 +160,7 @@ Normal maximum modulus distribution, `\rho_{ij, i \ne j} = 0`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", mp_smm(mu, sigma).c_x(t))
@@ -179,7 +179,7 @@ Normal maximum modulus distribution, `\rho_{ij, i \ne j} = 0`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", mp_smm(mu, sigma).c_x(t))
@@ -197,7 +197,7 @@ Normal maximum modulus distribution, `\rho_{ij, i \ne j} = 0`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", mp_smm(mu, sigma).c_x(t))
@@ -217,7 +217,7 @@ Normal maximum modulus distribution, `\rho_{ij, i \ne j} = 0`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mp_smm(mu, sigma).moments(k))
@@ -234,7 +234,7 @@ Normal maximum modulus distribution, `\rho_{ij, i \ne j} = 0`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mp_smm(mu, sigma).cumulants(k))

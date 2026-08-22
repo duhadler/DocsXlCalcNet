@@ -60,7 +60,7 @@ Returns zero.
 
 .. code-block:: python
 
-    >>> from mpfunlab import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
+    >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
     >>> for ctx in ctxall: print(repr(ctx.zero))
     0.0
     mpf('0.0')
@@ -79,7 +79,7 @@ Returns one.
 
 .. code-block:: python
 
-    >>> from mpfunlab import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
+    >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
     >>> for ctx in ctxall: print(repr(ctx.one))
     1.0
     mpf('1.0')
@@ -100,7 +100,7 @@ Returns the imaginary unit.
 
 .. code-block:: python
 
-    >>> from mpfunlab import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
+    >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
     >>> for ctx in ctxall: print(repr(ctx.j))
     1j
     mpc(real='0.0', imag='1.0')
@@ -120,7 +120,7 @@ Returns positive infinity.
 
 .. code-block:: python
 
-    >>> from mpfunlab import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
+    >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
     >>> for ctx in ctxall: print(repr(ctx.inf))
     inf
     mpf('+inf')
@@ -139,7 +139,7 @@ Returns negative infinity.
 
 .. code-block:: python
 
-    >>> from mpfunlab import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
+    >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
     >>> for ctx in ctxall: print(repr(ctx.ninf))
     -inf
     mpf('-inf')
@@ -158,7 +158,7 @@ Returns Not-a-Number (NaN).
 
 .. code-block:: python
 
-    >>> from mpfunlab import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
+    >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
     >>> for ctx in ctxall: print(repr(ctx.nan))
     nan
     mpf('nan')
@@ -191,7 +191,7 @@ Return the real part of the complex argument.
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.real(1 + 1j)
     1.0
     >>> a = np.array([1+2j, 3+4j, 5+6j])
@@ -207,7 +207,7 @@ converts a non-mpmath number to an mpmath number:
 
 .. code-block:: pycon
 
-    >>> from mpfunlab import mp, iv, fp, dp, gp, ap
+    >>> from xlcalcnet import mp, iv, fp, dp, gp, ap
     >>> mp.dps = 15; mp.pretty = False
     >>> x = 3
     >>> fp.re(x), mp.re(x), iv.re(x), dp.re(x), gp.re(x), ap.re(x)
@@ -241,7 +241,7 @@ Return the imaginary part of the complex argument.
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.imag(1 + 1j)
     1.0
     >>> a = np.array([1+2j, 3+4j, 5+6j])
@@ -256,7 +256,7 @@ converts a non-mpmath number to an mpmath number:
 
 .. code-block:: pycon
 
-    >>> from mpfunlab import mp, iv, fp, dp, gp, ap
+    >>> from xlcalcnet import mp, iv, fp, dp, gp, ap
     >>> mp.dps = 15; mp.pretty = False
     >>> x = 3
     >>> fp.im(x), mp.im(x), iv.im(x), dp.im(x), gp.im(x), ap.im(x)
@@ -306,7 +306,7 @@ From mpmath. See also  Mpmath :cite:p:`MpmathFun912`.
 
 .. code-block:: pycon
 
-    >>> from mpfunlab import mp, iv, fp, dp, gp, ap
+    >>> from xlcalcnet import mp, iv, fp, dp, gp, ap
     >>> fp.fabs(3), mp.fabs(3), iv.fabs(3), dp.fabs(3), gp.fabs(3), ap.fabs(3)
     (3.0, mpf('3.0'), mpi('3.0', '3.0'), Decimal('3'), 3, 3)
     >>> fp.fabs(-3), mp.fabs(-3), iv.fabs(-3), dp.fabs(-3), gp.fabs(-3), ap.fabs(-3)
@@ -328,7 +328,7 @@ Return the angle of the complex argument. Although the angle of the complex numb
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.angle([1.0, 1.0j, 1+1j])               # in radians
     array([ 0.        ,  1.57079633,  0.78539816]) # may vary
     >>> np.angle(1+1j, deg=True)                  # in degrees
@@ -342,7 +342,7 @@ Example:
 
 .. code-block:: pycon
 
-    >>> from mpfunlab import mp, iv, fp, dp, gp, ap
+    >>> from xlcalcnet import mp, iv, fp, dp, gp, ap
     >>> mp.dps = 15; mp.pretty = True
     >>> x = 3
     >>> fp.arg(x), mp.arg(x), iv.arg(x), dp.arg(x), gp.arg(x), ap.arg(x)
@@ -422,7 +422,7 @@ Returns the sign of `x`, defined as `\mathrm{sign}(x) = x / |x|`
 
 .. code-block:: pycon
 
-    >>> from mpfunlab import mp, iv, fp, dp, gp, ap
+    >>> from xlcalcnet import mp, iv, fp, dp, gp, ap
     >>> mp.dps = 15; mp.pretty = False
     >>> x = 10
     >>> fp.sign(x), mp.sign(x), iv.sign(x), dp.sign(x), gp.sign(x), ap.sign(x)
@@ -501,7 +501,7 @@ Example:
 
 .. code-block:: pycon
 
-    >>> from mpfunlab import mp, iv, fp, dp, gp, ap
+    >>> from xlcalcnet import mp, iv, fp, dp, gp, ap
     >>> mp.dps = 15; mp.pretty = True
     >>> x = 3
     >>> fp.conj(x), mp.conj(x), iv.conj(x), dp.conj(x), gp.conj(x), ap.conj(x)
@@ -543,7 +543,7 @@ NumPy uses the IEEE Standard for Binary Floating-Point for Arithmetic (IEEE 754)
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.isfinite(1)
     True
     >>> np.isfinite(0)
@@ -573,7 +573,7 @@ Example:
 
 .. code-block:: pycon
 
-    >>> from mpfunlab import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
+    >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
     >>> for ctx in ctxall: print(ctx.ctx.isfinite(ctx.inf), end=', ')
     False, False, False, False, False, False, 
 
@@ -617,7 +617,7 @@ Returns a boolean array of the same shape as x, True where ``x == +/-inf``, othe
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.isinf(np.inf)
     True
     >>> np.isinf(np.nan)
@@ -646,7 +646,7 @@ Example:
 
 .. code-block:: pycon
 
-    >>> from mpfunlab import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
+    >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
     >>> for ctx in ctxall: print(ctx.isinf(ctx.inf), end=', ')
     True, True, True, True, True, True, 
 
@@ -692,7 +692,7 @@ Test element-wise for NaN and return result as a boolean array. NumPy uses the I
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.isnan(np.nan)
     True
     >>> np.isnan(np.inf)
@@ -713,7 +713,7 @@ Example:
 .. code-block:: pycon
 
 
-    >>> from mpfunlab import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
+    >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
     >>> for ctx in ctxall: print(ctx.isnan(ctx.nan), end=', ')
     True, True, True, True, True, True, 
 
@@ -758,7 +758,7 @@ Test element-wise for NaT (not a time) and return result as a boolean array.
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.isnat(np.datetime64("NaT"))
     True
     >>> np.isnat(np.datetime64("2016-01-01"))
@@ -780,7 +780,7 @@ Test element-wise for negative infinity, return result as bool array. NumPy uses
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.isneginf(np.NINF)
     True
     >>> np.isneginf(np.inf)
@@ -812,7 +812,7 @@ Test element-wise for positive infinity, return result as bool array. NumPy uses
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.isposinf(np.PINF)
     True
     >>> np.isposinf(np.inf)
@@ -843,7 +843,7 @@ Example:
 
 .. code-block:: pycon
 
-    >>> from mpfunlab import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
+    >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
     >>> for ctx in ctxall: print(ctx.isint(ctx.inf), end=', ')
     False, False, False, False, False, False, 
 
@@ -886,7 +886,7 @@ By extension, a complex number *x* is considered "normal" if its magnitude is no
 .. code-block:: pycon
 
 
-    >>> from mpfunlab import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
+    >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
     >>> for ctx in ctxall: print(ctx.isnormal(ctx.nan), end=', ')
     False, False, False, False, False, False, 
 
@@ -940,7 +940,7 @@ Returns a bool array, where True if input element is complex. What is tested is 
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.iscomplex([1+1j, 1+0j, 4.5, 3, 2, 2j])
     array([ True, False, False, False, False,  True])
 
@@ -960,7 +960,7 @@ Check for a complex type or an array of complex numbers. The type of the input i
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.iscomplexobj(1)
     False
     np.iscomplexobj(1+0j)
@@ -979,7 +979,7 @@ Example:
 
 .. code-block:: pycon
 
-    >>> from mpfunlab import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
+    >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
     >>> for ctx in ctxall: print(ctx.ismpc(ctx.inf), end=', ')
     False, False, False, False, False, False,
 
@@ -1024,7 +1024,7 @@ Returns a bool array, where True if input element is real. If element has comple
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> a = np.array([1+1j, 1+0j, 4.5, 3, 2, 2j], dtype=complex)
     >>> np.isreal(a)
     array([False,  True,  True,  True,  True, False])
@@ -1068,7 +1068,7 @@ Return True if x is a not complex type or an array of complex numbers. The type 
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.isrealobj('A string')
     True
     >>> np.isrealobj(False)
@@ -1094,7 +1094,7 @@ Example:
 
 .. code-block:: pycon
 
-    >>> from mpfunlab import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
+    >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
     >>> for ctx in ctxall: print(ctx.ismpf(ctx.inf), end=', ')
     True, True, True, True, True, True, 
 
@@ -1140,7 +1140,7 @@ Returns True if the type of element is a scalar type. In most cases ``np.ndim(x)
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.isscalar(3.1)
     True
     >>> np.isscalar(np.array(3.1))
@@ -1202,7 +1202,7 @@ allclose is not defined for non-numeric data types. bool is considered a numeric
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.allclose([1e10,1e-7], [1.00001e10,1e-8])
     False
     >>> np.allclose([1e10,1e-8], [1.00001e10,1e-9])
@@ -1239,7 +1239,7 @@ isclose is not defined for non-numeric data types. bool is considered a numeric 
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.isclose([1e10,1e-7], [1.00001e10,1e-8])
     array([ True, False])
     >>> np.isclose([1e10,1e-8], [1.00001e10,1e-9])
@@ -1284,7 +1284,7 @@ in the presence of small rounding errors.
 
 .. code-block:: pycon
 
-    >>> from mpfunlab import mp, iv, fp, dp, gp, ap
+    >>> from xlcalcnet import mp, iv, fp, dp, gp, ap
     >>> mp.dps = 15; mp.pretty = False
     >>> s = 3.141592653589793; t = 3.141592653589790
     >>> for ctx in [fp, mp, iv, dp, gp, ap]: print(ctx.almosteq(s, t), end=', ')
@@ -1333,7 +1333,7 @@ When a_min is greater than a_max, ``clip`` returns an array in which all values 
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> a = np.arange(10)
     >>> a
     array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
@@ -1368,7 +1368,7 @@ Machine epsilon varies from machine to machine and between data types but Python
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> np.finfo(float).eps
     2.2204460492503131e-16 # may vary
 
@@ -1400,7 +1400,7 @@ Example:
 
 .. code-block:: pycon
 
-    >>> from mpfunlab import mp, iv, fp, dp, gp, ap
+    >>> from xlcalcnet import mp, iv, fp, dp, gp, ap
     >>> mp.dps = 15; mp.pretty = False
 
     >>> for ctx in [fp, mp, iv, dp, gp, ap]: print(repr(ctx.chop(1e-10, tol = 1e-11)))

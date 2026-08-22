@@ -45,7 +45,7 @@ Distribution of Box's test of equality of k covariance matrices, unequal sample 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", box_cov(mu, sigma).pdf(x))
@@ -71,7 +71,7 @@ Distribution of Box's test of equality of k covariance matrices, unequal sample 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", box_cov(mu, sigma).pdf(x))
@@ -97,7 +97,7 @@ Distribution of Box's test of equality of k covariance matrices, unequal sample 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", box_cov(mu, sigma).pdf(x))
@@ -118,7 +118,7 @@ Distribution of Box's test of equality of k covariance matrices, unequal sample 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", box_cov(mu, sigma).qtf(q))
@@ -138,7 +138,7 @@ Distribution of Box's test of equality of k covariance matrices, unequal sample 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", box_cov(mu, sigma).isf(q))
@@ -166,7 +166,7 @@ Distribution of Box's test of equality of k covariance matrices, unequal sample 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", box_cov(mu, sigma).c_x(t))
@@ -190,7 +190,7 @@ Distribution of Box's test of equality of k covariance matrices, unequal sample 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", box_cov(mu, sigma).c_x(t))
@@ -219,7 +219,7 @@ Distribution of Box's test of equality of k covariance matrices, unequal sample 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", box_cov(mu, sigma).k_x(t, k))
@@ -241,7 +241,7 @@ Distribution of Box's test of equality of k covariance matrices, unequal sample 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", box_cov(mu, sigma).moments(k))
@@ -269,7 +269,7 @@ Distribution of Box's test of equality of k covariance matrices, unequal sample 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", box_cov(mu, sigma).cumulants(k))

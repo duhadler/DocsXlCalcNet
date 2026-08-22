@@ -44,7 +44,7 @@ Distribution of the logarithm of a `\chi^2` random variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", logrv_chisquared(mu, sigma).pdf(x))
@@ -69,7 +69,7 @@ Distribution of the logarithm of a `\chi^2` random variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", logrv_chisquared(mu, sigma).pdf(x))
@@ -92,7 +92,7 @@ Distribution of the logarithm of a `\chi^2` random variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", logrv_chisquared(mu, sigma).pdf(x))
@@ -113,7 +113,7 @@ Distribution of the logarithm of a `\chi^2` random variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", logrv_chisquared(mu, sigma).qtf(q))
@@ -135,7 +135,7 @@ Distribution of the logarithm of a `\chi^2` random variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", logrv_chisquared(mu, sigma).isf(q))
@@ -155,7 +155,7 @@ Distribution of the logarithm of a `\chi^2` random variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", logrv_chisquared(mu, sigma).c_x(t))
@@ -175,7 +175,7 @@ Distribution of the logarithm of a `\chi^2` random variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", logrv_chisquared(mu, sigma).c_x(t))
@@ -199,7 +199,7 @@ Distribution of the logarithm of a `\chi^2` random variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", logrv_chisquared(mu, sigma).k_x(t, k))
@@ -221,7 +221,7 @@ Distribution of the logarithm of a `\chi^2` random variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", logrv_chisquared(mu, sigma).moments(k))
@@ -244,7 +244,7 @@ Distribution of the logarithm of a `\chi^2` random variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", logrv_chisquared(mu, sigma).cumulants(k))

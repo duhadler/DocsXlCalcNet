@@ -129,7 +129,7 @@ See also  Wikipedia :cite:p:`WikipediaDis15`,  BoostMath :cite:p:`BoostDis15`, :
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", mp_invchisquared(mu, sigma).pdf(x))
@@ -150,7 +150,7 @@ See also  Wikipedia :cite:p:`WikipediaDis15`,  BoostMath :cite:p:`BoostDis15`, :
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", mp_invchisquared(mu, sigma).pdf(x))
@@ -170,7 +170,7 @@ See also  Wikipedia :cite:p:`WikipediaDis15`,  BoostMath :cite:p:`BoostDis15`, :
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", mp_invchisquared(mu, sigma).pdf(x))
@@ -190,7 +190,7 @@ See also  Wikipedia :cite:p:`WikipediaDis15`,  BoostMath :cite:p:`BoostDis15`, :
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", mp_invchisquared(mu, sigma).qtf(q))
@@ -210,7 +210,7 @@ See also  Wikipedia :cite:p:`WikipediaDis15`,  BoostMath :cite:p:`BoostDis15`, :
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", mp_invchisquared(mu, sigma).isf(q))
@@ -232,7 +232,7 @@ See also  Wikipedia :cite:p:`WikipediaDis15`,  BoostMath :cite:p:`BoostDis15`, :
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", mp_invchisquared(mu, sigma).c_x(t))
@@ -271,7 +271,7 @@ See also  Wikipedia :cite:p:`WikipediaDis15`,  BoostMath :cite:p:`BoostDis15`, :
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mp_invchisquared(mu, sigma).moments(k))
@@ -288,7 +288,7 @@ See also  Wikipedia :cite:p:`WikipediaDis15`,  BoostMath :cite:p:`BoostDis15`, :
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mp_invchisquared(mu, sigma).cumulants(k))

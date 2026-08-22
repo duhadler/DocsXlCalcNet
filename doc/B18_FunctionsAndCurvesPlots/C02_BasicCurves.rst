@@ -55,7 +55,7 @@ Regular convex polygon
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -129,7 +129,7 @@ Circle
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -173,7 +173,7 @@ Ellipse
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -237,7 +237,7 @@ Parabola
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -311,7 +311,7 @@ Hyperbola
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -370,7 +370,7 @@ Cycloid
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -431,7 +431,7 @@ Trochoid
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -485,7 +485,7 @@ Cardioid
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -532,7 +532,7 @@ Limaçon curve
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -578,7 +578,7 @@ Conchoid of de Sluze
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -627,7 +627,7 @@ Freeth's Nephroid
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -671,7 +671,7 @@ Strophoid
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -724,7 +724,7 @@ A curve with the polar form
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -777,7 +777,7 @@ Lemniscate of Gerono
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -839,7 +839,7 @@ Lemniscate of Bernoulli
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 

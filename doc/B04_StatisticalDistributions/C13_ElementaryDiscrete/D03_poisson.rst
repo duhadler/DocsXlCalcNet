@@ -143,7 +143,7 @@ See also   Wikipedia :cite:p:`WikipediaDis32`, MathWorld :cite:p:`WolframDis32`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pmf: ", poisson(mu, sigma).pmf(x))
@@ -167,7 +167,7 @@ See also   Wikipedia :cite:p:`WikipediaDis32`, MathWorld :cite:p:`WolframDis32`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", poisson(mu, sigma).pmf(x))
@@ -191,7 +191,7 @@ See also   Wikipedia :cite:p:`WikipediaDis32`, MathWorld :cite:p:`WolframDis32`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", poisson(mu, sigma).pmf(x))
@@ -214,7 +214,7 @@ See also   Wikipedia :cite:p:`WikipediaDis32`, MathWorld :cite:p:`WolframDis32`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", poisson(mu, sigma).qtf(q))
@@ -239,7 +239,7 @@ See also   Wikipedia :cite:p:`WikipediaDis32`, MathWorld :cite:p:`WolframDis32`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", poisson(mu, sigma).isf(q))
@@ -260,7 +260,7 @@ See also   Wikipedia :cite:p:`WikipediaDis32`, MathWorld :cite:p:`WolframDis32`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", poisson(mu, sigma).c_x(t))
@@ -281,7 +281,7 @@ See also   Wikipedia :cite:p:`WikipediaDis32`, MathWorld :cite:p:`WolframDis32`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", poisson(mu, sigma).c_x(t))
@@ -303,7 +303,7 @@ See also   Wikipedia :cite:p:`WikipediaDis32`, MathWorld :cite:p:`WolframDis32`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", poisson(mu, sigma).c_x(t))
@@ -324,7 +324,7 @@ See also   Wikipedia :cite:p:`WikipediaDis32`, MathWorld :cite:p:`WolframDis32`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", poisson(mu, sigma).k_x(t, k))
@@ -346,7 +346,7 @@ See also   Wikipedia :cite:p:`WikipediaDis32`, MathWorld :cite:p:`WolframDis32`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", poisson(mu, sigma).moments(k))
@@ -366,7 +366,7 @@ See also   Wikipedia :cite:p:`WikipediaDis32`, MathWorld :cite:p:`WolframDis32`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", poisson(mu, sigma).cumulants(k))

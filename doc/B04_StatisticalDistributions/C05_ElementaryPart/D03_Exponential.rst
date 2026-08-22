@@ -122,7 +122,7 @@ See also  Wikipedia :cite:p:`WikipediaDis12`, MathWorld :cite:p:`WolframDis12`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", exponential(mu, sigma).pdf(x))
@@ -143,7 +143,7 @@ See also  Wikipedia :cite:p:`WikipediaDis12`, MathWorld :cite:p:`WolframDis12`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", exponential(mu, sigma).pdf(x))
@@ -163,7 +163,7 @@ See also  Wikipedia :cite:p:`WikipediaDis12`, MathWorld :cite:p:`WolframDis12`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", exponential(mu, sigma).pdf(x))
@@ -182,7 +182,7 @@ See also  Wikipedia :cite:p:`WikipediaDis12`, MathWorld :cite:p:`WolframDis12`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", exponential(mu, sigma).qtf(q))
@@ -202,7 +202,7 @@ See also  Wikipedia :cite:p:`WikipediaDis12`, MathWorld :cite:p:`WolframDis12`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", exponential(mu, sigma).isf(q))
@@ -223,7 +223,7 @@ See also  Wikipedia :cite:p:`WikipediaDis12`, MathWorld :cite:p:`WolframDis12`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", exponential(mu, sigma).c_x(t))
@@ -244,7 +244,7 @@ See also  Wikipedia :cite:p:`WikipediaDis12`, MathWorld :cite:p:`WolframDis12`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", exponential(mu, sigma).c_x(t))
@@ -265,7 +265,7 @@ See also  Wikipedia :cite:p:`WikipediaDis12`, MathWorld :cite:p:`WolframDis12`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", exponential(mu, sigma).k_x(t, k))
@@ -288,7 +288,7 @@ See also  Wikipedia :cite:p:`WikipediaDis12`, MathWorld :cite:p:`WolframDis12`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", exponential(mu, sigma).moments(k))
@@ -305,7 +305,7 @@ See also  Wikipedia :cite:p:`WikipediaDis12`, MathWorld :cite:p:`WolframDis12`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", exponential(mu, sigma).cumulants(k))

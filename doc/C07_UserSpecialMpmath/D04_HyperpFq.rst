@@ -238,7 +238,7 @@ Generalized hypergeometric function  `{}_2F_3`
 
     Evaluation works for arbitrarily large arguments::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> a1,a2,b1,b2,b3 = 1.5, (-1,3), 2.25, 4, (1,5)
         >>> hyp2f3(a1,a2,b1,b2,b3,10**20)
@@ -286,7 +286,7 @@ Generalized hypergeometric function  `{}_3F_2`
     Evaluation is supported inside, on, and outside
     the circle of convergence `|z| = 1`::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> hyp3f2(1,2,3,4,5,0.25)
         1.083533123380934241548707
@@ -369,7 +369,7 @@ Generalized hypergeometric function  `{}_2F_2`
 
     Evaluation works for complex and arbitrarily large arguments::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> a, b, c, d = 1.5, (-1,3), 2.25, 4
         >>> hyp2f2(a, b, c, d, 10**20)

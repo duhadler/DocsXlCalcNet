@@ -63,7 +63,7 @@ Array from object: numpy.array
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> for ctx in ctx_all: matB = npm.array([1, 2, 3], dtype=ctx); print(ctx.name + ':\n', matB)
         fpm:
@@ -86,7 +86,7 @@ Array from object: numpy.array
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> for ctx in ctx_all: matB = npm.array([[1, 2], [3, 4]], dtype=ctx); print(ctx.name + ':\n', matB)
         fpm:
@@ -116,7 +116,7 @@ Array from object: numpy.array
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> for ctx in ctx_all: matB = npm.array([1, 2, 3], dtype=ctx, ndmin=2); print(ctx.name + ':\n', matB)
         fpm:
@@ -139,7 +139,7 @@ Array from object: numpy.array
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> matA = np.array([1, 2, 3], dtype=complex)
         >>> for ctx in ctx_all: matB = npm.t(ctx, matA); print(ctx.name + ':\n', matB)
@@ -177,7 +177,7 @@ Array from object: numpy.asarray
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> matA = npm.asarray([[1, 2], [3, 4]])
         >>> for ctx in ctx_all: matB = npm.t(ctx, matA); print(ctx.name + ':\n', matB)
@@ -244,7 +244,7 @@ Array from object: numpy.asanyarray
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> matA = npm.asanyarray([[1, 2], [3, 4]])
         >>> for ctx in ctx_all: matB = npm.t(ctx, matA); print(ctx.name + ':\n', matB)
@@ -292,7 +292,7 @@ Array from data in a text or binary file: numpy.fromfile
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> # Construct an ndarray:
         >>> dt1 = np.dtype([('time', [('min', np.int64), ('sec', np.int64)]), ('temp', float)])
@@ -332,7 +332,7 @@ Array from a function: numpy.fromfunction
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> np.fromfunction(lambda i, j: i, (2, 2), dtype=float)
         array([[0., 0.],
@@ -369,7 +369,7 @@ Array from an iterable object: numpy.fromiter
 
     .. code-block:: python
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> for ctx in ctx_all:
         ...     iterable = (ctx.square(x) for x in range(5))
@@ -396,7 +396,7 @@ Array from an iterable object: numpy.fromiter
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> for ctx in ctx_all:
         ...     iterable = ((ctx.t(x), ctx.square(x)) for x in range(5))
@@ -464,7 +464,7 @@ Array from text data in a string: numpy.fromstring
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> for ctx in ctx_all:
         ...     x = npm.fromstring('1.1, 2.1', dtype=float, sep=',')
@@ -490,7 +490,7 @@ Array from text data in a string: numpy.fromstring
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> for ctx in ctx_all:
         ...     x = npm.fromstring('1+3j, 2+4j', dtype=complex, sep=',')
@@ -532,7 +532,7 @@ Array from text data in a formatted file: numpy.loadtxt
     .. code-block:: python
 
         import os
-        import mpfunlab.userpaths as userpaths
+        import xlcalcnet.userpaths as userpaths
         for ctx in ctx_all:
             to_ctx = npm.vectorize(ctx.t, otypes=[object])
 
@@ -700,7 +700,7 @@ Array from text data in a text file (can handle missing values): numpy.genfromtx
     .. code-block:: python
 
         import os
-        import mpfunlab.userpaths as userpaths
+        import xlcalcnet.userpaths as userpaths
         for ctx in ctx_all:
             to_ctx = npm.vectorize(ctx.t, otypes=[object])
 

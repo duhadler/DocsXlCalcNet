@@ -74,7 +74,7 @@ Evenly spaced values within a given interval: numpy.arange
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
 
         >>> # arange with 1 argument:
@@ -148,7 +148,7 @@ Evenly spaced values within a given interval: numpy.arange
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fp, mp, iv, dp, gp, ap
+        >>> from xlcalcnet import fp, mp, iv, dp, gp, ap
 
         >>> for ctx in [fp, mp, iv, dp, gp, ap]: print(ctx.arange(4))
         [0.0, 1.0, 2.0, 3.0]
@@ -194,7 +194,7 @@ Evenly spaced values within a given interval: numpy.linspace
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
 
         >>> # linspace with endpoint=True:
@@ -210,7 +210,7 @@ Evenly spaced values within a given interval: numpy.linspace
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
 
         >>> # linspace with endpoint=False:
@@ -240,7 +240,7 @@ Evenly spaced values within a given interval: numpy.linspace
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fp, mp, iv, dp, gp, ap
+        >>> from xlcalcnet import fp, mp, iv, dp, gp, ap
         >>> for ctx in [fp, mp, iv, dp, gp, ap]: print(ctx.linspace(1, 4, 4))
         [1.0, 2.0, 3.0, 4.0]
         [mpf('1.0'), mpf('2.0'), mpf('3.0'), mpf('4.0')]
@@ -290,7 +290,7 @@ Evenly spaced values on a log scale: numpy.logspace
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
 
         >>> # linspace with endpoint=True:
@@ -305,7 +305,7 @@ Evenly spaced values on a log scale: numpy.logspace
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
 
         >>> # linspace with endpoint=False:
@@ -340,7 +340,7 @@ Evenly spaced values on a log scale (a geometric progression): numpy.geomspace
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, gpm, apm]
 
         >>> # geomspace with endpoint=True:
@@ -355,7 +355,7 @@ Evenly spaced values on a log scale (a geometric progression): numpy.geomspace
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, gpm, apm]
 
         >>> # geomspace with endpoint=False:
@@ -370,7 +370,7 @@ Evenly spaced values on a log scale (a geometric progression): numpy.geomspace
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, gpm, apm]
 
         >>> # geomspace with powers of 2:
@@ -411,7 +411,7 @@ Extract a diagonal or construct a diagonal array: numpy.diag
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, gpm, apm]
 
         >>> for ctx in ctx_all: x = npm.arange(9, dtype=ctx).reshape((3,3)); print(ctx.name +', x: \n', x)
@@ -554,7 +554,7 @@ Extract specified diagonals: numpy.diagonal
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> a = np.arange(4).reshape(2,2)
         >>> a
@@ -619,7 +619,7 @@ Two-dimensional array with the flattened input as a diagonal: numpy.diagflat
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> np.diagflat([[1,2], [3,4]])
         array([[1, 0, 0, 0],
@@ -651,7 +651,7 @@ Lower triangle of an array: numpy.tril
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> np.tril([[1,2,3],[4,5,6],[7,8,9],[10,11,12]], -1)
         array([[ 0,  0,  0],
@@ -692,7 +692,7 @@ Upper triangle of an array: numpy.triu
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> np.triu([[1,2,3],[4,5,6],[7,8,9],[10,11,12]], -1)
         array([[ 1,  2,  3],
@@ -736,7 +736,7 @@ Vandermonde matrix.: numpy.vander
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> x = np.array([1, 2, 3, 5])
         >>> N = 3

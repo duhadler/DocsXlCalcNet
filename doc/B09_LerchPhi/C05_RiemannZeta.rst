@@ -39,14 +39,6 @@ Riemann zeta function, `\zeta(s)`
     See also   Wikipedia :cite:p:`WikipediaFun171`, MathWorld :cite:p:`WolframFun171`, NIST :cite:p:`DLMFun171`,  BoostMath :cite:p:`BoostFun171`, :cite:t:`Ehrhardt2018` (3.6.1.1), :cite:t:`Ehrhardt2018` (4.2.63), Flint :cite:p:`FlintFun171`, Mpmath :cite:p:`MpmathFun171`. 
 
 
-    This function calculates the Riemann zeta function `\zeta(s)` for `s \neq 1`, defined by
-
-    .. math :: \zeta(s) = \sum_{k=1}^\infty \frac{1}{k^s}, \quad s>1.
-
-    If `s<0`, the reflection formula is used:
-
-    .. math :: \zeta(s) = 2(2\pi)^{s-1} \sin\left(\tfrac{1}{2} \pi s\right) \Gamma(1-s) \zeta(1-s)
-
     
 
     |11a_TestZeta_re| `\quad` |11b_TestZeta_im| `\quad` |11c_TestZeta_abs|
@@ -122,15 +114,11 @@ Riemann `\zeta(s)-1`
 
 .. method:: math53.zetam1(s)
 
-    Returns the Riemann function `\zeta(s)-1` for `s \ne 1`. It is provided as separate routine because `\zeta(s) \rightarrow 1` for large `s`, in fact `\zeta(s) = 1` to extended precision for `s \ge 64`. The function returns `\zeta(s)-1` for `s \le 2`, and `2^{-s}` if `s \ge 120`, otherwise the result is computed as `\displaystyle \zeta(s)-1 =  \frac{1+(\eta(s)-1)2^{s-1}}{2^{s-1}-1}`.
+    Returns the Riemann function `\zeta(s)-1 =  \zeta(s, 2)` for `s \ne 1`. 
 
     See also   Wikipedia :cite:p:`WikipediaFun171`, MathWorld :cite:p:`WolframFun171`, NIST :cite:p:`DLMFun171`,  BoostMath :cite:p:`BoostFun171`, :cite:t:`Ehrhardt2018` (3.6.1.4).
 
 
-
-    Returns the Riemann zeta function `\zeta(s)-1` for `s \neq 1`. This is calculated using the Hurwitz zeta function (see NIST :cite:p:`DLMFun172`, equation 25.11.3): 
-
-    .. math :: \zeta(s, 1) - 1 =  \zeta(s, 2)  
 
 
 
@@ -412,19 +400,10 @@ Dirichlet eta function, `\eta(s)`
 
 .. method:: math53.dirichlet_eta(x)
 
-    Returns the Dirichlet eta function, defined as `\displaystyle \eta(s) = \sum_{k=0}^{\infty} \frac{(-1)^k}{k^s}` for `s>0` and by analytic continuation for `s \le 0`.
+    Returns the Dirichlet eta function, defined as `\displaystyle \eta(s) = (1 - 2^{1-s})\zeta(s) = \sum_{k=0}^{\infty} \frac{(-1)^k}{k^s}` for `s>0` and by analytic continuation for `s \le 0`.
 
     See also: MathWorld :cite:p:`WolframFun1008`, :cite:t:`Ehrhardt2018` (3.6.3.1), Flint :cite:p:`FlintFun171a`, Mpmath :cite:p:`MpmathFun1008`. 
 
-
-
-    This function returns the Dirichlet function `\eta(s)`, also known as the alternating zeta function, defined for `s > 0` as
-
-    .. math :: \eta(s) = \sum_{n=1}^\infty \frac{(-1)^{n-1}}{n^s}
-
-    and by analytic continuation for `s \leq 0`. The important relation to the Riemann zeta function is `\eta(s) = (1 - 2^{1-s})\zeta(s)`, which is directly evaluated for `s \leq -8`. In the range `-8 < s < -\eta_\epsilon` the reflection formula for `\eta` is used:
-
-    .. math :: \eta(s) = \frac{2(1-2^{1-s} \Gamma(1-s) \cos\left(\tfrac{1}{2}\pi(1-s)\right)}{(1-s^s)(2\pi)^{1-s}} \eta (1-s).
 
 
 
@@ -484,13 +463,10 @@ Dirichlet `\eta(s) - 1`
 
 .. method:: math53.dirichlet_eta_m1(s)
 
-    Returns the Dirichlet function `\eta(s)-1`. It is provided as separate routine because `\eta(s) \rightarrow 1` for large `s`, in fact `\zeta(s) = 1` to extended precision for `s \ge 65`. The function returns `\eta(s)-1` for `s \le -10^{-9}`, and otherwise the result is computed as `\displaystyle \eta(s)-1 = \sum_{k=2}^{\infty} \frac{(-1)^k}{k^s}`.
+    Returns the Dirichlet function `\eta(s)-1 = (\zeta(s)-1) - (2^{1-s} \zeta(s))`. 
 
     See also: MathWorld :cite:p:`WolframFun1008`, :cite:t:`Ehrhardt2018` (3.6.3.3).
 
-
-
-    Returns the Dirichlet function `\eta(s) - 1 = (\zeta(s)-1) - (2^{1-s} \zeta(s))`.
 
 
     An example in Python
@@ -550,11 +526,6 @@ Dirichlet beta function, `\beta(s)`
     Returns the Dirichlet beta function, defined as `\displaystyle \beta(s) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)^s}`, for `s>0`, and by analytic continuation for `s \le 0`.
 
     See also:  Wikipedia :cite:p:`WikipediaFun188`, MathWorld :cite:p:`WolframFun188`, :cite:t:`Ehrhardt2018` (3.6.4).
-
-
-    This function returns the Dirichlet function `\beta(s)`, defined for `s > 0` as
-
-    .. math :: \beta(s) = \sum_{n=1}^\infty \frac{(-1)^{n}}{(2n+1)^s}
 
     Alternatively, the following definition, in terms of the Hurwitz zeta function, is valid in the whole complex s-plane:
 
@@ -619,16 +590,11 @@ Dirichlet lambda function, `\lambda(s)`
 
 .. method:: math53.dirichlet_lambda(s)
 
-    Returns the Dirichlet lambda function, defined as `\displaystyle \lambda(s) = \sum_{n=0}^{\infty} (2n+1)^{-s} = (1-2^{-s}) \zeta(s) = -\mathrm{exp2m1}(-s) \zeta(s)`, for `s>1`, and by analytic continuation for `s < 1`.
+    Returns the Dirichlet lambda function, defined as `\displaystyle \lambda(s) = \sum_{n=0}^{\infty} (2n+1)^{-s}, for `s>1`, and by analytic continuation for `s < 1`.
 
     See also: MathWorld :cite:p:`WolframFun308`, :cite:t:`Ehrhardt2018` (3.6.5), :cite:t:`Hu2018`.
 
-
-    This function returns the Dirichlet function `\lambda(s)`, defined for `s > 0` as
-
-    .. math :: \lambda(s) = \sum_{n=0}^\infty (2n+1)^{-s}
-
-    and by analytic continuation for `s<1`. The function is calculated as
+The function is calculated as
 
     .. math :: \lambda(s) = (1-2^{-s}) \zeta(s) = -\text{exp2m1}(-s) \zeta(s)
 

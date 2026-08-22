@@ -78,7 +78,7 @@ General inverse Laplace transform interface
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> tt = [0.001, 0.01, 0.1, 1, 10]
         >>> fp = lambda p: 1/(p+1)**2

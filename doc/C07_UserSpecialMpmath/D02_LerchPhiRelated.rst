@@ -176,7 +176,7 @@ Mpmath: Secondary zeta function
 
     **Examples**
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.pretty = True; mp.dps = 15
         >>> secondzeta(2)
         0.023104993115419

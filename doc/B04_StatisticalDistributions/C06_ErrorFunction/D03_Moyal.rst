@@ -129,7 +129,7 @@ See also MathWorld :cite:p:`WolframDis41`, :cite:t:`Cordeiro2012`, :cite:t:`Walc
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", moyal(mu, sigma).pdf(x))
@@ -150,7 +150,7 @@ See also MathWorld :cite:p:`WolframDis41`, :cite:t:`Cordeiro2012`, :cite:t:`Walc
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", moyal(mu, sigma).pdf(x))
@@ -170,7 +170,7 @@ See also MathWorld :cite:p:`WolframDis41`, :cite:t:`Cordeiro2012`, :cite:t:`Walc
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", moyal(mu, sigma).pdf(x))
@@ -190,7 +190,7 @@ See also MathWorld :cite:p:`WolframDis41`, :cite:t:`Cordeiro2012`, :cite:t:`Walc
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", moyal(mu, sigma).qtf(q))
@@ -210,7 +210,7 @@ See also MathWorld :cite:p:`WolframDis41`, :cite:t:`Cordeiro2012`, :cite:t:`Walc
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", moyal(mu, sigma).isf(q))
@@ -231,7 +231,7 @@ See also MathWorld :cite:p:`WolframDis41`, :cite:t:`Cordeiro2012`, :cite:t:`Walc
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", moyal(mu, sigma).c_x(t))
@@ -252,7 +252,7 @@ See also MathWorld :cite:p:`WolframDis41`, :cite:t:`Cordeiro2012`, :cite:t:`Walc
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", moyal(mu, sigma).c_x(t))
@@ -273,7 +273,7 @@ See also MathWorld :cite:p:`WolframDis41`, :cite:t:`Cordeiro2012`, :cite:t:`Walc
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", moyal(mu, sigma).k_x(t, k))
@@ -294,7 +294,7 @@ See also MathWorld :cite:p:`WolframDis41`, :cite:t:`Cordeiro2012`, :cite:t:`Walc
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", moyal(mu, sigma).moments(k))
@@ -314,7 +314,7 @@ See also MathWorld :cite:p:`WolframDis41`, :cite:t:`Cordeiro2012`, :cite:t:`Walc
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", moyal(mu, sigma).cumulants(k))

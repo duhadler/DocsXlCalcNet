@@ -54,7 +54,7 @@ Studentized maximum distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", smax(mu, sigma).pdf(x))
@@ -77,7 +77,7 @@ Studentized maximum distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", smax(mu, sigma).pdf(x))
@@ -100,7 +100,7 @@ Studentized maximum distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", smax(mu, sigma).pdf(x))
@@ -121,7 +121,7 @@ Studentized maximum distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", smax(mu, sigma).qtf(q))
@@ -142,7 +142,7 @@ Studentized maximum distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", smax(mu, sigma).isf(q))
@@ -162,7 +162,7 @@ Studentized maximum distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", smax(mu, sigma).c_x(t))
@@ -202,7 +202,7 @@ Studentized maximum distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", smax(mu, sigma).moments(k))
@@ -219,7 +219,7 @@ Studentized maximum distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", smax(mu, sigma).cumulants(k))

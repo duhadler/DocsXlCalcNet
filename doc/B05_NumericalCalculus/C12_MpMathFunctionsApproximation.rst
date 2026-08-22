@@ -50,7 +50,7 @@ Pade approximation
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> one = mpf(1)
         >>> def f(x):
@@ -100,7 +100,7 @@ Chebyshev approximation
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> poly, err = chebyfit(cos, [1, 2], 5, error=True)
         >>> nprint(poly)
@@ -192,7 +192,7 @@ Fourier series
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> c, s = fourier(lambda x: x, [-pi, pi], 5)
         >>> nprint(c)

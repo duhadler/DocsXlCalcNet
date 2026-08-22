@@ -47,7 +47,7 @@ Fish curve
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -111,7 +111,7 @@ Heart curve
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -183,7 +183,7 @@ Chrysanthemum curve
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -253,7 +253,7 @@ Butterfly curve
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 

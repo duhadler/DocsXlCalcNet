@@ -147,7 +147,7 @@ See also   Wikipedia :cite:p:`WikipediaDis34`, MathWorld :cite:p:`WolframDis34`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pmf: ", negative_binomial(mu, sigma).pmf(x))
@@ -169,7 +169,7 @@ See also   Wikipedia :cite:p:`WikipediaDis34`, MathWorld :cite:p:`WolframDis34`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", negative_binomial(mu, sigma).pmf(x))
@@ -189,7 +189,7 @@ See also   Wikipedia :cite:p:`WikipediaDis34`, MathWorld :cite:p:`WolframDis34`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", negative_binomial(mu, sigma).pmf(x))
@@ -210,7 +210,7 @@ See also   Wikipedia :cite:p:`WikipediaDis34`, MathWorld :cite:p:`WolframDis34`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", negative_binomial(mu, sigma).qtf(q))
@@ -230,7 +230,7 @@ See also   Wikipedia :cite:p:`WikipediaDis34`, MathWorld :cite:p:`WolframDis34`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", negative_binomial(mu, sigma).isf(q))
@@ -251,7 +251,7 @@ See also   Wikipedia :cite:p:`WikipediaDis34`, MathWorld :cite:p:`WolframDis34`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", negative_binomial(mu, sigma).c_x(t))
@@ -272,7 +272,7 @@ See also   Wikipedia :cite:p:`WikipediaDis34`, MathWorld :cite:p:`WolframDis34`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", negative_binomial(mu, sigma).c_x(t))
@@ -294,7 +294,7 @@ See also   Wikipedia :cite:p:`WikipediaDis34`, MathWorld :cite:p:`WolframDis34`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", negative_binomial(mu, sigma).c_x(t))
@@ -330,7 +330,7 @@ See also   Wikipedia :cite:p:`WikipediaDis34`, MathWorld :cite:p:`WolframDis34`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", negative_binomial(mu, sigma).k_x(t, k))
@@ -355,7 +355,7 @@ See also   Wikipedia :cite:p:`WikipediaDis34`, MathWorld :cite:p:`WolframDis34`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", negative_binomial(mu, sigma).moments(k))
@@ -374,7 +374,7 @@ See also   Wikipedia :cite:p:`WikipediaDis34`, MathWorld :cite:p:`WolframDis34`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", negative_binomial(mu, sigma).cumulants(k))

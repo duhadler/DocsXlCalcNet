@@ -60,7 +60,7 @@ Then `Q_n = \text{max} \vert X_i - X_j \vert, 1<i<j<k`, has a Normal Range distr
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", mp_studentized_range(mu, sigma).pdf(x))
@@ -82,7 +82,7 @@ Then `Q_n = \text{max} \vert X_i - X_j \vert, 1<i<j<k`, has a Normal Range distr
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", mp_studentized_range(mu, sigma).pdf(x))
@@ -104,7 +104,7 @@ Then `Q_n = \text{max} \vert X_i - X_j \vert, 1<i<j<k`, has a Normal Range distr
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", mp_studentized_range(mu, sigma).pdf(x))
@@ -124,7 +124,7 @@ Then `Q_n = \text{max} \vert X_i - X_j \vert, 1<i<j<k`, has a Normal Range distr
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", mp_studentized_range(mu, sigma).qtf(q))
@@ -145,7 +145,7 @@ Then `Q_n = \text{max} \vert X_i - X_j \vert, 1<i<j<k`, has a Normal Range distr
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", mp_studentized_range(mu, sigma).isf(q))
@@ -165,7 +165,7 @@ Then `Q_n = \text{max} \vert X_i - X_j \vert, 1<i<j<k`, has a Normal Range distr
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", mp_studentized_range(mu, sigma).c_x(t))
@@ -205,7 +205,7 @@ Then `Q_n = \text{max} \vert X_i - X_j \vert, 1<i<j<k`, has a Normal Range distr
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mp_studentized_range(mu, sigma).moments(k))
@@ -222,7 +222,7 @@ Then `Q_n = \text{max} \vert X_i - X_j \vert, 1<i<j<k`, has a Normal Range distr
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mp_studentized_range(mu, sigma).cumulants(k))

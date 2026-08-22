@@ -156,7 +156,7 @@ See also  Wikipedia :cite:p:`WikipediaDis01`, MathWorld :cite:p:`WolframDis01`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", chi_squared_nc(mu, sigma).pdf(x))
@@ -178,7 +178,7 @@ See also  Wikipedia :cite:p:`WikipediaDis01`, MathWorld :cite:p:`WolframDis01`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", chi_squared_nc(mu, sigma).pdf(x))
@@ -198,7 +198,7 @@ See also  Wikipedia :cite:p:`WikipediaDis01`, MathWorld :cite:p:`WolframDis01`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", chi_squared_nc(mu, sigma).pdf(x))
@@ -219,7 +219,7 @@ See also  Wikipedia :cite:p:`WikipediaDis01`, MathWorld :cite:p:`WolframDis01`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", chi_squared_nc(mu, sigma).qtf(q))
@@ -239,7 +239,7 @@ See also  Wikipedia :cite:p:`WikipediaDis01`, MathWorld :cite:p:`WolframDis01`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", chi_squared_nc(mu, sigma).isf(q))
@@ -259,7 +259,7 @@ See also  Wikipedia :cite:p:`WikipediaDis01`, MathWorld :cite:p:`WolframDis01`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared_nc(mu, sigma).c_x(t))
@@ -279,7 +279,7 @@ See also  Wikipedia :cite:p:`WikipediaDis01`, MathWorld :cite:p:`WolframDis01`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared_nc(mu, sigma).c_x(t))
@@ -302,7 +302,7 @@ See also  Wikipedia :cite:p:`WikipediaDis01`, MathWorld :cite:p:`WolframDis01`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", chi_squared_nc(mu, sigma).k_x(t, k))
@@ -321,7 +321,7 @@ See also  Wikipedia :cite:p:`WikipediaDis01`, MathWorld :cite:p:`WolframDis01`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", chi_squared_nc(mu, sigma).moments(k))

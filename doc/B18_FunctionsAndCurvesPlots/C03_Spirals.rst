@@ -51,7 +51,7 @@ Archimedes' spiral
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -114,7 +114,7 @@ Fermat's spiral
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -182,7 +182,7 @@ Hyperbolic Spiral
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -248,7 +248,7 @@ Lituus
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -317,7 +317,7 @@ Logarithmic Spiral
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -380,7 +380,7 @@ Poinsot's Spiral
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -446,7 +446,7 @@ Cotes's spiral
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -503,7 +503,7 @@ Tanh Spiral
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -565,7 +565,7 @@ Nielsens Spiral
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -625,7 +625,7 @@ Cornu Spiral
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 

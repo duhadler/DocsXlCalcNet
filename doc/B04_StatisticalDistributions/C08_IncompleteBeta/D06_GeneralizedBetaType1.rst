@@ -44,7 +44,7 @@ Generalized Beta (Type 1) distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", fisher_f(mu, sigma).pdf(x))
@@ -68,7 +68,7 @@ Generalized Beta (Type 1) distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", fisher_f(mu, sigma).pdf(x))
@@ -94,7 +94,7 @@ Generalized Beta (Type 1) distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", fisher_f(mu, sigma).pdf(x))
@@ -116,7 +116,7 @@ Generalized Beta (Type 1) distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", fisher_f(mu, sigma).qtf(q))
@@ -139,7 +139,7 @@ Generalized Beta (Type 1) distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", fisher_f(mu, sigma).isf(q))
@@ -158,7 +158,7 @@ Generalized Beta (Type 1) distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", fisher_f(mu, sigma).c_x(t))
@@ -201,7 +201,7 @@ Returns ``NaN``, since the cumulant generating function does not exist.
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", fisher_f(mu, sigma).moments(k))
@@ -218,7 +218,7 @@ Returns ``NaN``, since the cumulant generating function does not exist.
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", fisher_f(mu, sigma).cumulants(k))

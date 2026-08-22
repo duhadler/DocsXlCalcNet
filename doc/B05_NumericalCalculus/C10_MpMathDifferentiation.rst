@@ -160,7 +160,7 @@ Nth numerical (partial) derivative, using finite differences or numerical quadra
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> diff(lambda x: x**2 + x, 1.0)
         3.0
@@ -288,7 +288,7 @@ Function object which evaluates the nth derivative of a given function
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> cos2 = diffun(sin)
         >>> sin2 = diffun(sin, 4)
@@ -359,7 +359,7 @@ Generating a sequence of derivatives
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15
         >>> nprint(list(diffs(cos, 1, 5)))
         [0.540302, -0.841471, -0.540302, 0.841471, 0.540302, -0.841471]
@@ -403,7 +403,7 @@ Composition of derivatives
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> f = lambda x: exp(x)*cos(x)*sin(x)
         >>> u = diffs(f, 1)
@@ -452,7 +452,7 @@ Composition of exponential of derivatives
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>>
         >>> def diffs_loggamma(x):
@@ -522,7 +522,7 @@ Fractional derivatives / differintegration
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> x = mpf(3); p = 2; n = 0.5
         >>> differint(lambda t: t**p, x, n)
@@ -581,7 +581,7 @@ Taylor series
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> nprint(chop(taylor(sin, 0, 5)))
         [0.0, 1.0, 0.0, -0.166667, 0.0, 0.00833333]
@@ -697,7 +697,7 @@ Solving an ODE using high-order Taylor series
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> f = odefun(lambda x, y: y, 0, 1)
         >>> for x in [0, 1, 2.5]:

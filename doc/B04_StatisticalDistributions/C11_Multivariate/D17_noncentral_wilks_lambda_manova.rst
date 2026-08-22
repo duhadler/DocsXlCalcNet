@@ -41,7 +41,7 @@ Noncentral Distribution of Wilks' `\Lambda`:  MANOVA
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", wilks_lambda_glm(mu, sigma).pdf(x))
@@ -60,7 +60,7 @@ Noncentral Distribution of Wilks' `\Lambda`:  MANOVA
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", wilks_lambda_glm(mu, sigma).pdf(x))
@@ -80,7 +80,7 @@ Noncentral Distribution of Wilks' `\Lambda`:  MANOVA
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", wilks_lambda_glm(mu, sigma).pdf(x))
@@ -101,7 +101,7 @@ Noncentral Distribution of Wilks' `\Lambda`:  MANOVA
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", wilks_lambda_glm(mu, sigma).qtf(q))
@@ -121,7 +121,7 @@ Noncentral Distribution of Wilks' `\Lambda`:  MANOVA
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", wilks_lambda_glm(mu, sigma).isf(q))
@@ -141,7 +141,7 @@ Noncentral Distribution of Wilks' `\Lambda`:  MANOVA
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", wilks_lambda_glm(mu, sigma).c_x(t))
@@ -161,7 +161,7 @@ Noncentral Distribution of Wilks' `\Lambda`:  MANOVA
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", wilks_lambda_glm(mu, sigma).c_x(t))
@@ -195,7 +195,7 @@ Noncentral Distribution of Wilks' `\Lambda`:  MANOVA
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", wilks_lambda_glm(mu, sigma).k_x(t, k))
@@ -217,7 +217,7 @@ Noncentral Distribution of Wilks' `\Lambda`:  MANOVA
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", wilks_lambda_glm(mu, sigma).moments(k))
@@ -236,7 +236,7 @@ Noncentral Distribution of Wilks' `\Lambda`:  MANOVA
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", wilks_lambda_glm(mu, sigma).cumulants(k))

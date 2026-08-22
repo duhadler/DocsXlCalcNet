@@ -29,18 +29,12 @@ Exponential integral `E_1(x)`
 
     where ``ctx`` is ``math53`` or ``ctxflint``.
 
-    Also: math53.e1(x), mathc53.E1(x), ctx.expIntegralE(x)
+    Returns the exponential integral `\displaystyle E_1(x) =  \int_1^\infty \frac{e^{-xt}}{t} \, \mathrm{d}t, = e^{-z} U(1,1,z), \quad x \neq 0`. 
 
-    Returns the exponential integral `\displaystyle E_1(x) =  \int_1^\infty \frac{e^{-xt}}{t} \, \mathrm{d}t, x \neq 0`. For `x<0` the integral is calculated as `E_1(x) = -\mathrm{Ei}(-x)`. 
+
+    For real `x<0` the integral can be calculated as `E_1(x) = -\mathrm{Ei}(-x)`. 
 
     See also   Wikipedia :cite:p:`WikipediaFun175`, MathWorld :cite:p:`WolframFun175`, NIST :cite:p:`DLMFun175`,  BoostMath :cite:p:`BoostFun175`, :cite:t:`Ehrhardt2018` (3.4.5), :cite:t:`Ehrhardt2018` (4.2.27), Flint :cite:p:`FlintFun175`, Flint :cite:p:`FlintFun176`, Mpmath :cite:p:`MpmathFun175`. 
-
-
-    The exponential integral `\text{E}_1(x)` for `x \neq 0` is defined as
-
-    .. math :: \text{E}_1(x) =  \int_1^\infty \frac{e^{-xt}}{t} \mathrm{d}t = e^{-z} U(1,1,z).
-
-    For `x<0` the integral is calculated as `\text{E}_1(x) = -\text{Ei}(-x)`. 
 
 
 
@@ -104,34 +98,21 @@ Exponential integral `\mathrm{Ei}(x)`
 
     where ``ctx`` is ``math53``, ``mathc53``, ``ctxboost`` or ``ctxflint``.
 
-    Note: Also math53.ei(x), ctxboost.Ei(x), mathc53.Ei(x), ctx.expIntegralEi(x).
-
-    Returns the exponential integral  `\displaystyle  \mathrm{Ei}(x) = -PV \int_{-x}^\infty \frac{e^{-t}}{t} \, \mathrm{d}t= PV \int_{-\infty}^x \frac{e^{t}}{t} \, \mathrm{d}t`. For `x<0` we have `\mathrm{Ei}(x) = -E_1(-x)`. 
+    Returns the exponential integral  `\displaystyle  \mathrm{Ei}(x) = -PV \int_{-x}^\infty \frac{e^{-t}}{t} \, \mathrm{d}t= PV \int_{-\infty}^x \frac{e^{t}}{t} \, \mathrm{d}t`. 
+    
+    For real `x<0` we have `\mathrm{Ei}(x) = -E_1(-x)`. 
 
     See also   Wikipedia :cite:p:`WikipediaFun175`, MathWorld :cite:p:`WolframFun175`, NIST :cite:p:`DLMFun175`,  BoostMath :cite:p:`BoostFun175`, :cite:t:`Ehrhardt2018` (3.4.7), :cite:t:`Ehrhardt2018` (4.2.27), Flint :cite:p:`FlintFun175`, Flint :cite:p:`FlintFun176`, Mpmath :cite:p:`MpmathFun176`. 
 
 
-    The exponential integral `\text{Ei}(x)` for `x \neq 0` is defined as
 
-    .. math :: \text{Ei}(x) = -PV \int_{-x}^\infty \frac{e^{-t}}{t} \mathrm{d}t= PV \int_{-\infty}^x \frac{e^{t}}{t} \mathrm{d}t,
-
-    For `x<0` the integral is calculated as `\text{Ei}(x) = -\text{E}_1(-x)`. 
-
-
-    Computes the exponential integral `\mathrm{Ei}(z)`, respectively
+    The exponential integral `\mathrm{Ei}(z)` can also be calculated as
     using
 
     .. math ::
 
         \mathrm{Ei}(z) = -e^z U(1,1,-z) - \log(-z)
             + \frac{1}{2} \left(\log(z) - \log\left(\frac{1}{z}\right) \right)
-
-    .. math ::
-
-        \mathrm{Ei}(z) = z {}_2F_2(1, 1; 2, 2; z) + \gamma
-            + \frac{1}{2} \left(\log(z) - \log\left(\frac{1}{z}\right) \right)
-
-    and an automatic algorithm choice.
 
 
 
@@ -216,18 +197,12 @@ Logarithmic integral `\mathrm{li}(x)`
 
     where ``ctx`` is ``math53``, ``mathc53`` or ``ctxflint``.
 
-    Also: math53.li(z), mathc53.Li(z), ctx.logIntegral(z)
-
-    Returns the logarithmic integral `\displaystyle \mathrm{li}(x) = PV \int_{0}^{x} \frac{1}{\log(t)} \, \mathrm{d}t, \quad (x \neq 1)`. For `x \neq 0` the integral is calculated as `\mathrm{li}(x)=\mathrm{Ei}(\log(x))`. 
+    Returns the logarithmic integral `\displaystyle \mathrm{li}(x) = PV \int_{0}^{x} \frac{1}{\log(t)} \, \mathrm{d}t, \quad (x \geq 0, x \neq 1)`. 
+    
+    For `x \neq 0` the integral is calculated as `\mathrm{li}(x)=\mathrm{Ei}(\log(x))`. 
 
     See also   Wikipedia :cite:p:`WikipediaFun177`, MathWorld :cite:p:`WolframFun177`, NIST :cite:p:`DLMFun177`, :cite:t:`Ehrhardt2018` (3.4.15), :cite:t:`Ehrhardt2018` (4.2.40), Flint :cite:p:`FlintFun175`, Flint :cite:p:`FlintFun176`, Mpmath :cite:p:`MpmathFun177`. 
 
-
-    This function returns the logarithmic integral `\text{li}(x)` for `x \geq 0`
-
-    .. math :: \text{li}(x) = PV \int_{0}^{x} \frac{1}{\log(t)} \mathrm{d}t, \quad (x \neq 1).
-
-    For `x \neq 0` the integral is calculated as `\text{li}(x)=\text{Ei}(\log(x))`. 
 
 
 
@@ -310,28 +285,17 @@ Logarithmic integral `\mathrm{li}(x)`
 Hyperbolic sine integral `\mathrm{Shi}(x)`
 -------------------------------------------------------------------------------
 
-.. method:: ctx.sinh_integral(z)
+.. method:: ctx.sinh_integral(x)
 
     where ``ctx`` is ``math53``, ``ctxflint``.
 
-    Also: math53.shi(z), ctx.sinhIntegral(z)
-
-
-    Returns the hyperbolic sine integral `\displaystyle \mathrm{Shi}(x) =  \int_0^x \frac{\sinh(t)}{t} \, \mathrm{d}t`, and `\mathrm{Shi}(x) = -\mathrm{Shi}(-x)` for `x<0`. 
+    Returns the hyperbolic sine integral `\displaystyle \mathrm{Shi}(x) =  \int_0^x \frac{\sinh(t)}{t} \, \mathrm{d}t`. 
 
     See also   Wikipedia :cite:p:`WikipediaFun181`, MathWorld :cite:p:`WolframFun181`, NIST :cite:p:`DLMFun180`, :cite:t:`Ehrhardt2018` (3.4.17), Flint :cite:p:`FlintFun175`, Flint :cite:p:`FlintFun176`, Mpmath :cite:p:`MpmathFun181`. 
 
+    For real `x` the integral is calculated using the relations `\displaystyle  \text{Shi}(x) = \tfrac{1}{2} \left(\text{Ei}(x)+\text{E}_1(x)\right)` for `x>0` and  `\mathrm{Shi}(x) = -\mathrm{Shi}(-x)` for `x<0`.
 
-    This function returns the hyperbolic sine integral
-
-    .. math :: \text{Shi}(x) =  \int_0^x \frac{\sinh(t)}{t} \mathrm{d}t,
-
-    and `\text{Shi}(x) = -\text{Shi}(-x)` for `x<0`. The integral is calculated using the relation
-
-    .. math :: \text{Shi}(x) = \tfrac{1}{2} \left(\text{Ei}(x)+\text{E}_1(x)\right), \quad (x>0).
-
-    .. math :: \text{Shi}(x) = -i \text{Si}(ix).
-
+    For complex  `x` the integral is calculated using the relation `\displaystyle  \text{Shi}(x) = -i \text{Si}(ix)`. 
 
 
 
@@ -383,11 +347,12 @@ Hyperbolic sine integral `\mathrm{Shi}(x)`
 
 
 
+|newpage|
 
 Hyperbolic cosine integral `\mathrm{Chi}(x)`
 -------------------------------------------------------------------------------
 
-.. method:: ctx.cosh_integral(z)
+.. method:: ctx.cosh_integral(x)
 
     where ``ctx`` is ``math53``, ``ctxflint``.
 
@@ -399,21 +364,10 @@ Hyperbolic cosine integral `\mathrm{Chi}(x)`
 
 
 
-    The hyperbolic cosine integral  is defined as
+    For real `x` the integral is calculated using the relations `\displaystyle  \text{Chi}(x) = \tfrac{1}{2} \left(\text{Ei}(x)-\text{E}_1(x)\right)` for `x>0` and `\text{Chi}(x) = \text{Chi}(-x)` for `x<0`.
 
-    .. math :: \text{Chi}(x) = \gamma + \log(x) + \int_0^x \frac{\cosh(t)-1}{t} \mathrm{d}t,
+    For complex  `x` the integral is calculated using the relation `\displaystyle \text{Chi}(x) = \text{Ci}(i x) - \log(i x) + \log(x)`. 
 
-    and `\text{Chi}(x) = \text{Chi}(-x)` for `x<0`. The integral is calculated using the relation
-
-    .. math :: \text{Chi}(x) = \tfrac{1}{2} \left(\text{Ei}(x)-\text{E}_1(x)\right), \quad (x>0).
-
-    We also have
-
-    .. math :: \text{Chi}(x) = \text{Ci}(i x) - \log(i x) + \log(x).
-
-    and
-
-    .. math :: \mathrm{Chi}(z) = -\frac{1}{2} \left[ e^{z} U(1,1,-z) + e^{-z} U(1,1,z) +  \log(-z) - \log(z) \right]
 
 
 
@@ -480,30 +434,13 @@ Generalized exponential integral `E_n(x)`
     where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
 
 
-    Note: math53.en(n, x)
-
-    Returns the generalized exponential integral of integer order `\displaystyle E_n(x) = \int_{1}^{\infty} \frac{e^{-xt}}{t^n} \, \mathrm{d}t`. 
+    Returns the generalized exponential integral of integer order `\displaystyle E_n(x) = \int_{1}^{\infty} \frac{e^{-xt}}{t^n} \, \mathrm{d}t, \quad (n \geq 0)`.
 
     See also   Wikipedia :cite:p:`WikipediaFun175`, MathWorld :cite:p:`WolframFun176`, NIST :cite:p:`DLMFun176`,  BoostMath :cite:p:`BoostFun176`, :cite:t:`Ehrhardt2018` (3.4.12), Mpmath :cite:p:`MpmathFun176a`. 
 
+    The function can be generalized for complex `s` and complex `z` using
 
-    The exponential integrals `\text{E}_n(x)` of integer order is defined as
-
-    .. math :: \text{E}_n(x) = \int_{1}^{\infty} \frac{e^{-xt}}{t^n} \mathrm{d}t, \quad (n \geq 0).
-
-    For `x<0` the integral is calculated as `\text{Ei}(x) = -\text{E}_1(-x)`. 
-
-
-    !!Note: check syntax in mpmath!!
-
-    Returns gives the generalized exponential integral or En-function,
-
-    .. math ::
-
-        \mathrm{E}_n(z) = \int_1^{\infty} \frac{e^{-zt}}{t^n} \mathrm{d}t,
-
-
-    .. math :: \text{E}_n(1-s) = z^{-s} \Gamma(s,z).
+    .. math :: \text{E}_{1-s}(z) = z^{-s} \Gamma(s,z).
 
 
     An example in Python
@@ -566,23 +503,13 @@ Sine integral `\mathrm{Si}(x)`
 
     where ``ctx`` is ``math53``, ``ctxflint``.
 
-    Also: math53.si(z), ctx.sinIntegral(z)
-
 
     Returns the sine integral `\displaystyle \mathrm{Si}(x) =  \int_0^x \frac{\sin(t)}{t} \, \mathrm{d}t`, and `\mathrm{Si}(x) = -\mathrm{Si}(-x)` for `x<0`.
 
     See also   Wikipedia :cite:p:`WikipediaFun179`, MathWorld :cite:p:`WolframFun179`, NIST :cite:p:`DLMFun178`, :cite:t:`Ehrhardt2018` (3.4.18), Flint :cite:p:`FlintFun175`, Flint :cite:p:`FlintFun176`, Mpmath :cite:p:`MpmathFun179`.
 
 
-    This function returns the sine integral
-
-    .. math :: \text{Si}(x) =  \int_0^x \frac{\sin(t)}{t} \mathrm{d}t,
-
-    and `\text{Si}(x) = -\text{Si}(-x)` for `x<0`.
-
-
-    Computes the sine integral `\mathrm{Si}(z)`, respectively
-    using
+    For complex `z`, the sine integral `\mathrm{Si}(z)` can be computed using
 
     .. math ::
 
@@ -678,9 +605,17 @@ Cosine integral `\mathrm{Ci}(x)`
 
     where ``ctx`` is ``math53`` or ``ctxflint``.
 
-    Note: Also math53.ci(z), ctx.cosIntegral(z)
+    Returns the cosine integral `\displaystyle \mathrm{Ci}(x) = -\int_x^{\infty} \frac{\cos(t)}{t} \, \mathrm{d}t = \gamma + \log(x) + \int_0^x \frac{\cos(t) - 1}{t} \, \mathrm{d}t`, and `\text{Ci}(x) = \text{Ci}(-x)` for `x<0`.
 
-    Returns the cosine integral `\displaystyle \mathrm{Ci}(x) = -\int_x^{\infty} \frac{\cos(t)}{t} \, \mathrm{d}t = \gamma + \log(x) + \int_0^x \frac{\cos(t) - 1}{t} \, \mathrm{d}t`.
+
+    For complex `z`, the cosine integral `\mathrm{Ci}(z)`, can be computed using
+
+    .. math ::
+
+        \mathrm{Ci}(z) = \log(z) - \frac{1}{2} \left[
+            e^{iz} U(1,1,-iz) + e^{-iz} U(1,1,iz) + 
+            \log(-iz) + \log(iz) \right]
+
 
     See also   Wikipedia :cite:p:`WikipediaFun178`, MathWorld :cite:p:`WolframFun178`, NIST :cite:p:`DLMFun178`, :cite:t:`Ehrhardt2018` (3.4.2), Flint :cite:p:`FlintFun175`, Flint :cite:p:`FlintFun176`, Mpmath :cite:p:`MpmathFun178`.
 
@@ -702,33 +637,6 @@ Cosine integral `\mathrm{Ci}(x)`
 
     **3D wpf plot**: real part (left figure), imaginary part (middle figure) and absolute value with color-coded phase (right figure) of the complex sine function `z = \sin(x + iy)`, with `-6 \le x \le 6` (blue axis), `-6 \le y \le 6` (red axis), `-10 \le z \le 10` (green axis). Function values are :ref:`loglog-transformed <rst_mpm_loglog_transformation>`.
 
-
-
-
-
-
-    The cosine integral is defined as
-
-    .. math :: \text{Ci}(x) = \gamma + \log(x) + \int_0^x \frac{\cos(t)-1}{t} \mathrm{d}t,
-
-    and `\text{Ci}(x) = \text{Ci}(-x)` for `x<0`. 
-
-
-    Computes the cosine integral `\mathrm{Ci}(z)`, respectively using
-
-    .. math ::
-
-        \mathrm{Ci}(z) = \log(z) - \frac{1}{2} \left[
-            e^{iz} U(1,1,-iz) + e^{-iz} U(1,1,iz) + 
-            \log(-iz) + \log(iz) \right]
-
-    .. math ::
-
-        \mathrm{Ci}(z) = -\tfrac{z^2}{4}
-            {}_2F_3(1, 1; 2, 2, \tfrac{3}{2}; -\tfrac{z^2}{4})
-            + \log(z) + \gamma
-
-    and an automatic algorithm choice.
 
 
 

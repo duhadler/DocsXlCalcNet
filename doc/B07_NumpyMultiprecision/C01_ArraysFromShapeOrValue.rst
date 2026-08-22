@@ -96,7 +96,7 @@ Conversion from integer, float or complex array
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> np.set_printoptions(linewidth=200)
 
@@ -239,7 +239,7 @@ Ones on the diagonal and zeros elsewhere: numpy.eye
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> for ctx in ctx_all: matB = npm.eye(N=3, M=4, k=1, dtype=ctx); print(ctx.name + ':\n', matB)
         fpm:
@@ -287,7 +287,7 @@ Identity array: numpy.identity
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> for ctx in ctx_all: matB = npm.identity(n=3, dtype=ctx); print(ctx.name + ':\n', matB)
         fpm:
@@ -337,7 +337,7 @@ Array of ones: numpy.ones
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> for ctx in ctx_all: matB = npm.ones(shape=(3,), dtype=ctx); print(ctx.name + ':\n', matB)
         fpm:
@@ -374,7 +374,7 @@ Array of ones: numpy.ones_like
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> x = np.arange(6); x = x.reshape((2, 3))
         >>> for ctx in ctx_all: matB = npm.ones_like(x, dtype=ctx); print(ctx.name + ':\n', matB)
@@ -420,7 +420,7 @@ Array of zeros: numpy.zeros
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> for ctx in ctx_all: matB = npm.zeros(shape=(3,), dtype=ctx); print(ctx.name + ':\n', matB)
         fpm:
@@ -458,7 +458,7 @@ Array of zeros: numpy.zeros_like
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> x = np.arange(6); x = x.reshape((2, 3))
         >>> for ctx in ctx_all: matB = npm.zeros_like(x, dtype=ctx); print(ctx.name + ':\n', matB)
@@ -503,7 +503,7 @@ Array of constant: numpy.full
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> for ctx in ctx_all: matB = npm.full(shape=(2,2), fill_value=ctx.t(10)); print(ctx.name + ':\n', matB)
         fpm:
@@ -533,7 +533,7 @@ Array of constant: numpy.full
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_fp = [fpm, mpm, ipm, dpm, gpm, apm]
         >>> for ctx in ctx_fp: matB = npm.full(shape=(2,2), fill_value=ctx.inf); print(ctx.name + ':\n', matB)
         fpm:
@@ -560,7 +560,7 @@ Array of constant: numpy.full
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_fp = [fpm, mpm, ipm, dpm, gpm, apm]
         >>> for ctx in ctx_fp: matB = npm.full(shape=(2,2), fill_value=ctx.nan); print(ctx.name + ':\n', matB)
         fpm:
@@ -602,7 +602,7 @@ Array of constant: numpy.full_like
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> x = np.arange(6); x = x.reshape((2, 3))
         >>> for ctx in ctx_all: matB = npm.full_like(x, fill_value=10.0, dtype=ctx); print(ctx.name + ':\n', matB)
@@ -647,7 +647,7 @@ Array with ones at and below the given diagonal and zeros elsewhere: numpy.tri
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> for ctx in ctx_all: x = npm.tri(N=3, M=5, k=2, dtype=ctx); print(ctx.name + ':\n', x)
         fpm:
@@ -683,7 +683,7 @@ Array with ones at and below the given diagonal and zeros elsewhere: numpy.tri
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
+        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
         >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
         >>> for ctx in ctx_all: x = npm.tri(N=3, M=5, k=-1, dtype=ctx); print(ctx.name + ':\n', x)
         fpm:

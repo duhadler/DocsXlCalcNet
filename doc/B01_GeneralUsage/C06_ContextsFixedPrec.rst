@@ -67,6 +67,12 @@ Scalar functions with ``Double`` and ``Complex``: ``math53`` and  ``cmath53``
 DAMath library.
 
 
+The source code for the module ``math53`` can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/math53.cs
+
+
+The source code for the module ``cmath53`` can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/cmath53.cs
+
+
 Double and Complex fully support Boost.Math and Eigen.
 
 
@@ -90,6 +96,14 @@ https://en.wikipedia.org/wiki/Single-precision_floating-point_format
 
 
 
+The source code for the module ``sreal`` can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/sreal.cs
+
+
+The source code for the module ``scplx`` can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/scplx.cs
+
+
+
+
 
 |newpage|
 
@@ -101,6 +115,13 @@ Binary floating point, double precision: ``dreal`` and ``dcplx``
 dreal and dcplx fully support Boost.Math and Eigen.
 
 https://en.wikipedia.org/wiki/Double-precision_floating-point_format
+
+
+
+The source code for the module ``dreal`` can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/dreal.cs
+
+
+The source code for the module ``dcplx`` can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/dcplx.cs
 
 
 
@@ -121,6 +142,13 @@ https://en.wikipedia.org/wiki/Extended_precision
 
 
 
+The source code for the module ``ereal`` can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/ereal.cs
+
+
+The source code for the module ``ecplx`` can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/ecplx.cs
+
+
+
 
 
 |newpage|
@@ -134,6 +162,13 @@ Binary floating point, quadruple precision: ``qreal`` and ``qcplx``
 qreal and qcplx fully support Boost.Math and Eigen.
 
 https://en.wikipedia.org/wiki/Quadruple-precision_floating-point_format
+
+
+
+The source code for the module ``qreal`` can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/qreal.cs
+
+
+The source code for the module ``qcplx`` can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/qcplx.cs
 
 
 
@@ -152,6 +187,13 @@ oreal and ocplx fully support Boost.Math and Eigen.
 
 https://en.wikipedia.org/wiki/Octuple-precision_floating-point_format
 
+
+
+
+The source code for the module ``oreal`` can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/oreal.cs
+
+
+The source code for the module ``ocplx`` can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/ocplx.cs
 
 
 

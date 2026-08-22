@@ -75,7 +75,7 @@ Examples:
 
 .. code-block:: pycon
 
-    >>> from mpfunlab import fp, mp, iv, dp, gp, ap
+    >>> from xlcalcnet import fp, mp, iv, dp, gp, ap
     >>> mp.dps = iv.dps = dp.dps = gp.dps = ap.dps = 45;
     >>> for ctx in [fp, mp, dp, gp, ap]: print(repr(ctx.rand()))
     0.6379004385592022

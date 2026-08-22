@@ -278,18 +278,6 @@ Whittaker function `M_{\kappa, \mu}(x)`
 
     A second solution is given by :ref:`whitw() <rst_mpm_whitw>`.
 
-    The Whittaker functions are defined in Abramowitz & Stegun, section 13.1.
-    They are alternate forms of the confluent hypergeometric functions
-    `\,_1F_1` and `U`:
-
-    .. math ::
-
-        M(k,m,z) = e^{-\frac{1}{2}z} z^{\frac{1}{2}+m}
-            \,_1F_1(\tfrac{1}{2}+m-k, 1+2m, z)
-
-        W(k,m,z) = e^{-\frac{1}{2}z} z^{\frac{1}{2}+m}
-            U(\tfrac{1}{2}+m-k, 1+2m, z).
-
 
 
 
@@ -416,37 +404,9 @@ Parabolic cylinder function `D_{\nu}(x)`
 
 .. method:: math53.cylinder_d(nu, x)
 
-    Returns Whittaker’s parabolic cylinder function `\displaystyle D_{\nu}(x) = 2^{-\nu/2} e^{-x^2/4} U\left(-\frac{\nu}{2}, \frac{1}{2}, \frac{x^2}{2} \right)`, for `x \ge 0`. 
+    Returns Whittaker’s parabolic cylinder function `D_n(z) = U(-n-1/2, z)` (see :ref:`pcfu() <rst_mpm_pcfu>`).
 
-    For `x<0` and `\nu \notin \mathbb{N}` we have `\displaystyle D_{\nu}(-x) = D_{\nu}(x) - \frac{2^{(\nu+1)/2} \nu \Gamma(\nu/2)\sin(\pi\nu/2)}{\sqrt{\pi}}  x e^{-x^2/4} {}_1F_1\left(\frac{1-\nu}{2}, \frac{3}{2}, \frac{x^2}{2} \right)`, 
-
-    and for `\nu = n \in \mathbb{N}` the relation `D_n(-x) = (-1)^n D_n(x)` is applied.
-
-    See also: MathWorld :cite:p:`WolframFun1057a`,  Wikipedia :cite:p:`WikipediaFun1057`, :cite:t:`Ehrhardt2018` (3.8.11.1).
-
-
-    Returns the parabolic cylinder function D.  See also  Wikipedia :cite:p:`WikipediaFun1057`, MathWorld :cite:p:`WolframFun1057a`, NIST :cite:p:`DLMFun1057`, Mpmath :cite:p:`MpmathFun1057`.
-
-
-    .. math :: D_n(z) = 2^{-n/2} e^{-z^2/4} H_n\left(\frac{z}{\sqrt{2}}\right).
-
-
-    Gives the parabolic cylinder function in Whittaker's notation
-    `D_n(z) = U(-n-1/2, z)` (see :ref:`pcfu() <rst_mpm_pcfu>`).
-    It solves the differential equation
-
-    .. math ::
-
-        y'' + \left(n + \frac{1}{2} - \frac{1}{4} z^2\right) y = 0.
-
-    and can be represented in terms of Hermite polynomials
-
-    .. math ::
-
-        D_n(z) = 2^{-n/2} e^{-z^2/4} H_n\left(\frac{z}{\sqrt{2}}\right).
-
-
-    !!! NEED TO COVER CASE n is integer!!!
+    See also: MathWorld :cite:p:`WolframFun1057a`,  Wikipedia :cite:p:`WikipediaFun1057`, NIST :cite:p:`DLMFun1057`, Mpmath :cite:p:`MpmathFun1057`, :cite:t:`Ehrhardt2018` (3.8.11.1).
 
 
 
@@ -507,7 +467,7 @@ Parabolic cylinder function `U(a, x)`
 
 .. method:: math53.cylinder_u(a, x)
 
-    Returns the parabolic cylinder function `U(a, x) = D_{-a-\frac{1}{2}}(x)`.
+    Returns the parabolic cylinder function `U(a, x)`.
 
     See also: MathWorld :cite:p:`WolframFun1057`,  Wikipedia :cite:p:`WikipediaFun1057`, :cite:t:`Ehrhardt2018` (3.8.11.2), NIST :cite:p:`DLMFun1057`, Mpmath :cite:p:`MpmathFun1058`.
 
@@ -517,21 +477,16 @@ Parabolic cylinder function `U(a, x)`
     .. math ::  U\left(a,z\right)=U\left(a,0\right)u_{1}(a,z)+U'\left(a,0\right)u_{2}(a,z),
 
 
-    .. math ::  u_{1}(a,z)=e^{-\tfrac{1}{4}z^{2}}M\left(\tfrac{1}{2}a+\tfrac{1}{4},\tfrac{1}{2},\tfrac{1}{2}z^{2}\right)=e^{\tfrac{1}{4}z^{2}}M\left(-\tfrac{1}{2}a+\tfrac{1}{4},\tfrac{1}{2},-\tfrac{1}{2}z^{2}\right),
+    .. math ::  u_{1}(a,z)=e^{-\tfrac{1}{4}z^{2}} \,_1F_1\left(\tfrac{1}{2}a+\tfrac{1}{4},\tfrac{1}{2},\tfrac{1}{2}z^{2}\right)=e^{\tfrac{1}{4}z^{2}} \,_1F_1\left(-\tfrac{1}{2}a+\tfrac{1}{4},\tfrac{1}{2},-\tfrac{1}{2}z^{2}\right),
 
 
-    .. math :: u_{2}(a,z)=ze^{-\tfrac{1}{4}z^{2}}M\left(\tfrac{1}{2}a+\tfrac{3}{4},\tfrac{3}{2},\tfrac{1}{2}z^{2}\right)=ze^{\tfrac{1}{4}z^{2}}M\left(-\tfrac{1}{2}a+\tfrac{3}{4},\tfrac{3}{2},-\tfrac{1}{2}z^{2}\right).
-
-
-    .. math :: U\left(a,0\right)=\frac{\sqrt{\pi}}{2^{\frac{1}{2}a+\frac{1}{4}}\Gamma\left(\frac{3}{4}+\frac{1}{2}a\right)}, \quad \text{and } U'\left(a,0\right)=-\frac{\sqrt{\pi}}{2^{\frac{1}{2}a-\frac{1}{4}}\Gamma\left(\frac{1}{4}+\frac{1}{2}a\right)},
-
-
-
-
-    .. math ::  e^{-\frac{1}{4}z^2} U(a,z) =  U(a,0) \,_1F_1\left(-\tfrac{a}{2}+\tfrac{1}{4};  \tfrac{1}{2}; -\tfrac{1}{2}z^2\right) +  U'(a,0) z \,_1F_1\left(-\tfrac{a}{2}+\tfrac{3}{4}; \tfrac{3}{2}; -\tfrac{1}{2}z^2\right), \quad \text{where}
+    .. math :: u_{2}(a,z)=ze^{-\tfrac{1}{4}z^{2}} \,_1F_1\left(\tfrac{1}{2}a+\tfrac{3}{4},\tfrac{3}{2},\tfrac{1}{2}z^{2}\right)=ze^{\tfrac{1}{4}z^{2}} \,_1F_1\left(-\tfrac{1}{2}a+\tfrac{3}{4},\tfrac{3}{2},-\tfrac{1}{2}z^{2}\right).
 
 
     .. math :: U\left(a,0\right)=\frac{\sqrt{\pi}}{2^{\frac{1}{2}a+\frac{1}{4}}\Gamma\left(\frac{3}{4}+\frac{1}{2}a\right)}, \quad \text{and } U'\left(a,0\right)=-\frac{\sqrt{\pi}}{2^{\frac{1}{2}a-\frac{1}{4}}\Gamma\left(\frac{1}{4}+\frac{1}{2}a\right)},
+
+
+
 
 
     For `\Re(z) > 0`, the function may be in terms of the confluent U-function (see :ref:`hyperu() <rst_mpm_hyperu>`) by
@@ -597,21 +552,17 @@ Parabolic cylinder function `V(a,x)`
 
 .. method:: math53.cylinder_v(a, x)
 
-    Returns the  parabolic cylinder function `\displaystyle V(a,x) = \frac{\Gamma(a+\tfrac{1}{2}) (U(a,-x)-\sin(\pi a) U(a,x)}{\pi}`, where a is restricted to `2a \in \mathbb{Z}`.
-
-    See also: MathWorld :cite:p:`WolframFun1057`,  Wikipedia :cite:p:`WikipediaFun1057`, :cite:t:`Ehrhardt2018` (3.8.11.3), NIST :cite:p:`DLMFun1057`, Mpmath :cite:p:`MpmathFun1059`.
-
-
-
-    .. math :: V(a,z) = \frac{\Gamma(a+\tfrac{1}{2}) (U(a,-z)-\sin(\pi a) U(a,z)}{\pi}.
-
-
-    Gives the parabolic cylinder function `V(a,z)`, which can be
+    Returns the  parabolic cylinder function `\displaystyle V(a,x)`, which can be
     represented in terms of :ref:`pcfu() <rst_mpm_pcfu>` as
 
     .. math ::
 
         V(a,z) = \frac{\Gamma(a+\tfrac{1}{2}) (U(a,-z)-\sin(\pi a) U(a,z)}{\pi}.
+
+
+    See also: MathWorld :cite:p:`WolframFun1057`,  Wikipedia :cite:p:`WikipediaFun1057`, :cite:t:`Ehrhardt2018` (3.8.11.3), NIST :cite:p:`DLMFun1057`, Mpmath :cite:p:`MpmathFun1059`.
+
+    In DAMath, this is restricted to `2a \in \mathbb{Z}`.
 
 
 
@@ -686,6 +637,8 @@ Parabolic cylinder function `W(a,x)`
 
     .. math :: w_{1}(a,x)=e^{-\frac{1}{4}ix^{2}} \,_1F_1\left(\tfrac{1}{4}-\tfrac{1}{2}ia,\tfrac{1}{2},\tfrac{1}{2}ix^{2}\right), \quad  w_{2}(a,x)=xe^{-\frac{1}{4}ix^{2}} \,_1F_1\left(\tfrac{3}{4}-\tfrac{1}{2}ia,\tfrac{3}{2},\tfrac{1}{2}ix^{2}\right).
 
+
+    The function can also be represented as
 
 
     .. math ::

@@ -86,7 +86,7 @@ Incomplete gamma function, continued fractions (Peizer)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; a = 10.4; x = 8.7
         >>> dx = dec.gamma_peizer_cdf_sf_pdf(a, x); mx = mpm.gamma_peizer_cdf_sf_pdf(a, x); 
         >>> ix = ipm.gamma_peizer_cdf_sf_pdf(a, x); fx = fpm.gamma_peizer_cdf_sf_pdf(a, x); 
@@ -153,7 +153,7 @@ Incomplete gamma function, asymptotic expansion (Paris)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; a = 1.0E5; x = 1.001E5
         >>> dx = dec.gamma_paris_cdf_sf(a, x); mx = mpm.gamma_paris_cdf_sf(a, x)
         >>> ix = ipm.gamma_paris_cdf_sf(a, x); fx = fpm.gamma_paris_cdf_sf(a, x)
@@ -204,7 +204,7 @@ Incomplete beta function, continued fractions (Peizer)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; a = 8.3; b = 10.4; x = 0.7
         >>> dx = dec.beta_peizer_cdf_sf_pdf(a, b, x); mx = mpm.beta_peizer_cdf_sf_pdf(a, b, x)
         >>> ix = ipm.beta_peizer_cdf_sf_pdf(a, b, x); fx = fpm.beta_peizer_cdf_sf_pdf(a, b, x)
@@ -249,7 +249,7 @@ Noncentral `\chi^2` distribution, pdf, cdf and sf (Boost)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = 12; nu = 10; l1 = 30
         >>> dx = dec.chi2_nc_benton_cdf_sf(x, nu, l1); mx = mpm.chi2_nc_benton_cdf_sf(x, nu, l1)
         >>> ix = ipm.chi2_nc_benton_cdf_sf(x, nu, l1); fx = fpm.chi2_nc_benton_cdf_sf(x, nu, l1)
@@ -303,7 +303,7 @@ Noncentral Student `t` distribution, pdf, cdf and sf (Boost)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = 20.2; nu = 10; d = 30
         >>> dx = dec.student_t_nc_benton_cdf_sf(x, n, d); mx = mpm.student_t_nc_benton_cdf_sf(x, n, d)
         >>> ix = ipm.student_t_nc_benton_cdf_sf(x, n, d); fx = fpm.student_t_nc_benton_cdf_sf(x, n, d)
@@ -350,7 +350,7 @@ Noncentral Beta distribution, pdf, cdf and sf (Boost)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = '0.3'; a = '10'; b = '20'; l1 = '30'
         >>> dx = dec.beta_nc_benton_cdf_sf(x, a, b, l1); mx = mpm.beta_nc_benton_cdf_sf(x, a, b, l1)
         >>> ix = ipm.beta_nc_benton_cdf_sf(x, a, b, l1); fx = fpm.beta_nc_benton_cdf_sf(x, a, b, l1)
@@ -396,7 +396,7 @@ Noncentral `F` distribution, pdf, cdf and sf (Benton)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = '0.3'; m = '10'; n = '20'; l1 = '30'
         >>> dx = dec.fisher_f_nc_benton_cdf_sf(x,m,n,l1); mx = mpm.fisher_f_nc_benton_cdf_sf(x,m,n,l1)
         >>> ix = ipm.fisher_f_nc_benton_cdf_sf(x,m,n,l1); fx = fpm.fisher_f_nc_benton_cdf_sf(x,m,n,l1)
@@ -458,7 +458,7 @@ Pearson's `\rho` distribution, cdf and sf (Hotelling's series)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; r = '0.3'; N = '10'; rho = '0.1'
         >>> dx = dec.pearson_rho_nc_ht_cdf(r, N, rho); mx = mpm.pearson_rho_nc_ht_cdf(r, N, rho)
         >>> ix = ipm.pearson_rho_nc_ht_cdf(r, N, rho); fx = fpm.pearson_rho_nc_ht_cdf(r, N, rho)
@@ -518,7 +518,7 @@ Pearson's `\rho` distribution, cdf and sf (Guenther's series)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; r = '0.3'; N = '10'; rho = '0.1'
         >>> dx = dec.pearson_rho_nc_gt_cdf(r, N, rho); mx = mpm.pearson_rho_nc_gt_cdf(r, N, rho)
         >>> ix = ipm.pearson_rho_nc_gt_cdf(r, N, rho); fx = fpm.pearson_rho_nc_gt_cdf(r, N, rho)
@@ -586,7 +586,7 @@ Fisher's `R^2` distribution, cdf and sf (Boost, Benton)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = '0.3'; p = '3'; N = '20'; rho2 = '0.6'
         >>> dx = dec.fisher_r2_gd2_cdf(x, p, N, rho2); mx = mpm.fisher_r2_gd2_cdf(x, p, N, rho2)
         >>> ix = ipm.fisher_r2_gd2_cdf(x, p, N, rho2); fx = fpm.fisher_r2_gd2_cdf(x, p, N, rho2)

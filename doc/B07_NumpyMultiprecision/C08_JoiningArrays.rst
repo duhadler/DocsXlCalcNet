@@ -68,7 +68,7 @@ Join a sequence of arrays along an existing axis: numpy.concatenate
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> a = np.array([[1, 2], [3, 4]])
         >>> b = np.array([[5, 6]])
@@ -123,7 +123,7 @@ Join a sequence of arrays along an existing axis: numpy.stack
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> arrays = [np.random.randn(3, 4) for _ in range(10)]
         >>> np.stack(arrays, axis=0).shape
@@ -197,7 +197,7 @@ Assemble an nd-array from nested lists of blocks: numpy.block
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> matA = np.eye(2) * 2
         >>> B = np.eye(3) * 3

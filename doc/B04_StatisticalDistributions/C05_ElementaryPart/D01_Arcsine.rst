@@ -120,7 +120,7 @@ See also  Wikipedia :cite:p:`WikipediaDis10`,  BoostMath :cite:p:`BoostDis10`.
 
     .. code-block:: python
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> mpm.dps = 30; a = '0'; b = '1'; x = '0.25'
         >>> print ("pdf: ", mpm.dist_arcsine(a, b).pdf(x))
         6.3563523462564525615615615614561356E-20
@@ -141,7 +141,7 @@ See also  Wikipedia :cite:p:`WikipediaDis10`,  BoostMath :cite:p:`BoostDis10`.
 
     .. code-block:: python
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", mpm.arcsine(mu, sigma).pdf(x))
@@ -163,7 +163,7 @@ See also  Wikipedia :cite:p:`WikipediaDis10`,  BoostMath :cite:p:`BoostDis10`.
 
     .. code-block:: python
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", mpm.arcsine(mu, sigma).pdf(x))
@@ -183,7 +183,7 @@ See also  Wikipedia :cite:p:`WikipediaDis10`,  BoostMath :cite:p:`BoostDis10`.
 
     .. code-block:: python
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", mpm.arcsine(mu, sigma).qtf(q))
@@ -204,7 +204,7 @@ See also  Wikipedia :cite:p:`WikipediaDis10`,  BoostMath :cite:p:`BoostDis10`.
 
     .. code-block:: python
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", mpm.arcsine(mu, sigma).isf(q))
@@ -224,7 +224,7 @@ See also  Wikipedia :cite:p:`WikipediaDis10`,  BoostMath :cite:p:`BoostDis10`.
 
     .. code-block:: python
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", mpm.arcsine(mu, sigma).c_x(t))
@@ -245,7 +245,7 @@ See also  Wikipedia :cite:p:`WikipediaDis10`,  BoostMath :cite:p:`BoostDis10`.
 
     .. code-block:: python
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", mpm.arcsine(mu, sigma).m_x(t))
@@ -266,7 +266,7 @@ See also  Wikipedia :cite:p:`WikipediaDis10`,  BoostMath :cite:p:`BoostDis10`.
 
     .. code-block:: python
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("k_x: ", mpm.arcsine(mu, sigma).k_x(t, k))
@@ -285,7 +285,7 @@ See also  Wikipedia :cite:p:`WikipediaDis10`,  BoostMath :cite:p:`BoostDis10`.
 
     .. code-block:: python
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("moments: ", mpm.arcsine(mu, sigma).moments(k))
@@ -303,7 +303,7 @@ See also  Wikipedia :cite:p:`WikipediaDis10`,  BoostMath :cite:p:`BoostDis10`.
 
     .. code-block:: python
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("cumulants: ", mpm.arcsine(mu, sigma).cumulants(k))

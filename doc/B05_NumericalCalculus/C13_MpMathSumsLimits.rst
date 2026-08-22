@@ -56,7 +56,7 @@ Summation of infinite series
     where the first converges rapidly and the second converges slowly,
     are::
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> nsum(lambda n: 1/fac(n), [0, inf])
         2.71828182845905
@@ -564,7 +564,7 @@ Summation using the Euler-Maclaurin formula
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 50; mp.pretty = True
         >>> sumem(lambda n: 1/n**2, [32, inf])
         0.03174336652030209012658168043874142714132886413417
@@ -616,7 +616,7 @@ Summation using the Abel-Plana formula
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> sumap(lambda k: 1/k**2.5, [1,inf])
         1.34148725725091717975677
@@ -683,7 +683,7 @@ Products
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> nprod(lambda k: k, [1, 4])
         24.0
@@ -854,7 +854,7 @@ Limits, general
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30; mp.pretty = True
         >>> limit(lambda x: (x-sin(x))/x**3, 0)
         0.166666666666666666666666666667
@@ -979,7 +979,7 @@ Richardson extrapolation
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30; mp.pretty = True
         >>> S = [4*sum(mpf(-1)**n/(2*n+1) for n in range(m))
         ...     for m in range(1,30)]
@@ -1091,7 +1091,7 @@ Shanks extrapolation
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 50
         >>> S = [4*sum(mpf(-1)**n/(2*n+1) for n in range(m))
         ...     for m in range(1,30)]

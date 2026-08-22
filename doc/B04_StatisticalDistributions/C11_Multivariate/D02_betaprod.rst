@@ -52,7 +52,7 @@ Distribution of the product of independent beta variables
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", beta_product(mu, sigma).pdf(x))
@@ -75,7 +75,7 @@ Distribution of the product of independent beta variables
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", beta_product(mu, sigma).pdf(x))
@@ -99,7 +99,7 @@ Distribution of the product of independent beta variables
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", beta_product(mu, sigma).pdf(x))
@@ -120,7 +120,7 @@ Distribution of the product of independent beta variables
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", beta_product(mu, sigma).qtf(q))
@@ -141,7 +141,7 @@ Distribution of the product of independent beta variables
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", beta_product(mu, sigma).isf(q))
@@ -161,7 +161,7 @@ Distribution of the product of independent beta variables
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", beta_product(mu, sigma).c_x(t))
@@ -181,7 +181,7 @@ Distribution of the product of independent beta variables
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", beta_product(mu, sigma).c_x(t))
@@ -204,7 +204,7 @@ Distribution of the product of independent beta variables
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", beta_product(mu, sigma).k_x(t, k))
@@ -225,7 +225,7 @@ Distribution of the product of independent beta variables
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", beta_product(mu, sigma).moments(k))
@@ -242,7 +242,7 @@ Distribution of the product of independent beta variables
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", beta_product(mu, sigma).cumulants(k))

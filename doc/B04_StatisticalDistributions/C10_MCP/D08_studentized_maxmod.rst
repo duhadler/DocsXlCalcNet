@@ -55,7 +55,7 @@ Studentized maximum modulus distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", smm(mu, sigma).pdf(x))
@@ -79,7 +79,7 @@ Studentized maximum modulus distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", smm(mu, sigma).pdf(x))
@@ -102,7 +102,7 @@ Studentized maximum modulus distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", smm(mu, sigma).pdf(x))
@@ -122,7 +122,7 @@ Studentized maximum modulus distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", smm(mu, sigma).qtf(q))
@@ -144,7 +144,7 @@ Studentized maximum modulus distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", smm(mu, sigma).isf(q))
@@ -164,7 +164,7 @@ Studentized maximum modulus distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", smm(mu, sigma).c_x(t))
@@ -204,7 +204,7 @@ Studentized maximum modulus distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", smm(mu, sigma).moments(k))
@@ -221,7 +221,7 @@ Studentized maximum modulus distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", smm(mu, sigma).cumulants(k))

@@ -47,7 +47,7 @@ Distribution of Wilks' `L_{vc}`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", fisher_f(mu, sigma).pdf(x))
@@ -72,7 +72,7 @@ Distribution of Wilks' `L_{vc}`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", fisher_f(mu, sigma).pdf(x))
@@ -97,7 +97,7 @@ Distribution of Wilks' `L_{vc}`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", fisher_f(mu, sigma).pdf(x))
@@ -117,7 +117,7 @@ Distribution of Wilks' `L_{vc}`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", fisher_f(mu, sigma).qtf(q))
@@ -138,7 +138,7 @@ Distribution of Wilks' `L_{vc}`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", fisher_f(mu, sigma).isf(q))
@@ -159,7 +159,7 @@ Distribution of Wilks' `L_{vc}`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", fisher_f(mu, sigma).isf(q))
@@ -179,7 +179,7 @@ Distribution of Wilks' `L_{vc}`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", fisher_f(mu, sigma).isf(q))
@@ -203,7 +203,7 @@ Distribution of Wilks' `L_{vc}`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", fisher_f(mu, sigma).isf(q))
@@ -222,7 +222,7 @@ Distribution of Wilks' `L_{vc}`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", fisher_f(mu, sigma).isf(q))
@@ -244,7 +244,7 @@ where `\psi^{(r)}(\cdot)` is the polygamma function of order `r`.
 
 .. code-block:: python
 
-    >>> from mpfunlab import *
+    >>> from xlcalcnet import *
     >>> mp.dps = 30
     >>> mu = 0; sigma = 1; q = 0.3; 
     >>> print ("isf: ", fisher_f(mu, sigma).isf(q))

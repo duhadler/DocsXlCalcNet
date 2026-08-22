@@ -127,7 +127,7 @@ See also: https://www.johndcook.com/blog/2009/11/24/kumaraswamy-distribution/
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", mp_kumaraswamy(mu, sigma).pdf(x))
@@ -148,7 +148,7 @@ See also: https://www.johndcook.com/blog/2009/11/24/kumaraswamy-distribution/
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", mp_kumaraswamy(mu, sigma).pdf(x))
@@ -168,7 +168,7 @@ See also: https://www.johndcook.com/blog/2009/11/24/kumaraswamy-distribution/
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", mp_kumaraswamy(mu, sigma).pdf(x))
@@ -188,7 +188,7 @@ See also: https://www.johndcook.com/blog/2009/11/24/kumaraswamy-distribution/
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", mp_kumaraswamy(mu, sigma).qtf(q))
@@ -208,7 +208,7 @@ See also: https://www.johndcook.com/blog/2009/11/24/kumaraswamy-distribution/
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", mp_kumaraswamy(mu, sigma).isf(q))
@@ -229,7 +229,7 @@ See also: https://www.johndcook.com/blog/2009/11/24/kumaraswamy-distribution/
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", mp_kumaraswamy(mu, sigma).c_x(t))
@@ -250,7 +250,7 @@ See also: https://www.johndcook.com/blog/2009/11/24/kumaraswamy-distribution/
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", mp_kumaraswamy(mu, sigma).c_x(t))
@@ -271,7 +271,7 @@ See also: https://www.johndcook.com/blog/2009/11/24/kumaraswamy-distribution/
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", mp_kumaraswamy(mu, sigma).k_x(t, k))
@@ -297,7 +297,7 @@ See also: https://www.johndcook.com/blog/2009/11/24/kumaraswamy-distribution/
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mp_kumaraswamy(mu, sigma).moments(k))
@@ -314,7 +314,7 @@ See also: https://www.johndcook.com/blog/2009/11/24/kumaraswamy-distribution/
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mp_kumaraswamy(mu, sigma).cumulants(k))

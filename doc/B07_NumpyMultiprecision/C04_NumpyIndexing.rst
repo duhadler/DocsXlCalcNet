@@ -75,7 +75,7 @@ Single element indexing works exactly like that for other standard Python sequen
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> x = np.arange(10)
     >>> x[2]
     2
@@ -130,7 +130,7 @@ The basic slice syntax is i:j:k where `i` is the starting index, `j` is the stop
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> x = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
     >>> x[1:7:2]
     array([1, 3, 5])
@@ -157,7 +157,7 @@ If the number of objects in the selection tuple is less than `N`, then ``:`` is 
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> x = np.array([[[1],[2],[3]], [[4],[5],[6]]])
     >>> x.shape
     (2, 3, 1)
@@ -248,7 +248,7 @@ NumPy operations are usually done on pairs of arrays on an element-by-element ba
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> a = np.array([1.0, 2.0, 3.0])
     >>> b = np.array([2.0, 2.0, 2.0])
     >>> a * b
@@ -259,7 +259,7 @@ NumPy’s broadcasting rule relaxes this constraint when the arrays’ shapes me
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
     >>> a = np.array([1.0, 2.0, 3.0])
     >>> b = 2.0
     >>> a * b
@@ -372,7 +372,7 @@ An example of broadcasting when a 1-d array is added to a 2-d array:
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
 
     >>> a = np.array([[ 0.0,  0.0,  0.0], [10.0, 10.0, 10.0], [20.0, 20.0, 20.0], [30.0, 30.0, 30.0]])
     >>> b = np.array([1.0, 2.0, 3.0])
@@ -396,7 +396,7 @@ Broadcasting provides a convenient way of taking the outer product (or any other
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
 
     >>> a = np.array([0.0, 10.0, 20.0, 30.0])
     >>> b = np.array([1.0, 2.0, 3.0])
@@ -430,7 +430,7 @@ As mentioned, one can select a subset of an array to assign to using a single in
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
 
     >>> x = np.arange(10)
     >>> x[2:7] = 1
@@ -448,7 +448,7 @@ Note that assignments may result in changes if assigning higher types to lower t
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
 
     >>> x[1] = 1.2
     >>> x[1]
@@ -465,7 +465,7 @@ Unlike some of the references (such as array and mask indices) assignments are a
 
 .. code-block:: pycon
 
-    >>> import numpy as np; from mpfunlab import mpm, dpm
+    >>> import numpy as np; from xlcalcnet import mpm, dpm
 
     >>> x = np.arange(0, 50, 10)
     >>> x

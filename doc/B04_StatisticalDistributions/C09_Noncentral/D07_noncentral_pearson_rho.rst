@@ -59,7 +59,7 @@ Noncentral distribution of the sample correlation coefficient
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", pearson_rho_nc(mu, sigma).pdf(x))
@@ -82,7 +82,7 @@ Noncentral distribution of the sample correlation coefficient
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", pearson_rho_nc(mu, sigma).pdf(x))
@@ -102,7 +102,7 @@ Noncentral distribution of the sample correlation coefficient
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", pearson_rho_nc(mu, sigma).pdf(x))
@@ -123,7 +123,7 @@ Noncentral distribution of the sample correlation coefficient
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", pearson_rho_nc(mu, sigma).qtf(q))
@@ -143,7 +143,7 @@ Noncentral distribution of the sample correlation coefficient
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", pearson_rho_nc(mu, sigma).isf(q))
@@ -163,7 +163,7 @@ Noncentral distribution of the sample correlation coefficient
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", pearson_rho_nc(mu, sigma).c_x(t))
@@ -183,7 +183,7 @@ Noncentral distribution of the sample correlation coefficient
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", pearson_rho_nc(mu, sigma).c_x(t))
@@ -203,7 +203,7 @@ Noncentral distribution of the sample correlation coefficient
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", pearson_rho_nc(mu, sigma).k_x(t, k))
@@ -237,7 +237,7 @@ Noncentral distribution of the sample correlation coefficient
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", pearson_rho_nc(mu, sigma).moments(k))
@@ -255,7 +255,7 @@ Noncentral distribution of the sample correlation coefficient
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", pearson_rho_nc(mu, sigma).cumulants(k))

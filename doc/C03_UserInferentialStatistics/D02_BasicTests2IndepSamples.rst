@@ -114,7 +114,7 @@ Student t-test for 2 independent samples: tests (p-values)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1Test(means:=[5.24, 4.05], sd:=1.5, n:=22)
 
         Input
@@ -193,7 +193,7 @@ Student t-test for 2 independent samples:  confidence intervals
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mean:=5.24, mean0:=4.05, sd:=1.5, n:=22, alpha=0.05, resultstring)
 
         Input
@@ -287,7 +287,7 @@ Student t-test for 2 independent samples: power
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mu1:=5.24, mu0:=4.05, sd:=1.5, n:=22, alpha:=0.05)
 
         Input
@@ -380,7 +380,7 @@ Student t-test for 2 independent samples: sample size calculation
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mu1:=5.24, mu0:=4.05, sd:=1.5, alpha:=0.05, beta:=0.1)
                                                  df: 21
                                 difference of means: 1.19
@@ -542,7 +542,7 @@ F-test for the variances of 2 independent samples: tests (p-values)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1Test(means:=[5.24, 4.05], sd:=1.5, n:=22)
 
         Input
@@ -621,7 +621,7 @@ F-test for the variances of 2 independent samples: confidence intervals
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mean:=5.24, mean0:=4.05, sd:=1.5, n:=22, alpha=0.05, resultstring)
 
         Input
@@ -712,7 +712,7 @@ F-test for the variances of 2 independent samples: power
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mu1:=5.24, mu0:=4.05, sd:=1.5, n:=22, alpha:=0.05)
 
         Input
@@ -802,7 +802,7 @@ F-test for the variances of 2 independent samples: sample size
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mu1:=5.24, mu0:=4.05, sd:=1.5, alpha:=0.05, beta:=0.1)
                                                  df: 21
                                 difference of means: 1.19

@@ -44,7 +44,7 @@ Birnbaum-Saunders Distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", mp_birnb_saunders(mu, sigma).pdf(x))
@@ -65,7 +65,7 @@ Birnbaum-Saunders Distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", mp_birnb_saunders(mu, sigma).pdf(x))
@@ -85,7 +85,7 @@ Birnbaum-Saunders Distribution
 
     .. code-block:: python
 
-    >>> from mpfunlab import *
+    >>> from xlcalcnet import *
     >>> mp.dps = 30
     >>> mu = 0; sigma = 1; x = 3; 
     >>> print (" sf: ", mp_birnb_saunders(mu, sigma).pdf(x))
@@ -105,7 +105,7 @@ Birnbaum-Saunders Distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", mp_birnb_saunders(mu, sigma).qtf(q))
@@ -125,7 +125,7 @@ Birnbaum-Saunders Distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", mp_birnb_saunders(mu, sigma).isf(q))
@@ -146,7 +146,7 @@ Birnbaum-Saunders Distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", mp_birnb_saunders(mu, sigma).c_x(t))
@@ -167,7 +167,7 @@ Birnbaum-Saunders Distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", mp_birnb_saunders(mu, sigma).c_x(t))
@@ -187,7 +187,7 @@ Birnbaum-Saunders Distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", mp_birnb_saunders(mu, sigma).k_x(t, k))
@@ -213,7 +213,7 @@ Birnbaum-Saunders Distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mp_birnb_saunders(mu, sigma).moments(k))
@@ -230,7 +230,7 @@ Birnbaum-Saunders Distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mp_birnb_saunders(mu, sigma).cumulants(k))

@@ -60,7 +60,7 @@ Multiple correlation coefficient (Lee and Gurland)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.hotelling_t2_ind_chi2_cdf(x, nu, nc); mx = mpm.hotelling_t2_ind_chi2_cdf(x, nu, nc)
         >>> ix = ipm.hotelling_t2_ind_chi2_cdf(x, nu, nc); fx = fpm.hotelling_t2_ind_chi2_cdf(x, nu, nc)
@@ -92,7 +92,7 @@ Noncentral Wilks' Lambda under the GLM alternative
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.wilks_lambda_glm_mu2_cdf(x, nu, nc); mx = mpm.wilks_lambda_glm_mu2_cdf(x, nu, nc)
         >>> ix = ipm.wilks_lambda_glm_mu2_cdf(x, nu, nc); fx = fpm.wilks_lambda_glm_mu2_cdf(x, nu, nc)
@@ -125,7 +125,7 @@ Noncentral Wilks' Lambda under the independence alternative
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.wilks_lambda_ind_mu2_cdf(x, nu, nc); mx = mpm.wilks_lambda_ind_mu2_cdf(x, nu, nc)
         >>> ix = ipm.wilks_lambda_ind_mu2_cdf(x, nu, nc); fx = fpm.wilks_lambda_ind_mu2_cdf(x, nu, nc)
@@ -158,7 +158,7 @@ Noncentral Hotelling's T under the GLM alternative
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.hotelling_t2_glm_mu2_cdf(x, nu, nc); mx = mpm.hotelling_t2_glm_mu2_cdf(x, nu, nc)
         >>> ix = ipm.hotelling_t2_glm_mu2_cdf(x, nu, nc); fx = fpm.hotelling_t2_glm_mu2_cdf(x, nu, nc)
@@ -188,7 +188,7 @@ Noncentral Hotelling's T under the independence alternative
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.hotelling_t2_ind_mu2_cdf(x, nu, nc); mx = mpm.hotelling_t2_ind_mu2_cdf(x, nu, nc)
         >>> ix = ipm.hotelling_t2_ind_mu2_cdf(x, nu, nc); fx = fpm.hotelling_t2_ind_mu2_cdf(x, nu, nc)
@@ -223,7 +223,7 @@ Noncentral Pillai's V under the GLM alternative
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.pillai_v_glm_mu2_cdf(x, nu, nc); mx = mpm.pillai_v_glm_mu2_cdf(x, nu, nc)
         >>> ix = ipm.pillai_v_glm_mu2_cdf(x, nu, nc); fx = fpm.pillai_v_glm_mu2_cdf(x, nu, nc)
@@ -257,7 +257,7 @@ Noncentral Pillai's V under the independence alternative
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.pillai_v_ind_mu2_cdf(x, nu, nc); mx = mpm.pillai_v_ind_mu2_cdf(x, nu, nc)
         >>> ix = ipm.pillai_v_ind_mu2_cdf(x, nu, nc); fx = fpm.pillai_v_ind_mu2_cdf(x, nu, nc)
@@ -311,7 +311,7 @@ Noncentral Roy's largest root under the GLM alternative
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.roy_glm_mu2_cdf(x, nu, nc); mx = mpm.roy_glm_mu2_cdf(x, nu, nc)
         >>> ix = ipm.roy_glm_mu2_cdf(x, nu, nc); fx = fpm.roy_glm_mu2_cdf(x, nu, nc)
@@ -364,7 +364,7 @@ Noncentral Roy's largest root under the independence alternative
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.roy_ind_mu2_cdf(x, nu, nc); mx = mpm.roy_ind_mu2_cdf(x, nu, nc)
         >>> ix = ipm.roy_ind_mu2_cdf(x, nu, nc); fx = fpm.roy_ind_mu2_cdf(x, nu, nc)

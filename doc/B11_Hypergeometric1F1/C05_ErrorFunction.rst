@@ -362,20 +362,9 @@ Imaginary error function, `\mathrm{erfi}(x)`
 
     where ``ctx`` is ``math53``, ``mathc53``, ``ctxflint``.
 
-    Returns the imaginary error function  `\displaystyle \mathrm{erfi}(x) = \frac{2}{\sqrt \pi} \int_0^x \exp(t^2)\, \mathrm{d}t =  \frac{2}{\sqrt \pi} e^{x^2} \mathrm{dawson}(x)`. 
-
-    Returns the imaginary error function  `\displaystyle \mathrm{erfi}(z) = -i \mathrm{erf}(i z)`. 
+    Returns the imaginary error function  `\displaystyle \mathrm{erfi}(x) = \frac{2}{\sqrt \pi} \int_0^x \exp(t^2)\, \mathrm{d}t =  \frac{1}{i} \text{erf}(ix) =  \frac{2}{\sqrt \pi} e^{x^2} \mathrm{dawson}(x)`. 
 
     See also  Wikipedia :cite:p:`WikipediaFun09`, MathWorld :cite:p:`WolframFun09`, :cite:t:`Ehrhardt2018` (3.3.8), Flint :cite:p:`FlintFun07`, Flint :cite:p:`FlintFun08`, Mpmath :cite:p:`MpmathFun09`. 
-
-
-    The function is defined as:
-
-    .. math :: \text{erfi}(x) =  \frac{1}{i} \text{erf}(ix).
-
-    `\text{erfi}(x)` is computed using the Dawson integral as
-
-    .. math :: \text{erfi}(x) =   \frac{2}{\sqrt{\pi}} e^{x^2} \text{dawson}(x).
 
 
 
@@ -435,17 +424,10 @@ Dawson integral, `F(x)`
 
 .. method:: math53.dawson(x)
 
-    Returns the Dawson integral `\displaystyle F(z) = e^{-z^2} \int_0^z e^{t^2} \mathrm{d}t = \frac{\sqrt{\pi}}{2} e^{-z^2} \mathrm{erfi}(z)`. See also Wikipedia :cite:p:`WikipediaFun186`, MathWorld :cite:p:`WolframFun186`, :cite:t:`Ehrhardt2018` (3.3.1), NIST :cite:p:`DLMFun186`.
+    Returns the Dawson integral `\displaystyle F(z) = e^{-z^2} \int_0^z e^{t^2} \mathrm{d}t = \frac{\sqrt{\pi}}{2} e^{-z^2} \mathrm{erfi}(z) = {\frac {i{\sqrt {\pi }}}{2}}\left[e^{-z^{2}}-w(z)\right]`. 
 
 
-    Dawson's integral is defined by
-
-    .. math :: F(x) = e^{-x^2} \int_0^x e^{-x^2} \mathrm{d}t,
-
-    In terms of either erfi or the Faddeeva function w(z), the Dawson function can be extended to the entire complex plane:[3]
-
-    .. math :: F(z)={{\sqrt {\pi }} \over 2}e^{-z^{2}}\mathrm {erfi} (z)={\frac {i{\sqrt {\pi }}}{2}}\left[e^{-z^{2}}-w(z)\right],
-
+    See also Wikipedia :cite:p:`WikipediaFun186`, MathWorld :cite:p:`WolframFun186`, :cite:t:`Ehrhardt2018` (3.3.1), NIST :cite:p:`DLMFun186`.
 
 
 
@@ -526,16 +508,9 @@ Faddeeva function, `w(z)`
 
 .. method:: math53.faddeeva(z)
 
-    Returns the Faddeeva function function
+    Returns the Faddeeva function function `\displaystyle w(z):=e^{-z^{2}}\operatorname {erfc} (-iz)=\operatorname {erfcx} (-iz)=e^{-z^{2}}\left(1+{\frac {2i}{\sqrt {\pi }}}\int _{0}^{z}e^{t^{2}}{\text{d}}t\right)`.
 
     See also Wikipedia :cite:p:`WikipediaFun184`, NIST :cite:p:`DLMFun184`.
-
-    The Faddeeva function or Kramp function is a scaled complex complementary error function,
-
-    .. math :: w(z):=e^{-z^{2}}\operatorname {erfc} (-iz)=\operatorname {erfcx} (-iz)=e^{-z^{2}}\left(1+{\frac {2i}{\sqrt {\pi }}}\int _{0}^{z}e^{t^{2}}{\text{d}}t\right).
-
-    It is related to the Fresnel integral, to Dawson's integral, and to the Voigt function.
-
 
 
 
@@ -795,6 +770,8 @@ Fresnel cosine integral, `C(x)`
 
 
 
+
+|newpage|
 
 
 Owen's T function, `T(h,a)`

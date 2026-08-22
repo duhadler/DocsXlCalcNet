@@ -49,7 +49,7 @@ q-Pochhammer symbol
 
     If `n` is a positive integer, the function amounts to a finite product::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> qp(2,3,5)
         -725305.0
@@ -87,7 +87,7 @@ q-gamma function
 
     Evaluation for real and complex arguments::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> qgamma(4,0.75)
         4.046875
@@ -132,7 +132,7 @@ q-factorial
 
     **Examples**
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> qfac(0,0)
         1.0
@@ -178,7 +178,7 @@ Hypergeometric q-series
 
     Evaluation works for real and complex arguments::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> qhyper([0.5], [2.25], 0.25, 4)
         -0.1975849091263356009534385

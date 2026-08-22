@@ -127,7 +127,7 @@ See also  Wikipedia :cite:p:`WikipediaDis40`, :cite:t:`Ehrhardt2018` (3.9.16).
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", levy(mu, sigma).pdf(x))
@@ -148,7 +148,7 @@ See also  Wikipedia :cite:p:`WikipediaDis40`, :cite:t:`Ehrhardt2018` (3.9.16).
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", levy(mu, sigma).pdf(x))
@@ -168,7 +168,7 @@ See also  Wikipedia :cite:p:`WikipediaDis40`, :cite:t:`Ehrhardt2018` (3.9.16).
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", levy(mu, sigma).pdf(x))
@@ -189,7 +189,7 @@ See also  Wikipedia :cite:p:`WikipediaDis40`, :cite:t:`Ehrhardt2018` (3.9.16).
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", levy(mu, sigma).qtf(q))
@@ -212,7 +212,7 @@ See also  Wikipedia :cite:p:`WikipediaDis40`, :cite:t:`Ehrhardt2018` (3.9.16).
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", levy(mu, sigma).isf(q))
@@ -233,7 +233,7 @@ See also  Wikipedia :cite:p:`WikipediaDis40`, :cite:t:`Ehrhardt2018` (3.9.16).
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", levy(mu, sigma).c_x(t))

@@ -86,7 +86,7 @@ Cholesky decomposition
 
     Cholesky decomposition of a positive-definite symmetric matrix::
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> A = eye(3) + hilbert(3)
         >>> nprint(A)
@@ -250,7 +250,7 @@ Linear equations: LU solve
 
     using ``lu_solve``::
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.pretty = False
         >>> A = matrix([[1, 2], [3, 4]])
         >>> b = matrix([-10, 10])
@@ -372,7 +372,7 @@ QR factorization
 
     **Examples**
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15
         >>> mp.pretty = True
         >>> A = matrix([[1, 2], [3, 4], [1, 1]])

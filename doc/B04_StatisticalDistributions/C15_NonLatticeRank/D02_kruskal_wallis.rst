@@ -52,7 +52,7 @@ Kruskal-Wallis distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pmf: ", kruskal_wallis_continuous(mu, sigma).pmf(x))
@@ -74,7 +74,7 @@ Kruskal-Wallis distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", kruskal_wallis_continuous(mu, sigma).pmf(x))
@@ -94,7 +94,7 @@ Kruskal-Wallis distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", kruskal_wallis_continuous(mu, sigma).pmf(x))
@@ -113,7 +113,7 @@ Kruskal-Wallis distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", kruskal_wallis_continuous(mu, sigma).qtf(q))
@@ -133,7 +133,7 @@ Kruskal-Wallis distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", kruskal_wallis_continuous(mu, sigma).isf(q))
@@ -154,7 +154,7 @@ Kruskal-Wallis distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", kruskal_wallis_continuous(mu, sigma).c_x(t))
@@ -175,7 +175,7 @@ Kruskal-Wallis distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", kruskal_wallis_continuous(mu, sigma).c_x(t))
@@ -196,7 +196,7 @@ Kruskal-Wallis distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", kruskal_wallis_continuous(mu, sigma).k_x(t, k))
@@ -219,7 +219,7 @@ Kruskal-Wallis distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", kruskal_wallis_continuous(mu, sigma).moments(k))
@@ -239,7 +239,7 @@ following a Kruskal-Wallis distribution. The cumulants of `J_N` are given by :
 
 .. code-block:: python
 
-	>>> from mpfunlab import *
+	>>> from xlcalcnet import *
 	>>> mp.dps = 30
 	>>> mu = 0; sigma = 1; k = 6;
 	>>> print ("saddlepoint: ", kruskal_wallis_continuous(mu, sigma).cumulants(k))

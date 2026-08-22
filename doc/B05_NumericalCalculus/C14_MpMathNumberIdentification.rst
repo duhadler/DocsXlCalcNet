@@ -69,7 +69,7 @@ Constant recognition
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> pslq([-1, pi], tol=0.01)
         [22, 7]
@@ -205,7 +205,7 @@ Algebraic identification
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> findpoly(0.7)
         [-10, 7]
@@ -322,7 +322,7 @@ Integer relations (PSLQ)
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> identify(phi)
         '((1+sqrt(5))/2)'

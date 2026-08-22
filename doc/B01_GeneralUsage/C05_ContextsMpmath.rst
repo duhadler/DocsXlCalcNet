@@ -70,7 +70,7 @@ By and large, xlcalcnet tries to be compatible with mpmath conventions as much a
 
 .. code-block:: pycon
 
-    >>> from mpmath import *
+    >>> from xlcalcnet import *
     >>> sqrt(2)
     mpf('1.4142135623730951')
 
@@ -279,6 +279,9 @@ A number of algorithms use this exception to trigger a temporary increase of pre
 Double-precision arithmetic (``fpm``)
 ---------------------------------------------
 
+The source code for this module can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_fpm.py
+
+
 Although mpmath is generally designed for arbitrary-precision arithmetic, many of the high-level algorithms work perfectly well with ordinary Python ``float`` and ``complex`` numbers, which use hardware double precision (on most systems, this corresponds to 53 bits of precision). Whereas the global functions (which are methods of the ``mp`` object) always convert inputs to mpmath numbers, the ``fp`` object instead converts them to ``float`` or ``complex``, and in some cases employs basic functions optimized for double precision. When large amounts of function evaluations (numerical integration, plotting, etc) are required, and when ``fp`` arithmetic provides sufficient accuracy, this can give a significant speedup over ``mp`` arithmetic.
 
 To take advantage of this feature, simply use the ``fp`` prefix, i.e. write ``fp.func`` instead of ``func`` or ``mp.func``::
@@ -351,6 +354,10 @@ Due to intermediate rounding and cancellation errors, results computed with ``fp
 Binary floating-point in arbitrary-precision and with arbitrary exponent  (``mpm``)
 -------------------------------------------------------------------------------------
 
+
+The source code for this module can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_mpm.py
+
+
 The ``mp`` context is what most users probably want to use most of the time, as it supports the most functions, is most well-tested, and is implemented with a high level of optimization. Nearly all examples in this documentation use ``mp`` functions.
 
 
@@ -385,6 +392,10 @@ the direction away from zero.
 
 Interval arithmetic in arbitrary-precision and with arbitrary exponent (``ipm``)
 --------------------------------------------------------------------------------------
+
+
+The source code for this module can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_ipm.py
+
 
 The ``iv.mpf`` type represents a closed interval `[a,b]`; that is, the set `\{x : a \le x \le b\}`, where `a` and `b` are arbitrary-precision floating-point values, possibly `\pm \infty`. The ``iv.mpc`` type represents a rectangular complex interval `[a,b] + [c,d]i`; that is, the set `\{z = x+iy : a \le x \le b \land c \le y \le d\}`.
 
@@ -596,6 +607,9 @@ Decimal floating-point in arbitrary-precision with limited exponent (``dpm``)
 ---------------------------------------------------------------------------------
 
 
+The source code for this module can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_dpm.py
+
+
 
 Additional contexts are used in xlcalcnet to implement its functions for the mpmath data types, and the Decimal data type, which is part of Python. 
 
@@ -653,6 +667,9 @@ Examples2:
 Rational numbers (``qpm``)
 ---------------------------------------------------------------------------------
 
+The source code for this module can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_qpm.py
+
+
 
 The ``qpm`` data type is mostly useful in the context of linear algebra, where it can provide exact results.
 
@@ -673,6 +690,9 @@ If ``apm`` is available, the ``fmpq`` data type is used; otherwise, if ``gpm`` i
 
 Binary floating-point in arbitrary-precision with limited exponent (``gpm``)
 --------------------------------------------------------------------------------------
+
+The source code for this module can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_gpm.py
+
 
 
 gmpy2 is a C-coded Python extension module that supports multiple-precision arithmetic. 
@@ -747,23 +767,17 @@ Examples2:
 Binary balls in arbitrary-precision and with arbitrary exponent  (``apm``)
 -------------------------------------------------------------------------------------
 
+The source code for this module can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_apm.py
+
+
 The ``apm`` context is what most users probably want to use most of the time, as it supports the most functions, is most well-tested, and is implemented with a high level of optimization.
 
 
 pythonflint is a C-coded Python extension module that supports multiple-precision arithmetic. 
 
-https://gmpy2.readthedocs.io/en/latest/
-
-gmpy2 is the successor to the original gmpy module. The gmpy module only supported the GMP multiple-precision library. gmpy2 adds support for the MPFR (correctly rounded real floating-point arithmetic) and MPC (correctly rounded complex floating-point arithmetic) libraries. gmpy2 also updates the API and naming conventions to be more consistent and support the additional functionality. The following libraries are supported:
-
-• GMP for integer and rational arithmetic. Home page: http://gmplib.org, or MPIR, which is based on the GMP library but adds support for Microsoft’s Visual Studio compiler. It is used to create the Windows binaries. Home page: http://www.mpir.org
-
-• MPFR for correctly rounded real floating-point arithmetic. Home page: http://www.mpfr.org
-
-• MPC for correctly rounded complex floating-point arithmetic. Home page: http://mpc.multiprecision.org
+https://python-flint.readthedocs.io/en/latest/
 
 
-For building issues, see https://github.com/aleaxit/gmpy and https://github.com/BrianGladman/gmpy2.
 
 
 Examples:

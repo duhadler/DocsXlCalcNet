@@ -175,7 +175,7 @@ See also  Wikipedia :cite:p:`WikipediaDis03`, MathWorld :cite:p:`WolframDis03`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", student_t_nc(mu, sigma).pdf(x))
@@ -199,7 +199,7 @@ See also  Wikipedia :cite:p:`WikipediaDis03`, MathWorld :cite:p:`WolframDis03`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", student_t_nc(mu, sigma).pdf(x))
@@ -219,7 +219,7 @@ See also  Wikipedia :cite:p:`WikipediaDis03`, MathWorld :cite:p:`WolframDis03`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", student_t_nc(mu, sigma).pdf(x))
@@ -239,7 +239,7 @@ See also  Wikipedia :cite:p:`WikipediaDis03`, MathWorld :cite:p:`WolframDis03`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", student_t_nc(mu, sigma).qtf(q))
@@ -259,7 +259,7 @@ See also  Wikipedia :cite:p:`WikipediaDis03`, MathWorld :cite:p:`WolframDis03`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", student_t_nc(mu, sigma).isf(q))
@@ -279,7 +279,7 @@ See also  Wikipedia :cite:p:`WikipediaDis03`, MathWorld :cite:p:`WolframDis03`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", student_t_nc(mu, sigma).c_x(t))
@@ -322,7 +322,7 @@ See also  Wikipedia :cite:p:`WikipediaDis03`, MathWorld :cite:p:`WolframDis03`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", student_t_nc(mu, sigma).moments(k))
@@ -340,7 +340,7 @@ following a non-central Student t distribution. The cumulants are calculated fro
 
 .. code-block:: python
 
-    >>> from mpfunlab import *
+    >>> from xlcalcnet import *
     >>> mp.dps = 30
     >>> mu = 0; sigma = 1; k = 6;
     >>> print ("saddlepoint: ", student_t_nc(mu, sigma).cumulants(k))

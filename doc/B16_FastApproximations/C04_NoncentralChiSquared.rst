@@ -103,7 +103,7 @@ Non-central Wilks' Lambda (GLM): cdf and sf (Fujikoshi)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.wilks_lambda_glm_chi2_cdf(x, nu, nc); mx = mpm.wilks_lambda_glm_chi2_cdf(x, nu, nc)
         >>> ix = ipm.wilks_lambda_glm_chi2_cdf(x, nu, nc); fx = fpm.wilks_lambda_glm_chi2_cdf(x, nu, nc)
@@ -187,7 +187,7 @@ Non-central Wilks' Lambda (independence): cdf and sf (Lee)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.wilks_lambda_ind_chi2_cdf(x, nu, nc); mx = mpm.wilks_lambda_ind_chi2_cdf(x, nu, nc)
         >>> ix = ipm.wilks_lambda_ind_chi2_cdf(x, nu, nc); fx = fpm.wilks_lambda_ind_chi2_cdf(x, nu, nc)
@@ -275,7 +275,7 @@ Non-central Pillai's V (GLM): cdf and sf Fujikoshi
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.pillai_v_glm_chi2_cdf(x, nu, nc); mx = mpm.pillai_v_glm_chi2_cdf(x, nu, nc)
         >>> ix = ipm.pillai_v_glm_chi2_cdf(x, nu, nc); fx = fpm.pillai_v_glm_chi2_cdf(x, nu, nc)
@@ -353,7 +353,7 @@ Non-central Pillai's V (independence): cdf and sf (Lee)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.pillai_v_ind_chi2_cdf(x, nu, nc); mx = mpm.pillai_v_ind_chi2_cdf(x, nu, nc)
         >>> ix = ipm.pillai_v_ind_chi2_cdf(x, nu, nc); fx = fpm.pillai_v_ind_chi2_cdf(x, nu, nc)
@@ -433,7 +433,7 @@ Non-central Hotelling `T^2` (GLM): cdf and sf (Fujikoshi)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.hotelling_t2_glm_chi2_cdf(x, nu, nc); mx = mpm.hotelling_t2_glm_chi2_cdf(x, nu, nc)
         >>> ix = ipm.hotelling_t2_glm_chi2_cdf(x, nu, nc); fx = fpm.hotelling_t2_glm_chi2_cdf(x, nu, nc)
@@ -519,7 +519,7 @@ Non-central Hotelling `T^2` (independence): cdf and sf (Lee)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.hotelling_t2_ind_chi2_cdf(x, nu, nc); mx = mpm.hotelling_t2_ind_chi2_cdf(x, nu, nc)
         >>> ix = ipm.hotelling_t2_ind_chi2_cdf(x, nu, nc); fx = fpm.hotelling_t2_ind_chi2_cdf(x, nu, nc)

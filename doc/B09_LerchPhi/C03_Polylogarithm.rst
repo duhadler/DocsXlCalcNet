@@ -30,26 +30,15 @@ Polylogarithm, `\mathrm{Li}_s(z)`
     where ``ctx`` is ``math53``, ``ctxflint``.
 
 
-    Returns the polylogarithm  of real order `s`, `\displaystyle \mathrm{Li}_s(x) = \sum_{k=1}^{\infty} \frac{x^k}{k^s}, \quad s \ge -1, |x| \le 1 \,`, or its analytic continuation.
-
-    For `s \le 1` there is the additional argument restriction `x \ne 1` and `s` must be positive for `x < -1` or `x > 256`. 
-
-    Special cases are `\mathrm{Li}_s(0) = 0`, `\mathrm{Li}_s(1) = \zeta(s)`, `\mathrm{Li}_s(-1) =  -\eta(s)`. For `x>1` the real part of `\mathrm{Li}_s(x)` is returned.
+    Returns the polylogarithm  of real order `s`, `\displaystyle \mathrm{Li}_s(x) = \sum_{k=1}^{\infty} \frac{x^k}{k^s}, \quad s \ge -1, |x| \le 1 \,`, or its analytic continuation. For `s\leq 1` there is the additional arguments restriction `z\neq 1`.
 
     See also   Wikipedia :cite:p:`WikipediaFun173`, MathWorld :cite:p:`WolframFun173`, NIST :cite:p:`DLMFun173`, :cite:t:`Ehrhardt2018` (3.6.12), Flint :cite:p:`FlintFun173`, Mpmath :cite:p:`MpmathFun173`. 
 
 
-    This function returns the polylogarithm function of real order `s`
-
-    .. math :: \text{Li}_s(z)=\sum_{k=1}^\infty \frac{z^{k}}{k^s}, \quad s >0,  |z|<1.
-
-    .. math :: \text{Li}_s(x) = \Phi(z, s, 1).
+    Special cases are `\mathrm{Li}_s(0) = 0`, `\mathrm{Li}_s(1) = \zeta(s)`, `\mathrm{Li}_s(-1) =  -\eta(s)`. For `x>1` the real part of `\mathrm{Li}_s(x)` is returned.
 
 
-    for `s\leq 1` there is the additional arguments restriction `z\neq 1`.
 
-
-    
 
     |05a_TestPolylog_re| `\quad` |05b_TestPolylog_im| `\quad` |05c_TestPolylog_abs|
 
@@ -63,7 +52,6 @@ Polylogarithm, `\mathrm{Li}_s(z)`
        :width: 30 %
 
 
-   
 
     **3D wpf plot**: real part (left figure), imaginary part (middle figure) and absolute value with color-coded phase (right figure) of the complex sine function `z = \sin(x + iy)`, with `-6 \le x \le 6` (blue axis), `-6 \le y \le 6` (red axis), `-10 \le z \le 10` (green axis). Function values are :ref:`loglog-transformed <rst_mpm_loglog_transformation>`.
 
@@ -160,9 +148,6 @@ Dilogarithm Function, `\mathrm{Li}_2(z)`
 
     See also   Wikipedia :cite:p:`WikipediaFun174`, MathWorld :cite:p:`WolframFun174`, NIST :cite:p:`DLMFun174`, :cite:t:`Ehrhardt2018` (3.6.13), :cite:t:`Ehrhardt2018` (4.2.25), Flint :cite:p:`FlintFun174`, Mpmath :cite:p:`MpmathFun173`. 
 
-    This function returns the dilogarithm function
-
-    .. math :: \text{dilog}(x) = \Re \text{Li}_2(x) = -\Re \int_0^x \frac{\log(1-t)}{t}\mathrm{d}t.
 
     Note that there is some confusion about the naming: some authors and/or computer algebra systems use `\text{dilog}(x) = \text{Li}_2(1-x)` and then call `\text{Li}_2(x)` Spence function/integral or similar.
 
@@ -458,9 +443,6 @@ Bose-Einstein integrals, `G_s(x)`
 
     .. math :: G_{s}(x)=\frac{1}{\Gamma\left(s+1\right)}\int_{0}^{\infty}\frac{t^{s}}{e^{t-x}-1}\mathrm{d}t,
 
-    In terms of polylogarithms:
-
-    .. math :: G_{s}(x)=\mathrm{Li}_{s+1}\left(e^{x}\right).
 
 
 
@@ -523,13 +505,6 @@ Fermi-Dirac integrals, `F_s(x)`
     Returns the Fermi-Dirac integral of order `s`, `\displaystyle F_s(x) = \frac{1}{\Gamma(s+1)} \int_0^{\infty} \frac{t^s}{e^{t-x}+1} = -\text{Li}_{s+1}(-e^x) \,`.
 
     See also:  Wikipedia :cite:p:`WikipediaFun173c`, MathWorld :cite:p:`WolframFun173c`, :cite:t:`Ehrhardt2018` (3.6.8.1).
-
-
-
-    .. math :: F_{s}(x)=\frac{1}{\Gamma\left(s+1\right)}\int_{0}^{\infty}\frac{t^{s}}{e^{t-x}+1}\mathrm{d}t,
-
-
-    `F_{s}(x)=-\mathrm{Li}_{s+1}\left(-e^{x}\right),`
 
 
 
@@ -598,14 +573,7 @@ Legendre's Chi function, `\chi_s(x)`
     See also:  Wikipedia :cite:p:`WikipediaFun173b`, MathWorld :cite:p:`WolframFun173b`, :cite:t:`Ehrhardt2018` (3.6.9).
 
 
-    The function can be expressed as 
 
-    .. math :: \chi_s(x)=2^{-s} x \Phi\left(x^2,s,\tfrac{1}{2}\right) = \tfrac{1}{2}\left(\text{Li}_s(x)-\text{Li}_s(-x) \right).
-
-    For large `s > 22.8` the function adds up to three terms of the sum,
-    for `s = 0` or `s = 1` the `Li_s` relation is used, otherwise the result is computed with Lerch’s transcendent.
-
-    
 
 
     |09a_TestLegendreChi_re| `\quad` |09b_TestLegendreChi_im| `\quad` |09c_TestLegendreChi_abs|
@@ -685,28 +653,8 @@ Generalized inverse tangent integral
 
 .. method:: ctxflint.inverse_tan_integral(s, z)
 
-
-
-    Returns the generalized inverse tangent integral `Ti_s(z)`.
-
-    See also: Wikipedia :cite:p:`WikipediaFun173a`, MathWorld :cite:p:`WolframFun173a`.
-
-
-
-    This function returns the inverse-tangent integral
-
-    .. math :: \text{Ti}_2(x) = \int_0^x \frac{\arctan(t)}{t} \mathrm{d}t.
-
-    For `x>1` the relation
-
-    .. math :: \text{Ti}_2(x) = \text{Ti}_2\left(\frac{1}{x}\right) + \frac{\pi}{2} \log(x)
-
-    is used, and for `x<0` the result is `\text{Ti}_2(x) = -\text{Ti}_2(-x)`.
-
-    See also MathWorld
-
-    The inverse tangent integral Tis(z) (Lewin 1958, Ch. VII § 1.2) can be expressed in terms of polylogarithms:
-
+    Returns the generalized inverse tangent integral `Ti_s(z)`, which can be expressed in terms of polylogarithms:
+    
     .. math ::  \mathrm {Ti} _{s}(z)={1 \over 2i}\left[\mathrm {Li} _{s}(iz)-\mathrm {Li} _{s}(-iz)\right].
 
     The relation in particular implies:
@@ -715,6 +663,7 @@ Generalized inverse tangent integral
 
     which explains the function name.
 
+    See also: Wikipedia :cite:p:`WikipediaFun173a`, MathWorld :cite:p:`WolframFun173a`, :cite:t:`Ehrhardt2018` (3.6.17).
 
 
 
@@ -730,7 +679,6 @@ Generalized inverse tangent integral
        :width: 30 %
 
 
-   
 
     **3D wpf plot**: real part (left figure), imaginary part (middle figure) and absolute value with color-coded phase (right figure) of the complex sine function `z = \sin(x + iy)`, with `-6 \le x \le 6` (blue axis), `-6 \le y \le 6` (red axis), `-10 \le z \le 10` (green axis). Function values are :ref:`loglog-transformed <rst_mpm_loglog_transformation>`.
 
@@ -774,25 +722,6 @@ Generalized inverse tangent integral
 
 
 
-
-
-
-.. method:: math53.tangent_int(s, x)
-
-    Returns the  inverse tangent integral of real order `s`, `\displaystyle \mathrm{Ti}_s(x)  =  \sum_{k=0}^{\infty}  \frac{(-1)^k x^{2k+1}}{(2k+1)^s}, \quad |x|<1`. 
-
-    See also:  Wikipedia :cite:p:`WikipediaFun173a`, MathWorld :cite:p:`WolframFun173a`, :cite:t:`Ehrhardt2018` (3.6.17).
-
-
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ereal
-        >>> ereal.TangentInt2(2,0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.TangentInt2(2,'0.1')
-        ereal('5.3518479027559984754E-1')
 
 
 

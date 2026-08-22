@@ -66,7 +66,7 @@ fadd: Addition using a custom precision and rounding mode
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fp, mp, iv, dp, gp, ap
+        >>> from xlcalcnet import fp, mp, iv, dp, gp, ap
         >>> mp.fadd(2, 1e-20)
         mpf('2.0')
         >>> mp.nprint(mp.fadd(2, 1e-20, prec=100), 25)
@@ -199,7 +199,7 @@ fsub: Subtraction using a custom precision and rounding mode
 
     Using :func:`~fsub` with precision and rounding control::
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = False
         >>> fsub(2, 1e-20)
         mpf('2.0')
@@ -263,7 +263,7 @@ fneg: Negation of a number using a custom precision and rounding mode
 
     An mpmath number is returned::
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = False
         >>> fneg(2.5)
         mpf('-2.5')
@@ -322,7 +322,7 @@ fmul: Multiplication using a custom precision and rounding mode
 
     The result is an mpmath number::
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = False
         >>> fmul(2, 5.0)
         mpf('10.0')
@@ -389,7 +389,7 @@ fdiv: Division using a custom precision and rounding mode
 
     The result is an mpmath number::
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = False
         >>> fdiv(3, 2)
         mpf('1.5')
@@ -447,7 +447,7 @@ fsum: Sum of a finite number of terms
 
     .. code-block:: python
 
-        >>> from mpfunlab import fp, mp, iv, dp, gp, ap
+        >>> from xlcalcnet import fp, mp, iv, dp, gp, ap
         >>> A = [1, 2, 0.5, 7]
         >>> for ctx in [fp, mp, iv, dp, gp, ap]: ctx.dps = 15;  print(repr(ctx.fsum(A)), end=', ')
         10.5, mpf('10.5'), mpi('10.5', '10.5'), Decimal('10.5'), mpfr('10.5'), arb3_t('10.5'),
@@ -475,7 +475,7 @@ fprod: Product of a finite number of factors
 
     .. code-block:: python
 
-        >>> from mpfunlab import fp, mp, iv, dp, gp, ap
+        >>> from xlcalcnet import fp, mp, iv, dp, gp, ap
         >>> A = [1, 2, 0.5, 7]
         >>> for ctx in [fp, mp, iv, dp, gp, ap]: ctx.dps = 15;  print(repr(ctx.fprod(A)), end=', ')
         7.0, mpf('7.0'), mpi('7.0', '7.0'), Decimal('7.0'), mpfr('7.0'), arb3_t('7.0'),
@@ -525,7 +525,7 @@ fdot: Dot product
 
     .. code-block:: python
 
-        >>> from mpfunlab import fp, mp, iv, dp, gp, ap
+        >>> from xlcalcnet import fp, mp, iv, dp, gp, ap
         >>> A = [2, 1.5, 3]; B = [1, -1, 2]
         >>> for ctx in [fp, mp, iv, dp, gp, ap]: ctx.dps = 15;  print(repr(ctx.fdot(A, B)), end=', ')
         6.5, mpf('6.5'), mpi('6.5', '6.5'), Decimal('6.5'), mpfr('6.5'), arb3_t('6.5'), 

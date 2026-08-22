@@ -57,7 +57,7 @@ Distribution of Dunnett's `t`, one-sided
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", dunnett1_t(mu, sigma).pdf(x))
@@ -82,7 +82,7 @@ Distribution of Dunnett's `t`, one-sided
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", dunnett1_t(mu, sigma).pdf(x))
@@ -105,7 +105,7 @@ Distribution of Dunnett's `t`, one-sided
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", dunnett1_t(mu, sigma).pdf(x))
@@ -126,7 +126,7 @@ Distribution of Dunnett's `t`, one-sided
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", dunnett1_t(mu, sigma).qtf(q))
@@ -148,7 +148,7 @@ Distribution of Dunnett's `t`, one-sided
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", dunnett1_t(mu, sigma).isf(q))
@@ -169,7 +169,7 @@ Distribution of Dunnett's `t`, one-sided
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", dunnett1_t(mu, sigma).c_x(t))
@@ -209,7 +209,7 @@ Distribution of Dunnett's `t`, one-sided
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", dunnett1_t(mu, sigma).moments(k))
@@ -226,7 +226,7 @@ Distribution of Dunnett's `t`, one-sided
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", dunnett1_t(mu, sigma).cumulants(k))

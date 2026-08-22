@@ -126,7 +126,7 @@ See also  Wikipedia :cite:p:`WikipediaDis13`, MathWorld :cite:p:`WolframDis13`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", gumbel(mu, sigma).pdf(x))
@@ -147,7 +147,7 @@ See also  Wikipedia :cite:p:`WikipediaDis13`, MathWorld :cite:p:`WolframDis13`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", gumbel(mu, sigma).pdf(x))
@@ -167,7 +167,7 @@ See also  Wikipedia :cite:p:`WikipediaDis13`, MathWorld :cite:p:`WolframDis13`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", gumbel(mu, sigma).pdf(x))
@@ -188,7 +188,7 @@ See also  Wikipedia :cite:p:`WikipediaDis13`, MathWorld :cite:p:`WolframDis13`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", gumbel(mu, sigma).qtf(q))
@@ -208,7 +208,7 @@ See also  Wikipedia :cite:p:`WikipediaDis13`, MathWorld :cite:p:`WolframDis13`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", gumbel(mu, sigma).isf(q))
@@ -229,7 +229,7 @@ See also  Wikipedia :cite:p:`WikipediaDis13`, MathWorld :cite:p:`WolframDis13`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", gumbel(mu, sigma).c_x(t))
@@ -250,7 +250,7 @@ See also  Wikipedia :cite:p:`WikipediaDis13`, MathWorld :cite:p:`WolframDis13`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", gumbel(mu, sigma).c_x(t))
@@ -271,7 +271,7 @@ See also  Wikipedia :cite:p:`WikipediaDis13`, MathWorld :cite:p:`WolframDis13`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", gumbel(mu, sigma).k_x(t, k))
@@ -293,7 +293,7 @@ See also  Wikipedia :cite:p:`WikipediaDis13`, MathWorld :cite:p:`WolframDis13`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", gumbel(mu, sigma).moments(k))
@@ -312,7 +312,7 @@ See also  Wikipedia :cite:p:`WikipediaDis13`, MathWorld :cite:p:`WolframDis13`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", gumbel(mu, sigma).cumulants(k))

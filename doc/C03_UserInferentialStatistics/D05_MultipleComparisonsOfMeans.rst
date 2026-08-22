@@ -73,7 +73,7 @@ Scheffé F-test: p-value
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.AnovaTest(means:=[5.24, 4.05, 7.01], sd:=1.5, n:=[22,11,16])
 
         Input
@@ -115,7 +115,7 @@ Scheffé F-test: p-value
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.AnovaTest(means:=[5.24, 4.05, 7.01], sd:=1.5, n:=[22,11,16])
 
         Input
@@ -160,7 +160,7 @@ Scheffé F-test: power
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.AnovaTest(means:=[5.24, 4.05, 7.01], sd:=1.5, n:=[22,11,16])
 
         Input
@@ -229,7 +229,7 @@ Tukey-Kramer q-test: p-value
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.AnovaTest(means:=[5.24, 4.05, 7.01], sd:=1.5, n:=[22,11,16])
 
         Input
@@ -284,7 +284,7 @@ Tukey-Kramer q-test: confidence interval
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.AnovaTest(means:=[5.24, 4.05, 7.01], sd:=1.5, n:=[22,11,16])
 
         Input
@@ -330,7 +330,7 @@ Tukey-Kramer q-test: power
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.AnovaTest(means:=[5.24, 4.05, 7.01], sd:=1.5, n:=[22,11,16])
 
         Input
@@ -483,7 +483,7 @@ Dunnett t-test: p-value
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.AnovaTest(means:=[5.24, 4.05, 7.01], sd:=1.5, n:=[22,11,16])
 
         Input
@@ -531,7 +531,7 @@ Dunnett t-test: confidence interval
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.AnovaTest(means:=[5.24, 4.05, 7.01], sd:=1.5, n:=[22,11,16])
 
         Input
@@ -579,7 +579,7 @@ Dunnett t-test: power
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.AnovaTest(means:=[5.24, 4.05, 7.01], sd:=1.5, n:=[22,11,16])
 
         Input

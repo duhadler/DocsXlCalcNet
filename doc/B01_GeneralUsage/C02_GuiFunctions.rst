@@ -27,6 +27,11 @@ Starting the socket server
 
 Describe the start of the socket server
 
+The Python source code for the socketserver can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Bin/socketspy.py
+
+The C\# source code for the socket client can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/ClientServer
+
+
 
     .. code-block:: pycon
 
@@ -42,6 +47,13 @@ Starting the output monitor
 .. method:: gui.outputmonitor()
 
 Describe the start of the output monitor
+
+The Python source code for starting the output monitor can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ShowOutputMonitor.py
+
+
+The C\# source code for the output monitor can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/OutputMonitor
+
+
 
 
     .. code-block:: pycon
@@ -63,6 +75,13 @@ Starting an additional instance of the IDE
 Describe the start an additional instance of the IDE
 
 
+The Python source code for starting the IDE can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ShowEditor.py
+
+
+The C\# source code for the IDE can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/TinyEditor
+
+
+
     .. code-block:: pycon
 
         >>> from xlcalcnet import gui
@@ -77,10 +96,16 @@ Starting the gallery of plots
 --------------------------------------------------------------------------------
 
 
-
 .. method:: gui.plot2d()
 
 Describe the start of the gallery of plots
+
+
+The Python source code for starting the IDE can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ShowEditor.py
+
+The C\# source code for the gallery of plots can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/TinyPlot2D
+
+
 
 
     .. code-block:: pycon
@@ -101,6 +126,10 @@ Starting the interactive 3D wpf plots
 
 Describe the start of Interactive 3D Wpf plots
 
+The Python source code for starting the interactive 3D wpf plots can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ShowPlot3d.py
+
+The C\# source code for the gallery of plots can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/TinyPlot3D
+
 
     .. code-block:: pycon
 
@@ -118,6 +147,12 @@ Starting the data viewer
 .. method:: gui.dataviewer()
 
 Describe the start of data viewer
+
+
+The Python source code for starting the data viewer can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ShowDataViewer.py
+
+The C\# source code for the data viewer can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/DataViewer
+
 
 
     .. code-block:: pycon

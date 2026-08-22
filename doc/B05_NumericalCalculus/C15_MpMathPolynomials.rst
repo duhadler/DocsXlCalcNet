@@ -43,7 +43,7 @@ Polynomial evaluation
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.pretty = True
         >>> polyval([3, 0, 2], 0.5)
         2.75
@@ -81,7 +81,7 @@ Polynomial roots
 
     Finding the three real roots of `x^3 - x^2 - 14x + 24`::
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> nprint(polyroots([1,-1,-14,24]), 4)
         [-4.0, 2.0, 3.0]

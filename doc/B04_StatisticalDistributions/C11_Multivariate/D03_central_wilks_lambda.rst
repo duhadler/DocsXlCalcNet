@@ -41,7 +41,7 @@ Distribution of Wilks' `\Lambda`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", wilks_lambda(mu, sigma).pdf(x))
@@ -60,7 +60,7 @@ Distribution of Wilks' `\Lambda`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", wilks_lambda(mu, sigma).pdf(x))
@@ -80,7 +80,7 @@ Distribution of Wilks' `\Lambda`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", wilks_lambda(mu, sigma).pdf(x))
@@ -101,7 +101,7 @@ Distribution of Wilks' `\Lambda`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", wilks_lambda(mu, sigma).qtf(q))
@@ -121,7 +121,7 @@ Distribution of Wilks' `\Lambda`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", wilks_lambda(mu, sigma).isf(q))
@@ -141,7 +141,7 @@ Distribution of Wilks' `\Lambda`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", wilks_lambda(mu, sigma).c_x(t))
@@ -161,7 +161,7 @@ Distribution of Wilks' `\Lambda`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", wilks_lambda(mu, sigma).c_x(t))
@@ -187,7 +187,7 @@ Distribution of Wilks' `\Lambda`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", wilks_lambda(mu, sigma).k_x(t, k))
@@ -209,7 +209,7 @@ Distribution of Wilks' `\Lambda`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", wilks_lambda(mu, sigma).moments(k))
@@ -228,7 +228,7 @@ Distribution of Wilks' `\Lambda`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", wilks_lambda(mu, sigma).cumulants(k))

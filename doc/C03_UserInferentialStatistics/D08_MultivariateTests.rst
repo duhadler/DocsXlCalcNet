@@ -257,7 +257,7 @@ Power estimates of 4 tests in MANOVA
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = '0.3'; p = '3'; m = '4'; n = '20'; O = [3.6, 1.2, 0.5]
         >>> dx = dec.four_tests_glm_cdf(x,p,m,n,O); mx = mpm.four_tests_glm_cdf(x,p,m,n,O)
         >>> ix = ipm.four_tests_glm_cdf(x,p,m,n,O); fx = fpm.four_tests_glm_cdf(x,p,m,n,O)
@@ -311,7 +311,7 @@ Power estimates of 4 tests in canonical correlation (Type I)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = '0.3'; p1 = '3'; p2 = '4'; n = '20'; P = [3.6, 1.2, 0.5]
         >>> dx = dec.four_tests_ind_cdf(x,p1,p2,n,P); mx = mpm.four_tests_ind_cdf(x,p1,p2,n,P)
         >>> ix = ipm.four_tests_ind_cdf(x,p1,p2,n,P); fx = fpm.four_tests_ind_cdf(x,p1,p2,n,P)

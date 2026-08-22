@@ -49,7 +49,7 @@ Noncentral distribution (Type I) of Fisher's `R^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", fisher_r_square_type_I(mu, sigma).pdf(x))
@@ -79,7 +79,7 @@ Noncentral distribution (Type I) of Fisher's `R^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", fisher_r_square_type_I(mu, sigma).pdf(x))
@@ -99,7 +99,7 @@ Noncentral distribution (Type I) of Fisher's `R^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", fisher_r_square_type_I(mu, sigma).pdf(x))
@@ -119,7 +119,7 @@ Noncentral distribution (Type I) of Fisher's `R^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", fisher_r_square_type_I(mu, sigma).qtf(q))
@@ -139,7 +139,7 @@ Noncentral distribution (Type I) of Fisher's `R^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", fisher_r_square_type_I(mu, sigma).isf(q))
@@ -159,7 +159,7 @@ Noncentral distribution (Type I) of Fisher's `R^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", fisher_r_square_type_I(mu, sigma).c_x(t))
@@ -179,7 +179,7 @@ Noncentral distribution (Type I) of Fisher's `R^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", fisher_r_square_type_I(mu, sigma).c_x(t))
@@ -199,7 +199,7 @@ Noncentral distribution (Type I) of Fisher's `R^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", fisher_r_square_type_I(mu, sigma).k_x(t, k))
@@ -226,7 +226,7 @@ Noncentral distribution (Type I) of Fisher's `R^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", fisher_r_square_type_I(mu, sigma).moments(k))
@@ -244,7 +244,7 @@ Noncentral distribution (Type I) of Fisher's `R^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", fisher_r_square_type_I(mu, sigma).cumulants(k))

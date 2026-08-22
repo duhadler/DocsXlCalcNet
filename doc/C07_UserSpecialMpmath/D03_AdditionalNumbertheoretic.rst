@@ -56,7 +56,7 @@ Mpmath: Prime counting function
 
     Some values of the prime counting method::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> [primepi(k) for k in range(20)]
         [0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 4, 5, 5, 6, 6, 6, 6, 7, 7, 8]
         >>> primepi(3.5)
@@ -90,7 +90,7 @@ Mpmath: Mangoldt function
 
     Evaluates the von Mangoldt function `\Lambda(n) = \log p` if `n = p^k` a power of a prime, and `\Lambda(n) = 0` otherwise::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> [mangoldt(n) for n in range(-2,3)]
         [0.0, 0.0, 0.0, 0.0, 0.6931471805599453094172321]
@@ -143,7 +143,7 @@ Mpmath: Upper bound for the value of the prime counting function
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, gmp, fpm, apm
+        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
         >>> mpm.dps = 40; x = '1E+10'
         >>> dx = dec.primepi2_upper(x); mx = mpm.primepi2_upper(x); gx = gmp.primepi2_upper(x)
         >>> fx = fpm.primepi2_upper(x); ax = apm.primepi2_upper(x)
@@ -189,7 +189,7 @@ Mpmath: Lower dound for the value of the prime counting function
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, gmp, fpm, apm
+        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
         >>> mpm.dps = 40; x = '1E+10'
         >>> dx = dec.primepi2_lower(x); mx = mpm.primepi2_lower(x); gx = gmp.primepi2_lower(x)
         >>> fx = fpm.primepi2_lower(x); ax = apm.primepi2_lower(x)
@@ -372,7 +372,7 @@ Mpmath: Mertens constant
 
     The following gives the Mertens constant to 50 digits::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 50; mp.pretty = True
         >>> +mertens
         0.2614972128476427837554268386086958590515666482612
@@ -419,7 +419,7 @@ Mpmath: Twin prime constant
 
     Computing `C_2` to 50 digits::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 50; mp.pretty = True
         >>> +twinprime
         0.66016181584686957392781211001455577843262336028473
@@ -611,7 +611,7 @@ Mpmath: CODE!! Polyexponential function
 
     Evaluating a series::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> nsum(lambda k: sqrt(k)/fac(k), [1,inf])
         2.101755547733791780315904

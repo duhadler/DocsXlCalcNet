@@ -71,7 +71,7 @@ Copy values from one array to another: numpy.copyto
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> A = np.array([4, 5, 6])
         >>> B = [1, 2, 3]
@@ -100,7 +100,7 @@ Get the shape of an array: numpy.shape
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> np.shape(np.eye(3))
         (3, 3)
@@ -141,7 +141,7 @@ Reshape an array without changing its data: numpy.reshape
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> a = np.arange(6).reshape((3, 2))
         >>> a
@@ -173,7 +173,7 @@ Reshape an array without changing its data: numpy.reshape
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> a = np.array([[1,2,3], [4,5,6]])
         >>> np.reshape(a, 6)
@@ -206,7 +206,7 @@ Get a contiguous flattened array: numpy.ravel
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> x = np.array([[1, 2, 3], [4, 5, 6]])
         >>> np.ravel(x)
@@ -233,7 +233,7 @@ Get a contiguous flattened array: numpy.ravel
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> a = np.arange(3)[::-1]; a
         array([2, 1, 0])
@@ -266,7 +266,7 @@ Get a contiguous flattened array: numpy.ravel
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> x = np.arange(1, 7).reshape(2, 3)
         >>> x
@@ -314,7 +314,7 @@ Get a copy of the array collapsed into one dimension: ndarry.flatten
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> a = np.array([[1,2], [3,4]])
         >>> a.flatten()

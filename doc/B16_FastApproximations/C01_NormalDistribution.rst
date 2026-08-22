@@ -65,7 +65,7 @@ Non-central chi-squared distribution: cdf and sf (Penev)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.cdisn_penev(x, nu, nc); mx = mpm.cdisn_penev(x, nu, nc)
         >>> ix = ipm.cdisn_penev(x, nu, nc); fx = fpm.cdisn_penev(x, nu, nc)
@@ -132,7 +132,7 @@ Non-central chi-squared distribution: cdf and sf (Penev)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.chi2_nc_canal_qtf(x, nu, nc); mx = mpm.chi2_nc_canal_qtf(x, nu, nc)
         >>> ix = ipm.chi2_nc_canal_qtf(x, nu, nc); fx = fpm.chi2_nc_canal_qtf(x, nu, nc)
@@ -166,7 +166,7 @@ Gamma distribution: qtf and isf  (Canal)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.gamma_canal_qtf(x, nu, nc); mx = mpm.gamma_canal_qtf(x, nu, nc)
         >>> ix = ipm.gamma_canal_qtf(x, nu, nc); fx = fpm.gamma_canal_qtf(x, nu, nc)
@@ -199,7 +199,7 @@ F distribution: qtf and isf  (Davis)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.fisher_f_davis_qtf(x, nu, nc); mx = mpm.fisher_f_davis_qtf(x, nu, nc)
         >>> ix = ipm.fisher_f_davis_qtf(x, nu, nc); fx = fpm.fisher_f_davis_qtf(x, nu, nc)
@@ -232,7 +232,7 @@ Beta distribution: qtf and isf  (Davis)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.beta_davis_qtf(x, nu, nc); mx = mpm.beta_davis_qtf(x, nu, nc)
         >>> ix = ipm.beta_davis_qtf(x, nu, nc); fx = fpm.beta_davis_qtf(x, nu, nc)
@@ -265,7 +265,7 @@ Pearson's rho distribution: pdf (Winterbottom)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.pearson_rho_wb_pdf(x, nu, nc); mx = mpm.pearson_rho_wb_pdf(x, nu, nc)
         >>> ix = ipm.pearson_rho_wb_pdf(x, nu, nc); fx = fpm.pearson_rho_wb_pdf(x, nu, nc)
@@ -310,7 +310,7 @@ Pearson's rho distribution: cdf and sf (Winterbottom)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.pearson_rho_wb_cdf(x, nu, nc); mx = mpm.pearson_rho_wb_cdf(x, nu, nc)
         >>> ix = ipm.pearson_rho_wb_cdf(x, nu, nc); fx = fpm.pearson_rho_wb_cdf(x, nu, nc)
@@ -357,7 +357,7 @@ Pearson's rho distribution: qtf and isf  (Winterbottom)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.pearson_rho_wb_qtf(x, nu, nc); mx = mpm.pearson_rho_wb_qtf(x, nu, nc)
         >>> ix = ipm.pearson_rho_wb_qtf(x, nu, nc); fx = fpm.pearson_rho_wb_qtf(x, nu, nc)
@@ -404,7 +404,7 @@ Pearson's rho distribution: confidence limit for `\rho`  (Winterbottom)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.pearson_rho_wb_cl(x, nu, nc); mx = mpm.pearson_rho_wb_cl(x, nu, nc)
         >>> ix = ipm.pearson_rho_wb_cl(x, nu, nc); fx = fpm.pearson_rho_wb_cl(x, nu, nc)
@@ -447,7 +447,7 @@ Singly noncentral t: pdf (Broda)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.student_t_nc_broda_pdf(x, nu, nc); mx = mpm.student_t_nc_broda_pdf(x, nu, nc)
         >>> ix = ipm.student_t_nc_broda_pdf(x, nu, nc); fx = fpm.student_t_nc_broda_pdf(x, nu, nc)
@@ -502,7 +502,7 @@ Singly noncentral t: cdf, sf (Broda)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.student_t_nc_broda_cdf(x, nu, nc); mx = mpm.student_t_nc_broda_cdf(x, nu, nc)
         >>> ix = ipm.student_t_nc_broda_cdf(x, nu, nc); fx = fpm.student_t_nc_broda_cdf(x, nu, nc)
@@ -547,7 +547,7 @@ Singly noncentral t: qtf, isf (Harley)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.student_t_nc_broda_qtf(x, nu, nc); mx = mpm.student_t_nc_broda_qtf(x, nu, nc)
         >>> ix = ipm.student_t_nc_broda_qtf(x, nu, nc); fx = fpm.student_t_nc_broda_qtf(x, nu, nc)
@@ -594,7 +594,7 @@ Singly noncentral t: confidence limit for `\delta` (Akahira)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.student_t_nc_akahira_cl(x, nu, nc); mx = mpm.student_t_nc_akahira_cl(x, nu, nc)
         >>> ix = ipm.student_t_nc_akahira_cl(x, nu, nc); fx = fpm.student_t_nc_akahira_cl(x, nu, nc)
@@ -643,7 +643,7 @@ Doubly noncentral t: cdf, sf (Broda)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.student_t_nc2_broda_cdf(x, nu, nc); mx = mpm.student_t_nc2_broda_cdf(x, nu, nc)
         >>> ix = ipm.student_t_nc2_broda_cdf(x, nu, nc); fx = fpm.student_t_nc2_broda_cdf(x, nu, nc)
@@ -693,7 +693,7 @@ Doubly noncentral t: qtf, isf (Broda)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.student_t_nc2_broda_qtf(x, nu, nc); mx = mpm.student_t_nc2_broda_qtf(x, nu, nc)
         >>> ix = ipm.student_t_nc2_broda_qtf(x, nu, nc); fx = fpm.student_t_nc2_broda_qtf(x, nu, nc)
@@ -750,7 +750,7 @@ Spearman's rho, first 8 cumulants (David)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.spearman_mu8(x, nu, nc); mx = mpm.spearman_mu8(x, nu, nc)
         >>> ix = ipm.spearman_mu8(x, nu, nc); fx = fpm.spearman_mu8(x, nu, nc)
@@ -877,7 +877,7 @@ Mann-Whitney U distribution: general alternatives specified by rank order probab
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.mannwhitney_nc_mu4(x, nu, nc); mx = mpm.mannwhitney_nc_mu4(x, nu, nc)
         >>> ix = ipm.mannwhitney_nc_mu4(x, nu, nc); fx = fpm.mannwhitney_nc_mu4(x, nu, nc)
@@ -990,7 +990,7 @@ First 4 moments of Kendalls `\tau` in the general case (Sundrum)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.kendall_tau_nc_mu4(x, nu, nc); mx = mpm.kendall_tau_nc_mu4(x, nu, nc)
         >>> ix = ipm.kendall_tau_nc_mu4(x, nu, nc); fx = fpm.kendall_tau_nc_mu4(x, nu, nc)

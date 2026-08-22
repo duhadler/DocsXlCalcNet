@@ -52,7 +52,7 @@ Distribution of the logarithm of a noncentral Fisher `1-R^2` variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", fisher_r_square_type_II(mu, sigma).pdf(x))
@@ -82,7 +82,7 @@ Distribution of the logarithm of a noncentral Fisher `1-R^2` variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", fisher_r_square_type_II(mu, sigma).pdf(x))
@@ -102,7 +102,7 @@ Distribution of the logarithm of a noncentral Fisher `1-R^2` variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", fisher_r_square_type_II(mu, sigma).pdf(x))
@@ -122,7 +122,7 @@ Distribution of the logarithm of a noncentral Fisher `1-R^2` variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", fisher_r_square_type_II(mu, sigma).qtf(q))
@@ -142,7 +142,7 @@ Distribution of the logarithm of a noncentral Fisher `1-R^2` variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", fisher_r_square_type_II(mu, sigma).isf(q))
@@ -169,7 +169,7 @@ Distribution of the logarithm of a noncentral Fisher `1-R^2` variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", fisher_f_nc(mu, sigma).c_x(t))
@@ -189,7 +189,7 @@ Distribution of the logarithm of a noncentral Fisher `1-R^2` variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", fisher_f_nc(mu, sigma).c_x(t))
@@ -222,7 +222,7 @@ Distribution of the logarithm of a noncentral Fisher `1-R^2` variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", fisher_f_nc(mu, sigma).k_x(t, k))
@@ -246,7 +246,7 @@ Distribution of the logarithm of a noncentral Fisher `1-R^2` variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", fisher_r_square_type_II(mu, sigma).moments(k))
@@ -264,7 +264,7 @@ Distribution of the logarithm of a noncentral Fisher `1-R^2` variable
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", fisher_r_square_type_II(mu, sigma).cumulants(k))

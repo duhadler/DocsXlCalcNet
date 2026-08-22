@@ -101,7 +101,7 @@ One-dimensional discrete Fourier Transform (fft)
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.fft.fft(np.exp(2j * np.pi * np.arange(8) / 8))
         array([-2.33486982e-16+1.14423775e-17j,  8.00000000e+00-1.25557246e-15j,
                 2.33486982e-16+2.33486982e-16j,  0.00000000e+00+1.22464680e-16j,
@@ -155,7 +155,7 @@ One-dimensional inverse discrete Fourier Transform (ifft)
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.fft.ifft([0, 4, 0, 0])
         array([ 1.+0.j,  0.+1.j, -1.+0.j,  0.-1.j]) # may vary
 
@@ -209,7 +209,7 @@ One-dimensional discrete Fourier Transform for real input (rfft)
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.fft.fft([0, 1, 0, 0])
         array([ 1.+0.j,  0.-1.j, -1.+0.j,  0.+1.j]) # may vary
         >>> np.fft.rfft([0, 1, 0, 0])
@@ -247,7 +247,7 @@ One-dimensional inverse discrete Fourier Transform of rfft (irfft)
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.fft.ifft([1, -1j, -1, 1j])
         array([0.+0.j,  1.+0.j,  0.+0.j,  0.+0.j]) # may vary
         >>> np.fft.irfft([1, -1j, -1])
@@ -286,7 +286,7 @@ FFT of a signal that has Hermitian symmetry, i.e., a real spectrum (hfft)
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> signal = np.array([1, 2, 3, 4, 3, 2])
         >>> np.fft.fft(signal)
         array([15.+0.j,  -4.+0.j,   0.+0.j,  -1.-0.j,   0.+0.j,  -4.+0.j]) # may vary
@@ -333,7 +333,7 @@ Inverse FFT of a signal that has Hermitian symmetry (ihfft)
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> spectrum = np.array([ 15, -4, 0, -1, 0, -4])
         >>> np.fft.ifft(spectrum)
         array([1.+0.j,  2.+0.j,  3.+0.j,  4.+0.j,  3.+0.j,  2.+0.j]) # may vary
@@ -376,7 +376,7 @@ Discrete Fourier Transform sample frequencies (fftfreq)
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> signal = np.array([-2, 8, 6, 4, 1, 0, 3, 5], dtype=float)
         >>> fourier = np.fft.fft(signal)
         >>> n = signal.size
@@ -418,7 +418,7 @@ Discrete Fourier Transform sample frequencies for usage with rfft, irfft (rfftfr
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> signal = np.array([-2, 8, 6, 4, 1, 0, 3, 5, -3, 4], dtype=float)
         >>> fourier = np.fft.rfft(signal)
         >>> n = signal.size

@@ -54,7 +54,7 @@ Noncentral Wilcoxon signed rank T distribution, Bennett alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pmf: ", wilcoxon_continuous(mu, sigma).pmf(x))
@@ -76,7 +76,7 @@ Noncentral Wilcoxon signed rank T distribution, Bennett alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", wilcoxon_continuous(mu, sigma).pmf(x))
@@ -96,7 +96,7 @@ Noncentral Wilcoxon signed rank T distribution, Bennett alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", wilcoxon_continuous(mu, sigma).pmf(x))
@@ -115,7 +115,7 @@ Noncentral Wilcoxon signed rank T distribution, Bennett alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", wilcoxon_continuous(mu, sigma).qtf(q))
@@ -135,7 +135,7 @@ Noncentral Wilcoxon signed rank T distribution, Bennett alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", wilcoxon_continuous(mu, sigma).isf(q))
@@ -156,7 +156,7 @@ Noncentral Wilcoxon signed rank T distribution, Bennett alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", wilcoxon_continuous(mu, sigma).c_x(t))
@@ -176,7 +176,7 @@ Noncentral Wilcoxon signed rank T distribution, Bennett alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", wilcoxon_continuous(mu, sigma).c_x(t))
@@ -198,7 +198,7 @@ Noncentral Wilcoxon signed rank T distribution, Bennett alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", wilcoxon_continuous(mu, sigma).c_x(t))
@@ -219,7 +219,7 @@ Noncentral Wilcoxon signed rank T distribution, Bennett alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", wilcoxon_continuous(mu, sigma).k_x(t, k))
@@ -242,7 +242,7 @@ Noncentral Wilcoxon signed rank T distribution, Bennett alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", wilcoxon_continuous(mu, sigma).moments(k))
@@ -278,7 +278,7 @@ Noncentral Wilcoxon signed rank T distribution, Bennett alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", wilcoxon_continuous(mu, sigma).cumulants(k))

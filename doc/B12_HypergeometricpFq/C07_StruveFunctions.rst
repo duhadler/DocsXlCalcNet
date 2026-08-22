@@ -22,7 +22,6 @@ Struve functions
 
 
 
-
 Struve function `\mathbf{H}_n(x)`
 -------------------------------------------------------------------------------
 
@@ -36,27 +35,6 @@ Struve function `\mathbf{H}_n(x)`
         \sum_{k=0}^\infty \frac{(-1)^k}{\Gamma(k+\frac{3}{2})
             \Gamma(k+n+\frac{3}{2})} {\left({\frac{z}{2}}\right)}^{2k+n+1}
 
-
-
-    Returns the Struve function. See also  Wikipedia :cite:p:`WikipediaFun1044`, MathWorld :cite:p:`WolframFun1044`, NIST :cite:p:`DLMFun1044`.
-
-    Returns the Struve function `H_{\nu}(x)`, defined as
-
-
-    .. math ::
-
-        \,\mathbf{H}_n(z) =
-        \sum_{k=0}^\infty \frac{(-1)^k}{\Gamma(k+\frac{3}{2})
-            \Gamma(k+n+\frac{3}{2})} {\left({\frac{z}{2}}\right)}^{2k+n+1}
-
-
-    Gives the Struve function
-
-    .. math ::
-
-        \,\mathbf{H}_n(z) =
-        \sum_{k=0}^\infty \frac{(-1)^k}{\Gamma(k+\frac{3}{2})
-            \Gamma(k+n+\frac{3}{2})} {\left({\frac{z}{2}}\right)}^{2k+n+1}
 
     which is a solution to the Struve differential equation
 
@@ -138,24 +116,19 @@ Struve function `\mathbf{L}_{\nu}(x)`
     .. math ::  \textbf{L}_{\nu}(x) = \left(\tfrac{1}{2}x\right)^{\nu+1} \sum_{k=0}^\infty \frac{\left(\tfrac{1}{2}x\right)^{2k}}{\Gamma\left(k+\tfrac{3}{2}\right) \Gamma\left(k+\nu+\tfrac{3}{2}\right)}.
 
 
-
-    Returns the Struve function `L_{\nu}(x)`, defined as
-
-    .. math ::  \textbf{L}_{\nu}(x) = \left(\tfrac{1}{2}x\right)^{\nu+1} \sum_{k=0}^\infty \frac{\left(\tfrac{1}{2}x\right)^{2k}}{\Gamma\left(k+\tfrac{3}{2}\right) \Gamma\left(k+\nu+\tfrac{3}{2}\right)}.
-
-
-    Gives the modified Struve function
-
-    .. math ::
-
-        \,\mathbf{L}_n(z) = -i e^{-n\pi i/2} \mathbf{H}_n(i z)
-
     which solves to the modified Struve differential equation
 
     .. math ::
 
         z^2 f''(z) + z f'(z) - (z^2+n^2) f(z) = \frac{2 z^{n+1}}{\pi (2n-1)!!}.
 
+
+
+    We also have
+
+    .. math ::
+
+        \,\mathbf{L}_n(z) = -i e^{-n\pi i/2} \mathbf{H}_n(i z)
 
 
     An example in Python

@@ -42,7 +42,7 @@ Central distribution of Pillai's `V`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", pillai_v(mu, sigma).pdf(x))
@@ -62,7 +62,7 @@ Central distribution of Pillai's `V`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", pillai_v(mu, sigma).pdf(x))
@@ -82,7 +82,7 @@ Central distribution of Pillai's `V`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", pillai_v(mu, sigma).pdf(x))
@@ -102,7 +102,7 @@ Central distribution of Pillai's `V`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", pillai_v(mu, sigma).qtf(q))
@@ -122,7 +122,7 @@ Central distribution of Pillai's `V`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", pillai_v(mu, sigma).isf(q))
@@ -146,7 +146,7 @@ Central distribution of Pillai's `V`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", pillai_v(mu, sigma).c_x(t))
@@ -169,7 +169,7 @@ Central distribution of Pillai's `V`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", pillai_v(mu, sigma).c_x(t))
@@ -192,7 +192,7 @@ Central distribution of Pillai's `V`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", pillai_v(mu, sigma).k_x(t, k))
@@ -220,7 +220,7 @@ Central distribution of Pillai's `V`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", pillai_v(mu, sigma).moments(k))
@@ -238,7 +238,7 @@ Central distribution of Pillai's `V`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", pillai_v(mu, sigma).cumulants(k))

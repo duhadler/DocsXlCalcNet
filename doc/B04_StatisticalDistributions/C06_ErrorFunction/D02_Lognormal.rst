@@ -128,7 +128,7 @@ See also  Wikipedia :cite:p:`WikipediaDis19`, MathWorld :cite:p:`WolframDis19`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", lognormal(mu, sigma).pdf(x))
@@ -149,7 +149,7 @@ See also  Wikipedia :cite:p:`WikipediaDis19`, MathWorld :cite:p:`WolframDis19`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", lognormal(mu, sigma).pdf(x))
@@ -169,7 +169,7 @@ See also  Wikipedia :cite:p:`WikipediaDis19`, MathWorld :cite:p:`WolframDis19`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", lognormal(mu, sigma).pdf(x))
@@ -189,7 +189,7 @@ See also  Wikipedia :cite:p:`WikipediaDis19`, MathWorld :cite:p:`WolframDis19`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", lognormal(mu, sigma).qtf(q))
@@ -209,7 +209,7 @@ See also  Wikipedia :cite:p:`WikipediaDis19`, MathWorld :cite:p:`WolframDis19`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", lognormal(mu, sigma).isf(q))
@@ -231,7 +231,7 @@ See also  Wikipedia :cite:p:`WikipediaDis19`, MathWorld :cite:p:`WolframDis19`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", lognormal(mu, sigma).c_x(t))
@@ -277,7 +277,7 @@ See also  Wikipedia :cite:p:`WikipediaDis19`, MathWorld :cite:p:`WolframDis19`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", lognormal(mu, sigma).moments(k))
@@ -295,7 +295,7 @@ See also  Wikipedia :cite:p:`WikipediaDis19`, MathWorld :cite:p:`WolframDis19`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", lognormal(mu, sigma).cumulants(k))

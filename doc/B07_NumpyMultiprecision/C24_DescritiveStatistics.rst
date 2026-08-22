@@ -443,7 +443,7 @@ Vector norm of a matrix
 
     **Examples**
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = False
         >>> x = matrix([-10, 2, 100])
         >>> norm(x, 1)
@@ -492,7 +492,7 @@ Matrix norm
 
     **Examples**
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = False
         >>> A = matrix([[1, -1000], [100, 50]])
         >>> mnorm(A, 1)

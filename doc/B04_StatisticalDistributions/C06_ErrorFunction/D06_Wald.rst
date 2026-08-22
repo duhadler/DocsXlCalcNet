@@ -127,7 +127,7 @@ See also  Wikipedia :cite:p:`WikipediaDis16`, MathWorld :cite:p:`WolframDis16`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", wald(mu, sigma).pdf(x))
@@ -148,7 +148,7 @@ See also  Wikipedia :cite:p:`WikipediaDis16`, MathWorld :cite:p:`WolframDis16`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", wald(mu, sigma).pdf(x))
@@ -168,7 +168,7 @@ See also  Wikipedia :cite:p:`WikipediaDis16`, MathWorld :cite:p:`WolframDis16`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", wald(mu, sigma).pdf(x))
@@ -187,7 +187,7 @@ See also  Wikipedia :cite:p:`WikipediaDis16`, MathWorld :cite:p:`WolframDis16`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", wald(mu, sigma).qtf(q))
@@ -207,7 +207,7 @@ See also  Wikipedia :cite:p:`WikipediaDis16`, MathWorld :cite:p:`WolframDis16`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", wald(mu, sigma).isf(q))
@@ -228,7 +228,7 @@ See also  Wikipedia :cite:p:`WikipediaDis16`, MathWorld :cite:p:`WolframDis16`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", wald(mu, sigma).c_x(t))
@@ -249,7 +249,7 @@ See also  Wikipedia :cite:p:`WikipediaDis16`, MathWorld :cite:p:`WolframDis16`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", wald(mu, sigma).c_x(t))
@@ -272,7 +272,7 @@ See also  Wikipedia :cite:p:`WikipediaDis16`, MathWorld :cite:p:`WolframDis16`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", wald(mu, sigma).k_x(t, k))
@@ -293,7 +293,7 @@ See also  Wikipedia :cite:p:`WikipediaDis16`, MathWorld :cite:p:`WolframDis16`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", wald(mu, sigma).moments(k))
@@ -312,7 +312,7 @@ See also  Wikipedia :cite:p:`WikipediaDis16`, MathWorld :cite:p:`WolframDis16`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", wald(mu, sigma).cumulants(k))

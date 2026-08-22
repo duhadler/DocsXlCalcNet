@@ -68,7 +68,7 @@ Test whether all array elements evaluate to True.: numpy.all, ctx.all
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.all([[True,False],[True,True]])
         False
 
@@ -110,7 +110,7 @@ Test whether any array element evaluates to True: numpy.any, ctx.any
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.any([[True, False], [True, True]])
         True
 
@@ -163,7 +163,7 @@ Logical AND: numpy.logical_and, ctx.logical_and
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.logical_and(True, False)
         False
         >>> np.logical_and([True, False], [False, False])
@@ -202,7 +202,7 @@ Logical OR: numpy.logical_or, ctx.logical_or
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.logical_or(True, False)
         True
         >>> np.logical_or([True, False], [False, False])
@@ -242,7 +242,7 @@ Logical XOR: numpy.logical_xor, ctx.logical_xor
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.logical_xor(True, False)
         True
         >>> np.logical_xor([True, True, False, False], [True, False, True, False])
@@ -284,7 +284,7 @@ Testing array equality: numpy.array_equal, ctx.array_equal
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.array_equal([1, 2], [1, 2])
         True
         >>> np.array_equal(np.array([1, 2]), np.array([1, 2]))
@@ -331,7 +331,7 @@ Testing array array_equivalence: numpy.array_equiv, ctx.array_equiv
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.array_equiv([1, 2], [1, 2])
         True
         >>> np.array_equiv([1, 2], [1, 3])
@@ -366,7 +366,7 @@ Truth value of (x1 > x2) element-wise: numpy.greater, ctx.greater
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.greater_equal([4, 2, 1], [2, 2, 2])
         array([ True, True, False])
 
@@ -396,7 +396,7 @@ Truth value of (x1 >= x2) element-wise: numpy.greater_equal, ctx.greater_equal
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.greater_equal([4, 2, 1], [2, 2, 2])
         array([ True, True, False])
 
@@ -427,7 +427,7 @@ Truth value of (x1 < x2) element-wise: numpy.less, ctx.less
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.less([1, 2], [2, 2])
         array([ True, False])
 
@@ -458,7 +458,7 @@ Truth value of (x1 <= x2) element-wise: numpy.less_equal, ctx.less_equal
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.less_equal([4, 2, 1], [2, 2, 2])
         array([False,  True,  True])
 
@@ -489,7 +489,7 @@ Truth value of (x1 == x2) element-wise: numpy.equal, ctx.equal
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.equal([0, 1, 3], np.arange(3))
         array([ True,  True, False])
 
@@ -529,7 +529,7 @@ Truth value of (x1 != x2) element-wise: numpy.equal, ctx.equal
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.not_equal([1.,2.], [1., 3.])
         array([False,  True])
         >>> np.not_equal([1, 2], [[1, 3],[1, 4]])

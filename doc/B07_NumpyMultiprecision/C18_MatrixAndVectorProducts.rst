@@ -685,7 +685,7 @@ Discrete, linear convolution: numpy.convolve
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
         >>> np.convolve([1, 2, 3], [0, 1, 0.5])
         array([0. , 1. , 2.5, 4. , 1.5])
 

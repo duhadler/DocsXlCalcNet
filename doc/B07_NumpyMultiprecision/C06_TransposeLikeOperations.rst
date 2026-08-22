@@ -62,7 +62,7 @@ Move axes of an array to new positions: numpy.flatten
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> x = np.zeros((3, 4, 5))
         >>> np.moveaxis(x, 0, -1).shape
@@ -101,7 +101,7 @@ Interchange two axes of an array: numpy.swapaxes
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> x = np.array([[1,2,3]])
         >>> np.swapaxes(x,0,1)
@@ -141,7 +141,7 @@ Get an array with axes transposed: numpy.transpose
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> a = np.array([[1, 2], [3, 4]])
         a
@@ -175,7 +175,7 @@ Get an array with axes transposed: numpy.transpose
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> a = np.array([[1, 2], [3, 4]])
         a

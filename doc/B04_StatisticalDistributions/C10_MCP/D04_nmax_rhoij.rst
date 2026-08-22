@@ -47,7 +47,7 @@ Normal maximum distribution, `\rho_{ij, i \ne j} = \lambda_i \lambda_j`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", mp_dunnett_t(mu, sigma).pdf(x))
@@ -70,7 +70,7 @@ Normal maximum distribution, `\rho_{ij, i \ne j} = \lambda_i \lambda_j`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", mp_dunnett_t(mu, sigma).pdf(x))
@@ -92,7 +92,7 @@ Normal maximum distribution, `\rho_{ij, i \ne j} = \lambda_i \lambda_j`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", mp_dunnett_t(mu, sigma).pdf(x))
@@ -111,7 +111,7 @@ Normal maximum distribution, `\rho_{ij, i \ne j} = \lambda_i \lambda_j`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", mp_dunnett_t(mu, sigma).qtf(q))
@@ -131,7 +131,7 @@ Normal maximum distribution, `\rho_{ij, i \ne j} = \lambda_i \lambda_j`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", mp_dunnett_t(mu, sigma).isf(q))
@@ -151,7 +151,7 @@ Normal maximum distribution, `\rho_{ij, i \ne j} = \lambda_i \lambda_j`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", mp_dunnett_t(mu, sigma).c_x(t))
@@ -170,7 +170,7 @@ Normal maximum distribution, `\rho_{ij, i \ne j} = \lambda_i \lambda_j`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", mp_studentized_range(mu, sigma).c_x(t))
@@ -188,7 +188,7 @@ Normal maximum distribution, `\rho_{ij, i \ne j} = \lambda_i \lambda_j`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", mp_studentized_range(mu, sigma).c_x(t))
@@ -208,7 +208,7 @@ Normal maximum distribution, `\rho_{ij, i \ne j} = \lambda_i \lambda_j`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mp_dunnett_t(mu, sigma).moments(k))
@@ -225,7 +225,7 @@ Normal maximum distribution, `\rho_{ij, i \ne j} = \lambda_i \lambda_j`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mp_dunnett_t(mu, sigma).cumulants(k))

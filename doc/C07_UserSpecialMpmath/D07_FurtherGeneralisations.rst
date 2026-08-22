@@ -68,7 +68,7 @@ Limit of the product of gamma functions
 
     The reciprocal gamma function `1/\Gamma(x)` evaluated at `x = 0`::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15
         >>> gamma_prod([], [0])
         0.0
@@ -135,7 +135,7 @@ Limit of a weighted combination of hypergeometric functions
     the 1F1 function is singular; all singularities cancel out to give a finite
     value::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> hypercomb(lambda a: [([a-1],[1],[a-3],[a-4],[a],[a-1],3)], [1])
         -180.769832308689
@@ -214,7 +214,7 @@ Meijer G-function
     (possibly rescaled and/or with branch cut corrections). We define
     some test parameters::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> a = mpf(0.75)
         >>> b = mpf(1.5)
@@ -287,7 +287,7 @@ Bilateral hypergeometric series
 
     The value of `\,_2H_2` at `z = 1` is given by Dougall's formula::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> a,b,c,d = 0.5, 1.5, 2.25, 3.25
         >>> bihyper([a,b],[c,d],1)
@@ -395,7 +395,7 @@ Generalized 2D hypergeometric series
     Two separable cases: a product of two geometric series, and a
     product of two Gaussian hypergeometric functions::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> x, y = mpf(0.25), mpf(0.5)
         >>> hyper2d({'m':1,'n':1}, {}, x,y)
@@ -416,7 +416,7 @@ Generalized 2D hypergeometric series
 
     Six of the 34 Horn functions, G1-G3 and H1-H3::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 10; mp.pretty = True
         >>> x, y = 0.0625, 0.125
         >>> a1,a2,b1,b2,c1,c2,d = 1.1,-1.2,-1.3,-1.4,1.5,-1.6,1.7

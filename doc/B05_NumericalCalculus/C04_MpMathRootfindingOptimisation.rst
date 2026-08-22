@@ -140,7 +140,7 @@ Secant algorithm
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30; mp.pretty = True
         >>> findroot(sin, 3)
         3.14159265358979323846264338328

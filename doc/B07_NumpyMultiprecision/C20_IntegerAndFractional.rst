@@ -79,7 +79,7 @@ Floor of the input, element-wise.: numpy.floor, ctx.floor
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mp, iv, fp, dp, gp, ap
+        >>> from xlcalcnet import mp, iv, fp, dp, gp, ap
         >>> mp.dps = 15; mp.pretty = False
         >>> x = 3.5
         >>> fp.floor(x), mp.floor(x), dp.floor(x), gp.floor(x), ap.floor(x)
@@ -156,7 +156,7 @@ Ceiling of the input, element-wise.: numpy.ceil, ctx.ceil
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mp, iv, fp, dp, gp, ap
+        >>> from xlcalcnet import mp, iv, fp, dp, gp, ap
         >>> mp.dps = 15; mp.pretty = False
         >>> x = 3.5
         >>> fp.ceil(x), mp.ceil(x), dp.ceil(x), gp.ceil(x), ap.ceil(x)

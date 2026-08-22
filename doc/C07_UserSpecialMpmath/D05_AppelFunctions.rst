@@ -47,7 +47,7 @@ Appell function `F_1`
 
     Evaluation is supported for real and complex parameters::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> appellf1(1,0,0.5,1,0.5,0.25)
         1.154700538379251529018298
@@ -86,7 +86,7 @@ Appell function  `F_2`
 
     Evaluation for real and complex arguments::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> appellf2(1,2,3,4,5,0.25,0.125)
         1.257417193533135344785602
@@ -131,7 +131,7 @@ Appell function  `F_3`
 
     Evaluation for various parameters and variables::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> appellf3(1,2,3,4,5,0.5,0.25)
         2.221557778107438938158705
@@ -180,7 +180,7 @@ Appell function  `F_4`
 
     Evaluation for various parameters and arguments::
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 25; mp.pretty = True
         >>> appellf4(1,1,2,2,0.25,0.125)
         1.286182069079718313546608

@@ -153,7 +153,7 @@ Anova (completely randomized and randomized blocks): p-value
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.AnovaTest(means:=[5.24, 4.05, 7.01], sd:=1.5, n:=[22,11,16])
 
         Input
@@ -186,7 +186,7 @@ Anova (completely randomized and randomized blocks): p-value
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.AnovaTest(means:=[5.24, 4.05, 7.01], sd:=1.5, n:=22, rho=0.5)
 
         Input
@@ -234,7 +234,7 @@ Anova (completely randomized and randomized blocks): power
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.AnovaTest(means:=[5.24, 4.05, 7.01], sd:=1.5, n:=[22,11,16])
 
         Input
@@ -305,7 +305,7 @@ Anova, trend tests using orthogonal polynomials: p-value
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.AnovaTest(means:=[5.24, 4.05, 7.01], sd:=1.5, n:=[22,11,16])
 
         Input

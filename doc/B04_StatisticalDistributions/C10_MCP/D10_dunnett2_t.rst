@@ -59,7 +59,7 @@ Distribution of Dunnett's `t`, two-sided
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", dunnett2_t(mu, sigma).pdf(x))
@@ -82,7 +82,7 @@ Distribution of Dunnett's `t`, two-sided
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", dunnett2_t(mu, sigma).pdf(x))
@@ -105,7 +105,7 @@ Distribution of Dunnett's `t`, two-sided
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", dunnett2_t(mu, sigma).pdf(x))
@@ -125,7 +125,7 @@ Distribution of Dunnett's `t`, two-sided
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", dunnett2_t(mu, sigma).qtf(q))
@@ -146,7 +146,7 @@ Distribution of Dunnett's `t`, two-sided
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", dunnett2_t(mu, sigma).isf(q))
@@ -167,7 +167,7 @@ Distribution of Dunnett's `t`, two-sided
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", dunnett2_t(mu, sigma).c_x(t))
@@ -207,7 +207,7 @@ Distribution of Dunnett's `t`, two-sided
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", dunnett2_t(mu, sigma).moments(k))
@@ -224,7 +224,7 @@ Returns the first `j` cumulants, `\kappa_j, j = 1 \ldots k`, of a random variabl
 
 .. code-block:: python
 
-    >>> from mpfunlab import *
+    >>> from xlcalcnet import *
     >>> mp.dps = 30
     >>> mu = 0; sigma = 1; k = 6;
     >>> print ("saddlepoint: ", dunnett2_t(mu, sigma).cumulants(k))

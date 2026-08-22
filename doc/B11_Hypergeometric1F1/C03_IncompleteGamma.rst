@@ -103,13 +103,6 @@ Upper normalized incomplete gamma functions , `Q(a,x)`
 
 
 
-    The normalised incomplete gamma function `Q(a,x)` is defined as
-
-    .. math :: Q(a,x)=\frac{1}{\Gamma(a)} \int_x^{\infty} t^{a-1} e^{-t}\mathrm{d}t
-
-    for `a \geq 0` and `x \geq 0`.
-
-
     If *regularized* is 0, computes the upper incomplete gamma function
     `\Gamma(s,z)`.
 
@@ -242,12 +235,6 @@ Upper non-normalized incomplete gamma function, `\Gamma(a,x)`
 
     See also  Wikipedia :cite:p:`WikipediaFun01`, MathWorld :cite:p:`WolframFun01a`, NIST :cite:p:`DLMFun01`,  BoostMath :cite:p:`BoostFun01`, :cite:t:`Ehrhardt2018` (3.5.2.2), Flint :cite:p:`FlintFun01`, Flint :cite:p:`FlintFun02`, Mpmath :cite:p:`MpmathFun01`. 
 
-
-    The function is defined as:
-
-    .. math:: \Gamma(a,x) = \int_x^{\infty} t^{a-1} e^{-t}\mathrm{d}t
-
-    for `a \geq 0` and `x \geq 0`.
 
 
 

@@ -47,7 +47,7 @@ Doubly non-central Student `t` distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", student_t_2nc(mu, sigma).pdf(x))
@@ -71,7 +71,7 @@ Doubly non-central Student `t` distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", student_t_2nc(mu, sigma).pdf(x))
@@ -91,7 +91,7 @@ Doubly non-central Student `t` distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", student_t_2nc(mu, sigma).pdf(x))
@@ -111,7 +111,7 @@ Doubly non-central Student `t` distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", student_t_2nc(mu, sigma).qtf(q))
@@ -131,7 +131,7 @@ Doubly non-central Student `t` distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", student_t_2nc(mu, sigma).isf(q))
@@ -151,7 +151,7 @@ Returns `C_X(t)`, the characteristic function of a random variable `X`, followin
 
 .. code-block:: python
 
-    >>> from mpfunlab import *
+    >>> from xlcalcnet import *
     >>> mp.dps = 30
     >>> mu = 0; sigma = 1; t = 0.3; 
     >>> print ("c_x: ", student_t_2nc(mu, sigma).c_x(t))
@@ -197,7 +197,7 @@ Returns `C_X(t)`, the characteristic function of a random variable `X`, followin
 
     .. code-block:: python
 
-    >>> from mpfunlab import *
+    >>> from xlcalcnet import *
     >>> mp.dps = 30
     >>> mu = 0; sigma = 1; k = 6;
     >>> print ("saddlepoint: ", student_t_2nc(mu, sigma).moments(k))
@@ -215,7 +215,7 @@ Returns `C_X(t)`, the characteristic function of a random variable `X`, followin
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", student_t_2nc(mu, sigma).cumulants(k))

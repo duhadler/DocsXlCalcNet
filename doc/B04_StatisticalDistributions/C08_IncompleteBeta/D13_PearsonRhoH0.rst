@@ -48,7 +48,7 @@ See also Johnson II, page 550, for characteristic function and mgf.
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", pearson_rho(mu, sigma).pdf(x))
@@ -70,7 +70,7 @@ See also Johnson II, page 550, for characteristic function and mgf.
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", pearson_rho(mu, sigma).pdf(x))
@@ -93,7 +93,7 @@ See also Johnson II, page 550, for characteristic function and mgf.
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", pearson_rho(mu, sigma).pdf(x))
@@ -115,7 +115,7 @@ See also Johnson II, page 550, for characteristic function and mgf.
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", pearson_rho(mu, sigma).qtf(q))
@@ -138,7 +138,7 @@ See also Johnson II, page 550, for characteristic function and mgf.
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", pearson_rho(mu, sigma).isf(q))
@@ -160,7 +160,7 @@ See also Johnson II, page 550, for characteristic function and mgf.
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", pearson_rho(mu, sigma).c_x(t))
@@ -182,7 +182,7 @@ See also Johnson II, page 550, for characteristic function and mgf.
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", pearson_rho(mu, sigma).c_x(t))
@@ -204,7 +204,7 @@ See also Johnson II, page 550, for characteristic function and mgf.
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", pearson_rho(mu, sigma).k_x(t, k))
@@ -230,7 +230,7 @@ See also Johnson II, page 550, for characteristic function and mgf.
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", pearson_rho(mu, sigma).moments(k))
@@ -248,7 +248,7 @@ See also Johnson II, page 550, for characteristic function and mgf.
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", pearson_rho(mu, sigma).cumulants(k))

@@ -70,7 +70,7 @@ Regular star polygon
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -171,7 +171,7 @@ Regular compound polygon (polygram)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -242,7 +242,7 @@ Epicycloid
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -308,7 +308,7 @@ Hypocycloid
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -388,7 +388,7 @@ Epitrochoid
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -466,7 +466,7 @@ Hypotrochoid
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -535,7 +535,7 @@ Rose curve
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -598,7 +598,7 @@ Lissajous curves
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -676,7 +676,7 @@ Superellipses (Lamé curves)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -734,7 +734,7 @@ Epispirals
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -798,7 +798,7 @@ Nodal curves (stereographic projections of the clelia)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -881,7 +881,7 @@ Cyclic-harmonic curves
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 
@@ -969,7 +969,7 @@ Rational circular cubics
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import User
+        >>> from xlcalcnet import User
         >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
         >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
 

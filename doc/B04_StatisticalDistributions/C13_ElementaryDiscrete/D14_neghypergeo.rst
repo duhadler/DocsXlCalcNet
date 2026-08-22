@@ -68,7 +68,7 @@ Negative hypergeometric distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pmf: ", _neghypergeo(mu, sigma).pmf(x))
@@ -91,7 +91,7 @@ Negative hypergeometric distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", _neghypergeo(mu, sigma).pmf(x))
@@ -114,7 +114,7 @@ Negative hypergeometric distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", _neghypergeo(mu, sigma).pmf(x))
@@ -134,7 +134,7 @@ Negative hypergeometric distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", _neghypergeo(mu, sigma).qtf(q))
@@ -155,7 +155,7 @@ Negative hypergeometric distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", _neghypergeo(mu, sigma).isf(q))
@@ -178,7 +178,7 @@ Negative hypergeometric distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", _neghypergeo(mu, sigma).c_x(t))
@@ -201,7 +201,7 @@ Negative hypergeometric distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", _neghypergeo(mu, sigma).c_x(t))
@@ -224,7 +224,7 @@ Negative hypergeometric distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", _neghypergeo(mu, sigma).c_x(t))
@@ -248,7 +248,7 @@ Negative hypergeometric distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", _neghypergeo(mu, sigma).k_x(t, k))
@@ -280,7 +280,7 @@ Negative hypergeometric distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", _neghypergeo(mu, sigma).moments(k))
@@ -298,7 +298,7 @@ Negative hypergeometric distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", _neghypergeo(mu, sigma).cumulants(k))

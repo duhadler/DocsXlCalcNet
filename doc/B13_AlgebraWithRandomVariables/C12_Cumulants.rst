@@ -88,7 +88,7 @@ Calculating the cumulants from the central moments
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpr, ivr, ivc
+        >>> from xlcalcnet import dec, mpr, ivr, ivc
         >>> ivr.dps = 25; ivr.pretty = True
         >>> ivr.exp([-inf,0])
         [0.0, 1.0]

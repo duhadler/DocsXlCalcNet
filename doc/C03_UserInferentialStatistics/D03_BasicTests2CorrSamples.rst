@@ -121,7 +121,7 @@ Student t-test for 2 correlated samples: tests (p-values)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1Test(means:=[5.24, 4.05], sd:=1.5, n:=22)
 
         Input
@@ -202,7 +202,7 @@ Student t-test for 2 correlated samples:  confidence intervals
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mean:=5.24, mean0:=4.05, sd:=1.5, n:=22, alpha=0.05, resultstring)
 
         Input
@@ -299,7 +299,7 @@ Student t-test for 2 correlated samples: power
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mu1:=5.24, mu0:=4.05, sd:=1.5, n:=22, alpha:=0.05)
 
         Input
@@ -392,7 +392,7 @@ Student t-test for 2 correlated samples: sample size calculation
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mu1:=5.24, mu0:=4.05, sd:=1.5, alpha:=0.05, beta:=0.1)
                                                  df: 21
                                 difference of means: 1.19
@@ -486,7 +486,7 @@ Morgan-Pitman test for the variances of 2 correlated samples: tests (p-values)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1Test(means:=[5.24, 4.05], sd:=1.5, n:=22)
 
         Input
@@ -566,7 +566,7 @@ Morgan-Pitman test for the variances of 2 correlated samples: confidence interva
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mean:=5.24, mean0:=4.05, sd:=1.5, n:=22, alpha=0.05, resultstring)
 
         Input
@@ -660,7 +660,7 @@ Morgan-Pitman test for the variances of 2 correlated samples: power
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mu1:=5.24, mu0:=4.05, sd:=1.5, n:=22, alpha:=0.05)
 
         Input
@@ -752,7 +752,7 @@ Morgan-Pitman test for the variances of 2 correlated samples: sample size
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mu1:=5.24, mu0:=4.05, sd:=1.5, alpha:=0.05, beta:=0.1)
                                                  df: 21
                                 difference of means: 1.19
@@ -865,7 +865,7 @@ Pearson's rho, 2 correlated samples: tests (p-values)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1Test(mean:=5.24, mean0:=4.05, sd:=1.5, n:=22, resultstring:='All')
 
         Input
@@ -952,7 +952,7 @@ Pearson's rho, 2 correlated samples: confidence intervals
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mean:=5.24, mean0:=4.05, sd:=1.5, n:=22, alpha=0.05, resultstring)
 
         Input
@@ -1044,7 +1044,7 @@ Pearson's rho, 2 correlated samples:: power
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mu1:=5.24, mu0:=4.05, sd:=1.5, n:=22, alpha:=0.05)
 
 
@@ -1136,7 +1136,7 @@ Pearson's rho, 2 correlated samples:: sample size calculation
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mu1:=5.24, mu0:=4.05, sd:=1.5, alpha:=0.05, beta:=0.1)
                                                  df: 21
                                 difference of means: 1.19

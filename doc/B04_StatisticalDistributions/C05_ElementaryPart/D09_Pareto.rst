@@ -124,7 +124,7 @@ See also  Wikipedia :cite:p:`WikipediaDis21`, MathWorld :cite:p:`WolframDis21`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", pareto(mu, sigma).pdf(x))
@@ -145,7 +145,7 @@ See also  Wikipedia :cite:p:`WikipediaDis21`, MathWorld :cite:p:`WolframDis21`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", pareto(mu, sigma).pdf(x))
@@ -165,7 +165,7 @@ See also  Wikipedia :cite:p:`WikipediaDis21`, MathWorld :cite:p:`WolframDis21`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", pareto(mu, sigma).pdf(x))
@@ -185,7 +185,7 @@ See also  Wikipedia :cite:p:`WikipediaDis21`, MathWorld :cite:p:`WolframDis21`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", pareto(mu, sigma).qtf(q))
@@ -205,7 +205,7 @@ See also  Wikipedia :cite:p:`WikipediaDis21`, MathWorld :cite:p:`WolframDis21`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", pareto(mu, sigma).isf(q))
@@ -226,7 +226,7 @@ See also  Wikipedia :cite:p:`WikipediaDis21`, MathWorld :cite:p:`WolframDis21`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", pareto(mu, sigma).c_x(t))
@@ -247,7 +247,7 @@ See also  Wikipedia :cite:p:`WikipediaDis21`, MathWorld :cite:p:`WolframDis21`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", pareto(mu, sigma).c_x(t))
@@ -268,7 +268,7 @@ See also  Wikipedia :cite:p:`WikipediaDis21`, MathWorld :cite:p:`WolframDis21`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", pareto(mu, sigma).k_x(t, k))
@@ -290,7 +290,7 @@ See also  Wikipedia :cite:p:`WikipediaDis21`, MathWorld :cite:p:`WolframDis21`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", pareto(mu, sigma).moments(k))
@@ -307,7 +307,7 @@ See also  Wikipedia :cite:p:`WikipediaDis21`, MathWorld :cite:p:`WolframDis21`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", pareto(mu, sigma).cumulants(k))

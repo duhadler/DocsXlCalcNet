@@ -147,7 +147,7 @@ Student t-test for 1 sample: tests (p-values) and confidence intervals
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> n = 16; mu0 = 4.05; mean = 5.24; stdev = 1.5; alpha=0.05
         >>> mpm.student_t_1sample_test(n, mu0, mean, stdev, alpha, \
           I=True, D=True, T=True, C=True, Onesided=True, Twosided = True)
@@ -181,7 +181,7 @@ Student t-test for 1 sample: tests (p-values) and confidence intervals
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> n = [10, 20, 30]; mu0 = 1.0; mean = [4.5,4.6]; stdev = [1,2,3,4]; alpha=0.015
         >>> mpm.student_t_1sample_test(n, mu0, mean, stdev, alpha, \
           I=True, D=True, T=True, C=True, Onesided=True, Twosided = True)
@@ -266,7 +266,7 @@ Student t-test for 1 sample: power calculations
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> n = 56; mu0 = 4.05; mu1 = 5.24; sigma = 1.5; alpha=0.05
         >>> mpm.student_t_1sample_power(n, mu0, mu1, sigma, alpha, \
           I=True, D=True, T=True, C=True, Onesided=True, Twosided = True)
@@ -297,7 +297,7 @@ Student t-test for 1 sample: power calculations
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> n = [10, 20, 30]; mu0 = 1.0; mu1 = [4.5,4.6]; sigma = [1,2,3,4]; alpha=0.015
         >>> mpm.student_t_1sample_power(n, mu0, mu1, sigma, alpha, \
           I=True, D=True, T=True, C=True, Onesided=True, Twosided = True)
@@ -374,7 +374,7 @@ Student t-test for 1 sample: sample size calculation
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1CI(mu1:=5.24, mu0:=4.05, sd:=1.5, alpha:=0.05, beta:=0.1)
                                                  df: 21
                                 difference of means: 1.19
@@ -429,7 +429,7 @@ Chi-squared-test for the variance of 1 sample: tests (p-values)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1Test(mean:=5.24, mean0:=4.05, sd:=1.5, n:=22, resultstring:='All')
 
         Input
@@ -485,7 +485,7 @@ Chi-squared-test for the variance of 1 sample: confidence intervals
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1Test(mean:=5.24, mean0:=4.05, sd:=1.5, n:=22, resultstring:='All')
 
         Input
@@ -547,7 +547,7 @@ Chi-squared-test for the variance of 1 sample: power
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import mpm
+        >>> from xlcalcnet import mpm
         >>> ereal.StudentT1Test(mean:=5.24, mean0:=4.05, sd:=1.5, n:=22, resultstring:='All')
 
         Input

@@ -307,20 +307,20 @@ Harmonic number function, `H_x`
 
 .. method:: math53.harmonic(x)
 
-Returns the Harmonic number  `H_x = \psi(x+1) + \gamma, \quad x \ne -1, -2, \ldots`.
+    Returns the Harmonic number  `H_x = \psi(x+1) + \gamma, \quad x \ne -1, -2, \ldots`.
 
-See also:  Wikipedia :cite:p:`WikipediaFun127`, MathWorld :cite:p:`WolframFun127a`, :cite:t:`Ehrhardt2018` (3.6.20), Mpmath :cite:p:`MpmathFun127`.
+    See also:  Wikipedia :cite:p:`WikipediaFun127`, MathWorld :cite:p:`WolframFun127a`, :cite:t:`Ehrhardt2018` (3.6.20), Mpmath :cite:p:`MpmathFun127`.
 
 
-An example in Python
+    An example in Python
 
-.. code-block:: pycon
+    .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.Harmonic(10.5)
-    ereal('5.2359877559829887307E-1')
-    >>> ereal.Harmonic('10.1')
-    ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import ereal
+        >>> ereal.Harmonic(10.5)
+        ereal('5.2359877559829887307E-1')
+        >>> ereal.Harmonic('10.1')
+        ereal('5.3518479027559984754E-1')
 
 
 

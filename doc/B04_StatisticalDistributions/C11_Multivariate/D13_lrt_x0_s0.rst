@@ -58,7 +58,7 @@ Distribution of the modified likelihood ratio test (LRT) for a given covariance 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", lrt_x0_s0(mu, sigma).pdf(x))
@@ -84,7 +84,7 @@ Distribution of the modified likelihood ratio test (LRT) for a given covariance 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", lrt_x0_s0(mu, sigma).pdf(x))
@@ -110,7 +110,7 @@ Distribution of the modified likelihood ratio test (LRT) for a given covariance 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", lrt_x0_s0(mu, sigma).pdf(x))
@@ -131,7 +131,7 @@ Distribution of the modified likelihood ratio test (LRT) for a given covariance 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", lrt_x0_s0(mu, sigma).qtf(q))
@@ -151,7 +151,7 @@ Distribution of the modified likelihood ratio test (LRT) for a given covariance 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", lrt_x0_s0(mu, sigma).isf(q))
@@ -175,7 +175,7 @@ Distribution of the modified likelihood ratio test (LRT) for a given covariance 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", lrt_x0_s0(mu, sigma).c_x(t))
@@ -197,7 +197,7 @@ Distribution of the modified likelihood ratio test (LRT) for a given covariance 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", lrt_x0_s0(mu, sigma).c_x(t))
@@ -220,7 +220,7 @@ Distribution of the modified likelihood ratio test (LRT) for a given covariance 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", lrt_x0_s0(mu, sigma).k_x(t, k))
@@ -242,7 +242,7 @@ Distribution of the modified likelihood ratio test (LRT) for a given covariance 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", lrt_x0_s0(mu, sigma).moments(k))
@@ -270,7 +270,7 @@ Distribution of the modified likelihood ratio test (LRT) for a given covariance 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", lrt_x0_s0(mu, sigma).cumulants(k))

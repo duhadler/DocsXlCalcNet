@@ -90,7 +90,7 @@ Boost: Survival function
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -119,7 +119,7 @@ Hazard function
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -150,7 +150,7 @@ Cumulative Hazard Function
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -197,7 +197,7 @@ Boost: Quantile function
 
     .. code-block:: python
 
-	    >>> from mpfunlab import *
+	    >>> from xlcalcnet import *
 	    >>> mp.dps = 30
 	    >>> mu = 0; sigma = 1; t = 0.3; 
 	    >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -225,7 +225,7 @@ Boost: Inverse survival function
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -253,7 +253,7 @@ Boost: Mode
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -278,7 +278,7 @@ Boost: Expected value (mean)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -304,7 +304,7 @@ Boost: Median
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -331,7 +331,7 @@ Boost: Variance
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -356,7 +356,7 @@ Boost: Standard deviation
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -381,7 +381,7 @@ Boost: Skewness
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -412,7 +412,7 @@ Boost: Kurtosis
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -443,7 +443,7 @@ Boost: Kurtosis excess
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -604,7 +604,7 @@ Characteristic function
 
     .. code-block:: python
 
-	    >>> from mpfunlab import *
+	    >>> from xlcalcnet import *
 	    >>> mp.dps = 30
 	    >>> mu = 0; sigma = 1; t = 0.3; 
 	    >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))

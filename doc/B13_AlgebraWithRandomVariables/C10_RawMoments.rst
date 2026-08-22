@@ -89,7 +89,7 @@ Calculating the raw moments from the central moments
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpr, ivr, ivc
+        >>> from xlcalcnet import dec, mpr, ivr, ivc
         >>> ivr.dps = 25; ivr.pretty = True
         >>> ivr.exp([-inf,0])
         [0.0, 1.0]
@@ -114,7 +114,7 @@ Calculating the raw moments from the cumulants
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpr, ivr, ivc
+        >>> from xlcalcnet import dec, mpr, ivr, ivc
         >>> ivr.dps = 25; ivr.pretty = True
         >>> ivr.exp([-inf,0])
         [0.0, 1.0]

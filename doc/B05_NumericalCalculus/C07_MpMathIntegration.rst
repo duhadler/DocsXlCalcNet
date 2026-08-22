@@ -44,7 +44,7 @@ General quadrature interface
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> quad(sin, [0, pi])
         2.0
@@ -480,7 +480,7 @@ Quadrature of oscillatory functions (Filon)
 
     .. code-block:: pycon
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> f = lambda x: sin(3*x)/(x**2+1)
         >>> quadosc(f, [0,inf], omega=3)
@@ -845,7 +845,7 @@ Specialized Gauss quadrature rules
     .. code-block:: python
 
         def demo_gauss_quadrature_laguerre_mp():
-            from mpfunlab.mpmath import mp
+            from xlcalcnet.mpmath import mp
             f = lambda x: x**5 - 2 * x**4 + 3 * x**3 - 5 * x**2 + 7 * x - 11
             X, W = mp.gauss_quadrature(3, "laguerre")
             A = mp.fdot([(f(x), w) for x, w in zip(X, W)])
@@ -889,7 +889,7 @@ Specialized Gauss quadrature rules
     .. code-block:: python
 
         def demo_gauss_quadrature_laguerre_mp():
-            from mpfunlab.mpmath import mp
+            from xlcalcnet.mpmath import mp
             f = lambda x: x**5 - 2 * x**4 + 3 * x**3 - 5 * x**2 + 7 * x - 11
             X, W = mp.gauss_quadrature(3, "laguerre")
             A = mp.fdot([(f(x), w) for x, w in zip(X, W)])
@@ -922,7 +922,7 @@ Specialized Gauss quadrature rules
     .. code-block:: python
 
         def demo_gauss_quadrature_laguerre_mp():
-            from mpfunlab.mpmath import mp
+            from xlcalcnet.mpmath import mp
             f = lambda x: x**5 - 2 * x**4 + 3 * x**3 - 5 * x**2 + 7 * x - 11
             X, W = mp.gauss_quadrature(3, "laguerre")
             A = mp.fdot([(f(x), w) for x, w in zip(X, W)])
@@ -954,7 +954,7 @@ Specialized Gauss quadrature rules
     .. code-block:: python
 
         def demo_gauss_quadrature_hermite_mp():
-            from mpfunlab.mpmath import mp
+            from xlcalcnet.mpmath import mp
             f = lambda x: x**8 + 2 * x**6 - 3 * x**4 + 5 * x**2 - 7
             X, W = mp.gauss_quadrature(5, "hermite")
             A = mp.fdot([(f(x), w) for x, w in zip(X, W)])

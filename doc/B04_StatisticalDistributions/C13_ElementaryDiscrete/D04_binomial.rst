@@ -148,7 +148,7 @@ See also   Wikipedia :cite:p:`WikipediaDis33`, MathWorld :cite:p:`WolframDis33`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pmf: ", binomial(mu, sigma).pmf(x))
@@ -170,7 +170,7 @@ See also   Wikipedia :cite:p:`WikipediaDis33`, MathWorld :cite:p:`WolframDis33`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", binomial(mu, sigma).pmf(x))
@@ -190,7 +190,7 @@ See also   Wikipedia :cite:p:`WikipediaDis33`, MathWorld :cite:p:`WolframDis33`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", binomial(mu, sigma).pmf(x))
@@ -211,7 +211,7 @@ See also   Wikipedia :cite:p:`WikipediaDis33`, MathWorld :cite:p:`WolframDis33`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", binomial(mu, sigma).qtf(q))
@@ -231,7 +231,7 @@ See also   Wikipedia :cite:p:`WikipediaDis33`, MathWorld :cite:p:`WolframDis33`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", binomial(mu, sigma).isf(q))
@@ -252,7 +252,7 @@ See also   Wikipedia :cite:p:`WikipediaDis33`, MathWorld :cite:p:`WolframDis33`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", binomial(mu, sigma).c_x(t))
@@ -272,7 +272,7 @@ See also   Wikipedia :cite:p:`WikipediaDis33`, MathWorld :cite:p:`WolframDis33`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", binomial(mu, sigma).c_x(t))
@@ -294,7 +294,7 @@ See also   Wikipedia :cite:p:`WikipediaDis33`, MathWorld :cite:p:`WolframDis33`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", binomial(mu, sigma).c_x(t))
@@ -330,7 +330,7 @@ See also   Wikipedia :cite:p:`WikipediaDis33`, MathWorld :cite:p:`WolframDis33`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", binomial(mu, sigma).k_x(t, k))
@@ -354,7 +354,7 @@ See also   Wikipedia :cite:p:`WikipediaDis33`, MathWorld :cite:p:`WolframDis33`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", binomial(mu, sigma).moments(k))
@@ -372,7 +372,7 @@ See also   Wikipedia :cite:p:`WikipediaDis33`, MathWorld :cite:p:`WolframDis33`,
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", binomial(mu, sigma).cumulants(k))

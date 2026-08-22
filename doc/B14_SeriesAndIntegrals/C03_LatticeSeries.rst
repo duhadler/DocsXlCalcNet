@@ -60,7 +60,7 @@ Fréchet's formula for calculating the pmf from the factorial moments
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; k = '34'; n = '100'; p = '0.5'; 
         >>> dx = dec.binomial_pmf(k, n, p); mx = mpm.binomial_pmf(k, n, p)
         >>> ix = ipm.binomial_pmf(k, n, p); fx = fpm.binomial_pmf(k, n, p)
@@ -101,7 +101,7 @@ Laurent's formula for calculating the cdf from the factorial moments
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; k = '34'; n = '100'; p = '0.5'; 
         >>> dx = dec.binomial_cdf(k, n, p); mx = mpm.binomial_cdf(k, n, p)
         >>> ix = ipm.binomial_cdf(k, n, p); fx = fpm.binomial_cdf(k, n, p)
@@ -141,7 +141,7 @@ Binomial distribution, pmf, cdf
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; k = '34'; n = '100'; p = '0.5'; 
         >>> dx = dec.binomial_pmf(k, n, p); mx = mpm.binomial_pmf(k, n, p)
         >>> ix = ipm.binomial_pmf(k, n, p); fx = fpm.binomial_pmf(k, n, p)
@@ -160,7 +160,7 @@ Binomial distribution, pmf, cdf
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; k = '34'; n = '100'; p = '0.5'; 
         >>> dx = dec.binomial_cdf(k, n, p); mx = mpm.binomial_cdf(k, n, p)
         >>> ix = ipm.binomial_cdf(k, n, p); fx = fpm.binomial_cdf(k, n, p)
@@ -196,7 +196,7 @@ Classical hypergeometric distribution, pmf, cdf
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; k = 2; n = 3; K = 10; N = 30
         >>> dx = dec.hypergeo_pmf(k, n, K, N); mx = mpm.hypergeo_pmf(k, n, K, N)
         >>> ix = ipm.hypergeo_pmf(k, n, K, N); fx = fpm.hypergeo_pmf(k, n, K, N)
@@ -215,7 +215,7 @@ Classical hypergeometric distribution, pmf, cdf
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; k = 2; n = 3; K = 10; N = 30
         >>> dx = dec.hypergeo_cdf(k, n, K, N); mx = mpm.hypergeo_cdf(k, n, K, N)
         >>> ix = ipm.hypergeo_cdf(k, n, K, N); fx = fpm.hypergeo_cdf(k, n, K, N)
@@ -255,7 +255,7 @@ Wilcoxon distribution, pmf, cdf
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = '10'; N = '30';
         >>> dx = dec.wilcoxon_pmf(x, N); mx = mpm.wilcoxon_pmf(x, N)
         >>> ix = ipm.wilcoxon_pmf(x, N); fx = fpm.wilcoxon_pmf(x, N)
@@ -273,7 +273,7 @@ Wilcoxon distribution, pmf, cdf
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = '10'; N = '30';
         >>> dx = dec.wilcoxon_cdf(x, N); mx = mpm.wilcoxon_cdf(x, N)
         >>> ix = ipm.wilcoxon_cdf(x, N); fx = fpm.wilcoxon_cdf(x, N)
@@ -313,7 +313,7 @@ Mann-Whitney distribution, pmf, cdf
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = '10'; m = '20'; n = '20';
         >>> dx = dec.mannwhitney_pmf(x, m, n); mx = mpm.mannwhitney_pmf(x, m, n)
         >>> ix = ipm.mannwhitney_pmf(x, m, n); fx = fpm.mannwhitney_pmf(x, m, n)
@@ -332,7 +332,7 @@ Mann-Whitney distribution, pmf, cdf
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = '10'; m = '20'; n = '20';
         >>> dx = dec.mannwhitney_cdf(x, m, n); mx = mpm.mannwhitney_cdf(x, m, n)
         >>> ix = ipm.mannwhitney_cdf(x, m, n); fx = fpm.mannwhitney_cdf(x, m, n)
@@ -373,7 +373,7 @@ Kendall distribution, pmf, cdf
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = '10'; N = '30';
         >>> dx = dec.kendall_tau_pmf(x, N); mx = mpm.kendall_tau_pmf(x, N)
         >>> ix = ipm.kendall_tau_pmf(x, N); fx = fpm.kendall_tau_pmf(x, N)
@@ -392,7 +392,7 @@ Kendall distribution, pmf, cdf
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = '10'; N = '30';
         >>> dx = dec.kendall_tau_cdf(x, N); mx = mpm.kendall_tau_cdf(x, N)
         >>> ix = ipm.kendall_tau_cdf(x, N); fx = fpm.kendall_tau_cdf(x, N)
@@ -433,7 +433,7 @@ Jonckheere-Terpsta `T` distribution, pmf, cdf
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = '10'; k = '4'; n = '10';
         >>> dx = dec.jterpsta_s_pmf(x, k, n); mx = mpm.jterpsta_s_pmf(x, k, n)
         >>> ix = ipm.jterpsta_s_pmf(x, k, n); fx = fpm.jterpsta_s_pmf(x, k, n)
@@ -451,7 +451,7 @@ Jonckheere-Terpsta `T` distribution, pmf, cdf
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = '10'; k = '4'; n = '10';
         >>> dx = dec.jterpsta_s_cdf(x, k, n); mx = mpm.jterpsta_s_cdf(x, k, n)
         >>> ix = ipm.jterpsta_s_cdf(x, k, n); fx = fpm.jterpsta_s_cdf(x, k, n)

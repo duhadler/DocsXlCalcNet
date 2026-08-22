@@ -138,7 +138,7 @@ Vector containing all values of the pmf
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -164,7 +164,7 @@ Entropy
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -193,7 +193,7 @@ Logarithm of the probability mass function
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))

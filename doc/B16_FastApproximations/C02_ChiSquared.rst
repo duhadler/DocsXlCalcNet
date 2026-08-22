@@ -63,7 +63,7 @@ Non-Central chi-squared : cdf, sf  (Patnaik)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.chi2_nc_mu2_cdf(x, nu, nc); mx = mpm.chi2_nc_mu2_cdf(x, nu, nc)
         >>> ix = ipm.chi2_nc_mu2_cdf(x, nu, nc); fx = fpm.chi2_nc_mu2_cdf(x, nu, nc)
@@ -101,7 +101,7 @@ Non-Central chi-squared: qtf, isf  (Patnaik)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.chi2_nc_mu2_qtf(x, nu, nc); mx = mpm.chi2_nc_mu2_qtf(x, nu, nc)
         >>> ix = ipm.chi2_nc_mu2_qtf(x, nu, nc); fx = fpm.chi2_nc_mu2_qtf(x, nu, nc)
@@ -152,7 +152,7 @@ Non-Central chi-squared: confidence limit for `\lambda` (Winterbottom)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.chi2_nc_wb_cl(x, nu, nc); mx = mpm.chi2_nc_wb_cl(x, nu, nc)
         >>> ix = ipm.chi2_nc_wb_cl(x, nu, nc); fx = fpm.chi2_nc_wb_cl(x, nu, nc)
@@ -204,7 +204,7 @@ Roy's largest root `\theta`: pdf  (Chiani)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.roy_chiani_pdf(x, nu, nc); mx = mpm.roy_chiani_pdf(x, nu, nc)
         >>> ix = ipm.roy_chiani_pdf(x, nu, nc); fx = fpm.roy_chiani_pdf(x, nu, nc)
@@ -256,7 +256,7 @@ Roy's largest root: cdf and sf  (Chiani)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.roy_chiani_cdf(x, nu, nc); mx = mpm.roy_chiani_cdf(x, nu, nc)
         >>> ix = ipm.roy_chiani_cdf(x, nu, nc); fx = fpm.roy_chiani_cdf(x, nu, nc)
@@ -309,7 +309,7 @@ Roy's largest root: qtf and isf  (Chiani)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.roy_chiani_qtf(x, nu, nc); mx = mpm.roy_chiani_qtf(x, nu, nc)
         >>> ix = ipm.roy_chiani_qtf(x, nu, nc); fx = fpm.roy_chiani_qtf(x, nu, nc)

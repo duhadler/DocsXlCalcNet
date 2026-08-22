@@ -44,7 +44,7 @@ Lindley distribution (generalized)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", lindley(mu, sigma).pdf(x))
@@ -66,7 +66,7 @@ Lindley distribution (generalized)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", lindley(mu, sigma).pdf(x))
@@ -90,7 +90,7 @@ Lindley distribution (generalized)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", lindley(mu, sigma).pdf(x))
@@ -111,7 +111,7 @@ Lindley distribution (generalized)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", lindley(mu, sigma).qtf(q))
@@ -131,7 +131,7 @@ Lindley distribution (generalized)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", lindley(mu, sigma).isf(q))
@@ -152,7 +152,7 @@ Lindley distribution (generalized)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", lindley(mu, sigma).c_x(t))
@@ -173,7 +173,7 @@ Lindley distribution (generalized)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", lindley(mu, sigma).c_x(t))
@@ -194,7 +194,7 @@ Lindley distribution (generalized)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", lindley(mu, sigma).k_x(t, k))
@@ -222,7 +222,7 @@ Lindley distribution (generalized)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", lindley(mu, sigma).moments(k))
@@ -239,7 +239,7 @@ Lindley distribution (generalized)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", lindley(mu, sigma).cumulants(k))

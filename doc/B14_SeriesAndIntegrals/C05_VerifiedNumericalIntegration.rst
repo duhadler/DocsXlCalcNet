@@ -208,7 +208,7 @@ Marcum `Q` function
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm
+        >>> from xlcalcnet import dec, mpm, ipm
         >>> mpm.dps = 40; a = '3.7'; b = '10.3'
         >>> dx = dec.marcumq(a, b); mx = mpm.marcumq(a, b); ix = ipm.marcumq(a, b)
         >>> mpm.show([dx, mx, ix])
@@ -216,7 +216,7 @@ Marcum `Q` function
         mpm:  3.465377030836928861042229075522437177483e-11
         ipm:  3.465377030836928861042229075522437177486e-11 (9.641e-40%)
 
-        >>> from mpfunlab import mpm, fpm, gmp, apm
+        >>> from xlcalcnet import mpm, fpm, gmp, apm
         >>> mpm.dps = 40; a = '3.7'; b = '10.3'
         >>> fx = fpm.marcumq(a, b); gx = gmp.marcumq(a, b); ax = apm.marcumq(a, b)
         >>> mpm.show([gx, fx, ax])
@@ -270,7 +270,7 @@ Owen's `T` function
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm
+        >>> from xlcalcnet import dec, mpm, ipm
         >>> mpm.dps = 40; h = 3.7; a = 10.3
         >>> dx = dec.owent(h, a); mx = mpm.owent(h, a); ix = ipm.owent(h, a)
         >>> mpm.show([dx, mx, ix])
@@ -278,7 +278,7 @@ Owen's `T` function
         mpm:  5.389986673869413074066777467941111347102e-5
         ipm:  5.389986673869413074066777467941111347102e-5 (6.5e-40%)
 
-        >>> from mpfunlab import mpm, fpm, gmp, apm
+        >>> from xlcalcnet import mpm, fpm, gmp, apm
         >>> mpm.dps = 40; h = 3.7; a = 10.3
         >>> fx = fpm.owent(h, a); gx = gmp.owent(h, a); ax = apm.owent(h, a)
         >>> mpm.show([gx, fx, ax])

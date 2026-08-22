@@ -57,7 +57,7 @@ For Dunnett's test:
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", nair_t(mu, sigma).pdf(x))
@@ -81,7 +81,7 @@ For Dunnett's test:
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", nair_t(mu, sigma).pdf(x))
@@ -104,7 +104,7 @@ For Dunnett's test:
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", nair_t(mu, sigma).pdf(x))
@@ -123,7 +123,7 @@ For Dunnett's test:
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", nair_t(mu, sigma).qtf(q))
@@ -144,7 +144,7 @@ For Dunnett's test:
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", nair_t(mu, sigma).isf(q))
@@ -165,7 +165,7 @@ For Dunnett's test:
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", nair_t(mu, sigma).c_x(t))
@@ -205,7 +205,7 @@ For Dunnett's test:
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", nair_t(mu, sigma).moments(k))
@@ -222,7 +222,7 @@ Returns the first `j` cumulants, `\kappa_j, j = 1 \ldots k`, of a random variabl
 
 .. code-block:: python
 
-    >>> from mpfunlab import *
+    >>> from xlcalcnet import *
     >>> mp.dps = 30
     >>> mu = 0; sigma = 1; k = 6;
     >>> print ("saddlepoint: ", nair_t(mu, sigma).cumulants(k))

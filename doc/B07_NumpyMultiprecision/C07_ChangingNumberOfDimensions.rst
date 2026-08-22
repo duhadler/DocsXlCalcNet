@@ -69,7 +69,7 @@ Convert inputs to arrays with at least one dimension: numpy.atleast_1d
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> np.atleast_1d(1.0)
         array([1.])
@@ -101,7 +101,7 @@ Convert inputs to arrays with at least two dimensions: numpy.atleast_2d
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> np.atleast_2d(3.0)
         array([[3.]])
@@ -132,7 +132,7 @@ Convert inputs to arrays with at least two dimensions: numpy.atleast_3d
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> np.atleast_3d(3.0)
         array([[[3.]]])
@@ -172,7 +172,7 @@ Broadcast an array to a new shape: numpy.broadcast_to
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> x = np.array([1, 2, 3])
         >>> np.broadcast_to(x, (3, 3))
@@ -198,7 +198,7 @@ Broadcast any number of arrays against each other: numpy.broadcast_arrays
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> x = np.array([[1,2,3]])
         >>> y = np.array([[4],[5]])
@@ -236,7 +236,7 @@ Expand the shape of an array: numpy.expand_dims
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> x = np.array([1, 2])
         >>> x.shape
@@ -299,7 +299,7 @@ Remove axes of length one from an array: numpy.squeeze
 
     .. code-block:: pycon
 
-        >>> import numpy as np; from mpfunlab import mpm, dpm
+        >>> import numpy as np; from xlcalcnet import mpm, dpm
 
         >>> x = np.array([[[0], [1], [2]]])
         >>> x.shape

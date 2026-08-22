@@ -61,7 +61,7 @@ Kendall's tau distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pmf: ", kendall_tau_continuous(mu, sigma).pmf(x))
@@ -88,7 +88,7 @@ Kendall's tau distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", kendall_tau_continuous(mu, sigma).pmf(x))
@@ -115,7 +115,7 @@ Kendall's tau distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", kendall_tau_continuous(mu, sigma).pmf(x))
@@ -135,7 +135,7 @@ Kendall's tau distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", kendall_tau_continuous(mu, sigma).qtf(q))
@@ -153,7 +153,7 @@ Kendall's tau distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", kendall_tau_continuous(mu, sigma).isf(q))
@@ -176,7 +176,7 @@ Kendall's tau distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", kendall_tau_continuous(mu, sigma).c_x(t))
@@ -196,7 +196,7 @@ Kendall's tau distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", kendall_tau_continuous(mu, sigma).c_x(t))
@@ -215,7 +215,7 @@ Kendall's tau distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", kendall_tau_continuous(mu, sigma).c_x(t))
@@ -259,7 +259,7 @@ Kendall's tau distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", kendall_tau_continuous(mu, sigma).k_x(t, k))
@@ -283,7 +283,7 @@ Kendall's tau distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", kendall_tau_continuous(mu, sigma).moments(k))
@@ -307,7 +307,7 @@ Kendall's tau distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", kendall_tau_continuous(mu, sigma).cumulants(k))

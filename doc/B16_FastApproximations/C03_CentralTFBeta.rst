@@ -55,7 +55,7 @@ Dunn-Šidák percentage points
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.dunn_sidak_qtf(x, nu, nc); mx = mpm.dunn_sidak_qtf(x, nu, nc)
         >>> ix = ipm.dunn_sidak_qtf(x, nu, nc); fx = fpm.dunn_sidak_qtf(x, nu, nc)
@@ -103,7 +103,7 @@ Singly non-central Fisher F distribution: cdf, sf (Patnaik)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.fisher_f_nc_mu2_cdf(x, nu, nc); mx = mpm.fisher_f_nc_mu2_cdf(x, nu, nc)
         >>> ix = ipm.fisher_f_nc_mu2_cdf(x, nu, nc); fx = fpm.fisher_f_nc_mu2_cdf(x, nu, nc)
@@ -149,7 +149,7 @@ Singly non-central F distribution: qtf, isf (Patnaik)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.fisher_f_nc_mu2_qtf(x, nu, nc); mx = mpm.fisher_f_nc_mu2_qtf(x, nu, nc)
         >>> ix = ipm.fisher_f_nc_mu2_qtf(x, nu, nc); fx = fpm.fisher_f_nc_mu2_qtf(x, nu, nc)
@@ -183,7 +183,7 @@ Singly non-central F: confidence interval for the noncentrality parameter `\lamb
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.fisher_f_nc_mu2_cl(x, nu, nc); mx = mpm.fisher_f_nc_mu2_cl(x, nu, nc)
         >>> ix = ipm.fisher_f_nc_mu2_cl(x, nu, nc); fx = fpm.fisher_f_nc_mu2_cl(x, nu, nc)
@@ -234,7 +234,7 @@ Doubly non-central F distribution: cdf, sf (Patnaik)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.fisher_f_nc2_mu2_cdf(x, nu, nc); mx = mpm.fisher_f_nc2_mu2_cdf(x, nu, nc)
         >>> ix = ipm.fisher_f_nc2_mu2_cdf(x, nu, nc); fx = fpm.fisher_f_nc2_mu2_cdf(x, nu, nc)
@@ -283,7 +283,7 @@ Doubly non-central F distribution: qtf, isf (Patnaik)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.fisher_f_nc2_mu2_qtf(x, nu, nc); mx = mpm.fisher_f_nc2_mu2_qtf(x, nu, nc)
         >>> ix = ipm.fisher_f_nc2_mu2_qtf(x, nu, nc); fx = fpm.fisher_f_nc2_mu2_qtf(x, nu, nc)
@@ -324,7 +324,7 @@ Multiple correlation coefficient: cdf, sf (Lee and Gurland)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.fisher_r2_lee_cdf(x, nu, nc); mx = mpm.fisher_r2_lee_cdf(x, nu, nc)
         >>> ix = ipm.fisher_r2_lee_cdf(x, nu, nc); fx = fpm.fisher_r2_lee_cdf(x, nu, nc)
@@ -368,7 +368,7 @@ Multiple correlation coefficient: qtf, isf (Lee and Gurland)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.fisher_r2_lee_qtf(x, nu, nc); mx = mpm.fisher_r2_lee_qtf(x, nu, nc)
         >>> ix = ipm.fisher_r2_lee_qtf(x, nu, nc); fx = fpm.fisher_r2_lee_qtf(x, nu, nc)
@@ -405,7 +405,7 @@ Fisher `R^2`,: confidence limit for `\rho^2`
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.fisher_r2_lee_cl(x, nu, nc); mx = mpm.fisher_r2_lee_cl(x, nu, nc)
         >>> ix = ipm.fisher_r2_lee_cl(x, nu, nc); fx = fpm.fisher_r2_lee_cl(x, nu, nc)
@@ -454,7 +454,7 @@ Central Wilks' Lambda: cdf, sf (Rao)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.wilks_lambda_rao_cdf(x, nu, nc); mx = mpm.wilks_lambda_rao_cdf(x, nu, nc)
         >>> ix = ipm.wilks_lambda_rao_cdf(x, nu, nc); fx = fpm.wilks_lambda_rao_cdf(x, nu, nc)
@@ -496,7 +496,7 @@ Central Wilks' Lambda: qtf, isf (Rao)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.wilks_lambda_rao_qtf(x, nu, nc); mx = mpm.wilks_lambda_rao_qtf(x, nu, nc)
         >>> ix = ipm.wilks_lambda_rao_qtf(x, nu, nc); fx = fpm.wilks_lambda_rao_qtf(x, nu, nc)
@@ -545,7 +545,7 @@ Central Hotelling's `T^2`: cdf, sf (Pillai and Young)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.hotelling_t2_mu3_cdf(x, nu, nc); mx = mpm.hotelling_t2_mu3_cdf(x, nu, nc)
         >>> ix = ipm.hotelling_t2_mu3_cdf(x, nu, nc); fx = fpm.hotelling_t2_mu3_cdf(x, nu, nc)
@@ -594,7 +594,7 @@ Central Hotelling's `T^2`: qtf, isf (Pillai and Young)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.hotelling_t2_mu3_qtf(x, nu, nc); mx = mpm.hotelling_t2_mu3_qtf(x, nu, nc)
         >>> ix = ipm.hotelling_t2_mu3_qtf(x, nu, nc); fx = fpm.hotelling_t2_mu3_qtf(x, nu, nc)
@@ -642,7 +642,7 @@ Central Pillai's `V`: cdf, sf (Ginzberg)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.pillay_v_mu3_cdf(x, nu, nc); mx = mpm.pillay_v_mu3_cdf(x, nu, nc)
         >>> ix = ipm.pillay_v_mu3_cdf(x, nu, nc); fx = fpm.pillay_v_mu3_cdf(x, nu, nc)
@@ -690,7 +690,7 @@ Central Pillai's `V`: qtf, isf (Ginzberg)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.pillay_v_mu3_qtf(x, nu, nc); mx = mpm.pillay_v_mu3_qtf(x, nu, nc)
         >>> ix = ipm.pillay_v_mu3_qtf(x, nu, nc); fx = fpm.pillay_v_mu3_qtf(x, nu, nc)
@@ -731,7 +731,7 @@ Product of independent beta variables: cdf, sf (Nagarsenker)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.beta_product_mu3_cdf(x, nu, nc); mx = mpm.beta_product_mu3_cdf(x, nu, nc)
         >>> ix = ipm.beta_product_mu3_cdf(x, nu, nc); fx = fpm.beta_product_mu3_cdf(x, nu, nc)
@@ -776,7 +776,7 @@ Product of independent beta variables: qtf, isf (Nagarsenker)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.beta_product_mu3_qtf(x, nu, nc); mx = mpm.beta_product_mu3_qtf(x, nu, nc)
         >>> ix = ipm.beta_product_mu3_qtf(x, nu, nc); fx = fpm.beta_product_mu3_qtf(x, nu, nc)

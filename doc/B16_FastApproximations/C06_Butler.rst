@@ -73,7 +73,7 @@ Hypergeometric function `{}_1F_1` for matrix argument (Butler's approximation)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.hypermat_1f1_butler(x, nu, nc); mx = mpm.hypermat_1f1_butler(x, nu, nc)
         >>> ix = ipm.hypermat_1f1_butler(x, nu, nc); fx = fpm.hypermat_1f1_butler(x, nu, nc)
@@ -155,7 +155,7 @@ Hypergeometric function `{}_2F_1` for matrix argument (Butler's approximation)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import fpm, mpm
+        >>> from xlcalcnet import fpm, mpm
         >>> mpm.dps = 40; x = 12; nu = 10; nc = 30
         >>> dx = dec.hypermat_2f1_butler(x, nu, nc); mx = mpm.hypermat_2f1_butler(x, nu, nc)
         >>> ix = ipm.hypermat_2f1_butler(x, nu, nc); fx = fpm.hypermat_2f1_butler(x, nu, nc)

@@ -642,7 +642,7 @@ Matrix Exponential
 
     Basic examples::
 
-        >>> from mpmath import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 15; mp.pretty = True
         >>> expm(zeros(3))
         [1.0  0.0  0.0]

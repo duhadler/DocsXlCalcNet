@@ -64,7 +64,7 @@ Jonckheere-Terpsta `T` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pmf: ", jonckheere_terpsta_s_continuous(mu, sigma).pmf(x))
@@ -92,7 +92,7 @@ Jonckheere-Terpsta `T` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", jonckheere_terpsta_s_continuous(mu, sigma).pmf(x))
@@ -120,7 +120,7 @@ Jonckheere-Terpsta `T` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", jonckheere_terpsta_s_continuous(mu, sigma).pmf(x))
@@ -138,7 +138,7 @@ Jonckheere-Terpsta `T` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", jonckheere_terpsta_s_continuous(mu, sigma).qtf(q))
@@ -155,7 +155,7 @@ Jonckheere-Terpsta `T` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", jonckheere_terpsta_s_continuous(mu, sigma).isf(q))
@@ -177,7 +177,7 @@ Jonckheere-Terpsta `T` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", jonckheere_terpsta_s_continuous(mu, sigma).c_x(t))
@@ -197,7 +197,7 @@ Jonckheere-Terpsta `T` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", jonckheere_terpsta_s_continuous(mu, sigma).c_x(t))
@@ -217,7 +217,7 @@ Jonckheere-Terpsta `T` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", jonckheere_terpsta_s_continuous(mu, sigma).c_x(t))
@@ -261,7 +261,7 @@ Jonckheere-Terpsta `T` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", jonckheere_terpsta_s_continuous(mu, sigma).k_x(t, k))
@@ -284,7 +284,7 @@ Jonckheere-Terpsta `T` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", jonckheere_terpsta_s_continuous(mu, sigma).moments(k))
@@ -314,7 +314,7 @@ Jonckheere-Terpsta `T` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", jonckheere_terpsta_s_continuous(mu, sigma).cumulants(k))

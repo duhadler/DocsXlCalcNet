@@ -61,7 +61,7 @@ Halperin's `t`-distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", halperin_t(mu, sigma).pdf(x))
@@ -85,7 +85,7 @@ Halperin's `t`-distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", halperin_t(mu, sigma).pdf(x))
@@ -108,7 +108,7 @@ Halperin's `t`-distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", halperin_t(mu, sigma).pdf(x))
@@ -129,7 +129,7 @@ Halperin's `t`-distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", halperin_t(mu, sigma).qtf(q))
@@ -150,7 +150,7 @@ Returns `\text{isf}_X(q)`, the inverse survival function function (isf) of a ran
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", halperin_t(mu, sigma).isf(q))
@@ -171,7 +171,7 @@ Returns `\text{isf}_X(q)`, the inverse survival function function (isf) of a ran
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", halperin_t(mu, sigma).c_x(t))
@@ -211,7 +211,7 @@ Returns `\text{isf}_X(q)`, the inverse survival function function (isf) of a ran
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", halperin_t(mu, sigma).moments(k))
@@ -228,7 +228,7 @@ Returns `\text{isf}_X(q)`, the inverse survival function function (isf) of a ran
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", halperin_t(mu, sigma).cumulants(k))

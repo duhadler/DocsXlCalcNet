@@ -47,7 +47,7 @@ Noncentral Mann-Whitney U distribution, Lehmann alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pmf: ", mann_whitney_u_continuous(mu, sigma).pmf(x))
@@ -68,7 +68,7 @@ Noncentral Mann-Whitney U distribution, Lehmann alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", mann_whitney_u_continuous(mu, sigma).pmf(x))
@@ -88,7 +88,7 @@ Noncentral Mann-Whitney U distribution, Lehmann alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", mann_whitney_u_continuous(mu, sigma).pmf(x))
@@ -107,7 +107,7 @@ Noncentral Mann-Whitney U distribution, Lehmann alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", mann_whitney_u_continuous(mu, sigma).qtf(q))
@@ -127,7 +127,7 @@ Noncentral Mann-Whitney U distribution, Lehmann alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", mann_whitney_u_continuous(mu, sigma).isf(q))
@@ -159,7 +159,7 @@ Noncentral Mann-Whitney U distribution, Lehmann alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", mann_whitney_u_continuous(mu, sigma).c_x(t))
@@ -180,7 +180,7 @@ Noncentral Mann-Whitney U distribution, Lehmann alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", mann_whitney_u_continuous(mu, sigma).c_x(t))
@@ -201,7 +201,7 @@ Noncentral Mann-Whitney U distribution, Lehmann alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", mann_whitney_u_continuous(mu, sigma).k_x(t, k))
@@ -224,7 +224,7 @@ Noncentral Mann-Whitney U distribution, Lehmann alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mann_whitney_u_continuous(mu, sigma).moments(k))
@@ -246,7 +246,7 @@ Noncentral Mann-Whitney U distribution, Lehmann alternatives
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mann_whitney_u_continuous(mu, sigma).cumulants(k))

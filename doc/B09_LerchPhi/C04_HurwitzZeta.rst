@@ -46,17 +46,6 @@ Hurwitz zeta function, `\zeta(s,a)`
 
 
 
-    This function is defined as
-
-    .. math :: \zeta(s,a)=\sum_{k=0}^\infty \frac{1}{(k+a)^s} \quad (s>1, a \neq 0,-1,-2,\cdots),
-
-    and by continuation to `s<1`. Note: the current implementation restricts the arguments to `s \neq 1` and `a>0`. If `a=1` then `\zeta(s)` is returned, and if `s=0` the result is `0.5-a`.
-
-    .. note
-       This function is called ``zeta(s,a)`` in mpmath, i.e. Riemann and Hurwitz zeta function are combined in one function.
-
-
-
 
     |02_0a_TestHurwitzZetaFlint_0_re| `\quad` |02_0b_TestHurwitzZetaFlint_0_im| `\quad` |02_0c_TestHurwitzZetaFlint_0_abs|
 
@@ -185,14 +174,6 @@ Generalized harmonic number function, `H_x^{(r)}`
     See also:  Wikipedia :cite:p:`WikipediaFun127`, MathWorld :cite:p:`WolframFun127b`, :cite:t:`Ehrhardt2018` (3.6.21).
 
 
-    The generalized harmonic number function is defined as
-
-    .. math :: H_x^{(r)} = \zeta(r) - \zeta(r, x+1) \quad x \ne 1,
-
-
-    and `H_x^{(1)} = H_x` for `r=1`
-
-
 
 
     An example in Python
@@ -264,25 +245,6 @@ Bernoulli numbers, `B_n`
 
 
 
-    The function \textsf{Bernoulli} returns the Bernoulli numbers `B_n`, which are defined by their generating
-    function
-
-    .. math:: \frac{t}{e^t - 1} = \sum_{n=0}^{\infty} B_n \frac{t^n}{n!}, \quad |t| < 2\pi.
-
-    If `n < 0` or if `n > 2` is odd, the result is 0, and `B_1 = -1/2`. If `n \leq 120` the function value is taken from a pre-calculated table. For large `n` the asymptotic  approximation [30, 24.11.1]
-
-    .. math:: (-1)^{n+1} B_{2n} \approx \frac{2(2n)!}{(2\pi)^{2n}} ,
-
-    gives an asymptotic recursion formula
-
-
-    .. math:: B_{2n+2} \approx - \frac{(2n + 1)(2n + 2)}{(2\pi)^2} B_{2n},
-
-
-    which is used for computing `B_n` for `120 < n \leq 2312` from a pre-calculated table of
-    values `B_{32k+128} (0 \leq  k \leq  68)`. The average iteration count is 4, and the maximum relative error of 4.5 eps occurs for `n = 878`.
-
-
 
 
 
@@ -332,18 +294,7 @@ Bernoulli polynomials, `B_n(x)`
     See also  Wikipedia :cite:p:`WikipediaFun81`, MathWorld :cite:p:`WolframFun81`, NIST :cite:p:`DLMFun80`, :cite:t:`Ehrhardt2018` (3.10.3), Flint :cite:p:`FlintFun81`, Mpmath :cite:p:`MpmathFun81`. 
 
 
-    The function calls ``acb_bernoulli_poly_ui`` in Flint.
-
-    The function returns  the Bernoulli polynomials `B_n (x)` of degree `n \geq 0`, defined by the generating function [30, 24.2.3]
-
-    .. math:: \frac{te^{xt}}{e^t - 1} = \sum_{n=0}^{\infty} B_n(x) \frac{t^n}{n!}, \quad |t| < 2\pi.
-
-    or the simple explicit representation [30, 24.2.5]
-
-    .. math:: B_n(x) = \sum_{n=0}^{\infty} \binom{n}{k} B_k(x) x^{n-k}.
-
-
-    See Amath for connection formula to Hurwitz Zeta.
+    See the Amath documentation (p. 146) for connection formula to Hurwitz Zeta.
 
 
 
@@ -406,10 +357,8 @@ Euler numbers
 
     Returns the Euler numbers `E_n`. See also Wikipedia :cite:p:`WikipediaFun120`, MathWorld :cite:p:`WolframFun120`, Flint :cite:p:`FlintFun113`, :cite:t:`Ehrhardt2018` (3.10.8), Mpmath :cite:p:`MpmathFun120`. 
 
-    See also: arb_euler_number_ui
 
-
-    The Euler numbers `E_n` are defined as
+    The Euler numbers `E_n` can be defined as
 
     .. math:: E_n = \frac{4^n \beta(n+1)}{\zeta(n)} \frac{2B_n}{\pi}
 
@@ -441,7 +390,7 @@ Euler polynomials, `E_n(x)`
 
 .. method:: math53.eulerpoly(n, x)
 
-    Returns `\displaystyle E_n(x) = \frac{2}{n+1} \left( B_n(x)-2^{n+1}B_n\left(\frac{x}{2}\right) \right)`, the Euler polynomial of degree `n \ge 0`. Special values include the Euler numbers `E_n = 2^n E_n(1/2)`. 
+    Returns `\displaystyle E_n(x) = \frac{2}{n+1} \left( B_{n+1}(x)-2^{n+1}B_{n+1}\left(\frac{x}{2}\right) \right)`, the Euler polynomial of degree `n \ge 0`. Special values include the Euler numbers `E_n = 2^n E_n(1/2)`. 
 
     See also  Wikipedia :cite:p:`WikipediaFun121`, MathWorld :cite:p:`WolframFun121`, NIST :cite:p:`DLMFun80`, :cite:t:`Ehrhardt2018` (3.10.9), Mpmath :cite:p:`MpmathFun121`. 
 
@@ -573,7 +522,7 @@ Logarithm of Barnes G function
 
     where ``ctx`` is ``math53`` or ``ctxflint``.
 
-    Returns `\log G(z)`, the logarithm of Barnes `G` function, with `\log G(z) = z \log\Gamma(z) + \zeta'(1) - \zeta'(-1,z)`.
+    Returns `\log G(z)`, the logarithm of Barnes `G` function, with \log G(z) = (z-1) \log \Gamma(z) - \zeta'(-1,z) + \zeta'(-1).
 
     See also:  Wikipedia :cite:p:`WikipediaFun131`, MathWorld :cite:p:`WolframFun131`, MathWorld :cite:p:`WolframFun131a`, NIST :cite:p:`DLMFun131`, :cite:t:`Ehrhardt2018` (3.5.6.9).
 
@@ -586,13 +535,6 @@ Logarithm of Barnes G function
 
     holds for all *z*.
 
-    For small integers, we directly use the recurrence
-    relation `G(z+1) = \Gamma(z) G(z)` together with the initial value
-    `G(1) = 1`. For general *z*, we use the formula
-
-    .. math ::
-
-        \log G(z) = (z-1) \log \Gamma(z) - \zeta'(-1,z) + \zeta'(-1).
 
 
     An example in Python

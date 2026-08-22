@@ -47,7 +47,7 @@ Generalized Page `L` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pmf: ", page_l_continuous(mu, sigma).pmf(x))
@@ -68,7 +68,7 @@ Generalized Page `L` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", page_l_continuous(mu, sigma).pmf(x))
@@ -88,7 +88,7 @@ Generalized Page `L` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", page_l_continuous(mu, sigma).pmf(x))
@@ -106,7 +106,7 @@ Generalized Page `L` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", page_l_continuous(mu, sigma).qtf(q))
@@ -126,7 +126,7 @@ Generalized Page `L` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", page_l_continuous(mu, sigma).isf(q))
@@ -146,7 +146,7 @@ Generalized Page `L` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", page_l_continuous(mu, sigma).c_x(t))
@@ -166,7 +166,7 @@ Generalized Page `L` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", page_l_continuous(mu, sigma).c_x(t))
@@ -186,7 +186,7 @@ Generalized Page `L` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", page_l_continuous(mu, sigma).k_x(t, k))
@@ -209,7 +209,7 @@ Generalized Page `L` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", page_l_continuous(mu, sigma).moments(k))
@@ -229,7 +229,7 @@ Generalized Page `L` distribution, continuous data
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", page_l_continuous(mu, sigma).cumulants(k))

@@ -93,7 +93,7 @@ Probability sparsity function
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -123,7 +123,7 @@ Differerential entropy
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -154,7 +154,7 @@ See also Wikipedia :cite:p:`WikipediaDef28`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))
@@ -180,7 +180,7 @@ Logarithm of the probability density function
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", chi_squared(mu, sigma).c_x(t))

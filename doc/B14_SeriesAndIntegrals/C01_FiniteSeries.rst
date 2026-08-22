@@ -68,7 +68,7 @@ Central `\chi^2` distribution, cdf (integer degrees of freedom)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = 12; n = 10
         >>> dx = dec.chi2_cohen_cdf(x, n); mx = mpm.chi2_cohen_cdf(x, n)
         >>> ix = ipm.chi2_cohen_cdf(x, n); fx = fpm.chi2_cohen_cdf(x, n)
@@ -113,7 +113,7 @@ Central Student `t` distribution, cdf (integer degrees of freedom)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = 2; n = 10;
         >>> dx = dec.student_t_owen_cdf(x, n); mx = mpm.student_t_owen_cdf(x, n)
         >>> ix = ipm.student_t_owen_cdf(x, n); fx = fpm.student_t_owen_cdf(x, n)
@@ -161,7 +161,7 @@ Central Fisher `F` distribution, cdf (integer degrees of freedom)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = 3; m = 10; n = 20
         >>> dx = dec.fisher_f_seber_cdf(x, m, n); mx = mpm.fisher_f_seber_cdf(x, m, n)
         >>> ix = ipm.fisher_f_seber_cdf(x, m, n); fx = fpm.fisher_f_seber_cdf(x, m, n)
@@ -194,7 +194,7 @@ Central Beta distribution, cdf (`2a` an integer, `2b` an integer)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = '0.3'; a = '10'; b = '20'
         >>> dx = dec.beta_seber_cdf(x, a, b); mx = mpm.beta_seber_cdf(x, a, b)
         >>> ix = ipm.beta_seber_cdf(x, a, b); fx = fpm.beta_seber_cdf(x, a, b)
@@ -239,7 +239,7 @@ Noncentral `\chi^2` distribution, cdf (integer degrees of freedom)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = 12; nu = 7; l = 30
         >>> dx = dec.chi2_nc_cohen_cdf(x, n, l); mx = mpm.chi2_nc_cohen_cdf(x, n, l)
         >>> ix = ipm.chi2_nc_cohen_cdf(x, n, l); fx = fpm.chi2_nc_cohen_cdf(x, n, l)
@@ -292,7 +292,7 @@ Noncentral Student `t` distribution, cdf (integer degrees of freedom)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = 20; n = 10; d = 30
         >>> dx = dec.student_t_nc_owen_cdf(x, n, d); mx = mpm.student_t_nc_owen_cdf(x, n, d)
         >>> ix = ipm.student_t_nc_owen_cdf(x, n, d); fx = fpm.student_t_nc_owen_cdf(x, n, d)
@@ -324,7 +324,7 @@ Noncentral Fisher `F` distribution, cdf (`m` an even integer)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = 13; m = 10; n = 20; l1 = 30
         >>> dx = dec.fisher_f_nc_seber_cdf(x, m, n, l1); mx = mpm.fisher_f_nc_seber_cdf(x, m, n, l1)
         >>> ix = ipm.fisher_f_nc_seber_cdf(x, m, n, l1); fx = fpm.fisher_f_nc_seber_cdf(x, m, n, l1)
@@ -374,7 +374,7 @@ Noncentral Beta distribution, cdf (`b` an integer)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; x = 0.25; a = 10; b = 20; l = 30
         >>> dx = dec.beta_nc_seber_cdf(x, a, b, l); mx = mpm.beta_nc_seber_cdf(x, a, b, l)
         >>> ix = ipm.beta_nc_seber_cdf(x, a, b, l); fx = fpm.beta_nc_seber_cdf(x, a, b, l)
@@ -432,7 +432,7 @@ Pearson's `\rho` distribution, pdf (integer `N`)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; r = '0.25'; N = '20'; rho = '0.1'
         >>> dx = dec.pearson_rho_nc_owen_pdf(x, N, rho); mx = mpm.pearson_rho_nc_owen_pdf(x, N, rho)
         >>> ix = ipm.pearson_rho_nc_owen_pdf(x, N, rho); fx = fpm.pearson_rho_nc_owen_pdf(x, N, rho)
@@ -513,7 +513,7 @@ Pearson's `\rho` distribution, cdf (integer `N`)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; r = '0.25'; N = '20'; rho = '0.1'
         >>> dx = dec.pearson_rho_nc_owen_cdf(x, N, rho); mx = mpm.pearson_rho_nc_owen_cdf(x, N, rho)
         >>> ix = ipm.pearson_rho_nc_owen_cdf(x, N, rho); fx = fpm.pearson_rho_nc_owen_cdf(x, N, rho)
@@ -558,7 +558,7 @@ Fisher's `R^2` distribution, cdf (finite sum for `N-p` even)
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; r2 = '0.25'; p = '3'; N = '20'; rho2 = '0.1'
         >>> dx = dec.fisher_r2_gd1_cdf(r2, p, N, rho2); mx = mpm.fisher_r2_gd1_cdf(r2, p, N, rho2)
         >>> ix = ipm.fisher_r2_gd1_cdf(r2, p, N, rho2); fx = fpm.fisher_r2_gd1_cdf(r2, p, N, rho2)
@@ -631,7 +631,7 @@ Roy's largest root distribution, pdf, cdf and sf
 
     .. code-block:: pycon
 
-        >>> from mpfunlab import dec, mpm, ipm, fpm, gmp, apm
+        >>> from xlcalcnet import dec, mpm, ipm, fpm, gmp, apm
         >>> mpm.dps = 40; p = 3; n1 = 10; n2 = 12
         >>> dx = dec.roy_pdf_cdf_sf(x, p, n1, n2); mx = mpm.roy_pdf_cdf_sf(x, p, n1, n2); 
         >>> ix = ipm.roy_pdf_cdf_sf(x, p, n1, n2); fx = fpm.roy_pdf_cdf_sf(x, p, n1, n2); 

@@ -63,7 +63,7 @@ Hypoexponential (Generalized Erlang) Distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", mp_hypoexponential(mu, sigma).pdf(x))
@@ -92,7 +92,7 @@ where `P(\cdot)` is the lower regularized gamma function, `d_j` and `\Theta` are
 
 .. code-block:: python
 
-    >>> from mpfunlab import *
+    >>> from xlcalcnet import *
     >>> mp.dps = 30
     >>> mu = 0; sigma = 1; x = 3; 
     >>> print ("cdf: ", mp_hypoexponential(mu, sigma).pdf(x))
@@ -123,7 +123,7 @@ where `P(\cdot)` is the lower regularized gamma function, `d_j` and `\Theta` are
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", mp_hypoexponential(mu, sigma).pdf(x))
@@ -141,7 +141,7 @@ where `P(\cdot)` is the lower regularized gamma function, `d_j` and `\Theta` are
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", mp_hypoexponential(mu, sigma).qtf(q))
@@ -161,7 +161,7 @@ where `P(\cdot)` is the lower regularized gamma function, `d_j` and `\Theta` are
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", mp_hypoexponential(mu, sigma).isf(q))
@@ -181,7 +181,7 @@ where `P(\cdot)` is the lower regularized gamma function, `d_j` and `\Theta` are
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", mp_hypoexponential(mu, sigma).c_x(t))
@@ -201,7 +201,7 @@ where `P(\cdot)` is the lower regularized gamma function, `d_j` and `\Theta` are
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", mp_hypoexponential(mu, sigma).c_x(t))
@@ -222,7 +222,7 @@ where `P(\cdot)` is the lower regularized gamma function, `d_j` and `\Theta` are
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", mp_hypoexponential(mu, sigma).k_x(t, k))
@@ -242,7 +242,7 @@ where `P(\cdot)` is the lower regularized gamma function, `d_j` and `\Theta` are
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mp_hypoexponential(mu, sigma).moments(k))
@@ -263,7 +263,7 @@ where `P(\cdot)` is the lower regularized gamma function, `d_j` and `\Theta` are
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", mp_hypoexponential(mu, sigma).cumulants(k))

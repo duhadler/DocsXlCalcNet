@@ -50,7 +50,7 @@ Cochran-Friedman-Quade distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pmf: ", friedman_continuous(mu, sigma).pmf(x))
@@ -73,7 +73,7 @@ Cochran-Friedman-Quade distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", friedman_continuous(mu, sigma).pmf(x))
@@ -93,7 +93,7 @@ Cochran-Friedman-Quade distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", friedman_continuous(mu, sigma).pmf(x))
@@ -111,7 +111,7 @@ Cochran-Friedman-Quade distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", friedman_continuous(mu, sigma).qtf(q))
@@ -131,7 +131,7 @@ Cochran-Friedman-Quade distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", friedman_continuous(mu, sigma).isf(q))
@@ -151,7 +151,7 @@ Cochran-Friedman-Quade distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", friedman_continuous(mu, sigma).c_x(t))
@@ -171,7 +171,7 @@ Cochran-Friedman-Quade distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("m_x: ", friedman_continuous(mu, sigma).c_x(t))
@@ -191,7 +191,7 @@ Cochran-Friedman-Quade distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", friedman_continuous(mu, sigma).k_x(t, k))
@@ -214,7 +214,7 @@ Cochran-Friedman-Quade distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", friedman_continuous(mu, sigma).moments(k))
@@ -234,7 +234,7 @@ Cochran-Friedman-Quade distribution
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", friedman_continuous(mu, sigma).cumulants(k))

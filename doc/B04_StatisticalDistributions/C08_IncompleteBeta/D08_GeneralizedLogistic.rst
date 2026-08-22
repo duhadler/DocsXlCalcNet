@@ -56,7 +56,7 @@ Generalized logistic distribution (JKB Types I - IV)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 2; x = 3; 
         >>> print ("pdf: ", fisher_f(mu, sigma).pdf(x))
@@ -79,7 +79,7 @@ Generalized logistic distribution (JKB Types I - IV)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 2; x = 3; 
         >>> print ("cdf: ", fisher_f(mu, sigma).pdf(x))
@@ -103,7 +103,7 @@ Generalized logistic distribution (JKB Types I - IV)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 2; x = 3; 
         >>> print (" sf: ", fisher_f(mu, sigma).pdf(x))
@@ -125,7 +125,7 @@ Generalized logistic distribution (JKB Types I - IV)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 2; q = 0.3; 
         >>> print ("qtf: ", fisher_f(mu, sigma).qtf(q))
@@ -149,7 +149,7 @@ Generalized logistic distribution (JKB Types I - IV)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 2; q = 0.3; 
         >>> print ("isf: ", fisher_f(mu, sigma).isf(q))
@@ -170,7 +170,7 @@ Generalized logistic distribution (JKB Types I - IV)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 2; t = 0.3; 
         >>> print ("c_x: ", fisher_f(mu, sigma).c_x(t))
@@ -190,7 +190,7 @@ Generalized logistic distribution (JKB Types I - IV)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 2; k = 6;
         >>> print ("saddlepoint: ", fisher_f(mu, sigma).moments(k))
@@ -210,7 +210,7 @@ Generalized logistic distribution (JKB Types I - IV)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 2; k = 6;
         >>> print ("saddlepoint: ", fisher_f(mu, sigma).moments(k))
@@ -230,7 +230,7 @@ Generalized logistic distribution (JKB Types I - IV)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 2; k = 6;
         >>> print ("saddlepoint: ", fisher_f(mu, sigma).moments(k))
@@ -250,7 +250,7 @@ Generalized logistic distribution (JKB Types I - IV)
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 2; k = 6;
         >>> print ("saddlepoint: ", fisher_f(mu, sigma).cumulants(k))

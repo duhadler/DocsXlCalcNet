@@ -149,7 +149,7 @@ See also  Wikipedia :cite:p:`WikipediaDis23`, MathWorld :cite:p:`WolframDis23`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", triangular(mu, sigma).pdf(x))
@@ -178,7 +178,7 @@ See also  Wikipedia :cite:p:`WikipediaDis23`, MathWorld :cite:p:`WolframDis23`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", triangular(mu, sigma).pdf(x))
@@ -198,7 +198,7 @@ See also  Wikipedia :cite:p:`WikipediaDis23`, MathWorld :cite:p:`WolframDis23`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", triangular(mu, sigma).pdf(x))
@@ -225,7 +225,7 @@ See also  Wikipedia :cite:p:`WikipediaDis23`, MathWorld :cite:p:`WolframDis23`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", triangular(mu, sigma).qtf(q))
@@ -245,7 +245,7 @@ See also  Wikipedia :cite:p:`WikipediaDis23`, MathWorld :cite:p:`WolframDis23`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", triangular(mu, sigma).isf(q))
@@ -265,7 +265,7 @@ See also  Wikipedia :cite:p:`WikipediaDis23`, MathWorld :cite:p:`WolframDis23`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", triangular(mu, sigma).c_x(t))
@@ -285,7 +285,7 @@ See also  Wikipedia :cite:p:`WikipediaDis23`, MathWorld :cite:p:`WolframDis23`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", triangular(mu, sigma).c_x(t))
@@ -306,7 +306,7 @@ See also  Wikipedia :cite:p:`WikipediaDis23`, MathWorld :cite:p:`WolframDis23`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; k = 6;
         >>> print ("c_x: ", triangular(mu, sigma).k_x(t, k))
@@ -327,7 +327,7 @@ See also  Wikipedia :cite:p:`WikipediaDis23`, MathWorld :cite:p:`WolframDis23`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", triangular(mu, sigma).moments(k))
@@ -345,7 +345,7 @@ See also  Wikipedia :cite:p:`WikipediaDis23`, MathWorld :cite:p:`WolframDis23`, 
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", triangular(mu, sigma).cumulants(k))

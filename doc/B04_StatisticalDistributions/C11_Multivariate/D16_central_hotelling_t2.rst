@@ -41,7 +41,7 @@ Central distribution of Hotelling's `T^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", hotelling_t2(mu, sigma).pdf(x))
@@ -61,7 +61,7 @@ Central distribution of Hotelling's `T^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", hotelling_t2(mu, sigma).pdf(x))
@@ -82,7 +82,7 @@ Central distribution of Hotelling's `T^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", hotelling_t2(mu, sigma).pdf(x))
@@ -102,7 +102,7 @@ Central distribution of Hotelling's `T^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", hotelling_t2(mu, sigma).qtf(q))
@@ -122,7 +122,7 @@ Central distribution of Hotelling's `T^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", hotelling_t2(mu, sigma).isf(q))
@@ -146,7 +146,7 @@ Central distribution of Hotelling's `T^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; t = 0.3; 
         >>> print ("c_x: ", hotelling_t2(mu, sigma).c_x(t))
@@ -196,7 +196,7 @@ Central distribution of Hotelling's `T^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", hotelling_t2(mu, sigma).moments(k))
@@ -213,7 +213,7 @@ Central distribution of Hotelling's `T^2`
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; k = 6;
         >>> print ("saddlepoint: ", hotelling_t2(mu, sigma).cumulants(k))

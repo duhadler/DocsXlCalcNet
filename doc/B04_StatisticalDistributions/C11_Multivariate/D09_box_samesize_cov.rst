@@ -46,7 +46,7 @@ Distribution of Box's test of equality of covariance matrices, equal sample size
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("pdf: ", fisher_f(mu, sigma).pdf(x))
@@ -71,7 +71,7 @@ Distribution of Box's test of equality of covariance matrices, equal sample size
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print ("cdf: ", fisher_f(mu, sigma).pdf(x))
@@ -98,7 +98,7 @@ Distribution of Box's test of equality of covariance matrices, equal sample size
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; x = 3; 
         >>> print (" sf: ", fisher_f(mu, sigma).pdf(x))
@@ -118,7 +118,7 @@ Distribution of Box's test of equality of covariance matrices, equal sample size
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("qtf: ", fisher_f(mu, sigma).qtf(q))
@@ -139,7 +139,7 @@ Distribution of Box's test of equality of covariance matrices, equal sample size
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", fisher_f(mu, sigma).isf(q))
@@ -160,7 +160,7 @@ Distribution of Box's test of equality of covariance matrices, equal sample size
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", fisher_f(mu, sigma).isf(q))
@@ -180,7 +180,7 @@ Distribution of Box's test of equality of covariance matrices, equal sample size
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", fisher_f(mu, sigma).isf(q))
@@ -204,7 +204,7 @@ Distribution of Box's test of equality of covariance matrices, equal sample size
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", fisher_f(mu, sigma).isf(q))
@@ -223,7 +223,7 @@ Distribution of Box's test of equality of covariance matrices, equal sample size
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", fisher_f(mu, sigma).isf(q))
@@ -245,7 +245,7 @@ Distribution of Box's test of equality of covariance matrices, equal sample size
 
     .. code-block:: python
 
-        >>> from mpfunlab import *
+        >>> from xlcalcnet import *
         >>> mp.dps = 30
         >>> mu = 0; sigma = 1; q = 0.3; 
         >>> print ("isf: ", fisher_f(mu, sigma).isf(q))
