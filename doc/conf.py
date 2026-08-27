@@ -47,23 +47,17 @@ extensions = [
 [extensions]
 todo_include_todos=True
 
-#copybutton_exclude = '.linenos, .gp,  .go, '
 
 copybutton_prompt_text = ">>> "
 
 bibtex_bibliography_header = ".. rubric:: Footnotes"
 
 bibtex_bibfiles = ['refs.bib']
-#bibtex_bibfiles = ['../../refs.bib']
 
 
 bibtex_reference_style = 'label'
-#bibtex_reference_style = 'author_year'
 
-#bibtex_default_style = 'alpha'
 bibtex_default_style = 'plain'
-#bibtex_default_style = 'unsrt'
-#bibtex_default_style = 'unsrtalpha'
 
 exclude_patterns = ["_build"]
 
@@ -128,18 +122,6 @@ pygments_style = 'sphinx'
 html_theme = "sphinx_book_theme"
 
 html_theme_options = {
-    # "icon_links": [
-    #    {
-    #        "name": "GitHub",
-    #        "url": "https://github.com/pydata/pydata-sphinx-theme",
-    #        "icon": "fa-brands fa-github",
-    #    },
-    #    {
-    #        "name": "PyPI",
-    #        "url": "https://pypi.org/project/pydata-sphinx-theme",
-    #        "icon": "fa-custom fa-pypi",
-    #    },
-    #],
      "logo": {
         "text": "XlCalcNet Documentation",
     },
@@ -187,6 +169,7 @@ html_last_updated_fmt = '%b %d, %Y'
 
 # If true, the reST sources are included in the HTML build as _sources/<name>.
 #html_copy_source = True
+#html_copy_source = False
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'XlCalcNet'
@@ -201,8 +184,6 @@ htmlhelp_basename = 'XlCalcNet'
 # The paper size ('letter' or 'a4').
 latex_paper_size = 'letter'
 
-# The font size ('10pt', '11pt' or '12pt').
-#latex_font_size = '10pt'
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, document class [howto/manual]).
@@ -210,60 +191,31 @@ latex_paper_size = 'letter'
 latex_documents = [(master_doc, 'xlcalcnet.tex', 'XlCalcNet Documentation',
                     r'Dietrich Hadler', 'manual')]
 
-# Additional stuff for the LaTeX preamble.
-#latex_preamble = r'\usepackage{amsfonts}'
-
-
-#latex_preamble = r"""
-#\usepackage{amsmath,amssymb}
-#\setcounter{tocdepth}{2}
-#"""
 
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-latex_logo = "_static/KuenOrange.jpg"
+latex_logo = "_static/KuenGreen400.png"
 
 #latex_engine = 'xelatex'
 
 latex_toplevel_sectioning = 'part'
 
-# latex_elements = {'extraclassoptions': 'openany'}
 
-
-
-# latex_elements = {
-#     'extraclassoptions': 'openany',
-#     'sphinxsetup': 'hmargin={0.6in,0.6in}, vmargin={1.0in,1.0in}, marginpar=0.75in',
-#     'preamble': r'''
-#         \usepackage{amsmath,amsfonts,amssymb,amsthm}
-#         \usepackage{setspace}
-#         \usepackage{fontspec}
-#         \setmonofont{Source Code Pro}
-#         \tolerance=1
-#         \emergencystretch=\maxdimen
-#         \hyphenpenalty=10000
-#         \hbadness=10000
-#     '''
-# }
-
-
+# Additional stuff for the LaTeX preamble.
 latex_elements = {
     'extraclassoptions': 'openany',
     'sphinxsetup': 'hmargin={0.6in,0.6in}, vmargin={1.0in,1.0in}, marginpar=0.75in',
     'preamble': r'''
         \usepackage{amsmath,amsfonts,amssymb,amsthm}
         \usepackage{setspace}
+        \setcounter{tocdepth}{2} % Limits TOC depth to subsubsection
         \usepackage{tocloft}
         \setlength{\cftsecnumwidth}{2.8em}        
         \cftsetindents{subsection}{4.3em}{4em}        
         \renewcommand{\sphinxtableofcontentshook}{}% else it will overwrite tocloft!
     '''
 }
-
-
-
-#\setmonofont{DejaVu Sans Mono}
 
 
 # Documents to append as an appendix to all manuals.
@@ -274,7 +226,6 @@ latex_elements = {
 
 
 latex_table_style = []
-
 
 default_role = 'math'
 pngmath_dvipng_args = ['-gamma 1.5', '-D 110']

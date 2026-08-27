@@ -10,6 +10,24 @@ Numerical calculus
 ************************************
 
 
+
+
+The source code for the C\# tests in Visual Studio is divided by in 2 parts:
+
+
+Part 1 contains procedures from DAMath, Boost Math, Boost Odeint and Eigen. The source code for the C\# tests in Visual Studio can be found online in the ``XlCalcNet`` repository or in the corresponding local ``XlCalcNet`` folder in the file `B05a_NumericalCalculus.cs <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/TestFixedAndArbPrecCS/B05a_NumericalCalculus.cs>`__.
+
+
+
+
+Part 2 is devoted to numerical integration in ball arithmetic. The source code for the C\# tests in Visual Studio can be found online in the ``XlCalcNet`` repository or in the corresponding local ``XlCalcNet`` folder in the file `B05b_FlintNumericalCalculus.cs <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/TestFixedAndArbPrecCS/B05b_FlintNumericalCalculus.cs>`__.
+
+
+
+
+
+
+
 .. toctree::
     :caption: Numerical calculus 
     :maxdepth: 3

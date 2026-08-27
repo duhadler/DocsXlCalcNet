@@ -8,96 +8,42 @@
 
 
 
+|newpage|
 
 Setting up XlCalcNet
 =========================
-
-This chapter in general, and this section in particular, has been written with users in mind, 
-who are comfortable using user-defined functions in spreadsheet formulas, but have only limited 
-or no experience using Python.
-
-
-The main goal of XlCalcNet is to enable the use of functions written in Python or C# within spreadsheet formulas. It is therefore assumed that Microsoft Excel (2010 or later, 64 bit) is installed on the users system, running under Windows (7.1 or later, 64 bit), with .NET Framework 4.8/4.8.1 installed.
-
-
-XlCalcNet is a numerical library with parts written in Python and other parts written in C\#, C++, C and Pascal, focussing on numerical calculations in multiple precision and data visualisation.
-
-Since the main goal is to give access to software written in Python (or via PythonNet software written in C\#) from within spreadsheet formulas, a dedicated CPython installation is strongly recommend, to make it easier to configure the interaction with Microsoft Excel, without disturbing existing Python installations.
-
-The interaction with Microsoft Excel is achieved by running a socket server written in Python, which is called from spreadsheet formulas using the functionality provided by Excel.Dna.
-
-The code which is necessary to make this work overall contains much more C\# and C/C++ than Python, so the project is not really suitable as a project on PyPI, but is provided as a Github project only. Both the source code and precompiled binaries are included, since compiling all of the source code requires MSYS2, Free Pascal and Visual Studio, which not all Excel users will be familiar with.
-
-On the Python side XlCalcNet uses Mpmath 4.0 to provide a rich set of functions in arbitrary precision, using not only Mpmath's binary and interval data types, but also Python's built-in Decimal and Fraction data types. If GMP2 is installed, its data types can be used in many cases instead of Mpmath's binary data types, being much faster. Likewise, if Python-Flint is installed, its data types  can be used in many cases instead of Mpmath's interval data types, being much faster, and often also more accurate.
-
-On the C/C++ side, XlCalcNet uses DAMath, Boost Math, Boost Multiprecision and Eigen to provide numerical functions in single, double, extended, quadruple and octuple precision, which are available to the user both from C\# and Python.
-
-The XlCalcNet2 library, which is licensed under the LGPL-3.0 and is therefore provided as a separate project, is based on Boost Math, Boost Multiprecision, Eigen, GMP, MPFR, MPC and Flint and provides functions for the same data types as XlCalcNet and also in arbitrary precision.
-
-XlCalcNet is intended to be used together with existing Python libraries like NumPy, Matplotlib, Pandas, SciPy. It can also be used from recent versions of RStudio and R, using the reticulate package.
-
-
-
 
 
 Downloading and installing the "right" version of CPython
 -------------------------------------------------------------
 
-**Installation of CPython specifically for Excel**
+Describe the dependency on Python.Net.
 
-Explain installation process.
-
-**Current development version**
+Explain The 3 folder concept: user, application local data, python installation
 
 
-This documentation is available online at https://duhadler.github.io/XlCalcNetDocsOnline/
+The data which are directly maniplated by the user are located in:
+
+The data which generated as a result of running a python script or C\# program are written to: 
+
+The data which contain the installation are located in:
 
 
-The pdf can be downloaded from https://github.com/duhadler/DocsXlCalcNet/raw/master/pdf/xlcalcnet.pdf
+Describe the choices for downloading python
 
+Describe how to install python as a "free-standing" version without need to uninstall.
 
-The git repository is https://github.com/duhadler/xlcalcnet)
+Describe choices for locating this version of python
 
-
-
-
-
-
-**Checking that it works**
-
-
-After the setup has completed, you should be able to fire up the interactive Python interpreter and do the following::
-
-    >>> from xlcalcnet import *
-    >>> mp.dps = 50
-    >>> print(mpf(2) ** mpf('0.5'))
-    1.4142135623730950488016887242096980785696718753769
-    >>> print(2*pi)
-    6.2831853071795864769252867665590057683943387987502
-
-*Note: if you have are upgrading xlcalcnet from an earlier version, you may have to manually uninstall the old version or remove the old files.*
+Describe copying the batch files into 
 
 
 
 
 
-Installing XlCalcNet
-----------------------
+|newpage|
 
-It is recommended that you run xlcalcnet's full set of unit tests to make sure everything works. The `py.test <https://pytest.org/>`_ is a required dependence for testing.  The tests are located in the ``tests`` subdirectory of the main xlcalcnet directory. They can be run using::
-
-    ``py.test --pyargs xlcalcnet``
-
-If any test fails, please send a detailed bug report to the `xlcalcnet issue tracker <https://github.com/fredrik-johansson/xlcalcnet/issues>`_.
-
-To run the tests with support for gmpy disabled, set ``mpdistlab_NOGMPY`` environment variable.
-
-To enable extra diagnostics, use, set ``mpdistlab_STRICT`` environment variable.
-
-
-
-
-Installing and using Pythonnet: Calling C\# from Python
+Installing and using Python.NET: Calling C\# from Python
 ---------------------------------------------------------
 
 Python.NET is a package that gives Python programmers nearly seamless integration with the .NET Common Language Runtime (CLR) and provides a powerful application scripting tool for .NET developers. It allows Python code to interact with the CLR, and may also be used to embed Python into a .NET application.
@@ -123,8 +69,54 @@ In terms of usability, the .NET Framework 4.x runtime does not include an IDE; w
 
 
 
-The 3 folder concept: user, application local data, installation
---------------------------------------------------------------------------------
+|newpage|
+
+Installing the DataXlCalcNet folder
+--------------------------------------------------------
+
+Describe how to download and unpack the core repositories from Github
+
+
+Emphasize the need to use Microsoft defender for the unzipped repositories.
+
+
+
+Describe the copying and exploring the DataXlCalcNet folder
+
+Describe the copying and exploring the DataXlCalcNet folder
+
+
+
+
+|newpage|
+
+Installing XlCalcNet
+--------------------------------------------------------
+
+Describe how to download and unpack the core repositories from Github
+
+
+Emphasize the need to use Microsoft defender for the unzipped repositories.
+
+
+
+Describe the copying and exploring the DataXlCalcNet folder
+
+Describe the copying and exploring the DataXlCalcNet folder
+
+
+
+
+|newpage|
+
+Installing XlCalcNet2 (optional)
+--------------------------------------------------------
+
+Describe how to download and unpack the core repositories from Github
+
+
+Emphasize the need to use Microsoft defender for the unzipped repositories.
+
 
 The data which are directly maniplated by the user are located in:
 
@@ -137,15 +129,7 @@ The data which contain the installation are located in:
 
 
 
-
-Copying and exploring the DataXlCalcNet folder
---------------------------------------------------------------------------------
-
-Describe the copying and exploring the DataXlCalcNet folder
-
-
-
-
+|newpage|
 
 Installing and using the Tiny IDE as a Python application
 ----------------------------------------------------------------
@@ -179,17 +163,47 @@ Follow the steps to make the Tiny IDE available:
 
 
 
-
-
 |newpage|
 
+Installing and using of the MS Excel XlNet addin: first steps
+--------------------------------------------------------------------------------
+
+
+!!! Describe the need for starting  the socket server first !!!
+
+When starting the socket server for the first time to allow acces of Pyton to networks. Confirm.
+
+
+
+Describe the installation of the MS Excel addin.
 
 
 
 
+MS Excel: TestCPython.xlsx
 
-Building a library of user defined python functions
-------------------------------------------------------------------------------------
+
+
+.. image:: ../_static/FunctionArguments.png
+    :width: 50 %
+    :align: center
+
+
+MS Excel: TestCPython.xlsx
+
+
+
+.. image:: ../_static/ContextMenu.png
+    :width: 30 %
+    :align: center
+
+
+MS Excel: TestCPython.xlsx
+
+
+.. image:: ../_static/NavigatorXlCalcNet.png
+    :width: 50 %
+    :align: center
 
 
 MS Excel: TestCPython.xlsx
@@ -198,34 +212,213 @@ MS Excel: TestCPython.xlsx
 
 
 
+|newpage|
 
+Reasons for using multiprecision arithmetic
+---------------------------------------------
 
-Building a library of user defined functions in C\#
-----------------------------------------------------------------------------------------
+An introduction to the problems of rounding errors and catastrophic cancellation can be found in :cite:t:`Goldberg1991`. Excellent reference texts are :cite:t:`Higham2002` and :cite:t:`Higham2009`.
 
-Describes building and using the user library.
-
-
-
-
-
-.. _rst_user_documentation: 
-
-
-Sphinx: building documentation for software with Python (html and pdf)
-----------------------------------------------------------------------------------
-
-
-See also: https://www.sphinx-doc.org/en/master/
-
-See also: https://www.sphinx-doc.org/en/master/usage/markdown.html
-
-See also: https://myst-parser.readthedocs.io/en/latest/
+In the following sections we will give a few examples of how the use of double precision without special precaution can give wrong results.
 
 
 
 
 
+
+**Example: Sums**
+
+Sums are often calculated exactly if all summands have an exact representation. If this is not the case, results can be unpredictable. In MS Excel, the formula
+
+``=SUM(10000000000,-16000000000,6000000000)``
+
+will give the correct result `0`, but the analogous formula
+
+``=SUM(1E+40,-1.6E+40,6E+39)``
+
+returns `1.20893E+24` instead of the correct result `0`.
+
+
+**Example: Standard Deviation**
+
+Like sums, variances and standard deviations are often calculated exactly if all arguments have an exact representation. If this is not the case, results can again be unpredictable. In MS Excel, the formula
+
+``=VAR(1E+30,1E+30,1E+30)``
+
+returns `2.97106E+28` instead of the correct result `0`, which should be the obvious results since all arguments are the same.
+
+
+**Example: Overflow and underflow**
+
+In many situations where the final result is representable in double precision, some of the interim results cause overflow or underflow. A popular example is the function `f(x,y) = \sqrt{x^2+y^2}`. With `x=3 \cdot 10^{300}` and `y=4 \cdot 10^{300}` the result `f(x,y) = 5 \cdot 10^{300}` is representable in double precision, but the (naive) calculation will overflow.
+
+
+
+**Example: Polynomials**
+
+Consider the following example from :cite:t:`Cuyt2001`: 
+
+For `a=77617` and `b=33096`, calculate
+
+.. math::     Y = 333.75 b^6 + a^2  (11 a^2  b^2 - b^6 - 121 b^4 - 2) + 5.5  b^8 + \frac{a}{2b} 
+
+The correct result is `Y = -54767 / 66192 = -8.27396\ldots \cdot 10^{-1}`
+
+
+
+
+**Example: Trigonometric Functions**
+
+Trigonometric functions are sensitive to small perturbations. 
+
+In double precision and binary floating point arithmetic, the tangent of `x = 1.57079632679489` is calculated as `\tan(x) = 1.48752 \cdot 10^{14}`, whereas the correct result is `\tan(x) = 1.51075 \cdot 10^{14}`. This amounts to an absolute error of `2.32287  \cdot 10^{12}` and a relative error of `1.54\%`.
+
+There are also limits on the range of arguments, e.g. `\sin(10^{8})` returns the value  `-9.31639 \cdot 10^{-1}`   (with an relative error of `-6.22776 \cdot 10^{-13}`), whereas  `\sin(10^{9})` returns an invalid result (the exact result is  `5.45843 \cdot 10^{-1}`)
+
+
+
+
+
+**Example: Logarithms and Exponential Functions**
+
+Consider the following example from :cite:t:`Ghazi2010`: 
+
+Determine 10 decimal digits of the constant
+
+.. math::     Y = 173746a + 94228b - 78487c, \quad \text{where } 
+.. math::     a = \sin(10^{22}), b = \log(17.1), c = \exp(0.42). 
+
+The expected result is `Y = -1.341818958 \cdot 10^{-12}`.
+
+
+
+
+
+**Example: Linear Algebra**
+
+The following example is from :cite:t:`Hofschuster2004`:
+
+We want to solve the (ill-conditioned) system of linear equations `Ax = b` with
+
+
+.. math:: 
+
+    A = \begin{pmatrix}
+        a_{11} & a_{12} \\
+        a_{21} & a_{22} 
+    \end{pmatrix}  = \begin{pmatrix}
+    64919121 & -159018721 \\
+    41869520.5 & -102558961 
+    \end{pmatrix}, b = \begin{pmatrix}
+    b_{1} \\
+    b_{2} 
+    \end{pmatrix}
+    = \begin{pmatrix}
+    1 \\
+    0
+    \end{pmatrix} , x = \begin{pmatrix}
+    x_{1} \\
+    x_{2} 
+    \end{pmatrix}
+
+The correct solution is `x_1 = 205117922`, `x_2 = 83739041`.
+
+To solve this `2 \times 2` system numerically we first use the well known formulas
+
+.. math:: x_1 = \frac{a_{22}}{a_{11}a_{22} - a_{12}a_{21}}, \quad x_2 = \frac{-a_{21}}{a_{11}a_{22} - a_{12}a_{21}},
+
+Calculating this directly in double precision gives the following wrong result:  
+
+`x_1 = 102558961`, `x_2 = 41869520.5`
+
+
+
+
+
+**Example: Eigenvalues**
+
+The following example is from :cite:t:`Brown2010`:
+
+The behaviour and stability of many physical systems are connected with the spectral properties of non-self-adjoint operators. However, numerical approximations of eigenvalues of non-selfadjoint operators (even matrices) may fail dramatically. For example, the non-normal 7 `\times` 7 matrix
+
+.. math:: 
+
+    A = \begin{pmatrix}
+        289 & 2054 & 326 & 128 & 70 & 32 & 6  \\
+        1152 & 30 & 1312 & 512 & 288 & 128 & 32  \\    
+        -29 & -1990 & 766 & 384 & 1018 & 224 & 58  \\
+        512 & 128 & 640 & 0 & 640 & 512 & 128  \\    
+        1053 & 2246 & -514 & -384 & -766 & 800 & 198  \\    
+        -287 & -6 & 1722 & -128 & 1978 & -30 & -2042  \\
+        -2176 & -285 & -1563 & -512 & -539 & -1152 & -287     
+    \end{pmatrix}
+
+has the eigenvalues  `-2, -4, 0, 1, 1, 2, 4`. Calculations in double precision yield a set of complex eigenvalues, such as `8.57 \pm 3.73 i; 2.29 \pm 8.33 i; -5.43 \pm 6.56 i; -8.85` with imaginary parts as large as `8.33`, which are nowhere near the true eigenvalues. The reason for this is that owing to the nonnormality of the matrix, its eigenvalues are highly sensitive to perturbations, and therefore unavoidable rounding errors render the numerical eigenvalue computations unreliable.
+
+
+
+
+
+
+|newpage|
+
+Reasons for calling C\# from Python
+---------------------------------------------
+
+Speed: Give some comparative data
+
+Access to the full .Net Framework runtime: Gui applications as examples
+
+Availability: It is available anyway, as a component of Windows.
+
+
+
+
+
+
+
+
+
+
+
+|newpage|
+
+Rebuilding the .dll files of XlCalcNet and XlCalcNet2 from source code
+--------------------------------------------------------------------------
+
+The XlCalcNet and XlCalcNet2 repositories contain both precompiled .dll files and their source code.
+
+This section descibes how to rebuild the .dll files of XlCalcNet and XlCalcNet2 from source code, either completely or only in part. The building process itself is not particularly difficult, but it requires the installation of MSYS2 (version 3.4.9.x86_64 or later: about 4 GB in size), Free Pascal (version 2.6.4 or later: about 320 MB in size), and Visual Studio Community (version 2019 or later: about 4.6 GB in size).
+
+In the following it is assumed that the user has installed MSYS2, Free Pascal and Visual Studio Community and is comfortable using them.
+
+MSYS2 is required to build the file ``FixedPrecGCC64K8.dll`` in the XlCalcNet ``Bin`` folder. The details of the building process are described in :ref:`FixedPrec <rst_FixedPrec>`.
+
+MSYS2 is also required to build the file ``ArbPrecNetGCCK8.dll`` in the XlCalcNet2 ``Bin`` folder. The details of the building process are described in :ref:`ArbPrec <rst_ArbPrec>`.
+
+Free Pascal is required to build  the file ``libwe64d.dll`` in the XlCalcNet ``Bin`` folder. The details of the building process are described in :ref:`FixedPrec <rst_FixedPrec>`.
+
+
+Erverything else can be done in Visual Studio Community:
+
+The details of the building the file ``FixedPrecNet.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`FixedPrec <rst_FixedPrec>`.
+
+The details of the building the file ``ArbPrecNet.dll`` in the XlCalcNet2 ``Bin`` folder are described in :ref:`ArbPrec <rst_ArbPrec>`.
+
+
+The details of the building the file ``ArbPrecNet.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`ClientServer <rst_ClientServer>`.
+
+
+The details of the building the file ``ArbPrecNet.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`OutputMonitor <rst_OutputMonitor>`.
+
+
+The details of the building the file ``ArbPrecNet.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`TinyIde <rst_TinyIde>`.
+
+
+The details of the building the file ``ArbPrecNet.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`GalleryOfPlots <rst_GalleryOfPlots>`.
+
+
+The details of the building the file ``ArbPrecNet.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`Wpf3D <rst_Wpf3D>`.
 
 
 

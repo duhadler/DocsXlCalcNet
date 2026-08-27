@@ -12,31 +12,34 @@
         :align: center
         :figclass: align-center
 
-    .. image:: _static/KuenOrange.jpg
+    .. image:: _static/KuenGreen.png
         :align: center
         :width: 10%
 
     |vspace|
 
 
-    Welcome to the documentation of **XlCalcNet**, a Microsoft E\ **X**\ ce\ **l** addin for **Calc**\ ulations in multiprecision, based on Python\ **Net**\ . This edition of the documentation describes release |version|. This documentation can be downloaded in PDF format from https://github.com/duhadler/DocsXlCalcNet/raw/master/pdf/xlcalcnet.pdf
+    Welcome to the documentation of **XlCalcNet**, a Microsoft E\ **X**\ ce\ **l** addin for **Calc**\ ulations in multiprecision, based on Python\ **Net**\ . This edition of the documentation describes release |release|. This documentation can be downloaded in PDF format from the Assets on the `Releases Page <https://github.com/duhadler/XlCalcNet/releases>`__ as "xlcalcnet.pdf".
+
 
     XlCalcNet is free software released under the Mozilla Public License `2.0` (see  :ref:`License <rst_MPL_2.0_License>`). The git repository is https://github.com/duhadler/XlCalcNet. 
+
+
 
     The main goal of XlCalcNet is to enable the use of functions written in Python or C# within spreadsheet formulas. It is therefore assumed that Microsoft Excel (2010 or later, 64 bit) is installed on the users system, running under Windows (7.1 or later, 64 bit), with .NET Framework 4.8/4.8.1 installed.
 
     If you are not yet familiar with XlCalcNet, it is suggested that you read the preface before browsing the other sections (just click the Next button).
 
 
+    Searching
+    ---------------------------------------------------------------------------
+    Try the "Search " box in the upper left corner. If you can't see such a box, move the mouse cursor over the menu tree, and use the mouse wheel to move up the menu tree. As an example, type "gamma" in the search box. This will return not  only the entry for the gamma function, but also a list of all occurrences of the word "gamma" in  this documentation.
 
-    .. tip::
 
-       Try the "Search " box in the upper left corner. If you can't see such a box, move the mouse cursor over the menu tree, and use the mouse wheel to move up the menu tree. As an example, type "gamma" in the search box. This will return not  only the entry for the gamma function, but also a list of all occurrences of the word "gamma" in  this documentation.
+    Sidebars
+    ---------------------------------------------------------------------------
+    The sphinx book theme is used, which has a primary (left) and secondary (right) sidebar. The secondary sidebar is invisible when the browser window is not wide enough. So if something seems to be missing, try to make the browser window wider.
 
-
-    .. tip::
-
-       The sphinx book theme is used, which has a primary (left) and secondary (right) sidebar. The secondary sidebar is invisible when the browser window is not wide enough. So if something seems to be missing, try to make the browser window wider.
 
 
 

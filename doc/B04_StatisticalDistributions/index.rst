@@ -43,6 +43,10 @@ The derivative `f(x)` is termed the probability density function (pdf), and the 
 
 
 
+The source code for the C\# tests in Visual Studio  can be found online in the ``XlCalcNet`` repository or in the corresponding local ``XlCalcNet`` folder in the file `B04_Distributions.cs <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/TestFixedAndArbPrecCS/B04_Distributions.cs>`__.
+
+
+
 
 
 

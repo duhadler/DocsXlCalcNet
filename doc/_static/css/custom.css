@@ -6,3 +6,8 @@ html {
     --pst-font-size-h5: 1.1rem;
     --pst-font-size-h6: 1.1rem;
 }
+
+article .toctree-wrapper {
+    display: none;
+}
+

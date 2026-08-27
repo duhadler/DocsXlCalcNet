@@ -57,11 +57,13 @@ and
 
 
 
-**Implementation notes**
 
-The current Amath implementation is restricted to real arguments `z \leq 1, s \geq -1, a \geq 0`.
+The source code for the C\# tests in Visual Studio is divided by real and complex modules:
 
-The current ARB implementation is restricted to calls to the polylogarithm or the Hurwitz zeta function, i.e. it expects `s=0` for arbitrary `z` and `a`, or `z=1` for arbitrary `s` and `a`, or `a` a nonnegative integer for arbitrary `z` and `s`, and otherwise returns NAN.
+The source code for the C\# tests in Visual Studio using real modules can be found online in the ``XlCalcNet`` repository or in the corresponding local ``XlCalcNet`` folder in the file `B09a_RealLerchPhi.cs <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/TestFixedAndArbPrecCS/B09a_RealLerchPhi.cs>`__,
+
+The source code for the C\# tests in Visual Studio using complex modules can be found online in the ``XlCalcNet`` repository or in the corresponding local ``XlCalcNet`` folder in the file `B09b_CplxLerchPhi.cs <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/TestFixedAndArbPrecCS/B09b_CplxLerchPhi.cs>`__,
+
 
 
 

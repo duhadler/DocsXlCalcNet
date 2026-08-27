@@ -33,11 +33,8 @@ Exponential function `\exp(x) = e^x`
 
     Returns `\exp(x)`, the exponential function of `x`. See also Wikipedia :cite:p:`WikipediaFun10`, MathWorld :cite:p:`WolframFun10`, NIST :cite:p:`DLMFun10`, :cite:t:`Ehrhardt2018` (4.2.34), Flint :cite:p:`FlintFun15`, Flint :cite:p:`FlintFun16`, Mpmath :cite:p:`MpmathFun10`. 
 
-    .. math::  \exp(x) = \sum_{k = 0}^{\infty} \frac{x^k}{k!} = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \frac{x^4}{24} + \cdots
 
-    For complex numbers, the exponential function satisfies
-
-    .. math:: \exp(x + iy) = e^x (\cos y + i \sin y).
+    For complex numbers, the exponential function satisfies `\exp(x + iy) = e^x (\cos y + i \sin y)`.
 
 
 
@@ -60,71 +57,54 @@ Exponential function `\exp(x) = e^x`
 
 
 
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ereal
-        >>> ereal.Exp(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Exp('0.51')
-        ereal('5.3518479027559984754E-1')
-
-
-
-
     An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
-        >>> res = []; x = 300
-        >>> for ctx in ctxall: ctx.dps = 40; res.append(ctx.exp(x));
-        >>> mpm.show(res)
-        fpm: 1.94242639524126E+130
-        mpm: 1.942426395241255936584208836017699219366e+130
-        ipm: 1.942426395241255936584208836017699219366e+130 (6.554e-40%)
-        dec: 1.942426395241255936584208836017699219366E+130
-        gmp: 1.942426395241255936584208836017699219366E+130
-        apm:[1.94242639524125593658420883601769921936619e+130 +/- 3.05e+89]
-
-
-    The following example with complex input shows that the relative error of the real or imaginary component can be quite high in certain situations, in this case input with the imaginary component near `\pi/2` (all digits of the ``dec`` output are correct):
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
-        >>> res = []; z = '3 + 1.57079632679489j'
-        >>> for ctx in ctxall: ctx.dps = 20; res.append(ctx.exp(z));
-        >>> mpm.show(res)
-        fpm: 1.35026437749597E-13                      + 2.00855369231877E+01j
-        mpm: 1.3295080411583145903e-13                 + 2.0085536923187667741e+1j
-        ipm: 1.3295082112894299626e-13 (1.28e-5%)      + 2.0085536923187667741e+1 (6.747e-20%)j
-        dec: 1.3295081511495773724E-13                 + 2.0085536923187667741E+1j
-        gmp: 1.3295080411583145903E-13                 + 2.0085536923187667741E+01j
-        apm:[1.329508381420545334922e-13 +/- 3.41e-20] +[20.0855369231876677409 +/- 8.34e-20]j
-
-
-    An example with large input:
-
-        >>> mz = mpm.exp("-1.343E+46 - 2.34636E+34j")
-        >>> mpm.real(mz)
-        mpf('-1.0548252324045361275536e-5832574891960672045353076455441726603805350981')
-        >>> mpm.imag(mz)
-        mpf('+2.8351474115329724405596e-5832574891960672045353076455441726603805350981')
+        >>> from xlcalcnet import *
+        >>> x = -5.1; dps = 90
+        >>> for ctx in ctxlistreal: print(ctx.fmtname + ': ' + ctx.fmt(ctx.exp(x)))
+            fpm:  0.00609674656551564
+            mpm:  0.00609674656551563610713456478542490178906004208066809730839371569595697636773934832576013656
+            dpm:  0.00609674656551563610713456478542490178906004208066809730839371569595697636773934832576013656
+            ipm: [0.0060967465655156361071345647854249017890600420806680973083937156959569763677393483257601365613434,
+                  0.0060967465655156361071345647854249017890600420806680973083937156959569763677393483257601365690139]
+            gpm:  0.0060967465655156361071345647854249017890600420806680973083937156959569763677393483257601365623
+            apm: [0.00609674656551563610713456478542490178906004208066809730839371569595697636773934832576013657 +/- 8.90e-93]
+          dreal:  0.00609674656551564
+          sreal:  0.006096747
+          dreal:  0.00609674656551564
+          ereal:  0.0060967465655156361078
+          qreal:  0.0060967465655156361071345647854249
+          oreal:  0.0060967465655156361071345647854249017890600420806680973083937156959569763
+          mreal:  0.00609674656551563610713456478542490178906004208066809730839371569595697636773934832576013657
+         sflint:  0.006096747
+         dflint:  0.00609674656551564
+         eflint:  0.0060967465655156361078
+         qflint:  0.0060967465655156361071345647854249
+         oflint:  0.0060967465655156361071345647854249017890600420806680973083937156959569764
+         mflint:  0.00609674656551563610713456478542490178906004208066809730839371569595697636773934832576013657
+         aflint: [0.0060967465655156361071345647854249017890600420806680973083937156959569763677393483257601366 +/- 4.16e-92]
 
 
 
-    Evaluation is also supported for interval arguments with wide intervals:
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, ipm, mp
-        >>> ipm.dps = 25
-        >>> ipm.exp([-mp.inf,0])
-        mpi('0.0', '1.0')
-        >>> ipm.exp([0,1])
-        mpi('1.0', '2.718281828459045235360287496')
+        >>> from xlcalcnet import *
+        >>> x = -5.1+2j; gui.setdps(50)
+        >>> for ctx in [fpm, mpm, cmath53, qcplx]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.exp(x)))
+            fpm:  (-0.00253714179646899, 0.00554375596403168)
+            mpm:  (-0.0025371417964689871432868572987332349386956711932343, 0.0055437559640316803155849317223325676631201581872807)
+        cmath53:  (-0.00253714179646899, 0.00554375596403168)
+          qcplx:  (-0.00253714179646898714328685729873324, 0.00554375596403168031558493172233257)
+
+
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D01a_ExpReal.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D01b_ExpCplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B03_ElementaryScalarFunctions/C03_Exponential/D01_Exp.cs>`__. 
+
 
 
 
@@ -139,78 +119,58 @@ Auxiliary function `\mathrm{expj}(x) = e^{ix}`
 
     where ``ctx`` is ``math53``, ``mathc53``, ``ctxcpp``, ``ctxflint``.
 
-    Note: mathc53.Cis(z)
-
     Returns `e^{iz} = \cos(z) + i \sin(z)`. See also Wikipedia :cite:p:`WikipediaFun1035`, MathWorld :cite:p:`WolframFun1035`, Mpmath :cite:p:`MpmathFun1035`.
 
-    An example in Python
+
+
+
+    An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.Expj(0.5)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.Expj('0.1')
-        ecplx('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -5.1; dps = 50
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.cplxctx.fmt(ctx.expj(x)))
+            fpm:  (0.37797774271298, 0.925814682327732)
+            mpm:  (0.37797774271298056332057555292898167089864157613427, 0.92581468232773229694614624754486331250940301635561)
+            dpm:  (0.37797774271298056332057555292898167089864157613428, 0.9258146823277322969461462475448633125094030163556)
+            ipm: ([0.3779777427129805633205755529289816708986415761342730157, 0.3779777427129805633205755529289816708986415761342837068], 
+                  [0.9258146823277322969461462475448633125094030163556011089, 0.9258146823277322969461462475448633125094030163556064544])
+            gpm:  (0.3779777427129805633205755529289816708986415761342737, 0.9258146823277322969461462475448633125094030163556051)
+            apm: ([0.3779777427129805633205755529289816708986415761343 +/- 3.78e-50], [0.9258146823277322969461462475448633125094030163556 +/- 1.06e-50])
+          dreal:  (0.37797774271298, 0.925814682327732)
+          sreal:  (0.3779777, 0.9258147)
+          dreal:  (0.37797774271298, 0.925814682327732)
+          ereal:  (0.37797774271298056325, 0.92581468232773229699)
+          qreal:  (0.377977742712980563320575552928981, 0.925814682327732296946146247544863)
+          oreal:  (0.37797774271298056332057555292898167089864157613427757054176691301095088, 0.92581468232773229694614624754486331250940301635560394879705455193228186)
+          mreal:  (0.37797774271298056332057555292898167089864157613429, 0.92581468232773229694614624754486331250940301635559)
+         sflint:  (0.3779777, 0.9258147)
+         dflint:  (0.37797774271298, 0.925814682327732)
+         eflint:  (0.37797774271298056325, 0.92581468232773229699)
+         qflint:  (0.377977742712980563320575552928981, 0.925814682327732296946146247544863)
+         oflint:  (0.37797774271298056332057555292898167089864157613427757054176691301095088, 0.92581468232773229694614624754486331250940301635560394879705455193228185)
+         mflint:  (0.37797774271298056332057555292898167089864157613429, 0.92581468232773229694614624754486331250940301635559)
+         aflint: ([0.3779777427129805633205755529289816708986415761343 +/- 2.92e-50], [0.9258146823277322969461462475448633125094030163556 +/- 2.44e-50])
 
 
 
-    Returns `e^{iz} = \cos(z) + i \sin(z)`. See also Wikipedia :cite:p:`WikipediaFun1035`, MathWorld :cite:p:`WolframFun1035`.
-
-    An example with real input (the output is always complex):
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 20; x = '1.57079632679489'
-        >>> \mathrm{d}x = dec.expj(x); mx = mpm.expj(x); ix = ipm.expj(x)
-        >>> mpm.show([\mathrm{d}x, mx, ix], aligned=True)
-        dec: 6.6192313216916397514E-15            + 1.0000000000000000000E+0j
-        mpm: 6.6192307740773877514e-15            + 1.0000000000000000000e+0j
-        ipm: 6.6192316211103350057e-15 (1.28e-5%) + 1.0000000000000000000e+0 (4.235e-20%)j
-
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 20; x = '1.57079632679489'
-        >>> fx = fpm.expj(x); gx = gmp.expj(x); ax = apm.expj(x)
-        >>> mpm.show([fx, gx, ax], aligned=True)
-        fpm: 6.7225704877083068166E-15            + 1.0000000000000000000E+00j
-        gmp: 6.6192307740773877514E-15            + 1.0000000000000000000E+00j
-        apm: 6.6192313299427593871e-15 (1.32e-5%) + 1.0000000000000000000e+0 (1.271e-19%)j
-
-
-    An example with complex input:
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 20; z = '3 + 1.57079632679489j'
-        >>> \mathrm{d}z = dec.expj(z); mz = mpm.expj(z); iz = ipm.expj(z)
-        >>> mpm.show([\mathrm{d}z, mz, iz], aligned=True)
-        dec: -2.0579922078373506286E-1               + 2.9335967490101498289E-2j
-        mpm: -2.0579922078373506286e-1               + 2.9335967490101498289e-2j
-        ipm: -2.0579922078373506286e-1 (-3.293e-18%) + 2.9335967490101498289e-2 (4.331e-18%)j
-
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 20; z = '3 + 1.57079632679489j'
-        >>> fz = fpm.expj(z); gz = gmp.expj(z); az = apm.expj(z)
-        >>> mpm.show([fz, gz, az], aligned=True)
-        fpm: -2.0579922078373558136E-01              + 2.9335967490101533262E-02j
-        gmp: -2.0579922078373506285E-01              + 2.9335967490101498289E-02j
-        apm: -2.0579922078373506284e-1 (-3.457e-17%) + 2.9335967490101498293e-2 (3.609e-17%)j
+        >>> from xlcalcnet import *
+        >>> x = -5.1+2j; gui.setdps(50)
+        >>> for ctx in [fpm, mpm, cmath53, qcplx]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.expj(x)))
+            fpm:  (0.0511537248671967, 0.125295392257438)
+            mpm:  (0.0511537248671967434898253949927467610442454662229, 0.1252953922574382533359994793180146319527429028572)
+        cmath53:  (0.0511537248671967, 0.125295392257438)
+          qcplx:  (0.0511537248671967434898253949927467, 0.125295392257438253335999479318014)
 
 
-    Examples from mpmath:
 
-    >>> from xlcalcnet import *
-    >>> mp.dps = 25; mp.pretty = True
-    >>> expj(0)
-    (1.0 + 0.0j)
-    >>> expj(-1)
-    (0.5403023058681397174009366 - 0.8414709848078965066525023j)
-    >>> expj(j)
-    (0.3678794411714423215955238 + 0.0j)
-    >>> expj(1+j)
-    (0.1987661103464129406288032 + 0.3095598756531121984439128j)
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D02a_ExpjReal.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D02b_ExpjCplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B03_ElementaryScalarFunctions/C03_Exponential/D03_Expjpi.cs>`__. 
+
 
 
 
@@ -231,58 +191,56 @@ Auxiliary function `\mathrm{expjpi}(x) = e^{i \pi x} = (-1)^x`
     Evaluation is accurate near zeros (see also :ref:`cospi() <rst_xreal_cospi>` and :ref:`sinpi() <rst_xreal_sinpi>`):
 
 
-    An example in Python
+
+
+
+    An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.Expjpi(0.5)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.Expjpi('0.1')
-        ecplx('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -5.1; dps = 50
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.cplxctx.fmt(ctx.expjpi(x)))
+            fpm:  (-0.951056516295154, 0.309016994374946)
+            mpm:  (-0.95105651629515357211643933337938214340569863412575, 0.30901699437494742410229341718281905886015458990287)
+            dpm:  (-0.95105651629515357211643933337938214340569863412575, 0.30901699437494742410229341718281905886015458990288)
+            ipm: ([-0.951056516295153572116439333379382143405698634125765038, -0.951056516295153572116439333379382143405698634125736974], [0.3090169943749474241022934171828190588601545899028378188, 0.3090169943749474241022934171828190588601545899029200063])
+            gpm:  (-0.9510565162951535721164393333793821434056986341257517, 0.3090169943749474241022934171828190588601545899028786)
+            apm: ([-0.9510565162951535721164393333793821434056986341258 +/- 5.79e-50], [0.3090169943749474241022934171828190588601545899029 +/- 6.59e-50])
+          dreal:  (-0.951056516295154, 0.309016994374946)
+          sreal:  (-0.9510566, 0.3090167)
+          dreal:  (-0.951056516295154, 0.309016994374946)
+          ereal:  (-0.95105651629515357222, 0.30901699437494742386)
+          qreal:  (-0.951056516295153572116439333379382, 0.309016994374947424102293417182818)
+          oreal:  (-0.95105651629515357211643933337938214340569863412575022244730564443015319, 0.30901699437494742410229341718281905886015458990288143106772431135263019)
+          mreal:  (-0.95105651629515357211643933337938214340569863412573, 0.30901699437494742410229341718281905886015458990293)
+         sflint:  (-0.9510566, 0.3090167)
+         dflint:  (-0.951056516295154, 0.309016994374946)
+         eflint:  (-0.95105651629515357222, 0.30901699437494742383)
+         qflint:  (-0.951056516295153572116439333379382, 0.309016994374947424102293417182818)
+         oflint:  (-0.95105651629515357211643933337938214340569863412575022244730564443015318, 0.30901699437494742410229341718281905886015458990288143106772431135263019)
+         mflint:  (-0.95105651629515357211643933337938214340569863412573, 0.30901699437494742410229341718281905886015458990292)
+         aflint: ([-0.9510565162951535721164393333793821434056986341257 +/- 6.44e-50], [0.3090169943749474241022934171828190588601545899029 +/- 8.93e-50])
 
 
 
-    An example with real input (the output is always complex):
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 20; x = '1.0'
-        >>> \mathrm{d}x = dec.expjpi(x); mx = mpm.expjpi(x); ix = ipm.expjpi(x)
-        >>> mpm.show([\mathrm{d}x, mx, ix], aligned=True)
-        dec: -1.0000000000000000000E+0               - 3.7356616720497115803E-20j
-        mpm: -1.0000000000000000000e+0               + 0.0e+0j
-        ipm: -1.0000000000000000000e+0 (-4.235e-20%) - 3.8307114865123115489e-20 (-4.422%)j
-
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 20; x = '1.0'
-        >>> fx = fpm.expjpi(x); gx = gmp.expjpi(x); ax = apm.expjpi(x)
-        >>> mpm.show([fx, gx, ax], aligned=True)
-        fpm: -1.0000000000000000000E+00 + 1.2246467991473532072E-16j
-        gmp: -1.0000000000000000000E+00 + 6.5640070857470010853E-22j
-        apm: 0.0e+0 (0.0%)
-
-
-    An example with complex input:
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 20; z = '3 + 1.0j'
-        >>> \mathrm{d}z = dec.expjpi(z); mz = mpm.expjpi(z); iz = ipm.expjpi(z)
-        >>> mpm.show([\mathrm{d}z, mz, iz], aligned=True)
-        dec: -4.3213918263772249773E-2               - 4.8429773447118903534E-21j
-        mpm: -4.3213918263772249774e-2               + 0.0e+0j
-        ipm: -4.3213918263772249764e-2 (-1.254e-16%) - 5.0394088172058346211e-21 (-3112.0%)j
+        >>> from xlcalcnet import *
+        >>> x = -5.1+2j; gui.setdps(50)
+        >>> for ctx in [fpm, mpm, cmath53, qcplx]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.expjpi(x)))
+            fpm:  (-0.00177604357879891, 0.000577071540119742)
+            mpm:  (-0.0017760435787989049642054631852541036755960880447526, 0.00057707154011974403113330884851121775451896357682577)
+        cmath53:  (-0.00177604357725158, 0.000577071540703855)
+          qcplx:  (-0.00177604357879890496420546318529556, 0.000577071540119744031133308848517094)
 
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 20; z = '3 + 1.0j'
-        >>> fz = fpm.expjpi(z); gz = gmp.expjpi(z); az = apm.expjpi(z)
-        >>> mpm.show([fz, gz, az], aligned=True)
-        fpm: -4.3213918263770523254E-02              + 1.5876536004102792749E-17j
-        gmp: -4.3213918263772249778E-02              - 6.1317510491589947464E-23j
-        apm: -4.3213918263772249774e-2 (-6.125e-20%) + 0.0e+0 (0.0%)j
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D03a_ExpjpiReal.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D03b_ExpjpiCplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B03_ElementaryScalarFunctions/C03_Exponential/D03_Expjpi.cs>`__. 
+
+
 
 
 
@@ -299,58 +257,55 @@ Exponential function with base `10`, `\mathrm{exp10}(x) = 10^z`
     Returns `\mathrm{exp10}(x) = 10^z = \exp(x \cdot \log(10))`, the  base-10 exponential function of `z`. See also Wikipedia :cite:p:`WikipediaFun12`, MathWorld :cite:p:`WolframFun10`, NIST :cite:p:`DLMFun10`, :cite:t:`Ehrhardt2018` (4.2.36), Mpmath :cite:p:`MpmathFun18`. 
 
 
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ereal
-        >>> ereal.Exp10(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Exp10('0.51')
-        ereal('5.3518479027559984754E-1')
-
 
 
     An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 40; x = 300
-        >>> \mathrm{d}x = dec.exp10(x); mx = mpm.exp10(x); ix = ipm.exp10(x)
-        >>> mpm.show([\mathrm{d}x, mx, ix])
-        dec:  1.000000000000000000000000000000000000000E+300
-        mpm:  1.000000000000000000000000000000000000006e+300
-        ipm:  1.000000000000000000000000000000000000000e+300 (1.764e-36%)
+        >>> from xlcalcnet import *
+        >>> x = -5.1; dps = 90
+        >>>     for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.exp10(x))
+            fpm:  7.94328234724282E-06
+            mpm:  0.00000794328234724281502065918282836387932588960631755484332092323929316955697191487537497095251
+            dpm:  0.00000794328234724281502065918282836387932588960631755484332092323929316955697191487537497095252
+            ipm: [0.0000079432823472428150206591828283638793258896063175548433209232392931695569719148753749709524789891,
+                  0.0000079432823472428150206591828283638793258896063175548433209232392931695569719148753749709525445325]
+            gpm:  7.9432823472428150206591828283638793258896063175548433209232392931695569719148753749709525146e-06
+            apm: [7.943282347242815020659182828363879325889606317554843320923239293169556971914875374970953e-6 +/- 5.13e-94]
+          dreal:  7.94328234724282E-06
+          sreal:  7.943281E-06
+          dreal:  7.94328234724281E-06
+          ereal:  7.9432823472428150204e-06
+          qreal:  7.94328234724281502065918282836389e-06
+          oreal:  7.9432823472428150206591828283638793258896063175548433209232392931695569e-06
+          mreal:  7.94328234724281502065918282836387932588960631755484332092323929316955697191487537497095253E-06
+         sflint:  7.943284E-06
+         dflint:  7.94328234724282E-06
+         eflint:  7.9432823472428150221e-06
+         qflint:  7.94328234724281502065918282836388e-06
+         oflint:  7.9432823472428150206591828283638793258896063175548433209232392931695572e-06
+         mflint:  7.94328234724281502065918282836387932588960631755484332092323929316955697191487537497095253E-06
+         aflint: [7.943282347242815020659182828363879325889606317554843320923239293169556971914875374970953e-6 +/- 5.60e-94]
 
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 40; x = 300
-        >>> fx = fpm.exp10(x); gx = gmp.exp10(x); ax = apm.exp10(x)
-        >>> mpm.show([fx, gx, ax])
-        fpm:  1e+300
-        gmp:  1.000000000000000000000000000000000000000E+300
-        apm:  9.999999999999999999999999999999999999999e+299 (2.076e-38%)
 
-
-    The following example with complex input shows that the relative error can be high in double precision:
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 20; z = '3 + 1.57079632679489j'
-        >>> \mathrm{d}z = dec.exp10(z); mz = mpm.exp10(z); iz = ipm.exp10(z)
-        >>> mpm.show([\mathrm{d}z, mz, iz], aligned=True)
-        dec: -8.8915568479718223597E+2               - 4.5760481661894022373E+2j
-        mpm: -8.8915568479718223597e+2               - 4.5760481661894022374e+2j
-        ipm: -8.8915568479718223597e+2 (-1.073e-18%) - 4.5760481661894022373e+2 (-2.038e-18%)j
+        >>> from xlcalcnet import *
+        >>> x = -5.1+2j; gui.setdps(50)
+        >>> for ctx in [fpm, mpm, cmath53, qcplx]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.exp10(x)))
+            fpm:  (-8.50038314869339E-07, -7.89766859973711E-06)
+            mpm:  (-0.0000008500383148693386092398053603383376816809556042249, -0.0000078976685997371034342479584101601100277547297776704)
+        cmath53:  (-8.50038314869336E-07, -7.89766859973711E-06)
+          qcplx:  (-8.50038314869338609239805360338339e-07, -7.89766859973710343424795841016012e-06)
 
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 20; z = '3 + 1.57079632679489j'
-        >>> fz = fpm.exp10(z); gz = gmp.exp10(z); az = apm.exp10(z)
-        >>> mpm.show([fz, gz, az], aligned=True)
-        fpm: -8.8915568479718217532E+02              - 4.5760481661894021954E+02j
-        gmp: -8.8915568479718223597E+02              - 4.5760481661894022374E+02j
-        apm: -8.8915568479718223597e+2 (-1.951e-19%) - 4.5760481661894022373e+2 (-5.212e-19%)j
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D04a_Exp10Real.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D04b_Exp10Cplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B03_ElementaryScalarFunctions/C03_Exponential/D04_Exp10.cs>`__. 
+
+
 
 
 
@@ -368,58 +323,57 @@ Exponential function with base `2`, `\mathrm{exp2}(x) = 2^x`
     Returns `\mathrm{exp2}(x) = 2^x = \exp(x \cdot \log(2))`, the  base-2 exponential function of `x`. See also Wikipedia :cite:p:`WikipediaFun13`, MathWorld :cite:p:`WolframFun10`, NIST :cite:p:`DLMFun10`,  :cite:t:`Ehrhardt2018` (4.2.35).
 
 
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ereal
-        >>> ereal.Exp2(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Exp2('0.51')
-        ereal('5.3518479027559984754E-1')
-
 
 
     An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 40; x = 300
-        >>> \mathrm{d}x = dec.exp2(x); mx = mpm.exp2(x); ix = ipm.exp2(x)
-        >>> mpm.show([\mathrm{d}x, mx, ix])
-        dec:  2.037035976334486086268445688409378161051E+90
-        mpm:  2.037035976334486086268445688409378161051e+90
-        ipm:  2.037035976334486086268445688409378161051e+90 (2.95e-37%)
+        >>> from xlcalcnet import *
+        >>> x = -5.1; dps = 90
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.exp2(x)))
+            fpm:  0.0291572809855252
+            mpm:  0.0291572809855252317494169770671856927196009363859841887156405432964186568847051108626158585
+            dpm:  0.0291572809855252317494169770671856927196009363859841887156405432964186568847051108626158585
+            ipm: [0.0291572809855252317494169770671856927196009363859841887156405432964186568847051108626158585305,
+                  0.029157280985525231749416977067185692719600936385984188715640543296418656884705110862615858591864]
+            gpm:  0.029157280985525231749416977067185692719600936385984188715640543296418656884705110862615858538
+            apm: [0.0291572809855252317494169770671856927196009363859841887156405432964186568847051108626158586 +/- 8.98e-92]
+          dreal:  0.0291572809855252
+          sreal:  0.02915728
+          dreal:  0.0291572809855252
+          ereal:  0.029157280985525231751
+          qreal:  0.0291572809855252317494169770671857
+          oreal:  0.029157280985525231749416977067185692719600936385984188715640543296418657
+          mreal:  0.0291572809855252317494169770671856927196009363859841887156405432964186568847051108626158586
+         sflint:  0.02915728
+         dflint:  0.0291572809855252
+         eflint:  0.029157280985525231751
+         qflint:  0.0291572809855252317494169770671857
+         oflint:  0.029157280985525231749416977067185692719600936385984188715640543296418657
+         mflint:  0.0291572809855252317494169770671856927196009363859841887156405432964186568847051108626158586
+         aflint: [0.029157280985525231749416977067185692719600936385984188715640543296418656884705110862615859 +/- 5.38e-91]
 
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 40; x = 300
-        >>> fx = fpm.exp2(x); gx = gmp.exp2(x); ax = apm.exp2(x)
-        >>> mpm.show([fx, gx, ax])
-        fpm:  2.037035976334486e+90
-        gmp:  2.037035976334486086268445688409378161051E+90
-        apm:  2.037035976334486086268445688409378161051e+90 (6.084e-38%)
 
 
-    The following example with complex input shows that the relative error can be high in double precision:
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 20; z = '3 + 1.57079632679489j'
-        >>> \mathrm{d}z = dec.exp2(z); mz = mpm.exp2(z); iz = ipm.exp2(z)
-        >>> mpm.show([\mathrm{d}z, mz, iz], aligned=True)
-        dec: 3.7084411872640180216E+0              + 7.0885445586949540188E+0j
-        mpm: 3.7084411872640180216e+0              + 7.0885445586949540188e+0j
-        ipm: 3.7084411872640180216e+0 (8.679e-19%) + 7.0885445586949540188e+0 (4.78e-19%)j
+        >>> from xlcalcnet import *
+        >>> x = -5.1+2j; gui.setdps(50)
+        >>> for ctx in [fpm, mpm, cmath53, qcplx]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.exp2(x)))
+            fpm:  (0.00534910656134485, 0.0286624160437366)
+            mpm:  (0.0053491065613448526660310040295797895499084770752861, 0.028662416043736589994269252987760995841700161519681)
+        cmath53:  (0.00534910656134486, 0.0286624160437366)
+          qcplx:  (0.00534910656134485266603100402957979, 0.028662416043736589994269252987761)
 
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 20; z = '3 + 1.57079632679489j'
-        >>> fz = fpm.exp2(z); gz = gmp.exp2(z); az = apm.exp2(z)
-        >>> mpm.show([fz, gz, az], aligned=True)
-        fpm: 3.7084411872640181684E+00             + 7.0885445586949540342E+00j
-        gmp: 3.7084411872640180216E+00             + 7.0885445586949540188E+00j
-        apm: 3.7084411872640180216e+0 (1.827e-19%) + 7.0885445586949540188e+0 (9.559e-20%)j
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D05a_Exp2Real.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D05b_Exp2Cplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B03_ElementaryScalarFunctions/C03_Exponential/D05_Exp2.cs>`__. 
+
+
+
 
 
 
@@ -439,16 +393,6 @@ Auxiliary function `\mathrm{expm1}(x) = e^x-1`
     Returns `\mathrm{expm1}(x) = \exp(x)-1 = e^x-1`, computed accurately also for small `x`. See also Wikipedia :cite:p:`WikipediaFun11`, MathWorld :cite:p:`WolframFun10`, NIST :cite:p:`DLMFun10`,  BoostMath :cite:p:`BoostFun10`,  :cite:t:`Ehrhardt2018` (4.2.37), Flint :cite:p:`FlintFun15`, Flint :cite:p:`FlintFun16`, Mpmath :cite:p:`MpmathFun11`.
 
 
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ereal
-        >>> ereal.Expm1(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Expm1('0.51')
-        ereal('5.3518479027559984754E-1')
-
 
 
 
@@ -456,42 +400,50 @@ Auxiliary function `\mathrm{expm1}(x) = e^x-1`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 40; x = '1.0E-100'
-        >>> \mathrm{d}x = dec.expm1(x); mx = mpm.expm1(x); ix = ipm.expm1(x)
-        >>> mpm.show([\mathrm{d}x, mx, ix])
-        dec:  1.000000000000000000000000000000000000000E-100
-        mpm:  1.000000000000000000000000000000000000000e-100
-        ipm:  1.000000000000000000000000000000000000000e-100 (1.312e-39%)
+        >>> from xlcalcnet import *
+        >>> x = -5.1; dps = 90
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.expm1(x)))
+            fpm:  -0.993903253434484
+            mpm:  -0.993903253434484363892865435214575098210939957919331902691606284304043023632260651674239863
+            dpm:  -0.993903253434484363892865435214575098210939957919331902691606284304043023632260651674239863
+            ipm: [-0.99390325343448436389286543521457509821093995791933190269160628430404302363226065167423986352495,
+                  -0.99390325343448436389286543521457509821093995791933190269160628430404302363226065167423986340222]
+            gpm:  -0.9939032534344843638928654352145750982109399579193319026916062843040430236322606516742398634
+            apm: [-0.993903253434484363892865435214575098210939957919331902691606284304043023632260651674239863 +/- 5.31e-91]
+          dreal:  -0.993903253434484
+          sreal:  -0.9939033
+          dreal:  -0.993903253434484
+          ereal:  -0.99390325343448436389
+          qreal:  -0.993903253434484363892865435214575
+          oreal:  -0.99390325343448436389286543521457509821093995791933190269160628430404302
+          mreal:  -0.993903253434484363892865435214575098210939957919331902691606284304043023632260651674239864
+         sflint:  -0.9939033
+         dflint:  -0.993903253434484
+         eflint:  -0.99390325343448436389
+         qflint:  -0.993903253434484363892865435214575
+         oflint:  -0.99390325343448436389286543521457509821093995791933190269160628430404302
+         mflint:  -0.993903253434484363892865435214575098210939957919331902691606284304043023632260651674239864
+         aflint: [-0.993903253434484363892865435214575098210939957919331902691606284304043023632260651674239863 +/- 6.53e-91]
 
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 40; x = '1.0E-100'
-        >>> fx = fpm.expm1(x); gx = gmp.expm1(x); ax = apm.expm1(x)
-        >>> mpm.show([fx, gx, ax])
-        fpm:  1e-100
-        gmp:  1.000000000000000000000000000000000000000E-100
-        apm:  1.000000000000000000000000000000000000000e-100 (1.312e-39%)
 
 
-    The following example with complex input shows that the relative error can be high in double precision:
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 20; z = '1.0E-100 + 1.57079632679489j'
-        >>> \mathrm{d}z = dec.expm1(z); mz = mpm.expm1(z); iz = ipm.expm1(z)
-        >>> mpm.show([\mathrm{d}z, mz, iz], aligned=True)
-        dec: -9.9999999999999338077E-1               + 1.0000000000000000000E+0j
-        mpm: -9.9999999999999338077e-1               + 1.0000000000000000000e+0j
-        ipm: -9.9999999999999338077e-1 (-1.271e-19%) + 1.0000000000000000000e+0 (4.235e-20%)j
+        >>> from xlcalcnet import *
+        >>> x = -5.1+2j; gui.setdps(50)
+        >>> for ctx in [fpm, mpm, cmath53, qcplx]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.expm1(x)))
+            fpm:  (-1.00253714179647, 0.00554375596403168)
+            mpm:  (-1.0025371417964689871432868572987332349386956711932, 0.0055437559640316803155849317223325676631201581872807)
+        cmath53:  (-1.00253714179647, 0.00554375596403168)
+          qcplx:  (-1.00253714179646898714328685729873, 0.00554375596403168031558493172233257)
 
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 20; z = '1.0E-100 + 1.57079632679489j'
-        >>> fz = fpm.expm1(z); gz = gmp.expm1(z); az = apm.expm1(z)
-        >>> mpm.show([fz, gz, az], aligned=True)
-        fpm: -9.99999999999993E-01                   + 1.00000000000000E+00j
-        gmp: -9.9999999999999338077E-01              + 1.0000000000000000000E+00j
-        apm: -9.9999999999999338077e-1 (-1.694e-19%) + 1.0000000000000000000e+0 (1.271e-19%)j
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D06a_Expm1Real.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D06b_Expm1Cplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B03_ElementaryScalarFunctions/C03_Exponential/D06_Expm1.cs>`__. 
+
+
 
 
 
@@ -508,15 +460,6 @@ Auxiliary function `\mathrm{exp10m1}(x) = 10^x - 1`
     Returns `10^x - 1 = \mathrm{expm1}(x \cdot \log(10))`. See also  :ref:`expm1() <rst_xreal_expm1>`.
 
 
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ereal
-        >>> ereal.Exp10m1(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Exp10m1('0.51')
-        ereal('5.3518479027559984754E-1')
 
 
 
@@ -524,42 +467,50 @@ Auxiliary function `\mathrm{exp10m1}(x) = 10^x - 1`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 40; x = '1.0E-100'
-        >>> \mathrm{d}x = dec.exp10m1(x); mx = mpm.exp10m1(x); ix = ipm.exp10m1(x)
-        >>> mpm.show([\mathrm{d}x, mx, ix])
-        dec:  2.302585092994045684017991454684364207601E-100
-        mpm:  2.302585092994045684017991454684364207601e-100
-        ipm:  2.302585092994045684017991454684364207601e-100 (3.419e-39%)
+        >>> from xlcalcnet import *
+        >>> x = -5.1; dps = 90
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.exp10m1(x)))
+            fpm:  -0.999992056717653
+            mpm:  -0.999992056717652757184979340817171636120674110393682445156679076760706830443028085124625029
+            dpm:  -0.999992056717652757184979340817171636120674110393682445156679076760706830443028085124625029
+            ipm: [-0.99999205671765275718497934081717163612067411039368244515667907676070683044302808512462502915426,
+                  -0.99999205671765275718497934081717163612067411039368244515667907676070683044302808512462502903153]
+            gpm:  -0.99999205671765275718497934081717163612067411039368244515667907676070683044302808512462502903
+            apm: [-0.999992056717652757184979340817171636120674110393682445156679076760706830443028085124625029 +/- 1.55e-91]
+          dreal:  -0.999992056717653
+          sreal:  -0.9999921
+          dreal:  -0.999992056717653
+          ereal:  -0.99999205671765275719
+          qreal:  -0.999992056717652757184979340817172
+          oreal:  -0.99999205671765275718497934081717163612067411039368244515667907676070683
+          mreal:  -0.999992056717652757184979340817171636120674110393682445156679076760706830443028085124625029
+         sflint:  -0.9999921
+         dflint:  -0.999992056717653
+         eflint:  -0.99999205671765275719
+         qflint:  -0.999992056717652757184979340817172
+         oflint:  -0.99999205671765275718497934081717163612067411039368244515667907676070683
+         mflint:  -0.999992056717652757184979340817171636120674110393682445156679076760706830443028085124625029
+         aflint: [-0.999992056717652757184979340817171636120674110393682445156679076760706830443028085124625029 +/- 7.06e-91]
 
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 40; x = '1.0E-100'
-        >>> fx = fpm.exp10m1(x); gx = gmp.exp10m1(x); ax = apm.exp10m1(x)
-        >>> mpm.show([fx, gx, ax])
-        fpm:  2.3025850929940455e-100
-        gmp:  2.302585092994045684017991454684364207601E-100
-        apm:  2.302585092994045684017991454684364207601e-100 (3.419e-39%)
 
 
-    The following example with complex input shows that the relative error can be high in double precision:
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 20; z = '1.0E-100 + 1.57079632679489j'
-        >>> \mathrm{d}z = dec.exp10m1(z); mz = mpm.exp10m1(z); iz = ipm.exp10m1(z)
-        >>> mpm.show([\mathrm{d}z, mz, iz], aligned=True)
-        dec: -1.8891556847971822360E+0               - 4.5760481661894022373E-1j
-        mpm: -1.8891556847971822360e+0               - 4.5760481661894022374e-1j
-        ipm: -1.8891556847971822360e+0 (-2.242e-19%) - 4.5760481661894022373e-1 (-1.388e-18%)j
+        >>> from xlcalcnet import *
+        >>> x = -5.1+2j; gui.setdps(50)
+        >>> for ctx in [fpm, mpm, cmath53, qcplx]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.exp10m1(x)))
+            fpm:  (-1.00000085003831, -7.89766859973711E-06)
+            mpm:  (-1.0000008500383148693386092398053603383376816809556, -0.0000078976685997371034342479584101601100277547297776704)
+        cmath53:  (-1.00000085003831, -7.8976685997371E-06)
+          qcplx:  (-1.00000085003831486933860923980536, -7.89766859973710343424795841016012e-06)
 
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 20; z = '1.0E-100 + 1.57079632679489j'
-        >>> fz = fpm.exp10m1(z); gz = gmp.exp10m1(z); az = apm.exp10m1(z)
-        >>> mpm.show([fz, gz, az], aligned=True)
-        fpm: -9.99999999999993E-01                   + 1.00000000000000E+00j
-        gmp: -9.9999999999999338077E-01              + 1.0000000000000000000E+00j
-        apm: -9.9999999999999338077e-1 (-1.694e-19%) + 1.0000000000000000000e+0 (1.271e-19%)j
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D07a_Exp10m1Real.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D07b_Exp10m1Cplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B03_ElementaryScalarFunctions/C03_Exponential/D07_Exp10m1.cs>`__. 
+
+
 
 
 
@@ -576,59 +527,54 @@ Auxiliary function `\mathrm{exp2m1}(x) = 2^x - 1`
     Returns `2^x - 1 = \mathrm{expm1}(x \cdot \log(2))`. See also  :ref:`expm1() <rst_xreal_expm1>`.
 
 
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ereal
-        >>> ereal.Exp2m1(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Exp2m1('0.51')
-        ereal('5.3518479027559984754E-1')
-
 
 
     An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 40; x = '1.0E-100'
-        >>> \mathrm{d}x = dec.exp2m1(x); mx = mpm.exp2m1(x); ix = ipm.exp2m1(x)
-        >>> mpm.show([\mathrm{d}x, mx, ix])
-        dec:  6.931471805599453094172321214581765680755E-101
-        mpm:  6.931471805599453094172321214581765680755e-101
-        ipm:  6.931471805599453094172321214581765680755e-101 (2.839e-39%)
+        >>> from xlcalcnet import *
+        >>> x = -5.1; dps = 90
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.exp2m1(x)))
+            fpm:  -0.970842719014475
+            mpm:  -0.970842719014474768250583022932814307280399063614015811284359456703581343115294889137384141
+            dpm:  -0.970842719014474768250583022932814307280399063614015811284359456703581343115294889137384141
+            ipm: [-0.9708427190144747682505830229328143072803990636140158112843594567035813431152948891373841415347,
+                  -0.97084271901447476825058302293281430728039906361401581128435945670358134311529488913738414128924]
+            gpm:  -0.97084271901447476825058302293281430728039906361401581128435945670358134311529488913738414141
+            apm: [-0.970842719014474768250583022932814307280399063614015811284359456703581343115294889137384141 +/- 5.79e-91]
+          dreal:  -0.970842719014475
+          sreal:  -0.9708427
+          dreal:  -0.970842719014475
+          ereal:  -0.97084271901447476827
+          qreal:  -0.970842719014474768250583022932814
+          oreal:  -0.97084271901447476825058302293281430728039906361401581128435945670358134
+          mreal:  -0.970842719014474768250583022932814307280399063614015811284359456703581343115294889137384142
+         sflint:  -0.9708427
+         dflint:  -0.970842719014475
+         eflint:  -0.97084271901447476827
+         qflint:  -0.970842719014474768250583022932814
+         oflint:  -0.97084271901447476825058302293281430728039906361401581128435945670358134
+         mflint:  -0.970842719014474768250583022932814307280399063614015811284359456703581343115294889137384142
+         aflint: [-0.970842719014474768250583022932814307280399063614015811284359456703581343115294889137384141 +/- 7.68e-91]
 
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 40; x = '1.0E-100'
-        >>> fx = fpm.exp2m1(x); gx = gmp.exp2m1(x); ax = apm.exp2m1(x)
-        >>> mpm.show([fx, gx, ax])
-        fpm:  6.931471805599454e-101
-        gmp:  6.931471805599453094172321214581765680755E-101
-        apm:  6.931471805599453094172321214581765680755e-101 (3.786e-39%)
 
 
-    The following example with complex input shows that the relative error can be high in double precision:
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 20; z = '1.0E-100 + 1.57079632679489j'
-        >>> \mathrm{d}z = dec.exp2m1(z); mz = mpm.exp2m1(z); iz = ipm.exp2m1(z)
-        >>> mpm.show([\mathrm{d}z, mz, iz], aligned=True)
-        dec: -5.3644485159199774730E-1               + 8.8606806983686925235E-1j
-        mpm: -5.3644485159199774730e-1               + 8.8606806983686925235e-1j
-        ipm: -5.3644485159199774730e-1 (-5.526e-19%) + 8.8606806983686925235e-1 (1.434e-19%)j
+        >>> from xlcalcnet import *
+        >>> x = -5.1+2j; gui.setdps(50)
+        >>> for ctx in [fpm, mpm, cmath53, qcplx]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.exp2m1(x)))
+            fpm:  (-0.994650893438655, 0.0286624160437366)
+            mpm:  (-0.99465089343865514733396899597042021045009152292471, 0.028662416043736589994269252987760995841700161519681)
+        cmath53:  (-0.994650893438655, 0.0286624160437366)
+          qcplx:  (-0.99465089343865514733396899597042, 0.028662416043736589994269252987761)
 
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 20; z = '1.0E-100 + 1.57079632679489j'
-        >>> fz = fpm.exp2m1(z); gz = gmp.exp2m1(z); az = apm.exp2m1(z)
-        >>> mpm.show([fz, gz, az], aligned=True)
-        fpm: -5.36444851591998E-01                   + 8.86068069836869E-01j
-        gmp: -5.3644485159199774730E-01              + 8.8606806983686925235E-01j
-        apm: -5.3644485159199774726e-1 (-6.316e-19%) + 8.8606806983686925232e-1 (2.39e-19%)j
 
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D08a_Exp2m1Real.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B03_ElementaryScalarFunctions/C03_Exponential/D08b_Exp2m1Cplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B03_ElementaryScalarFunctions/C03_Exponential/D08_Exp2m1.cs>`__. 
 
 
 

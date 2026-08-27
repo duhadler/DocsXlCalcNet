@@ -45,6 +45,20 @@ See also Wikipedia :cite:p:`WikipediaFun155`, Wikipedia :cite:p:`WikipediaFun155
 
 
 
+The source code for the C\# tests in Visual Studio is divided by real and complex modules:
+
+The source code for the C\# tests in Visual Studio using real modules can be found online in the ``XlCalcNet`` repository or in the corresponding local ``XlCalcNet`` folder in the file `B08a_RealEllipticFunctions.cs <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/TestFixedAndArbPrecCS/B08a_RealEllipticFunctions.cs>`__,
+
+The source code for the C\# tests in Visual Studio using complex modules can be found online in the ``XlCalcNet`` repository or in the corresponding local ``XlCalcNet`` folder in the file `B08b_CplxEllipticFunctions.cs <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/TestFixedAndArbPrecCS/B08b_CplxEllipticFunctions.cs>`__,
+
+
+
+
+
+
+
+
+
 
 
 .. toctree ::

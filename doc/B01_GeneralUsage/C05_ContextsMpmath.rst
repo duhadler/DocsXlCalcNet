@@ -39,14 +39,10 @@ Mathematical functions based on Mpmath, Gmpy2 and Python-Flint (only Python)
 Overview
 ---------------------------------------------
 
+Contexts
+.....................
 
-High-level code in xlcalcnet is, as in mpmath, implemented as methods on a "context object". The context implements arithmetic, type conversions and other fundamental operations. The context also holds settings such as precision, and stores cache data. A total of 6 different contexts (with a mostly compatible interface) are provided so that the high-level algorithms can be used with different implementations of the underlying arithmetic, allowing different features and speed-accuracy tradeoffs. 
-
-The functions in this chapter constitute, as a whole, a minimal set of context functions, which is sufficient to support all of the functionality which mpmath provides in terms of special functions, matrix algebra, and numerical calculus, plus the additional functionality of xlcalcnet. These functions are implemented separately for each of the 6 contexts supported by xlcalcnet. If a user wishes to use an additional numerical context based on a different numerical data type, only the functions listed in this chapter need to be implemented explicitly, all other function will be available automatically.
-
-
-
-The following groups of contexts are available on all operating systems:
+The following group of contexts are available in Python only:
 
 * Context group ``ctx_pm``:  this context group includes ``fpm`` (see :ref:`fpm <rst_mpm_def>`), ``mpm`` (see :ref:`mpm <rst_fpm_def>`), ``dpm`` (see :ref:`dpm <rst_fpm_def>`), ``ipm`` (see :ref:`ipm <rst_ipm_def>`), ``gpm`` (see :ref:`gpm <rst_gpm_def>`), ``apm`` (see :ref:`apm <rst_apm_def>`). The ``gpm`` context is only available if Gmpy2 is installed, and the ``apm`` context is only available if Python-FLINT is installed.
 
@@ -101,50 +97,8 @@ The need to import xlcalcnet and mpmath into the same module should rarely arise
 
 
 
-
-
-This function creates a real number
-
-.. method:: ctx.mpf(x)
-
-    where ``ctx`` is ``fpm``, ``mpm``, ``ipm``, ``dec``, ``gmp`` or ``apm``.
-
-
-    ``ctx.mpf`` creates a real number:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import mp, iv, fp, dp, gp, ap
-        >>> fp.mpf(3), mp.mpf(3), iv.mpf(3), dp.mpf(3), gp.mpf(3), ap.mpf(3)
-        (3.0,
-        mpf('3.0'),
-        mpi('3.0', '3.0'),
-        Decimal('3'),
-        mpfr('3.0'),
-        arb3_t('3.00000000000000'))
-
-
-
-This function creates a complex number
-
-.. method:: ctx.mpc(x, y)
-
-    where ``ctx`` is ``fpm``, ``mpm``, ``ipm``, ``dec``, ``gmp`` or ``apm``.
-
-
-    ``ctx.mpc`` creates a complex number:
-
-    .. code-block:: pycon
-
-        >>> fp.mpc(2,3), mp.mpc(2,3), iv.mpc(2,3), dp.mpc(2,3), gp.mpc(2,3), ap.mpc(2,3)
-        ((2+3j),
-        mpc(real='2.0', imag='3.0'),
-        iv.mpc(mpi('2.0', '2.0'), mpi('3.0', '3.0')),
-        DecCplx('2 + 3j'),
-        mpc('2.0+3.0j'),
-        acb3_t('2.00000000000000 + 3.00000000000000j'))
-
-
+Conversion of sclars
+........................
 
 This function converts scalars into each other
 
@@ -200,16 +154,8 @@ This function converts scalars into each other
 
 
 
-.. method:: ctx.convert(x, strings=True)
-
-    An alias for ``ctx.t``
-
-.. method:: ctx.mpmathify(x, strings=True)
-
-    An alias for ``ctx.t``
-
-
-
+Precision in bits and digits
+......................................
 
 
 ``ctx.prec`` holds the current precision (in bits):
@@ -235,34 +181,6 @@ The default decimal precision (in digits) for all contexts after starting xlcalc
 
 
 
-``ctx.pretty`` controls whether objects should be pretty-printed automatically Pretty-printing for ``mp`` numbers is disabled by default so that they can clearly be distinguished from Python numbers:
-
-.. code-block:: pycon
-
-    >>> fp.mpf(3), mp.mpf(3), iv.mpf(3), dp.mpf(3), gp.mpf(3), ap.mpf(3)
-    (3.0,
-     mpf('3.0'),
-     mpi('3.0', '3.0'),
-     Decimal('3'),
-     mpfr('3.0'),
-     arb3_t('3.00000000000000'))
-
-    >>> fp.pretty = mp.pretty = iv.pretty = dp.pretty = gp.pretty = ap.pretty = True
-    >>> fp.mpf(3), mp.mpf(3), iv.mpf(3), dp.mpf(3), gp.mpf(3), ap.mpf(3)
-    (3.0, 3.0, [3.0, 3.0], Decimal('3'), mpfr('3.0'), arb3_t('3.00000000000000'))
-
-    >>> fp.matrix([[1,0],[0,1]])
-    matrix(
-    [['1.0', '0.0'],
-     ['0.0', '1.0']])
-    >>> fp.pretty = True
-    >>> fp.matrix([[1,0],[0,1]])
-    [1.0  0.0]
-    [0.0  1.0]
-
-    >>> fp.pretty = mp.pretty = iv.pretty = dp.pretty = gp.pretty = ap.pretty = False
-
-
 
 Like mpmath, xlcalcnet expects every devision of a *normal* number by zero to raise a ``DivisionByZero``, and not to return ``+inf`` or ``-inf``. This is the default behaviour for the ``fp``, ``mp``, ``iv`` and ``dp`` contexts anyway, and has been changed to follow this convention for the ``gp`` and ``ap`` context.
 
@@ -276,62 +194,311 @@ A number of algorithms use this exception to trigger a temporary increase of pre
 
 .. _rst_fpm_def: 
 
-Double-precision arithmetic (``fpm``)
+Double-precision arithmetic: ``fpm``
 ---------------------------------------------
 
-The source code for this module can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_fpm.py
+
+The Python module ``fpm`` provides support for real and complex floating point numbers in double precision (see https://en.wikipedia.org/wiki/Double-precision_floating-point_format). The corresponding real and complex data types, ``float`` and ``complex``, are implemented in hardware (and are therefore quite fast).
 
 
-Although mpmath is generally designed for arbitrary-precision arithmetic, many of the high-level algorithms work perfectly well with ordinary Python ``float`` and ``complex`` numbers, which use hardware double precision (on most systems, this corresponds to 53 bits of precision). Whereas the global functions (which are methods of the ``mp`` object) always convert inputs to mpmath numbers, the ``fp`` object instead converts them to ``float`` or ``complex``, and in some cases employs basic functions optimized for double precision. When large amounts of function evaluations (numerical integration, plotting, etc) are required, and when ``fp`` arithmetic provides sufficient accuracy, this can give a significant speedup over ``mp`` arithmetic.
+Note: automatic conversion from ``Double`` in .Net Framework to ``float``
 
-To take advantage of this feature, simply use the ``fp`` prefix, i.e. write ``fp.func`` instead of ``func`` or ``mp.func``::
+Note: no conversion from  ``Complex`` in .Net Framework to ``complex`` in Python. Explain workarounds.
 
-    >>> u = fp.erfc(2.5)
-    >>> print(u)  # doctest:+SKIP
-    0.000406952017445
-    >>> type(u)  # doctest:+SKIP
-    <type 'float'>
-    >>> mp.dps = 15
-    >>> print(mp.erfc(2.5))
-    0.000406952017444959
-    >>> fp.matrix([[1,2],[3,4]]) ** 2
-    matrix(
-    [['7.0', '10.0'],
-     ['15.0', '22.0']])
-    >>> 
-    >>> type(_[0,0])  # doctest:+SKIP
-    <type 'float'>
-    >>> print(fp.quad(fp.sin, [0, fp.pi]))    # numerical integration
-    2.0
 
-The ``fp`` context wraps Python's ``math`` and ``cmath`` modules for elementary functions. It supports both real and complex numbers and automatically generates complex results for real inputs (``math`` raises an exception)::
 
-    >>> fp.sqrt(5)  # doctest:+SKIP
-    2.23606797749979
-    >>> fp.sqrt(-5)  # doctest:+SKIP
-    2.23606797749979j
-    >>> fp.sin(10)  # doctest:+SKIP
-    -0.5440211108893698
-    >>> fp.power(-1, 0.25)  # doctest:+SKIP
-    (0.7071067811865476+0.7071067811865475j)
-    >>> (-1) ** 0.25  # doctest:+SKIP
-    Traceback (most recent call last):
-      ...
-    ValueError: negative number cannot be raised to a fractional power
 
-The ``prec`` and ``dps`` attributes can be changed (for interface compatibility with the ``mp`` context) but this has no effect::
 
-    >>> fp.prec
-    53
-    >>> fp.dps
-    15
-    >>> fp.prec = 80
-    >>> fp.prec
-    53
-    >>> fp.dps
-    15
+Examples for ``fpm``, real input
+........................................................
 
-Due to intermediate rounding and cancellation errors, results computed with ``fp`` arithmetic may be much less accurate than those computed with ``mp`` using an equivalent precision (``mp.prec = 53``), since the latter often uses increased internal precision. The accuracy is highly problem-dependent: for some functions, ``fp`` almost always gives 14-15 correct digits; for others, results can be accurate to only 2-3 digits or even completely wrong. The recommended use for ``fp`` is therefore to speed up large-scale computations where accuracy can be verified in advance on a subset of the input set, or where results can be verified afterwards.
+
+General test code for Python can be found here
+
+.. code-block:: python
+
+    import math
+    from xlcalcnet import math53
+    from decimal import Decimal
+    from fractions import Fraction
+    i = 2329456398453948563945639364827346384753984573984573
+
+
+    def main_tests():
+        general_assignments()
+        functions_with_argument_conversion()
+        arithmetic_operators_with_math53()
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def general_assignments():
+        print()
+        print('<H1 Title="General assignments and conversions">')
+
+        x = math53.t(i)
+        print('x = math53.t(i):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+        x0 = math53.t(2329456398453948563945639364827346)
+        print('x0 = math53T(2329456398453948563945639364827346', x0)
+        x1 = math53.t("2329456398453948563945639364827346")
+        print('x1 = math53.t("2329456398453948563945639364827346"):', x1)
+        x = math53.t("5.5")
+        print('x = math53T("5.5"):', x)
+
+        print()
+        x = math53.t(55)
+        print('x = math53.t(5):', x)
+        y = math53.exp(x)
+        print('y = math53.exp(x):', y)
+
+        z = math53.exp(5.5)
+        print('z = math53.exp(5.5):', z)
+        z = math53.exp(5)
+        print('z = math53.exp(5):', z)
+        z = math53.exp("5.5")
+        print('z = math53.exp("5.5"):', z)
+        print('</H1>')
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+
+    def functions_with_argument_conversion():
+        print()
+        print('<H1 Title="Functions with argument conversion">')
+        dec = Decimal(1) / Decimal(7)
+        print('dec = Decimal(1) / Decimal(7):', dec)
+        z = math53.exp(dec)
+        print('z = math53.exp(dec):', z)
+        frac = Fraction("-3/7")
+        print('frac = Fraction("-3/7:")', frac)
+        z = math53.exp(frac)
+        print('z = math53.exp(frac):', z)
+
+        print()
+        x = math53.t(5.5)
+        print('x = math53.t(55):', x)
+        y = math53.t(3.3)
+        print('y = math53.t(33):', y)
+        z = math53.pow(x, y)
+        print('z = math53.pow(x, y):        ', z)
+        z = math53.pow(5.5, 3.3)
+        print('z = math53.pow(5.5, 3.3):    ', z)
+        z = math53.pow("5.5", "3.3")
+        print('z = math53.pow("5.5", "3.3"):', z)
+        z = math53.pow(5, 3)
+        print('z = math53.pow(5, 3):', z)
+
+        t = z + 3
+        print('t = z + 3:', t)
+        print('</H1>')
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def arithmetic_operators_with_math53():
+        print()
+        print('<H1 Title="Arithmetic operators with math53">')
+
+        x = math53.t(5.0)
+        y = math53.t(2.5)
+        print('x: ', x)
+        print('y: ', y)
+
+        res = x + y
+        print('res = x + y:', res)
+        res = y + x
+        print('res = y + x:', res)
+
+        res = x - y
+        print('res = x - y:', res)
+        res = y - x
+        print('res = y - x:', res)
+
+        res = x * y
+        print('res = x * y:', res)
+        res = y * x
+        print('res = y * x:', res)
+
+        res = x / y
+        print('res = x / y:', res)
+        res = y / x
+        print('res = y / x:', res)
+        print('</H1>')
+
+
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02a_FpmReal.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B01_GeneralUsage/C05_ContextsMpmath/D02a_FpmReal.py>`__.
+
+
+
+
+
+Examples for ``fpm``, complex input
+........................................................
+
+
+General test code for Python can be found here
+
+.. code-block:: python
+
+    import math
+    from xlcalcnet import math53
+    from decimal import Decimal
+    from fractions import Fraction
+    i = 2329456398453948563945639364827346384753984573984573
+
+
+    def main_tests():
+        general_assignments()
+        functions_with_argument_conversion()
+        arithmetic_operators_with_math53()
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def general_assignments():
+        print()
+        print('<H1 Title="General assignments and conversions">')
+
+        x = math53.t(i)
+        print('x = math53.t(i):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+        x0 = math53.t(2329456398453948563945639364827346)
+        print('x0 = math53T(2329456398453948563945639364827346', x0)
+        x1 = math53.t("2329456398453948563945639364827346")
+        print('x1 = math53.t("2329456398453948563945639364827346"):', x1)
+        x = math53.t("5.5")
+        print('x = math53T("5.5"):', x)
+
+        print()
+        x = math53.t(55)
+        print('x = math53.t(5):', x)
+        y = math53.exp(x)
+        print('y = math53.exp(x):', y)
+
+        z = math53.exp(5.5)
+        print('z = math53.exp(5.5):', z)
+        z = math53.exp(5)
+        print('z = math53.exp(5):', z)
+        z = math53.exp("5.5")
+        print('z = math53.exp("5.5"):', z)
+        print('</H1>')
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+
+    def functions_with_argument_conversion():
+        print()
+        print('<H1 Title="Functions with argument conversion">')
+        dec = Decimal(1) / Decimal(7)
+        print('dec = Decimal(1) / Decimal(7):', dec)
+        z = math53.exp(dec)
+        print('z = math53.exp(dec):', z)
+        frac = Fraction("-3/7")
+        print('frac = Fraction("-3/7:")', frac)
+        z = math53.exp(frac)
+        print('z = math53.exp(frac):', z)
+
+        print()
+        x = math53.t(5.5)
+        print('x = math53.t(55):', x)
+        y = math53.t(3.3)
+        print('y = math53.t(33):', y)
+        z = math53.pow(x, y)
+        print('z = math53.pow(x, y):        ', z)
+        z = math53.pow(5.5, 3.3)
+        print('z = math53.pow(5.5, 3.3):    ', z)
+        z = math53.pow("5.5", "3.3")
+        print('z = math53.pow("5.5", "3.3"):', z)
+        z = math53.pow(5, 3)
+        print('z = math53.pow(5, 3):', z)
+
+        t = z + 3
+        print('t = z + 3:', t)
+        print('</H1>')
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def arithmetic_operators_with_math53():
+        print()
+        print('<H1 Title="Arithmetic operators with math53">')
+
+        x = math53.t(5.0)
+        y = math53.t(2.5)
+        print('x: ', x)
+        print('y: ', y)
+
+        res = x + y
+        print('res = x + y:', res)
+        res = y + x
+        print('res = y + x:', res)
+
+        res = x - y
+        print('res = x - y:', res)
+        res = y - x
+        print('res = y - x:', res)
+
+        res = x * y
+        print('res = x * y:', res)
+        res = y * x
+        print('res = y * x:', res)
+
+        res = x / y
+        print('res = x / y:', res)
+        res = y / x
+        print('res = y / x:', res)
+        print('</H1>')
+
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02b_FpmCplx.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B01_GeneralUsage/C05_ContextsMpmath/D02b_FpmCplx.py>`__.
+
+
+
+
+
+Implementation in Python
+........................................................
+
+The Python source code for this module can be found here: `ctx_fpm.py <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_fpm.py>`__.
+
 
 
 
@@ -351,32 +518,306 @@ Due to intermediate rounding and cancellation errors, results computed with ``fp
 
 .. _rst_mpm_def: 
 
-Binary floating-point in arbitrary-precision and with arbitrary exponent  (``mpm``)
+Binary floating-point with arbitrary-precision and exponent: ``mpm``
 -------------------------------------------------------------------------------------
 
 
-The source code for this module can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_mpm.py
-
-
-The ``mp`` context is what most users probably want to use most of the time, as it supports the most functions, is most well-tested, and is implemented with a high level of optimization. Nearly all examples in this documentation use ``mp`` functions.
+The Python module ``mpm`` provides support for real and complex floating point numbers  with arbitrary-precision and exponent. The corresponding real and complex data types, ``float`` and ``complex``, are implemented in software.
 
 
 
 
-**Rounding modes**
 
-Valid options are for rounding modes are:
+Examples for ``mpm``, real input
+........................................................
 
-``'n'`` for nearest (default): Specifies that the result of an operation should be rounded to the nearest representable number, rounding to even if there is a tie between two values.
 
-``'f'`` for floor: Specifies that the result of an operation should be rounded to the nearest representable number in the direction towards minus infinity.
+General test code for Python can be found here
 
-``'c'`` for ceiling: Specifies that the result of an operation should be rounded to the nearest representable number in the direction towards plus infinity.
+.. code-block:: python
 
-``'d'`` for down: Specifies that the result of an operation should be rounded to the nearest representable number in the direction towards zero.
+    import math
+    from xlcalcnet import math53
+    from decimal import Decimal
+    from fractions import Fraction
+    i = 2329456398453948563945639364827346384753984573984573
 
-``'u'`` for up: Specifies that the result of an operation should be rounded to the nearest representable number in
-the direction away from zero.
+
+    def main_tests():
+        general_assignments()
+        functions_with_argument_conversion()
+        arithmetic_operators_with_math53()
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def general_assignments():
+        print()
+        print('<H1 Title="General assignments and conversions">')
+
+        x = math53.t(i)
+        print('x = math53.t(i):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+        x0 = math53.t(2329456398453948563945639364827346)
+        print('x0 = math53T(2329456398453948563945639364827346', x0)
+        x1 = math53.t("2329456398453948563945639364827346")
+        print('x1 = math53.t("2329456398453948563945639364827346"):', x1)
+        x = math53.t("5.5")
+        print('x = math53T("5.5"):', x)
+
+        print()
+        x = math53.t(55)
+        print('x = math53.t(5):', x)
+        y = math53.exp(x)
+        print('y = math53.exp(x):', y)
+
+        z = math53.exp(5.5)
+        print('z = math53.exp(5.5):', z)
+        z = math53.exp(5)
+        print('z = math53.exp(5):', z)
+        z = math53.exp("5.5")
+        print('z = math53.exp("5.5"):', z)
+        print('</H1>')
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+
+    def functions_with_argument_conversion():
+        print()
+        print('<H1 Title="Functions with argument conversion">')
+        dec = Decimal(1) / Decimal(7)
+        print('dec = Decimal(1) / Decimal(7):', dec)
+        z = math53.exp(dec)
+        print('z = math53.exp(dec):', z)
+        frac = Fraction("-3/7")
+        print('frac = Fraction("-3/7:")', frac)
+        z = math53.exp(frac)
+        print('z = math53.exp(frac):', z)
+
+        print()
+        x = math53.t(5.5)
+        print('x = math53.t(55):', x)
+        y = math53.t(3.3)
+        print('y = math53.t(33):', y)
+        z = math53.pow(x, y)
+        print('z = math53.pow(x, y):        ', z)
+        z = math53.pow(5.5, 3.3)
+        print('z = math53.pow(5.5, 3.3):    ', z)
+        z = math53.pow("5.5", "3.3")
+        print('z = math53.pow("5.5", "3.3"):', z)
+        z = math53.pow(5, 3)
+        print('z = math53.pow(5, 3):', z)
+
+        t = z + 3
+        print('t = z + 3:', t)
+        print('</H1>')
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def arithmetic_operators_with_math53():
+        print()
+        print('<H1 Title="Arithmetic operators with math53">')
+
+        x = math53.t(5.0)
+        y = math53.t(2.5)
+        print('x: ', x)
+        print('y: ', y)
+
+        res = x + y
+        print('res = x + y:', res)
+        res = y + x
+        print('res = y + x:', res)
+
+        res = x - y
+        print('res = x - y:', res)
+        res = y - x
+        print('res = y - x:', res)
+
+        res = x * y
+        print('res = x * y:', res)
+        res = y * x
+        print('res = y * x:', res)
+
+        res = x / y
+        print('res = x / y:', res)
+        res = y / x
+        print('res = y / x:', res)
+        print('</H1>')
+
+
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03a_MpmReal.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B01_GeneralUsage/C05_ContextsMpmath/D03a_MpmReal.py>`__.
+
+
+
+
+
+Examples for ``mpm``, complex input
+........................................................
+
+
+General test code for Python can be found here
+
+.. code-block:: python
+
+    import math
+    from xlcalcnet import math53
+    from decimal import Decimal
+    from fractions import Fraction
+    i = 2329456398453948563945639364827346384753984573984573
+
+
+    def main_tests():
+        general_assignments()
+        functions_with_argument_conversion()
+        arithmetic_operators_with_math53()
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def general_assignments():
+        print()
+        print('<H1 Title="General assignments and conversions">')
+
+        x = math53.t(i)
+        print('x = math53.t(i):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+        x0 = math53.t(2329456398453948563945639364827346)
+        print('x0 = math53T(2329456398453948563945639364827346', x0)
+        x1 = math53.t("2329456398453948563945639364827346")
+        print('x1 = math53.t("2329456398453948563945639364827346"):', x1)
+        x = math53.t("5.5")
+        print('x = math53T("5.5"):', x)
+
+        print()
+        x = math53.t(55)
+        print('x = math53.t(5):', x)
+        y = math53.exp(x)
+        print('y = math53.exp(x):', y)
+
+        z = math53.exp(5.5)
+        print('z = math53.exp(5.5):', z)
+        z = math53.exp(5)
+        print('z = math53.exp(5):', z)
+        z = math53.exp("5.5")
+        print('z = math53.exp("5.5"):', z)
+        print('</H1>')
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+
+    def functions_with_argument_conversion():
+        print()
+        print('<H1 Title="Functions with argument conversion">')
+        dec = Decimal(1) / Decimal(7)
+        print('dec = Decimal(1) / Decimal(7):', dec)
+        z = math53.exp(dec)
+        print('z = math53.exp(dec):', z)
+        frac = Fraction("-3/7")
+        print('frac = Fraction("-3/7:")', frac)
+        z = math53.exp(frac)
+        print('z = math53.exp(frac):', z)
+
+        print()
+        x = math53.t(5.5)
+        print('x = math53.t(55):', x)
+        y = math53.t(3.3)
+        print('y = math53.t(33):', y)
+        z = math53.pow(x, y)
+        print('z = math53.pow(x, y):        ', z)
+        z = math53.pow(5.5, 3.3)
+        print('z = math53.pow(5.5, 3.3):    ', z)
+        z = math53.pow("5.5", "3.3")
+        print('z = math53.pow("5.5", "3.3"):', z)
+        z = math53.pow(5, 3)
+        print('z = math53.pow(5, 3):', z)
+
+        t = z + 3
+        print('t = z + 3:', t)
+        print('</H1>')
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def arithmetic_operators_with_math53():
+        print()
+        print('<H1 Title="Arithmetic operators with math53">')
+
+        x = math53.t(5.0)
+        y = math53.t(2.5)
+        print('x: ', x)
+        print('y: ', y)
+
+        res = x + y
+        print('res = x + y:', res)
+        res = y + x
+        print('res = y + x:', res)
+
+        res = x - y
+        print('res = x - y:', res)
+        res = y - x
+        print('res = y - x:', res)
+
+        res = x * y
+        print('res = x * y:', res)
+        res = y * x
+        print('res = y * x:', res)
+
+        res = x / y
+        print('res = x / y:', res)
+        res = y / x
+        print('res = y / x:', res)
+        print('</H1>')
+
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03b_MpmCplx.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B01_GeneralUsage/C05_ContextsMpmath/D03b_MpmCplx.py>`__.
+
+
+
+
+
+Implementation in Python
+........................................................
+
+The Python source code for this module can be found here: `ctx_mpm.py <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_mpm.py>`__.
+
 
 
 
@@ -390,211 +831,308 @@ the direction away from zero.
 
 .. _rst_ipm_def: 
 
-Interval arithmetic in arbitrary-precision and with arbitrary exponent (``ipm``)
+Interval arithmetic with arbitrary-precision and exponent:``ipm``
 --------------------------------------------------------------------------------------
 
 
-The source code for this module can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_ipm.py
-
-
-The ``iv.mpf`` type represents a closed interval `[a,b]`; that is, the set `\{x : a \le x \le b\}`, where `a` and `b` are arbitrary-precision floating-point values, possibly `\pm \infty`. The ``iv.mpc`` type represents a rectangular complex interval `[a,b] + [c,d]i`; that is, the set `\{z = x+iy : a \le x \le b \land c \le y \le d\}`.
-
-Interval arithmetic provides rigorous error tracking. If `f` is a mathematical function and `\hat f` is its interval arithmetic version, then the basic guarantee of interval arithmetic is that `f(v) \subseteq \hat f(v)` for any input interval `v`. Put differently, if an interval represents the known uncertainty for a fixed number, any sequence of interval operations will produce an interval that contains what would be the result of applying the same sequence of operations to the exact number. The principal drawbacks of interval arithmetic are speed (``iv`` arithmetic is typically at least two times slower than ``mp`` arithmetic) and that it sometimes provides far too pessimistic bounds.
-
-
-
-
-.. method:: mpi_from_str(s, prec)
-
-    Parse an interval number given as a string. Allowed forms are:
-
-    "-1.23e-27": Any single decimal floating-point literal.
-
-    "a +- b"  or  "a (b)": a is the midpoint of the interval and b is the half-width
-
-    "a (b%)": a is the midpoint of the interval and the half-width is b percent of a (`a \times b / 100`).
-
-    "[a, b]": The interval indicated directly.
-
-    "x[y,z]e": x are shared digits, y and z are unequal digits, e is the exponent.
-
-
-    **Examples**
-
-    .. code-block:: pycon
-
-        >>> from mpmath import mpi, mp
-        >>> mp.dps = 15
-        >>> mpi("-1.23e-27")
-        mpi('-1.2300000000000001e-27', '-1.2299999999999999e-27')
-        >>> mpi("7.3 +- 0.001")
-        mpi('7.2989999999999995', '7.3010000000000002')
-        >>> mpi("-31 (0.1%)")
-        mpi('-31.031000000000002', '-30.968999999999998')
-        >>> mpi("[31.5, 43.2]")
-        mpi('31.5', '43.200000000000003')
-        >>> mpi("55245254234234[31, 41]")
-        mpi('5524525423423431.0', '5524525423423441.0')
-        >>> mpi("15859058[4285, 6432]e+60")
-        mpi('1.5859058428499999e+71', '1.5859058643200001e+71')
+The Python module ``ipm`` provides support for real and complex intervals  with arbitrary-precision and exponent. The corresponding real and complex data types, ``float`` and ``complex``, are implemented in software.
 
 
 
 
 
-.. method:: mpi_to_str(x, dps, use_spaces=True, brackets='[]', mode='brackets', error_dps=4, **kwargs)(s, prec)
+Examples for ``ipm``, real input
+........................................................
 
 
-    Convert a mpi interval to a string.
+General test code for Python can be found here
 
-    **Arguments**
+.. code-block:: python
 
-    *dps*: decimal places to use for printing
-
-    *use_spaces* : use spaces for more readable output, defaults to true
-
-    *brackets*: pair of strings (or two-character string) giving left and right brackets
-
-    *mode*: mode of display: 'plusminus', 'percent', 'brackets' (default) or 'diff'
-
-    *error_dps*: limit the error to *error_dps* digits (mode 'plusminus and 'percent')
-
-    Additional keyword arguments are forwarded to the mpf-to-string conversion for the components of the output.
+    import math
+    from xlcalcnet import math53
+    from decimal import Decimal
+    from fractions import Fraction
+    i = 2329456398453948563945639364827346384753984573984573
 
 
-    **Examples**
-
-    .. code-block:: pycon
-
-        >>> from mpmath import mpi, mp
-        >>> from mpmath.libmp.libmpi import mpi_to_str
-        >>> mp.dps = 30
-        >>> x = mpi(1, 2)._mpi_
-        >>> mpi_to_str(x, 2, mode='plusminus')
-        '1.5 +- 0.5'
-        >>> mpi_to_str(x, 2, mode='percent')
-        '1.5 (33.33%)'
-        >>> mpi_to_str(x, 2, mode='brackets')
-        '[1.0, 2.0]'
-        >>> mpi_to_str(x, 2, mode='brackets' , brackets=('<', '>'))
-        '<1.0, 2.0>'
-        >>> x = mpi('5.2582327113062393041', '5.2582327113062749951')._mpi_
-        >>> mpi_to_str(x, 15, mode='diff')
-        '5.2582327113062[4, 7]'
-        >>> mpi_to_str(mpi(0)._mpi_, 2, mode='percent')
-        '0.0 (0.0%)'
-    
-        >>> iv.dps = 50
-        >>> z = 10E60 * mpi(1)/7
-        >>> y = z._mpi_
-        >>> mpi_to_str(y, 15, mode='diff')
-        '1.4285714285714285[]e+60'
-        >>> mpi_to_str(y, 55, mode='diff')
-        '1.42857142857142849912447899582002695280520715859058[4285, 6432]e+60'
-        >>> mpi_to_str(y, 55, mode='percent')
-        '1.428571428571428499124478995820026952805207158590585359e+60 (7.516e-50%)'
+    def main_tests():
+        general_assignments()
+        functions_with_argument_conversion()
+        arithmetic_operators_with_math53()
 
 
 
 
-Intervals can be created from single numbers (treated as zero-width intervals) or pairs of endpoint numbers. Strings are treated as exact decimal numbers. Note that a Python float like ``0.1`` generally does not represent the same number as its literal; use ``'0.1'`` instead::
+General test code can be found here
 
-    >>> from xlcalcnet import iv
-    >>> iv.dps = 15; iv.pretty = False
-    >>> iv.mpf(3)
-    mpi('3.0', '3.0')
-    >>> print(iv.mpf(3))
-    [3.0, 3.0]
-    >>> iv.pretty = True
-    >>> iv.mpf([2,3])
-    [2.0, 3.0]
-    >>> iv.mpf(0.1)   # probably not intended
-    [0.10000000000000000555, 0.10000000000000000555]
-    >>> iv.mpf('0.1')   # good, gives a containing interval
-    [0.099999999999999991673, 0.10000000000000000555]
-    >>> iv.mpf(['0.1', '0.2'])
-    [0.099999999999999991673, 0.2000000000000000111]
+.. code-block:: python
 
-The fact that ``'0.1'`` results in an interval of nonzero width indicates that 1/10 cannot be represented using binary floating-point numbers at this precision level (in fact, it cannot be represented exactly at any precision).
+    def general_assignments():
+        print()
+        print('<H1 Title="General assignments and conversions">')
 
-Intervals may be infinite or half-infinite::
+        x = math53.t(i)
+        print('x = math53.t(i):', x)
 
-    >>> print(1 / iv.mpf([2, 'inf']))
-    [0.0, 0.5]
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
 
-The equality testing operators ``==`` and ``!=`` check whether their operands are identical as intervals; that is, have the same endpoints. The ordering operators ``< <= > >=`` permit inequality testing using triple-valued logic: a guaranteed inequality returns ``True`` or ``False`` while an indeterminate inequality returns ``None``::
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+        x0 = math53.t(2329456398453948563945639364827346)
+        print('x0 = math53T(2329456398453948563945639364827346', x0)
+        x1 = math53.t("2329456398453948563945639364827346")
+        print('x1 = math53.t("2329456398453948563945639364827346"):', x1)
+        x = math53.t("5.5")
+        print('x = math53T("5.5"):', x)
 
-    >>> iv.mpf([1,2]) == iv.mpf([1,2])
-    True
-    >>> iv.mpf([1,2]) != iv.mpf([1,2])
-    False
-    >>> iv.mpf([1,2]) <= 2
-    True
-    >>> iv.mpf([1,2]) > 0
-    True
-    >>> iv.mpf([1,2]) < 1
-    False
-    >>> iv.mpf([1,2]) < 2    # returns None
-    >>> iv.mpf([2,2]) < 2
-    False
-    >>> iv.mpf([1,2]) <= iv.mpf([2,3])
-    True
-    >>> iv.mpf([1,2]) < iv.mpf([2,3])  # returns None
-    >>> iv.mpf([1,2]) < iv.mpf([-1,0])
-    False
+        print()
+        x = math53.t(55)
+        print('x = math53.t(5):', x)
+        y = math53.exp(x)
+        print('y = math53.exp(x):', y)
 
-The ``in`` operator tests whether a number or interval is contained in another interval::
-
-    >>> iv.mpf([0,2]) in iv.mpf([0,10])
-    True
-    >>> 3 in iv.mpf(['-inf', 0])
-    False
-
-Intervals have the properties ``.a``, ``.b`` (endpoints), ``.mid``, and ``.delta`` (width)::
-
-    >>> x = iv.mpf([2, 5])
-    >>> x.a
-    [2.0, 2.0]
-    >>> x.b
-    [5.0, 5.0]
-    >>> x.mid
-    [3.5, 3.5]
-    >>> x.delta
-    [3.0, 3.0]
+        z = math53.exp(5.5)
+        print('z = math53.exp(5.5):', z)
+        z = math53.exp(5)
+        print('z = math53.exp(5):', z)
+        z = math53.exp("5.5")
+        print('z = math53.exp("5.5"):', z)
+        print('</H1>')
 
 
 
-Interval arithmetic is useful for proving inequalities involving irrational numbers.
-Naive use of ``mp`` arithmetic may result in wrong conclusions, such as the following::
 
-    >>> mp.dps = 25
-    >>> x = mp.exp(mp.pi*mp.sqrt(163))
-    >>> y = mp.mpf(640320**3+744)
-    >>> print(x)
-    262537412640768744.0000001
-    >>> print(y)
-    262537412640768744.0
-    >>> x > y
-    True
+General test code can be found here
 
-But the correct result is `e^{\pi \sqrt{163}} < 262537412640768744`, as can be
-seen by increasing the precision::
+.. code-block:: python
 
-    >>> mp.dps = 50
-    >>> print(mp.exp(mp.pi*mp.sqrt(163)))
-    262537412640768743.99999999999925007259719818568888
 
-With interval arithmetic, the comparison returns ``None`` until the precision
-is large enough for `x-y` to have a definite sign::
+    def functions_with_argument_conversion():
+        print()
+        print('<H1 Title="Functions with argument conversion">')
+        dec = Decimal(1) / Decimal(7)
+        print('dec = Decimal(1) / Decimal(7):', dec)
+        z = math53.exp(dec)
+        print('z = math53.exp(dec):', z)
+        frac = Fraction("-3/7")
+        print('frac = Fraction("-3/7:")', frac)
+        z = math53.exp(frac)
+        print('z = math53.exp(frac):', z)
 
-    >>> iv.dps = 15
-    >>> iv.exp(iv.pi*iv.sqrt(163)) > (640320**3+744)
-    >>> iv.dps = 30
-    >>> iv.exp(iv.pi*iv.sqrt(163)) > (640320**3+744)
-    >>> iv.dps = 60
-    >>> iv.exp(iv.pi*iv.sqrt(163)) > (640320**3+744)
-    False
-    >>> iv.dps = 15
+        print()
+        x = math53.t(5.5)
+        print('x = math53.t(55):', x)
+        y = math53.t(3.3)
+        print('y = math53.t(33):', y)
+        z = math53.pow(x, y)
+        print('z = math53.pow(x, y):        ', z)
+        z = math53.pow(5.5, 3.3)
+        print('z = math53.pow(5.5, 3.3):    ', z)
+        z = math53.pow("5.5", "3.3")
+        print('z = math53.pow("5.5", "3.3"):', z)
+        z = math53.pow(5, 3)
+        print('z = math53.pow(5, 3):', z)
+
+        t = z + 3
+        print('t = z + 3:', t)
+        print('</H1>')
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def arithmetic_operators_with_math53():
+        print()
+        print('<H1 Title="Arithmetic operators with math53">')
+
+        x = math53.t(5.0)
+        y = math53.t(2.5)
+        print('x: ', x)
+        print('y: ', y)
+
+        res = x + y
+        print('res = x + y:', res)
+        res = y + x
+        print('res = y + x:', res)
+
+        res = x - y
+        print('res = x - y:', res)
+        res = y - x
+        print('res = y - x:', res)
+
+        res = x * y
+        print('res = x * y:', res)
+        res = y * x
+        print('res = y * x:', res)
+
+        res = x / y
+        print('res = x / y:', res)
+        res = y / x
+        print('res = y / x:', res)
+        print('</H1>')
+
+
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04a_IpmReal.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B01_GeneralUsage/C05_ContextsMpmath/D04a_IpmReal.py>`__.
+
+
+
+
+
+Examples for ``ipm``, complex input
+........................................................
+
+
+General test code for Python can be found here
+
+.. code-block:: python
+
+    import math
+    from xlcalcnet import math53
+    from decimal import Decimal
+    from fractions import Fraction
+    i = 2329456398453948563945639364827346384753984573984573
+
+
+    def main_tests():
+        general_assignments()
+        functions_with_argument_conversion()
+        arithmetic_operators_with_math53()
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def general_assignments():
+        print()
+        print('<H1 Title="General assignments and conversions">')
+
+        x = math53.t(i)
+        print('x = math53.t(i):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+        x0 = math53.t(2329456398453948563945639364827346)
+        print('x0 = math53T(2329456398453948563945639364827346', x0)
+        x1 = math53.t("2329456398453948563945639364827346")
+        print('x1 = math53.t("2329456398453948563945639364827346"):', x1)
+        x = math53.t("5.5")
+        print('x = math53T("5.5"):', x)
+
+        print()
+        x = math53.t(55)
+        print('x = math53.t(5):', x)
+        y = math53.exp(x)
+        print('y = math53.exp(x):', y)
+
+        z = math53.exp(5.5)
+        print('z = math53.exp(5.5):', z)
+        z = math53.exp(5)
+        print('z = math53.exp(5):', z)
+        z = math53.exp("5.5")
+        print('z = math53.exp("5.5"):', z)
+        print('</H1>')
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+
+    def functions_with_argument_conversion():
+        print()
+        print('<H1 Title="Functions with argument conversion">')
+        dec = Decimal(1) / Decimal(7)
+        print('dec = Decimal(1) / Decimal(7):', dec)
+        z = math53.exp(dec)
+        print('z = math53.exp(dec):', z)
+        frac = Fraction("-3/7")
+        print('frac = Fraction("-3/7:")', frac)
+        z = math53.exp(frac)
+        print('z = math53.exp(frac):', z)
+
+        print()
+        x = math53.t(5.5)
+        print('x = math53.t(55):', x)
+        y = math53.t(3.3)
+        print('y = math53.t(33):', y)
+        z = math53.pow(x, y)
+        print('z = math53.pow(x, y):        ', z)
+        z = math53.pow(5.5, 3.3)
+        print('z = math53.pow(5.5, 3.3):    ', z)
+        z = math53.pow("5.5", "3.3")
+        print('z = math53.pow("5.5", "3.3"):', z)
+        z = math53.pow(5, 3)
+        print('z = math53.pow(5, 3):', z)
+
+        t = z + 3
+        print('t = z + 3:', t)
+        print('</H1>')
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def arithmetic_operators_with_math53():
+        print()
+        print('<H1 Title="Arithmetic operators with math53">')
+
+        x = math53.t(5.0)
+        y = math53.t(2.5)
+        print('x: ', x)
+        print('y: ', y)
+
+        res = x + y
+        print('res = x + y:', res)
+        res = y + x
+        print('res = y + x:', res)
+
+        res = x - y
+        print('res = x - y:', res)
+        res = y - x
+        print('res = y - x:', res)
+
+        res = x * y
+        print('res = x * y:', res)
+        res = y * x
+        print('res = y * x:', res)
+
+        res = x / y
+        print('res = x / y:', res)
+        res = y / x
+        print('res = y / x:', res)
+        print('</H1>')
+
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04b_IpmCplx.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B01_GeneralUsage/C05_ContextsMpmath/D04b_IpmCplx.py>`__.
+
+
+
+
+
+Implementation in Python
+........................................................
+
+The Python source code for this module can be found here: `ctx_ipm.py <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_ipm.py>`__.
+
+
+
 
 
 
@@ -603,11 +1141,11 @@ is large enough for `x-y` to have a definite sign::
 
 .. _rst_dpm_def: 
 
-Decimal floating-point in arbitrary-precision with limited exponent (``dpm``)
+Decimal floating-point in arbitrary-precision with limited exponent: ``dpm``
 ---------------------------------------------------------------------------------
 
 
-The source code for this module can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_dpm.py
+The Python module ``dpm`` provides support for real and complex decimal floating-point in arbitrary-precision with limited exponent. The corresponding real and complex data types, ``float`` and ``complex``, are implemented in software.
 
 
 
@@ -617,7 +1155,7 @@ Additional contexts are used in xlcalcnet to implement its functions for the mpm
 Both real numbers (mpf) and complex numbers (mpc) are implemented. 
 
 
-In CPython, the ``decimal`` module provides support for fast correctly-rounded decimal floating point arithmetic. See https://docs.python.org/3.3/library/decimal.html for a decription of the ``Decimal`` data type.
+In CPython, the ``decimal`` module provides support for fast correctly-rounded decimal floating point arithmetic. See https://docs.python.org/3/library/decimal.html for a decription of the ``Decimal`` data type.
 
 The ``decimal`` module includes only a few transcendental functions: sqrt, log, exp.
 
@@ -625,35 +1163,298 @@ The ``dec`` context gives access to many more:
 
 
 
-Examples1:
 
 
-.. code-block:: pycon
-
-    >>> from xlcalcnet import fp, mp, iv, dp, gp, ap
-    >>> x=dp.mpf('3.5'); print(x)
-    3.5
-    >>> s, d, e = x.as_tuple(); print(d); print(len(d))
-    (3, 5)
-    2
+Examples for ``dpm``, real input
+........................................................
 
 
-Examples2:
+General test code for Python can be found here
+
+.. code-block:: python
+
+    import math
+    from xlcalcnet import math53
+    from decimal import Decimal
+    from fractions import Fraction
+    i = 2329456398453948563945639364827346384753984573984573
 
 
-.. code-block:: pycon
+    def main_tests():
+        general_assignments()
+        functions_with_argument_conversion()
+        arithmetic_operators_with_math53()
 
-    >>> from xlcalcnet import fp, mp, iv, dp, gp, ap
-    >>> x = dp.mpf('3.3398E-20'); print(x)
-    3.3398E-20
-    >>> y = dp.mpf('3.339847598374598734E30'); print(y)
-    3.339847598374598734E+30
-    >>> dp.dps
-    15
-    >>> x + y  # adition performed with dps = 15
-    Decimal('3.33984759837460E+30')
-    >>> dp.fadd(x, y, exact=True)  # exact addition
-    Decimal('3339847598374598734000000000000.000000000000000000033398')
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def general_assignments():
+        print()
+        print('<H1 Title="General assignments and conversions">')
+
+        x = math53.t(i)
+        print('x = math53.t(i):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+        x0 = math53.t(2329456398453948563945639364827346)
+        print('x0 = math53T(2329456398453948563945639364827346', x0)
+        x1 = math53.t("2329456398453948563945639364827346")
+        print('x1 = math53.t("2329456398453948563945639364827346"):', x1)
+        x = math53.t("5.5")
+        print('x = math53T("5.5"):', x)
+
+        print()
+        x = math53.t(55)
+        print('x = math53.t(5):', x)
+        y = math53.exp(x)
+        print('y = math53.exp(x):', y)
+
+        z = math53.exp(5.5)
+        print('z = math53.exp(5.5):', z)
+        z = math53.exp(5)
+        print('z = math53.exp(5):', z)
+        z = math53.exp("5.5")
+        print('z = math53.exp("5.5"):', z)
+        print('</H1>')
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+
+    def functions_with_argument_conversion():
+        print()
+        print('<H1 Title="Functions with argument conversion">')
+        dec = Decimal(1) / Decimal(7)
+        print('dec = Decimal(1) / Decimal(7):', dec)
+        z = math53.exp(dec)
+        print('z = math53.exp(dec):', z)
+        frac = Fraction("-3/7")
+        print('frac = Fraction("-3/7:")', frac)
+        z = math53.exp(frac)
+        print('z = math53.exp(frac):', z)
+
+        print()
+        x = math53.t(5.5)
+        print('x = math53.t(55):', x)
+        y = math53.t(3.3)
+        print('y = math53.t(33):', y)
+        z = math53.pow(x, y)
+        print('z = math53.pow(x, y):        ', z)
+        z = math53.pow(5.5, 3.3)
+        print('z = math53.pow(5.5, 3.3):    ', z)
+        z = math53.pow("5.5", "3.3")
+        print('z = math53.pow("5.5", "3.3"):', z)
+        z = math53.pow(5, 3)
+        print('z = math53.pow(5, 3):', z)
+
+        t = z + 3
+        print('t = z + 3:', t)
+        print('</H1>')
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def arithmetic_operators_with_math53():
+        print()
+        print('<H1 Title="Arithmetic operators with math53">')
+
+        x = math53.t(5.0)
+        y = math53.t(2.5)
+        print('x: ', x)
+        print('y: ', y)
+
+        res = x + y
+        print('res = x + y:', res)
+        res = y + x
+        print('res = y + x:', res)
+
+        res = x - y
+        print('res = x - y:', res)
+        res = y - x
+        print('res = y - x:', res)
+
+        res = x * y
+        print('res = x * y:', res)
+        res = y * x
+        print('res = y * x:', res)
+
+        res = x / y
+        print('res = x / y:', res)
+        res = y / x
+        print('res = y / x:', res)
+        print('</H1>')
+
+
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04a_IpmReal.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B01_GeneralUsage/C05_ContextsMpmath/D05a_DpmReal.py>`__.
+
+
+
+
+
+Examples for ``dpm``, complex input
+........................................................
+
+
+General test code for Python can be found here
+
+.. code-block:: python
+
+    import math
+    from xlcalcnet import math53
+    from decimal import Decimal
+    from fractions import Fraction
+    i = 2329456398453948563945639364827346384753984573984573
+
+
+    def main_tests():
+        general_assignments()
+        functions_with_argument_conversion()
+        arithmetic_operators_with_math53()
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def general_assignments():
+        print()
+        print('<H1 Title="General assignments and conversions">')
+
+        x = math53.t(i)
+        print('x = math53.t(i):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+        x0 = math53.t(2329456398453948563945639364827346)
+        print('x0 = math53T(2329456398453948563945639364827346', x0)
+        x1 = math53.t("2329456398453948563945639364827346")
+        print('x1 = math53.t("2329456398453948563945639364827346"):', x1)
+        x = math53.t("5.5")
+        print('x = math53T("5.5"):', x)
+
+        print()
+        x = math53.t(55)
+        print('x = math53.t(5):', x)
+        y = math53.exp(x)
+        print('y = math53.exp(x):', y)
+
+        z = math53.exp(5.5)
+        print('z = math53.exp(5.5):', z)
+        z = math53.exp(5)
+        print('z = math53.exp(5):', z)
+        z = math53.exp("5.5")
+        print('z = math53.exp("5.5"):', z)
+        print('</H1>')
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+
+    def functions_with_argument_conversion():
+        print()
+        print('<H1 Title="Functions with argument conversion">')
+        dec = Decimal(1) / Decimal(7)
+        print('dec = Decimal(1) / Decimal(7):', dec)
+        z = math53.exp(dec)
+        print('z = math53.exp(dec):', z)
+        frac = Fraction("-3/7")
+        print('frac = Fraction("-3/7:")', frac)
+        z = math53.exp(frac)
+        print('z = math53.exp(frac):', z)
+
+        print()
+        x = math53.t(5.5)
+        print('x = math53.t(55):', x)
+        y = math53.t(3.3)
+        print('y = math53.t(33):', y)
+        z = math53.pow(x, y)
+        print('z = math53.pow(x, y):        ', z)
+        z = math53.pow(5.5, 3.3)
+        print('z = math53.pow(5.5, 3.3):    ', z)
+        z = math53.pow("5.5", "3.3")
+        print('z = math53.pow("5.5", "3.3"):', z)
+        z = math53.pow(5, 3)
+        print('z = math53.pow(5, 3):', z)
+
+        t = z + 3
+        print('t = z + 3:', t)
+        print('</H1>')
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def arithmetic_operators_with_math53():
+        print()
+        print('<H1 Title="Arithmetic operators with math53">')
+
+        x = math53.t(5.0)
+        y = math53.t(2.5)
+        print('x: ', x)
+        print('y: ', y)
+
+        res = x + y
+        print('res = x + y:', res)
+        res = y + x
+        print('res = y + x:', res)
+
+        res = x - y
+        print('res = x - y:', res)
+        res = y - x
+        print('res = y - x:', res)
+
+        res = x * y
+        print('res = x * y:', res)
+        res = y * x
+        print('res = y * x:', res)
+
+        res = x / y
+        print('res = x / y:', res)
+        res = y / x
+        print('res = y / x:', res)
+        print('</H1>')
+
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05b_DpmCplx.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B01_GeneralUsage/C05_ContextsMpmath/D05b_DpmCplx.py>`__.
+
+
+
+
+
+Implementation in Python
+........................................................
+
+The Python source code for this module can be found here: `ctx_dpm.py <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_dpm.py>`__.
+
 
 
 
@@ -664,20 +1465,175 @@ Examples2:
 
 .. _rst_qpm_def: 
 
-Rational numbers (``qpm``)
+Rational numbers: ``qpm``
 ---------------------------------------------------------------------------------
-
-The source code for this module can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_qpm.py
-
 
 
 The ``qpm`` data type is mostly useful in the context of linear algebra, where it can provide exact results.
 
-Both real numbers (mpf) and complex numbers (mpc) are implemented. 
+Only real numbers (mpf) are implemented. 
 
 The internal representation dependes on what else is installed on the system:
 
 If ``apm`` is available, the ``fmpq`` data type is used; otherwise, if ``gpm`` is available, the ``mpq`` data type is used; otherwise, Python's built in ``Fraction`` data type is used.
+
+
+
+In CPython, the ``fractions`` module provides support for rational number arithmetic. See https://docs.python.org/3/library/fractions.html for a decription of the ``Fraction`` data type.
+
+
+
+
+
+Examples for ``qpm``, real input
+........................................................
+
+
+General test code for Python can be found here
+
+.. code-block:: python
+
+    import math
+    from xlcalcnet import math53
+    from decimal import Decimal
+    from fractions import Fraction
+    i = 2329456398453948563945639364827346384753984573984573
+
+
+    def main_tests():
+        general_assignments()
+        functions_with_argument_conversion()
+        arithmetic_operators_with_math53()
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def general_assignments():
+        print()
+        print('<H1 Title="General assignments and conversions">')
+
+        x = math53.t(i)
+        print('x = math53.t(i):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+        x0 = math53.t(2329456398453948563945639364827346)
+        print('x0 = math53T(2329456398453948563945639364827346', x0)
+        x1 = math53.t("2329456398453948563945639364827346")
+        print('x1 = math53.t("2329456398453948563945639364827346"):', x1)
+        x = math53.t("5.5")
+        print('x = math53T("5.5"):', x)
+
+        print()
+        x = math53.t(55)
+        print('x = math53.t(5):', x)
+        y = math53.exp(x)
+        print('y = math53.exp(x):', y)
+
+        z = math53.exp(5.5)
+        print('z = math53.exp(5.5):', z)
+        z = math53.exp(5)
+        print('z = math53.exp(5):', z)
+        z = math53.exp("5.5")
+        print('z = math53.exp("5.5"):', z)
+        print('</H1>')
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+
+    def functions_with_argument_conversion():
+        print()
+        print('<H1 Title="Functions with argument conversion">')
+        dec = Decimal(1) / Decimal(7)
+        print('dec = Decimal(1) / Decimal(7):', dec)
+        z = math53.exp(dec)
+        print('z = math53.exp(dec):', z)
+        frac = Fraction("-3/7")
+        print('frac = Fraction("-3/7:")', frac)
+        z = math53.exp(frac)
+        print('z = math53.exp(frac):', z)
+
+        print()
+        x = math53.t(5.5)
+        print('x = math53.t(55):', x)
+        y = math53.t(3.3)
+        print('y = math53.t(33):', y)
+        z = math53.pow(x, y)
+        print('z = math53.pow(x, y):        ', z)
+        z = math53.pow(5.5, 3.3)
+        print('z = math53.pow(5.5, 3.3):    ', z)
+        z = math53.pow("5.5", "3.3")
+        print('z = math53.pow("5.5", "3.3"):', z)
+        z = math53.pow(5, 3)
+        print('z = math53.pow(5, 3):', z)
+
+        t = z + 3
+        print('t = z + 3:', t)
+        print('</H1>')
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def arithmetic_operators_with_math53():
+        print()
+        print('<H1 Title="Arithmetic operators with math53">')
+
+        x = math53.t(5.0)
+        y = math53.t(2.5)
+        print('x: ', x)
+        print('y: ', y)
+
+        res = x + y
+        print('res = x + y:', res)
+        res = y + x
+        print('res = y + x:', res)
+
+        res = x - y
+        print('res = x - y:', res)
+        res = y - x
+        print('res = y - x:', res)
+
+        res = x * y
+        print('res = x * y:', res)
+        res = y * x
+        print('res = y * x:', res)
+
+        res = x / y
+        print('res = x / y:', res)
+        res = y / x
+        print('res = y / x:', res)
+        print('</H1>')
+
+
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06a_QpmReal.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B01_GeneralUsage/C05_ContextsMpmath/D06a_QpmReal.py>`__.
+
+
+
+
+
+
+Implementation in Python
+........................................................
+
+The Python source code for this module can be found here: `ctx_dpm.py <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_qpm.py>`__.
+
 
 
 
@@ -688,69 +1644,311 @@ If ``apm`` is available, the ``fmpq`` data type is used; otherwise, if ``gpm`` i
 
 .. _rst_gpm_def: 
 
-Binary floating-point in arbitrary-precision with limited exponent (``gpm``)
+Binary floating-point in arbitrary-precision with limited exponent: ``gpm``
 --------------------------------------------------------------------------------------
 
-The source code for this module can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_gpm.py
-
+The Python module ``gpm`` provides support for real and complex Binary floating-point in arbitrary-precision with limited exponent. The corresponding real and complex data types, ``float`` and ``complex``, are implemented in software.
 
 
 gmpy2 is a C-coded Python extension module that supports multiple-precision arithmetic. 
 
 https://gmpy2.readthedocs.io/en/latest/
 
-gmpy2 is the successor to the original gmpy module. The gmpy module only supported the GMP multiple-precision library. gmpy2 adds support for the MPFR (correctly rounded real floating-point arithmetic) and MPC (correctly rounded complex floating-point arithmetic) libraries. gmpy2 also updates the API and naming conventions to be more consistent and support the additional functionality. The following libraries are supported:
-
-• GMP for integer and rational arithmetic. Home page: http://gmplib.org, or MPIR, which is based on the GMP library but adds support for Microsoft’s Visual Studio compiler. It is used to create the Windows binaries. Home page: http://www.mpir.org
-
-• MPFR for correctly rounded real floating-point arithmetic. Home page: http://www.mpfr.org
-
-• MPC for correctly rounded complex floating-point arithmetic. Home page: http://mpc.multiprecision.org
 
 
-For building issues, see https://github.com/aleaxit/gmpy and https://github.com/BrianGladman/gmpy2.
+Examples for ``gpm``, real input
+........................................................
 
 
-Examples:
+General test code for Python can be found here
+
+.. code-block:: python
+
+    import math
+    from xlcalcnet import math53
+    from decimal import Decimal
+    from fractions import Fraction
+    i = 2329456398453948563945639364827346384753984573984573
 
 
-.. code-block:: pycon
-
-    >>> from xlcalcnet import fp, mp, iv, dp, gp, ap
-    >>> y = gp.setinteger(10**60)
-    >>> y
-    mpfr('1000000000000000000000000000000000000000000000000000000000000.0',204)
-    >>> gp.fadd(0.5, y)
-    mpfr('9.9999999999999995e+59')
-    >>> gp.fadd(0.5, y, exact=True)
-    mpfr('1000000000000000000000000000000000000000000000000000000000000.5',253)
-
-    >>> gp.demo_conv_tupel()
+    def main_tests():
+        general_assignments()
+        functions_with_argument_conversion()
+        arithmetic_operators_with_math53()
 
 
 
-Examples2:
+
+General test code can be found here
+
+.. code-block:: python
+
+    def general_assignments():
+        print()
+        print('<H1 Title="General assignments and conversions">')
+
+        x = math53.t(i)
+        print('x = math53.t(i):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+        x0 = math53.t(2329456398453948563945639364827346)
+        print('x0 = math53T(2329456398453948563945639364827346', x0)
+        x1 = math53.t("2329456398453948563945639364827346")
+        print('x1 = math53.t("2329456398453948563945639364827346"):', x1)
+        x = math53.t("5.5")
+        print('x = math53T("5.5"):', x)
+
+        print()
+        x = math53.t(55)
+        print('x = math53.t(5):', x)
+        y = math53.exp(x)
+        print('y = math53.exp(x):', y)
+
+        z = math53.exp(5.5)
+        print('z = math53.exp(5.5):', z)
+        z = math53.exp(5)
+        print('z = math53.exp(5):', z)
+        z = math53.exp("5.5")
+        print('z = math53.exp("5.5"):', z)
+        print('</H1>')
 
 
-.. code-block:: pycon
 
-    >>> from xlcalcnet import fp, mp, iv, dp, gp, ap
-    >>> x = gp.mpf('3.3398E-20'); print(x)
-    3.3398000000000003e-20
-    >>> y = gp.mpf('3.339847598374598734E30'); print(y)
-    3.3398475983745986e+30
-    >>> gp.dps
-    15
-    >>> x + y  # adition performed with dps = 15
-    mpfr('3.3398475983745986e+30')
-    >>> gp.fadd(x, y, exact=True)  # exact addition
-    mpfr('3339847598374598566114731491328.000000000000000000033398000000000003',219)
-    >>> gp.fsub(x, y, exact=True)  # exact subtraction
-    mpfr('-3339847598374598566114731491327.999999999999999999966601999999999997',219)
-    >>> gp.fmul(x, y, exact=True)  # exact multiplication
-    mpfr('111544230090.514852149404737211834',106)
-    >>> gp.fdiv(x, y, prec=106)  # exact multiplication
-    mpfr('9.99985748339348940899036411359191e-51',106)
+
+General test code can be found here
+
+.. code-block:: python
+
+
+    def functions_with_argument_conversion():
+        print()
+        print('<H1 Title="Functions with argument conversion">')
+        dec = Decimal(1) / Decimal(7)
+        print('dec = Decimal(1) / Decimal(7):', dec)
+        z = math53.exp(dec)
+        print('z = math53.exp(dec):', z)
+        frac = Fraction("-3/7")
+        print('frac = Fraction("-3/7:")', frac)
+        z = math53.exp(frac)
+        print('z = math53.exp(frac):', z)
+
+        print()
+        x = math53.t(5.5)
+        print('x = math53.t(55):', x)
+        y = math53.t(3.3)
+        print('y = math53.t(33):', y)
+        z = math53.pow(x, y)
+        print('z = math53.pow(x, y):        ', z)
+        z = math53.pow(5.5, 3.3)
+        print('z = math53.pow(5.5, 3.3):    ', z)
+        z = math53.pow("5.5", "3.3")
+        print('z = math53.pow("5.5", "3.3"):', z)
+        z = math53.pow(5, 3)
+        print('z = math53.pow(5, 3):', z)
+
+        t = z + 3
+        print('t = z + 3:', t)
+        print('</H1>')
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def arithmetic_operators_with_math53():
+        print()
+        print('<H1 Title="Arithmetic operators with math53">')
+
+        x = math53.t(5.0)
+        y = math53.t(2.5)
+        print('x: ', x)
+        print('y: ', y)
+
+        res = x + y
+        print('res = x + y:', res)
+        res = y + x
+        print('res = y + x:', res)
+
+        res = x - y
+        print('res = x - y:', res)
+        res = y - x
+        print('res = y - x:', res)
+
+        res = x * y
+        print('res = x * y:', res)
+        res = y * x
+        print('res = y * x:', res)
+
+        res = x / y
+        print('res = x / y:', res)
+        res = y / x
+        print('res = y / x:', res)
+        print('</H1>')
+
+
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07a_GpmReal.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B01_GeneralUsage/C05_ContextsMpmath/D07a_GpmReal.py>`__.
+
+
+
+
+
+Examples for ``gpm``, complex input
+........................................................
+
+
+General test code for Python can be found here
+
+.. code-block:: python
+
+    import math
+    from xlcalcnet import math53
+    from decimal import Decimal
+    from fractions import Fraction
+    i = 2329456398453948563945639364827346384753984573984573
+
+
+    def main_tests():
+        general_assignments()
+        functions_with_argument_conversion()
+        arithmetic_operators_with_math53()
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def general_assignments():
+        print()
+        print('<H1 Title="General assignments and conversions">')
+
+        x = math53.t(i)
+        print('x = math53.t(i):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+        x0 = math53.t(2329456398453948563945639364827346)
+        print('x0 = math53T(2329456398453948563945639364827346', x0)
+        x1 = math53.t("2329456398453948563945639364827346")
+        print('x1 = math53.t("2329456398453948563945639364827346"):', x1)
+        x = math53.t("5.5")
+        print('x = math53T("5.5"):', x)
+
+        print()
+        x = math53.t(55)
+        print('x = math53.t(5):', x)
+        y = math53.exp(x)
+        print('y = math53.exp(x):', y)
+
+        z = math53.exp(5.5)
+        print('z = math53.exp(5.5):', z)
+        z = math53.exp(5)
+        print('z = math53.exp(5):', z)
+        z = math53.exp("5.5")
+        print('z = math53.exp("5.5"):', z)
+        print('</H1>')
+
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+
+    def functions_with_argument_conversion():
+        print()
+        print('<H1 Title="Functions with argument conversion">')
+        dec = Decimal(1) / Decimal(7)
+        print('dec = Decimal(1) / Decimal(7):', dec)
+        z = math53.exp(dec)
+        print('z = math53.exp(dec):', z)
+        frac = Fraction("-3/7")
+        print('frac = Fraction("-3/7:")', frac)
+        z = math53.exp(frac)
+        print('z = math53.exp(frac):', z)
+
+        print()
+        x = math53.t(5.5)
+        print('x = math53.t(55):', x)
+        y = math53.t(3.3)
+        print('y = math53.t(33):', y)
+        z = math53.pow(x, y)
+        print('z = math53.pow(x, y):        ', z)
+        z = math53.pow(5.5, 3.3)
+        print('z = math53.pow(5.5, 3.3):    ', z)
+        z = math53.pow("5.5", "3.3")
+        print('z = math53.pow("5.5", "3.3"):', z)
+        z = math53.pow(5, 3)
+        print('z = math53.pow(5, 3):', z)
+
+        t = z + 3
+        print('t = z + 3:', t)
+        print('</H1>')
+
+
+
+General test code can be found here
+
+.. code-block:: python
+
+    def arithmetic_operators_with_math53():
+        print()
+        print('<H1 Title="Arithmetic operators with math53">')
+
+        x = math53.t(5.0)
+        y = math53.t(2.5)
+        print('x: ', x)
+        print('y: ', y)
+
+        res = x + y
+        print('res = x + y:', res)
+        res = y + x
+        print('res = y + x:', res)
+
+        res = x - y
+        print('res = x - y:', res)
+        res = y - x
+        print('res = y - x:', res)
+
+        res = x * y
+        print('res = x * y:', res)
+        res = y * x
+        print('res = y * x:', res)
+
+        res = x / y
+        print('res = x / y:', res)
+        res = y / x
+        print('res = y / x:', res)
+        print('</H1>')
+
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07b_GpmCplx.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B01_GeneralUsage/C05_ContextsMpmath/D07b_GpmCplx.py>`__.
+
+
+
+
+
+Implementation in Python
+........................................................
+
+The Python source code for this module can be found here: `ctx_gpm.py <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_gpm.py>`__.
+
+
+
+
 
 
 
@@ -764,13 +1962,11 @@ Examples2:
 
 .. _rst_apm_def: 
 
-Binary balls in arbitrary-precision and with arbitrary exponent  (``apm``)
+Binary balls in arbitrary-precision and with arbitrary exponent: ``apm``
 -------------------------------------------------------------------------------------
 
-The source code for this module can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_apm.py
+The Python module ``apm`` provides support for real and complex binary balls in arbitrary-precision and with arbitrary exponent. The corresponding real and complex data types, ``float`` and ``complex``, are implemented in software.
 
-
-The ``apm`` context is what most users probably want to use most of the time, as it supports the most functions, is most well-tested, and is implemented with a high level of optimization.
 
 
 pythonflint is a C-coded Python extension module that supports multiple-precision arithmetic. 
@@ -780,420 +1976,295 @@ https://python-flint.readthedocs.io/en/latest/
 
 
 
-Examples:
+Examples for ``apm``, real input
+........................................................
 
 
-.. code-block:: pycon
+General test code for Python can be found here
 
-    >>> from xlcalcnet import fp, mp, iv, dp, gp, ap
-    >>> y = gp.setinteger(10**60)
-    >>> y
-    mpfr('1000000000000000000000000000000000000000000000000000000000000.0',204)
-    >>> gp.fadd(0.5, y)
-    mpfr('9.9999999999999995e+59')
-    >>> gp.fadd(0.5, y, exact=True)
-    mpfr('1000000000000000000000000000000000000000000000000000000000000.5',253)
+.. code-block:: python
 
-    >>> gp.demo_conv_tupel()
+    import math
+    from xlcalcnet import math53
+    from decimal import Decimal
+    from fractions import Fraction
+    i = 2329456398453948563945639364827346384753984573984573
 
 
+    def main_tests():
+        general_assignments()
+        functions_with_argument_conversion()
+        arithmetic_operators_with_math53()
 
-Examples2:
 
 
-.. code-block:: pycon
 
-    >>> from xlcalcnet import fp, mp, iv, dp, gp, ap
-    >>> x = gp.mpf('3.3398E-20'); print(x)
-    3.3398000000000003e-20
-    >>> y = gp.mpf('3.339847598374598734E30'); print(y)
-    3.3398475983745986e+30
-    >>> gp.dps
-    15
-    >>> x + y  # adition performed with dps = 15
-    mpfr('3.3398475983745986e+30')
-    >>> gp.fadd(x, y, exact=True)  # exact addition
-    mpfr('3339847598374598566114731491328.000000000000000000033398000000000003',219)
-    >>> gp.fsub(x, y, exact=True)  # exact subtraction
-    mpfr('-3339847598374598566114731491327.999999999999999999966601999999999997',219)
-    >>> gp.fmul(x, y, exact=True)  # exact multiplication
-    mpfr('111544230090.514852149404737211834',106)
-    >>> gp.fdiv(x, y, prec=106)  # exact multiplication
-    mpfr('9.99985748339348940899036411359191e-51',106)
+General test code can be found here
 
+.. code-block:: python
 
+    def general_assignments():
+        print()
+        print('<H1 Title="General assignments and conversions">')
 
+        x = math53.t(i)
+        print('x = math53.t(i):', x)
 
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
 
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+        x0 = math53.t(2329456398453948563945639364827346)
+        print('x0 = math53T(2329456398453948563945639364827346', x0)
+        x1 = math53.t("2329456398453948563945639364827346")
+        print('x1 = math53.t("2329456398453948563945639364827346"):', x1)
+        x = math53.t("5.5")
+        print('x = math53T("5.5"):', x)
 
-|newpage|
+        print()
+        x = math53.t(55)
+        print('x = math53.t(5):', x)
+        y = math53.exp(x)
+        print('y = math53.exp(x):', y)
 
+        z = math53.exp(5.5)
+        print('z = math53.exp(5.5):', z)
+        z = math53.exp(5)
+        print('z = math53.exp(5):', z)
+        z = math53.exp("5.5")
+        print('z = math53.exp("5.5"):', z)
+        print('</H1>')
 
-Writing portable code for interval and ball arithmetic
------------------------------------------------------------
 
-.. method:: ctx.mid(x)
 
-    where ``ctx`` is ``fpm``, ``mpm``, ``ipm``, ``dec``, ``gmp`` or ``apm``.
 
-    For ``ipm`` and ``apm``, returns the middle value of `x` (converted to ``mpm``), otherwise returns the value of `x` (without changing the type).
+General test code can be found here
 
-    Example:
+.. code-block:: python
 
-    .. code-block:: pycon
 
-        >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
-        >>> for ctx in ctxall: print(repr(ctx.ldexp(1, 10)))
-        1024.0
-        mpf('1024.0')
-        mpi('1024.0', '1024.0')
-        Decimal('1024')
-        mpfr('1024.0',120)
-        arb('[1.02e+3 +/- 4.00]')
+    def functions_with_argument_conversion():
+        print()
+        print('<H1 Title="Functions with argument conversion">')
+        dec = Decimal(1) / Decimal(7)
+        print('dec = Decimal(1) / Decimal(7):', dec)
+        z = math53.exp(dec)
+        print('z = math53.exp(dec):', z)
+        frac = Fraction("-3/7")
+        print('frac = Fraction("-3/7:")', frac)
+        z = math53.exp(frac)
+        print('z = math53.exp(frac):', z)
 
+        print()
+        x = math53.t(5.5)
+        print('x = math53.t(55):', x)
+        y = math53.t(3.3)
+        print('y = math53.t(33):', y)
+        z = math53.pow(x, y)
+        print('z = math53.pow(x, y):        ', z)
+        z = math53.pow(5.5, 3.3)
+        print('z = math53.pow(5.5, 3.3):    ', z)
+        z = math53.pow("5.5", "3.3")
+        print('z = math53.pow("5.5", "3.3"):', z)
+        z = math53.pow(5, 3)
+        print('z = math53.pow(5, 3):', z)
 
+        t = z + 3
+        print('t = z + 3:', t)
+        print('</H1>')
 
-.. method:: ctx.radius(x)
 
-    where ``ctx`` is ``fpm``, ``mpm``, ``ipm``, ``dec``, ``gmp`` or ``apm``.
 
-    For ``ipm`` and ``apm``, returns the radius of `x` (converted to ``mpm``), otherwise returns ``ctx.zero``.
+General test code can be found here
 
+.. code-block:: python
 
+    def arithmetic_operators_with_math53():
+        print()
+        print('<H1 Title="Arithmetic operators with math53">')
 
-    Example:
+        x = math53.t(5.0)
+        y = math53.t(2.5)
+        print('x: ', x)
+        print('y: ', y)
 
-    .. code-block:: pycon
+        res = x + y
+        print('res = x + y:', res)
+        res = y + x
+        print('res = y + x:', res)
 
-        >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
-        >>> for ctx in ctxall: print(repr(ctx.radius('4.3')))
-        1024.0
-        mpf('1024.0')
-        mpi('1024.0', '1024.0')
-        Decimal('1024')
-        mpfr('1024.0',120)
-        arb('[1.02e+3 +/- 4.00]')
+        res = x - y
+        print('res = x - y:', res)
+        res = y - x
+        print('res = y - x:', res)
 
+        res = x * y
+        print('res = x * y:', res)
+        res = y * x
+        print('res = y * x:', res)
 
+        res = x / y
+        print('res = x / y:', res)
+        res = y / x
+        print('res = y / x:', res)
+        print('</H1>')
 
 
-.. method:: ctx.left(x)
 
-    where ``ctx`` is ``fpm``, ``mpm``, ``ipm``, ``dec``, ``gmp`` or ``apm``.
 
-    For ``ipm`` and ``apm``, returns the left border of `x` (converted to ``mpm``), otherwise returns the value of `x` (without changing the type).
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08a_ApmReal.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B01_GeneralUsage/C05_ContextsMpmath/D08a_ApmReal.py>`__.
 
-    For complex values, this corresponds to the lower left corner of the enclosing rectangle.
 
 
 
-    Example:
 
-    .. code-block:: pycon
+Examples for ``apm``, complex input
+........................................................
 
-        >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
-        >>> for ctx in ctxall: print(repr(ctx.left('4.3')))
-        1024.0
-        mpf('1024.0')
-        mpi('1024.0', '1024.0')
-        Decimal('1024')
-        mpfr('1024.0',120)
-        arb('[1.02e+3 +/- 4.00]')
 
+General test code for Python can be found here
 
+.. code-block:: python
 
-.. method:: ctx.right(x)
+    import math
+    from xlcalcnet import math53
+    from decimal import Decimal
+    from fractions import Fraction
+    i = 2329456398453948563945639364827346384753984573984573
 
-    where ``ctx`` is ``fpm``, ``mpm``, ``ipm``, ``dec``, ``gmp`` or ``apm``.
 
-    For ``ipm`` and ``apm``, returns the right border of `x` (converted to ``mpm``), otherwise returns the value of `x` (without changing the type).
+    def main_tests():
+        general_assignments()
+        functions_with_argument_conversion()
+        arithmetic_operators_with_math53()
 
-    For complex values, this corresponds to the upper right corner of the enclosing rectangle.
 
 
-    Example:
 
-    .. code-block:: pycon
+General test code can be found here
 
-        >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm; ctxall = [fpm, mpm, ipm, dec, gmp, apm]
-        >>> for ctx in ctxall: print(repr(ctx.right('4.3')))
-        1024.0
-        mpf('1024.0')
-        mpi('1024.0', '1024.0')
-        Decimal('1024')
-        mpfr('1024.0',120)
-        arb('[1.02e+3 +/- 4.00]')
+.. code-block:: python
 
+    def general_assignments():
+        print()
+        print('<H1 Title="General assignments and conversions">')
 
+        x = math53.t(i)
+        print('x = math53.t(i):', x)
 
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
 
+        x = math53.t(5.7)
+        print('x = math53T(5.7):', x)
+        x0 = math53.t(2329456398453948563945639364827346)
+        print('x0 = math53T(2329456398453948563945639364827346', x0)
+        x1 = math53.t("2329456398453948563945639364827346")
+        print('x1 = math53.t("2329456398453948563945639364827346"):', x1)
+        x = math53.t("5.5")
+        print('x = math53T("5.5"):', x)
 
+        print()
+        x = math53.t(55)
+        print('x = math53.t(5):', x)
+        y = math53.exp(x)
+        print('y = math53.exp(x):', y)
 
-.. method:: ctx.absmin(x)
+        z = math53.exp(5.5)
+        print('z = math53.exp(5.5):', z)
+        z = math53.exp(5)
+        print('z = math53.exp(5):', z)
+        z = math53.exp("5.5")
+        print('z = math53.exp("5.5"):', z)
+        print('</H1>')
 
-    where ``ctx`` is ``fpm``, ``mpm``, ``ipm``, ``dec``, ``gmp`` or ``apm``. See also  Mpmath :cite:p:`MpmathFun912`.
 
-    !!! Needs to use fabs instead of abs !!!
 
-    Returns the absolute value of the left end of the interval (a, b) `x`, `|x|`. 
 
-    Unlike :func:`abs`, :func:`~fabs` converts non-mpmath numbers (such as ``int``)
-    into mpmath numbers::
+General test code can be found here
 
-        >>> from xlcalcnet import mp, iv, fp, dp, gp, ap
-        >>> mp.dps = 15; mp.pretty = False
-        >>> x = '0.3'
-        >>> fp.absmin(x), mp.absmin(x), iv.absmin(x), dp.absmin(x), gp.absmin(x), ap.absmin(x)
-        (0.3,
-         mpf('0.29999999999999999'),
-         mpi('0.29999999999999999', '0.29999999999999999'),
-         0.3,
-         0.3,
-         0.3)
-        >>> x = '-0.3'
-        >>> fp.absmin(x), mp.absmin(x), iv.absmin(x), dp.absmin(x), gp.absmin(x), ap.absmin(x)
-        (0.3,
-         mpf('0.29999999999999999'),
-         mpi('0.29999999999999999', '0.29999999999999999'),
-         0.3,
-         0.3,
-         0.3)
-        >>> x = '-0.3+0.1j'
-        >>> fp.absmin(x), mp.absmin(x), iv.absmin(x), dp.absmin(x), gp.absmin(x), ap.absmin(x)
-        (0.31622776601683794,
-         mpf('0.31622776601683794'),
-         mpi('0.31622776601683789', '0.31622776601683789'),
-         0.31622776601683794,
-         0.31622776601683794,
-         0.31622776601683794)
+.. code-block:: python
 
 
+    def functions_with_argument_conversion():
+        print()
+        print('<H1 Title="Functions with argument conversion">')
+        dec = Decimal(1) / Decimal(7)
+        print('dec = Decimal(1) / Decimal(7):', dec)
+        z = math53.exp(dec)
+        print('z = math53.exp(dec):', z)
+        frac = Fraction("-3/7")
+        print('frac = Fraction("-3/7:")', frac)
+        z = math53.exp(frac)
+        print('z = math53.exp(frac):', z)
 
-.. method:: ctx.absmax(x)
+        print()
+        x = math53.t(5.5)
+        print('x = math53.t(55):', x)
+        y = math53.t(3.3)
+        print('y = math53.t(33):', y)
+        z = math53.pow(x, y)
+        print('z = math53.pow(x, y):        ', z)
+        z = math53.pow(5.5, 3.3)
+        print('z = math53.pow(5.5, 3.3):    ', z)
+        z = math53.pow("5.5", "3.3")
+        print('z = math53.pow("5.5", "3.3"):', z)
+        z = math53.pow(5, 3)
+        print('z = math53.pow(5, 3):', z)
 
-    where ``ctx`` is ``fpm``, ``mpm``, ``ipm``, ``dec``, ``gmp`` or ``apm``. See also  Mpmath :cite:p:`MpmathFun912`.
+        t = z + 3
+        print('t = z + 3:', t)
+        print('</H1>')
 
-    !!! Needs to use fabs instead of abs !!!
 
-    Returns the absolute value of the right end of the interval (a, b) `x`, `|x|`. 
 
-    Unlike :func:`abs`, :func:`~fabs` converts non-mpmath numbers (such as ``int``)
-    into mpmath numbers:
+General test code can be found here
 
+.. code-block:: python
 
-    .. code-block:: pycon
+    def arithmetic_operators_with_math53():
+        print()
+        print('<H1 Title="Arithmetic operators with math53">')
 
-        >>> from xlcalcnet import mp, iv, fp, dp, gp, ap
-        >>> mp.dps = 15; mp.pretty = False
-        >>> x = '0.3'
-        >>> fp.absmax(x), mp.absmax(x), iv.absmax(x), dp.absmax(x), gp.absmax(x), ap.absmax(x)
-        (0.3,
-         mpf('0.29999999999999999'),
-         mpi('0.29999999999999999', '0.29999999999999999'),
-         0.3,
-         0.3,
-         0.3)
-        >>> x = '-0.3'
-        >>> fp.absmax(x), mp.absmax(x), iv.absmax(x), dp.absmax(x), gp.absmax(x), ap.absmax(x)
-        (0.3,
-         mpf('0.29999999999999999'),
-         mpi('0.29999999999999999', '0.29999999999999999'),
-         0.3,
-         0.3,
-         0.3)
-        >>> x = '-0.3+0.1j'
-        >>> fp.absmax(x), mp.absmax(x), iv.absmax(x), dp.absmax(x), gp.absmax(x), ap.absmax(x)
-        (0.31622776601683794,
-         mpf('0.31622776601683794'),
-         mpi('0.31622776601683794', '0.31622776601683794'),
-         0.31622776601683794,
-         0.31622776601683794,
-         0.31622776601683794)
+        x = math53.t(5.0)
+        y = math53.t(2.5)
+        print('x: ', x)
+        print('y: ', y)
 
+        res = x + y
+        print('res = x + y:', res)
+        res = y + x
+        print('res = y + x:', res)
 
+        res = x - y
+        print('res = x - y:', res)
+        res = y - x
+        print('res = y - x:', res)
 
-.. method:: ctx.union(x, y)
+        res = x * y
+        print('res = x * y:', res)
+        res = y * x
+        print('res = y * x:', res)
 
-    where ``ctx`` is ``ipm`` or ``apm``.
+        res = x / y
+        print('res = x / y:', res)
+        res = y / x
+        print('res = y / x:', res)
+        print('</H1>')
 
-    Returns the union of `x` and `y`.
 
-    .. code-block:: python
 
-        >>> from xlcalcnet import fpm, mpm, ipm, dec, gmp, apm
-        >>> ipm.dps = 10; print(ipm.union(3.5, 4.8))
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08b_ApmCplx.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B01_GeneralUsage/C05_ContextsMpmath/D08b_ApmCplx.py>`__.
 
 
-        >>> ipm.dps = 10; print(ipm.union(ctx.t('3.7 + 2.4j'), ctx.t('3.1 + 4.6j')])
 
 
 
+Implementation in Python
+........................................................
 
-
-
-
-|newpage|
-
-Reasons for using multiprecision arithmetic
----------------------------------------------
-
-An introduction to the problems of rounding errors and catastrophic cancellation can be found in :cite:t:`Goldberg1991`. Excellent reference texts are :cite:t:`Higham2002` and :cite:t:`Higham2009`.
-
-In the following sections we will give a few examples of how the use of double precision without special precaution can give wrong results.
-
-
-
-.. math:: e^{i\pi} + 1 = 0
-   :label: euler
-
-Euler's identity, equation :eq:`euler`, was elected one of the most
-beautiful mathematical formulas.
-
-
-
-
-Some text that requires a footnote [#f1` .
-
-
-Some text that requires another  footnote [#f2` .
-
-
-
-
-
-
-
-**Example: Sums**
-
-Sums are often calculated exactly if all summands have an exact representation. If this is not the case, results can be unpredictable. In MS Excel, the formula
-
-``=SUM(10000000000,-16000000000,6000000000)``
-
-will give the correct result `0`, but the analogous formula
-
-``=SUM(1E+40,-1.6E+40,6E+39)``
-
-returns `1.20893E+24` instead of the correct result `0`.
-
-
-**Example: Standard Deviation**
-
-Like sums, variances and standard deviations are often calculated exactly if all arguments have an exact representation. If this is not the case, results can again be unpredictable. In MS Excel, the formula
-
-``=VAR(1E+30,1E+30,1E+30)``
-
-returns `2.97106E+28` instead of the correct result `0`, which should be the obvious results since all arguments are the same.
-
-
-**Example: Overflow and underflow**
-
-In many situations where the final result is representable in double precision, some of the interim results cause overflow or underflow. A popular example is the function `f(x,y) = \sqrt{x^2+y^2}`. With `x=3 \cdot 10^{300}` and `y=4 \cdot 10^{300}` the result `f(x,y) = 5 \cdot 10^{300}` is representable in double precision, but the (naive) calculation will overflow.
-
-
-
-**Example: Polynomials**
-
-Consider the following example from :cite:t:`Cuyt2001`: 
-
-For `a=77617` and `b=33096`, calculate
-
-.. math::     Y = 333.75 b^6 + a^2  (11 a^2  b^2 - b^6 - 121 b^4 - 2) + 5.5  b^8 + \frac{a}{2b} 
-
-The correct result is `Y = -54767 / 66192 = -8.27396\ldots \cdot 10^{-1}`
-
-
-
-
-**Example: Trigonometric Functions**
-
-Trigonometric functions are sensitive to small perturbations. 
-
-In double precision and binary floating point arithmetic, the tangent of `x = 1.57079632679489` is calculated as `\tan(x) = 1.48752 \cdot 10^{14}`, whereas the correct result is `\tan(x) = 1.51075 \cdot 10^{14}`. This amounts to an absolute error of `2.32287  \cdot 10^{12}` and a relative error of `1.54\%`.
-
-There are also limits on the range of arguments, e.g. `\sin(10^{8})` returns the value  `-9.31639 \cdot 10^{-1}`   (with an relative error of `-6.22776 \cdot 10^{-13}`), whereas  `\sin(10^{9})` returns an invalid result (the exact result is  `5.45843 \cdot 10^{-1}`)
-
-
-
-
-
-**Example: Logarithms and Exponential Functions**
-
-Consider the following example from :cite:t:`Ghazi2010`: 
-
-Determine 10 decimal digits of the constant
-
-.. math::     Y = 173746a + 94228b - 78487c, \quad \text{where } 
-.. math::     a = \sin(10^{22}), b = \log(17.1), c = \exp(0.42). 
-
-The expected result is `Y = -1.341818958 \cdot 10^{-12}`.
-
-
-
-
-
-**Example: Linear Algebra**
-
-The following example is from :cite:t:`Hofschuster2004`:
-
-We want to solve the (ill-conditioned) system of linear equations `Ax = b` with
-
-
-.. math:: 
-
-    A = \begin{pmatrix}
-        a_{11} & a_{12} \\
-        a_{21} & a_{22} 
-    \end{pmatrix}  = \begin{pmatrix}
-    64919121 & -159018721 \\
-    41869520.5 & -102558961 
-    \end{pmatrix}, b = \begin{pmatrix}
-    b_{1} \\
-    b_{2} 
-    \end{pmatrix}
-    = \begin{pmatrix}
-    1 \\
-    0
-    \end{pmatrix} , x = \begin{pmatrix}
-    x_{1} \\
-    x_{2} 
-    \end{pmatrix}
-
-The correct solution is `x_1 = 205117922`, `x_2 = 83739041`.
-
-To solve this `2 \times 2` system numerically we first use the well known formulas
-
-.. math:: x_1 = \frac{a_{22}}{a_{11}a_{22} - a_{12}a_{21}}, \quad x_2 = \frac{-a_{21}}{a_{11}a_{22} - a_{12}a_{21}},
-
-Calculating this directly in double precision gives the following wrong result:  
-
-`x_1 = 102558961`, `x_2 = 41869520.5`
-
-
-
-
-
-**Example: Eigenvalues**
-
-The following example is from :cite:t:`Brown2010`:
-
-The behaviour and stability of many physical systems are connected with the spectral properties of non-self-adjoint operators. However, numerical approximations of eigenvalues of non-selfadjoint operators (even matrices) may fail dramatically. For example, the non-normal 7 `\times` 7 matrix
-
-.. math:: 
-
-    A = \begin{pmatrix}
-        289 & 2054 & 326 & 128 & 70 & 32 & 6  \\
-        1152 & 30 & 1312 & 512 & 288 & 128 & 32  \\    
-        -29 & -1990 & 766 & 384 & 1018 & 224 & 58  \\
-        512 & 128 & 640 & 0 & 640 & 512 & 128  \\    
-        1053 & 2246 & -514 & -384 & -766 & 800 & 198  \\    
-        -287 & -6 & 1722 & -128 & 1978 & -30 & -2042  \\
-        -2176 & -285 & -1563 & -512 & -539 & -1152 & -287     
-    \end{pmatrix}
-
-has the eigenvalues  `-2, -4, 0, 1, 1, 2, 4`. Calculations in double precision yield a set of complex eigenvalues, such as `8.57 \pm 3.73 i; 2.29 \pm 8.33 i; -5.43 \pm 6.56 i; -8.85` with imaginary parts as large as `8.33`, which are nowhere near the true eigenvalues. The reason for this is that owing to the nonnormality of the matrix, its eigenvalues are highly sensitive to perturbations, and therefore unavoidable rounding errors render the numerical eigenvalue computations unreliable.
-
-
-
+The Python source code for this module can be found here: `ctx_apm.py <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ctx_apm.py>`__.
 
 
 
