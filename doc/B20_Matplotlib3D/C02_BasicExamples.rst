@@ -21,7 +21,7 @@
 
 
 
-Matplotlib: 3D Graphics, part 2
+Matplotlib: 3D Graphics (from Matplotlib tutorials)
 ==============================================================
 
 See Test2DFunctions
@@ -29,10 +29,12 @@ See Test2DFunctions
 
 
 
-Klein Bottle
+Klein bottle
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_KleinBottle.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B20_Matplotlib3D/C02_BasicExamples/D01_KleinBottle.py>`__.
+
 
 
 |KleinBottleMpl|
@@ -51,10 +53,12 @@ some text
 
 
 
-Lorentz Attractor
+Lorentz attractor
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_LorenzAttractor.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B20_Matplotlib3D/C02_BasicExamples/D02_LorenzAttractor.py>`__.
+
 
 
 |LorenzAttractorMpl|
@@ -73,10 +77,12 @@ some text
 |newpage|
 
 
-Parametric Curve
+Parametric curve
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_ParametricCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B20_Matplotlib3D/C02_BasicExamples/D03_ParametricCurve.py>`__.
+
 
 
 |ParametricCurveMpl|
@@ -93,10 +99,12 @@ some text
 |newpage|
 
 
-Projected Filled Contour
+Projected filled contour
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_ProjectFilledContour.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B20_Matplotlib3D/C02_BasicExamples/D04_ProjectFilledContour.py>`__.
+
 
 
 |ProjectFilledContourMpl|
@@ -114,10 +122,12 @@ some text
 |newpage|
 
 
-Projected Open Contour
+Projected open contour
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_ProjectOpenContour.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B20_Matplotlib3D/C02_BasicExamples/D05_ProjectOpenContour.py>`__.
+
 
 
 |ProjectOpenContourMpl|
@@ -137,7 +147,9 @@ some text
 Scatterplot
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_Scatterplot3D.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B20_Matplotlib3D/C02_BasicExamples/D06_Scatterplot3D.py>`__.
+
 
 
 |Scatterplot3DMpl|
@@ -157,7 +169,9 @@ some text
 Surface colormap
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_SurfaceColormap.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B20_Matplotlib3D/C02_BasicExamples/D07_SurfaceColormap.py>`__.
+
 
 
 |SurfaceColormapMpl|
@@ -176,7 +190,9 @@ some text
 Surface hillshading
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_SurfaceHillshading.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B20_Matplotlib3D/C02_BasicExamples/D08_SurfaceHillshading.py>`__.
+
 
 
 |SurfaceHillshadingMpl|
@@ -195,7 +211,9 @@ some text
 Surface solid
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_SurfaceSolid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B20_Matplotlib3D/C02_BasicExamples/D09_SurfaceSolid.py>`__.
+
 
 
 |SurfaceSolidMpl|
@@ -214,7 +232,9 @@ some text
 Surface triangular
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_SurfaceTriangular.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B20_Matplotlib3D/C02_BasicExamples/D10_SurfaceTriangular.py>`__.
+
 
 
 |SurfaceTriangularMpl|

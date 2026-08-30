@@ -27,6 +27,8 @@ See also: https://en.wikipedia.org/wiki/Implicit_surface
 Regular polygone as generator
 ------------------------------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03a_Cylinder_3_1.3D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DInteractiveExamples/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D03a_Cylinder_3_1.3D.xml>`__.
+
 
 
 See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.

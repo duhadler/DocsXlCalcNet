@@ -28,7 +28,8 @@ See Test2DFunctions
 Mount Bruno
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_Plotly3D_MtBruno.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C01_GeneralSurface/D01_Plotly3D_MtBruno.py>`__.
 
 
 
@@ -48,6 +49,9 @@ some text
 
 Ring Cyclide
 ---------------------------------------------------------------------------------
+
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_Plotly3D_RingCyclide.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C01_GeneralSurface/D02_Plotly3D_RingCyclide.py>`__.
 
 
 
@@ -71,7 +75,9 @@ Ring Cyclide
 Torus
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_Plotly3D_Torus.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C01_GeneralSurface/D03_Plotly3D_Torus.py>`__.
+
 
 
 |plotly_Torus|
@@ -91,7 +97,9 @@ some text
 Möbius surface
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_Plotly3D_M%C3%B6bius.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C01_GeneralSurface/D04_Plotly3D_M%C3%B6bius.py>`__.
+
 
 
 |plotly_Mobius|
@@ -113,7 +121,9 @@ some text
 Boy surface
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_Plotly3D_Boy.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C01_GeneralSurface/D05_Plotly3D_Boy.py>`__.
+
 
 
 |plotly_Boy|
@@ -133,7 +143,9 @@ some text
 Overlaid function
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_Plotly3D_OverlaidFunctions.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C01_GeneralSurface/D06_Plotly3D_OverlaidFunctions.py>`__.
+
 
 
 
@@ -154,7 +166,9 @@ some text
 Iris data
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_Plotly3D_IrisData.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C01_GeneralSurface/D07_Plotly3D_IrisData.py>`__.
+
 
 
 

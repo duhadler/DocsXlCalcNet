@@ -31,7 +31,8 @@ See Test2DFunctions
 Movable projection of the world
 ---------------------------------------------------------------------------------
 
-some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_PlotlyGeo_MovableProjection.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C02_GeographicalPlots/D01_PlotlyGeo_MovableProjection.py>`__.
+
 
 
 
@@ -52,8 +53,7 @@ some text
 Rotatable globe
 --------------------------------------------------------------------------
 
-
-some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_PlotlyGeo_MovableGlobe.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C02_GeographicalPlots/D02_PlotlyGeo_MovableGlobe.py>`__.
 
 
 |plotly_RotatableGlobe|
@@ -73,8 +73,7 @@ some text
 Choropleth of the US with Alaska and Hawai
 -------------------------------------------------------------------------
 
-
-some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_PlotlyGeo_USA_Agriculture.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C02_GeographicalPlots/D03_PlotlyGeo_USA_Agriculture.py>`__.
 
 
 
@@ -94,8 +93,7 @@ some text
 Voting results embedded in map
 -------------------------------------------------------------------------
 
-
-some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_PlotlyGeo_MontrealVotingWithMap.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C02_GeographicalPlots/D04_PlotlyGeo_MontrealVotingWithMap.py>`__.
 
 
 |plotly_Voting|

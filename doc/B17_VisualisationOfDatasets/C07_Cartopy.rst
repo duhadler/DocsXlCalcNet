@@ -30,7 +30,7 @@ Geographic data (requires cartopy)
 Antarctis
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_Antarctis.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C07_Cartopy/D01_Antarctis.py>`__.
 
 
 
@@ -62,7 +62,7 @@ Some text
 Australia
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_Australia.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C07_Cartopy/D02_Australia.py>`__.
 
 
 
@@ -88,7 +88,7 @@ Some text
 Africa
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_Africa.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C07_Cartopy/D03_Africa.py>`__.
 
 
 
@@ -114,7 +114,7 @@ Some text
 World Flight
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_WorldFlight.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C07_Cartopy/D04_WorldFlight.py>`__.
 
 
 
@@ -141,7 +141,7 @@ Some text
 World Night Shading
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_WorldNightShading.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C07_Cartopy/D05_WorldNightShading.py>`__.
 
 
 
@@ -167,7 +167,7 @@ Some text
 World2projections
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_World2Projections.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C07_Cartopy/D06_World2Projections.py>`__.
 
 
 
@@ -191,7 +191,7 @@ Some text
 Country population estimates
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_CountryPopulationEstimates.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C07_Cartopy/D07_CountryPopulationEstimates.py>`__.
 
 
 
@@ -214,7 +214,7 @@ Some text
 Arctis and Antarctis
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_ArctisAndAntarctis.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C07_Cartopy/D08_ArctisAndAntarctis.py>`__.
 
 
 
@@ -238,7 +238,7 @@ Some text
 Geographic Mapping, with longitude and altitude on 4 axes crs=ccrs.PlateCarree
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_GeographicMapping1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C07_Cartopy/D09_GeographicMapping1.py>`__.
 
 
 
@@ -259,7 +259,7 @@ Some text
 Geographic Mapping, World, projection=ccrs.InterruptedGoodeHomolosine
 ------------------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_GeographicMapping2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C07_Cartopy/D10_GeographicMapping2.py>`__.
 
 
 
@@ -282,7 +282,7 @@ Some text
 Geographic Mapping, World, projection=ccrs.PlateCarree
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11_GeographicMapping3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C07_Cartopy/D11_GeographicMapping3.py>`__.
 
 
 
@@ -303,7 +303,7 @@ Some text
 Labelling projection axes: PlateCarree and Mercator
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D12_LabellingProjectionAxis.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C07_Cartopy/D12_LabellingProjectionAxis.py>`__.
 
 
 

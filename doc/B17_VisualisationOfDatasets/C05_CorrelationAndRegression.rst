@@ -26,7 +26,7 @@ Correlation and regression
 Linear regression with confidence Band
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_LinRegWithConfidenceBand.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C05_CorrelationAndRegression/D01_LinRegWithConfidenceBand.py>`__.
 
 
 
@@ -53,7 +53,7 @@ Some text
 Anscombe example
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_AnscombeExample.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C05_CorrelationAndRegression/D02_AnscombeExample.py>`__.
 
 
 
@@ -80,7 +80,7 @@ Some text
 Faceted Scatter Plots: all in one plot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_FacetedScatterPlot1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C05_CorrelationAndRegression/D03_FacetedScatterPlot1.py>`__.
 
 
 
@@ -101,7 +101,7 @@ Some text
 Faceted Scatter Plots: separate plots
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_FacetedScatterPlot2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C05_CorrelationAndRegression/D04_FacetedScatterPlot2.py>`__.
 
 
 
@@ -119,10 +119,10 @@ Some text
 |newpage|
 
 
-Faceted Scatter Plots: futher subgrouping
+Faceted Scatter Plots: further subgrouping
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_FacetedScatterPlot2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C05_CorrelationAndRegression/D04_FacetedScatterPlot2.py>`__.
 
 
 
@@ -148,7 +148,7 @@ Some text
 Bubbleplot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_Bubbleplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C05_CorrelationAndRegression/D06_Bubbleplot.py>`__.
 
 
 
@@ -172,7 +172,7 @@ Some text
 Scatterplot with fancy formatting
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_ScatterplotWithFancyFomatting.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C05_CorrelationAndRegression/D07_ScatterplotWithFancyFomatting.py>`__.
 
 
 
@@ -198,7 +198,7 @@ Some text
 Scatterplots with positive, negative and weak correlation: confidence ellipses
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_ConfidenceEllipse.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C05_CorrelationAndRegression/D08_ConfidenceEllipse.py>`__.
 
 
 
@@ -226,7 +226,7 @@ Some text
 Scatterplot with confidence confidence ellipses at different standard deviations 
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_ConfidenceEllipse2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C05_CorrelationAndRegression/D09_ConfidenceEllipse2.py>`__.
 
 
 
@@ -257,7 +257,7 @@ Some text
 Hexagonal binned plot and marginal histograms (Seaborn)
 ----------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_Hexagonalbinnedplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C05_CorrelationAndRegression/D10_Hexagonalbinnedplot.py>`__.
 
 
 
@@ -280,7 +280,7 @@ Some text
 Joint and marginal Kde (Seaborn)
 ----------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11_JointAndMarginalKde.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C05_CorrelationAndRegression/D11_JointAndMarginalKde.py>`__.
 
 
 
@@ -306,7 +306,7 @@ Some text
 Marginal ticks
 -------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D12_MarginalTicks.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C05_CorrelationAndRegression/D12_MarginalTicks.py>`__.
 
 
 
@@ -332,7 +332,7 @@ Some text
 Regression_marginals (Seaborn)
 -------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13_RegressionMarginals.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C05_CorrelationAndRegression/D13_RegressionMarginals.py>`__.
 
 
 
@@ -367,7 +367,7 @@ Some text
 Pair grid with kde (Seaborn)
 -------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D14_PairGridWithKde.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C05_CorrelationAndRegression/D14_PairGridWithKde.py>`__.
 
 
 .. image:: ../_static/Seaborn/pair_grid_with_kde.*
@@ -389,7 +389,7 @@ Some text
 Scatterplot matrix (Seaborn)
 -------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D15_ScatterplotMatrix.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C05_CorrelationAndRegression/D15_ScatterplotMatrix.py>`__.
 
 
 .. image:: ../_static/Seaborn/scatterplot_matrix.*

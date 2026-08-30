@@ -23,17 +23,13 @@ Contours
 ==============================================================
 
 
-See also: https://pythoninchemistry.org/intro_python_chemists/data_work/surface_plots.html
-
-
-
 
 
 Open Contourplot
 ------------------------------------------------------------------------------------------
 
-Some text
 
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_ContourOpen.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D01_ContourOpen.py>`__.
 
 
 
@@ -43,10 +39,6 @@ Some text
 
 
 
-
-
-
-**Left figure**: Open Contourplot
 
 
 
@@ -60,8 +52,8 @@ Some text
 Filled Contourplot
 ------------------------------------------------------------------------------------------
 
-Some text
 
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_ContourFilled.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D02_ContourFilled.py>`__.
 
 
 
@@ -71,10 +63,6 @@ Some text
 
 
 
-
-
-
-**Left figure**: Open Filled
 
 
 
@@ -89,7 +77,18 @@ Some text
 Electric dipole: field lines and open contours
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__.
+
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            ContourFilled_ = False
+            Model_ = 1  # 1, 2, 3, 4
+            FieldLinesContours(ContourFilled=ContourFilled_, Model=Model_)
 
 
 `\quad` |FieldLinesDipole2ContoursOpen|
@@ -97,8 +96,6 @@ Some text
 .. |FieldLinesDipole2ContoursOpen| image:: ../_static/ParametricCurves/Contourplots/FieldLinesDipole2ContoursOpen.jpeg
    :width: 80%
 
-
-**Left figure**: Electric dipole: field lines and open contours
 
 
 
@@ -116,7 +113,19 @@ Some text
 Electric quadrupole: field lines and open contours
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__.
+
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            ContourFilled_ = False
+            Model_ = 2  # 1, 2, 3, 4
+            FieldLinesContours(ContourFilled=ContourFilled_, Model=Model_)
+
 
 
 `\quad` |FieldLinesQuadContoursOpen|
@@ -125,8 +134,6 @@ Some text
    :width: 80%
 
 
-
-**Left figure**: Electric quadrupole: field lines and open contours
 
 
 
@@ -138,7 +145,19 @@ Some text
 Electric dipoles: field lines and filled contours
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__.
+
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            ContourFilled_ = True
+            Model_ = 1  # 1, 2, 3, 4
+            FieldLinesContours(ContourFilled=ContourFilled_, Model=Model_)
+
 
 
 `\quad` |FieldLinesDipole2ContoursClosed|
@@ -146,9 +165,6 @@ Some text
 .. |FieldLinesDipole2ContoursClosed| image:: ../_static/ParametricCurves/Contourplots/FieldLinesDipole2ContoursClosed.jpeg
    :width: 80%
 
-
-
-**Left figure**: Electric dipoles: field lines and filled contours
 
 
 
@@ -162,7 +178,18 @@ Some text
 Electric quadrupole: field lines and filled contours
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__.
+
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            ContourFilled_ = True
+            Model_ = 2  # 1, 2, 3, 4
+            FieldLinesContours(ContourFilled=ContourFilled_, Model=Model_)
 
 
 `\quad` |FieldLinesQuadContoursClosed|
@@ -170,9 +197,6 @@ Some text
 .. |FieldLinesQuadContoursClosed| image:: ../_static/ParametricCurves/Contourplots/FieldLinesQuadContoursClosed.jpeg
    :width: 80%
 
-
-
-**Left figure**: Electric quadrupole: field lines and filled contours
 
 
 
@@ -184,7 +208,18 @@ Some text
 Orthogonal electric dipoles: field lines and filled contours
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__.
+
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            ContourFilled_ = True
+            Model_ = 3  # 1, 2, 3, 4
+            FieldLinesContours(ContourFilled=ContourFilled_, Model=Model_)
 
 
 `\quad` |FieldLines3ContoursClosed|
@@ -192,8 +227,6 @@ Some text
 .. |FieldLines3ContoursClosed| image:: ../_static/ParametricCurves/Contourplots/FieldLines3ContoursClosed.jpeg
    :width: 80%
 
-
-**Left figure**: Orthogonal electric dipoles: field lines and filled contours
 
 
 
@@ -205,17 +238,24 @@ Some text
 Electric field lines around a point charge with grounded sphere
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__.
+
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            ContourFilled_ = True
+            Model_ = 4  # 1, 2, 3, 4
+            FieldLinesContours(ContourFilled=ContourFilled_, Model=Model_)
 
 
 `\quad` |FieldLinesConductingSphere|
 
 .. |FieldLinesConductingSphere| image:: ../_static/ParametricCurves/Contourplots/FieldLinesConductingSphere.jpeg
    :width: 80%
-
-
-
-**Left figure**: Electric field lines around a point charge with grounded sphere
 
 
 

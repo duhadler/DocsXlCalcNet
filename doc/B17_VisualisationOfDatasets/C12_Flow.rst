@@ -28,7 +28,7 @@ Flow and connections
 Sankey Default
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_Sankey_Default.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C12_Flow/D01_Sankey_Default.py>`__.
 
 
 
@@ -50,6 +50,7 @@ Some text
 Sankey 2 Systems
 ------------------------------------------------------------------------------------------
 
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_Sankey_TwoSystems.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C12_Flow/D02_Sankey_TwoSystems.py>`__.
 
 
 |picSankeyTwoSystems|
@@ -71,7 +72,7 @@ Sankey 2 Systems
 Sankey Rankine
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_Sankey_Rankine.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C12_Flow/D03_Sankey_Rankine.py>`__.
 
 
 
@@ -97,7 +98,7 @@ Some text
 Sankey One 2 one
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_Sankey_One2one.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C12_Flow/D04_Sankey_One2one.py>`__.
 
 
 
@@ -123,7 +124,7 @@ Some text
 Sankey Flow
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_SankeyFlow.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C12_Flow/D05_SankeyFlow.py>`__.
 
 
 
@@ -147,7 +148,7 @@ Some text
 Arcplot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_ArcPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C12_Flow/D06_ArcPlot.py>`__.
 
 
 
@@ -173,7 +174,7 @@ Some text
 Funnel Chart
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_FunnelChart.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C12_Flow/D07_FunnelChart.py>`__.
 
 
 

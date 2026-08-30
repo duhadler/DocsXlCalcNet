@@ -25,8 +25,13 @@ Arcplots, dendrograms, heatmaps and clustermaps
 Dendrogram
 ------------------------------------------------------------------------------------------
 
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01a_Dendrogram1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C10_Heatmaps/D01a_Dendrogram1.py>`__.
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01b_Dendrogram2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C10_Heatmaps/D01b_Dendrogram2.py>`__.
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01c_Dendrogram3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C10_Heatmaps/D01c_Dendrogram3.py>`__.
+
+
 
 
 |picDendrogram1|
@@ -63,7 +68,7 @@ Some text
 Heatmap, simple
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_Heatmap1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C10_Heatmaps/D02_Heatmap1.py>`__.
 
 
 
@@ -86,7 +91,7 @@ Some text
 Heatmap, complex
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_Heatmap2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C10_Heatmaps/D03_Heatmap2.py>`__.
 
 
 
@@ -108,7 +113,7 @@ Some text
 Matshow
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_MatShow.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C10_Heatmaps/D04_MatShow.py>`__.
 
 
 
@@ -137,7 +142,7 @@ Some text
 Many pairwise correlations (Seaborn)
 ----------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_ManyPairwiseCorrelations.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C10_Heatmaps/D05_ManyPairwiseCorrelations.py>`__.
 
 
 .. image:: ../_static/Seaborn/many_pairwise_correlations.*
@@ -161,6 +166,8 @@ Some text
 Structured heatmap (Seaborn)
 -------------------------------
 
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_StructuredHeatmap.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C10_Heatmaps/D06_StructuredHeatmap.py>`__.
+
 
 
 .. image:: ../_static/Seaborn/structured_heatmap.*
@@ -182,6 +189,7 @@ Structured heatmap (Seaborn)
 Clustermap (Seaborn)
 -------------------------------
 
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_Clustermap.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C10_Heatmaps/D07_Clustermap.py>`__.
 
 
 

@@ -28,7 +28,18 @@ Streams, barbs and quivers (some require cartopy)
 Streams, Electric Dipole: vector field
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_04_VectorFieldMultipole.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.py>`__.
+
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            nq_ = 2**1
+            VectorFieldMultipole(nq=nq_)
+
 
 
 
@@ -42,11 +53,6 @@ Some text
 
 
 
-**Left figure**: Electric Dipole: vector field
-
-
-
-
 
 |newpage|
 
@@ -54,7 +60,17 @@ Some text
 Streams, Electric Quadrupole: vector field
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_04_VectorFieldMultipole.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.py>`__.
+
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            nq_ = 2**2
+            VectorFieldMultipole(nq=nq_)
 
 
 
@@ -64,11 +80,6 @@ Some text
 .. |VectorFieldQuadrupole| image:: ../_static/ParametricCurves/Contourplots/VectorFieldQuadrupole.*
 
 
-
-
-
-
-**Left figure**: Electric Quadrupole: vector field
 
 
 
@@ -83,8 +94,17 @@ Some text
 Streams, Electric Octopole: vector field
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_04_VectorFieldMultipole.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.py>`__.
 
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            nq_ = 2**3
+            VectorFieldMultipole(nq=nq_)
 
 
 
@@ -97,12 +117,6 @@ Some text
 
 
 
-**Left figure**: Electric Octopole: vector field
-
-
-
-
-
 
 |newpage|
 
@@ -110,7 +124,17 @@ Some text
 Streams, Electric Hexapole: vector field
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_04_VectorFieldMultipole.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.py>`__.
+
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            nq_ = 2**4
+            VectorFieldMultipole(nq=nq_)
 
 
 
@@ -122,19 +146,12 @@ Some text
 
 
 
-
-**Left figure**: Electric Hexapole: vector field
-
-
-
-
 |newpage|
 
 Streams, North Atlantic Ocean and Europe (requires cartopy)
 ------------------------------------------------------------------------------------------
 
-Some text
-
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_StreamsNorthAtlantic.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D05_StreamsNorthAtlantic.py>`__.
 
 
 
@@ -142,9 +159,6 @@ Some text
 
 .. |picCartopy17| image:: ../_static/ParametricCurves/Cartopy/Cartopy17.*
 
-
-
-**Left figure**: Cartopy17
 
 
 
@@ -157,27 +171,13 @@ Quivers, North Atlantic Ocean and Europe (requires cartopy)
 ------------------------------------------------------------------------------------------
 
 
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_QuiversNorthAtlantic.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D06_QuiversNorthAtlantic.py>`__.
 
-
-See https://github.com/SciTools/cartopy
-
-See https://scitools.org.uk/cartopy/docs/v0.22/index.html
-
-
-
-
-Some text
-
-See https://matplotlib.org/stable/plot_types/arrays/quiver.html
 
 
 |picCartopy14|
 
 .. |picCartopy14| image:: ../_static/ParametricCurves/Cartopy/Cartopy14.*
-
-
-
-**Left figure**: Cartopy14
 
 
 
@@ -189,8 +189,8 @@ See https://matplotlib.org/stable/plot_types/arrays/quiver.html
 Quivers, plain and regridded (requires cartopy)
 ------------------------------------------------------------------------------------------
 
-Some text
 
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_QuiversPlainAndRegridded.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D07_QuiversPlainAndRegridded.py>`__.
 
 
 
@@ -199,8 +199,6 @@ Some text
 .. |picCartopy16| image:: ../_static/ParametricCurves/Cartopy/Cartopy16.*
    :width: 80%
 
-
-**Left figure**: Cartopy16
 
 
 
@@ -213,9 +211,8 @@ Some text
 Barbs, North Atlantic Ocean and Europe (requires cartopy)
 ------------------------------------------------------------------------------------------
 
-Some text
 
-See https://matplotlib.org/stable/plot_types/arrays/barbs.html
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_BarbsNorthAtlantic.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D08_BarbsNorthAtlantic.py>`__.
 
 
 
@@ -224,10 +221,6 @@ See https://matplotlib.org/stable/plot_types/arrays/barbs.html
 |picCartopy15|
 
 .. |picCartopy15| image:: ../_static/ParametricCurves/Cartopy/Cartopy15.*
-
-
-
-**Left figure**: Cartopy15
 
 
 

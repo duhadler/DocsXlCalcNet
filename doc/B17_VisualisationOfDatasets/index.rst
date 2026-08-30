@@ -5,6 +5,13 @@
 Visualisation of datasets
 ************************************************************************************
 
+Text explaining the use of the Gallery
+
+
+Text explaining the use of the Visualisation of datasets
+
+
+
 
 .. toctree::
    :maxdepth: 3

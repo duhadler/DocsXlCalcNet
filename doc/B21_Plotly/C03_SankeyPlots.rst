@@ -27,17 +27,13 @@ Sankey plots
 ==============================================================
 
 
-See also: https://indranilsinharoy.com/2014/03/02/plotting-algebraic-surfaces-using-mayavi/
-
-
-
-
 
 
 Sankey plot 1
 ---------------------------------------------------------------------------------
 
-some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_PlotlySankey.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C03_SankeyPlots/D01_PlotlySankey.py>`__.
+
 
 
 
@@ -60,7 +56,9 @@ some text
 Sankey plot 2
 ---------------------------------------------------------------------------------
 
-some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_PlotlySankey.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C03_SankeyPlots/D02_PlotlySankey.py>`__.
+
 
 
 
@@ -83,7 +81,9 @@ some text
 Sankey plot 3
 ---------------------------------------------------------------------------------
 
-some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_PlotlySankey.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C03_SankeyPlots/D03_PlotlySankey.py>`__.
+
+
 
 
 

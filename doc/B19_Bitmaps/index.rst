@@ -20,9 +20,7 @@ Bitmaps
 
    C04_NewtonFractals.rst
 
-   C05_DomainOptions.rst
-
-   C06_DomainExamples1.rst
+   C05_DomainColoring.rst
 
 
 

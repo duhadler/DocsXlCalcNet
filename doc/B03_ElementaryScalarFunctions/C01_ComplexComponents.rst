@@ -59,6 +59,10 @@ Sign of a real or complex number
     (with the special case `\mathrm{sign}(0) = 0`):
 
 
+    See also: https://en.wikipedia.org/wiki/Sign_function
+
+
+
     Note that the sign function is also defined for complex numbers,
     for which it gives the projection onto the unit circle:
 

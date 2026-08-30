@@ -44,11 +44,16 @@ Fractals/fractalzoomer: https://en.wikibooks.org/wiki/Fractals/fractalzoomer
 
 
 
-Classical Mandelbrot set
+Mandelbrot set, example 1, classical set: `z_{n+1} = z_n^2 + c`
 --------------------------------------------------------------------------------
 
-some text
+Classical formula: `z_{n+1} = z_n^2 + c`.
 
+
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01a_Mandelbrot1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D01a_Mandelbrot1.py>`__.
+
+
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01b_Mandelbrot1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D01b_Mandelbrot1.py>`__.
 
 
 .. image:: ../_static/Combining2D3D/Mandelbrot/Mandelbrot1.*
@@ -62,10 +67,17 @@ some text
 |newpage|
 
 
-Mandelbrot set at higher powers
+Mandelbrot set, example 2: higher powers
 --------------------------------------------------------------------------------
 
-some text
+
+Recursion formula: `\displaystyle z_{n+1} = z_n^5 + c`.
+
+
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02a_Mandelbrot2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D02a_Mandelbrot2.py>`__.
+
+
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02b_Mandelbrot2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D02b_Mandelbrot2.py>`__.
 
 
 See also: https://paulbourke.net/fractals/mandelpower/
@@ -84,14 +96,19 @@ See also: http://www.3d-meier.de/, Mandelbrot und Julia Mengen
 |newpage|
 
 
-Mandelbrot 6
+Mandelbrot set, example 3: `z_{n+1} = z_n^5 + \frac{c}{z_n}`
 --------------------------------------------------------------------------------
 
-some text
+Recursion formula: `\displaystyle z_{n+1} = z_n^5 + \frac{c}{z_n}`.
 
 
 See also: http://www.3d-meier.de/, Mandelbrot und Julia Mengen
 
+
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03a_Mandelbrot3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D03a_Mandelbrot3.py>`__.
+
+
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03b_Mandelbrot3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D03b_Mandelbrot3.py>`__.
 
 
 
@@ -105,13 +122,23 @@ See also: http://www.3d-meier.de/, Mandelbrot und Julia Mengen
 |newpage|
 
 
-Mandelbrot 7
+Mandelbrot set, example 4: `z_{n+1} = z_n^5 + \frac{c}{z_n^5}`
 --------------------------------------------------------------------------------
 
-some text
+
+Recursion formula: `\displaystyle z_{n+1} = z_n^5 + \frac{c}{z_n^5}`.
+
 
 
 See also: http://www.3d-meier.de/, Mandelbrot und Julia Mengen
+
+
+
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04a_Mandelbrot4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D04a_Mandelbrot4.py>`__.
+
+
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04b_Mandelbrot4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D04b_Mandelbrot4.py>`__.
+
 
 
 
@@ -126,13 +153,21 @@ See also: http://www.3d-meier.de/, Mandelbrot und Julia Mengen
 |newpage|
 
 
-Inverse Mandelbrot
---------------------------------------------------------------------------------
+Mandelbrot set, example 5, "Inverse Mandelbrot"
+---------------------------------------------------------------------------------------
 
-some text
+
+Recursion formula: `\displaystyle z_{n+1} = z_n^2 + \frac{1}{c}`.
 
 
 See also: http://www.3d-meier.de/, Mandelbrot und Julia Mengen
+
+
+
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05a_Mandelbrot5.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D05a_Mandelbrot5.py>`__.
+
+
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05b_Mandelbrot5.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D05b_Mandelbrot5.py>`__.
 
 
 
@@ -151,14 +186,21 @@ See also: http://www.3d-meier.de/, Mandelbrot und Julia Mengen
 |newpage|
 
 
-Marek Dragon Fractal
+Mandelbrot set, example 6, "Marek Dragon Fractal": 
 --------------------------------------------------------------------------------
 
 Compare this with "Phoenix Julia fractals"
 
-
+Recursion formula: `\displaystyle z_{n+1} = \exp(2 \pi i r) z_n + z_n^2` where r is an irrational number, in this example it is `1 - (\sqrt{2} - \sqrt{3} + \sqrt{5} )/2`.
 
 See also: https://paulbourke.net/fractals/marek/
+
+
+
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06a_Mandelbrot6.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D06a_Mandelbrot6.py>`__.
+
+
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06b_Mandelbrot6.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D06b_Mandelbrot6.py>`__.
 
 
 
@@ -175,15 +217,25 @@ See also: https://paulbourke.net/fractals/marek/
 |newpage|
 
 
-Burning Ship Fractal
+Mandelbrot set, example 7, "Burning Ship Fractal"
 --------------------------------------------------------------------------------
 
-some text
+
+Recursion formula: `\displaystyle z_{n+1} = \left(|\Re(z_n)| + i|\Im(z_n)| \right)^2 + c`.
+
 
 
 See also: http://www.3d-meier.de/, Mandelbrot und Julia Mengen
 
 See also: https://paulbourke.net/fractals/burnship/
+
+
+
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07a_Mandelbrot7.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D07a_Mandelbrot7.py>`__.
+
+
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07b_Mandelbrot7.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D07b_Mandelbrot7.py>`__.
+
 
 
 

@@ -17,21 +17,21 @@ Matplotlib 3D Graphics
 
    C02_BasicExamples.rst
 
-   C04_BasicGeometricFigures.rst
+   C03_BasicGeometricFigures.rst
 
-   C05_RealFunctions.rst
+   C04_RealFunctions.rst
 
-   C06_ParametricSurfaces.rst
+   C05_ParametricSurfaces.rst
 
-   C07_ImageMappingAndClipping.rst
+   C06_ImageMappingAndClipping.rst
 
-   C08_EdgeToEdgeSurfaceColoring.rst
+   C07_EdgeToEdgeSurfaceColoring.rst
 
-   C09_DecorativeSurfaces.rst
+   C08_DecorativeSurfaces.rst
 
-   C10_GeometricDataGridMapping.rst
+   C09_GeometricDataGridMapping.rst
 
-   C11_ImplicitSurfaces.rst
+   C10_ImplicitSurfaces.rst
 
 
 

@@ -25,14 +25,20 @@ Complex functions rendered as contours
 
 
 
-
-
-
 Complex square function
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
 
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            Contour2dComplex(func=lambda z:z*z, wclip=20.0, 
+                showlevels=True, Title=r'$f(z)=z^2$')
 
 
 
@@ -51,9 +57,17 @@ Some text
 Complex sqrt function
 ------------------------------------------------------------------------------------------
 
-Some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
 
 
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            Contour2dComplex(func=np.sqrt, wclip=20.0, Title='f(z)=sqrt(z)')
 
 
 
@@ -66,10 +80,6 @@ Some text
 
 
 
-**Left figure**: Open Filled
-
-
-
 
 
 |newpage|
@@ -77,9 +87,17 @@ Some text
 Complex exp function
 ------------------------------------------------------------------------------------------
 
-Some text
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
 
 
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            Contour2dComplex(func=np.exp, wclip=20.0, Title='f(z)=exp(z)')
 
 
 
@@ -93,21 +111,22 @@ Some text
 
 
 
-**Left figure**: Open Filled
-
-
-
-
-
 
 |newpage|
 
 Complex log function
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
 
 
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            Contour2dComplex(func=np.log, wclip=2.5, Title='f(z)=log(z)')
 
 
 |CplxLogContour|
@@ -120,10 +139,6 @@ Some text
 
 
 
-**Left figure**: Open Filled
-
-
-
 
 
 |newpage|
@@ -131,10 +146,16 @@ Some text
 Complex sine function
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
 
 
+To produce the figure as shown below, the try-block at the end of the file should look like this:
 
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            Contour2dComplex(func=np.sin, wclip=20.0, Title='f(z)=sin(z)')
 
 
 |CplxSinContour|
@@ -148,20 +169,22 @@ Some text
 
 
 
-**Left figure**: Open Filled
-
-
-
-
 
 |newpage|
 
 Complex asin function
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
 
 
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            Contour2dComplex(func=np.asin, wclip=20.0, Title='f(z)=asin(z)')
 
 
 
@@ -173,9 +196,6 @@ Some text
 
 
 
-**Left figure**: Open Filled
-
-
 
 
 
@@ -185,9 +205,16 @@ Some text
 Complex tan function
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
 
 
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            Contour2dComplex(func=np.tan, wclip=2.0, Title='f(z)=tan(z)')
 
 
 
@@ -202,18 +229,22 @@ Some text
 
 
 
-**Left figure**: Open Filled
-
-
-
-
 
 |newpage|
 
 Complex atan function
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
+
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            Contour2dComplex(func=np.atan, wclip=20.0, Title='f(z)=atan(z)')
 
 
 
@@ -222,13 +253,6 @@ Some text
 
 .. |CplxAtanContour| image:: ../_static/FuncPlots2D/Complex/f(z)_=_atan(z).*
 
-
-
-
-
-
-
-**Left figure**: Open Filled
 
 
 

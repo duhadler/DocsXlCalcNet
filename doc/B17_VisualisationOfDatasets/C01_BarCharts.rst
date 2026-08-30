@@ -14,6 +14,7 @@
 
 
 
+|newpage|
 
 Bar Charts
 ==============================================================
@@ -25,8 +26,7 @@ Bar Charts
 Bar chart, part 1
 ------------------------------------------------------------------------------------------
 
-Some text
-
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_BarChartPart1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D01_BarChartPart1.py>`__.
 
 
 
@@ -50,7 +50,7 @@ Bar chart, part 1
 Bar chart, part 2
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D00_BarChartSimple.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D02_BarChartPart2.py>`__.
 
 
 
@@ -79,7 +79,7 @@ Bar chart, part 2
 Stacked Bar Plot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_StackedBarPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D03_StackedBarPlot.py>`__.
 
 
 
@@ -108,7 +108,7 @@ Some text
 Grouped Bar Plot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_GroupedBarPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D04_GroupedBarPlot.py>`__.
 
 
 
@@ -133,7 +133,7 @@ Some text
 Grouped StackedBar Plot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_GroupedStackedBarPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D05_GroupedStackedBarPlot.py>`__.
 
 
 
@@ -159,7 +159,7 @@ Some text
 Barplot with error bar
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_BarPlotWithErrorBar.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D06_BarPlotWithErrorBar.py>`__.
 
 
 
@@ -186,8 +186,10 @@ Some text
 Waterfall Plot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07a_WaterfallChart1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D07a_WaterfallChart1.py>`__.
 
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07b_WaterfallChart2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D07b_WaterfallChart2.py>`__.
 
 
 
@@ -219,7 +221,7 @@ Some text
 Mirror Histogram
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_MirrorHistogram.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D08_MirrorHistogram.py>`__.
 
 
 
@@ -245,7 +247,7 @@ Some text
 Horizontal Bar
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_HorizontalBarDist.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D09_HorizontalBarDist.py>`__.
 
 
 
@@ -272,7 +274,7 @@ Some text
 Horizontal Error Bar
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_HorizontalErrorBar.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D10_HorizontalErrorBar.py>`__.
 
 
 
@@ -298,7 +300,7 @@ Some text
 Stacked horizontal bar with labels
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11_StackedHBarWithLabels.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D11_StackedHBarWithLabels.py>`__.
 
 
 
@@ -326,7 +328,7 @@ Some text
 Stacked and grouped horizontal bar
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D12_StackedAndGroupedHBar.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D12_StackedAndGroupedHBar.py>`__.
 
 
 
@@ -352,7 +354,11 @@ Some text
 Gantt Chart
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13a_GanttChart1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D13a_GanttChart1.py>`__.
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13b_GanttChart2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D13b_GanttChart2.py>`__.
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13c_GanttChart3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D13c_GanttChart3.py>`__.
 
 
 
@@ -393,7 +399,7 @@ Some text
 Marketing Funnel
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D14_MarketingFunnel.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D14_MarketingFunnel.py>`__.
 
 
 
@@ -421,7 +427,7 @@ Some text
 Population Pyramid
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D15_PopulationPyramid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D15_PopulationPyramid.py>`__.
 
 
 
@@ -443,7 +449,7 @@ Some text
 Mirror Bar Plot (horizontal)
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D16_MirrorBarPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D16_MirrorBarPlot.py>`__.
 
 
 
@@ -467,6 +473,7 @@ Some text
 Tornado Chart
 ------------------------------------------------------------------------------------------
 
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D17_TornadoChart.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D17_TornadoChart.py>`__.
 
 
 |picTornadoChart|
@@ -492,7 +499,7 @@ Tornado Chart
 Circular Barplot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D18_CircularBarplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D18_CircularBarplot.py>`__.
 
 
 
@@ -517,7 +524,7 @@ Some text
 Barplot with color
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D19_BarplotColor.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D19_BarplotColor.py>`__.
 
 
 

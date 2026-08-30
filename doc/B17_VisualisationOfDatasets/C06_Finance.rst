@@ -33,7 +33,7 @@ See also for styling : https://coderzcolumn.com/tutorials/data-science/candlesti
 HiLoPlot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_Mpl_HiLo.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C06_Finance/D01_Mpl_HiLo.py>`__.
 
 
 
@@ -56,7 +56,7 @@ Some text
 CandlePlot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_Mpl_Candle.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C06_Finance/D02_Mpl_Candle.py>`__.
 
 
 
@@ -79,7 +79,7 @@ Some text
 LinePlot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_Mpl_Line.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C06_Finance/D03_Mpl_Line.py>`__.
 
 
 
@@ -101,7 +101,7 @@ Some text
 RenkoPlot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_Mpl_Renko.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C06_Finance/D04_Mpl_Renko.py>`__.
 
 
 
@@ -124,7 +124,7 @@ Some text
 PnfPlot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_Mpl_Pnf.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C06_Finance/D05_Mpl_Pnf.py>`__.
 
 
 
@@ -147,7 +147,7 @@ Some text
 OhlcMav4Plot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_Mpl_ohlc_mav.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C06_Finance/D06_Mpl_ohlc_mav.py>`__.
 
 
 
@@ -173,7 +173,7 @@ Some text
 CandleMav369Plot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_Mpl_candle_mav369.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C06_Finance/D07_Mpl_candle_mav369.py>`__.
 
 
 
@@ -199,7 +199,7 @@ Some text
 CandleMav369VolPlot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_Mpl_candle_mav369_vol.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C06_Finance/D08_Mpl_candle_mav369_vol.py>`__.
 
 
 
@@ -225,7 +225,7 @@ Some text
 CandleMav369VolNonTradPlot
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_Mpl_candle_mav369_vol_nontrad.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C06_Finance/D09_Mpl_candle_mav369_vol_nontrad.py>`__.
 
 
 

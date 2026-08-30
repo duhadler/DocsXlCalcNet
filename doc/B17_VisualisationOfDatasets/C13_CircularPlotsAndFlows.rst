@@ -29,7 +29,7 @@ Circular plots and flows
 Circular track plotting
 ------------------------------------------------------------------------------------------
 
-
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_CircularTrackplotting.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C13_CircularPlotsAndFlows/D01_CircularTrackplotting.py>`__.
 
 
 |picCircularTrackplotting|
@@ -51,7 +51,7 @@ Some text
 Circular heatmap
 ------------------------------------------------------------------------------------------
 
-
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_CircularHeatmap.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C13_CircularPlotsAndFlows/D02_CircularHeatmap.py>`__.
 
 
 
@@ -76,7 +76,7 @@ Some text
 Chord diagram (matrix 3x6)
 ------------------------------------------------------------------------------------------
 
-
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_ChordDiagramMatrix3x6.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C13_CircularPlotsAndFlows/D03_ChordDiagramMatrix3x6.py>`__.
 
 |picChordDiagramMatrix3x6|
 
@@ -97,7 +97,7 @@ Some text
 Chord diagram (matrix10x10)
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_ChordDiagramMatrix10x10.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C13_CircularPlotsAndFlows/D04_ChordDiagramMatrix10x10.py>`__.
 
 
 
@@ -123,7 +123,7 @@ Some text
 Chord diagram (from-to table)
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_ChordDiagramFromTo.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C13_CircularPlotsAndFlows/D05_ChordDiagramFromTo.py>`__.
 
 
 
@@ -149,7 +149,7 @@ Some text
 Circos plot: genom of a phage
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_CircosPlotGenomPhage.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C13_CircularPlotsAndFlows/D06_CircosPlotGenomPhage.py>`__.
 
 
 
@@ -175,7 +175,7 @@ Some text
 Circos plot: genom of homo sapiens
 ------------------------------------------------------------------------------------------
 
-
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_CircosPlotGenomHomoSapiens.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C13_CircularPlotsAndFlows/D07_CircosPlotGenomHomoSapiens.py>`__.
 
 
 |picCircosPlotGenomHomoSapiens|
@@ -195,6 +195,8 @@ Some text
 
 Circos plot: chromosome links
 ------------------------------------------------------------------------------------------
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_CircosPlotChromosomeLinks.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C13_CircularPlotsAndFlows/D08_CircosPlotChromosomeLinks.py>`__.
 
 
 
@@ -216,7 +218,7 @@ Some text
 Philogenetic tree: bars
 ------------------------------------------------------------------------------------------
 
-
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_PhilogeneticTreeBars.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C13_CircularPlotsAndFlows/D09_PhilogeneticTreeBars.py>`__.
 
 
 |picPhilogeneticTreeBars|
@@ -240,7 +242,7 @@ Some text
 Philogenetic tree: heatmap
 ------------------------------------------------------------------------------------------
 
-
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_PhilogeneticTreeHeatmap.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C13_CircularPlotsAndFlows/D10_PhilogeneticTreeHeatmap.py>`__.
 
 
 |picPhilogeneticTreeHeatmap|

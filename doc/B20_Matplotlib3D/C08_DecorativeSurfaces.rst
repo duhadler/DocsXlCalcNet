@@ -25,8 +25,12 @@ S3dlib: Decorative parametric surfaces
 
 
 
-demo_Surface_Colormap_2
+Shell surface with colormap
 ---------------------------------------------------------------------------------
+
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_Surface_Colormap_2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B20_Matplotlib3D/C08_DecorativeSurfaces/D01_Surface_Colormap_2.py>`__.
+
 
 See: https://s3dlib.org/examples/colormaps/shell.html
 
@@ -45,8 +49,12 @@ See: https://s3dlib.org/examples/colormaps/shell.html
 
 
 
-demo_Escher_Knot_2
+Escher Knot
 ---------------------------------------------------------------------------------
+
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_Escher_Knot_2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B20_Matplotlib3D/C08_DecorativeSurfaces/D02_Escher_Knot_2.py>`__.
+
 
 See: https://s3dlib.org/examples/showcase/mceknot_2.html
 
@@ -67,8 +75,12 @@ See: https://s3dlib.org/examples/showcase/mceknot_2.html
 |newpage|
 
 
-demo_Escher_Sphere_Spirals
+Escher sphere spirals
 ---------------------------------------------------------------------------------
+
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_Escher_Sphere_Spirals.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B20_Matplotlib3D/C08_DecorativeSurfaces/D03_Escher_Sphere_Spirals.py>`__.
+
 
 See: https://s3dlib.org/examples/showcase/sphericalspirals.html
 
@@ -87,8 +99,12 @@ See: https://s3dlib.org/examples/showcase/sphericalspirals.html
 |newpage|
 
 
-demo_Escher_Spirals
+Escher spirals
 ---------------------------------------------------------------------------------
+
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_Escher_Spirals.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B20_Matplotlib3D/C08_DecorativeSurfaces/D04_Escher_Spirals.py>`__.
+
 
 See: https://s3dlib.org/examples/showcase/spirals.html
 

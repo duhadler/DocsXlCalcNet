@@ -35,7 +35,7 @@ See also: https://networkx.org/documentation/stable/auto_examples/drawing/index.
 Multipartite_Layout
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_MultipartiteLayout.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C14_Networkx/D01_MultipartiteLayout.py>`__.
 
 
 
@@ -66,7 +66,7 @@ Some text
 Rainbow_Coloring
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_RainbowColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C14_Networkx/D02_RainbowColoring.py>`__.
 
 
 
@@ -95,7 +95,7 @@ Some text
 Random_Geometry
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_RandomGeometric.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C14_Networkx/D03_RandomGeometric.py>`__.
 
 
 
@@ -124,7 +124,7 @@ Some text
 Travelling_Salesman
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_TravellingSalesman.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C14_Networkx/D04_TravellingSalesman.py>`__.
 
 
 
@@ -154,7 +154,7 @@ Some text
 NapoleonRussianCampaign
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_NapoleonRussianCampaign.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C14_Networkx/D05_NapoleonRussianCampaign.py>`__.
 
 
 
@@ -182,7 +182,7 @@ Some text
 CommunityVisualisation
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_CommunityVisualisation.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C14_Networkx/D06_CommunityVisualisation.py>`__.
 
 
 
@@ -208,7 +208,7 @@ Some text
 ConnectedComponents
 ------------------------------------------------------------------------------------------
 
-Some text
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_ConnectedComponents.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C14_Networkx/D07_ConnectedComponents.py>`__.
 
 
 

@@ -35,24 +35,5 @@ See also: https://matplotlib.org/stable/api/toolkits/mplot3d/faq.html
 mplot3d was intended to allow users to create simple 3D graphs with the same "look-and-feel" as matplotlib's 2D plots. Furthermore, users can use the same toolkit that they are already familiar with to generate both their 2D and 3D plots.
 
 
-See also: https://jakevdp.github.io/PythonDataScienceHandbook/04.12-three-dimensional-plotting.html
-
-
-
-
-Use from CPython
----------------------------------------
-
-Some text
-
-
-
-
-Use from spreadsheet formulas
----------------------------------------
-
-Some text
-
-
 
 
