@@ -60,29 +60,27 @@ An example in C\#
 
 
 
-Below are 3D plots of this functions with different parameters, and `t \in (t_0, t_1)`:
+
+|D01a_CfUniform.3D| `\quad` |D01b_CfUniform.3D| `\quad` |D01c_CfUniform.3D|
 
 
-|Path_Func_CfUniform_a| `\quad` |Path_Func_CfUniform_b| `\quad` |Path_Func_CfUniform_c|
 
-.. |Path_Func_CfUniform_a| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfUniform_a.3D.xml.jpg
+.. |D01a_CfUniform.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D01a_CfUniform.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfUniform_b| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfUniform_a.3D.xml.jpg
+
+.. |D01b_CfUniform.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D01b_CfUniform.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfUniform_c| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfUniform_a.3D.xml.jpg
+
+.. |D01c_CfUniform.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D01c_CfUniform.3D.jpg
    :width: 30 %
+
 
 
 
 
 **Left figure**: Characteristic function of the uniform distribution, with `a=0.0`, `b=1.0`, `t_0=-20.0` and  `t_1=20.0`. Perspective camera. 
-
-**Middle figure**: Characteristic function of the uniform distribution, with `a=0`, `b=1`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
-
-**Right figure**: Characteristic function of the uniform distribution, with `a=0`, `b=1`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
-
 
 
 
@@ -119,28 +117,27 @@ An example in C\#
 
 
 
-Below are 3D plots of this functions with different parameters, and `t \in (t_0, t_1)`:
+
+|D02a_Path_Func_CfNormal.3D| `\quad` |D02b_Path_Func_CfNormal.3D| `\quad` |D02c_Path_Func_CfNormal.3D|
 
 
-|Path_Func_CfNormal_a| `\quad` |Path_Func_CfNormal_b| `\quad` |Path_Func_CfNormal_c|
 
-.. |Path_Func_CfNormal_a| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfNormal_a.3D.xml.jpg
+.. |D02a_Path_Func_CfNormal.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D02a_Path_Func_CfNormal.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfNormal_b| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfNormal_a.3D.xml.jpg
+
+.. |D02b_Path_Func_CfNormal.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D02b_Path_Func_CfNormal.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfNormal_c| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfNormal_a.3D.xml.jpg
+
+.. |D02c_Path_Func_CfNormal.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D02c_Path_Func_CfNormal.3D.jpg
    :width: 30 %
+
 
 
 
 
 **Left figure**: Characteristic function of the normal distribution, with `\mu=10`, `\sigma=1`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
-
-**Middle figure**: Characteristic function of the normal distribution, with `\mu=0`, `\sigma=1`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
-
-**Right figure**: Characteristic function of the normal distribution, with `\mu=0`, `\sigma=1`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
 
 
 
@@ -176,28 +173,24 @@ An example in C\#
 
 
 
-Below are 3D plots of this functions with different parameters, and `t \in (t_0, t_1)`:
+|D03a_Path_Func_CfChiSquared.3D| `\quad` |D03b_Path_Func_CfChiSquared.3D| `\quad` |D03c_Path_Func_CfChiSquared.3D|
 
 
-|Path_Func_CfChiSquared_a| `\quad` |Path_Func_CfChiSquared_b| `\quad` |Path_Func_CfChiSquared_c|
 
-.. |Path_Func_CfChiSquared_a| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfChiSquared_a.3D.xml.jpg
+.. |D03a_Path_Func_CfChiSquared.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D03a_Path_Func_CfChiSquared.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfChiSquared_b| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfChiSquared_a.3D.xml.jpg
+
+.. |D03b_Path_Func_CfChiSquared.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D03b_Path_Func_CfChiSquared.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfChiSquared_c| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfChiSquared_a.3D.xml.jpg
-   :width: 30 %
 
+.. |D03c_Path_Func_CfChiSquared.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D03c_Path_Func_CfChiSquared.3D.jpg
+   :width: 30 %
 
 
 
 **Left figure**: Characteristic function of the chi-squared distribution, with `n=100`, `t_0=-0.2` and  `t_1=0.2`. Perspective camera. 
-
-**Middle figure**: Characteristic function of the chi-squared distribution, with `n=10`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
-
-**Right figure**: Characteristic function of the chi-squared distribution, with `n=10`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
 
 
 
@@ -240,18 +233,20 @@ An example in C\#
 
 
 
-Below are 3D plots of this functions with different parameters, and `t \in (t_0, t_1)`:
+
+|D04a_Path_Func_CfBeta.3D| `\quad` |D04b_Path_Func_CfBeta.3D| `\quad` |D04c_Path_Func_CfBeta.3D|
 
 
-|Path_Func_CfBeta_a| `\quad` |Path_Func_CfBeta_b| `\quad` |Path_Func_CfBeta_c|
 
-.. |Path_Func_CfBeta_a| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfBeta_a.3D.xml.jpg
+.. |D04a_Path_Func_CfBeta.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D04a_Path_Func_CfBeta.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfBeta_b| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfBeta_a.3D.xml.jpg
+
+.. |D04b_Path_Func_CfBeta.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D04b_Path_Func_CfBeta.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfBeta_c| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfBeta_a.3D.xml.jpg
+
+.. |D04c_Path_Func_CfBeta.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D04c_Path_Func_CfBeta.3D.jpg
    :width: 30 %
 
 
@@ -259,9 +254,6 @@ Below are 3D plots of this functions with different parameters, and `t \in (t_0,
 
 **Left figure**: Characteristic function of the beta distribution, with `a=10`, `b=20`, `t_0=-40.0` and  `t_1=40.0`. Perspective camera. 
 
-**Middle figure**: Characteristic function of the beta distribution, with `a=20`, `b=40`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
-
-**Right figure**: Characteristic function of the beta distribution, with `a=20`, `b=40`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
 
 
 
@@ -304,28 +296,27 @@ An example in C\#
 
 
 
-Below are 3D plots of this functions with different parameters, and `t \in (t_0, t_1)`:
+
+|D05a_Path_Func_CfFisherF.3D| `\quad` |D05b_Path_Func_CfFisherF.3D| `\quad` |D05c_Path_Func_CfFisherF.3D|
 
 
-|Path_Func_CfFisherF_a| `\quad` |Path_Func_CfFisherF_b| `\quad` |Path_Func_CfFisherF_c|
 
-.. |Path_Func_CfFisherF_a| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfFisherF_a.3D.xml.jpg
+.. |D05a_Path_Func_CfFisherF.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D05a_Path_Func_CfFisherF.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfFisherF_b| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfFisherF_a.3D.xml.jpg
+
+.. |D05b_Path_Func_CfFisherF.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D05b_Path_Func_CfFisherF.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfFisherF_c| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfFisherF_a.3D.xml.jpg
+
+.. |D05c_Path_Func_CfFisherF.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D05c_Path_Func_CfFisherF.3D.jpg
    :width: 30 %
+
 
 
 
 
 **Left figure**: Characteristic function of the Fisher `F`-distribution, with `m=40`, `n=20`, `t_0=-20.0` and  `t_1=20.0`. Perspective camera. 
-
-**Middle figure**: Characteristic function of the Fisher `F`-distribution, with `m=20`, `n=40`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
-
-**Right figure**: Characteristic function of the Fisher `F`-distribution, with `m=20`, `n=40`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
 
 
 
@@ -366,29 +357,28 @@ An example in C\#
     var z = -fz.Imaginary;
     var x = t;
 
+    
 
-Below are 3D plots of this functions with different parameters, and `t \in (t_0, t_1)`:
+|D06a_Path_Func_CfChiSquaredNc.3D| `\quad` |D06b_Path_Func_CfChiSquaredNc.3D| `\quad` |D06c_Path_Func_CfChiSquaredNc.3D|
 
 
-|Path_Func_CfChiSquaredNc_a| `\quad` |Path_Func_CfChiSquaredNc_b| `\quad` |Path_Func_CfChiSquaredNc_c|
 
-.. |Path_Func_CfChiSquaredNc_a| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfChiSquaredNc_a.3D.xml.jpg
+.. |D06a_Path_Func_CfChiSquaredNc.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D06a_Path_Func_CfChiSquaredNc.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfChiSquaredNc_b| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfChiSquaredNc_a.3D.xml.jpg
+
+.. |D06b_Path_Func_CfChiSquaredNc.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D06b_Path_Func_CfChiSquaredNc.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfChiSquaredNc_c| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfChiSquaredNc_a.3D.xml.jpg
+
+.. |D06c_Path_Func_CfChiSquaredNc.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D06c_Path_Func_CfChiSquaredNc.3D.jpg
    :width: 30 %
+
 
 
 
 
 **Left figure**: Characteristic function of the noncentral chi-square distribution, with `\lambda=50`, `n=10`, `t_0=-0.2` and  `t_1=0.2`. Perspective camera. 
-
-**Middle figure**: Characteristic function of the noncentral chi-square distribution, with `\lambda=20`, `n=40`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
-
-**Right figure**: Characteristic function of the noncentral chi-square distribution, with `\lambda=20`, `n=40`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
 
 
 
@@ -426,30 +416,28 @@ An example in C\#
     var z = t;
 
 
+        
 
-Below are 3D plots of this functions with different parameters, and `t \in (t_0, t_1)`:
+|D07a_Path_Func_CfBinomial.3D| `\quad` |D07b_Path_Func_CfBinomial.3D| `\quad` |D07c_Path_Func_CfBinomial.3D|
 
 
-|Path_Func_CfBinomial_a| `\quad` |Path_Func_CfBinomial_b| `\quad` |Path_Func_CfBinomial_c|
 
-.. |Path_Func_CfBinomial_a| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfBinomial_a.3D.xml.jpg
+.. |D07a_Path_Func_CfBinomial.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D07a_Path_Func_CfBinomial.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfBinomial_b| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfBinomial_a.3D.xml.jpg
+
+.. |D07b_Path_Func_CfBinomial.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D07b_Path_Func_CfBinomial.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfBinomial_c| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfBinomial_a.3D.xml.jpg
+
+.. |D07c_Path_Func_CfBinomial.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D07c_Path_Func_CfBinomial.3D.jpg
    :width: 30 %
+
 
 
 
 
 **Left figure**: Characteristic function of the binomial distribution, with `p=0.5`, `n=20`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
-
-**Middle figure**: Characteristic function of the binomial distribution, with `p=0.5`, `n=40`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
-
-**Right figure**: Characteristic function of the binomial distribution, with `p=0.5`, `n=40`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
-
 
 
 
@@ -494,28 +482,27 @@ An example in C\#
     var z = t;
 
 
-Below are 3D plots of this functions with different parameters, and `t \in (t_0, t_1)`:
 
 
-|Path_Func_CfHypergeo_a| `\quad` |Path_Func_CfHypergeo_b| `\quad` |Path_Func_CfHypergeo_c|
+|D08a_Path_Func_CfHypergeo.3D| `\quad` |D08b_Path_Func_CfHypergeo.3D| `\quad` |D08c_Path_Func_CfHypergeo.3D|
 
-.. |Path_Func_CfHypergeo_a| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfHypergeo_a.3D.xml.jpg
+
+
+.. |D08a_Path_Func_CfHypergeo.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D08a_Path_Func_CfHypergeo.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfHypergeo_b| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfHypergeo_a.3D.xml.jpg
+
+.. |D08b_Path_Func_CfHypergeo.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D08b_Path_Func_CfHypergeo.3D.jpg
    :width: 30 %
 
-.. |Path_Func_CfHypergeo_c| image:: ../_static/PathSurfaces/CharFunc/Path_Func_CfHypergeo_a.3D.xml.jpg
+
+.. |D08c_Path_Func_CfHypergeo.3D| image:: ../_static/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D08c_Path_Func_CfHypergeo.3D.jpg
    :width: 30 %
 
 
 
 
 **Left figure**: Characteristic function of the hypergeometric distribution, with `N=50`, `K=16`, `n=12`, `t_0=-10.0` and  `t_1=10.0`. Perspective camera. 
-
-**Middle figure**: Characteristic function of the hypergeometric distribution, with `N=50`, `K=10`, `n=4`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
-
-**Right figure**: Characteristic function of the hypergeometric distribution, with `N=50`, `K=10`, `n=4`, `t_0=-2.0` and  `t_1=2.0`. Perspective camera. 
 
 
 

@@ -72,23 +72,38 @@ An example in C\#
     var z = b * t;
 
 
-Some text
+
+|D01a_Path_SpiralCylindrical.3D| `\quad` |D01b_Path_SpiralCylindrical.3D| `\quad` |D01c_Path_SpiralCylindrical.3D|
 
 
-|Path_SpiralCylindrical_a| `\quad` |PathD_SpiralCylindrical_a|
 
-.. |Path_SpiralCylindrical_a| image:: ../_static/PathSurfaces/Helices/Path_SpiralCylindrical_a.3D.xml.jpg
-   :width: 30 %
-
-.. |PathD_SpiralCylindrical_a| image:: ../_static/PathSurfaces/Helices/PathD_SpiralCylindrical_a.3D.xml.jpg
+.. |D01a_Path_SpiralCylindrical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D01a_Path_SpiralCylindrical.3D.jpg
    :width: 30 %
 
 
+.. |D01b_Path_SpiralCylindrical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D01b_Path_SpiralCylindrical.3D.jpg
+   :width: 30 %
 
 
-**Left figure**: Cylindrical helix. Perspective camera. 
+.. |D01c_Path_SpiralCylindrical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D01c_Path_SpiralCylindrical.3D.jpg
+   :width: 30 %
 
-**Right figure**: Cylindrical helix. Perspective camera. 
+
+
+|D01d_Path_SpiralCylindrical.3D| `\quad` |D01e_Path_SpiralCylindrical.3D| `\quad` |D01f_Path_SpiralCylindrical.3D|
+
+
+
+.. |D01d_Path_SpiralCylindrical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D01d_Path_SpiralCylindrical.3D.jpg
+   :width: 30 %
+
+
+.. |D01e_Path_SpiralCylindrical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D01e_Path_SpiralCylindrical.3D.jpg
+   :width: 30 %
+
+
+.. |D01f_Path_SpiralCylindrical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D01f_Path_SpiralCylindrical.3D.jpg
+   :width: 30 %
 
 
 
@@ -131,23 +146,39 @@ An example in C\#
     var z = (1.2 * t);
 
 
-Some text
 
 
-|Path_SpiralAConical_a| `\quad` |PathD_SpiralAConical_a|
+|D02a_Path_SpiralAConical.3D| `\quad` |D02b_Path_SpiralAConical.3D| `\quad` |D02c_Path_SpiralAConical.3D|
 
-.. |Path_SpiralAConical_a| image:: ../_static/PathSurfaces/Helices/Path_SpiralAConical_a.3D.xml.jpg
+
+
+.. |D02a_Path_SpiralAConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D02a_Path_SpiralAConical.3D.jpg
    :width: 30 %
 
-.. |PathD_SpiralAConical_a| image:: ../_static/PathSurfaces/Helices/PathD_SpiralAConical_a.3D.xml.jpg
+
+.. |D02b_Path_SpiralAConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D02b_Path_SpiralAConical.3D.jpg
+   :width: 30 %
+
+
+.. |D02c_Path_SpiralAConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D02c_Path_SpiralAConical.3D.jpg
    :width: 30 %
 
 
 
+|D02d_Path_SpiralAConical.3D| `\quad` |D02e_Path_SpiralAConical.3D| `\quad` |D02f_Path_SpiralAConical.3D|
 
-**Left figure**: Conical helix based on Archimedes spiral. Perspective camera. 
 
-**Right figure**: Conical helix based on Archimedes spiral. Perspective camera. 
+
+.. |D02d_Path_SpiralAConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D02d_Path_SpiralAConical.3D.jpg
+   :width: 30 %
+
+
+.. |D02e_Path_SpiralAConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D02e_Path_SpiralAConical.3D.jpg
+   :width: 30 %
+
+
+.. |D02f_Path_SpiralAConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D02f_Path_SpiralAConical.3D.jpg
+   :width: 30 %
 
 
 
@@ -184,24 +215,38 @@ An example in C\#
 
 
 
-Some text
+
+|D03a_Path_SpiralFConical.3D| `\quad` |D03b_Path_SpiralFConical.3D| `\quad` |D03c_Path_SpiralFConical.3D|
 
 
-|Path_SpiralFConical_a| `\quad` |PathD_SpiralFConical_a|
 
-.. |Path_SpiralFConical_a| image:: ../_static/PathSurfaces/Helices/Path_SpiralFConical_a.3D.xml.jpg
-   :width: 30 %
-
-.. |PathD_SpiralFConical_a| image:: ../_static/PathSurfaces/Helices/PathD_SpiralFConical_a.3D.xml.jpg
+.. |D03a_Path_SpiralFConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D03a_Path_SpiralFConical.3D.jpg
    :width: 30 %
 
 
+.. |D03b_Path_SpiralFConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D03b_Path_SpiralFConical.3D.jpg
+   :width: 30 %
 
 
-**Left figure**: Conical helix based on Fermat's spiral. Perspective camera. 
+.. |D03c_Path_SpiralFConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D03c_Path_SpiralFConical.3D.jpg
+   :width: 30 %
 
-**Right figure**: Conical helix based on Fermat's spiral. Perspective camera. 
 
+
+|D03d_Path_SpiralFConical.3D| `\quad` |D03e_Path_SpiralFConical.3D| `\quad` |D03f_Path_SpiralFConical.3D|
+
+
+
+.. |D03d_Path_SpiralFConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D03d_Path_SpiralFConical.3D.jpg
+   :width: 30 %
+
+
+.. |D03e_Path_SpiralFConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D03e_Path_SpiralFConical.3D.jpg
+   :width: 30 %
+
+
+.. |D03f_Path_SpiralFConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D03f_Path_SpiralFConical.3D.jpg
+   :width: 30 %
 
 
 
@@ -236,75 +281,40 @@ An example in C\#
 
 
 
-Some text
+
+|D04a_Path_SpiralLConical.3D| `\quad` |D04b_Path_SpiralLConical.3D| `\quad` |D04c_Path_SpiralLConical.3D|
 
 
-|Path_SpiralLConical_a| `\quad` |PathD_SpiralLConical_a|
 
-.. |Path_SpiralLConical_a| image:: ../_static/PathSurfaces/Helices/Path_SpiralLConical_a.3D.xml.jpg
-   :width: 30 %
-
-.. |PathD_SpiralLConical_a| image:: ../_static/PathSurfaces/Helices/PathD_SpiralLConical_a.3D.xml.jpg
+.. |D04a_Path_SpiralLConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D04a_Path_SpiralLConical.3D.jpg
    :width: 30 %
 
 
-
-
-**Left figure**: Conical helix based on the logarithmic spiral. Perspective camera. 
-
-**Right figure**: Conical helix based on the logarithmic spiral. Perspective camera. 
-
-
-
-
-
-
-
-
-|newpage|
-
-
-Conical helix based on the hyperbolic spiral
-----------------------------------------------------------
-
-See also: https://mathcurve.com/courbes3d.gb/spiralehyperbolique/spiralehyperbolique.shtml
-
-The hyperbolic conical spirals are the spirals traced on a cone of revolution that can be projected on the plane perpendicular to the axis onto a hyperbolic spiral with center the vertex of the cone.
-
-
-
-An example in C\#
-
-.. code-block:: csharp
-
-    double a = 1.0;
-    double m = 0.2 / Math.PI;
-    double phi = t * Math.PI;
-    double rphi = a / Math.Sqrt(phi);
-    var x = (rphi * Math.Cos(phi));
-    var y = (rphi * Math.Sin(phi));
-    var z = (m * rphi);
-
-
-
-
-Some text
-
-
-|Path_SpiralHConical_a| `\quad` |PathD_SpiralHConical_a|
-
-.. |Path_SpiralHConical_a| image:: ../_static/PathSurfaces/Helices/Path_SpiralHConical_a.3D.xml.jpg
+.. |D04b_Path_SpiralLConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D04b_Path_SpiralLConical.3D.jpg
    :width: 30 %
 
-.. |PathD_SpiralHConical_a| image:: ../_static/PathSurfaces/Helices/PathD_SpiralHConical_a.3D.xml.jpg
+
+.. |D04c_Path_SpiralLConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D04c_Path_SpiralLConical.3D.jpg
    :width: 30 %
 
 
 
+|D04d_Path_SpiralLConical.3D| `\quad` |D04e_Path_SpiralLConical.3D| `\quad` |D04f_Path_SpiralLConical.3D|
 
-**Left figure**: Conical helix based on the hyperbolic spiral. Perspective camera. 
 
-**Right figure**: Conical helix based on the hyperbolic spiral. Perspective camera. 
+
+.. |D04d_Path_SpiralLConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D04d_Path_SpiralLConical.3D.jpg
+   :width: 30 %
+
+
+.. |D04e_Path_SpiralLConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D04e_Path_SpiralLConical.3D.jpg
+   :width: 30 %
+
+
+.. |D04f_Path_SpiralLConical.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D04f_Path_SpiralLConical.3D.jpg
+   :width: 30 %
+
+
 
 
 
@@ -343,23 +353,39 @@ An example in C\#
 
 
 
-Some text
+
+|D05a_Path_SphericalRhumbline.3D| `\quad` |D05b_Path_SphericalRhumbline.3D| `\quad` |D05c_Path_SphericalRhumbline.3D|
 
 
-|Path_SphericalRhumbline_a| `\quad` |PathD_SphericalRhumbline_a|
 
-.. |Path_SphericalRhumbline_a| image:: ../_static/PathSurfaces/Helices/Path_SphericalRhumbline_a.3D.xml.jpg
-   :width: 30 %
-
-.. |PathD_SphericalRhumbline_a| image:: ../_static/PathSurfaces/Helices/PathD_SphericalRhumbline_a.3D.xml.jpg
+.. |D05a_Path_SphericalRhumbline.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D05a_Path_SphericalRhumbline.3D.jpg
    :width: 30 %
 
 
+.. |D05b_Path_SphericalRhumbline.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D05b_Path_SphericalRhumbline.3D.jpg
+   :width: 30 %
 
 
-**Left figure**: Rhumb line of the sphere. Perspective camera. 
+.. |D05c_Path_SphericalRhumbline.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D05c_Path_SphericalRhumbline.3D.jpg
+   :width: 30 %
 
-**Right figure**: Rhumb line of the sphere. Perspective camera. 
+
+
+
+|D05d_Path_SphericalRhumbline.3D| `\quad` |D05e_Path_SphericalRhumbline.3D| `\quad` |D05f_Path_SphericalRhumbline.3D|
+
+
+
+.. |D05d_Path_SphericalRhumbline.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D05d_Path_SphericalRhumbline.3D.jpg
+   :width: 30 %
+
+
+.. |D05e_Path_SphericalRhumbline.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D05e_Path_SphericalRhumbline.3D.jpg
+   :width: 30 %
+
+
+.. |D05f_Path_SphericalRhumbline.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D05f_Path_SphericalRhumbline.3D.jpg
+   :width: 30 %
 
 
 
@@ -401,23 +427,40 @@ An example in C\#
 
 
 
-Some text
+
+|D06a_Path_SphericalClelia.3D| `\quad` |D06b_Path_SphericalClelia.3D| `\quad` |D06c_Path_SphericalClelia.3D|
 
 
-|Path_SphericalClelia_a| `\quad` |PathD_SphericalClelia_a|
 
-.. |Path_SphericalClelia_a| image:: ../_static/PathSurfaces/Helices/Path_SphericalClelia_a.3D.xml.jpg
-   :width: 30 %
-
-.. |PathD_SphericalClelia_a| image:: ../_static/PathSurfaces/Helices/PathD_SphericalClelia_a.3D.xml.jpg
+.. |D06a_Path_SphericalClelia.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D06a_Path_SphericalClelia.3D.jpg
    :width: 30 %
 
 
+.. |D06b_Path_SphericalClelia.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D06b_Path_SphericalClelia.3D.jpg
+   :width: 30 %
 
 
-**Left figure**: Clelia. Perspective camera. 
+.. |D06c_Path_SphericalClelia.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D06c_Path_SphericalClelia.3D.jpg
+   :width: 30 %
 
-**Right figure**: Clelia. Perspective camera. 
+
+
+
+|D06d_Path_SphericalClelia.3D| `\quad` |D06e_Path_SphericalClelia.3D| `\quad` |D06f_Path_SphericalClelia.3D|
+
+
+
+.. |D06d_Path_SphericalClelia.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D06d_Path_SphericalClelia.3D.jpg
+   :width: 30 %
+
+
+.. |D06e_Path_SphericalClelia.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D06e_Path_SphericalClelia.3D.jpg
+   :width: 30 %
+
+
+.. |D06f_Path_SphericalClelia.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D06f_Path_SphericalClelia.3D.jpg
+   :width: 30 %
+
 
 
 
@@ -461,23 +504,38 @@ An example in C\#
 
 
 
-Some text
+
+|D07a_Path_SphericalHelix.3D| `\quad` |D07b_Path_SphericalHelix.3D| `\quad` |D07c_Path_SphericalHelix.3D|
 
 
-|Path_SphericalHelix_a| `\quad` |PathD_SphericalHelix_a|
 
-.. |Path_SphericalHelix_a| image:: ../_static/PathSurfaces/Helices/Path_SphericalHelix_a.3D.xml.jpg
-   :width: 30 %
-
-.. |PathD_SphericalHelix_a| image:: ../_static/PathSurfaces/Helices/PathD_SphericalHelix_a.3D.xml.jpg
+.. |D07a_Path_SphericalHelix.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D07a_Path_SphericalHelix.3D.jpg
    :width: 30 %
 
 
+.. |D07b_Path_SphericalHelix.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D07b_Path_SphericalHelix.3D.jpg
+   :width: 30 %
 
 
-**Left figure**: Spherical helix. Perspective camera. 
+.. |D07c_Path_SphericalHelix.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D07c_Path_SphericalHelix.3D.jpg
+   :width: 30 %
 
-**Right figure**: Spherical helix. Perspective camera. 
+
+
+|D07d_Path_SphericalHelix.3D| `\quad` |D07e_Path_SphericalHelix.3D| `\quad` |D07f_Path_SphericalHelix.3D|
+
+
+
+.. |D07d_Path_SphericalHelix.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D07d_Path_SphericalHelix.3D.jpg
+   :width: 30 %
+
+
+.. |D07e_Path_SphericalHelix.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D07e_Path_SphericalHelix.3D.jpg
+   :width: 30 %
+
+
+.. |D07f_Path_SphericalHelix.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D07f_Path_SphericalHelix.3D.jpg
+   :width: 30 %
 
 
 
@@ -522,69 +580,40 @@ An example in C\#
 
 
 
-Some text
+
+|D08a_Path_SphericalSatellite.3D| `\quad` |D08b_Path_SphericalSatellite.3D| `\quad` |D08c_Path_SphericalSatellite.3D|
 
 
-|Path_SphericalSatellite_a| `\quad` |PathD_SphericalSatellite_a|
 
-.. |Path_SphericalSatellite_a| image:: ../_static/PathSurfaces/Helices/Path_SphericalSatellite_a.3D.xml.jpg
-   :width: 30 %
-
-.. |PathD_SphericalSatellite_a| image:: ../_static/PathSurfaces/Helices/PathD_SphericalSatellite_a.3D.xml.jpg
+.. |D08a_Path_SphericalSatellite.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D08a_Path_SphericalSatellite.3D.jpg
    :width: 30 %
 
 
+.. |D08b_Path_SphericalSatellite.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D08b_Path_SphericalSatellite.3D.jpg
+   :width: 30 %
 
 
-**Left figure**: Satellite curve. Perspective camera. 
-
-**Right figure**: Satellite curve. Perspective camera. 
-
-
-
-
+.. |D08c_Path_SphericalSatellite.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D08c_Path_SphericalSatellite.3D.jpg
+   :width: 30 %
 
 
 
-
-|newpage|
-
-
-Seiffert's spiral
-----------------------------------------------------------------------------------------------------
-
-See also: https://en.wikipedia.org/wiki/Seiffert%27s_spiral
-
-See also: https://mathworld.wolfram.com/SeiffertsSphericalSpiral.html
+|D08d_Path_SphericalSatellite.3D| `\quad` |D08e_Path_SphericalSatellite.3D| `\quad` |D08f_Path_SphericalSatellite.3D|
 
 
 
-See also: https://en.wikipedia.org/wiki/Cylindrical_coordinate_system
+.. |D08d_Path_SphericalSatellite.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D08d_Path_SphericalSatellite.3D.jpg
+   :width: 30 %
 
 
-
-The spherical curve obtained when moving along the surface of a sphere with constant speed, while maintaining a constant angular velocity with respect to a fixed diameter (Erdős 2000). This curve is given in cylindrical coordinates by the parametric equations
-
-
-
-.. math:: r = sn(s,k),
-
-.. math:: \theta = k s,
-
-.. math:: z=cn(s,k),
+.. |D08e_Path_SphericalSatellite.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D08e_Path_SphericalSatellite.3D.jpg
+   :width: 30 %
 
 
-where k is a positive constant and sn(s) and cn(s) are Jacobi elliptic functions (Whittaker and Watson 1990, pp. 527-528).
-
-Erdős (2000) provides a derivation of the equations of this curve, as well as an analysis of its properties, including conditions for obtaining periodic orbits. 
+.. |D08f_Path_SphericalSatellite.3D| image:: ../_static/B24_WpfPathSurfaces/C04_HelicesAndRelated/D08f_Path_SphericalSatellite.3D.jpg
+   :width: 30 %
 
 
 
 
-Erdős, P. "Spiraling the Earth with C. G. J. Jacobi." Amer. J. Phys. 68, 888-895, 2000.
-
-Seiffert. "Über eine neue geometrische Einführung in die Theorie der elliptischen Funktionen." Wissensch. Beiträge Jahresber. Städtischen Realschule zu Charlottenburg, Ostern. 1896.
-
-
-Whittaker, E. T. and Watson, G. N. A Course in Modern Analysis, 4th ed. Cambridge, England: Cambridge University Press, 1990.
 

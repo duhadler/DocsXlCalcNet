@@ -28,6 +28,44 @@ Minimal surfaces
 
 
 
+
+
+Catenoid
+-----------------------------------------
+
+
+See also: https://mathworld.wolfram.com/Catenoid.html
+
+
+
+
+|01a_Catenoid.3D| `\quad` |01b_Catenoid.3D| `\quad` |01c_Catenoid.3D|
+
+
+
+.. |01a_Catenoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/01a_Catenoid.3D.jpg
+   :width: 30 %
+
+
+.. |01b_Catenoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/01b_Catenoid.3D.jpg
+   :width: 30 %
+
+
+.. |01c_Catenoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/01c_Catenoid.3D.jpg
+   :width: 30 %
+
+
+
+
+**Left figure**: Catenoid
+
+
+
+
+|newpage|
+
+
+
 Helicoid
 -------------------------------------
 
@@ -38,19 +76,22 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-|TestHelicoid_a| `\quad` |TestHelicoid_b|
+|02a_Helicoid.3D| `\quad` |02b_Helicoid.3D| `\quad` |02c_Helicoid.3D|
 
-.. |TestHelicoid_a| image:: ../_static/ParametricSurfaces/RuledMinimal/TestHelicoid_a.3D.xml.jpg
+
+
+.. |02a_Helicoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/02a_Helicoid.3D.jpg
    :width: 30 %
 
-.. |TestHelicoid_b| image:: ../_static/ParametricSurfaces/RuledMinimal/TestHelicoid_a.3D.xml.jpg
+
+.. |02b_Helicoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/02b_Helicoid.3D.jpg
    :width: 30 %
 
 
+.. |02c_Helicoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/02c_Helicoid.3D.jpg
+   :width: 30 %
 
-**Left figure**: Helicoid (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Right figure**: Helicoid (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -101,19 +142,21 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-|TestBour_a| `\quad` |TestBour_b|
+|03a_Bour.3D| `\quad` |03b_Bour.3D| `\quad` |03c_Bour.3D|
 
-.. |TestBour_a| image:: ../_static/ParametricSurfaces/RuledMinimal/TestBour_a.3D.xml.jpg
+
+
+.. |03a_Bour.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/03a_Bour.3D.jpg
    :width: 30 %
 
-.. |TestBour_b| image:: ../_static/ParametricSurfaces/RuledMinimal/TestBour_a.3D.xml.jpg
+
+.. |03b_Bour.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/03b_Bour.3D.jpg
    :width: 30 %
 
 
+.. |03c_Bour.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/03c_Bour.3D.jpg
+   :width: 30 %
 
-**Left figure**: Bours Minimal Surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Bours Minimal Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -144,19 +187,21 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-|TestCatalan_a| `\quad` |TestCatalan_b|
+|04a_Catalan.3D| `\quad` |04b_Catalan.3D| `\quad` |04c_Catalan.3D|
 
-.. |TestCatalan_a| image:: ../_static/ParametricSurfaces/RuledMinimal/TestCatalan_a.3D.xml.jpg
+
+
+.. |04a_Catalan.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/04a_Catalan.3D.jpg
    :width: 30 %
 
-.. |TestCatalan_b| image:: ../_static/ParametricSurfaces/RuledMinimal/TestCatalan_a.3D.xml.jpg
+
+.. |04b_Catalan.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/04b_Catalan.3D.jpg
    :width: 30 %
 
 
+.. |04c_Catalan.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/04c_Catalan.3D.jpg
+   :width: 30 %
 
-**Left figure**: Catalan Minimal Surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Catalan Minimal Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -188,21 +233,23 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
     z = v - v * v * v / 3 + v * u * u;
 
 
+    
+
+|05a_Enneper.3D| `\quad` |05b_Enneper.3D| `\quad` |05c_Enneper.3D|
 
 
-|TestEnneper_a| `\quad` |TestEnneper_b|
 
-.. |TestEnneper_a| image:: ../_static/ParametricSurfaces/RuledMinimal/TestEnneper_a.3D.xml.jpg
+.. |05a_Enneper.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/05a_Enneper.3D.jpg
    :width: 30 %
 
-.. |TestEnneper_b| image:: ../_static/ParametricSurfaces/RuledMinimal/TestEnneper_a.3D.xml.jpg
+
+.. |05b_Enneper.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/05b_Enneper.3D.jpg
    :width: 30 %
 
 
+.. |05c_Enneper.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/05c_Enneper.3D.jpg
+   :width: 30 %
 
-**Left figure**: Ennepers Minimal Surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Ennepers Minimal Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -236,21 +283,22 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
     y = a * (-i*(w + w2nm1)).Real;
     z = 2 * a * (wn/n).Real;
 
+    
+
+|06a_Enneper2.3D| `\quad` |06b_Enneper2.3D| `\quad` |06c_Enneper2.3D|
 
 
-|TestEnneper2_a| `\quad` |TestEnneper2_b|
 
-.. |TestEnneper2_a| image:: ../_static/ParametricSurfaces/RuledMinimal/TestEnneper2_a.3D.xml.jpg
+.. |06a_Enneper2.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/06a_Enneper2.3D.jpg
    :width: 30 %
 
-.. |TestEnneper2_b| image:: ../_static/ParametricSurfaces/RuledMinimal/TestEnneper2_a.3D.xml.jpg
+
+.. |06b_Enneper2.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/06b_Enneper2.3D.jpg
    :width: 30 %
 
 
-
-**Left figure**: Ennepers Minimal Surface2 (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Ennepers Minimal Surface2 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+.. |06c_Enneper2.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/06c_Enneper2.3D.jpg
+   :width: 30 %
 
 
 
@@ -287,20 +335,23 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
     z = 2*ch2u * c2v;
 
 
+    
 
-|TestHenneberg_a| `\quad` |TestHenneberg_b|
+|07a_Henneberg.3D| `\quad` |07b_Henneberg.3D| `\quad` |07c_Henneberg.3D|
 
-.. |TestHenneberg_a| image:: ../_static/ParametricSurfaces/RuledMinimal/TestHenneberg_a.3D.xml.jpg
+
+
+.. |07a_Henneberg.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/07a_Henneberg.3D.jpg
    :width: 30 %
 
-.. |TestHenneberg_b| image:: ../_static/ParametricSurfaces/RuledMinimal/TestHenneberg_a.3D.xml.jpg
+
+.. |07b_Henneberg.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/07b_Henneberg.3D.jpg
    :width: 30 %
 
 
+.. |07c_Henneberg.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/07c_Henneberg.3D.jpg
+   :width: 30 %
 
-**Left figure**: Hennebergs Minimal Surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Hennebergs Minimal Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -331,19 +382,22 @@ See also  :cite:t:`Krivoshapko2015`, p. 431
 
 
 
-|TestScherk1_a| `\quad` |TestScherk1_b|
+|08a_Scherk1.3D| `\quad` |08b_Scherk1.3D| `\quad` |08c_Scherk1.3D|
 
-.. |TestScherk1_a| image:: ../_static/ParametricSurfaces/RuledMinimal/TestScherk1_a.3D.xml.jpg
+
+
+.. |08a_Scherk1.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/08a_Scherk1.3D.jpg
    :width: 30 %
 
-.. |TestScherk1_b| image:: ../_static/ParametricSurfaces/RuledMinimal/TestScherk1_a.3D.xml.jpg
+
+.. |08b_Scherk1.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/08b_Scherk1.3D.jpg
    :width: 30 %
 
 
+.. |08c_Scherk1.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/08c_Scherk1.3D.jpg
+   :width: 30 %
 
-**Left figure**: Scherk’s first minimal surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Right figure**: Scherk’s first minimal surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -379,20 +433,21 @@ See also  :cite:t:`Krivoshapko2015`, p. 442
 
 
 
+|09a_Scherk2.3D| `\quad` |09b_Scherk2.3D| `\quad` |09c_Scherk2.3D|
 
-|TestScherk2_a| `\quad` |TestScherk2_b|
 
-.. |TestScherk2_a| image:: ../_static/ParametricSurfaces/RuledMinimal/TestScherk2_a.3D.xml.jpg
+
+.. |09a_Scherk2.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/09a_Scherk2.3D.jpg
    :width: 30 %
 
-.. |TestScherk2_b| image:: ../_static/ParametricSurfaces/RuledMinimal/TestScherk2_a.3D.xml.jpg
+
+.. |09b_Scherk2.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/09b_Scherk2.3D.jpg
    :width: 30 %
 
 
+.. |09c_Scherk2.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/09c_Scherk2.3D.jpg
+   :width: 30 %
 
-**Left figure**: Scherk’s second minimal surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Scherk’s second minimal surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -422,48 +477,42 @@ Richmond minimal surface
 
 
 
+    
 
 
-|TestRichmond_a| `\quad` |TestRichmond_b| `\quad` |TestRichmond_c|
+|10a_Richmond.3D| `\quad` |10b_Richmond.3D| `\quad` |10c_Richmond.3D|
 
-.. |TestRichmond_a| image:: ../_static/ParametricSurfaces/RuledMinimal/11a_TestRichmond.3D.xml.jpg
-   :width: 30 %
 
-.. |TestRichmond_b| image:: ../_static/ParametricSurfaces/RuledMinimal/11b_TestRichmond.3D.xml.jpg
-   :width: 30 %
 
-.. |TestRichmond_c| image:: ../_static/ParametricSurfaces/RuledMinimal/11c_TestRichmond.3D.xml.jpg
+.. |10a_Richmond.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/10a_Richmond.3D.jpg
    :width: 30 %
 
 
-
-**Left figure**: Richmond minimal surface  (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Middle figure**: Richmond minimal surface  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Richmond minimal surface  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
-
-|TestRichmond_d| `\quad` |TestRichmond_e| `\quad` |TestRichmond_f|
-
-.. |TestRichmond_d| image:: ../_static/ParametricSurfaces/RuledMinimal/11d_TestRichmond.3D.xml.jpg
-   :width: 30 %
-
-.. |TestRichmond_e| image:: ../_static/ParametricSurfaces/RuledMinimal/11e_TestRichmond.3D.xml.jpg
-   :width: 30 %
-
-.. |TestRichmond_f| image:: ../_static/ParametricSurfaces/RuledMinimal/11f_TestRichmond.3D.xml.jpg
+.. |10b_Richmond.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/10b_Richmond.3D.jpg
    :width: 30 %
 
 
+.. |10c_Richmond.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/10c_Richmond.3D.jpg
+   :width: 30 %
 
-**Left figure**: Richmond minimal surface  (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+      
 
-**Middle figure**: Richmond minimal surface  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Right figure**: Richmond minimal surface  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
+|10d_Richmond.3D| `\quad` |10e_Richmond.3D| `\quad` |10f_Richmond.3D|
+
+
+
+.. |10d_Richmond.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/10d_Richmond.3D.jpg
+   :width: 30 %
+
+
+.. |10e_Richmond.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/10e_Richmond.3D.jpg
+   :width: 30 %
+
+
+.. |10f_Richmond.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/10f_Richmond.3D.jpg
+   :width: 30 %
 
 
 
@@ -491,48 +540,41 @@ Generalized Ennneper surfaces
 
 
 
+    
+
+|11a_GenEnneper.3D| `\quad` |11b_GenEnneper.3D| `\quad` |11c_GenEnneper.3D|
 
 
-|TestGenEnneper_b| `\quad` |TestGenEnneper_c| `\quad` |TestGenEnneper_d|
 
-.. |TestGenEnneper_b| image:: ../_static/ParametricSurfaces/RuledMinimal/12b_TestGenEnneper.3D.xml.jpg
-   :width: 30 %
-
-.. |TestGenEnneper_c| image:: ../_static/ParametricSurfaces/RuledMinimal/12c_TestGenEnneper.3D.xml.jpg
-   :width: 30 %
-
-.. |TestGenEnneper_d| image:: ../_static/ParametricSurfaces/RuledMinimal/12d_TestGenEnneper.3D.xml.jpg
+.. |11a_GenEnneper.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/11a_GenEnneper.3D.jpg
    :width: 30 %
 
 
-
-**Left figure**: Richmond minimal surface  (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Middle figure**: Richmond minimal surface  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Richmond minimal surface  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
-
-|TestGenEnneper_e| `\quad` |TestGenEnneper_f| `\quad` |TestGenEnneper_g|
-
-.. |TestGenEnneper_e| image:: ../_static/ParametricSurfaces/RuledMinimal/12e_TestGenEnneper.3D.xml.jpg
+.. |11b_GenEnneper.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/11b_GenEnneper.3D.jpg
    :width: 30 %
 
-.. |TestGenEnneper_f| image:: ../_static/ParametricSurfaces/RuledMinimal/12f_TestGenEnneper.3D.xml.jpg
-   :width: 30 %
 
-.. |TestGenEnneper_g| image:: ../_static/ParametricSurfaces/RuledMinimal/12g_TestGenEnneper.3D.xml.jpg
+.. |11c_GenEnneper.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/11c_GenEnneper.3D.jpg
    :width: 30 %
 
 
 
-**Left figure**: Generalized Ennneper surface  (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Middle figure**: Generalized Ennneper surface  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Right figure**: Generalized Ennneper surface  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+|11d_GenEnneper.3D| `\quad` |11e_GenEnneper.3D| `\quad` |11f_GenEnneper.3D|
 
+
+
+.. |11d_GenEnneper.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/11d_GenEnneper.3D.jpg
+   :width: 30 %
+
+
+.. |11e_GenEnneper.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/11e_GenEnneper.3D.jpg
+   :width: 30 %
+
+
+.. |11f_GenEnneper.3D| image:: ../_static/B23_WpfParametricSurfaces/C04_MinimalSurfaces/11f_GenEnneper.3D.jpg
+   :width: 30 %
 
 
 

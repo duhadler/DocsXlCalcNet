@@ -50,25 +50,42 @@ An example in C\#
 
 
 
-|Path_Torus_Knot_3_2_aa| `\quad` |Path_Torus_Knot_3_2_bb| `\quad` |Path_Torus_Knot_3_2_cc|
 
-.. |Path_Torus_Knot_3_2_aa| image:: ../_static/PathSurfaces/TorusKnots/Path_Torus_Knot_3_2_aa.3D.xml.jpg
-   :width: 30 %
+|D01a_TorusKnotp3q2.3D| `\quad` |D01b_TorusKnotp3q2.3D| `\quad` |D01c_TorusKnotp3q2.3D|
 
-.. |Path_Torus_Knot_3_2_bb| image:: ../_static/PathSurfaces/TorusKnots/Path_Torus_Knot_3_2_bb.3D.xml.jpg
-   :width: 30 %
 
-.. |Path_Torus_Knot_3_2_cc| image:: ../_static/PathSurfaces/TorusKnots/Path_Torus_Knot_3_2_cc.3D.xml.jpg
+
+.. |D01a_TorusKnotp3q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D01a_TorusKnotp3q2.3D.jpg
    :width: 30 %
 
 
+.. |D01b_TorusKnotp3q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D01b_TorusKnotp3q2.3D.jpg
+   :width: 30 %
 
 
-**Left figure**: Torus knot 3:2 (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
+.. |D01c_TorusKnotp3q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D01c_TorusKnotp3q2.3D.jpg
+   :width: 30 %
 
-**Middle figure**: Torus knot 3:2 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
 
-**Right figure**: Torus knot 3:2 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
+
+
+
+
+|D01d_TorusKnotp3q2.3D| `\quad` |D01e_TorusKnotp3q2.3D| `\quad` |D01f_TorusKnotp3q2.3D|
+
+
+
+.. |D01d_TorusKnotp3q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D01d_TorusKnotp3q2.3D.jpg
+   :width: 30 %
+
+
+.. |D01e_TorusKnotp3q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D01e_TorusKnotp3q2.3D.jpg
+   :width: 30 %
+
+
+.. |D01f_TorusKnotp3q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D01f_TorusKnotp3q2.3D.jpg
+   :width: 30 %
+
 
 
 
@@ -102,25 +119,41 @@ An example in C\#
 
 
 
-|Path_Torus_Knot_5_2_aa| `\quad` |Path_Torus_Knot_5_2_bb| `\quad` |Path_Torus_Knot_5_2_cc|
 
-.. |Path_Torus_Knot_5_2_aa| image:: ../_static/PathSurfaces/TorusKnots/Path_Torus_Knot_5_2_aa.3D.xml.jpg
-   :width: 30 %
+|D02a_TorusKnotp5q2.3D| `\quad` |D02b_TorusKnotp5q2.3D| `\quad` |D02c_TorusKnotp5q2.3D|
 
-.. |Path_Torus_Knot_5_2_bb| image:: ../_static/PathSurfaces/TorusKnots/Path_Torus_Knot_5_2_bb.3D.xml.jpg
-   :width: 30 %
 
-.. |Path_Torus_Knot_5_2_cc| image:: ../_static/PathSurfaces/TorusKnots/Path_Torus_Knot_5_2_cc.3D.xml.jpg
+
+.. |D02a_TorusKnotp5q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D02a_TorusKnotp5q2.3D.jpg
    :width: 30 %
 
 
+.. |D02b_TorusKnotp5q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D02b_TorusKnotp5q2.3D.jpg
+   :width: 30 %
 
 
-**Left figure**: Torus knot 5:2 (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
+.. |D02c_TorusKnotp5q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D02c_TorusKnotp5q2.3D.jpg
+   :width: 30 %
 
-**Middle figure**: Torus knot 5:2 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
 
-**Right figure**: Torus knot 5:2 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
+
+
+
+
+|D02d_TorusKnotp5q2.3D| `\quad` |D02e_TorusKnotp5q2.3D| `\quad` |D02f_TorusKnotp5q2.3D|
+
+
+
+.. |D02d_TorusKnotp5q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D02d_TorusKnotp5q2.3D.jpg
+   :width: 30 %
+
+
+.. |D02e_TorusKnotp5q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D02e_TorusKnotp5q2.3D.jpg
+   :width: 30 %
+
+
+.. |D02f_TorusKnotp5q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D02f_TorusKnotp5q2.3D.jpg
+   :width: 30 %
 
 
 
@@ -157,25 +190,42 @@ An example in C\#
 
 
 
-|Path_Torus_Knot_7_2_aa| `\quad` |Path_Torus_Knot_7_2_bb| `\quad` |Path_Torus_Knot_7_2_cc|
 
-.. |Path_Torus_Knot_7_2_aa| image:: ../_static/PathSurfaces/TorusKnots/Path_Torus_Knot_7_2_aa.3D.xml.jpg
-   :width: 30 %
+|D03a_TorusKnotp7q2.3D| `\quad` |D03b_TorusKnotp7q2.3D| `\quad` |D03c_TorusKnotp7q2.3D|
 
-.. |Path_Torus_Knot_7_2_bb| image:: ../_static/PathSurfaces/TorusKnots/Path_Torus_Knot_7_2_bb.3D.xml.jpg
-   :width: 30 %
 
-.. |Path_Torus_Knot_7_2_cc| image:: ../_static/PathSurfaces/TorusKnots/Path_Torus_Knot_7_2_cc.3D.xml.jpg
+
+.. |D03a_TorusKnotp7q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D03a_TorusKnotp7q2.3D.jpg
    :width: 30 %
 
 
+.. |D03b_TorusKnotp7q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D03b_TorusKnotp7q2.3D.jpg
+   :width: 30 %
 
 
-**Left figure**: Torus knot 7:2 (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
+.. |D03c_TorusKnotp7q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D03c_TorusKnotp7q2.3D.jpg
+   :width: 30 %
 
-**Middle figure**: Torus knot 7:2 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
 
-**Right figure**: Torus knot 7:2 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
+
+
+
+
+|D03d_TorusKnotp7q2.3D| `\quad` |D03e_TorusKnotp7q2.3D| `\quad` |D03f_TorusKnotp7q2.3D|
+
+
+
+.. |D03d_TorusKnotp7q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D03d_TorusKnotp7q2.3D.jpg
+   :width: 30 %
+
+
+.. |D03e_TorusKnotp7q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D03e_TorusKnotp7q2.3D.jpg
+   :width: 30 %
+
+
+.. |D03f_TorusKnotp7q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D03f_TorusKnotp7q2.3D.jpg
+   :width: 30 %
+
 
 
 
@@ -206,25 +256,41 @@ An example in C\#
 
 
 
-|Path_Torus_Knot_7_3_aa| `\quad` |Path_Torus_Knot_7_3_bb| `\quad` |Path_Torus_Knot_7_3_cc|
 
-.. |Path_Torus_Knot_7_3_aa| image:: ../_static/PathSurfaces/TorusKnots/Path_Torus_Knot_7_3_aa.3D.xml.jpg
-   :width: 30 %
+|D04a_TorusKnotp7q3.3D| `\quad` |D04b_TorusKnotp7q3.3D| `\quad` |D04c_TorusKnotp7q3.3D|
 
-.. |Path_Torus_Knot_7_3_bb| image:: ../_static/PathSurfaces/TorusKnots/Path_Torus_Knot_7_3_bb.3D.xml.jpg
-   :width: 30 %
 
-.. |Path_Torus_Knot_7_3_cc| image:: ../_static/PathSurfaces/TorusKnots/Path_Torus_Knot_7_3_cc.3D.xml.jpg
+
+.. |D04a_TorusKnotp7q3.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D04a_TorusKnotp7q3.3D.jpg
    :width: 30 %
 
 
+.. |D04b_TorusKnotp7q3.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D04b_TorusKnotp7q3.3D.jpg
+   :width: 30 %
 
 
-**Left figure**: Torus knot 7:3 (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
+.. |D04c_TorusKnotp7q3.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D04c_TorusKnotp7q3.3D.jpg
+   :width: 30 %
 
-**Middle figure**: Torus knot 7:3 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
 
-**Right figure**: Torus knot 7:3 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
+
+
+
+
+|D04d_TorusKnotp7q3.3D| `\quad` |D04e_TorusKnotp7q3.3D| `\quad` |D04f_TorusKnotp7q3.3D|
+
+
+
+.. |D04d_TorusKnotp7q3.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D04d_TorusKnotp7q3.3D.jpg
+   :width: 30 %
+
+
+.. |D04e_TorusKnotp7q3.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D04e_TorusKnotp7q3.3D.jpg
+   :width: 30 %
+
+
+.. |D04f_TorusKnotp7q3.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D04f_TorusKnotp7q3.3D.jpg
+   :width: 30 %
 
 
 
@@ -254,26 +320,42 @@ An example in C\#
     var z = (r * Math.Sin(p * t)) / 50;
 
 
-|Path_Torus_Knot_15_2_aa| `\quad` |Path_Torus_Knot_15_2_bb| `\quad` |Path_Torus_Knot_15_2_cc|
 
-.. |Path_Torus_Knot_15_2_aa| image:: ../_static/PathSurfaces/TorusKnots/Path_Torus_Knot_15_2_aa.3D.xml.jpg
+
+|D05a_TorusKnotp15q2.3D| `\quad` |D05b_TorusKnotp15q2.3D| `\quad` |D05c_TorusKnotp15q2.3D|
+
+
+
+.. |D05a_TorusKnotp15q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D05a_TorusKnotp15q2.3D.jpg
    :width: 30 %
 
-.. |Path_Torus_Knot_15_2_bb| image:: ../_static/PathSurfaces/TorusKnots/Path_Torus_Knot_15_2_bb.3D.xml.jpg
+
+.. |D05b_TorusKnotp15q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D05b_TorusKnotp15q2.3D.jpg
    :width: 30 %
 
-.. |Path_Torus_Knot_15_2_cc| image:: ../_static/PathSurfaces/TorusKnots/Path_Torus_Knot_15_2_cc.3D.xml.jpg
+
+.. |D05c_TorusKnotp15q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D05c_TorusKnotp15q2.3D.jpg
    :width: 30 %
 
 
 
 
-**Left figure**: Torus knot 15:2 (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
 
-**Middle figure**: Torus knot 15:2 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
 
-**Right figure**: Torus knot 15:2 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
+|D05d_TorusKnotp15q2.3D| `\quad` |D05e_TorusKnotp15q2.3D| `\quad` |D05f_TorusKnotp15q2.3D|
 
+
+
+.. |D05d_TorusKnotp15q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D05d_TorusKnotp15q2.3D.jpg
+   :width: 30 %
+
+
+.. |D05e_TorusKnotp15q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D05e_TorusKnotp15q2.3D.jpg
+   :width: 30 %
+
+
+.. |D05f_TorusKnotp15q2.3D| image:: ../_static/B24_WpfPathSurfaces/C07_TorusKnots/D05f_TorusKnotp15q2.3D.jpg
+   :width: 30 %
 
 
 

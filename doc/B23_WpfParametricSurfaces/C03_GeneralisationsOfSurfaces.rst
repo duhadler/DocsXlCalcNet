@@ -68,18 +68,24 @@ See also  :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`.
 
 If the lengths of two axes of an ellipsoid are the same, the figure is called an ellipsoid of revolution or spheroid. Denote the equal semi-axes lengths of a spheroid `a=b`, call `a` the equatorial radius, and call the other semi-axis length the polar radius `c`. Then if `a>c`, the spheroid is called an oblate spheroid, and if `a<c`, the spheroid is called an prolate spheroid. If all three semi-axes lengths are the same so `a=b=c`, the ellipsoid is a sphere. 
 
-|picEllipsoid_a| `\quad` |picEllipsoid_b|
-
-.. |picEllipsoid_a| image:: ../_static/ParametricSurfaces/GenCommon/Ellipsoid_small.jpg
-    :width: 30 %
-
-.. |picEllipsoid_b| image:: ../_static/ParametricSurfaces/GenCommon/Ellipsoid_small.jpg
-    :width: 30 %
 
 
-**Left figure**: Ellipsoid
+|01a_Ellipsoid.3D| `\quad` |01b_Ellipsoid.3D| `\quad` |01c_Ellipsoid.3D|
 
-**Right figure**: Ellipsoid
+
+
+.. |01a_Ellipsoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/01a_Ellipsoid.3D.jpg
+   :width: 30 %
+
+
+.. |01b_Ellipsoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/01b_Ellipsoid.3D.jpg
+   :width: 30 %
+
+
+.. |01c_Ellipsoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/01c_Ellipsoid.3D.jpg
+   :width: 30 %
+
+
 
 
 
@@ -128,29 +134,23 @@ where `\displaystyle \frac{-\pi}{2} \le u  \le \frac{\pi}{2}`, `-\pi \le v  \le 
     z = tmp * Math.Sign(\sin(v)) * Math.Pow(Math.Abs(\sin(v)),p2);
 
 
-See also: http://paulbourke.net/geometry/spherical/
-See also: https://en.wikipedia.org/wiki/Superellipsoid
-See also: https://mathcurve.com/surfaces.gb/lame/lame.shtml
-See also: https://mathworld.wolfram.com/Ellipsoid.html        
-See also: https://mathworld.wolfram.com/Superellipsoid.html      
 
-See also  :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`.
+|02a_SuperEllipse.3D| `\quad` |02b_SuperEllipse.3D| `\quad` |02c_SuperEllipse.3D|
 
 
 
-|TestSuperEllipse_a| `\quad` |TestSuperEllipse_b|
-
-.. |TestSuperEllipse_a| image:: ../_static/ParametricSurfaces/GenCommon/TestSuperEllipse_a.3D.xml.jpg
-    :width: 30 %
-
-.. |TestSuperEllipse_b| image:: ../_static/ParametricSurfaces/GenCommon/TestSuperEllipse_a.3D.xml.jpg
-    :width: 30 %
+.. |02a_SuperEllipse.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/02a_SuperEllipse.3D.jpg
+   :width: 30 %
 
 
+.. |02b_SuperEllipse.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/02b_SuperEllipse.3D.jpg
+   :width: 30 %
 
-**Left figure**: Superellipsoid
 
-**Right figure**: Superellipsoid
+.. |02c_SuperEllipse.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/02c_SuperEllipse.3D.jpg
+   :width: 30 %
+
+
 
 
 
@@ -167,22 +167,6 @@ Hexaedron
 See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
-
-|TestHexaedron_a| `\quad` |TestHexaedron_b|
-
-.. |TestHexaedron_a| image:: ../_static/ParametricSurfaces/GenCommon/TestHexaedron_a.3D.xml.jpg
-   :width: 30 %
-
-.. |TestHexaedron_b| image:: ../_static/ParametricSurfaces/GenCommon/TestHexaedron_a.3D.xml.jpg
-   :width: 30 %
-
-
-
-**Left figure**: Hexaedron (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Hexaedron (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
 .. code-block:: csharp
 
     double cosu = Math.Cos(u);
@@ -192,6 +176,30 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
     x = cosv * cosv * cosv * cosu * cosu * cosu;
     y = -sinu * sinu * sinu;
     z = sinv * sinv * sinv * cosu * cosu * cosu;
+
+
+
+|03a_Hexaedron.3D| `\quad` |03b_Hexaedron.3D| `\quad` |03c_Hexaedron.3D|
+
+
+
+.. |03a_Hexaedron.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/03a_Hexaedron.3D.jpg
+   :width: 30 %
+
+
+.. |03b_Hexaedron.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/03b_Hexaedron.3D.jpg
+   :width: 30 %
+
+
+.. |03c_Hexaedron.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/03c_Hexaedron.3D.jpg
+   :width: 30 %
+
+
+
+
+
+**Left figure**: Hexaedron (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+
 
 
 
@@ -209,18 +217,25 @@ Super Toroid
 See also: http://paulbourke.net/geometry/toroidal/
 
 
-|TestSuperToroid_a| `\quad` |TestSuperToroid_b|
+|04a_SuperToroid.3D| `\quad` |04b_SuperToroid.3D| `\quad` |04c_SuperToroid.3D|
 
-.. |TestSuperToroid_a| image:: ../_static/ParametricSurfaces/GenCommon/TestSuperToroid_a.3D.xml.jpg
+
+
+.. |04a_SuperToroid.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/04a_SuperToroid.3D.jpg
    :width: 30 %
 
-.. |TestSuperToroid_b| image:: ../_static/ParametricSurfaces/GenCommon/TestSuperToroid_a.3D.xml.jpg
+
+.. |04b_SuperToroid.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/04b_SuperToroid.3D.jpg
    :width: 30 %
+
+
+.. |04c_SuperToroid.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/04c_SuperToroid.3D.jpg
+   :width: 30 %
+
 
 
 **Left figure**: Super Toroid (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Right figure**: Super Toroid (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 .. code-block:: csharp
@@ -266,19 +281,25 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-|TestEllipticHelicoid_a| `\quad` |TestEllipticHelicoid_b|
 
-.. |TestEllipticHelicoid_a| image:: ../_static/ParametricSurfaces/GenCommon/TestEllipticHelicoid_a.3D.xml.jpg
+|05a_EllipticHelicoid.3D| `\quad` |05b_EllipticHelicoid.3D| `\quad` |05c_EllipticHelicoid.3D|
+
+
+
+.. |05a_EllipticHelicoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/05a_EllipticHelicoid.3D.jpg
    :width: 30 %
 
-.. |TestEllipticHelicoid_b| image:: ../_static/ParametricSurfaces/GenCommon/TestEllipticHelicoid_a.3D.xml.jpg
+
+.. |05b_EllipticHelicoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/05b_EllipticHelicoid.3D.jpg
+   :width: 30 %
+
+
+.. |05c_EllipticHelicoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/05c_EllipticHelicoid.3D.jpg
    :width: 30 %
 
 
 
 **Left figure**: Elliptic Helicoid (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Elliptic Helicoid (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -311,17 +332,25 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-|TestHyperhelicoid_a| `\quad` |TestHyperhelicoid_b|
 
-.. |TestHyperhelicoid_a| image:: ../_static/ParametricSurfaces/GenCommon/TestHyperhelicoid_a.3D.xml.jpg
+|06a_Hyperhelicoid.3D| `\quad` |06b_Hyperhelicoid.3D| `\quad` |06c_Hyperhelicoid.3D|
+
+
+
+.. |06a_Hyperhelicoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/06a_Hyperhelicoid.3D.jpg
    :width: 30 %
 
-.. |TestHyperhelicoid_b| image:: ../_static/ParametricSurfaces/GenCommon/TestHyperhelicoid_a.3D.xml.jpg
+
+.. |06b_Hyperhelicoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/06b_Hyperhelicoid.3D.jpg
+   :width: 30 %
+
+
+.. |06c_Hyperhelicoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/06c_Hyperhelicoid.3D.jpg
    :width: 30 %
 
 
 
-**Left figure**: Hyperbolic Helicoid (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+
 
 **Right figure**: Hyperbolic Helicoid (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
@@ -356,16 +385,24 @@ See also: http://paulbourke.net/geometry/lemniscape/
 
 
 
-|TestLemnescate_a| `\quad` |TestLemnescate_b|
+|07a_Lemnescate.3D| `\quad` |07b_Lemnescate.3D| `\quad` |07c_Lemnescate.3D|
 
-.. |TestLemnescate_a| image:: ../_static/ParametricSurfaces/Removal/TestLemnescate_a.3D.xml.jpg
+
+
+.. |07a_Lemnescate.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/07a_Lemnescate.3D.jpg
    :width: 30 %
 
-.. |TestLemnescate_b| image:: ../_static/ParametricSurfaces/Removal/TestLemnescate_a.3D.xml.jpg
+
+.. |07b_Lemnescate.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/07b_Lemnescate.3D.jpg
    :width: 30 %
 
 
-**Left figure**: Lemniscape (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+.. |07c_Lemnescate.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/07c_Lemnescate.3D.jpg
+   :width: 30 %
+
+
+
+
 
 **Right figure**: Lemniscape (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
@@ -404,17 +441,23 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-|TestBohemianDome_a| `\quad` |TestBohemianDome_b|
+|08a_BohemianDome.3D| `\quad` |08b_BohemianDome.3D| `\quad` |08c_BohemianDome.3D|
 
-.. |TestBohemianDome_a| image:: ../_static/ParametricSurfaces/Removal/TestBohemianDome_a.3D.xml.jpg
+
+
+.. |08a_BohemianDome.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/08a_BohemianDome.3D.jpg
    :width: 30 %
 
-.. |TestBohemianDome_b| image:: ../_static/ParametricSurfaces/Removal/TestBohemianDome_a.3D.xml.jpg
+
+.. |08b_BohemianDome.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/08b_BohemianDome.3D.jpg
+   :width: 30 %
+
+
+.. |08c_BohemianDome.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/08c_BohemianDome.3D.jpg
    :width: 30 %
 
 
 
-**Left figure**: Bohemian Dome (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 **Right figure**: Bohemian Dome (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
@@ -446,17 +489,24 @@ See also: https://en.wikipedia.org/wiki/Dupin_cyclide#Elliptic_cyclides
 See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
-|picTestDupin1| `\quad` |picTestDupin2|
 
-.. |picTestDupin1| image:: ../_static/ParametricSurfaces/GenCommon/TestDupin1.3D.xm.jpg
+|09a_Dupin1.3D| `\quad` |09b_Dupin1.3D| `\quad` |09c_Dupin1.3D|
+
+
+
+.. |09a_Dupin1.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/09a_Dupin1.3D.jpg
    :width: 30 %
 
-.. |picTestDupin2| image:: ../_static/ParametricSurfaces/GenCommon/TestDupin1.3D.xml.jpg
+
+.. |09b_Dupin1.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/09b_Dupin1.3D.jpg
+   :width: 30 %
+
+
+.. |09c_Dupin1.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/09c_Dupin1.3D.jpg
    :width: 30 %
 
 
 
-**Left figure**: Dupin1 Surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 **Right figure**: Dupin1 Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
@@ -497,17 +547,23 @@ See also: https://en.wikipedia.org/wiki/Dupin_cyclide#Parabolic_cyclides
 See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
-|TestDupin2_a| `\quad` |TestDupin2_b|
 
-.. |TestDupin2_a| image:: ../_static/ParametricSurfaces/GenCommon/TestDupin2_a.3D.xml.jpg
+|10a_Dupin2.3D| `\quad` |10b_Dupin2.3D| `\quad` |10c_Dupin2.3D|
+
+
+
+.. |10a_Dupin2.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/10a_Dupin2.3D.jpg
    :width: 30 %
 
-.. |TestDupin2_b| image:: ../_static/ParametricSurfaces/GenCommon/TestDupin2_a.3D.xml.jpg
+
+.. |10b_Dupin2.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/10b_Dupin2.3D.jpg
    :width: 30 %
 
 
+.. |10c_Dupin2.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/10c_Dupin2.3D.jpg
+   :width: 30 %
 
-**Left figure**: Dupin2 Surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+
 
 **Right figure**: Dupin2 Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
@@ -541,16 +597,23 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-|picTestDini1| `\quad` |picTestDini2|
-
-.. |picTestDini1| image:: ../_static/ParametricSurfaces/GenCommon/TestDini.3D.xm.jpg
-   :width: 30 %
-
-.. |picTestDini2| image:: ../_static/ParametricSurfaces/GenCommon/TestDini.3D.xml.jpg
-   :width: 30 %
+|11a_Dini.3D| `\quad` |11b_Dini.3D| `\quad` |11c_Dini.3D|
 
 
-**Left figure**: Dinis Surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+
+.. |11a_Dini.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/11a_Dini.3D.jpg
+   :height: 300 px
+
+
+.. |11b_Dini.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/11b_Dini.3D.jpg
+   :height: 300 px
+
+
+.. |11c_Dini.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/11c_Dini.3D.jpg
+   :height: 300 px
+
+
+
 
 **Right figure**: Dinis Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
@@ -599,24 +662,43 @@ Plueckers conoid
 
 
 
-|TestPluecker_a| `\quad` |TestPluecker_b| `\quad` |TestPluecker_c|
+|12a_Pluecker.3D| `\quad` |12b_Pluecker.3D| `\quad` |12c_Pluecker.3D|
 
-.. |TestPluecker_a| image:: ../_static/ParametricSurfaces/GenCommon/10a_TestPluecker.3D.xml.jpg
-   :width: 30 %
 
-.. |TestPluecker_b| image:: ../_static/ParametricSurfaces/GenCommon/10b_TestPluecker.3D.xml.jpg
-   :width: 30 %
 
-.. |TestPluecker_c| image:: ../_static/ParametricSurfaces/GenCommon/10c_TestPluecker.3D.xml.jpg
+.. |12a_Pluecker.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/12a_Pluecker.3D.jpg
    :width: 30 %
 
 
+.. |12b_Pluecker.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/12b_Pluecker.3D.jpg
+   :width: 30 %
 
-**Left figure**: Plueckers Conoid (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Middle figure**: Plueckers Conoid (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+.. |12c_Pluecker.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/12c_Pluecker.3D.jpg
+   :width: 30 %
+
+
 
 **Right figure**: Plueckers Conoid (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+
+
+
+|12d_Pluecker.3D| `\quad` |12e_Pluecker.3D| `\quad` |12f_Pluecker.3D|
+
+
+
+.. |12d_Pluecker.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/12d_Pluecker.3D.jpg
+   :width: 30 %
+
+
+.. |12e_Pluecker.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/12e_Pluecker.3D.jpg
+   :width: 30 %
+
+
+.. |12f_Pluecker.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/12f_Pluecker.3D.jpg
+   :width: 30 %
+
+
 
 
 
@@ -645,13 +727,20 @@ Umbilic Torus
 
 
 
-|TestUmbilicTorus|
+|13a_UmbilicTorus.3D| `\quad` |13b_UmbilicTorus.3D| `\quad` |13c_UmbilicTorus.3D|
 
-.. |TestUmbilicTorus| image:: ../_static/ParametricSurfaces/GenCommon/11a_TestUmbilicTorus.3D.xml.jpg
+
+
+.. |13a_UmbilicTorus.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/13a_UmbilicTorus.3D.jpg
    :width: 30 %
 
 
-**Left figure**: Umbilic Torus (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+.. |13b_UmbilicTorus.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/13b_UmbilicTorus.3D.jpg
+   :width: 30 %
+
+
+.. |13c_UmbilicTorus.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/13c_UmbilicTorus.3D.jpg
+   :width: 30 %
 
 
 
@@ -669,26 +758,44 @@ Skidian's ruled surface
 
 
 
-|TestSkidan_a| `\quad` |TestSkidan_b| `\quad` |TestSkidan_c|
+|14a_Skidan.3D| `\quad` |14b_Skidan.3D| `\quad` |14c_Skidan.3D|
 
-.. |TestSkidan_a| image:: ../_static/ParametricSurfaces/GenCommon/12a_TestSkidan.3D.xml.jpg
+
+
+.. |14a_Skidan.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/14a_Skidan.3D.jpg
    :width: 30 %
 
-.. |TestSkidan_b| image:: ../_static/ParametricSurfaces/GenCommon/12b_TestSkidan.3D.xml.jpg
+
+.. |14b_Skidan.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/14b_Skidan.3D.jpg
    :width: 30 %
 
-.. |TestSkidan_c| image:: ../_static/ParametricSurfaces/GenCommon/12c_TestSkidan.3D.xml.jpg
+
+.. |14c_Skidan.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/14c_Skidan.3D.jpg
    :width: 30 %
+
+
 
 
 
 **Left figure**: Skidian's ruled surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Middle figure**: Skidian's ruled surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Skidian's ruled surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
+
+|14d_Skidan.3D| `\quad` |14e_Skidan.3D| `\quad` |14f_Skidan.3D|
+
+
+
+.. |14d_Skidan.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/14d_Skidan.3D.jpg
+   :width: 30 %
+
+
+.. |14e_Skidan.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/14e_Skidan.3D.jpg
+   :width: 30 %
+
+
+.. |14f_Skidan.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/14f_Skidan.3D.jpg
+   :width: 30 %
 
 
 
@@ -707,9 +814,20 @@ Umbrella surface
 // See Krivoshapko, p. 521, 526, 530, 531, 533
 
 
-|TestUmbrella|
 
-.. |TestUmbrella| image:: ../_static/ParametricSurfaces/GenCommon/13a_TestUmbrella.3D.xml.jpg
+|15a_Umbrella.3D| `\quad` |15b_Umbrella.3D| `\quad` |15c_Umbrella.3D|
+
+
+
+.. |15a_Umbrella.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/15a_Umbrella.3D.jpg
+   :width: 30 %
+
+
+.. |15b_Umbrella.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/15b_Umbrella.3D.jpg
+   :width: 30 %
+
+
+.. |15c_Umbrella.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/15c_Umbrella.3D.jpg
    :width: 30 %
 
 
@@ -717,6 +835,21 @@ Umbrella surface
 
 
 
+
+|15d_Umbrella.3D| `\quad` |15e_Umbrella.3D| `\quad` |15f_Umbrella.3D|
+
+
+
+.. |15d_Umbrella.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/15d_Umbrella.3D.jpg
+   :width: 30 %
+
+
+.. |15e_Umbrella.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/15e_Umbrella.3D.jpg
+   :width: 30 %
+
+
+.. |15f_Umbrella.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/15f_Umbrella.3D.jpg
+   :width: 30 %
 
 
 
@@ -731,109 +864,100 @@ Cyclic surfaces (generalized torus)
 // See Krivoshapko, p. 376
 
 
-|CyclicSurface_a| `\quad` |CyclicSurface_b| `\quad` |CyclicSurface_c|
 
-.. |CyclicSurface_a| image:: ../_static/ParametricSurfaces/GenCommon/14a_CyclicSurface1.3D.xml.jpg
+
+|16a_CyclicSurface1.3D| `\quad` |16b_CyclicSurface2.3D| `\quad` |16c_CyclicSurface1.3D|
+
+
+
+.. |16a_CyclicSurface1.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/16a_CyclicSurface1.3D.jpg
    :width: 30 %
 
-.. |CyclicSurface_b| image:: ../_static/ParametricSurfaces/GenCommon/14b_CyclicSurface2.3D.xml.jpg
+
+.. |16b_CyclicSurface2.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/16b_CyclicSurface2.3D.jpg
    :width: 30 %
 
-.. |CyclicSurface_c| image:: ../_static/ParametricSurfaces/GenCommon/14c_CyclicSurface1.3D.xml.jpg
-   :width: 30 %
 
-
-
-**Left figure**: Cyclic surfaces (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Middle figure**: Cyclic surfaces (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Cyclic surfaces (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
-
-
-|CyclicSurface_d| `\quad` |CyclicSurface_e| `\quad` |CyclicSurface_f|
-
-.. |CyclicSurface_d| image:: ../_static/ParametricSurfaces/GenCommon/14d_CyclicSurface2.3D.xml.jpg
-   :width: 30 %
-
-.. |CyclicSurface_e| image:: ../_static/ParametricSurfaces/GenCommon/14e_CyclicSurface2.3D.xml.jpg
-   :width: 30 %
-
-.. |CyclicSurface_f| image:: ../_static/ParametricSurfaces/GenCommon/14f_CyclicSurface2.3D.xml.jpg
+.. |16c_CyclicSurface1.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/16c_CyclicSurface1.3D.jpg
    :width: 30 %
 
 
 
-**Left figure**: Cyclic surfaces (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Middle figure**: Cyclic surfaces (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Right figure**: Cyclic surfaces (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+|16d_CyclicSurface2.3D| `\quad` |16e_CyclicSurface2.3D| `\quad` |16f_CyclicSurface2.3D|
 
 
 
-
-|CyclicSurface_g| `\quad` |CyclicSurface_h| `\quad` |CyclicSurface_i|
-
-.. |CyclicSurface_g| image:: ../_static/ParametricSurfaces/GenCommon/14g_CyclicSurface2.3D.xml.jpg
+.. |16d_CyclicSurface2.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/16d_CyclicSurface2.3D.jpg
    :width: 30 %
 
-.. |CyclicSurface_h| image:: ../_static/ParametricSurfaces/GenCommon/14h_CyclicSurface2.3D.xml.jpg
+
+.. |16e_CyclicSurface2.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/16e_CyclicSurface2.3D.jpg
    :width: 30 %
 
-.. |CyclicSurface_i| image:: ../_static/ParametricSurfaces/GenCommon/14i_CyclicSurface2.3D.xml.jpg
+
+.. |16f_CyclicSurface2.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/16f_CyclicSurface2.3D.jpg
    :width: 30 %
 
 
 
-**Left figure**: Cyclic surfaces (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Middle figure**: Cyclic surfaces (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Cyclic surfaces (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
 
 
-|CyclicSurface_j| `\quad` |CyclicSurface_k| `\quad` |CyclicSurface_l|
+|16g_CyclicSurface2.3D| `\quad` |16h_CyclicSurface2.3D| `\quad` |16i_CyclicSurface2.3D|
 
-.. |CyclicSurface_j| image:: ../_static/ParametricSurfaces/GenCommon/14j_CyclicSurface2.3D.xml.jpg
-   :width: 30 %
 
-.. |CyclicSurface_k| image:: ../_static/ParametricSurfaces/GenCommon/14k_CyclicSurface2.3D.xml.jpg
-   :width: 30 %
 
-.. |CyclicSurface_l| image:: ../_static/ParametricSurfaces/GenCommon/14l_CyclicSurface3.3D.xml.jpg
+.. |16g_CyclicSurface2.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/16g_CyclicSurface2.3D.jpg
    :width: 30 %
 
 
-
-**Left figure**: Cyclic surfaces (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Middle figure**: Cyclic surfaces (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Cyclic surfaces (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
-
-
-|CyclicSurface_m| `\quad` |CyclicSurface_n|
-
-.. |CyclicSurface_m| image:: ../_static/ParametricSurfaces/GenCommon/14m_CyclicSurface3.3D.xml.jpg
-   :width: 30 %
-
-.. |CyclicSurface_n| image:: ../_static/ParametricSurfaces/GenCommon/14n_CyclicSurface3.3D.xml.jpg
+.. |16h_CyclicSurface2.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/16h_CyclicSurface2.3D.jpg
    :width: 30 %
 
 
+.. |16i_CyclicSurface2.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/16i_CyclicSurface2.3D.jpg
+   :width: 30 %
+   
 
-**Left figure**: Cyclic surfaces (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Right figure**: Cyclic surfaces (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
+
+
+
+|16j_CyclicSurface2.3D| `\quad` |16k_CyclicSurface2.3D| `\quad` |16l_CyclicSurface3.3D|
+
+
+
+.. |16j_CyclicSurface2.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/16j_CyclicSurface2.3D.jpg
+   :width: 30 %
+
+
+.. |16k_CyclicSurface2.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/16k_CyclicSurface2.3D.jpg
+   :width: 30 %
+
+
+.. |16l_CyclicSurface3.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/16l_CyclicSurface3.3D.jpg
+   :width: 30 %
+
+
+
+
+
+
+
+|16m_CyclicSurface3.3D| `\quad` |16n_CyclicSurface3.3D| 
+
+
+.. |16m_CyclicSurface3.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/16m_CyclicSurface3.3D.jpg
+   :width: 30 %
+
+
+.. |16n_CyclicSurface3.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/16n_CyclicSurface3.3D.jpg
+   :width: 30 %
 
 
 
@@ -856,45 +980,39 @@ Goursat surfaces
 
 
 
-|TestGoursat_a| `\quad` |TestGoursat_b| `\quad` |TestGoursat_c|
 
-.. |TestGoursat_a| image:: ../_static/ParametricSurfaces/GenCommon/15a_TestGoursat1.3D.xml.jpg
-   :width: 30 %
+|17a_Goursat1.3D| `\quad` |17b_Goursat4.3D| `\quad` |17c_Goursat2.3D|
 
-.. |TestGoursat_b| image:: ../_static/ParametricSurfaces/GenCommon/15b_TestGoursat1.3D.xml.jpg
-   :width: 30 %
 
-.. |TestGoursat_c| image:: ../_static/ParametricSurfaces/GenCommon/15c_TestGoursat2.3D.xml.jpg
+
+.. |17a_Goursat1.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/17a_Goursat1.3D.jpg
    :width: 30 %
 
 
-
-**Left figure**: Goursat surfaces  (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Middle figure**: Goursat surfaces  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Goursat surfaces  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
-
-|TestGoursat_d| `\quad` |TestGoursat_e| `\quad` |TestGoursat_f|
-
-.. |TestGoursat_d| image:: ../_static/ParametricSurfaces/GenCommon/15d_TestGoursat2.3D.xml.jpg
+.. |17b_Goursat4.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/17b_Goursat4.3D.jpg
    :width: 30 %
 
-.. |TestGoursat_e| image:: ../_static/ParametricSurfaces/GenCommon/15f_TestGoursat4.3D.xml.jpg
-   :width: 30 %
 
-.. |TestGoursat_f| image:: ../_static/ParametricSurfaces/GenCommon/15g_TestGoursat5.3D.xml.jpg
+.. |17c_Goursat2.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/17c_Goursat2.3D.jpg
    :width: 30 %
 
 
 
-**Left figure**: Goursat surfaces  (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Middle figure**: Goursat surfaces  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+|17d_Goursat1.3D| `\quad` |17e_Goursat4.3D| `\quad` |17f_Goursat2.3D|
 
-**Right figure**: Goursat surfaces  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+
+
+.. |17d_Goursat1.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/17d_Goursat1.3D.jpg
+   :width: 30 %
+
+
+.. |17e_Goursat4.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/17e_Goursat4.3D.jpg
+   :width: 30 %
+
+
+.. |17f_Goursat2.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/17f_Goursat2.3D.jpg
+   :width: 30 %
 
 
 
@@ -912,24 +1030,39 @@ Cyclides triples
 
 
 
-|CyclidesTriple_a| `\quad` |CyclidesTriple_b| `\quad` |CyclidesTriple_c|
 
-.. |CyclidesTriple_a| image:: ../_static/ParametricSurfaces/GenCommon/16a_TestCyclidesTriple.3D.xml.jpg
-   :width: 30 %
+|18a_CyclidesTriple.3D| `\quad` |18b_CyclidesTriple.3D| `\quad` |18c_CyclidesTriple.3D|
 
-.. |CyclidesTriple_b| image:: ../_static/ParametricSurfaces/GenCommon/16b_TestCyclidesTriple.3D.xml.jpg
-   :width: 30 %
 
-.. |CyclidesTriple_c| image:: ../_static/ParametricSurfaces/GenCommon/16c_TestCyclidesTriple.3D.xml.jpg
+
+.. |18a_CyclidesTriple.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/18a_CyclidesTriple.3D.jpg
    :width: 30 %
 
 
+.. |18b_CyclidesTriple.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/18b_CyclidesTriple.3D.jpg
+   :width: 30 %
 
-**Left figure**: Cyclides triples  (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Middle figure**: Cyclides triples  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+.. |18c_CyclidesTriple.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/18c_CyclidesTriple.3D.jpg
+   :width: 30 %
 
-**Right figure**: Cyclides triples  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+
+
+
+|18d_CyclidesTriple.3D| `\quad` |18e_CyclidesTriple.3D| `\quad` |18f_CyclidesTriple.3D|
+
+
+
+.. |18d_CyclidesTriple.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/18d_CyclidesTriple.3D.jpg
+   :width: 30 %
+
+
+.. |18e_CyclidesTriple.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/18e_CyclidesTriple.3D.jpg
+   :width: 30 %
+
+
+.. |18f_CyclidesTriple.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/18f_CyclidesTriple.3D.jpg
+   :width: 30 %
 
 
 
@@ -946,11 +1079,22 @@ Ship Lamé
 
 
 
-|TestShipLame_a| `\quad` |TestShipLame_b|
 
-.. |TestShipLame_a| image:: ../_static/ParametricSurfaces/GenCommon/17a_TestShipLame.3D.xml.jpg
+|19a_ShipLame.3D| `\quad` |19b_ShipLame.3D| `\quad` |19c_ShipLame.3D|
+
+
+
+.. |19a_ShipLame.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/19a_ShipLame.3D.jpg
    :width: 30 %
 
-.. |TestShipLame_b| image:: ../_static/ParametricSurfaces/GenCommon/17b_TestShipLame.3D.xml.jpg
+
+.. |19b_ShipLame.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/19b_ShipLame.3D.jpg
    :width: 30 %
+
+
+.. |19c_ShipLame.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/19c_ShipLame.3D.jpg
+   :width: 30 %
+
+
+
 

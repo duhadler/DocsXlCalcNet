@@ -18,7 +18,7 @@
 
 
 
-Surfaces of revolution: spheres and related
+Surfaces of revolution
 ======================================================
 
 
@@ -36,196 +36,6 @@ The standard parameterization of a surface of revolution is given by
 
 
 
-Prism and cylinder
------------------------------------------------------
-
-
-
-See also: http://www.3d-meier.de/tut3/Seite84.html, Cylinder
-
-See also: https://mathworld.wolfram.com/Cylinder.html, Cylinder
-
-
-
-
-|01a_ROT_Prism3| `\quad` |01b_ROT_Prism4| `\quad` |01c_ROT_Cylinder|
-
-.. |01a_ROT_Prism3| image:: ../_static/On2DCurves/RevolutionOpen/01a_ROT_Prism3.3D.xml.jpg
-   :width: 30 %
-
-.. |01b_ROT_Prism4| image:: ../_static/On2DCurves/RevolutionOpen/01b_ROT_Prism4.3D.xml.jpg
-   :width: 30 %
-
-.. |01c_ROT_Cylinder| image:: ../_static/On2DCurves/RevolutionOpen/01c_ROT_Cylinder.3D.xml.jpg
-   :width: 30 %
-
-
-
-**Left figure**: Prism3
-
-**Right figure**: Prism4
-
-**Right figure**: Cylinder
-
-
-
-
-
-
-
-
-|newpage|
-
-
-Pyramid and cone
-------------------------------------------------------
-
-
-
-|02a_ROT_Pyramid3_surface| `\quad` |02b_ROT_Pyramid4_surface| `\quad` |02c_ROT_Cone_surface|
-
-.. |02a_ROT_Pyramid3_surface| image:: ../_static/On2DCurves/RevolutionOpen/02a_ROT_Pyramid3_surface.3D.xml.jpg
-   :width: 30 %
-
-.. |02b_ROT_Pyramid4_surface| image:: ../_static/On2DCurves/RevolutionOpen/02b_ROT_Pyramid4_surface.3D.xml.jpg
-   :width: 30 %
-
-.. |02c_ROT_Cone_surface| image:: ../_static/On2DCurves/RevolutionOpen/02c_ROT_Cone_surface.3D.xml.jpg
-   :width: 30 %
-
-
-
-**Left figure**: Pyramid3
-
-**Right figure**: Pyramid4
-
-**Right figure**: Cone
-
-
-
-
-
-
-
-|newpage|
-
-
-Frustum  and cone frustum
-------------------------------------------------------
-
-
-
-|03a_ROT_Frustum3_surface| `\quad` |03b_ROT_Frustum4_surface| `\quad` |03c_ROT_ConeFrustum_surface|
-
-.. |03a_ROT_Frustum3_surface| image:: ../_static/On2DCurves/RevolutionOpen/03a_ROT_Frustum3_surface.3D.xml.jpg
-   :width: 30 %
-
-.. |03b_ROT_Frustum4_surface| image:: ../_static/On2DCurves/RevolutionOpen/03b_ROT_Frustum4_surface.3D.xml.jpg
-   :width: 30 %
-
-.. |03c_ROT_ConeFrustum_surface| image:: ../_static/On2DCurves/RevolutionOpen/03c_ROT_ConeFrustum_surface.3D.xml.jpg
-   :width: 30 %
-
-
-
-**Left figure**: Frustum3
-
-**Right figure**: Frustum4
-
-**Right figure**: Cone Frustum
-
-
-
-
-
-
-|newpage|
-
-
-Insolator
----------------------------------------------------
-
-
-See also: http://www.3d-meier.de/tut3/Seite86.html, Insolator
-
-
-
-
-|04a_ROT_Insolator_surface|
-
-.. |04a_ROT_Insolator_surface| image:: ../_static/On2DCurves/RevolutionOpen/04a_ROT_Insolator_surface.3D.xml.jpg
-   :width: 30 %
-
-
-
-**Left figure**: Insolator
-
-
-
-
-
-
-|newpage|
-
-
-Gabriels Horn
---------------------------------------------
-
-
-See also: https://mathworld.wolfram.com/GabrielsHorn.html
-
-See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
-
-
-
-
-|05a_ROT_GabrielHorn_surface|
-
-.. |05a_ROT_GabrielHorn_surface| image:: ../_static/On2DCurves/RevolutionOpen/05a_ROT_GabrielHorn_surface.3D.xml.jpg
-   :width: 30 %
-
-
-
-**Left figure**: Gabriels Horn
-
-
-
-
-
-
-
-
-|newpage|
-
-
-Funnel
--------------------------------------------------
-
-
-// see https://mathworld.wolfram.com/Funnel.html
-// see http://www.3d-meier.de/tut3/Seite28.html
-// see http://www.3d-meier.de/tut3/Seite27.html
-
-See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
-
-
-
-
-|06a_ROT_Funnel_surface|
-
-.. |06a_ROT_Funnel_surface| image:: ../_static/On2DCurves/RevolutionOpen/06a_ROT_Funnel_surface.3D.xml.jpg
-   :width: 30 %
-
-
-
-**Left figure**: Funnel
-
-
-
-
-
-
-|newpage|
 
 
 One-Sheeted Hyperboloid
@@ -239,150 +49,32 @@ See also: https://en.wikipedia.org/wiki/Hyperboloid
 
 
 
-|07a_ROT_Hyperboloid_surface|
 
-.. |07a_ROT_Hyperboloid_surface| image:: ../_static/On2DCurves/RevolutionOpen/07a_ROT_Hyperboloid_surface.3D.xml.jpg
+|D01a_Hyperboloid1.3D| `\quad` |D01b_Hyperboloid1.3D| `\quad` |D01c_Hyperboloid1.3D|
+
+
+
+.. |D01a_Hyperboloid1.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D01a_Hyperboloid1.3D.jpg
    :width: 30 %
 
 
+.. |D01b_Hyperboloid1.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D01b_Hyperboloid1.3D.jpg
+   :width: 30 %
 
-**Left figure**: One-Sheeted Hyperboloid
 
-
-
+.. |D01c_Hyperboloid1.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D01c_Hyperboloid1.3D.jpg
+   :width: 30 %
 
 
 
 
 
 |newpage|
-
-
-Catenoid
------------------------------------------
-
-
-See also: https://mathworld.wolfram.com/Catenoid.html
-
-See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
-
-
-
-
-
-|08a_ROT_Catenoid_surface|
-
-.. |08a_ROT_Catenoid_surface| image:: ../_static/On2DCurves/RevolutionOpen/08a_ROT_Catenoid_surface.3D.xml.jpg
-   :width: 30 %
-
-
-
-**Left figure**: Catenoid
-
-
-
-
-
-
-
-|newpage|
-
-
-Gauss Cylinder
----------------------------------------------
-
-
-See also: http://www.3d-meier.de/tut3/Seite157.html    Gauss Cylinder
-
-See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
-
-
-
-
-|09a_ROT_GCylinder_surface| `\quad` |09b_ROT_GCylinder_surface|
-
-.. |09a_ROT_GCylinder_surface| image:: ../_static/On2DCurves/RevolutionOpen/09a_ROT_GCylinder_surface.3D.xml.jpg
-   :width: 30 %
-
-.. |09b_ROT_GCylinder_surface| image:: ../_static/On2DCurves/RevolutionOpen/09b_ROT_GCylinder_surface.3D.xml.jpg
-   :width: 30 %
-
-
-
-**Left figure**: Gauss Cylinder
-
-**Right figure**: Gauss Cylinder
-
-
-
-
-
-
-
-
-
-
-|newpage|
-
-
-Paraboloid
--------------------------------------
-
-
-
-
-
-|10a_ROT_Paraboloid_surface|
-
-.. |10a_ROT_Paraboloid_surface| image:: ../_static/On2DCurves/RevolutionOpen/10a_ROT_Paraboloid_surface.3D.xml.jpg
-   :width: 30 %
-
-
-
-**Left figure**: Paraboloid
-
-
-
-
-
-
-
-|newpage|
-
-Vase
------------------------------------
-
-
-
-|11a_ROT_Vase| `\quad` |11b_ROT_Vase|
-
-.. |11a_ROT_Vase| image:: ../_static/On2DCurves/RevolutionOpen/11a_ROT_Vase.3D.xml.jpg
-   :width: 30 %
-
-.. |11b_ROT_Vase| image:: ../_static/On2DCurves/RevolutionOpen/11b_ROT_Vase.3D.xml.jpg
-   :width: 30 %
-
-
-
-**Left figure**: Vase
-
-**Right figure**: Vase
-
-
-
-
-
-|newpage|
-
-
 
 
 
 Sphere
 ------------------------------------------------------------------------------------------
-
-.. method:: User.ParametricSphere(a, Resolution, Revolution = true)
-
 
 
 See also: http://www.3d-meier.de/tut3/Seite86.html, Sphere
@@ -390,36 +82,42 @@ See also: http://www.3d-meier.de/tut3/Seite86.html, Sphere
 
 
 
-|TestSphere_a| 
 
-.. |TestSphere_a| image:: ../_static/On2DCurves/RevolutionClosed/01a_ROT_Sphere_surface.3D.xml.jpg
+|D02a_SphereSqrt.3D| `\quad` |D02b_SphereSqrt.3D| `\quad` |D02c_SphereSqrt.3D|
+
+
+
+.. |D02a_SphereSqrt.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D02a_SphereSqrt.3D.jpg
    :width: 30 %
 
 
-**Left figure**: Sphere
-
-
-
-
-
-|01b_ROT_Sphere_lower_half| `\quad` |01c_ROT_Sphere_right_half| `\quad` |01d_ROT_Sphere_quarter|
-
-.. |01b_ROT_Sphere_lower_half| image:: ../_static/On2DCurves/RevolutionClosed/01b_ROT_Sphere_lower_half.3D.xml.jpg
+.. |D02b_SphereSqrt.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D02b_SphereSqrt.3D.jpg
    :width: 30 %
 
-.. |01c_ROT_Sphere_right_half| image:: ../_static/On2DCurves/RevolutionClosed/01c_ROT_Sphere_right_half.3D.xml.jpg
-   :width: 30 %
 
-.. |01d_ROT_Sphere_quarter| image:: ../_static/On2DCurves/RevolutionClosed/01d_ROT_Sphere_quarter.3D.xml.jpg
+.. |D02c_SphereSqrt.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D02c_SphereSqrt.3D.jpg
    :width: 30 %
 
 
 
-**Left figure**: Gear torus surface
 
-**Middle figure**: Gear torus surface
 
-**Right figure**: Gear torus surface
+|D02d_SphereSqrt.3D| `\quad` |D02e_SphereSqrt.3D| `\quad` |D02f_SphereSqrt.3D|
+
+
+
+.. |D02d_SphereSqrt.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D02d_SphereSqrt.3D.jpg
+   :width: 30 %
+
+
+.. |D02e_SphereSqrt.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D02e_SphereSqrt.3D.jpg
+   :width: 30 %
+
+
+.. |D02f_SphereSqrt.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D02f_SphereSqrt.3D.jpg
+   :width: 30 %
+
+
 
 
 
@@ -431,9 +129,6 @@ See also: http://www.3d-meier.de/tut3/Seite86.html, Sphere
 Prolate Spheroid
 ----------------------------------------------------
 
-.. method:: User.ProlateSpheroid(a, Resolution, Revolution = true)
-
-
 
 See also: http://paulbourke.net/geometry/spherical/   prolate spheroid, or ellipsoid of revolution
 See also: https://en.wikipedia.org/wiki/Ellipsoid#Parameterization  ellipsoid of revolution
@@ -443,19 +138,21 @@ See also: https://mathworld.wolfram.com/OblateSpheroid.html  Oblate Spheroid
 
 
 
-|ProlateSpheroid_small_a| `\quad` |ProlateSpheroid_small_b|
+|D03a_ProlateSpheroidoid.3D| `\quad` |D03b_ProlateSpheroidoid.3D| `\quad` |D03c_ProlateSpheroidoid.3D|
 
-.. |ProlateSpheroid_small_a| image:: ../_static/On2DCurves/RevolutionClosed/03a_ROT_ProlateSpheroid_surface.3D.xml.jpg
+
+
+.. |D03a_ProlateSpheroidoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D03a_ProlateSpheroidoid.3D.jpg
    :width: 30 %
 
-.. |ProlateSpheroid_small_b| image:: ../_static/On2DCurves/RevolutionClosed/03b_ROT_ProlateSpheroidSqrt.3D.xml.jpg
+
+.. |D03b_ProlateSpheroidoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D03b_ProlateSpheroidoid.3D.jpg
    :width: 30 %
 
 
+.. |D03c_ProlateSpheroidoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D03c_ProlateSpheroidoid.3D.jpg
+   :width: 30 %
 
-**Left figure**: Prolate Spheroid.
-
-**Right figure**: Prolate Spheroid via Sqrt.
 
 
 
@@ -468,8 +165,6 @@ See also: https://mathworld.wolfram.com/OblateSpheroid.html  Oblate Spheroid
 Oblate Spheroid
 ----------------------------------------------------
 
-.. method:: User.OblateSpheroid(a, Resolution, Revolution = true)
-
 
 See also: http://paulbourke.net/geometry/spherical/   prolate spheroid, or ellipsoid of revolution
 See also: https://en.wikipedia.org/wiki/Ellipsoid#Parameterization  ellipsoid of revolution
@@ -478,22 +173,22 @@ See also: https://mathworld.wolfram.com/OblateSpheroid.html  Oblate Spheroid
 
 
 
-        
+
+|D04a_OblateSpheroidoid.3D| `\quad` |D04b_OblateSpheroidoid.3D| `\quad` |D04c_OblateSpheroidoid.3D|
 
 
-|OblateSpheroid_small_a| `\quad` |OblateSpheroid_small_b|
 
-.. |OblateSpheroid_small_a| image:: ../_static/On2DCurves/RevolutionClosed/04a_ROT_OblateSpheroid_surface.3D.xml.jpg
-   :width: 30 %
-
-.. |OblateSpheroid_small_b| image:: ../_static/On2DCurves/RevolutionClosed/04b_ROT_OblateSpheroidSqrt.3D.xml.jpg
+.. |D04a_OblateSpheroidoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D04a_OblateSpheroidoid.3D.jpg
    :width: 30 %
 
 
+.. |D04b_OblateSpheroidoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D04b_OblateSpheroidoid.3D.jpg
+   :width: 30 %
 
-**Left figure**: Prolate Spheroid.
 
-**Right figure**: Prolate Spheroid via Sqrt.
+.. |D04c_OblateSpheroidoid.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D04c_OblateSpheroidoid.3D.jpg
+   :width: 30 %
+
 
 
 
@@ -517,35 +212,60 @@ Drop surface
 
 
 
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import User
-        >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
-        >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
-
-    An example in C\#
-
-    .. code-block:: csharp
-
-        using User;
-        Curve = User.Cardioid(a: 1, Resolution: 200, AsPolar: true);
-        User.Chart2D.Show(Curve, Template = "PolarCurve", Title = "Cardioid");
 
 
-        
+|D05a_DropSurface.3D| `\quad` |D05b_DropSurface.3D| `\quad` |D05c_DropSurface.3D|
 
 
-|07a_ROT_Drop_Surface|
+
+.. |D05a_DropSurface.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D05a_DropSurface.3D.jpg
+   :width: 30 %
 
 
-.. |07a_ROT_Drop_Surface| image:: ../_static/On2DCurves/RevolutionClosed/07a_ROT_Drop_Surface.3D.xml.jpg
+.. |D05b_DropSurface.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D05b_DropSurface.3D.jpg
+   :width: 30 %
+
+
+.. |D05c_DropSurface.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D05c_DropSurface.3D.jpg
    :width: 30 %
 
 
 
-**Left figure**: Drop surface
+
+
+
+
+
+
+
+|newpage|
+
+
+
+Egg surface
+--------------------------------------------------------------------
+Examples in Bourke, towards the end of the page
+
+
+For the egg surface, also see Meier
+
+
+
+|D06a_EggSurface.3D| `\quad` |D06b_EggSurface.3D| `\quad` |D06c_EggSurface.3D|
+
+
+
+.. |D06a_EggSurface.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D06a_EggSurface.3D.jpg
+   :width: 30 %
+
+
+.. |D06b_EggSurface.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D06b_EggSurface.3D.jpg
+   :width: 30 %
+
+
+.. |D06c_EggSurface.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D06c_EggSurface.3D.jpg
+   :width: 30 %
+
 
 
 
@@ -575,15 +295,21 @@ For the apple surface, also see Meier
 
 
 
-|09a_ROT_Apple_Surface|
+|D07a_Apple.3D| `\quad` |D07b_Apple.3D| `\quad` |D07c_Apple.3D|
 
 
-.. |09a_ROT_Apple_Surface| image:: ../_static/On2DCurves/RevolutionClosed/09a_ROT_Apple_Surface.3D.xml.jpg
+
+.. |D07a_Apple.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D07a_Apple.3D.jpg
    :width: 30 %
 
 
+.. |D07b_Apple.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D07b_Apple.3D.jpg
+   :width: 30 %
 
-**Left figure**: Apple surface
+
+.. |D07c_Apple.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D07c_Apple.3D.jpg
+   :width: 30 %
+
 
 
 
@@ -597,8 +323,6 @@ For the apple surface, also see Meier
 
 Spinning top
 -------------------------------------------------------------------------
-.. method:: User.SpinningTop(a, Resolution, Revolution = true)
-
 
 See also  http://www.3d-meier.de/tut3/Seite150.html    Kreisel
 
@@ -607,15 +331,21 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-|11a_ROT_Spinningtop_surface|
+|D08a_Spinningtop.3D| `\quad` |D08b_Spinningtop.3D| `\quad` |D08c_Spinningtop.3D|
 
 
-.. |11a_ROT_Spinningtop_surface| image:: ../_static/On2DCurves/RevolutionClosed/11a_ROT_Spinningtop_surface.3D.xml.jpg
+
+.. |D08a_Spinningtop.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D08a_Spinningtop.3D.jpg
    :width: 30 %
 
 
+.. |D08b_Spinningtop.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D08b_Spinningtop.3D.jpg
+   :width: 30 %
 
-**Left figure**: Spinning top
+
+.. |D08c_Spinningtop.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D08c_Spinningtop.3D.jpg
+   :width: 30 %
+
 
 
 
@@ -633,8 +363,6 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 Pseudosphere
 -----------------------------------------------------------
 
-.. method:: User.Pseudosphere(a, Resolution, Revolution = true)
-
 
 See also: https://mathworld.wolfram.com/Pseudosphere.html
 
@@ -642,36 +370,23 @@ See also: https://mathworld.wolfram.com/Pseudosphere.html
 
 
 
-    An example in Python
 
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import User
-        >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
-        >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
-
-    An example in C\#
-
-    .. code-block:: csharp
-
-        using User;
-        Curve = User.Cardioid(a: 1, Resolution: 200, AsPolar: true);
-        User.Chart2D.Show(Curve, Template = "PolarCurve", Title = "Cardioid");
+|D09a_PseudoSphere.3D| `\quad` |D09b_PseudoSphere.3D| `\quad` |D09c_PseudoSphere.3D|
 
 
 
-|12a_ROT_Pseudosphere_ROT0b_surface| `\quad` |12b_ROT_Pseudosphere|
-
-.. |12a_ROT_Pseudosphere_ROT0b_surface| image:: ../_static/On2DCurves/RevolutionClosed/12a_ROT_Pseudosphere_ROT0b_surface.3D.xml.jpg
-   :width: 30 %
-
-.. |12b_ROT_Pseudosphere| image:: ../_static/On2DCurves/RevolutionClosed/12b_ROT_Pseudosphere.3D.xml.jpg
-   :width: 30 %
+.. |D09a_PseudoSphere.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D09a_PseudoSphere.3D.jpg
+   :height: 300 px
 
 
-**Left figure**: Pseudosphere 
+.. |D09b_PseudoSphere.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D09b_PseudoSphere.3D.jpg
+   :height: 300 px
 
-**Right figure**: Pseudosphere 
+
+.. |D09c_PseudoSphere.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D09c_PseudoSphere.3D.jpg
+   :height: 300 px
+
+
 
 
 
@@ -690,18 +405,16 @@ Wave sphere Surface
 // see http://www.3d-meier.de/tut3/Seite63.html
 
 
-|13a_ROT_WaveSphere| `\quad` |13b_ROT_WaveSphere|
 
-.. |13a_ROT_WaveSphere| image:: ../_static/On2DCurves/RevolutionClosed/13a_ROT_WaveSphere.3D.xml.jpg
-   :width: 30 %
+|D10a_WaveSphere.3D| `\quad` |D10b_WaveSphere.3D|
 
-.. |13b_ROT_WaveSphere| image:: ../_static/On2DCurves/RevolutionClosed/13b_ROT_WaveSphere.3D.xml.jpg
-   :width: 30 %
 
+.. |D10a_WaveSphere.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D10a_WaveSphere.3D.jpg
+   :width: 45 %
 
-**Left figure**: Wave sphere Surface 
 
-**Right figure**: Wave sphere Surface 
+.. |D10b_WaveSphere.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D10b_WaveSphere.3D.jpg
+   :width: 45 %
 
 
 
@@ -709,121 +422,7 @@ Wave sphere Surface
 
 
 
-Low resolution torus surface, part1
------------------------------------------------------------------------------------------
 
-
-
-// see https://mathworld.wolfram.com/Torus.html
-
-See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
-
-
-
-
-
-|91a_ROT_Torus_surface| `\quad` |91b_ROT_Torus_surface| `\quad` |91c_ROT_Torus_surface|
-
-.. |91a_ROT_Torus_surface| image:: ../_static/On2DCurves/RevolutionTori/91a_ROT_Torus_surface.3D.xml.jpg
-   :width: 30 %
-
-.. |91b_ROT_Torus_surface| image:: ../_static/On2DCurves/RevolutionTori/91b_ROT_Torus_surface.3D.xml.jpg
-   :width: 30 %
-
-.. |91c_ROT_Torus_surface| image:: ../_static/On2DCurves/RevolutionTori/91c_ROT_Torus_surface.3D.xml.jpg
-   :width: 30 %
-
-
-
-**Left figure**: Low resolution torus surface, part1
-
-**Middle figure**: Low resolution torus surface, part1
-
-**Right figure**: Low resolution torus surface, part1
-
-
-
-
-
-
-
-
-|newpage|
-
-
-
-Low resolution torus surface, part2
------------------------------------------------------------------------------------------
-
-
-
-See also: http://www.3d-meier.de/tut3/Seite165.html
-
-See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
-
-
-
-
-
-|92a_ROT_Torus_surface| `\quad` |92b_ROT_Torus_surface| `\quad` |92c_ROT_Torus_surface|
-
-.. |92a_ROT_Torus_surface| image:: ../_static/On2DCurves/RevolutionTori/92a_ROT_Torus_surface.3D.xml.jpg
-   :width: 30 %
-
-.. |92b_ROT_Torus_surface| image:: ../_static/On2DCurves/RevolutionTori/92b_ROT_Torus_surface.3D.xml.jpg
-   :width: 30 %
-
-.. |92c_ROT_Torus_surface| image:: ../_static/On2DCurves/RevolutionTori/92c_ROT_Torus_surface.3D.xml.jpg
-   :width: 30 %
-
-
-
-**Left figure**: Low resolution torus surface, part1
-
-**Middle figure**: Low resolution torus surface, part1
-
-**Right figure**: Low resolution torus surface, part1
-
-
-
-
-
-
-|newpage|
-
-
-
-Low resolution torus surface, part3
------------------------------------------------------------------------------------------
-
-
-
-See also: http://www.3d-meier.de/tut3/Seite165.html
-
-See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
-
-
-
-
-
-|93a_ROT_Torus_surface| `\quad` |93b_ROT_Torus_surface| `\quad` |93c_ROT_Torus_surface|
-
-.. |93a_ROT_Torus_surface| image:: ../_static/On2DCurves/RevolutionTori/93a_ROT_Torus_surface.3D.xml.jpg
-   :width: 30 %
-
-.. |93b_ROT_Torus_surface| image:: ../_static/On2DCurves/RevolutionTori/93b_ROT_Torus_surface.3D.xml.jpg
-   :width: 30 %
-
-.. |93c_ROT_Torus_surface| image:: ../_static/On2DCurves/RevolutionTori/93c_ROT_Torus_surface.3D.xml.jpg
-   :width: 30 %
-
-
-
-**Left figure**: Low resolution torus surface, part1
-
-**Middle figure**: Low resolution torus surface, part1
-
-**Right figure**: Low resolution torus surface, part1
 
 
 
@@ -836,49 +435,28 @@ Torus
 -----------------------------------------------------------------------------------------
 
 
-.. method:: User.Torus(a, Resolution, Revolution = true)
-
 
 See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-    An example in Python
 
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import User
-        >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
-        >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
-
-    An example in C\#
-
-    .. code-block:: csharp
-
-        using User;
-        Curve = User.Cardioid(a: 1, Resolution: 200, AsPolar: true);
-        User.Chart2D.Show(Curve, Template = "PolarCurve", Title = "Cardioid");
+|D11a_Torus.3D| `\quad` |D11b_Torus_lowerhalf.3D| `\quad` |D11c_Torus_backhalf.3D|
 
 
 
-|01a_ROT_Torus_surface| `\quad` |01b_ROT_Torus_lower_half| `\quad` |01c_ROT_Torus_right_half|
-
-.. |01a_ROT_Torus_surface| image:: ../_static/On2DCurves/RevolutionTori/01a_ROT_Torus_surface.3D.xml.jpg
-   :width: 30 %
-
-.. |01b_ROT_Torus_lower_half| image:: ../_static/On2DCurves/RevolutionTori/01b_ROT_Torus_lower_half.3D.xml.jpg
-   :width: 30 %
-
-.. |01c_ROT_Torus_right_half| image:: ../_static/On2DCurves/RevolutionTori/01c_ROT_Torus_right_half.3D.xml.jpg
+.. |D11a_Torus.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D11a_Torus.3D.jpg
    :width: 30 %
 
 
+.. |D11b_Torus_lowerhalf.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D11b_Torus_lowerhalf.3D.jpg
+   :width: 30 %
 
-**Left figure**: Torus
 
-**Middle figure**: Torus
+.. |D11c_Torus_backhalf.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D11c_Torus_backhalf.3D.jpg
+   :width: 30 %
 
-**Right figure**: Torus
+
 
 
 
@@ -898,42 +476,23 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-    An example in Python
 
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import User
-        >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
-        >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
-
-    An example in C\#
-
-    .. code-block:: csharp
-
-        using User;
-        Curve = User.Cardioid(a: 1, Resolution: 200, AsPolar: true);
-        User.Chart2D.Show(Curve, Template = "PolarCurve", Title = "Cardioid");
+|D12a_HornTorus.3D| `\quad` |D12b_HornTorus_lowerhalf.3D| `\quad` |D12c_HornTorus_backhalf.3D|
 
 
 
-|02a_ROT_HornTorus_surface| `\quad` |02b_ROT_HornTorus_lower_half| `\quad` |02c_ROT_HornTorus_right_half|
-
-.. |02a_ROT_HornTorus_surface| image:: ../_static/On2DCurves/RevolutionTori/02a_ROT_HornTorus_surface.3D.xml.jpg
-   :width: 30 %
-
-.. |02b_ROT_HornTorus_lower_half| image:: ../_static/On2DCurves/RevolutionTori/02b_ROT_HornTorus_lower_half.3D.xml.jpg
-   :width: 30 %
-
-.. |02c_ROT_HornTorus_right_half| image:: ../_static/On2DCurves/RevolutionTori/02c_ROT_HornTorus_right_half.3D.xml.jpg
+.. |D12a_HornTorus.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D12a_HornTorus.3D.jpg
    :width: 30 %
 
 
+.. |D12b_HornTorus_lowerhalf.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D12b_HornTorus_lowerhalf.3D.jpg
+   :width: 30 %
 
-**Left figure**: Horn Torus
 
-**Middle figure**: Horn Torus
+.. |D12c_HornTorus_backhalf.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D12c_HornTorus_backhalf.3D.jpg
+   :width: 30 %
 
-**Right figure**: Horn Torus
+
 
 
 
@@ -952,42 +511,24 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-    An example in Python
 
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import User
-        >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
-        >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
-
-    An example in C\#
-
-    .. code-block:: csharp
-
-        using User;
-        Curve = User.Cardioid(a: 1, Resolution: 200, AsPolar: true);
-        User.Chart2D.Show(Curve, Template = "PolarCurve", Title = "Cardioid");
+|D13a_SpindelTorus.3D| `\quad` |D13b_SpindelTorus_lowerhalf.3D| `\quad` |D13c_SpindelTorus_backhalf.3D|
 
 
 
-|03a_ROT_SpindleTorus_surface| `\quad` |03b_ROT_SpindleTorus_lower_half| `\quad` |03c_ROT_SpindleTorus_right_half|
-
-.. |03a_ROT_SpindleTorus_surface| image:: ../_static/On2DCurves/RevolutionTori/03a_ROT_SpindleTorus_surface.3D.xml.jpg
+.. |D13a_SpindelTorus.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D13a_SpindelTorus.3D.jpg
    :width: 30 %
 
-.. |03b_ROT_SpindleTorus_lower_half| image:: ../_static/On2DCurves/RevolutionTori/03b_ROT_SpindleTorus_lower_half.3D.xml.jpg
+
+.. |D13b_SpindelTorus_lowerhalf.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D13b_SpindelTorus_lowerhalf.3D.jpg
    :width: 30 %
 
-.. |03c_ROT_SpindleTorus_right_half| image:: ../_static/On2DCurves/RevolutionTori/03c_ROT_SpindleTorus_right_half.3D.xml.jpg
+
+.. |D13c_SpindelTorus_backhalf.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D13c_SpindelTorus_backhalf.3D.jpg
    :width: 30 %
 
 
 
-**Left figure**: Spindle Torus
-
-**Middle figure**: Spindle Torus
-
-**Right figure**: Spindle Torus
 
 
 
@@ -999,8 +540,6 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 Elliptic Torus
 ----------------------------------------------------------------------------------------------
 
-.. method:: User.EllipticTorus(a, Resolution, Revolution = true)
-
 
 See also: https://mathworld.wolfram.com/EllipticTorus.html
 
@@ -1008,39 +547,21 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-    An example in Python
 
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import User
-        >>> Curve = User.Cardioid(a = 1, Resolution = 200, AsPolar = true)
-        >>> User.Chart2D.Show(Curve, Template = 'PolarCurve', Title = 'Cardioid')
-
-    An example in C\#
-
-    .. code-block:: csharp
-
-        using User;
-        Curve = User.Cardioid(a: 1, Resolution: 200, AsPolar: true);
-        User.Chart2D.Show(Curve, Template = "PolarCurve", Title = "Cardioid");
+|D14a_EllipticTorus.3D| `\quad` |D14b_EllipticTorus.3D| `\quad` |D14c_EllipticTorus.3D|
 
 
 
-
-|04a_ROT_EllipticTorus| `\quad` |04b_ROT_EllipticTorus|
-
-.. |04a_ROT_EllipticTorus| image:: ../_static/On2DCurves/RevolutionTori/04a_ROT_EllipticTorus.3D.xml.jpg
-   :width: 30 %
-
-.. |04b_ROT_EllipticTorus| image:: ../_static/On2DCurves/RevolutionTori/04a_ROT_EllipticTorus.3D.xml.jpg
+.. |D14a_EllipticTorus.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D14a_EllipticTorus.3D.jpg
    :width: 30 %
 
 
+.. |D14b_EllipticTorus.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D14b_EllipticTorus.3D.jpg
+   :width: 30 %
 
-**Left figure**: Spindle Torus
 
-**Right figure**: Spindle Torus
-
+.. |D14c_EllipticTorus.3D| image:: ../_static/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D14c_EllipticTorus.3D.jpg
+   :width: 30 %
 
 
 

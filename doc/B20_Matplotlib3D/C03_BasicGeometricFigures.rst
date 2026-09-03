@@ -96,6 +96,14 @@ Hyperboloid 3D
 ---------------------------------------------------------------------------------
 
 
+
+See also: https://mathworld.wolfram.com/One-SheetedHyperboloid.html
+
+See also: https://en.wikipedia.org/wiki/Hyperboloid
+
+
+
+
 The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_Hyperboloid3D.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B20_Matplotlib3D/C03_BasicGeometricFigures/D04_Hyperboloid3D.py>`__.
 
 

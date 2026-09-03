@@ -55,26 +55,30 @@ An example in C\#, for real and imaginary part combined
 
 .. code-block:: csharp
 
-var x = Math.Sin(t);
-var y = -Math.Cos(t);
-var z = t;
+    var x = Math.Sin(t);
+    var y = -Math.Cos(t);
+    var z = t;
 
 
 
 Some text
 
 
-|Path_Func_Expj_2Dx_a| `\quad` |Path_Func_Expj_2Dy_a| `\quad` |Path_Func_Expj_a|
 
-.. |Path_Func_Expj_2Dx_a| image:: ../_static/PathSurfaces/Real2Cplx/Path_Func_Expj_2Dx_a.3D.xml.jpg
+|D01a_Path_Func_Expj_2Dx.3D| `\quad` |D01b_Path_Func_Expj_2Dy.3D| `\quad` |D01c_Path_Func_Expj.3D|
+
+
+
+.. |D01a_Path_Func_Expj_2Dx.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D01a_Path_Func_Expj_2Dx.3D.jpg
    :width: 30 %
 
-.. |Path_Func_Expj_2Dy_a| image:: ../_static/PathSurfaces/Real2Cplx/Path_Func_Expj_2Dy_a.3D.xml.jpg
+
+.. |D01b_Path_Func_Expj_2Dy.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D01b_Path_Func_Expj_2Dy.3D.jpg
    :width: 30 %
 
-.. |Path_Func_Expj_a| image:: ../_static/PathSurfaces/Real2Cplx/Path_Func_Expj_a.3D.xml.jpg
-   :width: 30 %
 
+.. |D01c_Path_Func_Expj.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D01c_Path_Func_Expj.3D.jpg
+   :width: 30 %
 
 
 
@@ -84,6 +88,19 @@ Some text
 
 **Right figure**: Expj (Cis) function as full 3D curve. Orthographic camera. 
 
+
+
+
+|D01d_Path_Func_Expj.3D| `\quad` |D01e_Path_Func_Expj.3D|
+
+
+
+.. |D01d_Path_Func_Expj.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D01d_Path_Func_Expj.3D.jpg
+   :width: 30 %
+
+
+.. |D01e_Path_Func_Expj.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D01e_Path_Func_Expj.3D.jpg
+   :width: 30 %
 
 
 
@@ -134,18 +151,20 @@ An example in C\#, for real and imaginary part combined
 
 
 
-Some text
+
+|D02a_Path_Func_Hankel1_2Dx.3D| `\quad` |D02b_Path_Func_Hankel1_2Dy.3D| `\quad` |D02c_Path_Func_Hankel1.3D|
 
 
-|Path_Func_Hankel1_2Dx_a| `\quad` |Path_Func_Hankel1_2Dy_a| `\quad` |Path_Func_Hankel1_a|
 
-.. |Path_Func_Hankel1_2Dx_a| image:: ../_static/PathSurfaces/Real2Cplx/Path_Func_Hankel1_2Dx_a.3D.xml.jpg
+.. |D02a_Path_Func_Hankel1_2Dx.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D02a_Path_Func_Hankel1_2Dx.3D.jpg
    :width: 30 %
 
-.. |Path_Func_Hankel1_2Dy_a| image:: ../_static/PathSurfaces/Real2Cplx/Path_Func_Hankel1_2Dy_a.3D.xml.jpg
+
+.. |D02b_Path_Func_Hankel1_2Dy.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D02b_Path_Func_Hankel1_2Dy.3D.jpg
    :width: 30 %
 
-.. |Path_Func_Hankel1_a| image:: ../_static/PathSurfaces/Real2Cplx/Path_Func_Hankel1_a.3D.xml.jpg
+
+.. |D02c_Path_Func_Hankel1.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D02c_Path_Func_Hankel1.3D.jpg
    :width: 30 %
 
 
@@ -208,20 +227,22 @@ An example in C\#, for real and imaginary part combined
 
 
 
+|D03a_Path_Func_Hankel2_2Dx.3D| `\quad` |D03b_Path_Func_Hankel2_2Dy.3D| `\quad` |D03c_Path_Func_Hankel2.3D|
 
-Some text
 
 
-|Path_Func_Hankel2_2Dx_a| `\quad` |Path_Func_Hankel2_2Dy_a| `\quad` |Path_Func_Hankel2_a|
-
-.. |Path_Func_Hankel2_2Dx_a| image:: ../_static/PathSurfaces/Real2Cplx/Path_Func_Hankel2_2Dx_a.3D.xml.jpg
+.. |D03a_Path_Func_Hankel2_2Dx.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D03a_Path_Func_Hankel2_2Dx.3D.jpg
    :width: 30 %
 
-.. |Path_Func_Hankel2_2Dy_a| image:: ../_static/PathSurfaces/Real2Cplx/Path_Func_Hankel2_2Dy_a.3D.xml.jpg
+
+.. |D03b_Path_Func_Hankel2_2Dy.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D03b_Path_Func_Hankel2_2Dy.3D.jpg
    :width: 30 %
 
-.. |Path_Func_Hankel2_a| image:: ../_static/PathSurfaces/Real2Cplx/Path_Func_Hankel2_a.3D.xml.jpg
+
+.. |D03c_Path_Func_Hankel2.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D03c_Path_Func_Hankel2.3D.jpg
    :width: 30 %
+
+
 
 
 
@@ -289,18 +310,19 @@ An example in C\#, for real and imaginary part combined
 
 
 
-Some text
+|D04a_Path_Func_KelvinBerBei_2Dx.3D| `\quad` |D04b_Path_Func_KelvinBerBei_2Dy.3D| `\quad` |D04c_Path_Func_KelvinBerBei.3D|
 
 
-|Path_Func_KelvinBerBei_2Dx_a| `\quad` |Path_Func_KelvinBerBei_2Dy_a| `\quad` |Path_Func_KelvinBerBei_a|
 
-.. |Path_Func_KelvinBerBei_2Dx_a| image:: ../_static/PathSurfaces/Real2Cplx/Path_Func_KelvinBerBei_2Dx_a.3D.xml.jpg
+.. |D04a_Path_Func_KelvinBerBei_2Dx.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D04a_Path_Func_KelvinBerBei_2Dx.3D.jpg
    :width: 30 %
 
-.. |Path_Func_KelvinBerBei_2Dy_a| image:: ../_static/PathSurfaces/Real2Cplx/Path_Func_KelvinBerBei_2Dy_a.3D.xml.jpg
+
+.. |D04b_Path_Func_KelvinBerBei_2Dy.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D04b_Path_Func_KelvinBerBei_2Dy.3D.jpg
    :width: 30 %
 
-.. |Path_Func_KelvinBerBei_a| image:: ../_static/PathSurfaces/Real2Cplx/Path_Func_KelvinBerBei_a.3D.xml.jpg
+
+.. |D04c_Path_Func_KelvinBerBei.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D04c_Path_Func_KelvinBerBei.3D.jpg
    :width: 30 %
 
 
@@ -369,18 +391,19 @@ An example in C\#, for real and imaginary part combined
 
 
 
-Some text
+|D05a_Path_Func_KelvinKerKei_2Dx.3D| `\quad` |D05b_Path_Func_KelvinKerKei_2Dy.3D| `\quad` |D05c_Path_Func_KelvinKerKei.3D|
 
 
-|Path_Func_KelvinKerKei_2Dx_a| `\quad` |Path_Func_KelvinKerKei_2Dy_a| `\quad` |Path_Func_KelvinKerKei_a|
 
-.. |Path_Func_KelvinKerKei_2Dx_a| image:: ../_static/PathSurfaces/Real2Cplx/Path_Func_KelvinKerKei_2Dx_a.3D.xml.jpg
+.. |D05a_Path_Func_KelvinKerKei_2Dx.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D05a_Path_Func_KelvinKerKei_2Dx.3D.jpg
    :width: 30 %
 
-.. |Path_Func_KelvinKerKei_2Dy_a| image:: ../_static/PathSurfaces/Real2Cplx/Path_Func_KelvinKerKei_2Dy_a.3D.xml.jpg
+
+.. |D05b_Path_Func_KelvinKerKei_2Dy.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D05b_Path_Func_KelvinKerKei_2Dy.3D.jpg
    :width: 30 %
 
-.. |Path_Func_KelvinKerKei_a| image:: ../_static/PathSurfaces/Real2Cplx/Path_Func_KelvinKerKei_a.3D.xml.jpg
+
+.. |D05c_Path_Func_KelvinKerKei.3D| image:: ../_static/B24_WpfPathSurfaces/C02_FunctionsR2C/D05c_Path_Func_KelvinKerKei.3D.jpg
    :width: 30 %
 
 

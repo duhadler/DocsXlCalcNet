@@ -42,23 +42,22 @@ An example in C\#
     var y = ((-3.75 * t + 100) * Math.Cos(t * Math.PI)) / 100;
 
 
-Some text
 
 
-|Path_Spiral2_Aa| `\quad` |Path_Spiral2_Ba|
+|D01a_Path_Spiral2.3D| `\quad` |D01b_Path_Spiral2.3D| `\quad` |D01c_Path_Spiral2.3D|
 
-.. |Path_Spiral2_Aa| image:: ../_static/PathSurfaces/CoilSprings/Path_Spiral2_Aa.3D.xml.jpg
+
+
+.. |D01a_Path_Spiral2.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D01a_Path_Spiral2.3D.jpg
    :width: 30 %
 
-.. |Path_Spiral2_Ba| image:: ../_static/PathSurfaces/CoilSprings/Path_Spiral2_Ba.3D.xml.jpg
+
+.. |D01b_Path_Spiral2.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D01b_Path_Spiral2.3D.jpg
    :width: 30 %
 
 
-
-
-**Left figure**: Spiral 2 (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
-
-**Right figure**: Spiral 2 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
+.. |D01c_Path_Spiral2.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D01c_Path_Spiral2.3D.jpg
+   :width: 30 %
 
 
 
@@ -78,23 +77,19 @@ An example in C\#
 
 
 
-Some text
 
 
-|Path_Spiral6_Aa| `\quad` |Path_Spiral6_Ba|
+|D02a_Path_Spiral6.3D| `\quad` |D02b_Path_Spiral6.3D|
 
-.. |Path_Spiral6_Aa| image:: ../_static/PathSurfaces/CoilSprings/Path_Spiral6_Aa.3D.xml.jpg
+
+
+.. |D02a_Path_Spiral6.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D02a_Path_Spiral6.3D.jpg
    :width: 30 %
 
-.. |Path_Spiral6_Ba| image:: ../_static/PathSurfaces/CoilSprings/Path_Spiral6_Ba.3D.xml.jpg
+
+.. |D02b_Path_Spiral6.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D02b_Path_Spiral6.3D.jpg
    :width: 30 %
 
-
-
-
-**Left figure**: Spiral 6 (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
-
-**Right figure**: Spiral 6 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
 
 
 
@@ -115,23 +110,20 @@ An example in C\#
     var y = (Math.Sqrt(10000 - 100 * t * t) * Math.Cos(t * Math.PI)) / 100;
 
 
-Some text
 
 
-|Path_Spiral7a_Aa| `\quad` |Path_Spiral7a_Ba|
+|D03a_Path_Spiral7a.3D| `\quad` |D03b_Path_Spiral7a.3D|
 
-.. |Path_Spiral7a_Aa| image:: ../_static/PathSurfaces/CoilSprings/Path_Spiral7a_Aa.3D.xml.jpg
+
+
+.. |D03a_Path_Spiral7a.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D03a_Path_Spiral7a.3D.jpg
    :width: 30 %
 
-.. |Path_Spiral7a_Ba| image:: ../_static/PathSurfaces/CoilSprings/Path_Spiral7a_Ba.3D.xml.jpg
+
+.. |D03b_Path_Spiral7a.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D03b_Path_Spiral7a.3D.jpg
    :width: 30 %
 
 
-
-
-**Left figure**: Spiral 7a (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
-
-**Right figure**: Spiral 7a (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
 
 
 
@@ -152,23 +144,19 @@ An example in C\#
     var z = 209.22 * (Math.Tanh(0.1896 * t)) / 100;
     var y = (200 * Math.Cos(0.05 * t * Math.PI) * Math.Cos(t * Math.PI)) / 100;
 
-Some text
 
 
-|Path_Spiral7b_Aa| `\quad` |Path_Spiral7b_Ba|
+|D04a_Path_Spiral7b.3D| `\quad` |D04b_Path_Spiral7b.3D|
 
-.. |Path_Spiral7b_Aa| image:: ../_static/PathSurfaces/CoilSprings/Path_Spiral7b_Aa.3D.xml.jpg
+
+
+.. |D04a_Path_Spiral7b.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D04a_Path_Spiral7b.3D.jpg
    :width: 30 %
 
-.. |Path_Spiral7b_Ba| image:: ../_static/PathSurfaces/CoilSprings/Path_Spiral7b_Ba.3D.xml.jpg
+
+.. |D04b_Path_Spiral7b.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D04b_Path_Spiral7b.3D.jpg
    :width: 30 %
 
-
-
-
-**Left figure**: Spiral 7b (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
-
-**Right figure**: Spiral 7b (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
 
 
 
@@ -194,23 +182,18 @@ An example in C\#
     var y = (200 * e * Math.Cos(t * Math.PI)) / 100;
 
 
-Some text
 
 
-|Path_Spiral7c_Aa| `\quad` |Path_Spiral7c_Ba|
+|D05a_Path_Spiral7c.3D| `\quad` |D05b_Path_Spiral7c.3D|
 
-.. |Path_Spiral7c_Aa| image:: ../_static/PathSurfaces/CoilSprings/Path_Spiral7c_Aa.3D.xml.jpg
+
+
+.. |D05a_Path_Spiral7c.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D05a_Path_Spiral7c.3D.jpg
    :width: 30 %
 
-.. |Path_Spiral7c_Ba| image:: ../_static/PathSurfaces/CoilSprings/Path_Spiral7c_Ba.3D.xml.jpg
+
+.. |D05b_Path_Spiral7c.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D05b_Path_Spiral7c.3D.jpg
    :width: 30 %
-
-
-
-
-**Left figure**: Spiral 7c (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
-
-**Right figure**: Spiral 7c (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
 
 
 
@@ -235,23 +218,20 @@ An example in C\#
     var y = ((200 - 140 * e) * Math.Cos(t * Math.PI)) / 100;
 
 
-Some text
 
 
-|Path_Spiral7d_Aa| `\quad` |Path_Spiral7d_Ba|
+|D06a_Path_Spiral7d.3D| `\quad` |D06b_Path_Spiral7d.3D|
 
-.. |Path_Spiral7d_Aa| image:: ../_static/PathSurfaces/CoilSprings/Path_Spiral7d_Aa.3D.xml.jpg
+
+
+.. |D06a_Path_Spiral7d.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D06a_Path_Spiral7d.3D.jpg
    :width: 30 %
 
-.. |Path_Spiral7d_Ba| image:: ../_static/PathSurfaces/CoilSprings/Path_Spiral7d_Ba.3D.xml.jpg
+
+.. |D06b_Path_Spiral7d.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D06b_Path_Spiral7d.3D.jpg
    :width: 30 %
 
 
-
-
-**Left figure**: Spiral 7d (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
-
-**Right figure**: Spiral 7d (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
 
 
 
@@ -275,23 +255,62 @@ An example in C\#
 
 
 
-Some text
+
+|D07a_Path_Spiral8.3D| `\quad` |D07b_Path_Spiral8.3D| `\quad` |D07c_Path_Spiral8.3D|
 
 
-|Path_Spiral8_Aa| `\quad` |Path_Spiral8_Ba|
 
-.. |Path_Spiral8_Aa| image:: ../_static/PathSurfaces/CoilSprings/Path_Spiral8_Aa.3D.xml.jpg
-   :width: 30 %
-
-.. |Path_Spiral8_Ba| image:: ../_static/PathSurfaces/CoilSprings/Path_Spiral8_Ba.3D.xml.jpg
+.. |D07a_Path_Spiral8.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D07a_Path_Spiral8.3D.jpg
    :width: 30 %
 
 
+.. |D07b_Path_Spiral8.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D07b_Path_Spiral8.3D.jpg
+   :width: 30 %
 
 
-**Left figure**: Spiral 8 (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
+.. |D07c_Path_Spiral8.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D07c_Path_Spiral8.3D.jpg
+   :width: 30 %
 
-**Right figure**: Spiral 8 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
+
+   
+
+
+
+|newpage|
+
+Spring 9
+-------------------------------------------
+
+
+An example in C\#
+
+.. code-block:: csharp
+
+    double R = 100.0;
+    double G = 160.0;
+    double D = 15.0;
+    double N = 10.0;
+    var x = (Math.Cos(t * Math.PI) * R + Math.Cos(t * Math.PI) * D * Math.Cos(N * t * Math.PI)) / 100;
+    var y = (D * Math.Sin(N * t * Math.PI) + 0.5 * G * t) / 100;
+    var z = (Math.Sin(t * Math.PI) * R + Math.Sin(t * Math.PI) * D * Math.Cos(N * t * Math.PI)) / 100;
+
+
+
+
+|D08a_Path_Spiral9.3D| `\quad` |D08b_Path_Spiral9.3D| `\quad` |D08c_Path_Spiral9.3D|
+
+
+
+.. |D08a_Path_Spiral9.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D08a_Path_Spiral9.3D.jpg
+   :width: 30 %
+
+
+.. |D08b_Path_Spiral9.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D08b_Path_Spiral9.3D.jpg
+   :width: 30 %
+
+
+.. |D08c_Path_Spiral9.3D| image:: ../_static/B24_WpfPathSurfaces/C05_CoilSprings/D08c_Path_Spiral9.3D.jpg
+   :width: 30 %
 
 
 

@@ -43,23 +43,29 @@ An example in C\#
 
 
 
-Some text
+|D01a_Path_Trefoil_Knoten_A.3D| `\quad` |D01b_Path_Trefoil_Knoten_A.3D|
 
 
-|PathP_Trefoil_Knoten_Aa| `\quad` |PathO_Trefoil_Knoten_Aa|
 
-.. |PathP_Trefoil_Knoten_Aa| image:: ../_static/PathSurfaces/GeneralKnots/PathP_Trefoil_Knoten_Aa.3D.xml.jpg
-   :width: 30 %
-
-.. |PathO_Trefoil_Knoten_Aa| image:: ../_static/PathSurfaces/GeneralKnots/PathO_Trefoil_Knoten_Aa.3D.xml.jpg
+.. |D01a_Path_Trefoil_Knoten_A.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D01a_Path_Trefoil_Knoten_A.3D.jpg
    :width: 30 %
 
 
+.. |D01b_Path_Trefoil_Knoten_A.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D01b_Path_Trefoil_Knoten_A.3D.jpg
+   :width: 30 %
 
 
-**Left figure**: Trefoil A. Perspective camera. 
 
-**Right figure**: Trefoil A. Orthographic camera. 
+|D01c_Path_Trefoil_Knoten_A.3D| `\quad` |D01d_Path_Trefoil_Knoten_A.3D|
+
+
+
+.. |D01c_Path_Trefoil_Knoten_A.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D01c_Path_Trefoil_Knoten_A.3D.jpg
+   :width: 30 %
+
+
+.. |D01d_Path_Trefoil_Knoten_A.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D01d_Path_Trefoil_Knoten_A.3D.jpg
+   :width: 30 %
 
 
 
@@ -88,23 +94,30 @@ An example in C\#
 
 
 
-Some text
+
+|D02a_Path_Trefoil_Knoten_B.3D| `\quad` |D02b_Path_Trefoil_Knoten_B.3D|
 
 
-|PathP_Trefoil_Knoten_Ba| `\quad` |PathO_Trefoil_Knoten_Ba|
 
-
-.. |PathP_Trefoil_Knoten_Ba| image:: ../_static/PathSurfaces/GeneralKnots/PathP_Trefoil_Knoten_Ba.3D.xml.jpg
-   :width: 30 %
-
-.. |PathO_Trefoil_Knoten_Ba| image:: ../_static/PathSurfaces/GeneralKnots/PathO_Trefoil_Knoten_Ba.3D.xml.jpg
+.. |D02a_Path_Trefoil_Knoten_B.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D02a_Path_Trefoil_Knoten_B.3D.jpg
    :width: 30 %
 
 
+.. |D02b_Path_Trefoil_Knoten_B.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D02b_Path_Trefoil_Knoten_B.3D.jpg
+   :width: 30 %
 
-**Left figure**: Trefoil B. Perspective camera. 
 
-**Right figure**: Trefoil B. Trefoil B. Orthographic camera. 
+
+|D02c_Path_Trefoil_Knoten_B.3D| `\quad` |D02d_Path_Trefoil_Knoten_B.3D|
+
+
+
+.. |D02c_Path_Trefoil_Knoten_B.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D02c_Path_Trefoil_Knoten_B.3D.jpg
+   :width: 30 %
+
+
+.. |D02d_Path_Trefoil_Knoten_B.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D02d_Path_Trefoil_Knoten_B.3D.jpg
+   :width: 30 %
 
 
 
@@ -134,47 +147,40 @@ An example in C\#
 
 
 
-Some text
 
-
-|PathP_SquareKnot_P000T180_a| `\quad` |PathP_SquareKnot_P090T135_a|
-
-.. |PathP_SquareKnot_P000T180_a| image:: ../_static/PathSurfaces/GeneralKnots/PathP_SquareKnot_P000T180_a.3D.xml.jpg
-   :width: 31 %
-
-.. |PathP_SquareKnot_P090T135_a| image:: ../_static/PathSurfaces/GeneralKnots/PathP_SquareKnot_P090T135_a.3D.xml.jpg
-   :width: 40 %
+|D03a_Path_SquareKnotP_P90T90.3D| `\quad` |D03b_Path_SquareKnot.3D| `\quad` |D03c_Path_SquareKnotO_P90T90.3D|
 
 
 
-
-**Left figure**: Trefoil A. Perspective camera. 
-
-**Right figure**: Trefoil B. Perspective camera. 
-
-
-
-
-Some text  
-
-
-
-
-|PathO_SquareKnot_P000T180_a| `\quad` |PathO_SquareKnot_P090T135_a|
-
-.. |PathO_SquareKnot_P000T180_a| image:: ../_static/PathSurfaces/GeneralKnots/PathO_SquareKnot_P000T180_a.3D.xml.jpg
+.. |D03a_Path_SquareKnotP_P90T90.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D03a_Path_SquareKnotP_P90T90.3D.jpg
    :width: 30 %
 
-.. |PathO_SquareKnot_P090T135_a| image:: ../_static/PathSurfaces/GeneralKnots/PathO_SquareKnot_P090T135_a.3D.xml.jpg
-   :width: 42 %
+
+.. |D03b_Path_SquareKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D03b_Path_SquareKnot.3D.jpg
+   :width: 30 %
+
+
+.. |D03c_Path_SquareKnotO_P90T90.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D03c_Path_SquareKnotO_P90T90.3D.jpg
+   :width: 30 %
 
 
 
 
-**Left figure**: Trefoil A. Orthographic camera. 
 
-**Right figure**: Trefoil B. Orthographic camera. 
+|D03d_Path_SquareKnotP_P0T180.3D| `\quad` |D03e_Path_SquareKnot.3D| `\quad` |D03f_Path_SquareKnot.3D|
 
+
+
+.. |D03d_Path_SquareKnotP_P0T180.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D03d_Path_SquareKnotP_P0T180.3D.jpg
+   :width: 30 %
+
+
+.. |D03e_Path_SquareKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D03e_Path_SquareKnot.3D.jpg
+   :width: 30 %
+
+
+.. |D03f_Path_SquareKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D03f_Path_SquareKnot.3D.jpg
+   :width: 30 %
 
 
 
@@ -206,46 +212,41 @@ An example in C\#
 
 
 
-Some text
+
+|D04a_Path_GrannyKnot.3D| `\quad` |D04b_Path_GrannyKnot.3D| `\quad` |D04c_Path_GrannyKnot.3D|
 
 
-|PathP_GrannyKnot_P090T090_a| `\quad` |PathP_GrannyKnot_P090T000_a|
 
-.. |PathP_GrannyKnot_P090T090_a| image:: ../_static/PathSurfaces/GeneralKnots/PathP_GrannyKnot_P090T090_a.3D.xml.jpg
-   :width: 30 %
-
-.. |PathP_GrannyKnot_P090T000_a| image:: ../_static/PathSurfaces/GeneralKnots/PathP_GrannyKnot_P090T000_a.3D.xml.jpg
+.. |D04a_Path_GrannyKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D04a_Path_GrannyKnot.3D.jpg
    :width: 30 %
 
 
-
-
-**Left figure**: Trefoil A. Perspective camera. 
-
-**Right figure**: Trefoil B. Perspective camera. 
-
-
-
-
-Some text  
-
-
-
-
-|PathO_GrannyKnot_P090T090_a| `\quad` |PathO_GrannyKnot_P090T000_a|
-
-.. |PathO_GrannyKnot_P090T090_a| image:: ../_static/PathSurfaces/GeneralKnots/PathO_GrannyKnot_P090T090_a.3D.xml.jpg
+.. |D04b_Path_GrannyKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D04b_Path_GrannyKnot.3D.jpg
    :width: 30 %
 
-.. |PathO_GrannyKnot_P090T000_a| image:: ../_static/PathSurfaces/GeneralKnots/PathO_GrannyKnot_P090T000_a.3D.xml.jpg
+
+.. |D04c_Path_GrannyKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D04c_Path_GrannyKnot.3D.jpg
    :width: 30 %
 
 
 
 
-**Left figure**: Trefoil A. Orthographic camera. 
 
-**Right figure**: Trefoil B. Orthographic camera. 
+|D04d_Path_GrannyKnot.3D| `\quad` |D04e_Path_GrannyKnot.3D| `\quad` |D04f_Path_GrannyKnot.3D|
+
+
+
+.. |D04d_Path_GrannyKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D04d_Path_GrannyKnot.3D.jpg
+   :width: 30 %
+
+
+.. |D04e_Path_GrannyKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D04e_Path_GrannyKnot.3D.jpg
+   :width: 30 %
+
+
+.. |D04f_Path_GrannyKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D04f_Path_GrannyKnot.3D.jpg
+   :width: 30 %
+
 
 
 
@@ -277,47 +278,33 @@ An example in C\#
 
 
 
+    
 
-Some text
+|D05a_Path_CinquefoilKnot.3D| `\quad` |D05b_Path_CinquefoilKnot.3D|
 
 
-|PathP_CinquefoilKnot_P090T090_a| `\quad` |PathP_CinquefoilKnot_P000T180_a|
 
-.. |PathP_CinquefoilKnot_P090T090_a| image:: ../_static/PathSurfaces/GeneralKnots/PathP_CinquefoilKnot_P090T090_a.3D.xml.jpg
-   :width: 30 %
-
-.. |PathP_CinquefoilKnot_P000T180_a| image:: ../_static/PathSurfaces/GeneralKnots/PathP_CinquefoilKnot_P000T180_a.3D.xml.jpg
+.. |D05a_Path_CinquefoilKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D05a_Path_CinquefoilKnot.3D.jpg
    :width: 30 %
 
 
-
-
-**Left figure**: Cinquefoil Knot. Perspective camera. 
-
-**Right figure**: Cinquefoil Knot. Perspective camera. 
-
-
-
-
-Some text  
-
-
-
-
-|PathO_CinquefoilKnot_P090T090_a| `\quad` |PathO_CinquefoilKnot_P000T180_a|
-
-.. |PathO_CinquefoilKnot_P090T090_a| image:: ../_static/PathSurfaces/GeneralKnots/PathO_CinquefoilKnot_P090T090_a.3D.xml.jpg
-   :width: 30 %
-
-.. |PathO_CinquefoilKnot_P000T180_a| image:: ../_static/PathSurfaces/GeneralKnots/PathO_CinquefoilKnot_P000T180_a.3D.xml.jpg
+.. |D05b_Path_CinquefoilKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D05b_Path_CinquefoilKnot.3D.jpg
    :width: 30 %
 
 
 
+|D01c_Path_Trefoil_Knoten_A.3D| `\quad` |D05d_Path_CinquefoilKnot.3D|
 
-**Left figure**: Cinquefoil Knot. Orthographic camera. 
 
-**Right figure**: Cinquefoil Knot. Orthographic camera. 
+
+.. |D05c_Path_CinquefoilKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D05c_Path_CinquefoilKnot.3D.jpg
+   :width: 30 %
+
+
+.. |D05d_Path_CinquefoilKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D05d_Path_CinquefoilKnot.3D.jpg
+   :width: 30 %
+
+
 
 
 
@@ -351,46 +338,43 @@ An example in C\#
     var z = Math.Cos(7 * t) / 10;
 
 
+    
 
-Some text
+|D06a_Path_74Knot.3D| `\quad` |D06b_Path_74Knot.3D| `\quad` |D06c_Path_74Knot.3D|
 
 
-|PathP_74Knot_P090T090_a| `\quad` |PathP_74Knot_P090T180_a|
 
-.. |PathP_74Knot_P090T090_a| image:: ../_static/PathSurfaces/GeneralKnots/PathP_74Knot_P090T090_a.3D.xml.jpg
-   :width: 30 %
-
-.. |PathP_74Knot_P090T180_a| image:: ../_static/PathSurfaces/GeneralKnots/PathP_74Knot_P090T180_a.3D.xml.jpg
+.. |D06a_Path_74Knot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D06a_Path_74Knot.3D.jpg
    :width: 30 %
 
 
-
-
-**Left figure**: 74 Knot. Perspective camera. 
-
-**Right figure**: 74 Knot. Perspective camera. 
-
-
-
-
-Some text  
-
-
-
-|PathO_74Knot_P090T090_a| `\quad` |PathO_74Knot_P090T180_a|
-
-.. |PathO_74Knot_P090T090_a| image:: ../_static/PathSurfaces/GeneralKnots/PathO_74Knot_P090T090_a.3D.xml.jpg
+.. |D06b_Path_74Knot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D06b_Path_74Knot.3D.jpg
    :width: 30 %
 
-.. |PathO_74Knot_P090T180_a| image:: ../_static/PathSurfaces/GeneralKnots/PathO_74Knot_P090T180_a.3D.xml.jpg
+
+.. |D06c_Path_74Knot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D06c_Path_74Knot.3D.jpg
    :width: 30 %
 
 
 
 
-**Left figure**: 74 Knot. Orthographic camera. 
 
-**Right figure**: 74 Knot. Orthographic camera. 
+|D06d_Path_74Knot.3D| `\quad` |D06e_Path_74Knot.3D| `\quad` |D06f_Path_74Knot.3D|
+
+
+
+.. |D06d_Path_74Knot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D06d_Path_74Knot.3D.jpg
+   :width: 30 %
+
+
+.. |D06e_Path_74Knot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D06e_Path_74Knot.3D.jpg
+   :width: 30 %
+
+
+.. |D06f_Path_74Knot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D06f_Path_74Knot.3D.jpg
+   :width: 30 %
+
+
 
 
 
@@ -426,48 +410,40 @@ An example in C\#
 
 
 
-Some text
+
+|D07a_Path_FigureEightKnot.3D| `\quad` |D07b_Path_FigureEightKnot.3D| `\quad` |D07c_Path_FigureEightKnot.3D|
 
 
-|PathP_AchterknotenP090T090a| `\quad` |PathP_Achterknoten_P090T180a|
 
-.. |PathP_AchterknotenP090T090a| image:: ../_static/PathSurfaces/GeneralKnots/PathP_AchterknotenP090T090a.3D.xml.jpg
-   :width: 30 %
-
-.. |PathP_Achterknoten_P090T180a| image:: ../_static/PathSurfaces/GeneralKnots/PathP_Achterknoten_P090T180a.3D.xml.jpg
+.. |D07a_Path_FigureEightKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D07a_Path_FigureEightKnot.3D.jpg
    :width: 30 %
 
 
-
-
-**Left figure**: Figure-eight_knot. Perspective camera. 
-
-**Right figure**: Figure-eight_knot. Perspective camera. 
-
-
-
-
-Some text
-
-
-Some text
-
-
-|PathO_AchterknotenP090T090a| `\quad` |PathO_Achterknoten_P090T180a|
-
-.. |PathO_AchterknotenP090T090a| image:: ../_static/PathSurfaces/GeneralKnots/PathO_Achterknoten_P090T090a.3D.xml.jpg
+.. |D07b_Path_FigureEightKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D07b_Path_FigureEightKnot.3D.jpg
    :width: 30 %
 
-.. |PathO_Achterknoten_P090T180a| image:: ../_static/PathSurfaces/GeneralKnots/PathO_Achterknoten_P090T000a.3D.xml.jpg
+
+.. |D07c_Path_FigureEightKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D07c_Path_FigureEightKnot.3D.jpg
    :width: 30 %
 
 
 
 
-**Left figure**: Figure-eight_knot. Orthographic camera. 
 
-**Right figure**: Figure-eight_knot. Orthographic camera. 
+|D07d_Path_FigureEightKnot.3D| `\quad` |D07e_Path_FigureEightKnot.3D| `\quad` |D07f_Path_FigureEightKnot.3D|
 
+
+
+.. |D07d_Path_FigureEightKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D07d_Path_FigureEightKnot.3D.jpg
+   :width: 30 %
+
+
+.. |D07e_Path_FigureEightKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D07e_Path_FigureEightKnot.3D.jpg
+   :width: 30 %
+
+
+.. |D07f_Path_FigureEightKnot.3D| image:: ../_static/B24_WpfPathSurfaces/C06_GeneralKnots/D07f_Path_FigureEightKnot.3D.jpg
+   :width: 30 %
 
 
 

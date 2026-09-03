@@ -44,20 +44,22 @@ Polynomial Knot. https://home.adelphi.edu/~stemkoski/knotgallery/poly3.html
     var z = (t5 / 5 - 2 * t) / 10;
 
 
-|PathP_Poly31Knot_a| `\quad` |PathO_Poly31Knot_a| 
 
-.. |PathP_Poly31Knot_a| image:: ../_static/PathSurfaces/PolynomialKnots/PathP_Poly31Knot_a.3D.xml.jpg
+
+|D01a_Path_Poly31Knot.3D| `\quad` |D01b_Path_Poly31Knot.3D| `\quad` |D01c_Path_Poly31Knot.3D|
+
+
+
+.. |D01a_Path_Poly31Knot.3D| image:: ../_static/B24_WpfPathSurfaces/\C09_PolynomialKnots/D01a_Path_Poly31Knot.3D.jpg
    :width: 30 %
 
-.. |PathO_Poly31Knot_a| image:: ../_static/PathSurfaces/PolynomialKnots/PathO_Poly31Knot_a.3D.xml.jpg
+
+.. |D01b_Path_Poly31Knot.3D| image:: ../_static/B24_WpfPathSurfaces/\C09_PolynomialKnots/D01b_Path_Poly31Knot.3D.jpg
    :width: 30 %
 
 
-
-
-**Left figure**: Polynomial knot 3-1. Perspective camera. 
-
-**Right figure**: Polynomial knot 3-1. Orthographic camera. 
+.. |D01c_Path_Poly31Knot.3D| image:: ../_static/B24_WpfPathSurfaces/\C09_PolynomialKnots/D01c_Path_Poly31Knot.3D.jpg
+   :width: 30 %
 
 
 
@@ -82,20 +84,25 @@ Figure-Eight (41) Polynomial Knot. https://home.adelphi.edu/~stemkoski/knotgalle
     var z = (1.0 / 10.0) * t * (t2 - 4) * (t2 - 9) * (t2 - 12) / 10;
 
 
-|PathP_Poly41Knot_a| `\quad` |PathO_Poly41Knot_a| 
 
-.. |PathP_Poly41Knot_a| image:: ../_static/PathSurfaces/PolynomialKnots/PathP_Poly41Knot_a.3D.xml.jpg
+
+|D02a_Path_Poly41Knot.3D| `\quad` |D02b_Path_Poly41Knot.3D| `\quad` |D02c_Path_Poly41Knot.3D|
+
+
+
+.. |D02a_Path_Poly41Knot.3D| image:: ../_static/B24_WpfPathSurfaces/\C09_PolynomialKnots/D02a_Path_Poly41Knot.3D.jpg
    :width: 30 %
 
-.. |PathO_Poly41Knot_a| image:: ../_static/PathSurfaces/PolynomialKnots/PathO_Poly41Knot_a.3D.xml.jpg
+
+.. |D02b_Path_Poly41Knot.3D| image:: ../_static/B24_WpfPathSurfaces/\C09_PolynomialKnots/D02b_Path_Poly41Knot.3D.jpg
+   :width: 30 %
+
+
+.. |D02c_Path_Poly41Knot.3D| image:: ../_static/B24_WpfPathSurfaces/\C09_PolynomialKnots/D02c_Path_Poly41Knot.3D.jpg
    :width: 30 %
 
 
 
-
-**Left figure**: Polynomial knot 4-1. Perspective camera. 
-
-**Right figure**: Polynomial knot 4-1. Orthographic camera. 
 
 
 
@@ -125,20 +132,22 @@ Cinquefoil (51) Polynomial Knot. https://home.adelphi.edu/~stemkoski/knotgallery
 
 
 
-|PathP_Poly51Knot_a| `\quad` |PathO_Poly51Knot_a| 
 
-.. |PathP_Poly51Knot_a| image:: ../_static/PathSurfaces/PolynomialKnots/PathP_Poly51Knot_a.3D.xml.jpg
+|D03a_Path_Poly51Knot.3D| `\quad` |D03b_Path_Poly51Knot.3D| `\quad` |D03c_Path_Poly51Knot.3D|
+
+
+
+.. |D03a_Path_Poly51Knot.3D| image:: ../_static/B24_WpfPathSurfaces/\C09_PolynomialKnots/D03a_Path_Poly51Knot.3D.jpg
    :width: 30 %
 
-.. |PathO_Poly51Knot_a| image:: ../_static/PathSurfaces/PolynomialKnots/PathO_Poly51Knot_a.3D.xml.jpg
+
+.. |D03b_Path_Poly51Knot.3D| image:: ../_static/B24_WpfPathSurfaces/\C09_PolynomialKnots/D03b_Path_Poly51Knot.3D.jpg
    :width: 30 %
 
 
+.. |D03c_Path_Poly51Knot.3D| image:: ../_static/B24_WpfPathSurfaces/\C09_PolynomialKnots/D03c_Path_Poly51Knot.3D.jpg
+   :width: 30 %
 
-
-**Left figure**: Polynomial knot 5-1. Perspective camera. 
-
-**Right figure**: Polynomial knot 5-1. Orthographic camera. 
 
 
 
@@ -165,20 +174,23 @@ Six-Crossing (62) Polynomial Knot. https://home.adelphi.edu/~stemkoski/knotgalle
 
 
 
-|PathP_Poly62Knot_a| `\quad` |PathO_Poly62Knot_a| 
 
-.. |PathP_Poly62Knot_a| image:: ../_static/PathSurfaces/PolynomialKnots/PathP_Poly62Knot_a.3D.xml.jpg
+
+|D04a_Path_Poly62Knot.3D| `\quad` |D04b_Path_Poly62Knot.3D| `\quad` |D04c_Path_Poly62Knot.3D|
+
+
+
+.. |D04a_Path_Poly62Knot.3D| image:: ../_static/B24_WpfPathSurfaces/\C09_PolynomialKnots/D04a_Path_Poly62Knot.3D.jpg
    :width: 30 %
 
-.. |PathO_Poly62Knot_a| image:: ../_static/PathSurfaces/PolynomialKnots/PathO_Poly62Knot_a.3D.xml.jpg
+
+.. |D04b_Path_Poly62Knot.3D| image:: ../_static/B24_WpfPathSurfaces/\C09_PolynomialKnots/D04b_Path_Poly62Knot.3D.jpg
    :width: 30 %
 
 
+.. |D04c_Path_Poly62Knot.3D| image:: ../_static/B24_WpfPathSurfaces/\C09_PolynomialKnots/D04c_Path_Poly62Knot.3D.jpg
+   :width: 30 %
 
-
-**Left figure**: Polynomial knot 6-2. Perspective camera. 
-
-**Right figure**: Polynomial knot 6-2. Orthographic camera. 
 
 
 
@@ -206,20 +218,22 @@ Seven-Crossing (74) Polynomial Knot. https://home.adelphi.edu/~stemkoski/knotgal
     var z = (1.0 / 200.0) * t * (t2 - 0.2) * (t2 - 1) * (t2 - 5) * (t2 - 6.5) * (t2 - 9) * (t2 - 10) / 10;
 
 
-|PathP_Poly74Knot_a| `\quad` |PathO_Poly74Knot_a| 
 
-.. |PathP_Poly74Knot_a| image:: ../_static/PathSurfaces/PolynomialKnots/PathP_Poly74Knot_a.3D.xml.jpg
+
+|D05a_Path_Poly74Knot.3D| `\quad` |D05b_Path_Poly74Knot.3D| `\quad` |D05c_Path_Poly74Knot.3D|
+
+
+
+.. |D05a_Path_Poly74Knot.3D| image:: ../_static/B24_WpfPathSurfaces/\C09_PolynomialKnots/D05a_Path_Poly74Knot.3D.jpg
    :width: 30 %
 
-.. |PathO_Poly74Knot_a| image:: ../_static/PathSurfaces/PolynomialKnots/PathO_Poly74Knot_a.3D.xml.jpg
+
+.. |D05b_Path_Poly74Knot.3D| image:: ../_static/B24_WpfPathSurfaces/\C09_PolynomialKnots/D05b_Path_Poly74Knot.3D.jpg
    :width: 30 %
 
 
-
-
-**Left figure**: Polynomial knot 7-4. Perspective camera. 
-
-**Right figure**: Polynomial knot 7-4. Orthographic camera. 
+.. |D05c_Path_Poly74Knot.3D| image:: ../_static/B24_WpfPathSurfaces/\C09_PolynomialKnots/D05c_Path_Poly74Knot.3D.jpg
+   :width: 30 %
 
 
 

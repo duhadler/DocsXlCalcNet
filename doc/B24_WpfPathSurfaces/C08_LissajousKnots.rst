@@ -75,52 +75,37 @@ An example in C\#
 
 
 
-|PathP_111_LKnot_P090T090a| `\quad` |PathP_111_LKnot_P090T180a| `\quad` |PathP_111_LKnot_P135T180a|
+|D01a_Path_111_LKnot_P090T090.3D| `\quad` |D01b_Path_111_LKnot_P090T180.3D| `\quad` |D01c_Path_111_LKnot_P135T180.3D|
 
-.. |PathP_111_LKnot_P090T090a| image:: ../_static/PathSurfaces/LissajousKnots/PathP_111_LKnot_P090T090a.3D.xml.jpg
+
+
+.. |D01b_Path_111_LKnot_P090T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D01b_Path_111_LKnot_P090T180.3D.jpg
    :width: 30 %
 
-.. |PathP_111_LKnot_P090T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathP_111_LKnot_P090T180a.3D.xml.jpg
+
+.. |D01a_Path_111_LKnot_P090T090.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D01a_Path_111_LKnot_P090T090.3D.jpg
    :width: 30 %
 
-.. |PathP_111_LKnot_P135T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathP_111_LKnot_P135T180a.3D.xml.jpg
-   :width: 26 %
 
-
-
-
-**Left figure**: Lissajous knot 1-1-1. Perspective camera. 
-
-**Middle figure**: Lissajous knot 1-1-1. Perspective camera. 
-
-**Right figure**: Lissajous knot 1-1-1. Perspective camera. 
-
-
-
-
-Some text
-
-
-|PathO_111_LKnot_P090T090a| `\quad` |PathO_111_LKnot_P090T180a| `\quad` |PathO_111_LKnot_P135T180a|
-
-.. |PathO_111_LKnot_P090T090a| image:: ../_static/PathSurfaces/LissajousKnots/PathO_111_LKnot_P090T090a.3D.xml.jpg
+.. |D01c_Path_111_LKnot_P135T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D01c_Path_111_LKnot_P135T180.3D.jpg
    :width: 30 %
 
-.. |PathO_111_LKnot_P090T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathO_111_LKnot_P090T180a.3D.xml.jpg
+
+
+|D01d_Path_111_LKnot_P090T090.3D| `\quad` |D01e_Path_111_LKnot_P090T180.3D| `\quad` |D01f_Path_111_LKnot_P135T180.3D|
+
+
+
+.. |D01d_Path_111_LKnot_P090T090.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D01d_Path_111_LKnot_P090T090.3D.jpg
    :width: 30 %
 
-.. |PathO_111_LKnot_P135T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathO_111_LKnot_P135T180a.3D.xml.jpg
-   :width: 22 %
+
+.. |D01e_Path_111_LKnot_P090T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D01e_Path_111_LKnot_P090T180.3D.jpg
+   :width: 30 %
 
 
-
-
-**Left figure**: Lissajous knot 1-1-1. Orthographic camera. 
-
-**Middle figure**: Lissajous knot 1-1-1. Orthographic camera. 
-
-**Right figure**: Lissajous knot 1-1-1. Orthographic camera. 
-
+.. |D01f_Path_111_LKnot_P135T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D01f_Path_111_LKnot_P135T180.3D.jpg
+   :width: 30 %
 
 
 
@@ -152,60 +137,38 @@ An example in C\#
     var z = (a2 * Math.Cos(k2 * t + l2)) / 50;
 
 
-|PathP_121_LKnot_P090T090a| `\quad` |PathP_121_LKnot_P090T180a| `\quad` |PathP_121_LKnot_P135T180a|
 
-.. |PathP_121_LKnot_P090T090a| image:: ../_static/PathSurfaces/LissajousKnots/PathP_121_LKnot_P090T090a.3D.xml.jpg
+|D02a_Path_121_LKnot_P090T090.3D| `\quad` |D02b_Path_121_LKnot_P090T180.3D| `\quad` |D02c_Path_121_LKnot_P135T180.3D|
+
+
+
+.. |D02a_Path_121_LKnot_P090T090.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D02a_Path_121_LKnot_P090T090.3D.jpg
    :width: 30 %
 
-.. |PathP_121_LKnot_P090T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathP_121_LKnot_P090T180a.3D.xml.jpg
+
+.. |D02b_Path_121_LKnot_P090T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D02b_Path_121_LKnot_P090T180.3D.jpg
    :width: 30 %
 
-.. |PathP_121_LKnot_P135T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathP_121_LKnot_P135T180a.3D.xml.jpg
-   :width: 26 %
 
-
-
-
-**Left figure**: Lissajous knot 1-2-1. Perspective camera. 
-
-**Middle figure**: Lissajous knot 1-2-1. Perspective camera. 
-
-**Right figure**: Lissajous knot 1-2-1. Perspective camera. 
-
-
-
-
-Some text
-
-
-|PathO_121_LKnot_P090T090a| `\quad` |PathO_121_LKnot_P090T180a| `\quad` |PathO_121_LKnot_P135T180a|
-
-.. |PathO_121_LKnot_P090T090a| image:: ../_static/PathSurfaces/LissajousKnots/PathO_121_LKnot_P090T090a.3D.xml.jpg
+.. |D02c_Path_121_LKnot_P135T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D02c_Path_121_LKnot_P135T180.3D.jpg
    :width: 30 %
 
-.. |PathO_121_LKnot_P090T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathO_121_LKnot_P090T180a.3D.xml.jpg
+
+
+|D02d_Path_121_LKnot_P090T090.3D| `\quad` |D02e_Path_121_LKnot_P090T180.3D| `\quad` |D02f_Path_121_LKnot_P135T180.3D|
+
+
+
+.. |D02d_Path_121_LKnot_P090T090.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D02d_Path_121_LKnot_P090T090.3D.jpg
    :width: 30 %
 
-.. |PathO_121_LKnot_P135T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathO_121_LKnot_P135T180a.3D.xml.jpg
-   :width: 22 %
+
+.. |D02e_Path_121_LKnot_P090T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D02e_Path_121_LKnot_P090T180.3D.jpg
+   :width: 30 %
 
 
-
-
-**Left figure**: Lissajous knot 1-2-1. Orthographic camera. 
-
-**Middle figure**: Lissajous knot 1-2-1. Orthographic camera. 
-
-**Right figure**: Lissajous knot 1-2-1. Orthographic camera. 
-
-
-
-
-
-
-
-
-
+.. |D02f_Path_121_LKnot_P135T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D02f_Path_121_LKnot_P135T180.3D.jpg
+   :width: 30 %
 
 
 
@@ -235,58 +198,39 @@ An example in C\#
     var z = (a2 * Math.Cos(k2 * t + l2)) / 50;
 
 
-|PathP_153_LKnot_P090T090a| `\quad` |PathP_153_LKnot_P090T180a| `\quad` |PathP_153_LKnot_P135T180a|
 
-.. |PathP_153_LKnot_P090T090a| image:: ../_static/PathSurfaces/LissajousKnots/PathP_153_LKnot_P090T090a.3D.xml.jpg
+
+|D03a_Path_153_LKnot_P090T090.3D| `\quad` |D03b_Path_153_LKnot_P090T180.3D| `\quad` |D03c_Path_153_LKnot_P135T180.3D|
+
+
+
+.. |D03a_Path_153_LKnot_P090T090.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D03a_Path_153_LKnot_P090T090.3D.jpg
    :width: 30 %
 
-.. |PathP_153_LKnot_P090T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathP_153_LKnot_P090T180a.3D.xml.jpg
+
+.. |D03b_Path_153_LKnot_P090T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D03b_Path_153_LKnot_P090T180.3D.jpg
    :width: 30 %
 
-.. |PathP_153_LKnot_P135T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathP_153_LKnot_P135T180a.3D.xml.jpg
-   :width: 26 %
 
-
-
-
-**Left figure**: Lissajous knot 1-5-3. Perspective camera. 
-
-**Middle figure**: Lissajous knot 1-5-3. Perspective camera. 
-
-**Right figure**: Lissajous knot 1-5-3. Perspective camera. 
-
-
-
-
-Some text
-
-
-|PathO_153_LKnot_P090T090a| `\quad` |PathO_153_LKnot_P090T180a| `\quad` |PathO_153_LKnot_P135T180a|
-
-.. |PathO_153_LKnot_P090T090a| image:: ../_static/PathSurfaces/LissajousKnots/PathO_153_LKnot_P090T090a.3D.xml.jpg
+.. |D03c_Path_153_LKnot_P135T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D03c_Path_153_LKnot_P135T180.3D.jpg
    :width: 30 %
 
-.. |PathO_153_LKnot_P090T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathO_153_LKnot_P090T180a.3D.xml.jpg
+
+
+|D03d_Path_153_LKnot_P090T090.3D| `\quad` |D03e_Path_153_LKnot_P090T180.3D| `\quad` |D03f_Path_153_LKnot_P135T180.3D|
+
+
+
+.. |D03d_Path_153_LKnot_P090T090.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D03d_Path_153_LKnot_P090T090.3D.jpg
    :width: 30 %
 
-.. |PathO_153_LKnot_P135T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathO_153_LKnot_P135T180a.3D.xml.jpg
-   :width: 22 %
+
+.. |D03e_Path_153_LKnot_P090T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D03e_Path_153_LKnot_P090T180.3D.jpg
+   :width: 30 %
 
 
-
-
-**Left figure**: Lissajous knot 1-5-3. Orthographic camera. 
-
-**Middle figure**: Lissajous knot 1-5-3. Orthographic camera. 
-
-**Right figure**: Lissajous knot 1-5-3. Orthographic camera. 
-
-
-
-
-
-
-
+.. |D03f_Path_153_LKnot_P135T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D03f_Path_153_LKnot_P135T180.3D.jpg
+   :width: 30 %
 
 
 
@@ -318,60 +262,38 @@ An example in C\#
 
 
 
-|PathP_352_LKnot_P090T090a| `\quad` |PathP_352_LKnot_P090T180a| `\quad` |PathP_352_LKnot_P135T180a|
 
-.. |PathP_352_LKnot_P090T090a| image:: ../_static/PathSurfaces/LissajousKnots/PathP_352_LKnot_P090T090a.3D.xml.jpg
+|D04a_Path_352_LKnot_P090T090.3D| `\quad` |D04b_Path_352_LKnot_P090T180.3D| `\quad` |D04c_Path_352_LKnot_P135T180.3D|
+
+
+
+.. |D04a_Path_352_LKnot_P090T090.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D04a_Path_352_LKnot_P090T090.3D.jpg
    :width: 30 %
 
-.. |PathP_352_LKnot_P090T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathP_352_LKnot_P090T180a.3D.xml.jpg
+
+.. |D04b_Path_352_LKnot_P090T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D04b_Path_352_LKnot_P090T180.3D.jpg
    :width: 30 %
 
-.. |PathP_352_LKnot_P135T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathP_352_LKnot_P135T180a.3D.xml.jpg
-   :width: 26 %
 
-
-
-
-**Left figure**: Lissajous knot 3-5-2. Perspective camera. 
-
-**Middle figure**: Lissajous knot 3-5-2. Perspective camera. 
-
-**Right figure**: Lissajous knot 3-5-2. Perspective camera. 
-
-
-
-
-Some text
-
-
-|PathO_352_LKnot_P090T090a| `\quad` |PathO_352_LKnot_P090T180a| `\quad` |PathO_352_LKnot_P135T180a|
-
-.. |PathO_352_LKnot_P090T090a| image:: ../_static/PathSurfaces/LissajousKnots/PathO_352_LKnot_P090T090a.3D.xml.jpg
+.. |D04c_Path_352_LKnot_P135T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D04c_Path_352_LKnot_P135T180.3D.jpg
    :width: 30 %
 
-.. |PathO_352_LKnot_P090T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathO_352_LKnot_P090T180a.3D.xml.jpg
+
+
+|D04d_Path_352_LKnot_P090T090.3D| `\quad` |D04e_Path_352_LKnot_P090T180.3D| `\quad` |D04f_Path_352_LKnot_P135T180.3D|
+
+
+
+.. |D04d_Path_352_LKnot_P090T090.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D04d_Path_352_LKnot_P090T090.3D.jpg
    :width: 30 %
 
-.. |PathO_352_LKnot_P135T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathO_352_LKnot_P135T180a.3D.xml.jpg
-   :width: 22 %
+
+.. |D04e_Path_352_LKnot_P090T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D04e_Path_352_LKnot_P090T180.3D.jpg
+   :width: 30 %
 
 
-
-
-**Left figure**: Lissajous knot 3-5-2. Orthographic camera. 
-
-**Middle figure**: Lissajous knot 3-5-2. Orthographic camera. 
-
-**Right figure**: Lissajous knot 3-5-2. Orthographic camera. 
-
-
-
-
-
-
-
-
-
+.. |D04f_Path_352_LKnot_P135T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D04f_Path_352_LKnot_P135T180.3D.jpg
+   :width: 30 %
 
 
 
@@ -403,51 +325,40 @@ An example in C\#
     var z = (a2 * Math.Cos(k2 * t + l2)) / 50;
 
 
-|PathP_357_LKnot_P090T090a| `\quad` |PathP_357_LKnot_P090T180a| `\quad` |PathP_357_LKnot_P135T180a|
 
-.. |PathP_357_LKnot_P090T090a| image:: ../_static/PathSurfaces/LissajousKnots/PathP_357_LKnot_P090T090a.3D.xml.jpg
+|D05a_Path_357_LKnot_P090T090.3D| `\quad` |D05b_Path_357_LKnot_P090T180.3D| `\quad` |D05c_Path_357_LKnot_P135T180.3D|
+
+
+
+.. |D05a_Path_357_LKnot_P090T090.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D05a_Path_357_LKnot_P090T090.3D.jpg
    :width: 30 %
 
-.. |PathP_357_LKnot_P090T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathP_357_LKnot_P090T180a.3D.xml.jpg
+
+.. |D05b_Path_357_LKnot_P090T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D05b_Path_357_LKnot_P090T180.3D.jpg
    :width: 30 %
 
-.. |PathP_357_LKnot_P135T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathP_357_LKnot_P135T180a.3D.xml.jpg
-   :width: 26 %
 
-
-
-
-**Left figure**: Lissajous knot 3-5-7. Perspective camera. 
-
-**Middle figure**: Lissajous knot 3-5-7. Perspective camera. 
-
-**Right figure**: Lissajous knot 3-5-7. Perspective camera. 
-
-
-
-
-Some text
-
-
-|PathO_357_LKnot_P090T090a| `\quad` |PathO_357_LKnot_P090T180a| `\quad` |PathO_357_LKnot_P135T180a|
-
-.. |PathO_357_LKnot_P090T090a| image:: ../_static/PathSurfaces/LissajousKnots/PathO_357_LKnot_P090T090a.3D.xml.jpg
+.. |D05c_Path_357_LKnot_P135T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D05c_Path_357_LKnot_P135T180.3D.jpg
    :width: 30 %
 
-.. |PathO_357_LKnot_P090T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathO_357_LKnot_P090T180a.3D.xml.jpg
+
+
+|D05d_Path_357_LKnot_P090T090.3D| `\quad` |D05e_Path_357_LKnot_P090T180.3D| `\quad` |D05f_Path_357_LKnot_P135T180.3D|
+
+
+
+.. |D05d_Path_357_LKnot_P090T090.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D05d_Path_357_LKnot_P090T090.3D.jpg
    :width: 30 %
 
-.. |PathO_357_LKnot_P135T180a| image:: ../_static/PathSurfaces/LissajousKnots/PathO_357_LKnot_P135T180a.3D.xml.jpg
-   :width: 22 %
+
+.. |D05e_Path_357_LKnot_P090T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D05e_Path_357_LKnot_P090T180.3D.jpg
+   :width: 30 %
 
 
+.. |D05f_Path_357_LKnot_P135T180.3D| image:: ../_static/B24_WpfPathSurfaces/C08_LissajousKnots/D05f_Path_357_LKnot_P135T180.3D.jpg
+   :width: 30 %
 
 
-**Left figure**: Lissajous knot 3-5-7. Orthographic camera. 
-
-**Middle figure**: Lissajous knot 3-5-7. Orthographic camera. 
-
-**Right figure**: Lissajous knot 3-5-7. Orthographic camera. 
 
 
 

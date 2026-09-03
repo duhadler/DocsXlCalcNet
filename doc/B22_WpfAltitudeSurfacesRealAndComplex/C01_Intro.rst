@@ -32,10 +32,6 @@ The 3D Viewer
 The formatting of 3D bitmap graphics is done with the following app:
 
 
-.. image:: ../_static/BuiltIn/Intro/App3D.png
-   :width: 50 %
-   :align: center
-
 More info to follow.
 
 

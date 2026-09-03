@@ -67,13 +67,21 @@ See also: http://paulbourke.net/geometry/spiral/
 
 
 
-|picTestBourneSeaShell1| `\quad` |picTestBourneSeaShell2|
+|01a_BourkeSeaShell.3D| `\quad` |01b_BourkeSeaShell.3D| `\quad` |01c_BourkeSeaShell.3D|
 
-.. |picTestBourneSeaShell1| image:: ../_static/ParametricSurfaces/Textures/TestBourneSeaShell.3D.xm.jpg
+
+
+.. |01a_BourkeSeaShell.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/01a_BourkeSeaShell.3D.jpg
    :width: 30 %
 
-.. |picTestBourneSeaShell2| image:: ../_static/ParametricSurfaces/Textures/TestBourneSeaShell.3D.xml.jpg
+
+.. |01b_BourkeSeaShell.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/01b_BourkeSeaShell.3D.jpg
    :width: 30 %
+
+
+.. |01c_BourkeSeaShell.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/01c_BourkeSeaShell.3D.jpg
+   :width: 30 %
+
 
 
 
@@ -85,8 +93,6 @@ See also: http://paulbourke.net/geometry/spiral/
 
 Seashell (mathworld.wolfram)
 ---------------------------------------------
-
-.. method:: User.Seashell(a, Resolution)
 
 
 See also: https://mathworld.wolfram.com/Seashell.html
@@ -103,14 +109,23 @@ See also: https://mathworld.wolfram.com/Seashell.html
     z = (1.0 - a * a - Math.Sin(v) * (1.0 - a));
 
 
+    
 
-|TestSeashell_a| `\quad` |TestSeashell_b|
+|02a_Seashell.3D| `\quad` |02b_Seashell.3D| `\quad` |02c_Seashell.3D|
 
-.. |TestSeashell_a| image:: ../_static/ParametricSurfaces/Textures/TestSeashell_a.3D.xml.jpg
+
+
+.. |02a_Seashell.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/02a_Seashell.3D.jpg
    :width: 30 %
 
-.. |TestSeashell_b| image:: ../_static/ParametricSurfaces/Textures/TestSeashell_a.3D.xml.jpg
+
+.. |02b_Seashell.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/02b_Seashell.3D.jpg
    :width: 30 %
+
+
+.. |02c_Seashell.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/02c_Seashell.3D.jpg
+   :width: 30 %
+
 
 
 
@@ -122,9 +137,6 @@ See also: https://mathworld.wolfram.com/Seashell.html
 
 3D Apple
 -------------------------
-
-.. method:: User.Apple(a, Resolution)
-
 
 .. code-block:: csharp
 
@@ -141,15 +153,20 @@ See also: https://mathworld.wolfram.com/Seashell.html
 
 
 
-|picTestApple1| `\quad` |picTestApple2|
+|03a_Apple.3D| `\quad` |03b_Apple.3D| `\quad` |03c_Apple.3D|
 
-.. |picTestApple1| image:: ../_static/ParametricSurfaces/Textures/TestApple.3D.xm.jpg
+
+
+.. |03a_Apple.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/03a_Apple.3D.jpg
    :width: 30 %
 
-.. |picTestApple2| image:: ../_static/ParametricSurfaces/Textures/TestApple.3D.xml.jpg
+
+.. |03b_Apple.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/03b_Apple.3D.jpg
    :width: 30 %
 
-**Left figure**: parametric plot of the Apple surface. 
+
+.. |03c_Apple.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/03c_Apple.3D.jpg
+   :width: 30 %
 
 
 
@@ -161,8 +178,6 @@ See also: https://mathworld.wolfram.com/Seashell.html
 
 Bow curve
 ----------------------------------
-
-.. method:: User.Bow(a, Resolution)
 
 
 See also: http://paulbourke.net/geometry/toroidal/
@@ -180,20 +195,21 @@ See also: http://paulbourke.net/geometry/toroidal/
 
 
 
+|04a_BowCurve.3D| `\quad` |04b_BowCurve.3D| `\quad` |04c_BowCurve.3D|
 
-|picTestBowCurve1| `\quad` |picTestBowCurve2|
 
-.. |picTestBowCurve1| image:: ../_static/ParametricSurfaces/Textures/TestBowCurve.3D.xm.jpg
+
+.. |04a_BowCurve.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/04a_BowCurve.3D.jpg
    :width: 30 %
 
-.. |picTestBowCurve2| image:: ../_static/ParametricSurfaces/Textures/TestBowCurve.3D.xml.jpg
+
+.. |04b_BowCurve.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/04b_BowCurve.3D.jpg
    :width: 30 %
 
 
+.. |04c_BowCurve.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/04c_BowCurve.3D.jpg
+   :width: 30 %
 
-**Left figure**: Bow curve (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Bow curve (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -203,8 +219,6 @@ See also: http://paulbourke.net/geometry/toroidal/
 
 Fish Surface
 --------------------------------------
-
-.. method:: User.Fish3D(a, Resolution)
 
 
 See also: http://www.3d-meier.de/tut3/Seite47.html
@@ -228,19 +242,22 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-|TestFish_a| `\quad` |TestFish_b|
+|05a_Fish.3D| `\quad` |05b_Fish.3D| `\quad` |05c_Fish.3D|
 
-.. |TestFish_a| image:: ../_static/ParametricSurfaces/Textures/TestFish_a.3D.xml.jpg
+
+
+.. |05a_Fish.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/05a_Fish.3D.jpg
    :width: 30 %
 
-.. |TestFish_b| image:: ../_static/ParametricSurfaces/Textures/TestFish_a.3D.xml.jpg
+
+.. |05b_Fish.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/05b_Fish.3D.jpg
    :width: 30 %
 
 
+.. |05c_Fish.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/05c_Fish.3D.jpg
+   :width: 30 %
 
-**Left figure**: Fish Surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Right figure**: Fish Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -252,8 +269,6 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 Bourke Horn
 --------------------------------------
-
-.. method:: User.BourkeHorn3D(a, Resolution)
 
 
 See also: http://paulbourke.net/geometry/spiral/
@@ -268,18 +283,20 @@ See also: http://paulbourke.net/geometry/spiral/
 
 
 
-|picTestBourneHorn1| `\quad` |picTestBourneHorn2|
+|06a_BourkeHorn.3D| `\quad` |06b_BourkeHorn.3D| `\quad` |06c_BourkeHorn.3D|
 
-.. |picTestBourneHorn1| image:: ../_static/ParametricSurfaces/Textures/TestBourneHorn.3D.xm.jpg
+
+
+.. |06a_BourkeHorn.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/06a_BourkeHorn.3D.jpg
    :width: 30 %
 
-.. |picTestBourneHorn2| image:: ../_static/ParametricSurfaces/Textures/TestBourneHorn.3D.xml.jpg
+
+.. |06b_BourkeHorn.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/06b_BourkeHorn.3D.jpg
    :width: 30 %
-   
 
-**Left figure**: Bourne Horn (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Right figure**: Bourne Horn (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+.. |06c_BourkeHorn.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/06c_BourkeHorn.3D.jpg
+   :width: 30 %
 
 
 
@@ -297,8 +314,6 @@ See also: http://paulbourke.net/geometry/spiral/
 
 Hexa torus
 --------------------------------------
-
-.. method:: User.HexaTorus3D(a, Resolution)
 
 
 See also: http://paulbourke.net/geometry/toroidal/
@@ -320,19 +335,21 @@ The C\# code for the Klein bottle:
 
 
 
-|picHexaTorus1| `\quad` |picHexaTorus2|
+|07a_HexaTorus.3D| `\quad` |07b_HexaTorus.3D| `\quad` |07c_HexaTorus.3D|
 
-.. |picHexaTorus1| image:: ../_static/ParametricSurfaces/Textures/TestHexaTorus.3D.xm.jpg
+
+
+.. |07a_HexaTorus.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/07a_HexaTorus.3D.jpg
    :width: 30 %
 
-.. |picHexaTorus2| image:: ../_static/ParametricSurfaces/Textures/TestHexaTorus.3D.xml.jpg
+
+.. |07b_HexaTorus.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/07b_HexaTorus.3D.jpg
    :width: 30 %
 
 
+.. |07c_HexaTorus.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/07c_HexaTorus.3D.jpg
+   :width: 30 %
 
-**Left figure**: Hexa torus (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Hexa torus (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -348,8 +365,6 @@ The C\# code for the Klein bottle:
 
 3D Breather Surface
 -------------------------
-
-.. method:: User.Breather3D(a, Resolution)
 
 .. code-block:: csharp
 
@@ -367,15 +382,20 @@ The C\# code for the Klein bottle:
 
 
 
-|picTestBreather1| `\quad` |picTestBreather2|
+|08a_Breather.3D| `\quad` |08b_Breather.3D| `\quad` |08c_Breather.3D|
 
-.. |picTestBreather1| image:: ../_static/ParametricSurfaces/Textures/TestBreather.3D.xm.jpg
+
+
+.. |08a_Breather.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/08a_Breather.3D.jpg
    :width: 30 %
 
-.. |picTestBreather2| image:: ../_static/ParametricSurfaces/Textures/TestBreather.3D.xml.jpg
+
+.. |08b_Breather.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/08b_Breather.3D.jpg
    :width: 30 %
 
-**Left figure**: parametric plot of the Breather Surface. 
+
+.. |08c_Breather.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/08c_Breather.3D.jpg
+   :width: 30 %
 
 
 
@@ -386,8 +406,6 @@ The C\# code for the Klein bottle:
 
 Kuen surface
 ----------------------------------
-
-.. method:: User.Kuen3D(a, Resolution)
 
 
 See also: https://mathworld.wolfram.com/KuenSurface.html
@@ -410,18 +428,21 @@ See also: https://mathcurve.com/surfaces.gb/kuen/kuen.shtml
 
 
 
-|TestKuen_a| `\quad` |TestKuen_b|
 
-.. |TestKuen_a| image:: ../_static/ParametricSurfaces/Textures/TestKuen_a.3D.xml.jpg
+|09a_Kuen.3D| `\quad` |09b_Kuen.3D| `\quad` |09c_Kuen.3D|
+
+
+
+.. |09a_Kuen.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/09a_Kuen.3D.jpg
    :width: 30 %
 
-.. |TestKuen_b| image:: ../_static/ParametricSurfaces/Textures/TestKuen_a.3D.xml.jpg
+
+.. |09b_Kuen.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/09b_Kuen.3D.jpg
    :width: 30 %
 
 
-**Left figure**: Kuen surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Kuen surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+.. |09c_Kuen.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/09c_Kuen.3D.jpg
+   :width: 30 %
 
 
 
@@ -438,8 +459,6 @@ See also: https://mathcurve.com/surfaces.gb/kuen/kuen.shtml
 
 Tranguloid trefoil
 --------------------------------------
-
-.. method:: User.TranguloidTrefoil3D(a, Resolution)
 
 
 See also: http://paulbourke.net/geometry/tranguloid/
@@ -465,19 +484,21 @@ See also: http://www.3d-meier.de/tut3/Seite159.html
 
 
 
-|picTestTrefoil1| `\quad` |picTestTrefoil2|
 
-.. |picTestTrefoil1| image:: ../_static/ParametricSurfaces/Textures/TestTrefoil.3D.xm.jpg
+|10a_TranguloidTrefoil.3D| `\quad` |10b_TranguloidTrefoil.3D| `\quad` |10c_TranguloidTrefoil.3D|
+
+
+
+.. |10a_TranguloidTrefoil.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/10a_TranguloidTrefoil.3D.jpg
    :width: 30 %
 
-.. |picTestTrefoil2| image:: ../_static/ParametricSurfaces/Textures/TestTrefoil.3D.xml.jpg
+
+.. |10b_TranguloidTrefoil.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/10b_TranguloidTrefoil.3D.jpg
    :width: 30 %
 
 
-
-**Left figure**: Tranguloid trefoil (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Tranguloid trefoil (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+.. |10c_TranguloidTrefoil.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/10c_TranguloidTrefoil.3D.jpg
+   :width: 30 %
 
 
 
@@ -488,8 +509,6 @@ See also: http://www.3d-meier.de/tut3/Seite159.html
 
 Triaxial teardrop
 --------------------------------------
-
-.. method:: User.TriaxialTeardrop3D(a, Resolution)
 
 
 See also: http://paulbourke.net/geometry/triaxtear/
@@ -508,19 +527,22 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-|TestTearDrop_a| `\quad` |TestTearDrop_b|
 
-.. |TestTearDrop_a| image:: ../_static/ParametricSurfaces/Textures/TestTearDrop_a.3D.xml.jpg
+|11a_TearDrop.3D| `\quad` |11b_TearDrop.3D| `\quad` |11c_TearDrop.3D|
+
+
+
+.. |11a_TearDrop.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/11a_TearDrop.3D.jpg
    :width: 30 %
 
-.. |TestTearDrop_b| image:: ../_static/ParametricSurfaces/Textures/TestTearDrop_a.3D.xml.jpg
+
+.. |11b_TearDrop.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/11b_TearDrop.3D.jpg
    :width: 30 %
 
 
+.. |11c_TearDrop.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/11c_TearDrop.3D.jpg
+   :width: 30 %
 
-**Left figure**: Bours Minimal Surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Bours Minimal Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -532,8 +554,6 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 Gray Bottle
 --------------------------------------
-
-.. method:: User.GrayBottle3D(a, Resolution)
 
 
 See also: http://paulbourke.net/geometry/toroidal/
@@ -547,18 +567,22 @@ See also: http://paulbourke.net/geometry/toroidal/
 
 
 
-|picGrayBottel1| `\quad` |picGrayBottel2|
 
-.. |picGrayBottel1| image:: ../_static/ParametricSurfaces/Textures/TestGrayBottel.3D.xm.jpg
+|12a_GrayBottel.3D| `\quad` |12b_GrayBottel.3D| `\quad` |12c_GrayBottel.3D|
+
+
+
+.. |12a_GrayBottel.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/12a_GrayBottel.3D.jpg
    :width: 30 %
 
-.. |picGrayBottel2| image:: ../_static/ParametricSurfaces/Textures/TestGrayBottel.3D.xml.jpg
+
+.. |12b_GrayBottel.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/12b_GrayBottel.3D.jpg
    :width: 30 %
 
 
-**Left figure**: Gray Bottle (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+.. |12c_GrayBottel.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/12c_GrayBottel.3D.jpg
+   :width: 30 %
 
-**Right figure**: Gray Bottle (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -572,24 +596,27 @@ See also: http://paulbourke.net/geometry/toroidal/
 Surfaces mimicking snail shells
 -----------------------------------------------
 
-.. method:: User.Snail1(a, Resolution)
-
 
 See also: http://www.3d-meier.de/tut3/Seite89.html
 
 
-|TestSnail1_a| `\quad` |TestSnail1_b|
 
-.. |TestSnail1_a| image:: ../_static/ParametricSurfaces/Textures/TestSnail1_a.3D.xml.jpg
+
+|21a_Snail1.3D| `\quad` |21b_Snail1.3D| `\quad` |21c_Snail1.3D|
+
+
+
+.. |21a_Snail1.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/21a_Snail1.3D.jpg
    :width: 30 %
 
-.. |TestSnail1_b| image:: ../_static/ParametricSurfaces/Textures/TestSnail1_a.3D.xml.jpg
+
+.. |21b_Snail1.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/21b_Snail1.3D.jpg
    :width: 30 %
 
 
-**Left figure**: Pseudoheliceras subcatenatum surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+.. |21c_Snail1.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/21c_Snail1.3D.jpg
+   :width: 30 %
 
-**Right figure**: Pseudoheliceras subcatenatum surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -624,16 +651,55 @@ See also: http://www.3d-meier.de/tut3/Seite89.html
 
 
 
-|TestSnail2_a| `\quad` |TestSnail3_a| `\quad` |TestSnail4_a|
+|22a_Snail2.3D| `\quad` |22b_Snail2.3D| `\quad` |22c_Snail2.3D|
 
-.. |TestSnail2_a| image:: ../_static/ParametricSurfaces/Removal/TestSnail2_a.3D.xml.jpg
+
+
+.. |22a_Snail2.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/22a_Snail2.3D.jpg
    :width: 30 %
 
-.. |TestSnail3_a| image:: ../_static/ParametricSurfaces/Removal/TestSnail3_a.3D.xml.jpg
+
+.. |22b_Snail2.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/22b_Snail2.3D.jpg
    :width: 30 %
 
-.. |TestSnail4_a| image:: ../_static/ParametricSurfaces/Removal/TestSnail4_a.3D.xml.jpg
+
+.. |22c_Snail2.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/22c_Snail2.3D.jpg
    :width: 30 %
+
+
+
+|23a_Snail3.3D| `\quad` |23b_Snail3.3D| `\quad` |23c_Snail3.3D|
+
+
+
+.. |23a_Snail3.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/23a_Snail3.3D.jpg
+   :width: 30 %
+
+
+.. |23b_Snail3.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/23b_Snail3.3D.jpg
+   :width: 30 %
+
+
+.. |23c_Snail3.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/23c_Snail3.3D.jpg
+   :width: 30 %
+
+
+
+|24a_Snail4.3D| `\quad` |24b_Snail4.3D| `\quad` |24c_Snail4.3D|
+
+
+
+.. |24a_Snail4.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/24a_Snail4.3D.jpg
+   :width: 30 %
+
+
+.. |24b_Snail4.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/24b_Snail4.3D.jpg
+   :width: 30 %
+
+
+.. |24c_Snail4.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/24c_Snail4.3D.jpg
+   :width: 30 %
+
 
 
 
@@ -646,16 +712,60 @@ See also: http://www.3d-meier.de/tut3/Seite89.html
 
 
 
-|TestSnail5_a| `\quad` |TestSnail6_a| `\quad` |TestSnail7_a|
+|newpage|
 
-.. |TestSnail5_a| image:: ../_static/ParametricSurfaces/Removal/TestSnail5_a.3D.xml.jpg
+
+
+|25a_Snail5.3D| `\quad` |25b_Snail5.3D| `\quad` |25c_Snail5.3D|
+
+
+
+.. |25a_Snail5.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/25a_Snail5.3D.jpg
    :width: 30 %
 
-.. |TestSnail6_a| image:: ../_static/ParametricSurfaces/Removal/TestSnail6_a.3D.xml.jpg
+
+.. |25b_Snail5.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/25b_Snail5.3D.jpg
    :width: 30 %
 
-.. |TestSnail7_a| image:: ../_static/ParametricSurfaces/Removal/TestSnail7_a.3D.xml.jpg
+
+.. |25c_Snail5.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/25c_Snail5.3D.jpg
    :width: 30 %
+
+
+
+|26a_Snail6.3D| `\quad` |26b_Snail6.3D| `\quad` |26c_Snail6.3D|
+
+
+
+.. |26a_Snail6.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/26a_Snail6.3D.jpg
+   :width: 30 %
+
+
+.. |26b_Snail6.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/26b_Snail6.3D.jpg
+   :width: 30 %
+
+
+.. |26c_Snail6.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/26c_Snail6.3D.jpg
+   :width: 30 %
+
+
+
+
+|27a_Snail7.3D| `\quad` |27b_Snail7.3D| `\quad` |27c_Snail7.3D|
+
+
+
+.. |27a_Snail7.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/27a_Snail7.3D.jpg
+   :height: 300 px
+
+
+.. |27b_Snail7.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/27b_Snail7.3D.jpg
+   :height: 300 px
+
+
+.. |27c_Snail7.3D| image:: ../_static/B23_WpfParametricSurfaces/C06_DecorativeParametricSurfaces/27c_Snail7.3D.jpg
+   :height: 300 px
+
 
 
 
@@ -663,7 +773,7 @@ See also: http://www.3d-meier.de/tut3/Seite89.html
 
 **Middle figure**: Natica stellata surface.
 
-**Right figure**: Mya arenaria Surface.
+**Right figure**: Mya arenaria surface.
 
 
 

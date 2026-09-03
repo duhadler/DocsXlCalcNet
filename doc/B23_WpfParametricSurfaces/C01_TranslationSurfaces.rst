@@ -24,7 +24,7 @@ See also: https://en.wikipedia.org/wiki/Implicit_surface
 
 
 
-Regular polygone as generator
+Fermat spiral as generator
 ------------------------------------------------------------------------------
 
 The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03a_Cylinder_3_1.3D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DInteractiveExamples/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D03a_Cylinder_3_1.3D.xml>`__.
@@ -34,28 +34,20 @@ The XML code for the example below can be found online in the ``DataXlCalcNet`` 
 See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
-|10a_Triangle_surface| `\quad` |10a_Square_surface| `\quad` |10a_Circle_surface|
+|D01a_FermatSpiral.3D| `\quad` |D01b_FermatSpiral.3D| `\quad` |D01c_FermatSpiral.3D|
 
 
 
-.. |10a_Triangle_surface| image:: ../_static/TranslationSurfaces/Triangle/10a_Triangle_surface.3D.xml.jpg
+.. |D01a_FermatSpiral.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D01a_FermatSpiral.3D.jpg
    :width: 30 %
 
 
-.. |10a_Square_surface| image:: ../_static/TranslationSurfaces/Square/10a_Square_surface.3D.xml.jpg
+.. |D01b_FermatSpiral.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D01b_FermatSpiral.3D.jpg
    :width: 30 %
 
 
-.. |10a_Circle_surface| image:: ../_static/TranslationSurfaces/Circle/10a_Circle_surface.3D.xml.jpg
+.. |D01c_FermatSpiral.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D01c_FermatSpiral.3D.jpg
    :width: 30 %
-
-
-
-**Left figure**: Triangle surface
-
-**Middle figure**: Square surface
-
-**Right figure**: Circle surface
 
 
 
@@ -64,7 +56,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 |newpage|
 
-Hypocycloid as generator
+Lemniscate as generator
 -----------------------------------------------------------
 
 // see also: http://www.3d-meier.de/tut3/Seite152.html
@@ -74,16 +66,22 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-
-|10a_Hypocycloid_surface|
-
+|D02a_Lemniscate.3D| `\quad` |D02b_Lemniscate.3D| `\quad` |D02c_Lemniscate.3D|
 
 
-.. |10a_Hypocycloid_surface| image:: ../_static/TranslationSurfaces/Hypocycloid/10a_Hypocycloid_surface.3D.xml.jpg
+
+.. |D02a_Lemniscate.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D02a_Lemniscate.3D.jpg
    :width: 30 %
 
 
-**Left figure**: Hypocycloid surface
+.. |D02b_Lemniscate.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D02b_Lemniscate.3D.jpg
+   :width: 30 %
+
+
+.. |D02c_Lemniscate.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D02c_Lemniscate.3D.jpg
+   :width: 30 %
+
+
 
 
 
@@ -92,7 +90,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 |newpage|
 
 
-Archimedes spiral as generator
+Tanh spiral as generator
 -----------------------------------------------------------
 
 // see http://www.3d-meier.de/tut3/Seite187.html
@@ -104,13 +102,59 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-|01a_ArchimedesSpiral_surface| 
+See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
-.. |01a_ArchimedesSpiral_surface| image:: ../_static/On2DCurves/GenCylinderOpen/01a_ArchimedesSpiral_surface.3D.xml.jpg
+
+
+|D03a_TanhSpiral.3D| `\quad` |D03b_TanhSpiral.3D| `\quad` |D03c_TanhSpiral.3D|
+
+
+
+.. |D03a_TanhSpiral.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D03a_TanhSpiral.3D.jpg
    :width: 30 %
 
 
-**Left figure**: Archimedes spiral surface
+.. |D03b_TanhSpiral.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D03b_TanhSpiral.3D.jpg
+   :width: 30 %
+
+
+.. |D03c_TanhSpiral.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D03c_TanhSpiral.3D.jpg
+   :width: 30 %
+
+
+
+
+
+
+
+|newpage|
+
+
+Rose curve as generator
+-----------------------------------------------------------
+
+// see http://www.3d-meier.de/tut3/Seite189.html
+
+
+See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
+
+
+
+
+|D04a_RoseCurve.3D| `\quad` |D04b_RoseCurve.3D| `\quad` |D04c_RoseCurve.3D|
+
+
+
+.. |D04a_RoseCurve.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D04a_RoseCurve.3D.jpg
+   :width: 30 %
+
+
+.. |D04b_RoseCurve.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D04b_RoseCurve.3D.jpg
+   :width: 30 %
+
+
+.. |D04c_RoseCurve.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D04c_RoseCurve.3D.jpg
+   :width: 30 %
 
 
 
@@ -123,7 +167,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 |newpage|
 
 
-Fermat spiral as generator
+Hypocycloid as generator
 -----------------------------------------------------------
 
 // see http://www.3d-meier.de/tut3/Seite189.html
@@ -134,15 +178,59 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-|02a_FermatSpiral_surface| 
 
-.. |02a_FermatSpiral_surface| image:: ../_static/On2DCurves/GenCylinderOpen/02a_FermatSpiral_surface.3D.xml.jpg
+|D05a_Hypocycloid_55.3D| `\quad` |D05b_Hypocycloid_55.3D| `\quad` |D05c_Hypocycloid_55.3D|
+
+
+
+.. |D05a_Hypocycloid_55.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D05a_Hypocycloid_55.3D.jpg
+   :width: 30 %
+
+
+.. |D05b_Hypocycloid_55.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D05b_Hypocycloid_55.3D.jpg
+   :width: 30 %
+
+
+.. |D05c_Hypocycloid_55.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D05c_Hypocycloid_55.3D.jpg
    :width: 30 %
 
 
 
-**Left figure**: Fermat spiral surface
 
+
+
+
+
+
+|newpage|
+
+
+Epicycloid as generator
+-----------------------------------------------------------
+
+// see http://www.3d-meier.de/tut3/Seite189.html
+
+
+See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
+
+
+
+
+
+|D06a_Epicycloid_55.3D| `\quad` |D06b_Epicycloid_55.3D| `\quad` |D06c_Epicycloid_55.3D|
+
+
+
+.. |D06a_Epicycloid_55.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D06a_Epicycloid_55.3D.jpg
+   :width: 30 %
+
+
+.. |D06b_Epicycloid_55.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D06b_Epicycloid_55.3D.jpg
+   :width: 30 %
+
+
+.. |D06c_Epicycloid_55.3D| image:: ../_static/B23_WpfParametricSurfaces/C01_TranslationSurfaces/D06c_Epicycloid_55.3D.jpg
+   :width: 30 %
 
 
 

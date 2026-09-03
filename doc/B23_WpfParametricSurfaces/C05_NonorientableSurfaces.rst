@@ -45,18 +45,24 @@ See also: https://mathworld.wolfram.com/MoebiusStrip.html
     y = (v / 2) * Math.Sin(u / 2);
 
 
-|TestMoebius_a| `\quad` |TestMoebius_b|
 
-.. |TestMoebius_a| image:: ../_static/ParametricSurfaces/Nonorientable/TestMoebius_a.3D.xml.jpg
+
+|01a_Moebius.3D| `\quad` |01b_Moebius.3D| `\quad` |01c_Moebius.3D|
+
+
+
+.. |01a_Moebius.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/01a_Moebius.3D.jpg
    :width: 30 %
 
-.. |TestMoebius_b| image:: ../_static/ParametricSurfaces/Nonorientable/TestMoebius_a.3D.xml.jpg
+
+.. |01b_Moebius.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/01b_Moebius.3D.jpg
    :width: 30 %
 
 
-**Left figure**: Moebius Strip (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+.. |01c_Moebius.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/01c_Moebius.3D.jpg
+   :width: 30 %
 
-**Right figure**: Moebius Strip (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+
 
 
 
@@ -94,19 +100,22 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-|TestCrossCap_a| `\quad` |TestCrossCap_b|
 
-.. |TestCrossCap_a| image:: ../_static/ParametricSurfaces/Nonorientable/TestCrossCap_a.3D.xml.jpg
+|02a_CrossCap.3D| `\quad` |02b_CrossCap.3D| `\quad` |02c_CrossCap.3D|
+
+
+
+.. |02a_CrossCap.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/02a_CrossCap.3D.jpg
    :width: 30 %
 
-.. |TestCrossCap_b| image:: ../_static/ParametricSurfaces/Nonorientable/TestCrossCap_a.3D.xml.jpg
+
+.. |02b_CrossCap.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/02b_CrossCap.3D.jpg
    :width: 30 %
 
 
+.. |02c_CrossCap.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/02c_CrossCap.3D.jpg
+   :width: 30 %
 
-**Left figure**: Cross-Cap Surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Cross-Cap Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -136,21 +145,22 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
     y = (1 - u*u) * s2v;
     z = u;
 
+    
+
+|03a_PseudoCrossCap.3D| `\quad` |03b_PseudoCrossCap.3D| `\quad` |03c_PseudoCrossCap.3D|
 
 
-|TestPseudoCrossCap_a| `\quad` |TestPseudoCrossCap_b|
 
-.. |TestPseudoCrossCap_a| image:: ../_static/ParametricSurfaces/Removal/TestPseudoCrossCap_a.3D.xml.jpg
+.. |03a_PseudoCrossCap.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/03a_PseudoCrossCap.3D.jpg
    :width: 30 %
 
-.. |TestPseudoCrossCap_b| image:: ../_static/ParametricSurfaces/Removal/TestPseudoCrossCap_a.3D.xml.jpg
+
+.. |03b_PseudoCrossCap.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/03b_PseudoCrossCap.3D.jpg
    :width: 30 %
 
 
-
-**Left figure**: Pseudo Cross-Cap Surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Pseudo Cross-Cap Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+.. |03c_PseudoCrossCap.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/03c_PseudoCrossCap.3D.jpg
+   :width: 30 %
 
 
 
@@ -185,19 +195,24 @@ See also: http://paulbourke.net/geometry/steiner/
 See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
-|TestRoman_a| `\quad` |TestRoman_b|
 
-.. |TestRoman_a| image:: ../_static/ParametricSurfaces/Nonorientable/TestRoman_a.3D.xml.jpg
+
+|04a_Roman.3D| `\quad` |04b_Roman.3D| `\quad` |04c_Roman.3D|
+
+
+
+.. |04a_Roman.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/04a_Roman.3D.jpg
    :width: 30 %
 
-.. |TestRoman_b| image:: ../_static/ParametricSurfaces/Nonorientable/TestRoman_a.3D.xml.jpg
+
+.. |04b_Roman.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/04b_Roman.3D.jpg
    :width: 30 %
 
 
+.. |04c_Roman.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/04c_Roman.3D.jpg
+   :width: 30 %
 
-**Left figure**: Roman Surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
-**Right figure**: Roman Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -231,18 +246,23 @@ See also: https://mathworld.wolfram.com/KleinBottle.html
 This is the 'bagel' form of a Klein bottle, a 4 dimensional object with a single surface (lacking 'inside' or 'outside'), projected into 3-space as a self-intersecting solid.
 
 
-|TestKleinBagel_a| `\quad` |TestKleinBagel_b|
 
-.. |TestKleinBagel_a| image:: ../_static/ParametricSurfaces/Nonorientable/TestKleinBagel_a.3D.xml.jpg
+
+|05a_KleinBagel.3D| `\quad` |05b_KleinBagel.3D| `\quad` |05c_KleinBagel.3D|
+
+
+
+.. |05a_KleinBagel.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/05a_KleinBagel.3D.jpg
    :width: 30 %
 
-.. |TestKleinBagel_b| image:: ../_static/ParametricSurfaces/Nonorientable/TestKleinBagel_a.3D.xml.jpg
+
+.. |05b_KleinBagel.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/05b_KleinBagel.3D.jpg
    :width: 30 %
 
 
-**Left figure**: Klein bagel (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+.. |05c_KleinBagel.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/05c_KleinBagel.3D.jpg
+   :width: 30 %
 
-**Right figure**: Klein bagel (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -252,7 +272,7 @@ This is the 'bagel' form of a Klein bottle, a 4 dimensional object with a single
 |newpage|
 
 
-Klein bottle, version 3
+Klein bottle
 ---------------------------------------
 
 
@@ -275,132 +295,22 @@ See also: https://mathworld.wolfram.com/KleinBottle.html
     y = -(2.0 / 15.0) * (3 + 5 * a * b) * Math.Sin(v);
 
 
+    
 
-
-|TestKleinBottle3_a| `\quad` |TestKleinBottle3_b|
-
-.. |TestKleinBottle3_a| image:: ../_static/ParametricSurfaces/Nonorientable/TestKleinBottle3_a.3D.xml.jpg
-   :width: 30 %
-
-.. |TestKleinBottle3_b| image:: ../_static/ParametricSurfaces/Nonorientable/TestKleinBottle3_a.3D.xml.jpg
-   :width: 30 %
-
-
-**Left figure**: Klein bottle, version 3 (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Klein bottle, version 3 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+|08a_KleinBottle3.3D| `\quad` |08b_KleinBottle3.3D| `\quad` |08c_KleinBottle3.3D|
 
 
 
-
-
-
-|newpage|
-
-
-Klein bottle, version 2
------------------------------------
-
-
-See also: https://mathworld.wolfram.com/KleinBottle.html
-
-The following parametrization is from the English Wikipedia article:
-
-https://en.wikipedia.org/wiki/Klein_bottle#Bottle_shape
-
-
-
-There is also a different parametrization in the German Wikipedia article:
-
-https://de.wikipedia.org/wiki/Kleinsche_Flasche#Beschreibung_im_dreidimensionalen_Raum
-
-
-
-.. code-block:: csharp
-
-    double sinV = Math.Sin(v);
-    double cosV = Math.Cos(v);
-    double sinU = Math.Sin(u);
-    double cosU = Math.Cos(u);
-    double cosU2 = cosU * cosU;
-    double cosU3 = cosU2 * cosU;
-    double cosU4 = cosU3 * cosU;
-    double cosU5 = cosU4 * cosU;
-    double cosU6 = cosU5 * cosU;
-    double cosU7 = cosU6 * cosU;
-
-    x = -2.0 / 15 * cosU * (3 * cosV - 30 * sinU + 90 * cosU4 * sinU -
-        60 * cosU6 * sinU + 5 * cosU * cosV * sinU);
-    y = -1.0 / 15 * sinU * (3 * cosV - 3 * cosU2 * cosV -
-        48 * cosU4 * cosV + 48 * cosU6 * cosV -
-        60 * sinU + 5 * cosU * cosV * sinU - 5 * cosU3 * cosV * sinU -
-        80 * cosU5 * cosV * sinU + 80 * cosU7 * cosV * sinU);
-    z = 2.0 / 15 * (3 + 5 * cosU * sinU) * sinV;
-
-    // Note: Move y up a bit and invert.
-    // Invert x to orient the "outer" parts of the bottle outwardly.
-    // If you don't use a BackMaterial, then parts inside the opening are culled.
-    double a = 1.5;
-    x = a * (-x);
-    y = a * (2 - y);
-    z = a * (z);
-
-
-
-|TestKleinBottle2_a| `\quad` |TestKleinBottle2_b|
-
-.. |TestKleinBottle2_a| image:: ../_static/ParametricSurfaces/Nonorientable/TestKleinBottle2_a.3D.xml.jpg
-   :width: 30 %
-
-.. |TestKleinBottle2_b| image:: ../_static/ParametricSurfaces/Nonorientable/TestKleinBottle2_a.3D.xml.jpg
+.. |08a_KleinBottle3.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/08a_KleinBottle3.3D.jpg
    :width: 30 %
 
 
-**Left figure**: Klein bottle, version 2 (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Klein bottle, version 2 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
-
-
-
-
-
-|newpage|
-
-
-Klein bottle, version 1
-------------------------------------
-
-
-See also: http://www.mapleprimes.com/maplesoftblog/95570-Klein-Bottle-Plot
-
-See also: http://www.chebfun.org/examples/geom/ParametricSurfaces.html
-
-See also: https://mathworld.wolfram.com/KleinBottle.html
-
-
-
-.. code-block:: csharp
-
-    x = (3 * (1 + Math.Sin(v)) + 2 * (1 - Math.Cos(v) / 2) * Math.Cos(u)) * Math.Cos(v);
-    y = (-2 * (1 - Math.Cos(v) / 2) * Math.Sin(u));
-    z = (4 + 2 * (1 - Math.Cos(v) / 2) * Math.Cos(u)) * Math.Sin(v);
-
-
-
-|TestKleinBottle_a| `\quad` |TestKleinBottle_b|
-
-.. |TestKleinBottle_a| image:: ../_static/ParametricSurfaces/Nonorientable/TestKleinBottle_a.3D.xml.jpg
-   :width: 30 %
-
-.. |TestKleinBottle_b| image:: ../_static/ParametricSurfaces/Nonorientable/TestKleinBottle_a.3D.xml.jpg
+.. |08b_KleinBottle3.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/08b_KleinBottle3.3D.jpg
    :width: 30 %
 
 
-**Left figure**: Klein bottle, version 1 (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Klein bottle, version 1 (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+.. |08c_KleinBottle3.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/08c_KleinBottle3.3D.jpg
+   :width: 30 %
 
 
 
@@ -445,19 +355,21 @@ See also: http://mathworld.wolfram.com/BoySurface.html
 
 
 
-|picTestBoy1a| `\quad` |picTestBoy1b|
 
-.. |picTestBoy1a| image:: ../_static/ParametricSurfaces/Nonorientable/TestBoy.3D.xm.jpg
+|09a_BoySurface.3D| `\quad` |09b_BoySurface.3D| `\quad` |09c_BoySurface.3D|
+
+
+
+.. |09a_BoySurface.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/09a_BoySurface.3D.jpg
    :width: 30 %
 
-.. |picTestBoy1b| image:: ../_static/ParametricSurfaces/Nonorientable/TestBoy.3D.xml.jpg
+
+.. |09b_BoySurface.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/09b_BoySurface.3D.jpg
    :width: 30 %
 
 
-**Left figure**: parametric plot of the Boy Surface (parametrization 1). 
-
-
-**Reft figure**: parametric plot of the Boy Surface (parametrization 1). 
+.. |09c_BoySurface.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/09c_BoySurface.3D.jpg
+   :width: 30 %
 
 
 
@@ -495,19 +407,20 @@ See also: http://mathworld.wolfram.com/BoySurface.html
 
 
 
-|picTestBoy2a| `\quad` |picTestBoy2b|
+|10a_BoySurface2.3D| `\quad` |10b_BoySurface2.3D| `\quad` |10c_BoySurface2.3D|
 
-.. |picTestBoy2a| image:: ../_static/ParametricSurfaces/Nonorientable/TestBoySurface2_a.3D.xml.jpg
+
+
+.. |10a_BoySurface2.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/10a_BoySurface2.3D.jpg
    :width: 30 %
 
-.. |picTestBoy2b| image:: ../_static/ParametricSurfaces/Nonorientable/TestBoySurface2_b.3D.xml.jpg
+
+.. |10b_BoySurface2.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/10b_BoySurface2.3D.jpg
    :width: 30 %
 
 
-**Left figure**: parametric plot of the Boy Surface (parametrization 1). 
-
-**Reft figure**: parametric plot of the Boy Surface (parametrization 1). 
-
+.. |10c_BoySurface2.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/10c_BoySurface2.3D.jpg
+   :width: 30 %
 
 
 
@@ -543,48 +456,37 @@ Morin Surface
 
 
 
-|11a_TestMorin3| `\quad` |12a_TestMorin5| `\quad` |13a_TestMorin9|
+|11a_Morin3.3D| `\quad` |11b_Morin5.3D| `\quad` |11c_Morin9.3D|
 
-.. |11a_TestMorin3| image:: ../_static/ParametricSurfaces/Nonorientable/11a_TestMorin3.3D.xml.jpg
-   :width: 30 %
 
-.. |12a_TestMorin5| image:: ../_static/ParametricSurfaces/Nonorientable/12a_TestMorin5.3D.xml.jpg
-   :width: 30 %
 
-.. |13a_TestMorin9| image:: ../_static/ParametricSurfaces/Nonorientable/13a_TestMorin9.3D.xml.jpg
+.. |11a_Morin3.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/11a_Morin3.3D.jpg
    :width: 30 %
 
 
-
-**Left figure**: Morin Surface  (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Middle figure**: Morin Surface  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Morin Surface  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
-
-|11b_TestMorin3| `\quad` |12b_TestMorin5| `\quad` |13b_TestMorin9|
-
-.. |11b_TestMorin3| image:: ../_static/ParametricSurfaces/Nonorientable/11b_TestMorin3.3D.xml.jpg
+.. |11b_Morin5.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/11b_Morin5.3D.jpg
    :width: 30 %
 
-.. |12b_TestMorin5| image:: ../_static/ParametricSurfaces/Nonorientable/12b_TestMorin5.3D.xml.jpg
-   :width: 30 %
 
-.. |13b_TestMorin9| image:: ../_static/ParametricSurfaces/Nonorientable/13b_TestMorin9.3D.xml.jpg
+.. |11c_Morin9.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/11c_Morin9.3D.jpg
    :width: 30 %
 
 
 
-**Left figure**: Morin Surface  (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Middle figure**: Morin Surface  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Morin Surface  (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+|11d_Morin3.3D| `\quad` |11e_Morin5.3D| `\quad` |11f_Morin9.3D|
 
 
 
+.. |11d_Morin3.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/11d_Morin3.3D.jpg
+   :width: 30 %
+
+
+.. |11e_Morin5.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/11e_Morin5.3D.jpg
+   :width: 30 %
+
+
+.. |11f_Morin9.3D| image:: ../_static/B23_WpfParametricSurfaces/C05_NonorientableSurfaces/11f_Morin9.3D.jpg
+   :width: 30 %
 
 
 

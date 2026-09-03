@@ -59,6 +59,22 @@ An example in C\#, for C
 
 
 
+|D01a_Path_BorromeanA.3D| `\quad` |D01b_Path_BorromeanA.3D| `\quad` |D01c_Path_BorromeanA.3D|
+
+
+
+.. |D01a_Path_BorromeanA.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D01a_Path_BorromeanA.3D.jpg
+   :width: 30 %
+
+
+.. |D01b_Path_BorromeanA.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D01b_Path_BorromeanA.3D.jpg
+   :width: 30 %
+
+
+.. |D01c_Path_BorromeanA.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D01c_Path_BorromeanA.3D.jpg
+   :width: 30 %
+
+
 
 
 
@@ -87,6 +103,58 @@ For B, the final rotations are: X=90, Y=0, Z=90.
 For C, the final rotations are: X=0, Y=90, Z=90.
 
 
+|D02a_Path_Ellipses.3D| `\quad` |D02b_Path_Ellipses.3D| `\quad` |D02c_Path_Ellipses.3D|
+
+
+
+.. |D02a_Path_Ellipses.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D02a_Path_Ellipses.3D.jpg
+   :width: 30 %
+
+
+.. |D02b_Path_Ellipses.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D02b_Path_Ellipses.3D.jpg
+   :width: 30 %
+
+
+.. |D02c_Path_Ellipses.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D02c_Path_Ellipses.3D.jpg
+   :width: 30 %
+
+
+
+
+|D02d_Path_Ellipses.3D| `\quad` |D02e_Path_Ellipses.3D| `\quad` |D02f_Path_Ellipses.3D|
+
+
+
+.. |D02d_Path_Ellipses.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D02d_Path_Ellipses.3D.jpg
+   :width: 30 %
+
+
+.. |D02e_Path_Ellipses.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D02e_Path_Ellipses.3D.jpg
+   :width: 30 %
+
+
+.. |D02f_Path_Ellipses.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D02f_Path_Ellipses.3D.jpg
+   :width: 30 %
+
+
+
+
+|D02g_Path_Ellipses.3D| `\quad` |D02h_Path_Ellipses.3D| `\quad` |D02i_Path_Ellipses.3D|
+
+
+
+.. |D02g_Path_Ellipses.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D02g_Path_Ellipses.3D.jpg
+   :width: 30 %
+
+
+.. |D02h_Path_Ellipses.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D02h_Path_Ellipses.3D.jpg
+   :width: 30 %
+
+
+.. |D02i_Path_Ellipses.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D02i_Path_Ellipses.3D.jpg
+   :width: 30 %
+
+
 
 
 |newpage|
@@ -107,6 +175,24 @@ An example in C\#, for A, B, C
     var x = D * Math.Sin(t) + 2 * Math.Sin(2 * t);
     var y = D * Math.Cos(t) - 2 * Math.Cos(2 * t);
     var z = -D * Math.Sin(3 * t);
+
+
+
+|D03a_Path_Trefoil02.3D| `\quad` |D03b_Path_Trefoil02.3D| `\quad` |D03c_Path_Trefoil02.3D|
+
+
+
+.. |D03a_Path_Trefoil02.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D03a_Path_Trefoil02.3D.jpg
+   :width: 30 %
+
+
+.. |D03b_Path_Trefoil02.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D03b_Path_Trefoil02.3D.jpg
+   :width: 30 %
+
+
+.. |D03c_Path_Trefoil02.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D03c_Path_Trefoil02.3D.jpg
+   :width: 30 %
+
 
 
 
@@ -134,25 +220,26 @@ An example in C\#, for A, B, C
 
 
 
-|TestALines_Trefoil05_a| `\quad` |TestALines_Trefoil05W_a| `\quad` |TestALines_Trefoil05WO_a|
+These are the rough versions
 
-.. |TestALines_Trefoil05_a| image:: ../_static/PathSurfaces/Intro/TestALines_Trefoil05_a.3D.xml.jpg
+
+
+|D04a_Path_Trefoil05.3D| `\quad` |D04b_Path_Trefoil05W.3D| `\quad` |D04c_Path_Trefoil05WO.3D|
+
+
+
+.. |D04a_Path_Trefoil05.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D04a_Path_Trefoil05.3D.jpg
    :width: 30 %
 
-.. |TestALines_Trefoil05W_a| image:: ../_static/PathSurfaces/Intro/TestALines_Trefoil05W_a.3D.xml.jpg
+
+.. |D04b_Path_Trefoil05W.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D04b_Path_Trefoil05W.3D.jpg
    :width: 30 %
 
-.. |TestALines_Trefoil05WO_a| image:: ../_static/PathSurfaces/Intro/TestALines_Trefoil05WO_a.3D.xml.jpg
+
+.. |D04c_Path_Trefoil05WO.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D04c_Path_Trefoil05WO.3D.jpg
    :width: 30 %
 
 
-
-
-**Left figure**: Trefoil, rough version (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
-
-**Middle figure**: Trefoil, rough version (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
-
-**Right figure**: Trefoil, rough version (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
 
 
 
@@ -163,24 +250,21 @@ These are the smooth versions
 
 
 
-|TestALines_Trefoil05S_a| `\quad` |TestALines_Trefoil05WS_a| `\quad` |TestALines_Trefoil05WSO_a|
+|D04d_Path_Trefoil05S.3D| `\quad` |D04e_Path_Trefoil05WS.3D| `\quad` |D04f_Path_Trefoil05WSO.3D|
 
-.. |TestALines_Trefoil05S_a| image:: ../_static/PathSurfaces/Intro/TestALines_Trefoil05S_a.3D.xml.jpg
-   :width: 30 %
 
-.. |TestALines_Trefoil05WS_a| image:: ../_static/PathSurfaces/Intro/TestALines_Trefoil05WS_a.3D.xml.jpg
-   :width: 30 %
 
-.. |TestALines_Trefoil05WSO_a| image:: ../_static/PathSurfaces/Intro/TestALines_Trefoil05WSO_a.3D.xml.jpg
+.. |D04d_Path_Trefoil05S.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D04d_Path_Trefoil05S.3D.jpg
    :width: 30 %
 
 
+.. |D04e_Path_Trefoil05WS.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D04e_Path_Trefoil05WS.3D.jpg
+   :width: 30 %
 
-**Left figure**: Trefoil, smooth version (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
 
-**Middle figure**: Trefoil, smooth version (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
+.. |D04f_Path_Trefoil05WSO.3D| image:: ../_static/B24_WpfPathSurfaces/C01_Introduction/D04f_Path_Trefoil05WSO.3D.jpg
+   :width: 30 %
 
-**Right figure**: Trefoil, smooth version (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`). 
 
 
 

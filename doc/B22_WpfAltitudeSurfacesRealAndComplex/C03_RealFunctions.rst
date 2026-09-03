@@ -39,21 +39,6 @@ See also: https://mathworld.wolfram.com/HyperbolicParaboloid.html
 
 
 
-|TestHyperbolicParaboloid_a| `\quad` |TestHyperbolicParaboloid_b|
-
-.. |TestHyperbolicParaboloid_a| image:: ../_static/ParametricSurfaces/RuledMinimal/TestHyperbolicParaboloid_a.3D.xml.jpg
-   :width: 30 %
-
-.. |TestHyperbolicParaboloid_b| image:: ../_static/ParametricSurfaces/RuledMinimal/TestHyperbolicParaboloid_a.3D.xml.jpg
-   :width: 30 %
-
-
-
-**Left figure**: Hyperbolic paraboloid (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Hyperbolic paraboloid (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
 
 
 References
