@@ -30,7 +30,7 @@ Percentage Stacked Area Chart
 ------------------------------------------------------------------------------------------
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_PercentageStackedAreaChart.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D01_PercentageStackedAreaChart.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_PercentageStackedAreaChart.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D01_PercentageStackedAreaChart.py>`__, and the XML code in the file `D01_PercentageStackedAreaChart.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C03_AreaPlots/D01_PercentageStackedAreaChart.2D.xml>`__.
 
 
 
@@ -41,7 +41,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Percentage Stacked Area Chart
 
 
 
@@ -54,13 +53,16 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 StackedAreaChart1
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02a_StackedAreaChart1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D02a_StackedAreaChart1.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02a_StackedAreaChart1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D02a_StackedAreaChart1.py>`__, and the XML code in the file `D02a_StackedAreaChart1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C03_AreaPlots/D02a_StackedAreaChart1.2D.xml>`__.
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02b_StackedAreaChart2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D02b_StackedAreaChart2.py>`__.
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02c_StackedAreaChart3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D02c_StackedAreaChart3.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02b_StackedAreaChart2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D02b_StackedAreaChart2.py>`__, and the XML code in the file `D02b_StackedAreaChart2.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C03_AreaPlots/D02b_StackedAreaChart2.2D.xml>`__.
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02d_StackedAreaChart4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D02d_StackedAreaChart4.py>`__.
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02c_StackedAreaChart3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D02c_StackedAreaChart3.py>`__, and the XML code in the file `D02c_StackedAreaChart3.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C03_AreaPlots/D02c_StackedAreaChart3.2D.xml>`__.
+
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02d_StackedAreaChart4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D02d_StackedAreaChart4.py>`__, and the XML code in the file `D02d_StackedAreaChart4.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C03_AreaPlots/D02d_StackedAreaChart4.2D.xml>`__.
 
 
 
@@ -88,13 +90,6 @@ Some text
 
 
 
-**Left figure**: StackedAreaChart3
-
-**Right figure**: StackedAreaChart4
-
-
-Some text
-
 
 
 
@@ -104,13 +99,16 @@ Some text
 Steam graph
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03a_Steamgraph1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D03a_Steamgraph1.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03a_Steamgraph1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D03a_Steamgraph1.py>`__, and the XML code in the file `D03a_Steamgraph1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C03_AreaPlots/D03a_Steamgraph1.2D.xml>`__.
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03b_Steamgraph2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D03b_Steamgraph2.py>`__.
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03c_Steamgraph3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D03c_Steamgraph3.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03b_Steamgraph2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D03b_Steamgraph2.py>`__, and the XML code in the file `D03b_Steamgraph2.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C03_AreaPlots/D03b_Steamgraph2.2D.xml>`__.
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03d_Steamgraph4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D03d_Steamgraph4.py>`__.
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03c_Steamgraph3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D03c_Steamgraph3.py>`__, and the XML code in the file `D03c_Steamgraph3.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C03_AreaPlots/D03c_Steamgraph3.2D.xml>`__.
+
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03d_Steamgraph4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D03d_Steamgraph4.py>`__, and the XML code in the file `D03d_Steamgraph4.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C03_AreaPlots/D03d_Steamgraph4.2D.xml>`__.
 
 
 
@@ -125,9 +123,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Steamgraph1
-
-**Right figure**: Steamgraph2
 
 
 
@@ -143,9 +138,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Steamgraph3
-
-**Right figure**: Steamgraph4
 
 
 
@@ -158,7 +150,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Area Chart
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_MultipleAreaCharts.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D04_MultipleAreaCharts.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_MultipleAreaCharts.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D04_MultipleAreaCharts.py>`__, and the XML code in the file `D04_MultipleAreaCharts.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C03_AreaPlots/D04_MultipleAreaCharts.2D.xml>`__.
 
 
 |picAreaChart|
@@ -167,7 +159,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Area Chart
 
 
 
@@ -179,7 +170,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Density Chart
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_DensityChart.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D05_DensityChart.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_DensityChart.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D05_DensityChart.py>`__, and the XML code in the file `D05_DensityChart.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C03_AreaPlots/D05_DensityChart.2D.xml>`__.
 
 
 
@@ -189,7 +180,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 .. |picDensityChart| image:: ../_static/FuncPlots2D/FromPythonGallery3/DensityChart.*
 
 
-**Left figure**: Density Chart
 
 
 
@@ -205,7 +195,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Ridgetline Plot
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_RidgetlinePlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D06_RidgetlinePlot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_RidgetlinePlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D06_RidgetlinePlot.py>`__, and the XML code in the file `D06_RidgetlinePlot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C03_AreaPlots/D06_RidgetlinePlot.2D.xml>`__.
 
 
 
@@ -215,7 +205,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 .. |picRidgetlinePlot| image:: ../_static/FuncPlots2D/FromPythonGallery3/RidgetlinePlot.*
 
 
-**Left figure**: Ridgetline Plot
 
 
 
@@ -230,11 +219,13 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Kde Plot, 3 versions
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07a_KdePlot1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D07a_KdePlot1.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07a_KdePlot1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D07a_KdePlot1.py>`__, and the XML code in the file `D07a_KdePlot1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C03_AreaPlots/D07a_KdePlot1.2D.xml>`__.
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07b_KdePlot2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D07b_KdePlot2.py>`__.
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07c_KdePlot3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D07c_KdePlot3.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07b_KdePlot2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D07b_KdePlot2.py>`__, and the XML code in the file `D07b_KdePlot2.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C03_AreaPlots/D07b_KdePlot2.2D.xml>`__.
+
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07c_KdePlot3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C03_AreaPlots/D07c_KdePlot3.py>`__, and the XML code in the file `D07c_KdePlot3.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C03_AreaPlots/D07c_KdePlot3.2D.xml>`__.
 
 
 

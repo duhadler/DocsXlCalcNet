@@ -28,7 +28,7 @@ Complex functions rendered as contours
 Complex square function
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__, and the XML code in the file `D01_8_ContourComplex.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -58,7 +58,7 @@ Complex sqrt function
 ------------------------------------------------------------------------------------------
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__, and the XML code in the file `D01_8_ContourComplex.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -88,7 +88,7 @@ Complex exp function
 ------------------------------------------------------------------------------------------
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__, and the XML code in the file `D01_8_ContourComplex.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -117,7 +117,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Complex log function
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__, and the XML code in the file `D01_8_ContourComplex.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -146,7 +146,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Complex sine function
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__, and the XML code in the file `D01_8_ContourComplex.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -175,7 +175,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Complex asin function
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__, and the XML code in the file `D01_8_ContourComplex.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -205,7 +205,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Complex tan function
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__, and the XML code in the file `D01_8_ContourComplex.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -235,7 +235,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Complex atan function
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_8_ContourComplex.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.py>`__, and the XML code in the file `D01_8_ContourComplex.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C08_Complex/D01_8_ContourComplex.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:

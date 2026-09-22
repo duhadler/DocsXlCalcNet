@@ -41,8 +41,7 @@
 
 
 
-
-
+|newpage|
 
 
 Numpy mathematical functions: Averages and variances

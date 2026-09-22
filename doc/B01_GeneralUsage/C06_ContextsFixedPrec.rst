@@ -168,7 +168,7 @@ General test code for C\# can be found here
 
 
 
-The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02a_Math53.cs <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B01_GeneralUsage/C06_ContextsFixedPrec/D02a_Math53.cs>`__.
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02a_math53.cs <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B01_GeneralUsage/C06_ContextsFixedPrec/D02a_math53.cs>`__.
 
 
 
@@ -279,33 +279,33 @@ General test code can be found here
         print()
         print('<H1 Title="General assignments and conversions">')
 
-        x = math53.t(i)
-        print('x = math53.t(i):', x)
+        x = ctx.t(i)
+        print('x = ctx.t(i):', x)
 
-        x = math53.t(5.7)
+        x = ctx.t(5.7)
         print('x = math53T(5.7):', x)
 
-        x = math53.t(5.7)
+        x = ctx.t(5.7)
         print('x = math53T(5.7):', x)
-        x0 = math53.t(2329456398453948563945639364827346)
+        x0 = ctx.t(2329456398453948563945639364827346)
         print('x0 = math53T(2329456398453948563945639364827346', x0)
-        x1 = math53.t("2329456398453948563945639364827346")
-        print('x1 = math53.t("2329456398453948563945639364827346"):', x1)
-        x = math53.t("5.5")
+        x1 = ctx.t("2329456398453948563945639364827346")
+        print('x1 = ctx.t("2329456398453948563945639364827346"):', x1)
+        x = ctx.t("5.5")
         print('x = math53T("5.5"):', x)
 
         print()
-        x = math53.t(55)
-        print('x = math53.t(5):', x)
-        y = math53.exp(x)
-        print('y = math53.exp(x):', y)
+        x = ctx.t(55)
+        print('x = ctx.t(5):', x)
+        y = ctx.exp(x)
+        print('y = ctx.exp(x):', y)
 
-        z = math53.exp(5.5)
-        print('z = math53.exp(5.5):', z)
-        z = math53.exp(5)
-        print('z = math53.exp(5):', z)
-        z = math53.exp("5.5")
-        print('z = math53.exp("5.5"):', z)
+        z = ctx.exp(5.5)
+        print('z = ctx.exp(5.5):', z)
+        z = ctx.exp(5)
+        print('z = ctx.exp(5):', z)
+        z = ctx.exp("5.5")
+        print('z = ctx.exp("5.5"):', z)
         print('</H1>')
 
 
@@ -321,26 +321,26 @@ General test code can be found here
         print('<H1 Title="Functions with argument conversion">')
         dec = Decimal(1) / Decimal(7)
         print('dec = Decimal(1) / Decimal(7):', dec)
-        z = math53.exp(dec)
-        print('z = math53.exp(dec):', z)
+        z = ctx.exp(dec)
+        print('z = ctx.exp(dec):', z)
         frac = Fraction("-3/7")
         print('frac = Fraction("-3/7:")', frac)
-        z = math53.exp(frac)
-        print('z = math53.exp(frac):', z)
+        z = ctx.exp(frac)
+        print('z = ctx.exp(frac):', z)
 
         print()
-        x = math53.t(5.5)
-        print('x = math53.t(55):', x)
-        y = math53.t(3.3)
-        print('y = math53.t(33):', y)
-        z = math53.pow(x, y)
-        print('z = math53.pow(x, y):        ', z)
-        z = math53.pow(5.5, 3.3)
-        print('z = math53.pow(5.5, 3.3):    ', z)
-        z = math53.pow("5.5", "3.3")
-        print('z = math53.pow("5.5", "3.3"):', z)
-        z = math53.pow(5, 3)
-        print('z = math53.pow(5, 3):', z)
+        x = ctx.t(5.5)
+        print('x = ctx.t(55):', x)
+        y = ctx.t(3.3)
+        print('y = ctx.t(33):', y)
+        z = ctx.pow(x, y)
+        print('z = ctx.pow(x, y):        ', z)
+        z = ctx.pow(5.5, 3.3)
+        print('z = ctx.pow(5.5, 3.3):    ', z)
+        z = ctx.pow("5.5", "3.3")
+        print('z = ctx.pow("5.5", "3.3"):', z)
+        z = ctx.pow(5, 3)
+        print('z = ctx.pow(5, 3):', z)
 
         t = z + 3
         print('t = z + 3:', t)
@@ -356,8 +356,8 @@ General test code can be found here
         print()
         print('<H1 Title="Arithmetic operators with math53">')
 
-        x = math53.t(5.0)
-        y = math53.t(2.5)
+        x = ctx.t(5.0)
+        y = ctx.t(2.5)
         print('x: ', x)
         print('y: ', y)
 
@@ -385,7 +385,7 @@ General test code can be found here
 
 
 
-The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02a_Math53.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B01_GeneralUsage/C06_ContextsFixedPrec/D02a_Math53.py>`__.
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02a_math53.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B01_GeneralUsage/C06_ContextsFixedPrec/D02a_math53.py>`__.
 
 
 
@@ -422,33 +422,33 @@ General test code can be found here
         print()
         print('<H1 Title="General assignments and conversions">')
 
-        x = math53.t(i)
-        print('x = math53.t(i):', x)
+        x = ctx.t(i)
+        print('x = ctx.t(i):', x)
 
-        x = math53.t(5.7)
+        x = ctx.t(5.7)
         print('x = math53T(5.7):', x)
 
-        x = math53.t(5.7)
+        x = ctx.t(5.7)
         print('x = math53T(5.7):', x)
-        x0 = math53.t(2329456398453948563945639364827346)
+        x0 = ctx.t(2329456398453948563945639364827346)
         print('x0 = math53T(2329456398453948563945639364827346', x0)
-        x1 = math53.t("2329456398453948563945639364827346")
-        print('x1 = math53.t("2329456398453948563945639364827346"):', x1)
-        x = math53.t("5.5")
+        x1 = ctx.t("2329456398453948563945639364827346")
+        print('x1 = ctx.t("2329456398453948563945639364827346"):', x1)
+        x = ctx.t("5.5")
         print('x = math53T("5.5"):', x)
 
         print()
-        x = math53.t(55)
-        print('x = math53.t(5):', x)
-        y = math53.exp(x)
-        print('y = math53.exp(x):', y)
+        x = ctx.t(55)
+        print('x = ctx.t(5):', x)
+        y = ctx.exp(x)
+        print('y = ctx.exp(x):', y)
 
-        z = math53.exp(5.5)
-        print('z = math53.exp(5.5):', z)
-        z = math53.exp(5)
-        print('z = math53.exp(5):', z)
-        z = math53.exp("5.5")
-        print('z = math53.exp("5.5"):', z)
+        z = ctx.exp(5.5)
+        print('z = ctx.exp(5.5):', z)
+        z = ctx.exp(5)
+        print('z = ctx.exp(5):', z)
+        z = ctx.exp("5.5")
+        print('z = ctx.exp("5.5"):', z)
         print('</H1>')
 
 
@@ -464,26 +464,26 @@ General test code can be found here
         print('<H1 Title="Functions with argument conversion">')
         dec = Decimal(1) / Decimal(7)
         print('dec = Decimal(1) / Decimal(7):', dec)
-        z = math53.exp(dec)
-        print('z = math53.exp(dec):', z)
+        z = ctx.exp(dec)
+        print('z = ctx.exp(dec):', z)
         frac = Fraction("-3/7")
         print('frac = Fraction("-3/7:")', frac)
-        z = math53.exp(frac)
-        print('z = math53.exp(frac):', z)
+        z = ctx.exp(frac)
+        print('z = ctx.exp(frac):', z)
 
         print()
-        x = math53.t(5.5)
-        print('x = math53.t(55):', x)
-        y = math53.t(3.3)
-        print('y = math53.t(33):', y)
-        z = math53.pow(x, y)
-        print('z = math53.pow(x, y):        ', z)
-        z = math53.pow(5.5, 3.3)
-        print('z = math53.pow(5.5, 3.3):    ', z)
-        z = math53.pow("5.5", "3.3")
-        print('z = math53.pow("5.5", "3.3"):', z)
-        z = math53.pow(5, 3)
-        print('z = math53.pow(5, 3):', z)
+        x = ctx.t(5.5)
+        print('x = ctx.t(55):', x)
+        y = ctx.t(3.3)
+        print('y = ctx.t(33):', y)
+        z = ctx.pow(x, y)
+        print('z = ctx.pow(x, y):        ', z)
+        z = ctx.pow(5.5, 3.3)
+        print('z = ctx.pow(5.5, 3.3):    ', z)
+        z = ctx.pow("5.5", "3.3")
+        print('z = ctx.pow("5.5", "3.3"):', z)
+        z = ctx.pow(5, 3)
+        print('z = ctx.pow(5, 3):', z)
 
         t = z + 3
         print('t = z + 3:', t)
@@ -499,8 +499,8 @@ General test code can be found here
         print()
         print('<H1 Title="Arithmetic operators with math53">')
 
-        x = math53.t(5.0)
-        y = math53.t(2.5)
+        x = ctx.t(5.0)
+        y = ctx.t(2.5)
         print('x: ', x)
         print('y: ', y)
 
@@ -536,18 +536,18 @@ The above and additional examples can be found online in the ``DataXlCalcNet`` r
 Notes regarding the implementation in C\# and C++
 ........................................................
 
-The C\# source code for the module ``math53`` can be found here: `math53.cs <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/math53.cs>`__.
+The C\# source code for the module ``math53`` can be found here: `ctx.cs <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/ctx.cs>`__.
 
 The C\# source code for the module ``cmath53`` can be found here: `cmath53.cs <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/cmath53.cs>`__.
 
 
 
-The Pascal source code which is called from ``math53.cs`` and ``cmath53.cs`` can be found here:  `libwe64d.pas <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/Pascal/we64/Lib/libwe64d.pas>`__.
+The Pascal source code which is called from ``ctx.cs`` and ``cmath53.cs`` can be found here:  `libwe64d.pas <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/Pascal/we64/Lib/libwe64d.pas>`__.
 
-The C++ source code which is called from ``math53.cs`` and ``cmath53.cs`` can be found here:  `XSF.cpp <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/C%2B%2B/xlcalcnet/XSF/XSF.cpp>`__.
+The C++ source code which is called from ``ctx.cs`` and ``cmath53.cs`` can be found here:  `XSF.cpp <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/C%2B%2B/xlcalcnet/XSF/XSF.cpp>`__.
 
 
-The C\# source code (transcribed from the Julia project) which is called from ``math53.cs`` and ``cmath53.cs`` can be found here:  `fromjulia.cs <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/fromjulia.cs>`__.
+The C\# source code (transcribed from the Julia project) which is called from ``ctx.cs`` and ``cmath53.cs`` can be found here:  `fromjulia.cs <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/FixedPrec/fromjulia.cs>`__.
 
 
 

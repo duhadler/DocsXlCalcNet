@@ -30,7 +30,7 @@ PlotTable
 PlotTable1
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_PlotTable1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C11_PlotTable/D01_PlotTable1.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_PlotTable1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C11_PlotTable/D01_PlotTable1.py>`__, and the XML code in the file `D01_PlotTable1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C11_PlotTable/D01_PlotTable1.2D.xml>`__.
 
 
 
@@ -41,7 +41,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: PlotTable1
 
 
 
@@ -52,7 +51,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 PlotTable2
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_PlotTable2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C11_PlotTable/D02_PlotTable2.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_PlotTable2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C11_PlotTable/D02_PlotTable2.py>`__, and the XML code in the file `D02_PlotTable2.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C11_PlotTable/D02_PlotTable2.2D.xml>`__.
 
 
 
@@ -62,7 +61,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: PlotTable2
 
 
 
@@ -75,7 +73,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 PlotTable3
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_PlotTable3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C11_PlotTable/D03_PlotTable3.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_PlotTable3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C11_PlotTable/D03_PlotTable3.py>`__, and the XML code in the file `D03_PlotTable3.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C11_PlotTable/D03_PlotTable3.2D.xml>`__.
 
 
 
@@ -86,7 +84,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: PlotTable3
 
 
 
@@ -101,7 +98,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 PlotTable4
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_PlotTable4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C11_PlotTable/D04_PlotTable4.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_PlotTable4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C11_PlotTable/D04_PlotTable4.py>`__, and the XML code in the file `D04_PlotTable4.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C11_PlotTable/D04_PlotTable4.2D.xml>`__.
 
 
 
@@ -112,7 +109,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: PlotTable4
 
 
 
@@ -127,7 +123,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 PlotTable5
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_PlotTable5.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C11_PlotTable/D05_PlotTable5.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_PlotTable5.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C11_PlotTable/D05_PlotTable5.py>`__, and the XML code in the file `D05_PlotTable5.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C11_PlotTable/D05_PlotTable5.2D.xml>`__.
 
 
 
@@ -138,7 +134,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: PlotTable5
 
 
 

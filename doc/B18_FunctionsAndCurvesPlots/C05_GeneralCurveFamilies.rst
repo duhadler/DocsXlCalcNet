@@ -52,7 +52,7 @@ See also: https://mathworld.wolfram.com/StarPolygon.html
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_RegularStarPolygon.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D01_RegularStarPolygon.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_RegularStarPolygon.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D01_RegularStarPolygon.py>`__, and the XML code in the file `D01_RegularStarPolygon.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D01_RegularStarPolygon.2D.xml>`__.
 
 
 
@@ -97,7 +97,7 @@ See also: https://mathworld.wolfram.com/Polygram.html
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_Polygram.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D02_Polygram.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_Polygram.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D02_Polygram.py>`__, and the XML code in the file `D02_Polygram.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D02_Polygram.2D.xml>`__.
 
 
 
@@ -144,7 +144,7 @@ Special cases are the cardioid `(q=1)`, the nephroid `(q=2)`, and the double car
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_Epicycloid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D03_Epicycloid.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_Epicycloid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D03_Epicycloid.py>`__, and the XML code in the file `D03_Epicycloid.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D03_Epicycloid.2D.xml>`__.
 
 
 
@@ -187,7 +187,7 @@ Special cases are the point `(q=1)`, the La Hire line `(q=2)`, the deltoid `(q=3
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_Hypocycloid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D04_Hypocycloid.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_Hypocycloid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D04_Hypocycloid.py>`__, and the XML code in the file `D04_Hypocycloid.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D04_Hypocycloid.2D.xml>`__.
 
 
 
@@ -243,10 +243,11 @@ The case `k>q-1` leads to a more complicated pattern.
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_Epitrochoids.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D05_Epitrochoids.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_Epitrochoids.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D05_Epitrochoids.py>`__, and the XML code in the file `D05_Epitrochoids.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D05_Epitrochoids.2D.xml>`__.
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_EpitrochoidCS.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D05_EpitrochoidCS.py>`__.
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_EpitrochoidCS.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D05_EpitrochoidCS.py>`__, and the XML code in the file `D05_EpitrochoidCS.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D05_EpitrochoidCS.2D.xml>`__.
 
 
 
@@ -298,7 +299,7 @@ The hypocycloid with parameter `q = n/m` constitutes a "rounded" approximation o
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_Hypotrochoid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D06_Hypotrochoid.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_Hypotrochoid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D06_Hypotrochoid.py>`__, and the XML code in the file `D06_Hypotrochoid.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D06_Hypotrochoid.2D.xml>`__.
 
 
 
@@ -341,7 +342,7 @@ Special cases are the limaçon trisectrix (`n = 1/3`), the Dürer folium (`n=1/2
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_RoseCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D07_RoseCurve.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_RoseCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D07_RoseCurve.py>`__, and the XML code in the file `D07_RoseCurve.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D07_RoseCurve.2D.xml>`__.
 
 
 
@@ -378,7 +379,7 @@ Special cases are the line (`\omega = 1, \delta = 0`), the circle  (`a=b, \omega
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_LissajousCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D08_LissajousCurve.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_LissajousCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D08_LissajousCurve.py>`__, and the XML code in the file `D08_LissajousCurve.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D08_LissajousCurve.2D.xml>`__.
 
 
 |Lissajous_curve_a|
@@ -426,7 +427,7 @@ Special cases are the astroid (`r =2/3`), the diamond (`r =1`), the ellipse (`r 
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_Superellipses.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D09_Superellipses.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_Superellipses.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D09_Superellipses.py>`__, and the XML code in the file `D09_Superellipses.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D09_Superellipses.2D.xml>`__.
 
 
 |Lame_curve_a|
@@ -462,7 +463,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D214`,  MathWorld :cite:p:`Wolfram2D214`,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_Epispirals.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D10_Epispirals.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_Epispirals.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D10_Epispirals.py>`__, and the XML code in the file `D10_Epispirals.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D10_Epispirals.2D.xml>`__.
 
 
 
@@ -502,7 +503,7 @@ See also:  MathCurve :cite:p:`MathCurve2D223`.
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11_NodalCurves.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D11_NodalCurves.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11_NodalCurves.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D11_NodalCurves.py>`__, and the XML code in the file `D11_NodalCurves.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D11_NodalCurves.2D.xml>`__.
 
 
 |Nodal_curve_a|
@@ -554,7 +555,7 @@ See also:  MathCurve :cite:p:`MathCurve2D224`.
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D12_CyclicHarmonicCurves.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D12_CyclicHarmonicCurves.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D12_CyclicHarmonicCurves.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D12_CyclicHarmonicCurves.py>`__, and the XML code in the file `D12_CyclicHarmonicCurves.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D12_CyclicHarmonicCurves.2D.xml>`__.
 
 
 |Cyclic_harmonic_curve_a|
@@ -610,7 +611,7 @@ Many other parametric curves can be obtained as special cases:
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13_RationalCircularCubics.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D13_RationalCircularCubics.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13_RationalCircularCubics.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D13_RationalCircularCubics.py>`__, and the XML code in the file `D13_RationalCircularCubics.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C05_GeneralCurveFamilies/D13_RationalCircularCubics.2D.xml>`__.
 
 
 |RccMacLauren_a|

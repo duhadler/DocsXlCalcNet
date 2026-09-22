@@ -32,9 +32,7 @@ See also   Wikipedia :cite:p:`WikipediaDis33`, MathWorld :cite:p:`WolframDis33`,
 
 .. _Ctx_BinomialPmf:
 
-.. method:: Ctx.binomial_pmf(k, n, p)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.binomial_pmf(n, p, k)
 
     Returns `\text{pmf}(x)`, the value of the probability density function (:ref:`Pmf <Dist_Pmf>`) of the binomial distribution:
 
@@ -59,9 +57,7 @@ See also   Wikipedia :cite:p:`WikipediaDis33`, MathWorld :cite:p:`WolframDis33`,
 
 .. _Ctx_BinomialCdf:
 
-.. method:: Ctx.binomial_cdf(k, n, p)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.binomial_cdf(n, p, k)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the binomial distribution:
 
@@ -86,9 +82,7 @@ See also   Wikipedia :cite:p:`WikipediaDis33`, MathWorld :cite:p:`WolframDis33`,
 
 .. _Ctx_BinomialQtf:
 
-.. method:: Ctx.binomial_qtf(q, n, p)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.binomial_qtf(n, p, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the binomial distribution:
 

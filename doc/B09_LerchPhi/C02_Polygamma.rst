@@ -305,7 +305,7 @@ DiGamma function `\psi(x)`
 Harmonic number function, `H_x`
 -------------------------------------------------------------------------------
 
-.. method:: math53.harmonic(x)
+.. method:: ctx.harmonic(x)
 
     Returns the Harmonic number  `H_x = \psi(x+1) + \gamma, \quad x \ne -1, -2, \ldots`.
 

@@ -29,7 +29,7 @@ Machine Epsilon
 
     where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
 
-    Returns the machine epsilon in extended precision (`2^{-63}` = 1.084202E-19) or double precision (`2^{-52}` = 2.220446E-16).  See also  Wikipedia :cite:p:`WikipediaFun101`.
+    Returns the machine epsilon for the given data type. See also  Wikipedia :cite:p:`WikipediaFun101`.
 
     See also: https://docs.python.org/3/library/sys.html#sys.float_info
 
@@ -97,7 +97,7 @@ Largest representable number
 
     where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
 
-    Returns the largest representable number in extended (`2^{16384}` = 1.189731E+4932) or double precision (`2^{1024} - 2^{971}` = 1.7976931E+308).
+    Returns the largest representable number for the given data type.
 
     See also: https://docs.python.org/3/library/sys.html#sys.float_info
 
@@ -128,7 +128,7 @@ Lowest representable number
 
     where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
 
-    Returns the lowest representable number in extended (`-2^{16384}` = -1.189731E+4932) or double precision (`-2^{1024} - 2^{971}` = -1.7976931E+308).
+    Returns the lowest representable number for the given data type.
 
 
     In extended precision (32 bit version of xlcalcnet)
@@ -226,7 +226,7 @@ Next representable floating point number: `\mathrm{nextabove}(x)`
 
 
 
-    Note: math53.pred(x),  math53.succ(x).
+    Note: ctx.pred(x),  ctx.succ(x).
 
 
 
@@ -258,7 +258,7 @@ Next representable floating point number: `\mathrm{nextbelow}(x)`
     where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
 
 
-    Note: math53.pred(x),  math53.succ(x).
+    Note: ctx.pred(x),  ctx.succ(x).
 
 
     Nextbelow: Returns the next representable floating point number before x in the direction of ``-Inf``.

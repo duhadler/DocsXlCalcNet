@@ -22,9 +22,13 @@ Singular Value and Eigen (selfadjoint) decompositions
 Singular Value Decomposition, only singular values
 -----------------------------------------------------------------------------------------------
 
-.. method:: mat.JacobiSVD(Query, , matB=None, threshold=0, preconditioner="ColPivQR")
+.. method:: ctx.mat_jacobi_svd(matA, Query)
+
 
     Returns the two-sided Jacobi SVD decomposition of a rectangular matrix.
+
+    Writing ``matA.JacobiSVD(Query)`` has the same effect
+
 
     See also:  Wikipedia :cite:p:`WikipediaMat109`.
 
@@ -35,14 +39,8 @@ Singular Value Decomposition, only singular values
 
 :Query:     Required. A string specifying which items of the result section should be computed.
 
-:matB:   Optional. A general n-by-m matrix of the same type as `A`. You need to specify `B` only if you want to solve the linear equation `AX = B`
-
-:threshold:   Optional. The threshold that will be used by certain methods such as rank(). A value of 0 means that the default value (which is determined internally) will be used.
-
-:preconditioner:   Optional. A string specifying the the type of QR decomposition that will be used internally for the R-SVD step for non-square matrices. See discussion of possible values below.
 
 
- 
 
 **Results:**
 
@@ -50,20 +48,7 @@ Singular Value Decomposition, only singular values
 
 :rank:     An integer. The rank of `A` (equal to the number of non-zero singular values)
 
-:X:     A general matrix of the same type and dimension as `B`. The solution to `AX = B`.
-
-:pseudoInverse:     A square matrix of the same type and dimension as `A`. The pseudo-inverse of `A, A^{-1}`.
-
-
 :SV:     A vector of the same type`A`. The singular values `A` (see below).
-
-:thinU:     A square matrix of the same type and dimension as `A`. The thin singular vectors `U` (see below).
-
-:thinV:     A square matrix of the same type and dimension as `A`. The thin singular vectors `V` (see below).
-
-:fullU:     A square matrix of the same type and dimension as `A`. The full singular vectors `U` (see below).
-
-:fullV:     A square matrix of the same type and dimension as `A`. The full singular vectors `V` (see below).
 
 
 The singular value decomposition of an `m\times n` complex matrix `\mathbf {M}` is a factorization of the form `\mathbf {M} = \mathbf {U\Sigma V^{*}}`, where `\mathbf {U}` is an `m\times m` complex unitary matrix, `\mathbf {\Sigma}` is an `m\times n` rectangular diagonal matrix with non-negative real numbers on the diagonal, and `\mathbf {V}` is an `n\times n` complex unitary matrix. If `\mathbf {M}` is real, `\mathbf {U}` and `\mathbf {V} ^{\textsf {T}}=\mathbf {V^{*}}` are real orthogonal matrices.
@@ -223,10 +208,12 @@ Example for a complex matrix: only singular values
 Singular Value Decomposition, singular values and thin singular vectors
 -----------------------------------------------------------------------------------------------
 
-.. method:: mat.JacobiThinSVD(Query, , matB=None, threshold=0, preconditioner="ColPivQR")
+.. method:: ctx.mat_jacobi_svd_thin(matA, Query, matB)
 
 
     Returns the two-sided Jacobi SVD decomposition of a rectangular matrix.
+
+    Writing ``matA.JacobiSvdThin(Query, matB)`` has the same effect
 
     See also:  Wikipedia :cite:p:`WikipediaMat109`,  Wikipedia :cite:p:`WikipediaMat104a`.
 
@@ -240,12 +227,8 @@ Singular Value Decomposition, singular values and thin singular vectors
 
 :matB:   Optional. A general n-by-m matrix of the same type as `A`. You need to specify `B` only if you want to solve the linear equation `AX = B`
 
-:threshold:   Optional. The threshold that will be used by certain methods such as rank(). A value of 0 means that the default value (which is determined internally) will be used.
-
-:preconditioner:   Optional. A string specifying the the type of QR decomposition that will be used internally for the R-SVD step for non-square matrices. See discussion of possible values below.
 
 
- 
 
 **Results:**
 
@@ -263,10 +246,6 @@ Singular Value Decomposition, singular values and thin singular vectors
 :thinU:     A square matrix of the same type and dimension as `A`. The thin singular vectors `U` (see below).
 
 :thinV:     A square matrix of the same type and dimension as `A`. The thin singular vectors `V` (see below).
-
-:fullU:     A square matrix of the same type and dimension as `A`. The full singular vectors `U` (see below).
-
-:fullV:     A square matrix of the same type and dimension as `A`. The full singular vectors `V` (see below).
 
 
 
@@ -583,10 +562,12 @@ Example for a complex matrix: the singular values, pseudoinverse and thin singul
 Singular Value Decomposition, singular values and full singular vectors
 -----------------------------------------------------------------------------------------------
 
-.. method:: mat.JacobiFullSVD(Query, matB=None, threshold=0, preconditioner="ColPivQR")
+.. method:: ctx.mat_jacobi_svd_full(matA, Query, matB)
 
 
     Returns the two-sided Jacobi SVD decomposition of a rectangular matrix.
+
+    Writing ``matA.JacobiSvdFull(Query, matB)`` has the same effect
 
     See also Eigen :cite:p:`EigenMat109`,  Wikipedia :cite:p:`WikipediaMat109`,  Wikipedia :cite:p:`WikipediaMat104a`,  Wikipedia :cite:p:`WikipediaMat130`.
 
@@ -599,10 +580,6 @@ Singular Value Decomposition, singular values and full singular vectors
 :Query:     Required. A string specifying which items of the result section should be computed.
 
 :matB:   Optional. A general n-by-m matrix of the same type as `A`. You need to specify `B` only if you want to solve the linear equation `AX = B`
-
-:threshold:   Optional. The threshold that will be used by certain methods such as rank(). A value of 0 means that the default value (which is determined internally) will be used.
-
-:preconditioner:   Optional. A string specifying the the type of QR decomposition that will be used internally for the R-SVD step for non-square matrices. See discussion of possible values below.
 
 
 
@@ -619,10 +596,6 @@ Singular Value Decomposition, singular values and full singular vectors
 
 
 :SV:     A vector of the same type`A`. The singular values `A` (see below).
-
-:thinU:     A square matrix of the same type and dimension as `A`. The thin singular vectors `U` (see below).
-
-:thinV:     A square matrix of the same type and dimension as `A`. The thin singular vectors `V` (see below).
 
 :fullU:     A square matrix of the same type and dimension as `A`. The full singular vectors `U` (see below).
 
@@ -981,10 +954,12 @@ Example for a complex matrix: the singular values, pseudoinverse and full singul
 Symmetric/Hermitian Eigensystem, only eigen values
 ------------------------------------------------------------
 
-.. method:: mat.SelfAdjointEigenValues(Query)
+.. method:: ctx.mat_self_adjoint_eigen_values(matA, Query)
 
 
     Returns the eigendecomposition of the symmetric/hermitian matrix *matA* `=A`.
+
+    Writing ``matA.SelfAdjointEigenValues(Query)`` has the same effect
 
 
     See also Eigen :cite:p:`EigenMat110`,  Wikipedia :cite:p:`WikipediaMat112`,  Wikipedia :cite:p:`WikipediaMat112a`,  Wikipedia :cite:p:`WikipediaMat130`.
@@ -1135,10 +1110,12 @@ Example for a hermitian matrix: only eigenvalues
 Symmetric/Hermitian Eigensystem, eigenvalues and eigenvectors
 -----------------------------------------------------------------
 
-.. method:: mat.SelfAdjointEigenSystem(Query)
+.. method:: ctx.mat_self_adjoint_eigen_system(matA, Query)
 
 
     Returns the eigendecomposition of the symmetric/hermitian matrix *matA* `=A`.
+
+    Writing ``matA.SelfAdjointEigenSystem(Query)`` has the same effect
 
 
     See also Eigen :cite:p:`EigenMat110`,  Wikipedia :cite:p:`WikipediaMat112`,  Wikipedia :cite:p:`WikipediaMat112a`,  Wikipedia :cite:p:`WikipediaMat130`.
@@ -1423,10 +1400,12 @@ Example for a hermitian matrix: eigenvalues and eigenvectors
 Generalized Selfadjoint Eigensystem, only eigenvalues
 --------------------------------------------------------
 
-.. method:: mat.GeneralizedSelfAdjointEigenValues(Query)
+.. method:: ctx.mat_generalized_self_adjoint_eigen_values(matA, Query)
 
 
     Returns the eigendecomposition of a generalized selfadjoint eigensystem.
+
+    Writing ``matA.GeneralizedSelfAdjointEigenValues(Query)`` has the same effect
 
 
     See also Eigen :cite:p:`EigenMat122`,  Wikipedia :cite:p:`WikipediaMat123`,  Wikipedia :cite:p:`WikipediaMat130`,  Wikipedia :cite:p:`WikipediaMat112b`.
@@ -1618,10 +1597,12 @@ Example for a hermitian matrix: eigenvalues only
 Generalized Selfadjoint Eigensystem: eigenvalues and eigenvectors
 ------------------------------------------------------------------------------
 
-.. method:: mat.GeneralizedSelfAdjointEigenSystem(Query)
+.. method:: ctx.mat_generalized_self_adjoint_eigen_system(matA, Query)
 
 
     Returns the eigendecomposition of a generalized selfadjoint eigensystem.
+
+    Writing ``matA.GeneralizedSelfAdjointEigenSolver(Query)`` has the same effect
 
 
     See also Eigen :cite:p:`EigenMat122`,  Wikipedia :cite:p:`WikipediaMat123`,  Wikipedia :cite:p:`WikipediaMat130`,  Wikipedia :cite:p:`WikipediaMat112b`.
@@ -1920,10 +1901,12 @@ Example for a hermitian matrix: eigenvalues and eigenvectors
 Tridiagonalization
 -----------------------------
 
-.. method:: mat.Tridiagonalization(Query)
+.. method:: ctx.mat_tridiagonalization(matA, Query)
 
 
     Returns the tridiagonal decomposition of a selfadjoint matrix.
+
+    Writing ``matA.Tridiag(Query)`` has the same effect
 
     See also Eigen :cite:p:`EigenMat111`,  Wikipedia :cite:p:`WikipediaMat111`,  Wikipedia :cite:p:`WikipediaMat111a`,  Wikipedia :cite:p:`WikipediaMat112a`,  Wikipedia :cite:p:`WikipediaMat130`.
 
@@ -2166,267 +2149,6 @@ Example for a complex matrix
     2:  5.28 + 0j, -6.37E-29 + 1.87E-27j,     9.68E-28 + 0j, 
     3:   103 + 0j, -5.10E-25 - 1.96E-26j,    -4.86E-25 + 0j, 
     4:   250 + 0j,  1.12E-23 + 3.03E-26j,     1.19E-23 + 0j, 
-
-
-
-
-
-
-|newpage|
-
-
-Square root of a selfadjoint matrix
------------------------------------------
-
-.. method:: mat.MatrixSquareRootSA(Query)
-
-
-    Returns the tridiagonal decomposition of a selfadjoint matrix.
-
-    See also Eigen :cite:p:`EigenMat111`,  Wikipedia :cite:p:`WikipediaMat111`,  Wikipedia :cite:p:`WikipediaMat111a`,  Wikipedia :cite:p:`WikipediaMat112a`,  Wikipedia :cite:p:`WikipediaMat130`.
-
-
-**Parameters:**
-
-:Query:     Required. A string specifying which items of the result section should be computed.
-
-
-**Results:**
-
-:Q:     Returns the unitary matrix Q in the decomposition.
-
-:T:     Returns an expression of the tridiagonal matrix T in the decomposition..
-
-:packed:     Returns the internal representation of the decomposition.
-
-:hcoeff:     Returns the Householder coefficients..
-
-:diag:     Returns the diagonal of the tridiagonal matrix T in the decomposition.
-
-:subdiag:     Returns the subdiagonal of the tridiagonal matrix T in the decomposition.
-
-
-This class performs a tridiagonal decomposition of a selfadjoint matrix `A` such that: `A = QTQ^*` where `Q` is unitary and T a real symmetric tridiagonal matrix. A tridiagonal matrix is a matrix which has nonzero elements only on the main diagonal and the first diagonal below and above it. The Hessenberg decomposition of a selfadjoint matrix is in fact a tridiagonal decomposition. This class is used in SelfAdjointEigenSolver to compute the eigenvalues and eigenvectors of a selfadjoint matrix.
-
-
-
-
-
-Example for a real matrix
-.......................................
-
-
-.. code-block:: pycon
-
-    >>> from xlcalcnet import *
-    >>> ctx = mp14.drf(); mp14.setdps(35); mp14.setshowdps(3)
-    >>> A = ctx.read_from_sqlite(mp14.dbpath(), "DecTableRandomSAA6x6", ""); A.show("A")
-    A: 
-    44.9, 25.5, 50.0, 47.9, 26.4, 62.0, 
-    25.5, 24.3, 49.1, 95.0, 29.0, 46.6, 
-    50.0, 49.1, 55.5, 84.0, 44.4, 26.7, 
-    47.9, 95.0, 84.0, 64.5, 39.5, 87.5, 
-    26.4, 29.0, 44.4, 39.5, 39.8, 12.3, 
-    62.0, 46.6, 26.7, 87.5, 12.3, 85.0, 
-
-    >>> Query = "Q, T, Packed, Hcoeff, Diag, Subdiag"
-    >>> Res = A.eigen_tridiag2(Query)
-
-    >>> Q = Res["Q"]; Q.show("Q")
-    Q: 
-    1,      0,        0,      0,      0,      0, 
-    0, -0.255,    0.648,  0.267,  0.628,  0.220, 
-    0, -0.500,   -0.254,  0.734, -0.127, -0.361, 
-    0, -0.479,    0.538, -0.386, -0.470, -0.332, 
-    0, -0.264, -0.00888,  0.149, -0.455,  0.837, 
-    0, -0.620,   -0.474, -0.468,  0.401,  0.101, 
-
-    >>> T = Res["T"]; T.show("T")
-    T: 
-     44.9, -99.9,     0,     0,     0,     0, 
-    -99.9,   255, -73.7,     0,     0,     0, 
-        0, -73.7,  11.5,  21.7,     0,     0, 
-        0,     0,  21.7,  20.2, -49.4,     0, 
-        0,     0,     0, -49.4, -18.5, -24.2, 
-        0,     0,     0,     0, -24.2, 0.966, 
-
-    >>> Res["Packed"].show("Packed")
-    Packed: 
-     44.9,   25.5,    50.0,   47.9,  26.4,  62.0, 
-    -99.9,    255,    49.1,   95.0,  29.0,  46.6, 
-    0.399,  -73.7,    11.5,   84.0,  44.4,  26.7, 
-    0.382, -0.192,    21.7,   20.2,  39.5,  87.5, 
-    0.210, 0.0961, -0.0240,  -49.4, -18.5,  12.3, 
-    0.494,  0.526,   0.680, -0.524, -24.2, 0.966, 
-
-    >>> # Check that Q is unitary, i.e. that QQ^H = I
-    >>> CheckResult = (Q.I - Q * Q.H).norm()
-    >>> print("||I - Q * Q.H|| (should be zero): ", CheckResult.s())
-        ||I - Q * Q.H|| (should be zero):  1.44E-35
-
-    >>> # Check the defining property of the decomposition, i.e. A = QTQ^H
-    >>> CheckResult = (A - Q * T * Q.H).norm()
-    >>> print("||A - Q * T * Q^H|| (should be zero): ", CheckResult.s())
-        ||A - Q * T * Q^H|| (should be zero):  3.96E-33
-
-    >>> diag = Res["Diag"]; subdiag = Res["Subdiag"]
-    >>> Query = "eval, evec"
-    >>> evaltridiag = diag.eigen_SelfAdjointEigenSystemFromTridiag2(Query, subdiag)
-
-    >>> L = evaltridiag["Eval"]; ct = ["L[i]"]; rt = ["i"] + [x for x in range(L.rows)]
-    >>> L.show("Vector L of eigenvalues of T", coltitles = ct, rowtitles = rt)
-    Vector L of eigenvalues of T: 
-    i   L[i]  
-    0: -61.7, 
-    1: -27.7, 
-    2:  4.34, 
-    3:  25.8, 
-    4:  62.5, 
-    5:   311, 
-
-    >>> V =  evaltridiag["Evec"]; mt = "Matrix V of eigenvectors of T (V0, ... , V" + str(V.cols-1) + ")"
-    >>> V.show(mt, coltitles = ["V#"] * (V.cols))
-    Matrix V of eigenvectors of T (V0, ... , V5): 
-        V0      V1        V2      V3      V4        V5  
-    0.0719, -0.497,   -0.271,  0.730, -0.157,    0.343, 
-    0.0767, -0.361,   -0.110,  0.139, 0.0275,   -0.912, 
-     0.232, -0.711, -0.00659, -0.555,  0.284,    0.226, 
-    -0.521, 0.0579,   -0.370,  0.108,  0.759,   0.0173, 
-    -0.760, -0.257,   -0.122, -0.257, -0.525, -0.00262, 
-    -0.293, -0.216,    0.873,  0.249,  0.206, 0.000204, 
-
-    >>> CheckResult = (T - V * L.D * V.T).norm()
-    >>> print("||T - V * diag(L) * V^T|| (should be zero): ", (CheckResult).s())
-        ||T - V * diag(L) * V^T|| (should be zero):  6.70E-33
-
-    >>> XA = +A; AD = XA.diagonal(); DetA = L * 0
-    >>> XT = +T; TD = XT.diagonal(); DetT = L * 0
-
-    >>> for i in range(A.rows):
-    >>>     XA.set_diagonal(0, AD - L[i]); DetA[i] = XA.eigen_det()
-    >>>     XT.set_diagonal(0, TD - L[i]); DetT[i] = XT.eigen_det()
-
-    >>> Result = L.concat_horizontal(DetA).concat_horizontal(DetT)
-    >>> mt = "Checking the Eigenvalues: Det(A - I * L[i]) and Det(T - I * L[i]) should be zero"
-    >>> ct = ["L[i]", "Det(A - I * L[i])", "Det(T - I * L[i])"]
-    >>> rt = ["i"] + [x for x in range(L.rows)]
-    >>> Result.show(mt, coltitles = ct, rowtitles = rt)
-    Checking the Eigenvalues: Det(A - I * L[i]) and Det(T - I * L[i]) should be zero: 
-    i   L[i]  Det(A - I * L[i])  Det(T - I * L[i])  
-    0: -61.7,          8.41E-24,          8.69E-24, 
-    1: -27.7,         -4.36E-25,         -5.06E-25, 
-    2:  4.34,          3.49E-26,          4.32E-26, 
-    3:  25.8,          4.92E-25,          2.75E-25, 
-    4:  62.5,         -1.13E-23,         -1.08E-23, 
-    5:   311,         -6.62E-21,         -8.92E-21, 
-
-
-
-
-Example for a complex matrix
-.......................................
-
-
-.. code-block:: pycon
-
-    >>> from xlcalcnet import *
-    >>> ctx = mp14.dcf(); mp14.setdps(35); mp14.setshowdps(3)
-    >>> A = ctx.read_from_sqlite(mp14.dbpath(), "DecCplxTableRandomSAA6x6", "")
-    >>> A = A.top_left_corner(5,5); A.show("A")
-    A: 
-       80.0 + 0j, 50.0 - 23.0j, 85.0 + 5.00j, 36.0 - 4.30j, 16.0 - 18.0j, 
-    50.0 + 23.0j,    30.0 + 0j, 43.0 + 9.50j, 27.0 + 11.0j, 50.0 - 24.0j, 
-    85.0 - 5.00j, 43.0 - 9.50j,    85.0 + 0j, 55.0 - 7.00j, 34.0 + 8.50j, 
-    36.0 + 4.30j, 27.0 - 11.0j, 55.0 + 7.00j,    23.0 + 0j, 49.0 + 40.0j, 
-    16.0 + 18.0j, 50.0 + 24.0j, 34.0 - 8.50j, 49.0 - 40.0j,    85.0 + 0j, 
-
-    >>> Query = "Q, T, Packed, Hcoeff, Diag, Subdiag"
-    >>> Res = A.eigen_tridiag2(Query)
-
-    >>> Q = Res["Q"]; Q.show("Q")
-    Q: 
-    1.00 + 0j,           0 + 0j,           0 + 0j,            0 + 0j,           0 + 0j, 
-       0 + 0j,  -0.453 - 0.208j, -0.0465 - 0.186j,    0.480 - 0.389j,   0.144 + 0.558j, 
-       0 + 0j, -0.770 + 0.0453j,  -0.158 + 0.243j, 0.00105 + 0.0880j,  -0.417 - 0.372j, 
-       0 + 0j, -0.326 - 0.0390j,   0.258 + 0.207j,   -0.228 + 0.640j,   0.456 + 0.336j, 
-       0 + 0j,  -0.145 - 0.163j,   0.864 - 0.153j,   -0.224 - 0.314j, -0.0891 - 0.162j, 
-
-    >>> T = Res["T"]; T.show("T")
-    T: 
-    80.0 + 0j,  -110 + 0j,     0 + 0j,     0 + 0j,     0 + 0j, 
-    -110 + 0j,   153 + 0j, -59.2 + 0j,     0 + 0j,     0 + 0j, 
-       0 + 0j, -59.2 + 0j,   104 + 0j,  24.4 + 0j,     0 + 0j, 
-       0 + 0j,     0 + 0j,  24.4 + 0j, -30.1 + 0j, -19.0 + 0j, 
-       0 + 0j,     0 + 0j,     0 + 0j, -19.0 + 0j, -4.47 + 0j, 
-
-    >>> Res["Packed"].show("Packed")
-    Packed: 
-           80.0 + 0j,    50.0 - 23.0j,   85.0 + 5.00j, 36.0 - 4.30j, 16.0 - 18.0j, 
-           -110 + 0j,        153 + 0j,   43.0 + 9.50j, 27.0 + 11.0j, 50.0 - 24.0j, 
-      0.515 - 0.105j,      -59.2 + 0j,       104 + 0j, 55.0 - 7.00j, 34.0 + 8.50j, 
-    0.224 - 0.00528j, -0.161 - 0.271j,      24.4 + 0j,   -30.1 + 0j, 49.0 + 40.0j, 
-     0.114 + 0.0960j, -0.732 - 0.105j, 0.251 + 0.187j,   -19.0 + 0j,   -4.47 + 0j, 
-
-    >>> # Check that Q is unitary, i.e. that QQ^H = I
-    >>> CheckResult = (Q.I - Q * Q.H).norm()
-    >>> print("||I - Q * Q.H|| (should be zero): ", CheckResult.s())
-        ||I - Q * Q.H|| (should be zero):  1.46E-35 + 0j
-
-    >>> # Check the defining property of the decomposition, i.e. A = QTQ^H
-    >>> CheckResult = (A - Q * T * Q.H).norm()
-    >>> print("||A - Q * T * Q^H|| (should be zero): ", CheckResult.s())
-        ||A - Q * T * Q^H|| (should be zero):  2.51E-33 + 0j
-
-    >>> diag = Res["Diag"]; subdiag = Res["Subdiag"]; T = Res["T"]
-    >>> Query = "eval, evec"
-    >>> evaltridiag = diag.eigen_SelfAdjointEigenSystemFromTridiag2(Query, subdiag)
-
-    >>> L = evaltridiag["Eval"]; ct = ["L[i]"]; rt = ["i"] + [x for x in range(L.rows)]
-    >>> L.show("Vector L of eigenvalues of T", coltitles = ct, rowtitles = rt)
-    Vector L of eigenvalues of T: 
-    i        L[i]  
-    0: -44.4 + 0j, 
-    1: -10.3 + 0j, 
-    2:  5.28 + 0j, 
-    3:   103 + 0j, 
-    4:   250 + 0j, 
-
-    >>> V =  evaltridiag["Evec"]; mt = "Matrix V of eigenvectors of T (V0, ... , V" + str(V.cols-1) + ")"
-    >>> V.show(mt, coltitles = ["V#"] * (V.cols))
-    Matrix V of eigenvectors of T (V0, ... , V4): 
-              V0            V1            V2            V3             V4  
-    -0.0991 + 0j,  -0.708 + 0j,   0.190 + 0j,  -0.432 + 0j,    0.515 + 0j, 
-     -0.112 + 0j,  -0.580 + 0j,   0.129 + 0j,  0.0896 + 0j,   -0.792 + 0j, 
-     -0.189 + 0j,  -0.282 + 0j, -0.0325 + 0j,   0.881 + 0j,    0.327 + 0j, 
-      0.876 + 0j, -0.0839 + 0j,   0.443 + 0j,   0.166 + 0j,   0.0288 + 0j, 
-      0.418 + 0j,  -0.274 + 0j,  -0.866 + 0j, -0.0295 + 0j, -0.00216 + 0j, 
-
-    >>> CheckResult = (T - V * L.D * V.T).norm()
-    >>> print("||T - V * diag(L) * V^T|| (should be zero): ", (CheckResult).s())
-        ||T - V * diag(L) * V^T|| (should be zero):  9.71E-33 + 0j
-
-    >>> XA = +A; AD = XA.diagonal(); DetA = L * 0
-    >>> XT = +T; TD = XT.diagonal(); DetT = L * 0
-
-    >>> for i in range(A.rows):
-    >>>     XA.set_diagonal(0, AD - L[i]); DetA[i] = XA.eigen_det()
-    >>>     XT.set_diagonal(0, TD - L[i]); DetT[i] = XT.eigen_det()
-
-    >>> Result = L.concat_horizontal(DetA).concat_horizontal(DetT)
-    >>> mt = "Checking the Eigenvalues: Det(A - I * L[i]) and Det(T - I * L[i]) should be zero"
-    >>> ct = ["L[i]", "Det(A - I * L[i])", "Det(T - I * L[i])"]
-    >>> rt = ["i"] + [x for x in range(L.rows)]
-    >>> Result.show(mt, coltitles = ct, rowtitles = rt)
-    Checking the Eigenvalues: Det(A - I * L[i]) and Det(T - I * L[i]) should be zero: 
-    i        L[i]      Det(A - I * L[i])  Det(T - I * L[i])  
-    0: -44.4 + 0j, -5.09E-26 - 2.12E-27j,    -2.15E-26 + 0j, 
-    1: -10.3 + 0j,  5.47E-27 + 2.47E-28j,     8.81E-28 + 0j, 
-    2:  5.28 + 0j, -6.37E-29 + 1.87E-27j,     9.68E-28 + 0j, 
-    3:   103 + 0j, -5.10E-25 - 1.96E-26j,    -4.86E-25 + 0j, 
-    4:   250 + 0j,  1.12E-23 + 3.03E-26j,     1.19E-23 + 0j, 
-
-
-
 
 
 

@@ -394,7 +394,7 @@ Khinchin's constant
 Imaginary One
 -------------------------------------------------------------------------------
 
-.. property:: ctx.onei
+.. property:: ctx.onej
 
     where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
 

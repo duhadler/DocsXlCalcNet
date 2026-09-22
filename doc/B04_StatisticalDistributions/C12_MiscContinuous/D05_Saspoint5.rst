@@ -42,9 +42,7 @@ See also: https://en.wikipedia.org/wiki/Stable_distribution#Other_analytic_cases
 
 .. _Ctx_Saspoint5_Pdf:
 
-.. method:: Ctx.saspoint5_pdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.saspoint5_pdf(mu, c, x)
 
 
     Returns `\text{pdf}_X(x)`, the probability density function (pdf) of a random variable `X`, following an Saspoint5 distribution. Let  `S(x)` and  `C(x)` denote the Fresnel integrals. Then:
@@ -70,9 +68,7 @@ See also: https://en.wikipedia.org/wiki/Stable_distribution#Other_analytic_cases
 
 .. _Ctx_Saspoint5_Cdf:
 
-.. method:: Ctx.saspoint5_cdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.saspoint5_cdf(mu, c, x)
 
     Returns `\text{cdf}_X(x)`, the cumulative distribution function (cdf) of a random variable `X`, following an Saspoint5 distribution.
 
@@ -95,9 +91,7 @@ See also: https://en.wikipedia.org/wiki/Stable_distribution#Other_analytic_cases
 
 .. _Ctx_Saspoint5_Qtf:
 
-.. method:: Ctx.saspoint5_qtf(q, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.saspoint5_qtf(mu, c, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the Saspoint5 distribution:
 
@@ -117,7 +111,7 @@ See also: https://en.wikipedia.org/wiki/Stable_distribution#Other_analytic_cases
 
 |cr|
 
-.. method:: CtxBoost.dist_saspoint5(a=0, b=1)
+.. method:: CtxBoost.dist_saspoint5(a, b)
 
     Returns an ``dist_saspoint5`` object, which gives access to the functions descibed below:
 

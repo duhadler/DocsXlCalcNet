@@ -19,7 +19,7 @@
 |newpage|
 
 
-Coil springs
+(Coil) springs
 ==============================================================
 
 
@@ -28,12 +28,14 @@ See also: https://en.wikipedia.org/wiki/Coil_spring
 See also: https://en.wikipedia.org/wiki/Spring_(device)
 
 
-Spring 2
+Spring 1
 --------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D01a_Path_Spring1.3D.xml (D01a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C05_Springs/D01a_Path_Spring1.3D.xml>`__.
 
 
-An example in C\#
+
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -63,11 +65,14 @@ An example in C\#
 
 |newpage|
 
-Spring 6
+Spring 2
 ---------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D02a_Path_Spring2.3D.xml (D02a-b) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C05_Springs/D02a_Path_Spring2.3D.xml>`__.
 
-An example in C\#
+
+
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -97,11 +102,13 @@ An example in C\#
 
 |newpage|
 
-Spring 7a
+Spring 3
 ----------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D04a_Path_Spring4.3D.xml (D04a-b) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C05_Springs/D04a_Path_Spring4.3D.xml>`__.
 
-An example in C\#
+
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -132,11 +139,13 @@ An example in C\#
 
 |newpage|
 
-Spring 7b
+Spring 4
 ------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D04a_Path_Spring4.3D.xml (D04a-b) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C05_Springs/D04a_Path_Spring4.3D.xml>`__.
 
-An example in C\#
+
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -168,11 +177,13 @@ An example in C\#
 
 |newpage|
 
-Spring 7c
+Spring 5
 --------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D05a_Path_Spring5.3D.xml (D05a-b) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C05_Springs/D05a_Path_Spring5.3D.xml>`__.
 
-An example in C\#
+
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -204,11 +215,13 @@ An example in C\#
 
 |newpage|
 
-Spring 7d
+Spring 6
 ------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D06a_Path_Spring6.3D.xml (D06a-b) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C05_Springs/D06a_Path_Spring6.3D.xml>`__.
 
-An example in C\#
+
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -241,11 +254,13 @@ An example in C\#
 
 |newpage|
 
-Spring 8
+Spring 7
 -------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D07a_Path_Spring7.3D.xml (D07a-b) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C05_Springs/D07a_Path_Spring7.3D.xml>`__.
 
-An example in C\#
+
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -278,11 +293,13 @@ An example in C\#
 
 |newpage|
 
-Spring 9
+Spring 8
 -------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D08a_Path_Spring8.3D.xml (D08a-b) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C05_Springs/D08a_Path_Spring8.3D.xml>`__.
 
-An example in C\#
+
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 

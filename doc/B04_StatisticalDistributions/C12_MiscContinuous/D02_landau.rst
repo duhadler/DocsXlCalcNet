@@ -45,9 +45,7 @@ See also: https://en.wikipedia.org/wiki/Landau_distribution
 
 .. _Ctx_Landau_Pdf:
 
-.. method:: Ctx.landau_pdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.landau_pdf(mu, c, x)
 
     Returns `\text{pdf}_X(x)`, the probability density function (pdf) of a random variable `X`, following an Landau distribution, with `\mu \in \mathbb{R}`, `c>0`:
 
@@ -62,9 +60,7 @@ See also: https://en.wikipedia.org/wiki/Landau_distribution
 
 .. _Ctx_Landau_Cdf:
 
-.. method:: Ctx.landau_cdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.landau_cdf(mu, c, x)
 
     Returns `\text{cdf}_X(x)`, the cumulative distribution function (cdf) of a random variable `X`, following an Landau distribution.
 
@@ -86,7 +82,7 @@ See also: https://en.wikipedia.org/wiki/Landau_distribution
 
 .. _Ctx_Landau_Qtf:
 
-.. method:: Ctx.landau_qtf(q, a=0, b=1)
+.. method:: math53.landau_qtf(mu, c, q)
 
     where ``Ctx`` is ``Math53`` or ``CtxBoost``.
 

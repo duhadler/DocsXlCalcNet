@@ -36,15 +36,6 @@ See also: https://en.wikipedia.org/wiki/Sample_size_determination
 
     D03_BasicTests2CorrSamples.rst
 
-    D04_AnovaAnom.rst
-
-    D05_MultipleComparisonsOfMeans.rst
-
-    D06_Nonparametric1or2Samples.rst
-
-    D07_NonparametrickSamples.rst
-
-    D08_MultivariateTests.rst
 
 
 

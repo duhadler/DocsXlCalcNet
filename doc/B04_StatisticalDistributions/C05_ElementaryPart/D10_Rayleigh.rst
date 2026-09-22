@@ -30,9 +30,7 @@ See also  Wikipedia :cite:p:`WikipediaDis22`, MathWorld :cite:p:`WolframDis22`, 
 
 .. _Ctx_RayleighPdf:
 
-.. method:: Ctx.rayleigh_pdf(x, b)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.rayleigh_pdf(b, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the Rayleigh distribution:
 
@@ -53,9 +51,7 @@ See also  Wikipedia :cite:p:`WikipediaDis22`, MathWorld :cite:p:`WolframDis22`, 
 
 .. _Ctx_RayleighCdf:
 
-.. method:: Ctx.rayleigh_cdf(x, b)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.rayleigh_cdf(b, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the Rayleigh distribution:
 
@@ -77,9 +73,7 @@ See also  Wikipedia :cite:p:`WikipediaDis22`, MathWorld :cite:p:`WolframDis22`, 
 
 .. _Ctx_RayleighQtf:
 
-.. method:: Ctx.rayleigh_qtf(q, b)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.rayleigh_qtf(b, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the Rayleigh distribution:
 

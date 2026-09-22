@@ -32,9 +32,7 @@ See also  Wikipedia :cite:p:`WikipediaDis03`, MathWorld :cite:p:`WolframDis03`, 
 
 .. _Ctx_StudentTNcPdf:
 
-.. method:: Ctx.student_t_nc_pdf(x, n, delta)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.student_t_nc_pdf(n, delta, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the non-central Student t distribution:
 
@@ -71,9 +69,7 @@ See also  Wikipedia :cite:p:`WikipediaDis03`, MathWorld :cite:p:`WolframDis03`, 
 
 .. _Ctx_StudentTNcCdf:
 
-.. method:: Ctx.student_t_nc_cdf(x, n, delta)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.student_t_nc_cdf(n, delta, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the non-central Student t distribution:
 
@@ -103,9 +99,7 @@ See also  Wikipedia :cite:p:`WikipediaDis03`, MathWorld :cite:p:`WolframDis03`, 
 
 .. _Ctx_StudentTNcQtf:
 
-.. method:: Ctx.student_t_nc_qtf(q, n, delta)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.student_t_nc_qtf(n, delta, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the non-central Student t distribution:
 

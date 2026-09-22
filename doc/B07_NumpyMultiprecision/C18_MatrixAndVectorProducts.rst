@@ -42,8 +42,7 @@
 
 
 
-
-
+|newpage|
 
 Numpy mathematical functions: Matrix and vector products
 ==============================================================================

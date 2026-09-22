@@ -12,97 +12,8 @@
 |newpage|
 
 
-General and user interface functions
+General user interface and functions
 ==================================================
-
-
-
-
-.. _rst_ClientServer: 
-
-Starting and calling the socket server
---------------------------------------------------------------------------------
-
-A running socket server is critical for the use of XlCalcNet from Microsoft Excel.
-
-
-.. image:: ../_static/SocketServer.png
-    :width: 50 %
-    :align: center
-
-The socket server can be startet in various ways:
-
-
-Starting the socketserver from the TinyIDE or GalleryOfPlots application
-...................................................................................
-
-Explain use of menu.
-
-
-
-
-Starting the socketserver from the Navigator dialog in Excel
-...................................................................................
-
-Explain use of dialog.
-
-
-
-
-Starting the socketserver programmatically from Python
-...................................................................................
-
-
-.. method:: gui.socketserver()
-
-    Describe the start of the socket server
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import gui
-        >>> gui.socketserver()
-
-
-
-
-Calling the socketserver from Python
-.............................................
-
-Describe calling the socketserver from Python
-
-
-.. code-block:: pycon
-
-    >>> import socket
-
-    >>> host = socket.gethostname()
-    >>> port = 11958  # socket server port number
-    >>> client_socket = socket.socket()  # instantiate
-    >>> client_socket.connect((host, port))  # connect to the server
-
-    >>> client_socket.send(SnippetToSend.encode())  # send message
-    >>> DataReceived = client_socket.recv(1024).decode()  # receive response
-    >>> print('Received from server: ' + DataReceived)  # show in terminal
-
-    >>> client_socket.close()  # close the connection
-
-
-Calling the socketserver from C\#
-.............................................
-
-Describe calling the socketserver from C\#
-
-
-
-
-Source code
-.............................................
-
-
-The Python source code for the socketserver can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Bin/socketspy.py
-
-The C\# source code for the socket client can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/ClientServer
-
 
 
 
@@ -140,42 +51,6 @@ Starting the output monitor
 
         >>> from xlcalcnet import gui
         >>> gui.outputmonitor()
-
-
-
-
-
-
-|newpage|
-
-.. _rst_TinyIde: 
-
-
-Starting an additional instance of the IDE
---------------------------------------------------------------------------------
-
-
-.. method:: gui.tinyide()
-
-    Describe the start an additional instance of the IDE
-
-    .. image:: ../_static/TinyIDE.png
-       :width: 50 %
-       :align: center
-
-
-
-    The Python source code for starting the IDE can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ShowEditor.py
-
-
-    The C\# source code for the IDE can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/TinyEditor
-
-
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import gui
-        >>> gui.tinyide(x)
 
 
 

@@ -32,9 +32,7 @@ See also  Wikipedia :cite:p:`WikipediaDis09`, MathWorld :cite:p:`WolframDis09`, 
 
 .. _Ctx_FisherFPdf:
 
-.. method:: Ctx.fisher_f_pdf(x, m, n)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.fisher_f_pdf(m, n, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the Fisher F distribution:
 
@@ -56,9 +54,7 @@ See also  Wikipedia :cite:p:`WikipediaDis09`, MathWorld :cite:p:`WolframDis09`, 
 
 .. _Ctx_FisherFCdf:
 
-.. method:: Ctx.fisher_f_cdf(x, m, n)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.fisher_f_cdf(m, n, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the Fisher F distribution:
 
@@ -86,9 +82,7 @@ See also  Wikipedia :cite:p:`WikipediaDis09`, MathWorld :cite:p:`WolframDis09`, 
 
 .. _Ctx_FisherFQtf:
 
-.. method:: Ctx.fisher_f_qtf(q, m, n)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.fisher_f_qtf(m, n, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the Fisher F distribution:
 

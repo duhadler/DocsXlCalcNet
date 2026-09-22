@@ -86,10 +86,12 @@ Hessenberg Decomposition
 -----------------------------------
 
 
-.. method:: mat.Hessenberg(Query)
+.. method:: ctx.mat_hessenberg(matA, Query)
 
 
     Reduces a square matrix to Hessenberg form by an orthogonal similarity transformation.
+
+    Writing ``matA.Hessenberg(Query)`` has the same effect
 
     See also Eigen :cite:p:`EigenMat113`,  Wikipedia :cite:p:`WikipediaMat113`,  Wikipedia :cite:p:`WikipediaMat130`.
 
@@ -249,10 +251,12 @@ Example for a complex matrix
 Schur Decomposition
 ---------------------------------
 
-.. method:: mat.Schur(Query)
+.. method:: ctx.mat_schur(matA, Query)
 
 
     Performs a Schur decomposition of a square matrix.
+
+    Writing ``matA.Schur(Query)`` has the same effect
 
     See also Eigen :cite:p:`EigenMat114`, Eigen :cite:p:`EigenMat115`,  Wikipedia :cite:p:`WikipediaMat115`,  Wikipedia :cite:p:`WikipediaMat130`.
 
@@ -372,10 +376,12 @@ Example for a complex matrix
 Eigensystem of a general square matrix: only eigenvalues
 --------------------------------------------------------------------
 
-.. method:: mat.Eigenvalues(Query)
+.. method:: ctx.mat_eigen_values(matA, Query)
 
 
     Returns the eigendecomposition of a general square matrix *matA* `=A`.
+
+    Writing ``matA.EigenValues(Query)`` has the same effect
 
     See also Eigen :cite:p:`EigenMat112`,  Wikipedia :cite:p:`WikipediaMat112`,  Wikipedia :cite:p:`WikipediaMat112a`,  Wikipedia :cite:p:`WikipediaMat130`.
 
@@ -542,10 +548,12 @@ Example for a complex matrix: only eigenvalues
 Eigensystem of a general square matrix: eigenvalues and eigenvectors
 ----------------------------------------------------------------------------------
 
-.. method:: mat.Eigensystem(Query)
+.. method:: ctx.mat_eigen_system(matA, Query)
 
 
     Returns the eigendecomposition of a general square matrix *matA* `=A`.
+
+    Writing ``matA.EigenSystem(Query)`` has the same effect
 
     See also Eigen :cite:p:`EigenMat112`,  Wikipedia :cite:p:`WikipediaMat112`,  Wikipedia :cite:p:`WikipediaMat112a`,  Wikipedia :cite:p:`WikipediaMat130`.
 
@@ -826,10 +834,14 @@ Example for a complex matrix: eigenvalues and eigenvectors
 Real QZ Decomposition
 -------------------------------
 
-.. method:: mat.RealQZ(Query, matB)
+.. method:: ctx.mat_real_qz(matA, Query, matB)
 
 
     Performs a real QZ decomposition of a pair of square matrices maA `=A` and matB `=B`.
+
+    Writing ``matA.RealQZ(Query, matB)`` has the same effect
+
+
     See also Eigen :cite:p:`EigenMat124`,  Wikipedia :cite:p:`WikipediaMat124`,  Wikipedia :cite:p:`WikipediaMat130`.
 
 
@@ -943,10 +955,12 @@ If computeQZ==false, some time is saved by not computing matrices `Q` and `Z`.
 PseudoEigenSystem
 --------------------------
 
-.. method:: mat.PseudoEigenValues(Query)
+.. method:: ctx.mat_pseudo_eigen_system(matA, Query)
 
 
     Returns the eigenvalues of the general square matrix *matA* `=A`. 
+
+    Writing ``matA.PseudoEigenSystem(Query)`` has the same effect
 
     See also Eigen :cite:p:`EigenMat125`, Eigen :cite:p:`EigenMat126`.
 
@@ -1059,11 +1073,15 @@ true, and 10n3 if computeEigenvectors is false. This method reuses of the alloca
 Real Generalized Nonsymmetric Eigenvalues
 -----------------------------------------------------
 
-.. method:: mat.GenEigenValues(Query)
+.. method:: ctx.mat_gen_eigen_values(matA, Query, matB)
 
 
 
     Returns the Generalized Nonsymmetric Eigensystem; Eigenvalues only of the general matrix *matA* `=A`.
+
+    Writing ``matA.GenEigenValues(Query, matB)`` has the same effect
+
+
     See also Eigen :cite:p:`EigenMat123`,  Wikipedia :cite:p:`WikipediaMat123`,  Wikipedia :cite:p:`WikipediaMat130`.
 
 
@@ -1159,11 +1177,15 @@ The generalized eigenvalues and eigenvectors of a matrix pair may be complex, ev
 Real Generalized Nonsymmetric Eigensystem
 -----------------------------------------------------
 
-.. method:: mat.GenEigenSystem(Query)
+.. method:: ctx.mat_gen_eigen_system(matA, Query, matB)
 
 
 
     Returns the Generalized Nonsymmetric Eigensystem; Eigenvalues only of the general matrix *matA* `=A`.
+
+    Writing ``matA.GenEigenSystem(Query, matB)`` has the same effect
+
+
     See also Eigen :cite:p:`EigenMat123`,  Wikipedia :cite:p:`WikipediaMat123`,  Wikipedia :cite:p:`WikipediaMat130`.
 
 

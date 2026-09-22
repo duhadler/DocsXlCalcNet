@@ -42,8 +42,7 @@
 
 
 
-
-
+|newpage|
 
 Summary and examples: Numpy utility functions
 ==========================================================

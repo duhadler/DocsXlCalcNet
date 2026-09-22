@@ -59,25 +59,12 @@ Part 2 is devoted to numerical integration in ball arithmetic. The source code f
 
     C13_MpMathSumsLimits.rst
 
-    C14_MpMathNumberIdentification.rst
-
-    C15_MpMathPolynomials.rst
+    C14_MpMathPolynomials.rst
 
 
-    C16_EigenPolynomials.rst
+    C15_EigenMinPack.rst
 
-    C17_EigenMinPack.rst
-
-    C18_EigenCppOptLib.rst
-
-
-    C19_FlintPolynomials.rst
-
-    C20_FlintPowerSeries.rst
-
-    C21_FlintDifferentiation.rst
-
-    C22_FlintIntegration.rst
+    C16_EigenCppOptLib.rst
 
 
 

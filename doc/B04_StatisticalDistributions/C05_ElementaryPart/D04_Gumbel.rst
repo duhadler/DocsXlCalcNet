@@ -31,9 +31,7 @@ See also  Wikipedia :cite:p:`WikipediaDis13`, MathWorld :cite:p:`WolframDis13`, 
 
 .. _Ctx_GumbelPdf:
 
-.. method:: Ctx.gumbel_pdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.gumbel_pdf(a, b, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the Gumbel distribution:
 
@@ -54,9 +52,7 @@ See also  Wikipedia :cite:p:`WikipediaDis13`, MathWorld :cite:p:`WolframDis13`, 
 
 .. _Ctx_GumbelCdf:
 
-.. method:: Ctx.gumbel_cdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.gumbel_cdf(a, b, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the Gumbel distribution:
 
@@ -78,9 +74,7 @@ See also  Wikipedia :cite:p:`WikipediaDis13`, MathWorld :cite:p:`WolframDis13`, 
 
 .. _Ctx_GumbelQtf:
 
-.. method:: Ctx.gumbel_qtf(q, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.gumbel_qtf(a, b, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the Gumbel distribution:
 

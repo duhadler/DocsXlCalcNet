@@ -29,7 +29,7 @@ Geographic data (requires geopandas)
 World Happiness Report 2019
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_World.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D01_World.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_World.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D01_World.py>`__, and the XML code in the file `D01_World.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C08_Geopandas/D01_World.2D.xml>`__.
 
 
 
@@ -40,7 +40,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: World Happiness Report 2019
 
 
 
@@ -55,7 +54,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 World Happiness Report 2019: Europe
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_Europe.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D02_Europe.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_Europe.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D02_Europe.py>`__, and the XML code in the file `D02_Europe.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C08_Geopandas/D02_Europe.2D.xml>`__.
 
 
 
@@ -66,7 +65,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: World Happiness Report 2019: Europe
 
 
 
@@ -81,7 +79,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 US state populations
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_USPopulation.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D03_USPopulation.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_USPopulation.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D03_USPopulation.py>`__, and the XML code in the file `D03_USPopulation.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C08_Geopandas/D03_USPopulation.2D.xml>`__.
 
 
 
@@ -92,7 +90,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: World Happiness Report 2019: Europe
 
 
 
@@ -107,7 +104,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 California
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_Californa.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D04_Californa.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_Californa.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D04_Californa.py>`__, and the XML code in the file `D04_Californa.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C08_Geopandas/D04_Californa.2D.xml>`__.
 
 
 
@@ -118,7 +115,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: California
 
 
 
@@ -131,7 +127,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Berlin, Esda
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_Berlin.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D05_Berlin.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_Berlin.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D05_Berlin.py>`__, and the XML code in the file `D05_Berlin.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C08_Geopandas/D05_Berlin.2D.xml>`__.
 
 
 
@@ -142,7 +138,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Berlin, Esda
 
 
 
@@ -156,7 +151,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 New York, Collisions
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_NY_Collisions.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D06_NY_Collisions.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_NY_Collisions.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D06_NY_Collisions.py>`__, and the XML code in the file `D06_NY_Collisions.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C08_Geopandas/D06_NY_Collisions.2D.xml>`__.
 
 
 
@@ -167,7 +162,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: New York, Collisions
 
 
 
@@ -180,7 +174,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 New York, Tickets
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_NY_Tickets.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D07_NY_Tickets.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_NY_Tickets.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D07_NY_Tickets.py>`__, and the XML code in the file `D07_NY_Tickets.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C08_Geopandas/D07_NY_Tickets.2D.xml>`__.
 
 
 
@@ -191,7 +185,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: New York, Tickets
 
 
 
@@ -204,7 +197,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 New York, Factors
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_NY_Factors.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D08_NY_Factors.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_NY_Factors.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D08_NY_Factors.py>`__, and the XML code in the file `D08_NY_Factors.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C08_Geopandas/D08_NY_Factors.2D.xml>`__.
 
 
 
@@ -215,7 +208,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: New York, Factors
 
 
 
@@ -229,7 +221,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Europe CO2 Emissions
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_EuropeCO2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D09_EuropeCO2.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_EuropeCO2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D09_EuropeCO2.py>`__, and the XML code in the file `D09_EuropeCO2.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C08_Geopandas/D09_EuropeCO2.2D.xml>`__.
 
 
 
@@ -240,7 +232,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: New York, Factors
 
 
 
@@ -254,7 +245,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 US, Salary
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_USSalary.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D10_USSalary.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_USSalary.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D10_USSalary.py>`__, and the XML code in the file `D10_USSalary.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C08_Geopandas/D10_USSalary.2D.xml>`__.
 
 
 
@@ -265,7 +256,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: US, Salary
 
 
 
@@ -280,7 +270,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Belgium, unemployment
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11_Belgium.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D11_Belgium.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11_Belgium.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D11_Belgium.py>`__, and the XML code in the file `D11_Belgium.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C08_Geopandas/D11_Belgium.2D.xml>`__.
 
 
 
@@ -291,7 +281,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Belgium, unemployment
 
 
 
@@ -304,7 +293,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Earthquakes
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D12_Earthquakes.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D12_Earthquakes.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D12_Earthquakes.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C08_Geopandas/D12_Earthquakes.py>`__, and the XML code in the file `D12_Earthquakes.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C08_Geopandas/D12_Earthquakes.2D.xml>`__.
 
 
 
@@ -315,7 +304,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: EarthQuakes
 
 
 

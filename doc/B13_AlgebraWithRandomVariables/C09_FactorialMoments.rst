@@ -33,7 +33,7 @@ Calculating the factorial moments from the raw moments
 
     .. math::  \mu'_{[r]} = \sum_{j=0}^r s(r,j) \mu'_j,
 
-    where `s(r,j)` is the Stirling number of the first kind (see :ref:`stirling1() <rst_mpm_stirling1>`).
+    where `s(r,j)` is the Stirling number of the first kind.
 
 
 
@@ -52,7 +52,7 @@ Calculating the factorial moments from the cumulants
 
     .. math::  \mu'_{[r]} = \sum_{j=0}^r s(r,j) \mu'_j,
 
-    where `s(r,j)` is the Stirling number of the first kind (see :ref:`stirling1() <rst_mpm_stirling1>`).
+    where `s(r,j)` is the Stirling number of the first kind.
 
 
 

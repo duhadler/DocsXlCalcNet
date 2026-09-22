@@ -26,7 +26,7 @@ Gauss Hypergeometric Function, `{}_2F_1(a,b;c;x)`
 
     where ``ctx`` is ``math53`` or ``ctxflint``.
 
-    Note: math53.hyperg2F1(a, b, c, x)
+    Note: ctx.hyperg2F1(a, b, c, x)
 
 
     Returns `\displaystyle  \,_2F_1(a,b,c,x) = \sum_{k=0}^{\infty} \frac{(a)_k (b)_k}{(c)_k} \frac{x^k}{k!}`, the Gauss hypergeometric function, defined for `|x| < 1`.
@@ -134,7 +134,7 @@ Regularized Hypergeometric Function, `{}_2\widetilde{F}_1(a,b;c;x)`
 
     where ``ctx`` is ``math53`` or ``ctxflint``.
 
-    Note: math53.hyperg2F1r(a, b, c, x)
+    Note: ctx.hyperg2F1r(a, b, c, x)
 
     Returns `\displaystyle {}_2\widetilde{F}_1(a,b;c;x)  = \frac{1}{\Gamma(c)} {}_2F_1(a,b;c;x)`, the regularized Gauss hypergeometric function, for `c \ne 0, -1, -2, \cdots`, or, `\\` if `c = 0, -1, -2, \cdots = -m`, the corresponding limit `\displaystyle {}_2\widetilde{F}_1(a,b;-m;x)  =  \frac{(a)_{m+1} (b)_{m+1}}{(m+1)!} x^{m+1} {}_2F_1(a+m+1,b+m+1;m+2;x)`.
 

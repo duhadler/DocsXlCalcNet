@@ -10,17 +10,30 @@
 
 |newpage|
 
+
+.. _rst_setting_up_XlCalcNet: 
+
 Setting up XlCalcNet
 =========================
 
 
-Downloading and installing the "right" version of CPython
+Installing XlCalcNet
 -------------------------------------------------------------
+
+Although the Python language is available in many different implementations, we will focus on the "official" implementation of Python, which is called CPython. The official CPython implementation is available for download from https://www.python.org/downloads/.
+
+The XlCalcNet package is compatible with CPython versions 3.8 - 3.14. It is recommended to use a version of CPython, which is both mature and supported. In this manual, we will use CPython version 3.13.12.
+
+Python can be installed in different ways. It is recommended to install Python as a dedicated version for use with MS Excel, which does not require uninstalling any previous versions of Python, and does not interfere with other Python installations, and does not require administrative privileges.
+
+As installation directory any directory can be used for which the user has read and write access. In the following we will assume that the installation directory is ``C:\Python313``. Since we do not assume that the path to this directory is added to the PATH environment variable, we will always use the full path to the python.exe executable, which is ``C:\Python313\python.exe``.
+
+It is convenient to create a shortcut to the python.exe executable on the desktop, and rename it to ``Python313``. This allows starting Python by doubleclicking on this shortcut.
+
 
 Describe the dependency on Python.Net.
 
 Explain The 3 folder concept: user, application local data, python installation
-
 
 The data which are directly maniplated by the user are located in:
 
@@ -29,11 +42,13 @@ The data which generated as a result of running a python script or C\# program a
 The data which contain the installation are located in:
 
 
-Describe the choices for downloading python
+Describe installing XlCalcNet from PyPI
 
-Describe how to install python as a "free-standing" version without need to uninstall.
 
-Describe choices for locating this version of python
+
+Describe the copying and exploring the DataXlCalcNet folder
+
+
 
 Describe copying the batch files into 
 
@@ -69,67 +84,13 @@ In terms of usability, the .NET Framework 4.x runtime does not include an IDE; w
 
 
 
-|newpage|
-
-Installing the DataXlCalcNet folder
---------------------------------------------------------
-
-Describe how to download and unpack the core repositories from Github
-
-
-Emphasize the need to use Microsoft defender for the unzipped repositories.
-
-
-
-Describe the copying and exploring the DataXlCalcNet folder
-
-Describe the copying and exploring the DataXlCalcNet folder
-
-
-
 
 |newpage|
 
-Installing XlCalcNet
---------------------------------------------------------
-
-Describe how to download and unpack the core repositories from Github
 
 
-Emphasize the need to use Microsoft defender for the unzipped repositories.
+.. _rst_TinyIde: 
 
-
-
-Describe the copying and exploring the DataXlCalcNet folder
-
-Describe the copying and exploring the DataXlCalcNet folder
-
-
-
-
-|newpage|
-
-Installing XlCalcNet2 (optional)
---------------------------------------------------------
-
-Describe how to download and unpack the core repositories from Github
-
-
-Emphasize the need to use Microsoft defender for the unzipped repositories.
-
-
-The data which are directly maniplated by the user are located in:
-
-The data which generated as a result of running a python script or C\# program are written to: 
-
-The data which contain the installation are located in:
-
-
-
-
-
-
-|newpage|
 
 Installing and using the Tiny IDE as a Python application
 ----------------------------------------------------------------
@@ -138,7 +99,7 @@ Editing and compiling can be done with "Tiny C\#/Python IDE":
 
 
 
-.. image:: ../_static/TinyEditor.png
+.. image:: ../_static/TinyIDE.png
    :width: 50 %
    :align: center
 
@@ -147,35 +108,141 @@ Follow the steps to make the Tiny IDE available:
 
 * In the Python installation folder, rightclick on ``pythonw.exe``.
 
-* Select ``Verknüpfung erstellen`` -> Result: ``pythonw.exe-Verknüpfung``.
+* Select ``Create shortcut`` -> Result: ``pythonw.exe-shortcut``.
 
-* Rightclick on ``pythonw.exe-Verknüpfung``; Select Properties.
+* Rightclick on ``pythonw.exe-shortcut``; Select Properties.
 
 
-* In the dialogue Properties, select "Target", and type:``C:\Python313\pythonw.exe C:\Python313\Lib\site-packages\xlcalcnet\ShowEditor.py``. Then save.
+* In the dialogue Properties, select "Target", and type:``C:\Python313\pythonw.exe C:\Users\DUHad\Documents\DataXlCalcNet\A01_ExamplesPython\B01_GeneralUsage\C01_Setup\D03_ShowEditor.py``. Here the path to the documents folder (in our case ``C:\Users\DUHad\Documents``) needs to be changed to meet the settings of your system. Then save.
 
-* Rename ``pythonw.exe-Verknüpfung`` to ``TinyIDE_Python313``
+* Rename ``pythonw.exe-shortcut`` to ``TinyIDE_Python313``
 
 * Doubleclick on ``TinyIDE_Python313``
 
-* In the task-bar, rightclick on the appearing symbol, and select "An Taskleiste anheften"
+* In the task-bar, rightclick on the appearing symbol, and select "Pin to taskbar"
+
+
+Descibe starting an additional instance of the IDE
+
+
+The Python source code for starting the IDE can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ShowEditor.py
+
+
+The C\# source code for the IDE can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/TinyEditor
+
+
+
+
+
+
+.. _rst_ClientServer: 
+
+Starting and calling the socket server
+--------------------------------------------------------------------------------
+
+A running socket server is critical for the use of XlCalcNet from Microsoft Excel.
+
+
+.. image:: ../_static/SocketServer.png
+    :width: 50 %
+    :align: center
+
+The socket server can be startet in various ways:
+
+
+Starting the socketserver from the TinyIDE or GalleryOfPlots application
+...................................................................................
+
+Explain use of menu.
+
+
+
+
+Starting the socketserver from the Navigator dialog in Excel
+...................................................................................
+
+Explain use of dialog.
+
+
+
+
+Starting the socketserver programmatically from Python
+...................................................................................
+
+
+.. method:: gui.socketserver()
+
+    Describe the start of the socket server
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import gui
+        >>> gui.socketserver()
+
+
+
+
+Calling the socketserver from Python
+.............................................
+
+Describe calling the socketserver from Python
+
+
+.. code-block:: pycon
+
+    >>> import socket
+
+    >>> host = socket.gethostname()
+    >>> port = 11958  # socket server port number
+    >>> client_socket = socket.socket()  # instantiate
+    >>> client_socket.connect((host, port))  # connect to the server
+
+    >>> client_socket.send(SnippetToSend.encode())  # send message
+    >>> DataReceived = client_socket.recv(1024).decode()  # receive response
+    >>> print('Received from server: ' + DataReceived)  # show in terminal
+
+    >>> client_socket.close()  # close the connection
+
+
+Calling the socketserver from C\#
+.............................................
+
+Describe calling the socketserver from C\#
+
+
+
+
+Source code
+.............................................
+
+
+The Python source code for the socketserver can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Bin/socketspy.py
+
+The C\# source code for the socket client can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/ClientServer
+
+
+
 
 
 
 
 |newpage|
 
-Installing and using of the MS Excel XlNet addin: first steps
---------------------------------------------------------------------------------
+
+
+.. _rst_setting_up_Mpfunlab: 
+
+Preparing MS Excel for using XlCalcNet: first steps
+---------------------------------------------------------------------------------------------
 
 
 !!! Describe the need for starting  the socket server first !!!
 
-When starting the socket server for the first time to allow acces of Pyton to networks. Confirm.
+When starting the socket server for the first time from a specific installation of python.exe, a dialog will appear to allow access of this version of Python to networks. Confirm, since this is required for the socket server to work properly. If you have multiple installations of Python, you may have to do this for each installation.
 
 
 
-Describe the installation of the MS Excel addin.
+Describe the installation of the MS Excel addin: Mpfunlab.xll and Mpfunlab.xlam addins.
 
 
 
@@ -386,7 +453,7 @@ Availability: It is available anyway, as a component of Windows.
 Rebuilding the .dll files of XlCalcNet and XlCalcNet2 from source code
 --------------------------------------------------------------------------
 
-The XlCalcNet and XlCalcNet2 repositories contain both precompiled .dll files and their source code.
+The XlCalcNet and XlCalcNet2 python packages contain both precompiled .dll files and their source code.
 
 This section descibes how to rebuild the .dll files of XlCalcNet and XlCalcNet2 from source code, either completely or only in part. The building process itself is not particularly difficult, but it requires the installation of MSYS2 (version 3.4.9.x86_64 or later: about 4 GB in size), Free Pascal (version 2.6.4 or later: about 320 MB in size), and Visual Studio Community (version 2019 or later: about 4.6 GB in size).
 
@@ -401,26 +468,30 @@ Free Pascal is required to build  the file ``libwe64d.dll`` in the XlCalcNet ``B
 
 Erverything else can be done in Visual Studio Community:
 
-The details of the building the file ``FixedPrecNet.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`FixedPrec <rst_FixedPrec>`.
+The details of  building the file ``FixedPrecNet.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`FixedPrec <rst_FixedPrec>`.
 
-The details of the building the file ``ArbPrecNet.dll`` in the XlCalcNet2 ``Bin`` folder are described in :ref:`ArbPrec <rst_ArbPrec>`.
-
-
-The details of the building the file ``ArbPrecNet.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`ClientServer <rst_ClientServer>`.
+The details of  building the file ``ArbPrecNet.dll`` in the XlCalcNet2 ``Bin`` folder are described in :ref:`ArbPrec <rst_ArbPrec>`.
 
 
-The details of the building the file ``ArbPrecNet.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`OutputMonitor <rst_OutputMonitor>`.
+The details of  building the files ``MpFunLabClient.dll`` and ``MpFunLabAddin64.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`ClientServer <rst_ClientServer>`.
 
 
-The details of the building the file ``ArbPrecNet.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`TinyIde <rst_TinyIde>`.
+The details of  building the file ``TinyOutputMonitorUserCtrl.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`OutputMonitor <rst_OutputMonitor>`.
 
 
-The details of the building the file ``ArbPrecNet.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`GalleryOfPlots <rst_GalleryOfPlots>`.
+The details of  building the file ``TinyIDEUserCtrl.dll`` and ``FindReplaceSD.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`TinyIde <rst_TinyIde>`.
 
 
-The details of the building the file ``ArbPrecNet.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`Wpf3D <rst_Wpf3D>`.
+The details of  building the file ``TinyPlot2DUserCtrl.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`GalleryOfPlots <rst_GalleryOfPlots>`.
 
 
+The details of  building the file ``TinyPlot3DUserCtrl.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`Wpf3D <rst_Wpf3D>`.
+
+
+The details of  building the file ``TinyDataViewerUserCtrl.dll`` in the XlCalcNet ``Bin`` folder are described in :ref:`DataViewer <rst_DataViewer>`.
+
+
+All other .dll files in the XlCalcNet ``Bin`` folder have been aquired via https://www.nuget.org/ from the supporting libraries and should probably not be changed.
 
 
 

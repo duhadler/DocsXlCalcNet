@@ -35,7 +35,7 @@ A regular polygon is a polygon that is direct equiangular (all angles are equal 
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_RegularConvexPolygon.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D01_RegularConvexPolygon.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_RegularConvexPolygon.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D01_RegularConvexPolygon.py>`__, and the XML code in the file `D01_RegularConvexPolygon.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D01_RegularConvexPolygon.2D.xml>`__.
 
 
 
@@ -85,7 +85,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram2D101`,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_Circle.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D02_Circle.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_Circle.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D02_Circle.py>`__, and the XML code in the file `D02_Circle.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D02_Circle.2D.xml>`__.
 
 
 
@@ -122,7 +122,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D102`,  MathWorld :cite:p:`Wolfram2D102`,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_Ellipse.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D03_Ellipse.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_Ellipse.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D03_Ellipse.py>`__, and the XML code in the file `D03_Ellipse.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D03_Ellipse.2D.xml>`__.
 
 
 
@@ -164,7 +164,7 @@ In polar coordinates, the equation of a parabola with parameter a and center (0,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_Parabola.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D04_Parabola.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_Parabola.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D04_Parabola.py>`__, and the XML code in the file `D04_Parabola.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D04_Parabola.2D.xml>`__.
 
 
 
@@ -216,7 +216,7 @@ See also:  https://mathworld.wolfram.com/ConicSection.html
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_Hyperbola.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D05_Hyperbola.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_Hyperbola.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D05_Hyperbola.py>`__, and the XML code in the file `D05_Hyperbola.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D05_Hyperbola.2D.xml>`__.
 
 
 
@@ -253,7 +253,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D103`,  MathWorld :cite:p:`Wolfram2D103`,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_Cycloid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D06_Cycloid.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_Cycloid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D06_Cycloid.py>`__, and the XML code in the file `D06_Cycloid.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D06_Cycloid.2D.xml>`__.
 
 
 
@@ -289,7 +289,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D104`,  MathWorld :cite:p:`Wolfram2D104`,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_Trochoid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D07_Trochoid.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_Trochoid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D07_Trochoid.py>`__, and the XML code in the file `D07_Trochoid.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D07_Trochoid.2D.xml>`__.
 
 
 
@@ -321,7 +321,7 @@ See also:  Wikipedia :cite:p:`Wikipedia2D201`,  MathWorld :cite:p:`Wolfram2D201`
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_Cardioid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D08_Cardioid.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_Cardioid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D08_Cardioid.py>`__, and the XML code in the file `D08_Cardioid.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D08_Cardioid.2D.xml>`__.
 
 
 
@@ -352,7 +352,7 @@ See also: see also  Wikipedia :cite:p:`Wikipedia2D202`,  MathWorld :cite:p:`Wolf
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_LimaconCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D09_LimaconCurve.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_LimaconCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D09_LimaconCurve.py>`__, and the XML code in the file `D09_LimaconCurve.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D09_LimaconCurve.2D.xml>`__.
 
 
 
@@ -384,7 +384,7 @@ See also: see also  Wikipedia :cite:p:`Wikipedia2D204`,  MathWorld :cite:p:`Wolf
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_ConchoidOfDeSluze.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D10_ConchoidOfDeSluze.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_ConchoidOfDeSluze.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D10_ConchoidOfDeSluze.py>`__, and the XML code in the file `D10_ConchoidOfDeSluze.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D10_ConchoidOfDeSluze.2D.xml>`__.
 
 
 
@@ -418,7 +418,7 @@ See also: Wikipedia :cite:p:`Wikipedia2D206`,  MathWorld :cite:p:`Wolfram2D206`
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11_FreethNephroid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D11_FreethNephroid.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11_FreethNephroid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D11_FreethNephroid.py>`__, and the XML code in the file `D11_FreethNephroid.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D11_FreethNephroid.2D.xml>`__.
 
 
 
@@ -449,7 +449,8 @@ A special cases is the right strophoid with `a = \pi/2`.
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D12_Strophoid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D12_Strophoid.py>`__.
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D12_Strophoid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D12_Strophoid.py>`__, and the XML code in the file `D12_Strophoid.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D12_Strophoid.2D.xml>`__.
 
 
 
@@ -481,7 +482,7 @@ See also: Wikipedia :cite:p:`Wikipedia2D208`,  MathWorld :cite:p:`Wolfram2D208`
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13_CycloidOfCeva.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D13_CycloidOfCeva.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13_CycloidOfCeva.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D13_CycloidOfCeva.py>`__, and the XML code in the file `D13_CycloidOfCeva.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D13_CycloidOfCeva.2D.xml>`__.
 
 
 
@@ -518,7 +519,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D110`,  MathWorld :cite:p:`Wolfram2D110`,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D14_LemniscateOfGerono.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D14_LemniscateOfGerono.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D14_LemniscateOfGerono.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D14_LemniscateOfGerono.py>`__, and the XML code in the file `D14_LemniscateOfGerono.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D14_LemniscateOfGerono.2D.xml>`__.
 
 
 |Lemniscate_of_Gerono_a|
@@ -554,7 +555,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D109`,  MathWorld :cite:p:`Wolfram2D109`,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D15_LemniscateOfBernoulli.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D15_LemniscateOfBernoulli.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D15_LemniscateOfBernoulli.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D15_LemniscateOfBernoulli.py>`__, and the XML code in the file `D15_LemniscateOfBernoulli.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C02_BasicCurves/D15_LemniscateOfBernoulli.2D.xml>`__.
 
 
 

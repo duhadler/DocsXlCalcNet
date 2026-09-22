@@ -350,7 +350,7 @@ Spherical harmonics, `Y_n^m(\theta, \phi)`
 
     where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
 
-    Note: math53.spherHarm(theta, phi, n, m), ctxboost.SphericalHarmonicR(theta, phi, n, m), ctxboost.SphericalHarmonicI(theta, phi, n, m)
+    Note: ctx.spherHarm(theta, phi, n, m), ctxboost.SphericalHarmonicR(theta, phi, n, m), ctxboost.SphericalHarmonicI(theta, phi, n, m)
 
 
     !!! n and m need to be integer !!!
@@ -414,7 +414,7 @@ Spherical harmonics, `Y_n^m(\theta, \phi)`
 Toroidal harmonics `P^m_{l-1/2}(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.toroidal_plm(l,m,x)
+.. method:: ctx.toroidal_plm(l,m,x)
 
     Returns the toroidal harmonic  `P^m_{l-1/2}(x)`, which is an associated Legendre function `P^m_l(x)` of the first kind with half-integer degree. The current implementation is based on Amath and is restricted to `l,m=0,1; x>1`, using Legendre elliptic integrals or Bulirsch elliptic integrals for numerical evaluation.
 
@@ -448,7 +448,7 @@ Toroidal harmonics `P^m_{l-1/2}(x)`
 Toroidal harmonics `Q^m_{l-1/2}(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.toroidal_qlm(l,m,x)
+.. method:: ctx.toroidal_qlm(l,m,x)
 
     Returns the toroidal harmonic `Q^m_{l-1/2}(x)`, which is an associated Legendre function `Q^m_l(x)` of the second kind with half-integer degree. The current implementation is based on Amath and is restricted to `l,m=0,1; x>1`, using Legendre elliptic integrals or Bulirsch elliptic integrals for numerical evaluation.
 
@@ -474,26 +474,4 @@ Toroidal harmonics `Q^m_{l-1/2}(x)`
 
 
 
-
-
-
-
-Olver's associated Legendre function `Q^m_{l-1/2}(x)`
--------------------------------------------------------------------------------
-
-.. method:: math53.olver_qlm(l,m,x)
-
-    Defined as (see https://dlmf.nist.gov/14.3#E10)
-
-    .. math:: \boldsymbol{Q}^{\mu}_{\nu}\left(x\right)=e^{-\mu\pi i}\frac{Q^{\mu}_{\nu}\left(x\right)}{\Gamma\left(\nu+\mu+1\right)}.
-
-
-    Can be calculated as 
-
-    .. math:: \boldsymbol{Q}^{\mu}_{\nu}\left(x\right)=\frac{2^{\nu}\Gamma\left(\nu+1\right)(x+1)^{\mu/2}}{(x-1)^{(\mu/2)+\nu+1}}\mathbf{F}\left(\nu+1,\nu+\mu+1;2\nu+2;\frac{2}{1-x}\right).
-
-
-    For hypergeometric representations of Ferrers function and associated Legendre function
-
-    see https://dlmf.nist.gov/14.3
 

@@ -43,7 +43,7 @@ Changing the parameter `a` controls the distance between loops.
 See also  Wikipedia :cite:p:`Wikipedia2D209`,  MathWorld :cite:p:`Wolfram2D209`, MathCurve :cite:p:`MathCurve2D209`.
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_ArchimedesSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D01_ArchimedesSpiral.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_ArchimedesSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D01_ArchimedesSpiral.py>`__, and the XML code in the file `D01_ArchimedesSpiral.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C03_Spirals/D01_ArchimedesSpiral.2D.xml>`__.
 
 
 |Archimedes_Spiral_a|
@@ -77,7 +77,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D210`,  MathWorld :cite:p:`Wolfram2D210`,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_FermatSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D02_FermatSpiral.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_FermatSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D02_FermatSpiral.py>`__, and the XML code in the file `D02_FermatSpiral.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C03_Spirals/D02_FermatSpiral.2D.xml>`__.
 
 
 
@@ -118,7 +118,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D211`,  MathWorld :cite:p:`Wolfram2D211`,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_HyperbolicSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D03_HyperbolicSpiral.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_HyperbolicSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D03_HyperbolicSpiral.py>`__, and the XML code in the file `D03_HyperbolicSpiral.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C03_Spirals/D03_HyperbolicSpiral.2D.xml>`__.
 
 
 
@@ -159,7 +159,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D212`,  MathWorld :cite:p:`Wolfram2D212`,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_Lituus.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D04_Lituus.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_Lituus.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D04_Lituus.py>`__, and the XML code in the file `D04_Lituus.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C03_Spirals/D04_Lituus.2D.xml>`__.
 
 
 |Lituus_a|
@@ -201,7 +201,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D213`,  MathWorld :cite:p:`Wolfram2D213`,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_LogarithmicSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D05_LogarithmicSpiral.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_LogarithmicSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D05_LogarithmicSpiral.py>`__, and the XML code in the file `D05_LogarithmicSpiral.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C03_Spirals/D05_LogarithmicSpiral.2D.xml>`__.
 
 
 
@@ -236,7 +236,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D219`,  MathWorld :cite:p:`Wolfram2D219`,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_PoinsotSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D06_PoinsotSpiral.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_PoinsotSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D06_PoinsotSpiral.py>`__, and the XML code in the file `D06_PoinsotSpiral.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C03_Spirals/D06_PoinsotSpiral.2D.xml>`__.
 
 
 
@@ -278,7 +278,7 @@ The first and third forms are Poinsot's spirals; the second is the logarithmic s
 See also  Wikipedia :cite:p:`Wikipedia2D220`,  MathWorld :cite:p:`Wolfram2D220`.
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_CotesSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D07_CotesSpiral.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_CotesSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D07_CotesSpiral.py>`__, and the XML code in the file `D07_CotesSpiral.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C03_Spirals/D07_CotesSpiral.2D.xml>`__.
 
 
 |Cotes_spiral_case_1_a|
@@ -309,7 +309,7 @@ with `-\pi/2 \le t \le \pi/2` and `a>0` (eg:2).
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_TanhSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D08_TanhSpiral.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_TanhSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D08_TanhSpiral.py>`__, and the XML code in the file `D08_TanhSpiral.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C03_Spirals/D08_TanhSpiral.2D.xml>`__.
 
 
 |Tanh_Spiral_a|
@@ -344,7 +344,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D217`,  MathWorld :cite:p:`Wolfram2D217`,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_NielsenSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D09_NielsenSpiral.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_NielsenSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D09_NielsenSpiral.py>`__, and the XML code in the file `D09_NielsenSpiral.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C03_Spirals/D09_NielsenSpiral.2D.xml>`__.
 
 
 
@@ -381,7 +381,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D218`,  MathWorld :cite:p:`Wolfram2D218`,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_CornuSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D10_CornuSpiral.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_CornuSpiral.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C03_Spirals/D10_CornuSpiral.py>`__, and the XML code in the file `D10_CornuSpiral.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C03_Spirals/D10_CornuSpiral.2D.xml>`__.
 
 
 |Cornu_Spiral_a| 

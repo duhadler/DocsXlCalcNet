@@ -31,9 +31,7 @@ See also  Wikipedia :cite:p:`WikipediaDis17`, MathWorld :cite:p:`WolframDis17`, 
 
 .. _Ctx_LaplacePdf:
 
-.. method:: Ctx.laplace_pdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.laplace_pdf(a, b, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the Laplace distribution:
 
@@ -54,9 +52,7 @@ See also  Wikipedia :cite:p:`WikipediaDis17`, MathWorld :cite:p:`WolframDis17`, 
 
 .. _Ctx_LaplaceCdf:
 
-.. method:: Ctx.LaplaceCdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.laplace_cdf(a, b, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the Laplace distribution:
 
@@ -82,9 +78,7 @@ See also  Wikipedia :cite:p:`WikipediaDis17`, MathWorld :cite:p:`WolframDis17`, 
 
 .. _Ctx_LaplaceQtf:
 
-.. method:: Ctx.LaplaceQtf(q, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.laplace_qtf(a, b, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the Laplace distribution:
 

@@ -32,9 +32,7 @@ See also  Wikipedia :cite:p:`WikipediaDis20`, MathWorld :cite:p:`WolframDis20`, 
 
 .. _Ctx_NormalPdf:
 
-.. method:: Ctx.normal_pdf(x, mu=0, sigma=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.normal_pdf(mu=0, sigma=1, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the normal distribution:
 
@@ -56,9 +54,7 @@ See also  Wikipedia :cite:p:`WikipediaDis20`, MathWorld :cite:p:`WolframDis20`, 
 
 .. _Ctx_NormalCdf:
 
-.. method:: Ctx.normal_cdf(x, mu=0, sigma=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.normal_cdf(mu=0, sigma=1, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the normal distribution:
 
@@ -80,9 +76,7 @@ See also  Wikipedia :cite:p:`WikipediaDis20`, MathWorld :cite:p:`WolframDis20`, 
 
 .. _Ctx_NormalQtf:
 
-.. method:: Ctx.normal_qtf(q, mu=0, sigma=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.normal_qtf(mu=0, sigma=1, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the normal distribution:
 

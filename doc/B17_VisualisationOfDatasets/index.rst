@@ -27,7 +27,7 @@ Text explaining the use of the Visualisation of datasets
    C03_AreaPlots.rst
 
 
-   C04_BoxViolinRaincloudplots.rst
+   C04_BoxViolinRaincloudPlots.rst
 
 
    C05_CorrelationAndRegression.rst
@@ -42,10 +42,10 @@ Text explaining the use of the Visualisation of datasets
    C08_Geopandas.rst
 
 
-   C09_PartsOfWhole.rst
+   C09_PartsOfAWhole.rst
 
 
-   C10_Heatmaps.rst
+   C10_Dendrograms.rst
 
 
    C11_PlotTable.rst

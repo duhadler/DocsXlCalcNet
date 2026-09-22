@@ -50,6 +50,9 @@ NOTE: the item "H. Stop of y, v [STOP2]" determines the diameter of the helix.
 Cylindrical helix
 -------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D01a_Path_SpiralCylindrical.3D.xml (D01a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C04_HelicesAndRelated/D01a_Path_SpiralCylindrical.3D.xml>`__.
+
+
 See also: https://mathcurve.com/courbes3d.gb/helicecirculaire/helicecirculaire.shtml
 
 The cylindrical helix can be defined as a helix traced on a vertical cylinder of revolution, or a rhumb line of this cylinder (i.e., in both cases, a curve forming a constant angle with respect to the axis of the cylinder), or a geodesic of this cylinder (in other words, a curve that becomes a line when the cylinder is developed) or a solenoid with linear bore.
@@ -60,7 +63,7 @@ The radius of the helix is a, and its shift is  (it is the distance between two 
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -116,6 +119,9 @@ An example in C\#
 Conical helix based on Archimedes spiral (spiral of Pappus)
 -------------------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D02a_Path_SpiralAConical.3D.xml (D02a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C04_HelicesAndRelated/D02a_Path_SpiralAConical.3D.xml>`__.
+
+
 See also: https://en.wikipedia.org/wiki/Conical_spiral
 
 See also: https://mathworld.wolfram.com/ConicalSpiral.html
@@ -133,7 +139,7 @@ The helix is right-handed when  (it “goes up” clockwise) and left-handed whe
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -193,6 +199,9 @@ An example in C\#
 Conical helix based on Fermat's spiral 
 ----------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D03a_Path_SpiralFConical.3D.xml (D03a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C04_HelicesAndRelated/D03a_Path_SpiralFConical.3D.xml>`__.
+
+
 See also: https://en.wikipedia.org/wiki/Conical_spiral
 
 
@@ -201,7 +210,7 @@ Conical helix based on Fermat's spiral
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -258,6 +267,9 @@ An example in C\#
 Conical helix based on the logarithmic spiral  (Concho-Spiral)
 ---------------------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D04a_Path_SpiralLConical.3D.xml (D04a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C04_HelicesAndRelated/D04a_Path_SpiralLConical.3D.xml>`__.
+
+
 See also: https://mathworld.wolfram.com/Concho-Spiral.html
 
 
@@ -266,7 +278,7 @@ See also: https://en.wikipedia.org/wiki/Conchospiral
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -328,6 +340,8 @@ An example in C\#
 Rhumb line of the sphere
 ------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D05a_Path_SphericalRhumbline.3D.xml (D05a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C04_HelicesAndRelated/D05a_Path_SphericalRhumbline.3D.xml>`__.
+
 
 See also: https://mathcurve.com/courbes3d.gb/loxodromie/sphereloxodromie.shtml
 
@@ -336,11 +350,11 @@ Do not mistake the rhumb lines for the spherical helices, that form a constant a
 
 The rhumb lines correspond to the straight lines in Mercator coordinates ; in other words, on the maps of the Earth that use the Mercator projection, the rhumb lines are represented by straight lines. The angle a that the images of the rhumb lines form on the map with respect to the horizontal is the same as the angle they form on the sphere with respect to the parallels.
 If we know the geographic coordinates  and  of two points, the angle a associated to the shortest rhumb line joining these two points is obtained by the formula:  and the length is given by: .
-The notion of rhumb line is opposed to that of geodesic, shortest path joining two points on the sphere, which is an arc of a great circle
+The notion of rhumb line is opposed to that of geodesic, shortest path joining two points on the sphere, which is an arc of a great circle.
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -400,6 +414,10 @@ An example in C\#
 Clelia
 ----------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D06a_Path_SphericalClelia.3D.xml (D06a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C04_HelicesAndRelated/D06a_Path_SphericalClelia.3D.xml>`__.
+
+
+
 See also: https://mathcurve.com/courbes3d.gb/clelie/clelie.shtml
 
 See also: https://en.wikipedia.org/wiki/Cl%C3%A9lie
@@ -415,7 +433,7 @@ When p and q are odd, the curve is composed of p patterns, obtained from the bas
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -473,6 +491,8 @@ An example in C\#
 Spherical helix
 ------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D07a_Path_SphericalHelix.3D.xml (D07a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C04_HelicesAndRelated/D07a_Path_SphericalHelix.3D.xml>`__.
+
 
 See also: https://mathworld.wolfram.com/SphericalSpiral.html
 
@@ -489,7 +509,7 @@ Therefore, the spherical cycloid is a roulette of the motion of a sphere over a 
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -547,6 +567,10 @@ An example in C\#
 Satellite curve
 ----------------------------------------------------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D08a_Path_SphericalSatellite.3D.xml (D08a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C04_HelicesAndRelated/D08a_Path_SphericalSatellite.3D.xml>`__.
+
+
+
 See also: https://mathcurve.com/courbes3d.gb/satellite/satellite.shtml
 
 See also: https://mathcurve.com/courbes3d.gb/capareda/capareda.shtml
@@ -565,7 +589,7 @@ Special cases of satellite curves include:
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 

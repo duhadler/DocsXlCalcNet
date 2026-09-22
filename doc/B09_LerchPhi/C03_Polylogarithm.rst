@@ -114,7 +114,7 @@ Polylogarithm, `\mathrm{Li}_s(z)`
 Trilogarithm Function, `\mathrm{Li}_3(z)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.trilog(x)
+.. method:: ctx.trilog(x)
 
     Returns the trilogarithm  `\displaystyle \mathrm{trilog}(x) = \Re \displaystyle \mathrm{Li}_3(x)`. See also   Wikipedia :cite:p:`WikipediaFun174`, MathWorld :cite:p:`WolframFun174`, NIST :cite:p:`DLMFun174`, :cite:t:`Ehrhardt2018` (3.6.14), Mpmath :cite:p:`MpmathFun173`. 
 
@@ -228,7 +228,7 @@ Dilogarithm Function, `\mathrm{Li}_2(z)`
 Generalized Clausen sine function
 -------------------------------------------------------------------------------
 
-.. method:: ctxflint.clausen_sin(s, z)
+.. method:: ctx.clausen_sin(s, z)
 
 
     Returns the Clausen sine function. See also  Wikipedia :cite:p:`WikipediaFun1017`, MathWorld :cite:p:`WolframFun1017`, Mpmath :cite:p:`MpmathFun1017`. 
@@ -319,7 +319,7 @@ Generalized Clausen sine function
 Generalized Clausen cosine function
 -------------------------------------------------------------------------------
 
-.. method:: ctxflint.clausen_cos(s, z)
+.. method:: ctx.clausen_cos(s, z)
 
 
     Returns the Clausen cosine function. See also  Wikipedia :cite:p:`WikipediaFun1017`, MathWorld :cite:p:`WolframFun1017`, Mpmath :cite:p:`MpmathFun1018`. 
@@ -404,7 +404,7 @@ Generalized Clausen cosine function
 Classical Clausen function, `\mathrm{Cl}_2(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.clausen2(x)
+.. method:: ctx.clausen2(x)
 
     Returns the Clausen function `\displaystyle \mathrm{Cl}_2(x) = \Im \displaystyle \mathrm{Li}_2(e^{ix}) =  \int_0^x \log|2\sin(t/2)| \, \mathrm{d}t`.
 
@@ -433,7 +433,7 @@ Classical Clausen function, `\mathrm{Cl}_2(x)`
 Bose-Einstein integrals, `G_s(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.bose_einstein(s, x)
+.. method:: ctx.bose_einstein(s, x)
 
     Returns the Bose-Einstein integral of real order `s`, `\displaystyle G_s(x) = \frac{1}{\Gamma(s+1)} \int_0^{\infty} \frac{t^s}{e^{t-x}-1} = \text{Li}_{s+1}(e^x) \,`. If `x>0` the real part of `G_s(x)` is returned.
 
@@ -566,7 +566,7 @@ Fermi-Dirac integrals, `F_s(x)`
 Legendre's Chi function, `\chi_s(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.legendre_chi(s, x)
+.. method:: ctx.legendre_chi(s, x)
 
     Returns Legendre's Chi function, defined as `\displaystyle \chi_s(x) = \sum_{n=0}^{\infty} \frac{x^{2n+1}}{(2n+1)^s} = \tfrac{1}{2} \left( \text{Li}_s(x) - \text{Li}_s(-x) \right) \,`, for `s\ge 0, |x|\le 1`.
 
@@ -651,7 +651,7 @@ Legendre's Chi function, `\chi_s(x)`
 Generalized inverse tangent integral
 -------------------------------------------------------------------------------
 
-.. method:: ctxflint.inverse_tan_integral(s, z)
+.. method:: ctx.inverse_tan_integral(s, z)
 
     Returns the generalized inverse tangent integral `Ti_s(z)`, which can be expressed in terms of polylogarithms:
     

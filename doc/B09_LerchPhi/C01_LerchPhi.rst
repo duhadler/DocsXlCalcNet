@@ -213,7 +213,7 @@ Lerch's zeta
 -------------------------------------------------------------------------------
 
 
-.. method:: ctxflint.lerch_zeta(lambda1, alpha, s)
+.. method:: ctx.lerch_zeta(lambda1, alpha, s)
 
 
 

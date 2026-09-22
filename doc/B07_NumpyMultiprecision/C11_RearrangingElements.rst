@@ -43,8 +43,7 @@
 
 
 
-
-
+|newpage|
 
 Numpy array manipulation: Rearranging elements
 ==========================================================

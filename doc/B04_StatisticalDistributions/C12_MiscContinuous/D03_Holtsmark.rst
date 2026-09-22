@@ -45,9 +45,7 @@ See also: https://en.wikipedia.org/wiki/Holtsmark_distribution
 
 .. _Ctx_Holtsmark_Pdf:
 
-.. method:: Ctx.holtsmark_pdf(x, m, n)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.holtsmark_pdf(mu, c, x)
 
     Returns `\text{pdf}_X(x)`, the probability density function (pdf) of a random variable `X`, following an Holtsmark distribution
 
@@ -71,9 +69,7 @@ See also: https://en.wikipedia.org/wiki/Holtsmark_distribution
 
 .. _Ctx_Holtsmark_Cdf:
 
-.. method:: Ctx.holtsmark_cdf(x, m, n)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.holtsmark_cdf(mu, c, x)
 
 
     Returns `\text{cdf}_X(x)`, the cumulative distribution function (cdf) of a random variable `X`, following an Holtsmark distribution.
@@ -97,9 +93,7 @@ See also: https://en.wikipedia.org/wiki/Holtsmark_distribution
 
 .. _Ctx_Holtsmark_Qtf:
 
-.. method:: Ctx.holtsmark_qtf(q, m, n)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.holtsmark_qtf(mu, c, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the Holtsmark distribution.
 

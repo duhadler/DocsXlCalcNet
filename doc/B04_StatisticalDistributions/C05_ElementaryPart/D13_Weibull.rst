@@ -30,9 +30,7 @@ See also  Wikipedia :cite:p:`WikipediaDis25`, MathWorld :cite:p:`WolframDis25`, 
 
 .. _Ctx_WeibullPdf:
 
-.. method:: Ctx.weibull_pdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.weibull_pdf(a, b, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the Weibull distribution:
 
@@ -53,9 +51,7 @@ See also  Wikipedia :cite:p:`WikipediaDis25`, MathWorld :cite:p:`WolframDis25`, 
 
 .. _Ctx_WeibullCdf:
 
-.. method:: Ctx.weibull_cdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.weibull_cdf(a, b, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the Weibull distribution:
 
@@ -77,9 +73,7 @@ See also  Wikipedia :cite:p:`WikipediaDis25`, MathWorld :cite:p:`WolframDis25`, 
 
 .. _Ctx_WeibullQtf:
 
-.. method:: Ctx.weibull_qtf(q, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.weibull_qtf(a, b, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the Weibull distribution:
 

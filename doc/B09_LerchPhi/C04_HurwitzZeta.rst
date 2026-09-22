@@ -167,7 +167,7 @@ Hurwitz zeta function, `\zeta(s,a)`
 Generalized harmonic number function, `H_x^{(r)}`
 -------------------------------------------------------------------------------
 
-.. method:: math53.harmonic2(x, s)
+.. method:: ctx.harmonic2(x, s)
 
     Returns the generalized harmonic function  `H_x^{(r)} = \zeta(r) - \zeta(r,x+1)` for `r \ne 1` and `H_x^{(r)} = H_x` for `r = 1`. 
 
@@ -287,7 +287,7 @@ Bernoulli numbers, `B_n`
 Bernoulli polynomials, `B_n(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.bernpoly(n, x)
+.. method:: ctx.bernpoly(n, x)
 
     Returns `\displaystyle B_n(x) = \sum_{n=0}^{\infty} \binom{n}{k} B_k x^{n-k}`, the Bernoulli polynomial of degree `n \ge 0`.
 
@@ -388,7 +388,7 @@ Euler numbers
 Euler polynomials, `E_n(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.eulerpoly(n, x)
+.. method:: ctx.eulerpoly(n, x)
 
     Returns `\displaystyle E_n(x) = \frac{2}{n+1} \left( B_{n+1}(x)-2^{n+1}B_{n+1}\left(\frac{x}{2}\right) \right)`, the Euler polynomial of degree `n \ge 0`. Special values include the Euler numbers `E_n = 2^n E_n(1/2)`. 
 
@@ -457,7 +457,7 @@ Euler polynomials, `E_n(x)`
 Barnes G-function
 -------------------------------------------------------------------------------
 
-.. method:: ctxflint.barnes_g(z)
+.. method:: ctx.barnes_g(z)
 
 
     Returns the Barnes G-function of *z*. See also Wikipedia :cite:p:`WikipediaFun131`, MathWorld :cite:p:`WolframFun131`, NIST :cite:p:`DLMFun131`, :cite:t:`Whittaker1927`, Mpmath :cite:p:`MpmathFun131`.
@@ -591,7 +591,7 @@ Logarithm of Barnes G function
 Hyperfactorial
 -------------------------------------------------------------------------------
 
-.. method:: ctxflint.hyperfactorial(z)
+.. method:: ctx.hyperfactorial(z)
 
 
     Returns the hyperfactorial of *z*. See also Wikipedia :cite:p:`WikipediaFun130`, MathWorld :cite:p:`WolframFun130`, :cite:t:`OEISFun130`, Mpmath :cite:p:`MpmathFun130`.
@@ -648,7 +648,7 @@ Hyperfactorial
 Superfactorial
 -------------------------------------------------------------------------------
 
-.. method:: ctxflint.superfactorial(z)
+.. method:: ctx.superfactorial(z)
 
 
     Returns the Superfactorial of *z*. See also Wikipedia :cite:p:`WikipediaFun129`, MathWorld :cite:p:`WolframFun129`, :cite:t:`OEISFun129`, Mpmath :cite:p:`MpmathFun129`.

@@ -58,7 +58,7 @@ https://en.wikipedia.org/wiki/Barnsley_fern
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_BarnsleyFern.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C01_IntroFractals/D01_BarnsleyFern.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_BarnsleyFern.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C01_IntroFractals/D01_BarnsleyFern.py>`__, and the XML code in the file `D01_BarnsleyFern.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C01_IntroFractals/D01_BarnsleyFern.2D.xml>`__.
 
 
 
@@ -95,7 +95,7 @@ https://mathworld.wolfram.com/DragonCurve.html
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_DragonCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C01_IntroFractals/D02_DragonCurve.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_DragonCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C01_IntroFractals/D02_DragonCurve.py>`__, and the XML code in the file `D02_DragonCurve.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C01_IntroFractals/D02_DragonCurve.2D.xml>`__.
 
 
 
@@ -134,7 +134,7 @@ https://mathworld.wolfram.com/SierpinskiCarpet.html
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_SierpinskiCarpet.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C01_IntroFractals/D03_SierpinskiCarpet.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_SierpinskiCarpet.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C01_IntroFractals/D03_SierpinskiCarpet.py>`__, and the XML code in the file `D03_SierpinskiCarpet.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C01_IntroFractals/D03_SierpinskiCarpet.2D.xml>`__.
 
 
 

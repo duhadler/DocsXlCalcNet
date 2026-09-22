@@ -130,7 +130,7 @@ Gamma function, `\Gamma(x)`
 Auxiliary function `\Gamma(x+1)-1`
 -------------------------------------------------------------------------------
 
-.. method:: ctx.real_gamma1pm1(z)
+.. method:: ctx.gamma1pm1(z)
 
     where ``ctx`` is ``math53``, ``ctxcpp``, ``ctxboost`` or ``ctxflint``.
 
@@ -610,7 +610,7 @@ Falling factorial, `(a)^{\underline{n}} = (a-n+1)^{\overline{n}}`
 Ratio of gamma functions, `\Gamma(a)/\Gamma(b)`
 -------------------------------------------------------------------------------
 
-.. method:: ctx.real_gamma_ratio(a, b)
+.. method:: ctx.gamma_ratio(a, b)
 
     where ``ctx`` is ``math53``, ``ctxcpp``, ``ctxboost`` or ``ctxflint``.
 
@@ -652,7 +652,7 @@ Ratio of gamma functions, `\Gamma(a)/\Gamma(b)`
 Gamma-delta ratio, `\Gamma(a)/\Gamma(a + \delta)`
 -------------------------------------------------------------------------------
 
-.. method:: ctx.real_gamma_delta_ratio(x, delta)
+.. method:: ctx.gamma_delta_ratio(x, delta)
 
     where ``ctx`` is ``math53``, ``ctxcpp``, ``ctxboost`` or ``ctxflint``.
 
@@ -695,16 +695,44 @@ Gamma-delta ratio, `\Gamma(a)/\Gamma(a + \delta)`
 
 
 
-|newpage|
+
+
+.. _rst_mpm_beta: 
 
 Beta function, `B(a,b) = \Gamma(a)\Gamma(b)/\Gamma(a + b)`
 -------------------------------------------------------------------------------
 
+
 .. method:: ctx.beta(a, b)
 
-    where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
+    where ``ctx`` is ``math53``, ``ctxcpp``, ``ctxboost`` or ``ctxflint``.
 
-    Returns the beta dunction `\displaystyle B(a,b) = \frac{\Gamma(a)\Gamma(b)}{\Gamma(a + b}`
+    Returns the beta function `\displaystyle B(x,y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x+y)} =  \int_0^1 t^{x-1} (1-t)^{y-1} \,  \, \mathrm{d}t`.
+
+    See also  Wikipedia :cite:p:`WikipediaFun78`, MathWorld :cite:p:`WolframFun78`, NIST :cite:p:`DLMFun78`,  BoostMath :cite:p:`BoostFun78`, :cite:t:`Ehrhardt2018` (3.5.3.1), Mpmath :cite:p:`MpmathFun78`.
+
+
+
+
+An example with real input:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import dec, mpm, ipm
+    >>> mpm.dps = 40; a = '20.4'; b = '10.4'
+    >>> \mathrm{d}x = dec.beta(a, b); mx = mpm.beta(a, b); ix = ipm.beta(a, b)
+    >>> mpm.show([\mathrm{d}x, mx, ix])
+    dec:  2.693713532046140908251383587041524146973E-9
+    mpm:  2.693713532046140908251383587041524146974e-9
+    ipm:  2.693713532046140908251383587041524146972e-9 (2.048e-37%)
+
+    >>> from xlcalcnet import mpm, fpm, gmp, apm
+    >>> mpm.dps = 40; a = '20.4'; b = '10.4'
+    >>> fx = fpm.beta(a, b); gx = gmp.beta(a, b); ax = apm.beta(a, b)
+    >>> mpm.show([fx, gx, ax])
+    fpm:  2.69371353204614E-09
+    gmp:  2.693713532046140908251383587041524146974E-09
+    apm:  2.693713532046140908251383587041524146975e-9 (6.549e-37%)
 
 
 

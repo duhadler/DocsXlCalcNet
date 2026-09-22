@@ -28,6 +28,8 @@ See also: https://home.adelphi.edu/~stemkoski/knotgallery/
 Polynomial knot 3-1
 ----------------------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D01a_Path_Poly31Knot.3D.xml (D01a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C09_PolynomialKnots/D01a_Path_Poly31Knot.3D.xml>`__.
+
 
 
 Polynomial Knot. https://home.adelphi.edu/~stemkoski/knotgallery/poly3.html
@@ -71,6 +73,8 @@ Polynomial Knot. https://home.adelphi.edu/~stemkoski/knotgallery/poly3.html
 Polynomial knot 4-1
 -----------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D02a_Path_Poly41Knot.3D.xml (D02a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C09_PolynomialKnots/D02a_Path_Poly41Knot.3D.xml>`__.
+
 
 Figure-Eight (41) Polynomial Knot. https://home.adelphi.edu/~stemkoski/knotgallery/poly3.html
 
@@ -112,6 +116,8 @@ Figure-Eight (41) Polynomial Knot. https://home.adelphi.edu/~stemkoski/knotgalle
 
 Polynomial knot 5-1
 ----------------------------------------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D03a_Path_Poly51Knot.3D.xml (D03a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C09_PolynomialKnots/D03a_Path_Poly51Knot.3D.xml>`__.
 
 
 Cinquefoil (51) Polynomial Knot. https://home.adelphi.edu/~stemkoski/knotgallery/poly3.html
@@ -159,6 +165,8 @@ Cinquefoil (51) Polynomial Knot. https://home.adelphi.edu/~stemkoski/knotgallery
 Polynomial knot 6-2
 ---------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D04a_Path_Poly62Knot.3D.xml (D04a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C09_PolynomialKnots/D04a_Path_Poly62Knot.3D.xml>`__.
+
 
 Six-Crossing (62) Polynomial Knot. https://home.adelphi.edu/~stemkoski/knotgallery/poly3.html
 
@@ -201,6 +209,8 @@ Six-Crossing (62) Polynomial Knot. https://home.adelphi.edu/~stemkoski/knotgalle
 
 Polynomial knot 7-4
 --------------------------------------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D05a_Path_Poly74Knot.3D.xml (D05a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C09_PolynomialKnots/D05a_Path_Poly74Knot.3D.xml>`__.
 
 
 Seven-Crossing (74) Polynomial Knot. https://home.adelphi.edu/~stemkoski/knotgallery/poly3.html

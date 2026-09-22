@@ -217,7 +217,7 @@ Cash-Karp method, adaptive stepper
 .. method:: ctxboost.CashKarpAdaptive(F1, F2, matInput, StartTime, EndTime, \mathrm{d}t, epsabs, epsrel)
 
 
-    Solves Ordinary differential equations using the Adams-Bashforth-Moulton method with an adaptive stepper.
+    Solves Ordinary differential equations using the Cash-Karp method method with an adaptive stepper.
 
     See also:  Wikipedia :cite:p:`WikipediaAlg52`, :cite:t:`Cash1990`.
 

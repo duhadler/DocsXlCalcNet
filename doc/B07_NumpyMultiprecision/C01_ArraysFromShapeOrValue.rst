@@ -407,7 +407,7 @@ Array of ones: numpy.ones_like
 Array of zeros: numpy.zeros
 ----------------------------------------------------------------
 
-.. method:: npm.zeros(shape, dtype=float, order='C', *, like=None)
+.. method:: npm.zeros(shape, dtype=None, order='C', *, device=None, like=None)
 
     Return a new array of given shape and type, filled with zeros.
 
@@ -643,41 +643,6 @@ Array with ones at and below the given diagonal and zeros elsewhere: numpy.tri
     See https://numpy.org/doc/stable/reference/generated/numpy.tri.html#numpy.tri for details
 
     An array with ones at and below the given diagonal and zeros elsewhere.
-
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import fpm, mpm, ipm, dpm, qpm, gpm, apm, npm, np
-        >>> ctx_all = [fpm, mpm, ipm, dpm, qpm, gpm, apm]
-        >>> for ctx in ctx_all: x = npm.tri(N=3, M=5, k=2, dtype=ctx); print(ctx.name + ':\n', x)
-        fpm:
-         [[1.0 1.0 1.0 0.0 0.0]
-         [1.0 1.0 1.0 1.0 0.0]
-         [1.0 1.0 1.0 1.0 1.0]]
-        mpm:
-         [[mpf('1.0') mpf('1.0') mpf('1.0') mpf('0.0') mpf('0.0')]
-         [mpf('1.0') mpf('1.0') mpf('1.0') mpf('1.0') mpf('0.0')]
-         [mpf('1.0') mpf('1.0') mpf('1.0') mpf('1.0') mpf('1.0')]]
-        ipm:
-         [[mpi('1.0', '1.0') mpi('1.0', '1.0') mpi('1.0', '1.0') mpi('0.0', '0.0') mpi('0.0', '0.0')]
-         [mpi('1.0', '1.0') mpi('1.0', '1.0') mpi('1.0', '1.0') mpi('1.0', '1.0') mpi('0.0', '0.0')]
-         [mpi('1.0', '1.0') mpi('1.0', '1.0') mpi('1.0', '1.0') mpi('1.0', '1.0') mpi('1.0', '1.0')]]
-        dpm:
-         [[Decimal('1.0') Decimal('1.0') Decimal('1.0') Decimal('0.0') Decimal('0.0')]
-         [Decimal('1.0') Decimal('1.0') Decimal('1.0') Decimal('1.0') Decimal('0.0')]
-         [Decimal('1.0') Decimal('1.0') Decimal('1.0') Decimal('1.0') Decimal('1.0')]]
-        qpm:
-         [[Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)]
-         [Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(0, 1)]
-         [Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(1, 1)]]
-        gpm:
-         [[mpfr('1.0') mpfr('1.0') mpfr('1.0') mpfr('0.0') mpfr('0.0')]
-         [mpfr('1.0') mpfr('1.0') mpfr('1.0') mpfr('1.0') mpfr('0.0')]
-         [mpfr('1.0') mpfr('1.0') mpfr('1.0') mpfr('1.0') mpfr('1.0')]]
-        apm:
-         [[1.00000000000000 1.00000000000000 1.00000000000000 0 0]
-         [1.00000000000000 1.00000000000000 1.00000000000000 1.00000000000000 0]
-         [1.00000000000000 1.00000000000000 1.00000000000000 1.00000000000000 1.00000000000000]]
 
 
 

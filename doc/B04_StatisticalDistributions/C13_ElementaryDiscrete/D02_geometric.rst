@@ -31,9 +31,7 @@ See also   Wikipedia :cite:p:`WikipediaDis31`, MathWorld :cite:p:`WolframDis31`,
 
 .. _Ctx_GeometricPmf:
 
-.. method:: Ctx.geometric_pmf(k, p)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.geometric_pmf(p, k)
 
     Returns `\text{pmf}(x)`, the value of the probability mass function (:ref:`Pmf <Dist_Pmf>`) of the geometric distribution:
 
@@ -55,9 +53,7 @@ See also   Wikipedia :cite:p:`WikipediaDis31`, MathWorld :cite:p:`WolframDis31`,
 
 .. _Ctx_GeometricCdf:
 
-.. method:: Ctx.geometric_cdf(k, p)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.geometric_cdf(p, k)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the geometric distribution. The cumulative distribution function returns the probability of obtaining `k` failures or fewer from `k` trials with success fraction `p` and success on the last trial.
 
@@ -79,9 +75,7 @@ See also   Wikipedia :cite:p:`WikipediaDis31`, MathWorld :cite:p:`WolframDis31`,
 
 .. _Ctx_GeometricQtf:
 
-.. method:: Ctx.geometric_qtf(q, p)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.geometric_qtf(p, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the geometric distribution. The quantile function returns the greatest number of failures `k` expected to be observed from `k` trials with success fraction `p`, at probability `q`. Note that the value returned is a real-number, and not an integer. Depending on the use case you may want to take either the floor or ceiling of the real result.
 

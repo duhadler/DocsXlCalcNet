@@ -39,7 +39,7 @@ Error function
 -------------------------------------------------------------------------------
 
 
-.. method:: ctx.real_quad_erf_verified(a, x)
+.. method:: ctx.quad_erf_verified(a, x)
 
     where ``ctx`` is ``ipm``, ``dec``, ``mpm``, or ``gmp``.
 
@@ -59,7 +59,7 @@ Error function
 Lower non-normalised incomplete gamma function, `\gamma(a,x)` (Continued fractions)
 -------------------------------------------------------------------------------------------
 
-.. method:: ctx.real_quad_gamma_lower_verified(a, x)
+.. method:: ctx.quad_gamma_lower_verified(a, x)
 
     where ``ctx`` is ``ipm``, ``dec``, ``mpm``, or ``gmp``.
 
@@ -77,7 +77,7 @@ Lower non-normalised incomplete gamma function, `\gamma(a,x)` (Continued fractio
 Real upper non-normalised incomplete gamma function, `\Gamma(a,x)` (Quadrature)
 -------------------------------------------------------------------------------
 
-.. method:: ctx.real_quad_gamma_upper_verified(a, x)
+.. method:: ctx.quad_gamma_upper_verified(a, x)
 
     where ``ctx`` is ``ipm``, ``dec``, ``mpm``, or ``gmp``.
 
@@ -98,7 +98,7 @@ Real upper non-normalised incomplete gamma function, `\Gamma(a,x)` (Quadrature)
 Normalised incomplete beta function, `I_{x}(a,b)`
 -------------------------------------------------------------------------------
 
-.. method:: ctx.real_quad_ibeta_verified(a, b, x)
+.. method:: ctx.quad_ibeta_verified(a, b, x)
 
     where ``ctx`` is ``ipm``, ``dec``, ``mpm``, or ``gmp``.
 

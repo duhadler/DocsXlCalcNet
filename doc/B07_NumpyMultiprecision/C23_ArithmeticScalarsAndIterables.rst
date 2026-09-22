@@ -27,8 +27,7 @@
 
 
 
-
-
+|newpage|
 
 Arithmetic operations with scalars and iterables
 ===============================================================================

@@ -30,9 +30,7 @@ See also  Wikipedia :cite:p:`WikipediaDis12`, MathWorld :cite:p:`WolframDis12`, 
 
 .. _Ctx_ExponentialPdf:
 
-.. method:: Ctx.exponential_pdf(x, lambda1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.exponential_pdf(lambda1, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the exponential distribution:
 
@@ -53,9 +51,7 @@ See also  Wikipedia :cite:p:`WikipediaDis12`, MathWorld :cite:p:`WolframDis12`, 
 
 .. _Ctx_ExponentialCdf:
 
-.. method:: Ctx.exponential_cdf(x, lambda1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.exponential_cdf(lambda1, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the exponential distribution:
 
@@ -77,9 +73,7 @@ See also  Wikipedia :cite:p:`WikipediaDis12`, MathWorld :cite:p:`WolframDis12`, 
 
 .. _Ctx_ExponentialQtf:
 
-.. method:: Ctx.exponential_qtf(q, lambda1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.exponential_qtf(lambda1, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the exponential distribution:
 

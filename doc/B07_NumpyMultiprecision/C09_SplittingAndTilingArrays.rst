@@ -42,8 +42,7 @@
 
 
 
-
-
+|newpage|
 
 Numpy array manipulation: Splitting and tiling arrays
 ==========================================================

@@ -41,6 +41,23 @@ The standard parameterization of a surface of revolution is given by
 One-Sheeted Hyperboloid
 ------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D01a_Hyperboloid1.3D.xml (D01a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D01a_Hyperboloid1.3D.xml>`__.
+
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var a = 1;
+    var c = 1;
+    var b = Math.Sqrt(1 + u * u);
+    var x = a * b * Math.Sin(v); 
+    var y = a * b * Math.Cos(v);
+    var z = c * u;
+
+
+
 
 See also: https://mathworld.wolfram.com/One-SheetedHyperboloid.html
 
@@ -75,6 +92,18 @@ See also: https://en.wikipedia.org/wiki/Hyperboloid
 
 Sphere
 ------------------------------------------------------------------------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D02a_SphereSqrt.3D.xml (D02a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D02a_SphereSqrt.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var y = Math.Sqrt(1-u*u) * Math.Cos(v);
+    var x = Math.Sqrt(1-u*u) * Math.Sin(v);
+    var z =  u;
+
 
 
 See also: http://www.3d-meier.de/tut3/Seite86.html, Sphere
@@ -129,6 +158,21 @@ See also: http://www.3d-meier.de/tut3/Seite86.html, Sphere
 Prolate Spheroid
 ----------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D03a_ProlateSpheroidoid.3D.xml (D03a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D03a_ProlateSpheroidoid.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var a = 1;
+    var b = 1;
+    var c = 2;
+    var x = b * Math.Sqrt(1-u*u) * Math.Sin(v);
+    var y = a * Math.Sqrt(1-u*u) * Math.Cos(v);
+    var z =  c * u;
+
+
 
 See also: http://paulbourke.net/geometry/spherical/   prolate spheroid, or ellipsoid of revolution
 See also: https://en.wikipedia.org/wiki/Ellipsoid#Parameterization  ellipsoid of revolution
@@ -164,6 +208,20 @@ See also: https://mathworld.wolfram.com/OblateSpheroid.html  Oblate Spheroid
 
 Oblate Spheroid
 ----------------------------------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D04a_OblateSpheroidoid.3D.xml (D04a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D04a_OblateSpheroidoid.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var a = 2;
+    var b = 2;
+    var c = 1;
+    var x = b * Math.Sqrt(1-u*u) * Math.Sin(v);
+    var y = a * Math.Sqrt(1-u*u) * Math.Cos(v);
+    var z =  c * u;
 
 
 See also: http://paulbourke.net/geometry/spherical/   prolate spheroid, or ellipsoid of revolution
@@ -206,6 +264,18 @@ See also: https://mathworld.wolfram.com/OblateSpheroid.html  Oblate Spheroid
 Drop surface
 -------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D05a_DropSurface.3D.xml (D05a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D05a_DropSurface.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    double a = 0.5;  //(0 to 1) 
+    double b = 1.00;  //(0 to 1)
+    var x = a * (b - Math.Cos(u)) * Math.Sin(u) * Math.Cos(v);
+    var y = a * (b - Math.Cos(u)) * Math.Sin(u) * Math.Sin(v);
+    var z = Math.Cos(u);
 
 
 // see http://www.3d-meier.de/tut3/Seite44.html
@@ -244,7 +314,20 @@ Drop surface
 
 Egg surface
 --------------------------------------------------------------------
-Examples in Bourke, towards the end of the page
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D06a_EggSurface.3D.xml (D06a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D06a_EggSurface.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    double a = 2.0;  //(0 to 1) 
+    double b = 0.75;  //(0 to 1)
+    var x = Math.Sqrt(0.75 * u * (2 * a - u) * (1 - (a * a * b * b) / ((u + a) * (u + a)))) * Math.Sin(v);
+    var y = Math.Sqrt(0.75 * u * (2 * a - u) * (1 - (a * a * b * b) / ((u + a) * (u + a)))) * Math.Cos(v);
+    var z = u;
+
 
 
 For the egg surface, also see Meier
@@ -284,11 +367,21 @@ For the egg surface, also see Meier
 
 Apple surface
 --------------------------------------------------------------------
-Examples in Bourke, towards the end of the page
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D07a_Apple.3D.xml (D07a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D07a_Apple.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var x =  Math.Cos(u) * (4 + 3.8 * Math.Cos(v));
+    var y =  Math.Sin(u) * (4 + 3.8 * Math.Cos(v));
+    var z = (Math.Cos(v) + Math.Sin(v) - 1) * (1 + Math.Sin(v)) * Math.Log(1 - Math.PI * v / 10) + 7.5 * Math.Sin(v);
+
+
 
 // see http://www.3d-meier.de/tut3/Seite54.html
-
-https://paulbourke.net/geometry/spherical/
 
 For the apple surface, also see Meier
 
@@ -323,6 +416,18 @@ For the apple surface, also see Meier
 
 Spinning top
 -------------------------------------------------------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D08a_Spinningtop.3D.xml (D08a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D08a_Spinningtop.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var x = (Math.Abs(u) - 1) * (Math.Abs(u) - 1) * Math.Sin(v);
+    var y = (Math.Abs(u) - 1) * (Math.Abs(u) - 1) * Math.Cos(v);
+    var z = u;
+
 
 See also  http://www.3d-meier.de/tut3/Seite150.html    Kreisel
 
@@ -363,6 +468,18 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 Pseudosphere
 -----------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D09a_PseudoSphere.3D.xml (D09a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D09a_PseudoSphere.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var x = Math.Cos(u) * Math.Sin(v);
+    var y = Math.Sin(u) * Math.Sin(v);
+    var z = (Math.Cos(v) + Math.Log(Math.Tan(0.5 * v)));
+
+
 
 See also: https://mathworld.wolfram.com/Pseudosphere.html
 
@@ -400,6 +517,16 @@ See also: https://mathworld.wolfram.com/Pseudosphere.html
 Wave sphere Surface
 --------------------------------------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D10a_WaveSphere.3D.xml (D10a-b) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D10a_WaveSphere.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var x = u * Math.Cos(Math.Cos(u)) * Math.Cos(v);
+    var y = u * Math.Cos(Math.Cos(u)) * Math.Sin(v);
+    var z = u * Math.Sin(Math.Cos(u));
 
 
 // see http://www.3d-meier.de/tut3/Seite63.html
@@ -433,6 +560,19 @@ Wave sphere Surface
 
 Torus
 -----------------------------------------------------------------------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D11a_Torus.3D.xml (D11a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D11a_Torus.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var R = 1.5;
+    var r = 0.5;
+    var x = (R + r * Math.Cos(v)) * Math.Cos(u);
+    var y = (R + r * Math.Cos(v)) * Math.Sin(u);
+    var z = r * Math.Sin(v);
 
 
 
@@ -470,6 +610,19 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 Horn Torus
 ----------------------------------------------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D12a_HornTorus.3D.xml (D12a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D12a_HornTorus.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var R = 1.5;
+    var r = 1.5;
+    var x = (R + r * Math.Cos(v)) * Math.Cos(u);
+    var y = (R + r * Math.Cos(v)) * Math.Sin(u);
+    var z = r * Math.Sin(v);
+
 
 
 See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
@@ -503,6 +656,20 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 Spindle Torus
 ----------------------------------------------------------------------------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D13a_SpindelTorus.3D.xml (D13a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D13a_SpindelTorus.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var R = 1.5;
+    var r = 2.5;
+    var x = (R + r * Math.Cos(v)) * Math.Cos(u);
+    var y = (R + r * Math.Cos(v)) * Math.Sin(u);
+    var z = r * Math.Sin(v);
+
 
 
 See also: https://mathworld.wolfram.com/EllipticTorus.html
@@ -539,6 +706,26 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 Elliptic Torus
 ----------------------------------------------------------------------------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D14a_EllipticTorus.3D.xml (D14a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C02_SurfacesOfRevolution/D14a_EllipticTorus.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var a = 0.2;
+    var b = 0.5;
+    var c = 1;
+    var su = Math.Sin(u);
+    var sv = Math.Sin(v);
+    var cu = Math.Cos(u);
+    var cv = Math.Cos(v);
+
+    var x = (c + a * cv) * cu;
+    var y = (c + a * cv) * su;
+    var z = b * sv;
+
 
 
 See also: https://mathworld.wolfram.com/EllipticTorus.html

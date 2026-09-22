@@ -35,9 +35,7 @@ See also: https://www.johndcook.com/blog/2009/11/24/kumaraswamy-distribution/
 
 .. _Ctx_KumaraswamyPdf:
 
-.. method:: Ctx.kumaraswamy_pdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.kumaraswamy_pdf(a, b, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the Kumaraswamy distribution:
 
@@ -59,9 +57,7 @@ See also: https://www.johndcook.com/blog/2009/11/24/kumaraswamy-distribution/
 
 .. _Ctx_KumaraswamyCdf:
 
-.. method:: Ctx.kumaraswamy_cdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.kumaraswamy_cdf(a, b, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the Kumaraswamy distribution:
 
@@ -83,9 +79,7 @@ See also: https://www.johndcook.com/blog/2009/11/24/kumaraswamy-distribution/
 
 .. _Ctx_KumaraswamyQtf:
 
-.. method:: Ctx.kumaraswamy_qtf(q, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.kumaraswamy_qtf(a, b, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the Kumaraswamy distribution:
 

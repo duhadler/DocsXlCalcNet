@@ -21,7 +21,7 @@ Closed form distributions, based on the incomplete gamma function
 
 	D01_Chi.rst
 
-	D02_ChiSquared.rst
+	D02_Chi2.rst
 
 	D03_Gamma.rst
 

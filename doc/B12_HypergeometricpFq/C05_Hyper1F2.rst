@@ -29,7 +29,7 @@ Non-regularized hypergeometric function  `{}_1F_2`
 -------------------------------------------------------------------------------
 
 
-.. method:: ctxflint.hyperg_1f2(a, b1, b2, z)
+.. method:: ctx.hyperg_1f2(a, b1, b2, z)
 
 
     Returns the generalized hypergeometric function `{}_1F_2`.
@@ -95,10 +95,10 @@ Non-regularized hypergeometric function  `{}_1F_2`
 Regularized hypergeometric function  `{}_1\widetilde{F}_2`
 ---------------------------------------------------------------------------------------
 
-.. method:: ctxflint.hyperg_1f2r(a, b1, b2, z)
+.. method:: ctx.hyperg_1f2r(a, b1, b2, z)
 
 
-    Returns the generalized hypergeometric function  :sub:`1`\ \widetilde{F}\ :sub:`2`\ (a; b, c; z). 
+    Returns the regularized generalized hypergeometric function  `{}_1\widetilde{F}_2(a, b1, b2; z)`.
 
     See also  MathWorld :cite:p:`WolframFun1061`, MathWorld :cite:p:`WolframFun1061a`, Wikipedia :cite:p:`WikipediaFun1065`, NIST :cite:p:`DLMFun1065`, :cite:t:`Nijimbere2017`, :cite:t:`Tarasov2016`, Mpmath :cite:p:`MpmathFun1061`.
 

@@ -32,9 +32,7 @@ See also  Wikipedia :cite:p:`WikipediaDis16`, MathWorld :cite:p:`WolframDis16`, 
 
 .. _Ctx_WaldPdf:
 
-.. method:: Ctx.wald_pdf(x, mu, b)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.wald_pdf(mu, b, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the Wald distribution:
 
@@ -56,9 +54,7 @@ See also  Wikipedia :cite:p:`WikipediaDis16`, MathWorld :cite:p:`WolframDis16`, 
 
 .. _Ctx_WaldCdf:
 
-.. method:: Ctx.wald_cdf(x, mu, b)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.wald_cdf(mu, b, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the Wald distribution:
 
@@ -80,9 +76,7 @@ See also  Wikipedia :cite:p:`WikipediaDis16`, MathWorld :cite:p:`WolframDis16`, 
 
 .. _Ctx_WaldQtf:
 
-.. method:: Ctx.wald_qtf(q, mu, b)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.wald_qtf(mu, b, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the Wald distribution:
 

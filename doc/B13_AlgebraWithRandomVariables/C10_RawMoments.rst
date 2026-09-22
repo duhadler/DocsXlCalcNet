@@ -69,7 +69,7 @@ Calculating the raw moments from the factorial moments
 
     .. math::  \mu'_r = \sum_{j=0}^r S(r,j) \mu'_{[j]},
 
-    where `S(r,j)` is the Stirling number of the second kind (see :ref:`stirling2() <rst_mpm_stirling2>`).
+    where `S(r,j)` is the Stirling number of the second kind.
 
 
 

@@ -41,8 +41,7 @@
 
 
 
-
-
+|newpage|
 
 Numpy array manipulation: Searching
 ==========================================================

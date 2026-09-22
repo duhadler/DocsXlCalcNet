@@ -43,8 +43,7 @@
 
 
 
-
-
+|newpage|
 
 Numpy mathematical functions: Miscellaneous
 ==============================================================================

@@ -44,8 +44,7 @@
 
 
 
-
-
+|newpage|
 
 Numpy mathematical functions: Arithmetic operations, elementwise
 ==============================================================================

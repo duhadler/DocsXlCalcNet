@@ -34,9 +34,7 @@ See also: https://mathworld.wolfram.com/PochhammerSymbol.html
 
 .. _Ctx_NakagamiPdf:
 
-.. method:: Ctx.nakagami_pdf(x, m, omega)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.nakagami_pdf(m, omega, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the Nakagami distribution:
 
@@ -58,9 +56,7 @@ See also: https://mathworld.wolfram.com/PochhammerSymbol.html
 
 .. _Ctx_NakagamiCdf:
 
-.. method:: Ctx.nakagami_cdf(x, m, omega)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.nakagami_cdf(m, omega, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the Nakagami distribution:
 
@@ -84,9 +80,7 @@ See also: https://mathworld.wolfram.com/PochhammerSymbol.html
 
 .. _Ctx_NakagamiQtf:
 
-.. method:: Ctx.nakagami_qtf(q, m, omega)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.nakagami_qtf(m, omega, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the Nakagami distribution:
 

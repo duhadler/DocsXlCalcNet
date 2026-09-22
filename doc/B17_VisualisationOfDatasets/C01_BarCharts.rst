@@ -26,7 +26,7 @@ Bar Charts
 Bar chart, part 1
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_BarChartPart1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D01_BarChartPart1.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_BarChartPart1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D01_BarChartPart1.py>`__, and the XML code in the file `D01_BarChartPart1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D01_BarChartPart1.2D.xml>`__.
 
 
 
@@ -50,7 +50,7 @@ Bar chart, part 1
 Bar chart, part 2
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D00_BarChartSimple.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D02_BarChartPart2.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_BarChartPart2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D02_BarChartPart2.py>`__, and the XML code in the file `D02_BarChartPart2.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D02_BarChartPart2.2D.xml>`__.
 
 
 
@@ -79,7 +79,7 @@ Bar chart, part 2
 Stacked Bar Plot
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_StackedBarPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D03_StackedBarPlot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_StackedBarPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D03_StackedBarPlot.py>`__, and the XML code in the file `D03_StackedBarPlot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D03_StackedBarPlot.2D.xml>`__.
 
 
 
@@ -89,7 +89,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 .. |picStackedBarPlot| image:: ../_static/FuncPlots2D/FromPythonGallery3/StackedBarPlot.*
 
 
-**Left figure**: Stacked Bar Plot
 
 
 
@@ -108,7 +107,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Grouped Bar Plot
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_GroupedBarPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D04_GroupedBarPlot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_GroupedBarPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D04_GroupedBarPlot.py>`__, and the XML code in the file `D04_GroupedBarPlot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D04_GroupedBarPlot.2D.xml>`__.
 
 
 
@@ -119,7 +118,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Grouped Bar Plot
 
 
 
@@ -133,7 +131,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Grouped StackedBar Plot
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_GroupedStackedBarPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D05_GroupedStackedBarPlot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_GroupedStackedBarPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D05_GroupedStackedBarPlot.py>`__, and the XML code in the file `D05_GroupedStackedBarPlot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D05_GroupedStackedBarPlot.2D.xml>`__.
 
 
 
@@ -144,7 +142,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Grouped StackedBar Plot
 
 
 
@@ -159,7 +156,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Barplot with error bar
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_BarPlotWithErrorBar.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D06_BarPlotWithErrorBar.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_BarPlotWithErrorBar.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D06_BarPlotWithErrorBar.py>`__, and the XML code in the file `D06_BarPlotWithErrorBar.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D06_BarPlotWithErrorBar.2D.xml>`__.
 
 
 
@@ -169,7 +166,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 .. |picBarPlotPlusCI| image:: ../_static/FuncPlots2D/FromPythonGallery3/BarPlotPlusCI.*
 
 
-**Left figure**: Bar Plo tPlus CI
 
 
 
@@ -186,10 +182,10 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Waterfall Plot
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07a_WaterfallChart1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D07a_WaterfallChart1.py>`__.
+The Python code for the first example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07a_WaterfallChart1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D07a_WaterfallChart1.py>`__, and the XML code in the file `D07a_WaterfallChart1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D07a_WaterfallChart1.2D.xml>`__.
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07b_WaterfallChart2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D07b_WaterfallChart2.py>`__.
+The Python code for the second example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07b_WaterfallChart2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D07b_WaterfallChart2.py>`__, and the XML code in the file `D07b_WaterfallChart2.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D07b_WaterfallChart2.2D.xml>`__.
 
 
 
@@ -202,10 +198,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
    :width: 49 %
 
 
-
-**Left figure**: WaterfallChart1
-
-**Right figure**: WaterfallChart2
 
 
 
@@ -221,7 +213,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Mirror Histogram
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_MirrorHistogram.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D08_MirrorHistogram.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_MirrorHistogram.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D08_MirrorHistogram.py>`__, and the XML code in the file `D08_MirrorHistogram.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D08_MirrorHistogram.2D.xml>`__.
 
 
 
@@ -232,7 +224,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
    :width: 90 %
 
 
-**Left figure**: Mirror Histogram
 
 
 
@@ -247,7 +238,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Horizontal Bar
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_HorizontalBarDist.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D09_HorizontalBarDist.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_HorizontalBarDist.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D09_HorizontalBarDist.py>`__, and the XML code in the file `D09_HorizontalBarDist.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D09_HorizontalBarDist.2D.xml>`__.
 
 
 
@@ -261,7 +252,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Horizontal Bar
 
 
 
@@ -274,7 +264,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Horizontal Error Bar
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_HorizontalErrorBar.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D10_HorizontalErrorBar.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_HorizontalErrorBar.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D10_HorizontalErrorBar.py>`__, and the XML code in the file `D10_HorizontalErrorBar.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D10_HorizontalErrorBar.2D.xml>`__.
 
 
 
@@ -288,7 +278,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Horizontal Error Bar
 
 
 
@@ -300,7 +289,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Stacked horizontal bar with labels
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11_StackedHBarWithLabels.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D11_StackedHBarWithLabels.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11_StackedHBarWithLabels.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D11_StackedHBarWithLabels.py>`__, and the XML code in the file `D11_StackedHBarWithLabels.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D11_StackedHBarWithLabels.2D.xml>`__.
 
 
 
@@ -314,7 +303,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Stacked horizontal bar with labels
 
 
 
@@ -328,7 +316,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Stacked and grouped horizontal bar
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D12_StackedAndGroupedHBar.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D12_StackedAndGroupedHBar.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D12_StackedAndGroupedHBar.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D12_StackedAndGroupedHBar.py>`__, and the XML code in the file `D12_StackedAndGroupedHBar.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D12_StackedAndGroupedHBar.2D.xml>`__.
 
 
 
@@ -342,7 +330,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Stacked and grouped horizontal bar
 
 
 
@@ -354,11 +341,11 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Gantt Chart
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13a_GanttChart1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D13a_GanttChart1.py>`__.
+The Python code for the first example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13a_GanttChart1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D13a_GanttChart1.py>`__, and the XML code in the file `D13a_GanttChart1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D13a_GanttChart1.2D.xml>`__.
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13b_GanttChart2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D13b_GanttChart2.py>`__.
+The Python code for the second example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13b_GanttChart2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D13b_GanttChart2.py>`__, and the XML code in the file `D13b_GanttChart2.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D13b_GanttChart2.2D.xml>`__.
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13c_GanttChart3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D13c_GanttChart3.py>`__.
+The Python code for the third example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13c_GanttChart3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D13c_GanttChart3.py>`__, and the XML code in the file `D13c_GanttChart3.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D13c_GanttChart3.2D.xml>`__.
 
 
 
@@ -373,9 +360,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: GanttChart1
-
-**Right figure**: GanttChart2
 
 
 
@@ -386,7 +370,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
    :width: 49 %
 
 
-**Left figure**: GanttChart3
 
 
 
@@ -399,7 +382,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Marketing Funnel
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D14_MarketingFunnel.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D14_MarketingFunnel.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D14_MarketingFunnel.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D14_MarketingFunnel.py>`__, and the XML code in the file `D14_MarketingFunnel.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D14_MarketingFunnel.2D.xml>`__.
 
 
 
@@ -427,7 +410,7 @@ Some text
 Population Pyramid
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D15_PopulationPyramid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D15_PopulationPyramid.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D15_PopulationPyramid.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D15_PopulationPyramid.py>`__, and the XML code in the file `D15_PopulationPyramid.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D15_PopulationPyramid.2D.xml>`__.
 
 
 
@@ -438,7 +421,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
    :width: 90 %
 
 
-**Left figure**: PopulationPyramid
 
 
 
@@ -449,7 +431,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Mirror Bar Plot (horizontal)
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D16_MirrorBarPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D16_MirrorBarPlot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D16_MirrorBarPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D16_MirrorBarPlot.py>`__, and the XML code in the file `D16_MirrorBarPlot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D16_MirrorBarPlot.2D.xml>`__.
 
 
 
@@ -460,7 +442,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Mirror Bar Plot
 
 
 
@@ -473,7 +454,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Tornado Chart
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D17_TornadoChart.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D17_TornadoChart.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D17_TornadoChart.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D17_TornadoChart.py>`__, and the XML code in the file `D17_TornadoChart.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D17_TornadoChart.2D.xml>`__.
 
 
 |picTornadoChart|
@@ -482,7 +463,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Tornado Chart
 
 
 
@@ -499,7 +479,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Circular Barplot
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D18_CircularBarplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D18_CircularBarplot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D18_CircularBarplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D18_CircularBarplot.py>`__, and the XML code in the file `D18_CircularBarplot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D18_CircularBarplot.2D.xml>`__.
 
 
 
@@ -510,7 +490,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Circular Barplot
 
 
 
@@ -524,7 +503,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Barplot with color
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D19_BarplotColor.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D19_BarplotColor.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D19_BarplotColor.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C01_BarCharts/D19_BarplotColor.py>`__, and the XML code in the file `D19_BarplotColor.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C01_BarCharts/D19_BarplotColor.2D.xml>`__.
 
 
 
@@ -535,7 +514,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Barplot with color
 
 
 

@@ -352,7 +352,7 @@ First derivative of the modified Bessel function of the second kind `K'_{\nu}(x)
 Marcum Q function, `Q_m(a,b)`  (up to octuple precision)
 -------------------------------------------------------------------------------
 
-.. method:: math53.marcum_q(m,a,b)
+.. method:: ctx.marcum_q(m,a,b)
 
     Returns the Marcum Q-function  `\displaystyle Q_m(a,b)= \frac{1}{a^{m-1}}  \int _{b}^{\infty} x^m \exp \left(-{\frac {x^{2}+a^{2}}{2}}\right)I_{m-1}(ax) \, \mathrm{d}x`, where `m>0`, `b\geq 0`, `a>0` and `I_{m-1}` is the modified Bessel function of first kind of order `m-1`.
 

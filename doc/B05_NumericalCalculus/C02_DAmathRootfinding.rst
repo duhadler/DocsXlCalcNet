@@ -46,7 +46,7 @@ Quadratic Equation, Real Coefficients
 
         >>> from xlcalcnet import math53
         >>> a = -13;  b = 4;  c = 5
-        >>> ic, x1, y1, x2, y2 = math53.squadx(a,b,c)
+        >>> ic, x1, y1, x2, y2 = ctx.squadx(a,b,c)
         >>> print("ic: ", ic,"x1: ", x1,"y1: ", y1,"x2: ", x2,"y2: ", y2)
 
 
@@ -88,7 +88,7 @@ Cubic Equation, Real Coefficients
 
         >>> from xlcalcnet import math53
         >>> a = -13; b = 4; c = 5; d = 1
-        >>> x0, x1, y1, x2, y2 = math53.cubsolve(a,b,c,d)
+        >>> x0, x1, y1, x2, y2 = ctx.cubsolve(a,b,c,d)
         >>> print("x0: ", x0,"x1: ", x1,"y1: ", y1,"x2: ", x2,"y2: ", y2)
 
 
@@ -108,7 +108,7 @@ Cubic Equation, Real Coefficients
 Brent's algorithm for finding a local minimum
 -------------------------------------------------------------------------------
 
-.. method:: math53.localmin(f, a, b, eps, t)
+.. method:: ctx.localmin(f, a, b, eps, t)
 
 
     where ``ctx`` is ``math53``. Returns a local minimum of the function `f` in the interval (a, b), implementing Brent's algorithm.
@@ -270,7 +270,7 @@ Brent's algorithm for finding a local minimum
 Modified Brent’s algorithm for finding a local minimum
 -------------------------------------------------------------------------------
 
-.. method:: math53.mbrent(f, a, b, t)
+.. method:: ctx.mbrent(f, a, b, t)
 
 
     where ``ctx`` is ``math53``. Returns a local minimum of the function `f` in the interval (a, b), implementing a modified (simplified) version of Brent's algorithm as in  procedure localmin with fixed eps=0.5*sqrt(eps_x).
@@ -310,7 +310,7 @@ Modified Brent’s algorithm for finding a local minimum
 Rootfinding: Brent/Dekker algorithm
 -------------------------------------------------------------------------------
 
-.. method:: math53.zbrent(f, a, b, t)
+.. method:: ctx.zbrent(f, a, b, t)
 
 
     where ``ctx`` is ``math53``. Performs the Brent/Dekker algorithm with guaranteed convergence for finding a zero of a function,; assumes that f(a) and f(b) have different signs.
@@ -357,7 +357,7 @@ Rootfinding: Brent/Dekker algorithm
 Rootfinding: Simplified Brent/Dekker algorithm
 -------------------------------------------------------------------------------
 
-.. method:: math53.zeroin(f, a, b, t)
+.. method:: ctx.zeroin(f, a, b, t)
 
 
     where ``ctx`` is ``math53``. Performs a simplified version of the Brent/Dekker algorithm for finding a zero of a function; assumes that f(a) and f(b) have different signs.

@@ -32,9 +32,7 @@ See also MathWorld :cite:p:`WolframDis41`, :cite:t:`Cordeiro2012`, :cite:t:`Walc
 
 .. _Ctx_MoyalPdf:
 
-.. method:: Ctx.moyal_pdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.moyal_pdf(a, b, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the Moyal distribution:
 
@@ -56,9 +54,7 @@ See also MathWorld :cite:p:`WolframDis41`, :cite:t:`Cordeiro2012`, :cite:t:`Walc
 
 .. _Ctx_MoyalCdf:
 
-.. method:: Ctx.moyal_cdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.moyal_cdf(a, b, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the Moyal distribution:
 
@@ -80,9 +76,7 @@ See also MathWorld :cite:p:`WolframDis41`, :cite:t:`Cordeiro2012`, :cite:t:`Walc
 
 .. _Ctx_MoyalQtf:
 
-.. method:: Ctx.moyal_qtf(q, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.moyal_qtf(a, b, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the Moyal distribution:
 

@@ -34,9 +34,7 @@ See also  Wikipedia :cite:p:`WikipediaDis08`, MathWorld :cite:p:`WolframDis08`, 
 
 .. _Ctx_KolmogorovSmirnov_Pdf:
 
-.. method:: Ctx.kolmogorov_smirnov_pdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.kolmogorov_smirnov_pdf(n, x)
 
 
     Returns the pdf of the limiting form of the Kolmogorov distribution, for `x \in [0, \infty)`. 
@@ -57,9 +55,7 @@ See also  Wikipedia :cite:p:`WikipediaDis08`, MathWorld :cite:p:`WolframDis08`, 
 
 .. _Ctx_KolmogorovSmirnov_Cdf:
 
-.. method:: Ctx.kolmogorov_smirnov_cdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.kolmogorov_smirnov_cdf(n, x)
 
     Returns `\displaystyle \mathrm{KF}(x) = 1-2\sum_{k=1}^{\infty}(-1)^k e^{-2k^2x^2}`, the CDF of the limiting form of the Kolmogorov distribution, for `x \in [0, \infty)`. 
 
@@ -82,9 +78,7 @@ See also  Wikipedia :cite:p:`WikipediaDis08`, MathWorld :cite:p:`WolframDis08`, 
 
 .. _Ctx_KolmogorovSmirnov_Qtf:
 
-.. method:: Ctx.kolmogorov_smirnov_qtf(q, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.kolmogorov_smirnov_qtf(n, q)
 
 
     Returns `\mathrm{KF}^{-1}(x)`, the functional inverse of the CDF of the Kolmogorov distribution (limiting form), ie `\mathrm{KF}(\mathrm{KF}^{-1}(x)) = x`.
@@ -108,7 +102,7 @@ See also  Wikipedia :cite:p:`WikipediaDis08`, MathWorld :cite:p:`WolframDis08`, 
 
 |cr|
 
-.. method:: CtxBoost.dist_kolmogorov_smirnov(a=0, b=1)
+.. method:: CtxBoost.dist_kolmogorov_smirnov(a, b)
 
     Returns an ``dist_kolmogorov_smirnov`` object, which gives access to the functions descibed below:
 

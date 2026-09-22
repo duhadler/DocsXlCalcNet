@@ -26,7 +26,7 @@ Modified spherical Bessel functions
 Modified spherical Bessel function of the first kind, `i_n(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.sph_bessel_in(n, x, scaled=False)
+.. method:: ctx.sph_bessel_in(n, x, scaled=False)
 
     Returns `i_n(x)`, the modified spherical Bessel function of the first kind. 
 
@@ -94,7 +94,7 @@ Modified spherical Bessel function of the first kind, `i_n(x)`
 Modified Spherical Bessel function of the second kind, `k_n(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.sph_bessel_kn(n, x, scaled=False)
+.. method:: ctx.sph_bessel_kn(n, x, scaled=False)
 
 
     Returns `k_n(x)`, the modified spherical Bessel function of the second kind. 
@@ -157,7 +157,7 @@ Modified Spherical Bessel function of the second kind, `k_n(x)`
 First derivative of the modified spherical Bessel function of the first kind, `i'_n(x)`
 ------------------------------------------------------------------------------------------------
 
-.. method:: math53.sph_bessel_in_prime(n, x, scaled=False)
+.. method:: ctx.sph_bessel_in_prime(n, x, scaled=False)
 
     Returns `i'_n(x)`, the first derivative (with respect to `x`) of `i_n(x)`, the modified spherical Bessel function of the first kind. 
 
@@ -201,7 +201,7 @@ First derivative of the modified spherical Bessel function of the first kind, `i
 First derivative of the modified spherical Bessel function of the second kind, `k'_n(x)`
 -------------------------------------------------------------------------------------------------
 
-.. method:: math53.sph_bessel_kn_prime(n, x, scaled=False)
+.. method:: ctx.sph_bessel_kn_prime(n, x, scaled=False)
 
     Returns `k'_n(x)`, the first derivative (with respect to `x`) of `k_n(x)`, the modified spherical Bessel function of the second kind.  
 
@@ -242,7 +242,7 @@ First derivative of the modified spherical Bessel function of the second kind, `
 Bessel polynomials `y_n(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.besselpoly(n,x)
+.. method:: ctx.besselpoly(n,x)
 
     Returns `y_n(x)`, the Bessel polynomial of order `n`.
 
@@ -304,7 +304,7 @@ Bessel polynomials `y_n(x)`
 Reverse Bessel polynomials `\theta_n(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.besseltheta(n,x)
+.. method:: ctx.besseltheta(n,x)
 
     Returns `\theta_n(x)`, the reverse Bessel polynomial of order `n`.
 

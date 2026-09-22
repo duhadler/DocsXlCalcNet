@@ -29,9 +29,7 @@ See also  Wikipedia :cite:p:`WikipediaDis10`,  BoostMath :cite:p:`BoostDis10`.
 
 .. _Ctx_ArcsinePdf:
 
-.. method:: Ctx.arcsine_pdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.arcsine_pdf(a, b, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the arcsine distribution:
 
@@ -53,9 +51,7 @@ See also  Wikipedia :cite:p:`WikipediaDis10`,  BoostMath :cite:p:`BoostDis10`.
 
 .. _Ctx_ArcsineCdf:
 
-.. method:: Ctx.arcsine_cdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.arcsine_cdf(a, b, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the arcsine distribution:
 
@@ -77,7 +73,7 @@ See also  Wikipedia :cite:p:`WikipediaDis10`,  BoostMath :cite:p:`BoostDis10`.
 
 .. _Ctx_ArcsineQtf:
 
-.. method:: Ctx.arcsine_qtf(q, a=0, b=1)
+.. method:: math53.arcsine_qtf(a, b, q)
 
     where ``Ctx`` is ``Math53`` or ``CtxBoost``.
 
@@ -99,7 +95,7 @@ See also  Wikipedia :cite:p:`WikipediaDis10`,  BoostMath :cite:p:`BoostDis10`.
 
 
 
-.. py:class:: ctx.dist_arcsine(a=0, b=1)
+.. py:class:: ctx.dist_arcsine(a, b)
 
     where ``ctx`` is ``fpm``, ``mpm``, ``ipm``, ``dec``, ``gmp`` or ``apm``.
 

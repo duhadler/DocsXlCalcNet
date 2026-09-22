@@ -31,7 +31,7 @@ See Test2DFunctions
 Movable projection of the world
 ---------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_PlotlyGeo_MovableProjection.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C02_GeographicalPlots/D01_PlotlyGeo_MovableProjection.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_PlotlyGeo_MovableProjection.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C02_GeographicalPlots/D01_PlotlyGeo_MovableProjection.py>`__, and the XML code in the file `D01_PlotlyGeo_MovableProjection.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B21_Plotly/C02_GeographicalPlots/D01_PlotlyGeo_MovableProjection.2D.xml>`__.
 
 
 
@@ -53,7 +53,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Rotatable globe
 --------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_PlotlyGeo_MovableGlobe.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C02_GeographicalPlots/D02_PlotlyGeo_MovableGlobe.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_PlotlyGeo_MovableGlobe.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C02_GeographicalPlots/D02_PlotlyGeo_MovableGlobe.py>`__, and the XML code in the file `D02_PlotlyGeo_MovableGlobe.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B21_Plotly/C02_GeographicalPlots/D02_PlotlyGeo_MovableGlobe.2D.xml>`__.
 
 
 |plotly_RotatableGlobe|
@@ -73,7 +73,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Choropleth of the US with Alaska and Hawai
 -------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_PlotlyGeo_USA_Agriculture.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C02_GeographicalPlots/D03_PlotlyGeo_USA_Agriculture.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_PlotlyGeo_USA_Agriculture.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C02_GeographicalPlots/D03_PlotlyGeo_USA_Agriculture.py>`__, and the XML code in the file `D03_PlotlyGeo_USA_Agriculture.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B21_Plotly/C02_GeographicalPlots/D03_PlotlyGeo_USA_Agriculture.2D.xml>`__.
 
 
 
@@ -93,7 +93,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Voting results embedded in map
 -------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_PlotlyGeo_MontrealVotingWithMap.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C02_GeographicalPlots/D04_PlotlyGeo_MontrealVotingWithMap.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_PlotlyGeo_MontrealVotingWithMap.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C02_GeographicalPlots/D04_PlotlyGeo_MontrealVotingWithMap.py>`__, and the XML code in the file `D04_PlotlyGeo_MontrealVotingWithMap.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B21_Plotly/C02_GeographicalPlots/D04_PlotlyGeo_MontrealVotingWithMap.2D.xml>`__.
 
 
 |plotly_Voting|

@@ -40,8 +40,7 @@
 
 
 
-
-
+|newpage|
 
 Numpy mathematical functions: Integer and fractional
 ==============================================================================

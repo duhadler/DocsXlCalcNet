@@ -24,6 +24,9 @@ Mathematical functions based on XlCalcNet2 (C\#, can be called from Python)
 =================================================================================
 
 
+Describe installing from PyPI
+
+
 
 
 .. _rst_mreal_def: 

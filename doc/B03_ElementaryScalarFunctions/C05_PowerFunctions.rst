@@ -114,12 +114,12 @@ Cube, `x^3`
 Auxiliary function `\mathrm{powi}(x,n) = x^n`
 -------------------------------------------------------------------------------
 
-.. method:: ctx.powi(x, n)
+.. method:: ctx.pow_si(x, n)
 
     where ``ctx`` is ``math53``, ``mathc53``, ``ctxcpp`` or ``ctxflint``.
 
 
-    Note: math53.intpower(x, n)
+    Note: ctx.intpower(x, n)
 
     Returns the integer power function of `x, x^n`. See also  Wikipedia :cite:p:`WikipediaFun20`,  MathWorld :cite:p:`WolframFun20`. 
 
@@ -177,52 +177,6 @@ Auxiliary function `\mathrm{powi}(x,n) = x^n`
         gmp: 1.0403977500000000000E+02             + 3.0600000000000000000E-01j
         apm: 1.0403977500000000000e+2 (2.084e-19%) + 3.0600000000000000000e-1 (2.076e-19%)j
 
-
-
-
-
-
-Auxiliary function `\mathrm{compound}(x,n) = (1+x)^n`
--------------------------------------------------------------------------------
-
-.. method:: math53.compound(a, b)
-
-    Returns `(1+x)^n`, computed accurately also when `x` is very close to 0. 
-
-
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ereal
-        >>> ereal.Compound(0.5, 2)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Compound('0.51', 2)
-        ereal('5.3518479027559984754E-1')
-
-
-
-
-
-
-
-Auxiliary function `\mathrm{comprel}(x,n) = (1+x)^n - 1`
--------------------------------------------------------------------------------
-
-.. method:: math53.comprel(x, n)
-
-    Returns `(1+x)^n - 1`, computed accurately also when `x` is very close to 0. 
-
-
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ereal
-        >>> ereal.Comprel(0.5, 2)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Comprel('0.51', 2)
-        ereal('5.3518479027559984754E-1')
 
 
 

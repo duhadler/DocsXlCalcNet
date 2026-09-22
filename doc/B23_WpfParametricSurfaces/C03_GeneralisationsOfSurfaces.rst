@@ -34,6 +34,8 @@ Parametric Surfaces: `x=f(u,v),` `y=g(u,v),` `z=h(u,v)`
 Ellipsoid
 -------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D01a_Ellipsoid.3D.xml (D01a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D01a_Ellipsoid.3D.xml>`__.
+
 
     The parametric equations of an ellipsoid can be written as 
 
@@ -101,6 +103,8 @@ If the lengths of two axes of an ellipsoid are the same, the figure is called an
 Superellipsoid
 ------------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D02a_SuperEllipse.3D.xml (D02a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D02a_SuperEllipse.3D.xml>`__.
+
 
 Superellipsoid is the name given to a family of shapes formed from the spherical product of two superquadratric curves. These shapes can be used to model a wide range of shapes including spheres, cylinders, and parallelepipeds as well as shapes in between. The parametric equations of an superellipsoid can be written as 
 
@@ -163,6 +167,8 @@ where `\displaystyle \frac{-\pi}{2} \le u  \le \frac{\pi}{2}`, `-\pi \le v  \le 
 Hexaedron
 -------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D03a_Hexaedron.3D.xml (D03a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D03a_Hexaedron.3D.xml>`__.
+
 
 See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
@@ -198,10 +204,6 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-**Left figure**: Hexaedron (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
-
 
 
 
@@ -212,6 +214,8 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 Super Toroid
 ------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D04a_SuperToroid.3D.xml (D04a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D04a_SuperToroid.3D.xml>`__.
 
 
 See also: http://paulbourke.net/geometry/toroidal/
@@ -233,8 +237,6 @@ See also: http://paulbourke.net/geometry/toroidal/
    :width: 30 %
 
 
-
-**Left figure**: Super Toroid (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -273,6 +275,8 @@ See also: http://paulbourke.net/geometry/toroidal/
 Elliptic Helicoid
 -----------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D05a_EllipticHelicoid.3D.xml (D05a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D05a_EllipticHelicoid.3D.xml>`__.
+
 
 See also: https://mathworld.wolfram.com/EllipticHelicoid.html
 
@@ -299,9 +303,6 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-**Left figure**: Elliptic Helicoid (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
 
 .. code-block:: csharp
 
@@ -324,6 +325,18 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 Hyperbolic Helicoid
 -----------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D06a_Hyperhelicoid.3D.xml (D06a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D06a_Hyperhelicoid.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var x = (Math.Sinh(v) * Math.Cos(3 * u)) / (1 + Math.Cosh(u) * Math.Cosh(v));
+    var y = (Math.Sinh(v) * Math.Sin(3 * u)) / (1 + Math.Cosh(u) * Math.Cosh(v));
+    var z = (Math.Cosh(v) * Math.Sinh(u)) / (1 + Math.Cosh(u) * Math.Cosh(v));
+
 
 
 See also: https://mathworld.wolfram.com/HyperbolicHelicoid.html
@@ -352,24 +365,15 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-**Right figure**: Hyperbolic Helicoid (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
+
+   
+|newpage|
 
 
-
-.. code-block:: csharp
-
-    x = (Math.Sinh(v) * Math.Cos(3 * u)) / (1 + Math.Cosh(u) * Math.Cosh(v));
-    y = (Math.Cosh(v) * Math.Sinh(u)) / (1 + Math.Cosh(u) * Math.Cosh(v));
-    z = (Math.Sinh(v) * Math.Sin(3 * u)) / (1 + Math.Cosh(u) * Math.Cosh(v));
-
-
-
-
-
-
-
-Lemniscape
+Lemniscate
 ---------------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D07a_Lemniscate.3D.xml (D07a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D07a_Lemnescate.3D.xml>`__.
 
 
 See also: http://paulbourke.net/geometry/lemniscape/
@@ -404,9 +408,6 @@ See also: http://paulbourke.net/geometry/lemniscape/
 
 
 
-**Right figure**: Lemniscape (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
 
 
 
@@ -417,6 +418,9 @@ See also: http://paulbourke.net/geometry/lemniscape/
 
 Bohemian Dome
 -------------------------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D08a_BohemianDome.3D.xml (D08a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D08a_BohemianDome.3D.xml>`__.
+
 
 See also: https://mathworld.wolfram.com/BohemianDome.html
 
@@ -459,10 +463,6 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-**Right figure**: Bohemian Dome (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
-
 
 
 
@@ -479,6 +479,28 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 Dupin1 surface
 -----------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D09a_Dupin1.3D.xml (D09a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D09a_Dupin1.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var a = 1.5;
+    var b = 1.4;
+    var c = Math.Sqrt(a * a - b * b);
+    var d = b / 2;
+    var su = Math.Sin(u);
+    var sv = Math.Sin(v);
+    var cu = Math.Cos(u);
+    var cv = Math.Cos(v);
+    var den = a - c * cu * cv;
+
+    var x = (b * sv * (c * cu - d)) / den;
+    var y = (d * (c - a * cu * cv) + b * b * cu) / den;
+    var z = (b * su * (a - d * cv)) / den;
+
 
 
 See also: https://mathcurve.com/surfaces.gb/cycliddedupin/cyclidededupin.shtml
@@ -508,28 +530,6 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-**Right figure**: Dupin1 Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
-
-.. code-block:: csharp
-
-    double a = 1.5;
-    double b = 1.4;
-    double c = Math.Sqrt(a*a-b*b);
-    double d = b/2;
-    double su = Math.Sin(u);
-    double sv = Math.Sin(v);
-    double cu = Math.Cos(u);
-    double cv = Math.Cos(v);
-    double den = a - c * cu * cv;
-                
-    x = (d * (c - a * cu * cv) + b*b * cu )   / den;
-    y = -(b * su * (a - d * cv)) / den;
-    z = (b * sv * (c * cu - d)) / den;
-
-
-
 
 
 
@@ -538,6 +538,20 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 Dupin2 surface
 -------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D10a_Dupin2.3D.xml (D10a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D10a_Dupin2.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var p = 2;
+    var k = 0.7;
+    var den = 1 + u * u + v * v;
+    var x = 0.5 * p * (2 * v * v + k * (1 - u * u - v * v)) / den;
+    var y = p * u * (v * v + k) / den;
+    var z = p * v * (1 + u * u - k) / den;
 
 
 See also: https://mathcurve.com/surfaces.gb/cycliddedupin/cyclidededupin.shtml
@@ -565,20 +579,6 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-**Right figure**: Dupin2 Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
-
-.. code-block:: csharp
-
-    double p = 2;
-    double k = 0.7;
-    double den = 1 + u*u + v*v;
-    x = 0.5*p * (2*v*v + k*(1-u*u-v*v)) / den;
-    z = p*u * (v*v+k) / den;
-    y = p*v * (1+u*u-k) / den;
-
-
 
 
 
@@ -589,6 +589,19 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 Dinis Surface (twisted pseudosphere)
 ------------------------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D11a_Dini.3D.xml (D11a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D11a_Dini.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var a = 1;
+    var b = 0.2;
+    var x = a * Math.Cos(u) * Math.Sin(v);
+    var y = a * Math.Sin(u) * Math.Sin(v);
+    var z = a * (Math.Cos(v) + Math.Log(Math.Tan(0.5 * v))) + b * u;
 
 
 See also: https://mathworld.wolfram.com/DinisSurface.html
@@ -615,28 +628,6 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-**Right figure**: Dinis Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-
-.. code-block:: csharp
-
-    double a = Math.Cos(u);
-    double b = Math.Sin(u);
-    double c = Math.Cos(v);
-    double a2 = a * a;
-    double a4 = a2 * a2;
-
-    x = -(2.0 / 15.0) * a * (3 * c + b * (-30 + a4 * (90 - 60 * a2) + 5 * a * c));
-    z = -(1.0 / 15.0) * b * b * (c * b * (3 - 48 * a4 + 5 * a * b * (1 - 16 * a4)) - 60);
-    y = (2.0 / 15.0) * (3 + 5 * a * b) * Math.Sin(v);
-
-
-
-
-**Left figure**: Dinis Surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
-**Right figure**: Dinis Surface (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
-
 
 
 
@@ -648,6 +639,8 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 Plueckers conoid
 -----------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D12a_Pluecker.3D.xml (D12a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D12a_Pluecker.3D.xml>`__.
+
 
 // See : https://mathworld.wolfram.com/PlueckersConoid.html
 // See : Gray, p. 436
@@ -656,9 +649,13 @@ Plueckers conoid
 
 .. code-block:: csharp
 
-    x = u * Math.Sqrt(1 - v*v);
-    y = u*v;
-    z = 1 - v*v;
+    var n = 2;
+    var r = u;
+    var theta = v;
+
+    var x = r * Math.Cos(theta);
+    var y = r * Math.Sin(theta);
+    var z = Math.Sin(n * theta);
 
 
 
@@ -677,9 +674,6 @@ Plueckers conoid
 .. |12c_Pluecker.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/12c_Pluecker.3D.jpg
    :width: 30 %
 
-
-
-**Right figure**: Plueckers Conoid (see also  Wikipedia :cite:p:`Wikipedia2D011`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -722,6 +716,15 @@ Gray, A. "Plücker's Conoid." Modern Differential Geometry of Curves and Surface
 Umbilic Torus
 ----------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D13a_UmbilicTorus.3D.xml (D13a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D13a_UmbilicTorus.3D.xml>`__.
+
+
+.. code-block:: csharp
+
+    var x = Math.Cos(u) * (7 + Math.Cos(u / 3 - 2 * v) + 2 * Math.Cos(u / 3 + v));
+    var y = Math.Sin(u) * (7 + Math.Cos(u / 3 - 2 * v) + 2 * Math.Cos(u / 3 + v));
+    var z = Math.Sin(u / 3 - 2 * v) + 2 * Math.Sin(u / 3 + v);
+
 
 // See also: http://www.3d-meier.de/tut3/Seite61.html  // Umbilic Torus
 
@@ -752,6 +755,23 @@ Umbilic Torus
 Skidian's ruled surface
 -----------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D14a_Skidan.3D.xml (D14a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D14a_Skidan.3D.xml>`__.
+
+
+.. code-block:: csharp
+
+    var a = Math.PI / 4.0;
+    var h = 2.0;
+    var n = 4.0;
+
+    var b = h * Math.Abs(Math.Cos(n * v));
+    var ca = Math.Cos(a);
+    var sa = Math.Sin(a);
+
+    var x = (u * sa + b * ca) * Math.Sin(v);
+    var y = (u * sa + b * ca) * Math.Cos(v);
+    var z = (u * ca - b * sa);
+
 
 // See also: http://www.3d-meier.de/tut3/Seite227.html  // Skidan Ruled Surface
 // See Krivoshapko, p. 499
@@ -775,9 +795,6 @@ Skidian's ruled surface
 
 
 
-
-
-**Left figure**: Skidian's ruled surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -807,6 +824,20 @@ Skidian's ruled surface
 Umbrella surface
 ------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D15a_Umbrella.3D.xml (D15a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D15a_Umbrella.3D.xml>`__.
+
+
+.. code-block:: csharp
+
+    var R = 0.6;
+    var h = 0.6;
+    var n = 8.0;
+
+    var r = R / n;
+    var x = ctx.cbrt(u) * ((R - r)) * Math.Cos(v) + r * Math.Cos((n - 1) * v);
+    var y = ctx.cbrt(u) * ((R - r)) * Math.Sin(v) - r * Math.Sin((n - 1) * v);
+    var z = h * (1 - u);
+
 
 // See also: http://www.3d-meier.de/tut3/Seite215.html  // Umbrella Surface
 // See Krivoshapko, p. 507 - 509 
@@ -830,8 +861,6 @@ Umbrella surface
 .. |15c_Umbrella.3D| image:: ../_static/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/15c_Umbrella.3D.jpg
    :width: 30 %
 
-
-**Left figure**: Umbrella surface (see also  Wikipedia :cite:p:`Wikipedia2D010`, :cite:t:`Gray2006`,  :cite:t:`Krivoshapko2015`).
 
 
 
@@ -859,6 +888,21 @@ Umbrella surface
 
 Cyclic surfaces (generalized torus)
 ---------------------------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D16a_CyclicSurface1.3D.xml (D16a-n) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D16a_CyclicSurface1.3D.xml>`__.
+
+
+.. code-block:: csharp
+
+    var a = 1.0;
+    var b = 2.0;
+    var d = 0.0;
+    var p = 1.0;
+
+    var R = a * (1 - d * Math.Cos(p * u));
+    var x = (b + R * Math.Cos(v)) * Math.Cos(u);
+    var y = (b + R * Math.Cos(v)) * Math.Sin(u);
+    var z = R * Math.Sin(v);
 
 
 // See Krivoshapko, p. 376
@@ -972,6 +1016,37 @@ Cyclic surfaces (generalized torus)
 Goursat surfaces 
 -------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D17a_Goursat1.3D.xml (D17a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D17a_Goursat1.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var a = -0.33;
+    var b = 0.2;
+    var c = -3;
+    var p = 1;
+
+    var su = Math.Sin(u);
+    var cu = Math.Cos(u);
+    var sv = Math.Sin(v);
+    var cv = Math.Cos(v);
+
+    var su4 = su * su * su * su;
+    var cu4 = cu * cu * cu * cu;
+
+    var sv4 = sv * sv * sv * sv;
+    var cv4 = cv * cv * cv * cv;
+
+    var D = (su4 + cu4) * cv4 + sv4;
+    var R = Math.Sqrt((-b + p * Math.Sqrt(b * b - 4 * c * (a + D))) / (2 * (a + D)));
+    var x = R * cv * cu;
+    var y = R * cv * su;
+    var z = R * sv;
+
+
+
 // See : Krivoshapko (2015), p. 643
 // See: https://mathworld.wolfram.com/GoursatsSurface.html
 // See Gray 1997, p. 314)
@@ -1025,6 +1100,23 @@ Goursat surfaces
 Cyclides triples
 --------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D18a_CyclidesTriple.3D.xml (D18a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D18a_CyclidesTriple.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var su = Math.Sin(u);
+    var s2u = Math.Sin(2 * u);
+    var cu = Math.Cos(u);
+    var sv = Math.Sin(v);
+    var cv = Math.Cos(v);
+
+    var x = cv * sv * sv * sv * s2u * cu;
+    var y = cv * sv * sv * sv * s2u * su;
+    var z = cv * sv * sv * s2u;
+
 
 // See : Krivoshapko (2015), p. 651
 
@@ -1073,6 +1165,21 @@ Cyclides triples
 
 Ship Lamé
 ------------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D19a_ShipLame.3D.xml (D19a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C03_GeneralisationsOfSurfaces/D19a_ShipLame.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var B = 6.5;
+    var L = 4.0;
+    var T = 2.0;
+
+    var x = u * L;
+    var y = Math.Sign(Math.Cos(v)) * B * Math.Sqrt(1 - u * u * u * u) * Math.Sqrt(Math.Abs(Math.Cos(v))) / 2.0;
+    var z = Math.Sign(Math.Sin(v)) * T * Math.Sqrt(1 - u * u) * Math.Sqrt(Math.Abs(Math.Sin(v)));
 
 
 // See : Krivoshapko (2015), p. 671

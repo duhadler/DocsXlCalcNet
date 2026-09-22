@@ -37,11 +37,10 @@ Julia sets, example 1: Classical set
 
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01a_Julia01.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D01a_Julia01.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01a_Julia01.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D01a_Julia01.py>`__, and the XML code in the file `D01a_Julia01.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D01a_Julia01.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01b_Julia01.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D01b_Julia01.py>`__.
-
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01b_Julia01.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D01b_Julia01.py>`__, and the XML code in the file `D01b_Julia01.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D01b_Julia01.2D.xml>`__.
 
 
 See also: http://www.3d-meier.de/, Mandelbrot und Julia Mengen
@@ -68,10 +67,10 @@ Julia sets, example 2: Glynn fractals
 
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02a_Julia02.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D02a_Julia02.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02a_Julia02.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D02a_Julia02.py>`__, and the XML code in the file `D02a_Julia02.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D02a_Julia02.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02b_Julia02.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D02b_Julia02.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02b_Julia02.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D02b_Julia02.py>`__, and the XML code in the file `D02b_Julia02.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D02b_Julia02.2D.xml>`__.
 
 
 See also: http://www.3d-meier.de/, Mandelbrot und Julia Mengen
@@ -93,10 +92,10 @@ Julia sets, example 3: Spiral Septagon fractal
 
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03a_Julia03.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D03a_Julia03.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03a_Julia03.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D03a_Julia03.py>`__, and the XML code in the file `D03a_Julia03.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D03a_Julia03.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03b_Julia03.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D03b_Julia03.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03b_Julia03.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D03b_Julia03.py>`__, and the XML code in the file `D03b_Julia03.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D03b_Julia03.2D.xml>`__.
 
 
 See also: https://paulbourke.net/fractals/septagon/
@@ -118,10 +117,10 @@ Julia sets, example 4: Reuleaux Triangle fractal
 
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04a_Julia04.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D04a_Julia04.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04a_Julia04.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D04a_Julia04.py>`__, and the XML code in the file `D04a_Julia04.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D04a_Julia04.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04b_Julia04.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D04b_Julia04.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04b_Julia04.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D04b_Julia04.py>`__, and the XML code in the file `D04b_Julia04.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D04b_Julia04.2D.xml>`__.
 
 
 See also: https://paulbourke.net/fractals/triangle/
@@ -147,10 +146,10 @@ Julia sets, example 5: Phoenix Julia fractals
 
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05a_Julia05.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D05a_Julia05.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05a_Julia05.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D05a_Julia05.py>`__, and the XML code in the file `D05a_Julia05.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D05a_Julia05.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05b_Julia05.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D05b_Julia05.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05b_Julia05.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D05b_Julia05.py>`__, and the XML code in the file `D05b_Julia05.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D05b_Julia05.2D.xml>`__.
 
 
 Compare this with "Marek Dragon"
@@ -173,10 +172,10 @@ Julia sets, example 6: Cubic Julia fractals
 
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06a_Julia06.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D06a_Julia06.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06a_Julia06.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D06a_Julia06.py>`__, and the XML code in the file `D06a_Julia06.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D06a_Julia06.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06b_Julia06.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D06b_Julia06.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06b_Julia06.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D06b_Julia06.py>`__, and the XML code in the file `D06b_Julia06.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D06b_Julia06.2D.xml>`__.
 
 
 See also: https://paulbourke.net/fractals/cubicjulia/
@@ -200,10 +199,10 @@ Julia sets, example 7: Spiral Julia fractal (uses `z_{n+1} = \tan(z_n^2 +c)`)
 
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07a_Julia07.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D07a_Julia07.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07a_Julia07.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D07a_Julia07.py>`__, and the XML code in the file `D07a_Julia07.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D07a_Julia07.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07b_Julia07.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D07b_Julia07.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07b_Julia07.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D07b_Julia07.py>`__, and the XML code in the file `D07b_Julia07.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D07b_Julia07.2D.xml>`__.
 
 See also: https://paulbourke.net/fractals/spiraljulia/
 
@@ -238,10 +237,10 @@ See also: https://paulbourke.net/fractals/sinjulia/
 
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08a_Julia08.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D08a_Julia08.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08a_Julia08.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D08a_Julia08.py>`__, and the XML code in the file `D08a_Julia08.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D08a_Julia08.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08b_Julia08.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D08b_Julia08.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08b_Julia08.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D08b_Julia08.py>`__, and the XML code in the file `D08b_Julia08.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D08b_Julia08.2D.xml>`__.
 
 
 
@@ -262,10 +261,10 @@ Julia sets, example 9: Julia09 fractals
 
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09a_Julia09.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D09a_Julia09.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09a_Julia09.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D09a_Julia09.py>`__, and the XML code in the file `D09a_Julia09.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D09a_Julia09.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09b_Julia09.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D09b_Julia09.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09b_Julia09.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D09b_Julia09.py>`__, and the XML code in the file `D09b_Julia09.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D09b_Julia09.2D.xml>`__.
 
 
 
@@ -291,11 +290,10 @@ Julia sets, example 10: Julia10 fractals
 
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10a_Julia10.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D10a_Julia10.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10a_Julia10.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D10a_Julia10.py>`__, and the XML code in the file `D10a_Julia10.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D10a_Julia10.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10b_Julia10.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D10b_Julia10.py>`__.
-
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10b_Julia10.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D10b_Julia10.py>`__, and the XML code in the file `D10b_Julia10.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D10b_Julia10.2D.xml>`__.
 
 
 See also: https://paulbourke.net/fractals/cubicjulia/
@@ -322,11 +320,10 @@ Julia sets, example 11: Julia11 fractals
 
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11a_Julia11.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D11a_Julia11.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11a_Julia11.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D11a_Julia11.py>`__, and the XML code in the file `D11a_Julia11.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D11a_Julia11.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11b_Julia11.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D11b_Julia11.py>`__.
-
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11b_Julia11.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C03_JuliaSet/D11b_Julia11.py>`__, and the XML code in the file `D11b_Julia11.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C03_JuliaSet/D11b_Julia11.2D.xml>`__.
 
 
 See also: https://paulbourke.net/fractals/cubicjulia/

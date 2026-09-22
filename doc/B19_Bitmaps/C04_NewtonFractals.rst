@@ -36,11 +36,10 @@ Newton, zeros of `z^3-1`
 --------------------------------------------------------------------------------
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01a_Newton1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D01a_Newton1.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01a_Newton1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D01a_Newton1.py>`__, and the XML code in the file `D01a_Newton1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C04_NewtonFractals/D01a_Newton1.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01b_Newton1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D01b_Newton1.py>`__.
-
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01b_Newton1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D01b_Newton1.py>`__, and the XML code in the file `D01b_Newton1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C04_NewtonFractals/D01b_Newton1.2D.xml>`__.
 
 
 .. image:: ../_static/Combining2D3D/Newton/Newton01.*
@@ -58,10 +57,10 @@ Newton, zeros of  `\cos(z)`
 --------------------------------------------------------------------------------
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02a_Newton2 <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D02a_Newton2.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02a_Newton2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D02a_Newton2.py>`__, and the XML code in the file `D02a_Newton2.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C04_NewtonFractals/D02a_Newton2.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02b_Newton2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D02b_Newton2.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02b_Newton2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D02b_Newton2.py>`__, and the XML code in the file `D02b_Newton2.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C04_NewtonFractals/D02b_Newton2.2D.xml>`__.
 
 
 .. image:: ../_static/Combining2D3D/Newton/Newton04.*
@@ -79,11 +78,10 @@ Modified Newton (containing an error), zeros of `z^3-1`
 --------------------------------------------------------------------------------
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03a_Newton3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D03a_Newton3.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03a_Newton3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D03a_Newton3.py>`__, and the XML code in the file `D03a_Newton3.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C04_NewtonFractals/D03a_Newton3.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03b_Newton3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D03b_Newton3.py>`__.
-
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03b_Newton3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D03b_Newton3.py>`__, and the XML code in the file `D03b_Newton3.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C04_NewtonFractals/D03b_Newton3.2D.xml>`__.
 
 .. image:: ../_static/Combining2D3D/Newton/Newton02.*
    :width: 50 %
@@ -98,10 +96,10 @@ Modified Newton (containing an error), not converging
 --------------------------------------------------------------------------------
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04a_Newton4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D04a_Newton4.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04a_Newton4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D04a_Newton4.py>`__, and the XML code in the file `D04a_Newton4.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C04_NewtonFractals/D04a_Newton4.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04b_Newton4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D04b_Newton4.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04b_Newton4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D04b_Newton4.py>`__, and the XML code in the file `D04b_Newton4.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C04_NewtonFractals/D04b_Newton4.2D.xml>`__.
 
 
 .. image:: ../_static/Combining2D3D/Newton/Newton03.*
@@ -116,10 +114,10 @@ Halley, zeros of `z^3-1`
 --------------------------------------------------------------------------------
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05a_Newton5.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D05a_Newton5.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05a_Newton5.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D05a_Newton5.py>`__, and the XML code in the file `D05a_Newton5.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C04_NewtonFractals/D05a_Newton5.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05b_Newton5.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D05b_Newton5.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05b_Newton5.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D05b_Newton5.py>`__, and the XML code in the file `D05b_Newton5.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C04_NewtonFractals/D05b_Newton5.2D.xml>`__.
 
 
 .. image:: ../_static/Combining2D3D/Newton/Newton05.*
@@ -137,11 +135,10 @@ Halley, zeros of  `\cos(z)`
 --------------------------------------------------------------------------------
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01a_Newton1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D06a_Newton6.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06a_Newton6.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D06a_Newton6.py>`__, and the XML code in the file `D06a_Newton6.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C04_NewtonFractals/D06a_Newton6.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06b_Newton6.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D06b_Newton6.py>`__.
-
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06b_Newton6.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D06b_Newton6.py>`__, and the XML code in the file `D06b_Newton6.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C04_NewtonFractals/D06b_Newton6.2D.xml>`__.
 
 .. image:: ../_static/Combining2D3D/Newton/Newton06.*
    :width: 50 %
@@ -157,11 +154,10 @@ Modified Halley (containing an error), zeros of `z^3-1`
 --------------------------------------------------------------------------------
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07a_Newton7.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D07a_Newton7.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07a_Newton7.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D07a_Newton7.py>`__, and the XML code in the file `D07a_Newton7.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C04_NewtonFractals/D07a_Newton7.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07b_Newton7.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D07b_Newton7.py>`__.
-
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07b_Newton7.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C04_NewtonFractals/D07b_Newton7.py>`__, and the XML code in the file `D07b_Newton7.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C04_NewtonFractals/D07b_Newton7.2D.xml>`__.
 
 .. image:: ../_static/Combining2D3D/Newton/Newton07.*
    :width: 50 %

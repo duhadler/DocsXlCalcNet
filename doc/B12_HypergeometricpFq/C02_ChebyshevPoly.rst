@@ -176,7 +176,7 @@ Chebyshev polynomial of the second kind, `U_n(x)`
 Chebyshev polynomials of the third kind, `V_n(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.chebyshev_v(n,x) 
+.. method:: ctx.chebyshev_v(n,x) 
 
     Returns `\displaystyle V_n(x)`, the Chebyshev polynomial of the first kind.  The `V_n (x)` are orthogonal on the interval `(-1, 1)`, with respect to the weight function `w(x) = (1 + x^2 )^{1/2}  (1 - x)^{-1/2}`. 
 
@@ -222,7 +222,7 @@ Chebyshev polynomials of the third kind, `V_n(x)`
 Chebyshev polynomials of the fourth kind, `W_n(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.chebyshev_w(n,x)
+.. method:: ctx.chebyshev_w(n,x)
 
     Returns `\displaystyle W_k(z)`, the Chebyshev polynomial of the fourth kind of degree `n \ge 0`.  The `W_n (x)` are orthogonal on the interval `(-1, 1)`, with respect to the weight function `w(x) = (1 - x)^{1/2} (1 + x^2 )^{-1/2}`. 
 
@@ -456,7 +456,7 @@ Jacobi polynomials, `P_{n}^{(a, b)}`
 Zernike radial polynomials `R_n^m(r)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.zernike_r(n,m,r)
+.. method:: ctx.zernike_r(n,m,r)
 
     Returns the Zernike radial polynomial `R_n^m(r)`, with  `r \ge 0`, and  `n \ge m \ge 0`, `n-m` even, zero otherwise. The orthogonality relation is
 

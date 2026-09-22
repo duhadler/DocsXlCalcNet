@@ -30,7 +30,7 @@ Boxplot, Violinplot and Raincloud plot
 Boxplot, simple
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_BoxplotSimple.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D01_BoxplotSimple.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_BoxplotSimple.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D01_BoxplotSimple.py>`__, and the XML code in the file `D01_BoxplotSimple.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D01_BoxplotSimple.2D.xml>`__.
 
 
 
@@ -44,7 +44,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Boxplots2
 
 
 
@@ -59,7 +58,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Boxplot, multiple groups
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_BoxplotMultipleGroups.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D02_BoxplotMultipleGroups.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_BoxplotMultipleGroups.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D02_BoxplotMultipleGroups.py>`__, and the XML code in the file `D02_BoxplotMultipleGroups.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D02_BoxplotMultipleGroups.2D.xml>`__.
 
 
 
@@ -73,7 +72,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Boxplots4
 
 
 
@@ -86,7 +84,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 ViolinPlot
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_ViolinPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D03_ViolinPlot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_ViolinPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D03_ViolinPlot.py>`__, and the XML code in the file `D03_ViolinPlot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D03_ViolinPlot.2D.xml>`__.
 
 
 
@@ -109,7 +107,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Boxplot vs violinplot
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_BoxplotVsViolinplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D04_BoxplotVsViolinplot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_BoxplotVsViolinplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D04_BoxplotVsViolinplot.py>`__, and the XML code in the file `D04_BoxplotVsViolinplot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D04_BoxplotVsViolinplot.2D.xml>`__.
 
 
 
@@ -135,7 +133,7 @@ Some text
 Boxenplot
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_Boxenplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D05_Boxenplot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_Boxenplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D05_Boxenplot.py>`__, and the XML code in the file `D05_Boxenplot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D05_Boxenplot.2D.xml>`__.
 
 
 
@@ -160,7 +158,7 @@ Some text
 Swarmplot
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_Swarmplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D06_Swarmplot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_Swarmplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D06_Swarmplot.py>`__, and the XML code in the file `D06_Swarmplot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D06_Swarmplott.2D.xml>`__.
 
 
 
@@ -187,7 +185,7 @@ Some text
 Stripplot
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_Stripplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D07_Stripplot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_Stripplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D07_Stripplot.py>`__, and the XML code in the file `D07_Stripplot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D07_Stripplot.2D.xml>`__.
 
 
 
@@ -213,7 +211,7 @@ Some text
 Catplot
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_Catplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D08_Catplot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_Catplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D08_Catplot.py>`__, and the XML code in the file `D08_Catplot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D08_Catplot.2D.xml>`__.
 
 
 
@@ -243,7 +241,7 @@ Some text
 Raincloud Plot
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_RaincloudPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D09_RaincloudPlot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_RaincloudPlot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D09_RaincloudPlot.py>`__, and the XML code in the file `D09_RaincloudPlot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C04_BoxViolinRaincloudplots/D09_RaincloudPlot.2D.xml>`__.
 
 
 
@@ -253,7 +251,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 .. |picRaincloudPlot| image:: ../_static/FuncPlots2D/FromPythonGallery3/RaincloudPlot.*
 
 
-**Left figure**: Raincloud Plot
 
 
 

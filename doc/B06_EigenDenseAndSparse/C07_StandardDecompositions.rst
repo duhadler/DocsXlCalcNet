@@ -23,10 +23,13 @@ Cholesky Decomposition with Pivoting
 --------------------------------------------------
 
 
-.. method:: mat.CholeskyLDLT(Query, matB)
-
+.. method:: ctx.mat_ldlt(matA, Query, matB)
 
     Returns the Cholesky decomposition of the symmetric matrix *matA* `=A = A = P^TLDLP`, with partial pivoting.
+
+    Writing ``matA.LDLT(Query, matB)`` has the same effect
+
+
     See also Eigen :cite:p:`EigenMat117`,  Wikipedia :cite:p:`WikipediaMat117`,  Wikipedia :cite:p:`WikipediaMat130`.
 
 
@@ -363,10 +366,12 @@ LU Decomposition with partial Pivoting
 ----------------------------------------------
 
 
-.. method:: mat.PartialPivLU(Query, matB)
+.. method:: ctx.mat_partial_piv_lu(matA, Query, matB)
 
 
     Returns the LU decomposition of the general square matrix *matA* `= A = PLU`, with partial pivoting.
+
+    Writing ``matA.PartialPivLU(Query, matB)`` has the same effect
 
     See also Eigen :cite:p:`EigenMat107`,  Wikipedia :cite:p:`WikipediaMat107`,  Wikipedia :cite:p:`WikipediaMat130`.
 
@@ -649,12 +654,13 @@ LU Decomposition with full Pivoting
 ---------------------------------------------
 
 
-.. method:: mat.FullPivLU(Query, matB)
+.. method:: ctx.mat_full_piv_lu(matA, Query, matB)
 
 
     Returns the LU decomposition of the general square matrix *matA* `= A = PLUQ`, with full pivoting.
     See also Eigen :cite:p:`EigenMat118`,  Wikipedia :cite:p:`WikipediaMat118`,  Wikipedia :cite:p:`WikipediaMat130`.
 
+    Writing ``matA.FullPivLU(Query, matB)`` has the same effect
 
 
 **Parameters:**
@@ -963,10 +969,12 @@ Example for a complex matrix
 Cholesky Decomposition without Pivoting
 ---------------------------------------------------------------
 
-.. method:: mat.CholeskyLLT(Query, matB)
+.. method:: ctx.mat_llt(matA, Query, matB)
 
 
     Returns the Cholesky decomposition of the symmetric matrix *matA* `= A = LL^T = U^TU`, without pivoting. 
+
+    Writing ``matA.LLT(Query, matB)`` has the same effect
 
     See also Eigen :cite:p:`EigenMat106`,  Wikipedia :cite:p:`WikipediaMat106`,  Wikipedia :cite:p:`WikipediaMat130`.
 
@@ -1211,13 +1219,13 @@ Example for a hermitian matrix
 QR Decomposition without Pivoting
 -------------------------------------------
 
-
-
-.. method:: mat.HouseholderQR(Query, matB)
+.. method:: ctx.mat_householder_qr(matA, Query, matB)
 
 
 
     Returns the QR decomposition of the symmetric matrix *matA* `=A = QR`, without pivoting.
+
+    Writing ``mat.HouseholderQR(Query, matB)`` has the same effect
 
     See also Eigen :cite:p:`EigenMat108`,  Wikipedia :cite:p:`WikipediaMat121`,  Wikipedia :cite:p:`WikipediaMat130`.
 
@@ -1487,10 +1495,13 @@ Example for a complex matrix
 QR Decomposition with column Pivoting
 ----------------------------------------------
 
-.. method:: mat.ColPivHouseholderQR(Query, matB, threshold)
+.. method:: ctx.mat_col_piv_householder_qr(matA, Query, matB, threshold)
 
 
     Returns the QR decomposition of the symmetric matrix *matA* `=A = QR`, with column pivoting.
+
+    Writing ``matA.ColPivHouseholderQR(Query, matB, threshold)`` has the same effect
+
     See also: Eigen :cite:p:`EigenMat119`,  Wikipedia :cite:p:`WikipediaMat120`,  Wikipedia :cite:p:`WikipediaMat130`.
 
 
@@ -1887,10 +1898,12 @@ QR Decomposition with full Pivoting
 -----------------------------------------------
 
 
-.. method:: mat.FullPivHouseholderQR(Query, matB, threshold)
+.. method:: ctx.mat_full_piv_householder_qr(matA, Query, matB, threshold)
 
 
     Returns the QR decomposition (with full pivoting) of the general matrix *matA* such that`PAP'` = QR` by using Householder transformations. Here, `P` and `P'` are permutation matrices, `Q` is a unitary matrix and `R` is an upper triangular matrix.
+
+    Writing ``matA.FullPivHouseholderQR(Query, matB, threshold)`` has the same effect
 
     See also Eigen :cite:p:`EigenMat120`,  Wikipedia :cite:p:`WikipediaMat120`,  Wikipedia :cite:p:`WikipediaMat130`.
 
@@ -1958,7 +1971,7 @@ QR Decomposition with full Pivoting
 
 
 
-This class performs a rank-revealing QR decomposition of a matrix `A` into matrices `P`, `P'`, `Q` and `R` such that`PAP'` = QR` by using Householder transformations. Here, `P` and `P'` is a permutation matrices, `Q` a unitary matrix and `R` an upper triangular matrix.
+This class performs a rank-revealing QR decomposition of a matrix `A` into matrices `P`, `P'`, `Q` and `R` such that`PAP' = QR` by using Householder transformations. Here, `P` and `P'` are permutation matrices, `Q` a unitary matrix and `R` an upper triangular matrix.
 
 This decomposition performs full pivoting in order to be rank-revealing and achieve optimal numerical stability.
 The trade-off is that it is slower than HouseholderQR and ColPivHouseholderQR.
@@ -2263,10 +2276,12 @@ Complete orthogonal decomposition (COD)
 -----------------------------------------------
 
 
-.. method:: mat.CODHouseholderQR(results, matB)
+.. method:: ctx.mat_cod_householder_qr(matA, results, matB)
 
 
     Returns a rank-revealing complete orthogonal decomposition (COD) of the general matrix *matA* `=A`  into matrices `P`, `Q`, `T`, and `Z` such that 
+
+    Writing ``matA.CODHouseholderQR(results, matB)`` has the same effect
 
     .. math::  \mathbf{A} \, \mathbf{P} = \mathbf{Q} \, 
                 \begin{bmatrix} 

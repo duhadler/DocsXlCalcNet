@@ -25,7 +25,7 @@ Anger, Weber and Lommel functions
 Anger function `\mathbf{J}_{\nu}(x)`
 -------------------------------------------------------------------------------
 
-.. method:: CtxFlint.AngerJ(n, z)
+.. method:: ctx.anger_j(n, z)
 
 
     Returns the Anger function J. See also  Wikipedia :cite:p:`WikipediaFun1046`, MathWorld :cite:p:`WolframFun1046`, NIST :cite:p:`DLMFun1046`.
@@ -106,7 +106,7 @@ Anger function `\mathbf{J}_{\nu}(x)`
 Weber function `\mathbf{E}_{\nu}(x)`
 -------------------------------------------------------------------------------
 
-.. method:: CtxFlint.WeberE(n, z)
+.. method:: ctx.weber_e(n, z)
 
 
     Returns the Weber function E. See also  Wikipedia :cite:p:`WikipediaFun1046`, MathWorld :cite:p:`WolframFun1047`, NIST :cite:p:`DLMFun1046`.
@@ -188,7 +188,7 @@ Weber function `\mathbf{E}_{\nu}(x)`
 Lommel function `s_{\mu,\nu}(x) = s^{(1)}_{\mu,\nu}(x)`
 -------------------------------------------------------------------------------
 
-.. method:: CtxFlint.LommelS1(mu, nu, z)
+.. method:: ctx.lommel_s1(mu, nu, z)
 
 
     Returns the Lommel function S1. See also  Wikipedia :cite:p:`WikipediaFun1048`, MathWorld :cite:p:`WolframFun1048`, NIST :cite:p:`DLMFun1048`.
@@ -261,7 +261,7 @@ Lommel function `s_{\mu,\nu}(x) = s^{(1)}_{\mu,\nu}(x)`
 Lommel function `S_{\mu,\nu}(x) = s^{(2)}_{\mu,\nu}(x)`
 -------------------------------------------------------------------------------
 
-.. method:: CtxFlint.LommelS2(mu, nu, z)
+.. method:: ctx.lommel_s2(mu, nu, z)
 
 
     Returns the Lommel function S2. See also  Wikipedia :cite:p:`WikipediaFun1048`, MathWorld :cite:p:`WolframFun1048`, NIST :cite:p:`DLMFun1048`.

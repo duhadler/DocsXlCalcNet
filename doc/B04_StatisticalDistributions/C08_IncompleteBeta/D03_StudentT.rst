@@ -32,9 +32,7 @@ See also  Wikipedia :cite:p:`WikipediaDis07`, MathWorld :cite:p:`WolframDis07`, 
 
 .. _Ctx_StudentTPdf:
 
-.. method:: Ctx.student_t_pdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.student_t_pdf(n, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the Student t distribution:
 
@@ -56,9 +54,7 @@ See also  Wikipedia :cite:p:`WikipediaDis07`, MathWorld :cite:p:`WolframDis07`, 
 
 .. _Ctx_StudentTCdf:
 
-.. method:: Ctx.student_t_cdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.student_t_cdf(n, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the Student t distribution:
 
@@ -92,7 +88,7 @@ See also  Wikipedia :cite:p:`WikipediaDis07`, MathWorld :cite:p:`WolframDis07`, 
 
 .. _Ctx_StudentTQtf:
 
-.. method:: Ctx.student_t_qtf(q, a=0, b=1)
+.. method:: math53.student_t_qtf(n, q)
 
     where ``Ctx`` is ``Math53`` or ``CtxBoost``.
 

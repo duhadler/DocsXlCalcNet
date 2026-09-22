@@ -352,7 +352,7 @@ Cube root, `\mathrm{cbrt}(x) = \sqrt[3]{x}`
 Nth root, `\mathrm{nroot}(x, n) = \sqrt[n]{x}`
 -------------------------------------------------------------------------------
 
-.. method:: ctx.nroot(x, n, k=0)
+.. method:: ctx.root_si(x, n, k=0)
 
     where ``ctx`` is ``math53``, ``mathc53``, ``ctxcpp`` or ``ctxflint``.
 

@@ -33,9 +33,7 @@ See also   Wikipedia :cite:p:`WikipediaDis32`, MathWorld :cite:p:`WolframDis32`,
 
 .. _Ctx_PoissonPmf:
 
-.. method:: Ctx.poisson_pmf(k, mu)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.poisson_pmf(mu, x)
 
     Returns `\text{pmf}(x)`, the value of the probability mass function (:ref:`Pmf <Dist_Pmf>`) of the Poisson distribution:
 
@@ -57,9 +55,7 @@ See also   Wikipedia :cite:p:`WikipediaDis32`, MathWorld :cite:p:`WolframDis32`,
 
 .. _Ctx_PoissonCdf:
 
-.. method:: Ctx.poisson_cdf(k, mu)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.poisson_cdf(mu, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the Poisson distribution:
 
@@ -84,9 +80,7 @@ See also   Wikipedia :cite:p:`WikipediaDis32`, MathWorld :cite:p:`WolframDis32`,
 
 .. _Ctx_PoissonQtf:
 
-.. method:: Ctx.poisson_qtf(q, mu)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.poisson_qtf(mu, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the Poisson distribution:
 

@@ -28,7 +28,7 @@ Streams, barbs and quivers (some require cartopy)
 Streams, Electric Dipole: vector field
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_04_VectorFieldMultipole.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_04_VectorFieldMultipole.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.py>`__, and the XML code in the file `D01_04_VectorFieldMultipole.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -60,7 +60,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Streams, Electric Quadrupole: vector field
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_04_VectorFieldMultipole.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_04_VectorFieldMultipole.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.py>`__, and the XML code in the file `D01_04_VectorFieldMultipole.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -94,7 +94,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Streams, Electric Octopole: vector field
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_04_VectorFieldMultipole.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_04_VectorFieldMultipole.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.py>`__, and the XML code in the file `D01_04_VectorFieldMultipole.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -124,7 +124,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Streams, Electric Hexapole: vector field
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_04_VectorFieldMultipole.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_04_VectorFieldMultipole.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.py>`__, and the XML code in the file `D01_04_VectorFieldMultipole.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D01_04_VectorFieldMultipole.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -151,7 +151,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Streams, North Atlantic Ocean and Europe (requires cartopy)
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_StreamsNorthAtlantic.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D05_StreamsNorthAtlantic.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_StreamsNorthAtlantic.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D05_StreamsNorthAtlantic.py>`__, and the XML code in the file `D05_StreamsNorthAtlantic.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D05_StreamsNorthAtlantic.2D.xml>`__.
 
 
 
@@ -171,7 +171,7 @@ Quivers, North Atlantic Ocean and Europe (requires cartopy)
 ------------------------------------------------------------------------------------------
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_QuiversNorthAtlantic.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D06_QuiversNorthAtlantic.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_QuiversNorthAtlantic.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D06_QuiversNorthAtlantic.py>`__, and the XML code in the file `D06_QuiversNorthAtlantic.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D06_QuiversNorthAtlantic.2D.xml>`__.
 
 
 
@@ -190,7 +190,7 @@ Quivers, plain and regridded (requires cartopy)
 ------------------------------------------------------------------------------------------
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_QuiversPlainAndRegridded.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D07_QuiversPlainAndRegridded.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_QuiversPlainAndRegridded.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D07_QuiversPlainAndRegridded.py>`__, and the XML code in the file `D07_QuiversPlainAndRegridded.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D07_QuiversPlainAndRegridded.2D.xml>`__.
 
 
 
@@ -212,7 +212,7 @@ Barbs, North Atlantic Ocean and Europe (requires cartopy)
 ------------------------------------------------------------------------------------------
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_BarbsNorthAtlantic.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D08_BarbsNorthAtlantic.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_BarbsNorthAtlantic.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D08_BarbsNorthAtlantic.py>`__, and the XML code in the file `D08_BarbsNorthAtlantic.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C09_StreamsBarbsQuivers/D08_BarbsNorthAtlantic.2D.xml>`__.
 
 
 

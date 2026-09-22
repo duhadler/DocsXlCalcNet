@@ -27,7 +27,7 @@ Line and lollipop charts
 Line chart (Seaborn)
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_LineChartSeaborn.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D01_LineChartSeaborn.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_LineChartSeaborn.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D01_LineChartSeaborn.py>`__, and the XML code in the file `D01_LineChartSeaborn.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D01_LineChartSeaborn.2D.xml>`__.
 
 
 
@@ -40,7 +40,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
    :width: 90 %
 
 
-**Left figure**: Parallel PlotSeaborn
 
 
 
@@ -52,7 +51,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Slope Chart
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_SlopeCharts.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D02_SlopeCharts.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_SlopeCharts.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D02_SlopeCharts.py>`__, and the XML code in the file `D02_SlopeCharts.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D02_SlopeCharts.2D.xml>`__.
 
 
 
@@ -63,7 +62,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
    :width: 60 %
 
 
-**Left figure**: Slope Charts
 
 
 
@@ -76,7 +74,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Line chart with error Bar
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_LineErrorBars.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D03_LineErrorBars.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_LineErrorBars.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D03_LineErrorBars.py>`__, and the XML code in the file `D03_LineErrorBars.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D03_LineErrorBars.2D.xml>`__.
 
 
 
@@ -90,7 +88,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Error Bar 3
 
 
 
@@ -102,7 +99,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Confidence band (RandomWalk)
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_ConfidenceBand_RandomWalk.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D04_ConfidenceBand_RandomWalk.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_ConfidenceBand_RandomWalk.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D04_ConfidenceBand_RandomWalk.py>`__, and the XML code in the file `D04_ConfidenceBand_RandomWalk.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D04_ConfidenceBand_RandomWalk.2D.xml>`__.
 
 
 
@@ -116,7 +113,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: RandomWalk
 
 
 
@@ -128,7 +124,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Plotting Parallel (Pandas)
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_PandasPlottingParallel.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D05_PandasPlottingParallel.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_PandasPlottingParallel.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D05_PandasPlottingParallel.py>`__, and the XML code in the file `D05_PandasPlottingParallel.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D05_PandasPlottingParallel.2D.xml>`__.
 
 
 
@@ -139,7 +135,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
    :width: 90 %
 
 
-**Left figure**: Pandas Plotting Parallel
 
 
 
@@ -152,7 +147,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Andrew Curves (Pandas)
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_PandasAndrewCurves.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D06_PandasAndrewCurves.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_PandasAndrewCurves.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D06_PandasAndrewCurves.py>`__, and the XML code in the file `D06_PandasAndrewCurves.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D06_PandasAndrewCurves.2D.xml>`__.
 
 
 
@@ -162,7 +157,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 .. |picPandasAndrewCurves| image:: ../_static/FuncPlots2D/FromPythonGallery1/PandasAndrewCurves.*
 
 
-**Left figure**: Pandas Andrew Curves
 
 
 
@@ -175,9 +169,9 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Highlighted LinePlot
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07a_HighlightedLinePlot1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D07a_HighlightedLinePlot1.py>`__.
+The Python code for the first example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07a_HighlightedLinePlot1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D07a_HighlightedLinePlot1.py>`__, and the XML code in the file `D07a_HighlightedLinePlot1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D07a_HighlightedLinePlot1.2D.xml>`__.
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07b_HighlightedLinePlot2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D07b_HighlightedLinePlot2.py>`__.
+The Python code for the second example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07b_HighlightedLinePlot2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D07b_HighlightedLinePlot2.py>`__, and the XML code in the file `D07b_HighlightedLinePlot2.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D07b_HighlightedLinePlot2.2D.xml>`__.
 
 
 
@@ -209,9 +203,9 @@ Some text
 Multiple Lines And Panels
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08a_MultipleLinesAndPanels1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D08a_MultipleLinesAndPanels1.py>`__.
+The Python code for the first example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08a_MultipleLinesAndPanels1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D08a_MultipleLinesAndPanels1.py>`__, and the XML code in the file `D08a_MultipleLinesAndPanels1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D08a_MultipleLinesAndPanels1.2D.xml>`__.
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08b_MultipleLinesAndPanels2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D08b_MultipleLinesAndPanels2.py>`__.
+The Python code for the second example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08b_MultipleLinesAndPanels2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D08b_MultipleLinesAndPanels2.py>`__, and the XML code in the file `D08b_MultipleLinesAndPanels2.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D08b_MultipleLinesAndPanels2.2D.xml>`__.
 
 
 
@@ -246,7 +240,7 @@ Some text
 Line chart with fancy formatting
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_LineChartWithFancyFormatting.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D09_LineChartWithFancyFormatting.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_LineChartWithFancyFormatting.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D09_LineChartWithFancyFormatting.py>`__, and the XML code in the file `D09_LineChartWithFancyFormatting.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D09_LineChartWithFancyFormatting.2D.xml>`__.
 
 
 
@@ -257,7 +251,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
    :width: 90%
 
 
-**Left figure**: Line Chart
 
 
 
@@ -272,7 +265,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Lolllipop 2 Groups
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_Lolllipop2Groups.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D10_Lolllipop2Groups.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D10_Lolllipop2Groups.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D10_Lolllipop2Groups.py>`__, and the XML code in the file `D10_Lolllipop2Groups.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D10_Lolllipop2Groups.2D.xml>`__.
 
 
 
@@ -283,7 +276,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
    :width: 90 %
 
 
-**Left figure**: Lolllipop 2 Groups
 
 
 
@@ -297,7 +289,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Highlight Group In Lollipop
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11_HighlightGroupInLollipop.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D11_HighlightGroupInLollipop.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D11_HighlightGroupInLollipop.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D11_HighlightGroupInLollipop.py>`__, and the XML code in the file `D11_HighlightGroupInLollipop.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D11_HighlightGroupInLollipop.2D.xml>`__.
 
 
 
@@ -308,7 +300,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
    :width: 90 %
 
 
-**Left figure**: HighlightGroupInLollipop
 
 
 
@@ -322,7 +313,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Lolllipop Conditional Color
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D12_LolllipopConditionalColor.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D12_LolllipopConditionalColor.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D12_LolllipopConditionalColor.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D12_LolllipopConditionalColor.py>`__, and the XML code in the file `D12_LolllipopConditionalColor.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D12_LolllipopConditionalColor.2D.xml>`__.
 
 
 
@@ -333,7 +324,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Lolllipop Conditional Color
 
 
 
@@ -352,7 +342,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Lollipop chart with fancy formatting
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13_LollipopFancyFormatting.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D13_LollipopFancyFormatting.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D13_LollipopFancyFormatting.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D13_LollipopFancyFormatting.py>`__, and the XML code in the file `D13_LollipopFancyFormatting.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D13_LollipopFancyFormatting.2D.xml>`__.
 
 
 
@@ -363,7 +353,6 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 
 
 
-**Left figure**: Lollipop Color Arrow
 
 
 
@@ -375,9 +364,11 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Circular Lolllipop
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D14a_CircularLolllipop1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D14a_CircularLolllipop1.py>`__.
+The Python code for the first example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D14a_CircularLolllipop1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D14a_CircularLolllipop1.py>`__, and the XML code in the file `D14a_CircularLolllipop1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D14a_CircularLolllipop1.2D.xml>`__.
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D14b_CircularLolllipop2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D14b_CircularLolllipop2.py>`__.
+The Python code for the second example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D14b_CircularLolllipop2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D14b_CircularLolllipop2.py>`__, and the XML code in the file `D14b_CircularLolllipop2.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D14b_CircularLolllipop2.2D.xml>`__.
+
+The Python code for the third example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D14b_CircularLolllipop3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B17_VisualisationOfDatasets/C02_LineCharts/D14c_CircularLolllipop3.py>`__, and the XML code in the file `D14c_CircularLolllipop3.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B17_VisualisationOfDatasets/C02_LineCharts/D14c_CircularLolllipop3.2D.xml>`__.
 
 
 

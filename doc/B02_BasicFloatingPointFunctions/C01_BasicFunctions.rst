@@ -163,7 +163,7 @@ Raw subtraction of a floating point number and a signed 32 bit integer
 
 .. method:: ctx.rawsubint32(res, x, i)
 
-.. method:: ctx.rawIntSub(res, x, i)
+.. method:: ctx.rawint32sub(res, x, i)
 
     where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
 
@@ -212,7 +212,7 @@ Raw division of a floating point number and a signed 32 bit integer
 
 .. method:: ctx.rawdivint32(res, x, i)
 
-.. method:: ctx.rawIntDiv(res, i, x)
+.. method:: ctx.rawint32div(res, i, x)
 
 
     where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.

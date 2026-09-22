@@ -278,7 +278,7 @@ Generalized Laguerre polynomials, `L^{(a)}_n (x)`
 
     where ``ctx`` is ``math53`` or ``ctxflint``.
 
-    Note: math53.laguerre(z, n, alpha)
+    Note: ctx.laguerre(z, n, alpha)
 
     Returns `\displaystyle L^{(a)}_n (x) = \binom{n+a}{n} M(-n,a+1,x) = \frac{\Gamma(n+a+1)}{\Gamma(n+1)\Gamma(a+1)} {}_1F_1(-n,a+1,x)`, the generalized Laguerre polynomials of degree `n \geq 0` with parameter `a; x \geq 0` and `a > -1` are the standard ranges. 
     
@@ -363,7 +363,7 @@ Hermite polynomial (physicist), `H_n(x)`
 Hermite polynomials (probabilist) `\operatorname{He}_n(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.hermite_he(n,x)
+.. method:: ctx.hermite_he(n,x)
 
     Returns `\operatorname{He}_n(x) = 2^{-n/2} H_n(x/\sqrt{2})`, the  probabilist's Hermite polynomial of degree `n \ge 0`. 
 

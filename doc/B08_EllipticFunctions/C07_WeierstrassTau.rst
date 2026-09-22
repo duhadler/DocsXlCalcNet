@@ -25,7 +25,7 @@ Weierstrass function `\wp(z| \tau)`
 -------------------------------------------------------------------------------
 
 
-.. method:: ctxflint.weierstrass_p_t(z, tau)
+.. method:: ctx.weierstrass_p_t(z, tau)
 
 
     Computes Weierstrass's elliptic function in terms of half-period `\omega_1` and elliptic period ratio `\tau`. 
@@ -96,7 +96,7 @@ Weierstrass function, first derivative: `\wp'z| \tau)`
 -------------------------------------------------------------------------------
 
 
-.. method:: ctxflint.weierstrass_p_prime_t(z, tau)
+.. method:: ctx.weierstrass_p_prime_t(z, tau)
 
     Computes the  first derivative of Weierstrass's elliptic function in terms of half-period `\omega_1` and elliptic period ratio `\tau`. 
 
@@ -158,7 +158,7 @@ Inverse Weierstrass function `\wp^{-1}(z| \tau)`
 -------------------------------------------------------------------------------
 
 
-.. method:: ctxflint.weierstrass_p_inv_t(z, tau)
+.. method:: ctx.weierstrass_p_inv_t(z, tau)
 
 
     Computes the inverse of the Weierstrass elliptic function in terms of half-period `\omega_1` and elliptic period ratio `\tau`. It which satisfies `\wp(\wp^{-1}(z, \tau), \tau) = z`. This function is given  by the elliptic integral
@@ -222,7 +222,7 @@ Weierstrass Zeta function `\zeta(z, \tau)`
 -------------------------------------------------------------------------------
 
 
-.. method:: ctxflint.weierstrass_zeta_t(z, tau)
+.. method:: ctx.weierstrass_zeta_t(z, tau)
 
 
     Computes the Weierstrass zeta function in terms of half-period `\omega_1` and elliptic period ratio `\tau`. 
@@ -296,7 +296,7 @@ Weierstrass Sigma function `\sigma(z| \tau)`
 -------------------------------------------------------------------------------
 
 
-.. method:: ctxflint.weierstrass_sigma_t(z, omega, tau)
+.. method:: ctx.weierstrass_sigma_t(z, omega, tau)
 
 
     Computes the Weierstrass sigma function in terms of half-period `\omega_1` and elliptic period ratio `\tau`. We have `\sigma(tz| t \omega, \tau) = t \sigma(z| \omega, \tau)`.

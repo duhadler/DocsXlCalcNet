@@ -41,8 +41,7 @@
 
 
 
-
-
+|newpage|
 
 Numpy logical functions: Truth value testing
 ==============================================================================

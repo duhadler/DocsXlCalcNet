@@ -33,7 +33,7 @@ This is a (slightly modified) example from the Matplotlib tutorials.
 See https://matplotlib.org/stable/gallery/lines_bars_and_markers/simple_plot.html
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_Simpleplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D01_Simpleplot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_Simpleplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D01_Simpleplot.py>`__, and the XML code in the file `D01_Simpleplot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D01_Simpleplot.2D.xml>`__.
 
 
 
@@ -62,7 +62,7 @@ See https://matplotlib.org/stable/gallery/subplots_axes_and_figures/two_scales.h
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_PlotDiffScales.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D02_PlotDiffScales.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_PlotDiffScales.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D02_PlotDiffScales.py>`__, and the XML code in the file `D02_PlotDiffScales.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D02_PlotDiffScales.2D.xml>`__.
 
 
 
@@ -91,7 +91,7 @@ This is an  example from the Matplotlib tutorials.
 See https://matplotlib.org/stable/gallery/lines_bars_and_markers/step_demo.html
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_Stepplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D03_Stepplot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_Stepplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D03_Stepplot.py>`__, and the XML code in the file `D03_Stepplot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D03_Stepplot.2D.xml>`__.
 
 
 |Stepplot|
@@ -118,7 +118,7 @@ See https://matplotlib.org/stable/gallery/lines_bars_and_markers/stem_plot.html#
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_Stemplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D04_Stemplot.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_Stemplot.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D04_Stemplot.py>`__, and the XML code in the file `D04_Stemplot.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D04_Stemplot.2D.xml>`__.
 
 
 
@@ -145,7 +145,7 @@ See https://matplotlib.org/stable/gallery/statistics/histogram_normalization.htm
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_HistogramsAndDensities.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D05_HistogramsAndDensities.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05_HistogramsAndDensities.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D05_HistogramsAndDensities.py>`__, and the XML code in the file `D05_HistogramsAndDensities.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D05_HistogramsAndDensities.2D.xml>`__.
 
 
 
@@ -174,7 +174,7 @@ This is an example from the Matplotlib tutorials.
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_CumulativeHistogramAndCDF.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D06_CumulativeHistogramAndCDF.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06_CumulativeHistogramAndCDF.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D06_CumulativeHistogramAndCDF.py>`__, and the XML code in the file `D06_CumulativeHistogramAndCDF.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D06_CumulativeHistogramAndCDF.2D.xml>`__.
 
 
 
@@ -201,7 +201,7 @@ Some text
 Probability density function (pdf)
 .......................................
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_DistPlotContinuous.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_DistPlotContinuous.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.py>`__, and the XML code in the file `D07_DistPlotContinuous.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -246,7 +246,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Cumulative distribution function (cdf)
 .......................................
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_DistPlotContinuous.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_DistPlotContinuous.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.py>`__, and the XML code in the file `D07_DistPlotContinuous.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -290,7 +290,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Survival function (sf)
 .......................................
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_DistPlotContinuous.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_DistPlotContinuous.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.py>`__, and the XML code in the file `D07_DistPlotContinuous.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -334,7 +334,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Hazard function (hf)
 .......................................
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_DistPlotContinuous.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_DistPlotContinuous.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.py>`__, and the XML code in the file `D07_DistPlotContinuous.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -378,7 +378,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Cumulative hazard function (chf)
 .......................................
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_DistPlotContinuous.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_DistPlotContinuous.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.py>`__, and the XML code in the file `D07_DistPlotContinuous.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -422,7 +422,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Quantile function (qtf)
 .......................................
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_DistPlotContinuous.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_DistPlotContinuous.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.py>`__, and the XML code in the file `D07_DistPlotContinuous.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -465,7 +465,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Inverse survival function (isf)
 .......................................
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_DistPlotContinuous.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07_DistPlotContinuous.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.py>`__, and the XML code in the file `D07_DistPlotContinuous.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D07_DistPlotContinuous.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -522,7 +522,7 @@ Plots of discrete distribution functions
 Probability mass function (pmf)
 .......................................
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_DistPlotDiscrete.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_DistPlotDiscrete.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.py>`__, and the XML code in the file `D08_DistPlotDiscrete.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -563,7 +563,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Cumulative distribution function (cdf)
 .......................................
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_DistPlotDiscrete.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_DistPlotDiscrete.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.py>`__, and the XML code in the file `D08_DistPlotDiscrete.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -606,7 +606,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Survival function (sf)
 .......................................
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_DistPlotDiscrete.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_DistPlotDiscrete.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.py>`__, and the XML code in the file `D08_DistPlotDiscrete.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -649,7 +649,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Hazard function (hf)
 .......................................
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_DistPlotDiscrete.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_DistPlotDiscrete.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.py>`__, and the XML code in the file `D08_DistPlotDiscrete.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -693,7 +693,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Cumulative hazard function (chf)
 .......................................
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_DistPlotDiscrete.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_DistPlotDiscrete.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.py>`__, and the XML code in the file `D08_DistPlotDiscrete.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -737,7 +737,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Quantile function (qtf)
 .......................................
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_DistPlotDiscrete.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_DistPlotDiscrete.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.py>`__, and the XML code in the file `D08_DistPlotDiscrete.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -783,7 +783,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Inverse survival function (isf)
 .......................................
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_DistPlotDiscrete.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D08_DistPlotDiscrete.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.py>`__, and the XML code in the file `D08_DistPlotDiscrete.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D08_DistPlotDiscrete.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -848,7 +848,7 @@ Simultaneous plot of sin and cos
 ..............................................................
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_FuncPlot2d.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D09_FuncPlot2d.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D09_FuncPlot2d.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D09_FuncPlot2d.py>`__, and the XML code in the file `D09_FuncPlot2d.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C01_Intro_Parametric2D/D09_FuncPlot2d.2D.xml>`__.
 
 
 To produce the figure as shown below, using the ``mpm`` context, the try-block at the end of the file should look like this:
@@ -867,7 +867,7 @@ To produce the figure as shown below, using the ``math53`` context, the try-bloc
 
     try:
         if __name__ == '__main__':
-            FuncPlot2d(ctx=math53, f=[math53.cos, math53.sin], xlim=[-4, 4], 
+            FuncPlot2d(ctx=math53, f=[ctx.cos, ctx.sin], xlim=[-4, 4], 
                 Title = 'Plot2dCosSin')
 
 
@@ -913,7 +913,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 
     try:
         if __name__ == '__main__':
-            FuncPlot2d(ctx=math53, f=[math53.acos, math53.asin], xlim=[-2, 2], 
+            FuncPlot2d(ctx=math53, f=[ctx.acos, ctx.asin], xlim=[-2, 2], 
                 Title = 'Simultaneous plot of asin and acos, using math53')
 
 
@@ -955,7 +955,7 @@ To produce the right figure as shown below, the try-block at the end of the file
 
     try:
         if __name__ == '__main__':
-            FuncPlot2d(ctx=math53, f=math53.cot, xlim=[-5, 5], ylim=[-5, 5], 
+            FuncPlot2d(ctx=math53, f=ctx.cot, xlim=[-5, 5], ylim=[-5, 5], 
                 Title = 'Cotangent, singularities not specified, Math53')   
 
 
@@ -997,8 +997,8 @@ To produce the right figure as shown below, the try-block at the end of the file
 
     try:
         if __name__ == '__main__':
-            FuncPlot2d(ctx=math53, f=math53.cot, xlim=[-5, 5], ylim=[-5, 5], 
-                singularities=[-math53.pi(), 0, math53.pi()], 
+            FuncPlot2d(ctx=math53, f=ctx.cot, xlim=[-5, 5], ylim=[-5, 5], 
+                singularities=[-ctx.pi(), 0, ctx.pi()], 
                 Title = 'Cotangent, singularities specified, math53') 
 
 

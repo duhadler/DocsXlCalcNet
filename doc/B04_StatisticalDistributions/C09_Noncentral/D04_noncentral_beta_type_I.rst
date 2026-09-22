@@ -32,9 +32,7 @@ See also  Wikipedia :cite:p:`WikipediaDis04`,  BoostMath :cite:p:`BoostDis04`, :
 
 .. _Ctx_BetaNcPdf:
 
-.. method:: Ctx.beta_nc_pdf(x, a, b, lambda1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.beta_nc_pdf(a, b, lambda1, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the noncentral beta distribution:
 
@@ -69,9 +67,7 @@ See also  Wikipedia :cite:p:`WikipediaDis04`,  BoostMath :cite:p:`BoostDis04`, :
 
 .. _Ctx_BetaNcCdf:
 
-.. method:: Ctx.beta_nc_cdf(x, a, b, lambda1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.beta_nc_cdf(a, b, lambda1, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the noncentral beta distribution:
 
@@ -100,9 +96,7 @@ See also  Wikipedia :cite:p:`WikipediaDis04`,  BoostMath :cite:p:`BoostDis04`, :
 
 .. _Ctx_BetaNcQtf:
 
-.. method:: Ctx.beta_nc_qtf(q, a, b, lambda1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.beta_nc_qtf(a, b, lambda1, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the noncentral beta distribution:
 

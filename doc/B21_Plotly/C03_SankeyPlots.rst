@@ -32,7 +32,7 @@ Sankey plots
 Sankey plot 1
 ---------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_PlotlySankey.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C03_SankeyPlots/D01_PlotlySankey.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_PlotlySankey.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C03_SankeyPlots/D01_PlotlySankey.py>`__, and the XML code in the file `D01_PlotlySankey.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B21_Plotly/C03_SankeyPlots/D01_PlotlySankey.2D.xml>`__.
 
 
 
@@ -57,7 +57,7 @@ Sankey plot 2
 ---------------------------------------------------------------------------------
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_PlotlySankey.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C03_SankeyPlots/D02_PlotlySankey.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_PlotlySankey.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C03_SankeyPlots/D02_PlotlySankey.py>`__, and the XML code in the file `D02_PlotlySankey.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B21_Plotly/C03_SankeyPlots/D02_PlotlySankey.2D.xml>`__.
 
 
 
@@ -81,7 +81,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Sankey plot 3
 ---------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_PlotlySankey.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C03_SankeyPlots/D03_PlotlySankey.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_PlotlySankey.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B21_Plotly/C03_SankeyPlots/D03_PlotlySankey.py>`__, and the XML code in the file `D03_PlotlySankey.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B21_Plotly/C03_SankeyPlots/D03_PlotlySankey.2D.xml>`__.
 
 
 

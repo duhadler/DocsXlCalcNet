@@ -26,12 +26,15 @@ Functions with real input and complex results
 Expj (Cis) function
 --------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D01a_Path_Func_Expj_2Dx.3D.xml (D01a-e) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C02_FunctionsR2C/D01a_Path_Func_Expj_2Dx.3D.xml>`__.
+
+
 Returns `e^{iz} = \cos(z) + i \sin(z)`. See also Wikipedia :cite:p:`WikipediaFun1035`, MathWorld :cite:p:`WolframFun1035`.
 
 
 
 
-An example in C\#, for real part only
+The example below uses the following code in C\#, for real part only
 
 .. code-block:: csharp
 
@@ -41,7 +44,7 @@ An example in C\#, for real part only
 
 
 
-An example in C\#, for imaginary part only
+The example below uses the following code in C\#, for imaginary part only
 
 .. code-block:: csharp
 
@@ -51,7 +54,7 @@ An example in C\#, for imaginary part only
 
 
 
-An example in C\#, for real and imaginary part combined
+The example below uses the following code in C\#, for real and imaginary part combined
 
 .. code-block:: csharp
 
@@ -114,38 +117,41 @@ Some text
 Hankel function of the first kind `H_{1, \nu}(x)`
 ----------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D02a_Path_Func_Hankel1_2Dx.3D.xml (D02a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C02_FunctionsR2C/D02a_Path_Func_Hankel1_2Dx.3D.xml>`__.
+
+
 Returns the Hankel function of the first kind, defined as `\displaystyle H^{(1)}_{\nu}(x) = J_{\nu}(x) + i Y_{\nu}(x)`.
 
 See also  Wikipedia :cite:p:`WikipediaFun142`, MathWorld :cite:p:`WolframFun142a`, NIST :cite:p:`DLMFun142`, BoostMath :cite:p:`BoostFun142`.
 
 
 
-An example in C\#, for real part only
+The example below uses the following code in C\#, for real part only
 
 .. code-block:: csharp
 
-    var y = math53.bessel_j0(t);
+    var y = ctx.bessel_j0(t);
     var x = t;
     var z = 0;
 
 
 
-An example in C\#, for imaginary part only
+The example below uses the following code in C\#, for imaginary part only
 
 .. code-block:: csharp
 
-    var z = -math53.bessel_y0(t);
+    var z = -ctx.bessel_y0(t);
     var x = t;
     var y = 0;
 
 
 
-An example in C\#, for real and imaginary part combined
+The example below uses the following code in C\#, for real and imaginary part combined
 
 .. code-block:: csharp
 
-    var z = math53.bessel_j0(t);
-    var y = -math53.bessel_y0(t);
+    var z = ctx.bessel_j0(t);
+    var y = -ctx.bessel_y0(t);
     var x = t;
 
 
@@ -189,6 +195,9 @@ An example in C\#, for real and imaginary part combined
 Hankel function of the second kind `H_{2, \nu}(x)`
 ------------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D03a_Path_Func_Hankel2_2Dx.3D.xml (D03a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C02_FunctionsR2C/D03a_Path_Func_Hankel2_2Dx.3D.xml>`__.
+
+
 Returns the Hankel function of the second kind, defined as `\displaystyle H^{(2)}_{\nu}(x) = J_{\nu}(x) - i Y_{\nu}(x)`.
 
 
@@ -196,32 +205,32 @@ See also  Wikipedia :cite:p:`WikipediaFun142`, MathWorld :cite:p:`WolframFun142b
 
 
 
-An example in C\#, for real part only
+The example below uses the following code in C\#, for real part only
 
 .. code-block:: csharp
 
-    var y = math53.bessel_j0(t);
+    var y = ctx.bessel_j0(t);
     var x = t;
     var z = 0;
 
 
 
-An example in C\#, for imaginary part only
+The example below uses the following code in C\#, for imaginary part only
 
 .. code-block:: csharp
 
-    var z = math53.bessel_y0(t);
+    var z = ctx.bessel_y0(t);
     var x = t;
     var y = 0;
 
 
 
-An example in C\#, for real and imaginary part combined
+The example below uses the following code in C\#, for real and imaginary part combined
 
 .. code-block:: csharp
 
-    var z = math53.bessel_j0(t);
-    var y = math53.bessel_y0(t);
+    var z = ctx.bessel_j0(t);
+    var y = ctx.bessel_y0(t);
     var x = t;
 
 
@@ -265,6 +274,9 @@ An example in C\#, for real and imaginary part combined
 Kelvin functions ber and bei
 ------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D04a_Path_Func_KelvinBerBei_2Dx.3D.xml (D04a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C02_FunctionsR2C/D04a_Path_Func_KelvinBerBei_2Dx.3D.xml>`__.
+
+
 Returns the Kelvin functions ber bei. See also  Wikipedia :cite:p:`WikipediaFun1040`, MathWorld :cite:p:`WolframFun1040`, NIST :cite:p:`DLMFun1040`.
 
 
@@ -276,36 +288,35 @@ The following conventions are used as in Maple (with `a = \sqrt{2}/2`):
 
 
 
-An example in C\#, for real part only
+The example below uses the following code in C\#, for the real part only
 
 .. code-block:: csharp
 
-    var a = math53.exp(t / math53.sqrt(2));
-    var y = math53.kelvin_ber(t) / a;
+    var a = ctx.exp(t / ctx.sqrt(2));
     var x = t;
+    var y = 0;
+    var z = ctx.kelvin_ber(1,t) / a;
+
+
+The example below uses the following code in C\#, for the imaginary part only
+
+.. code-block:: csharp
+
+    var a = ctx.exp(t / ctx.sqrt(2));
+    var x = t;
+    var y = ctx.kelvin_bei(1,t) / a;
     var z = 0;
 
 
 
-An example in C\#, for imaginary part only
+The example below uses the following code in C\#, for the real and imaginary parts combined
 
 .. code-block:: csharp
 
-    var a = math53.exp(t / math53.sqrt(2));
-    var z = -math53.kelvin_bei(t) / a;
+    var a = ctx.exp(t / ctx.sqrt(2));
     var x = t;
-    var y = 0;
-
-
-
-An example in C\#, for real and imaginary part combined
-
-.. code-block:: csharp
-
-    var a = math53.exp(t / math53.sqrt(2));
-    var z = math53.kelvin_ber(t) / a;
-    var y = -math53.kelvin_bei(t) / a;
-    var x = t;
+    var y = ctx.kelvin_bei(1,t) / a;
+    var z = ctx.kelvin_ber(1,t) / a;
 
 
 
@@ -345,6 +356,9 @@ An example in C\#, for real and imaginary part combined
 Kelvin functions ker and kei
 ---------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D05a_Path_Func_KelvinKerKei_2Dx.3D.xml (D05a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C02_FunctionsR2C/D05a_Path_Func_KelvinKerKei_2Dx.3D.xml>`__.
+
+
 Returns the Kelvin function ker.  See also  Wikipedia :cite:p:`WikipediaFun1042`, MathWorld :cite:p:`WolframFun1042`, NIST :cite:p:`DLMFun1040`.
 
 
@@ -357,36 +371,36 @@ The following conventions are used as in Maple (with `a = \sqrt{2}/2`):
 
 
 
-An example in C\#, for real part only
+The example below uses the following code in C\#, for real part only
 
 .. code-block:: csharp
 
-    var a = math53.exp(t / math53.sqrt(2));
-    var y = math53.kelvin_ker(t) * a;
+    var a = ctx.exp(t / ctx.sqrt(2));
     var x = t;
+    var y = 0;
+    var z = ctx.kelvin_ker(0,t) * a;
+
+
+
+The example below uses the following code in C\#, for imaginary part only
+
+.. code-block:: csharp
+
+    var a = ctx.exp(t / ctx.sqrt(2));
+    var x = t;
+    var y = ctx.kelvin_kei(0,t) * a;
     var z = 0;
 
 
 
-An example in C\#, for imaginary part only
+The example below uses the following code in C\#, for real and imaginary part combined
 
 .. code-block:: csharp
 
-    var a = math53.exp(t / math53.sqrt(2));
-    var z = -math53.kelvin_kei(t) * a;
+    var a = ctx.exp(t / ctx.sqrt(2));
     var x = t;
-    var y = 0;
-
-
-
-An example in C\#, for real and imaginary part combined
-
-.. code-block:: csharp
-
-    var a = math53.exp(t / math53.sqrt(2));
-    var z = math53.kelvin_ker(t) * a;
-    var y = -math53.kelvin_kei(t) * a;
-    var x = t;
+    var y = ctx.kelvin_kei(0,t) * a;
+    var z = ctx.kelvin_ker(0,t) * a;
 
 
 

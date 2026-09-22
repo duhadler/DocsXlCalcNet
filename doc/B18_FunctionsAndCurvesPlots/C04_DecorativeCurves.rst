@@ -42,7 +42,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D111`,  MathWorld :cite:p:`Wolfram2D111`,
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_FishCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C04_DecorativeCurves/D01_FishCurve.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_FishCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C04_DecorativeCurves/D01_FishCurve.py>`__, and the XML code in the file `D01_FishCurve.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C04_DecorativeCurves/D01_FishCurve.2D.xml>`__.
 
 
 
@@ -76,7 +76,7 @@ The heart curve has the parametric equation
 See also  Wikipedia :cite:p:`Wikipedia2D112`,  MathWorld :cite:p:`Wolfram2D112`.
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_HeartCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C04_DecorativeCurves/D02_HeartCurve.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_HeartCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C04_DecorativeCurves/D02_HeartCurve.py>`__, and the XML code in the file `D02_HeartCurve.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C04_DecorativeCurves/D02_HeartCurve.2D.xml>`__.
 
 
 
@@ -113,7 +113,7 @@ and in Cartesian coordinates
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_ChrysanthemumCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C04_DecorativeCurves/D03_ChrysanthemumCurve.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_ChrysanthemumCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C04_DecorativeCurves/D03_ChrysanthemumCurve.py>`__, and the XML code in the file `D03_ChrysanthemumCurve.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C04_DecorativeCurves/D03_ChrysanthemumCurve.2D.xml>`__.
 
 
 
@@ -150,7 +150,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D216`,  MathWorld :cite:p:`Wolfram2D216`.
 
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_ButterflyCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C04_DecorativeCurves/D04_ButterflyCurve.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04_ButterflyCurve.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C04_DecorativeCurves/D04_ButterflyCurve.py>`__, and the XML code in the file `D04_ButterflyCurve.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C04_DecorativeCurves/D04_ButterflyCurve.2D.xml>`__.
 
 
 |Butterfly_curve_a|

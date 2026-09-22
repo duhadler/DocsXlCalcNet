@@ -112,7 +112,7 @@ Riemann zeta function, `\zeta(s)`
 Riemann `\zeta(s)-1`
 -------------------------------------------------------------------------------
 
-.. method:: math53.zetam1(s)
+.. method:: ctx.zetam1(s)
 
     Returns the Riemann function `\zeta(s)-1 =  \zeta(s, 2)` for `s \ne 1`. 
 
@@ -338,7 +338,7 @@ Hardy (or Riemann-Siegel) Z function
 Riemann (Landau) function `\xi(s)`
 -------------------------------------------------------------------------------
 
-.. method:: ctxflint.riemann_xi(s)
+.. method:: ctx.riemann_xi(s)
 
 
 
@@ -398,7 +398,7 @@ Riemann (Landau) function `\xi(s)`
 Dirichlet eta function, `\eta(s)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.dirichlet_eta(x)
+.. method:: ctx.dirichlet_eta(x)
 
     Returns the Dirichlet eta function, defined as `\displaystyle \eta(s) = (1 - 2^{1-s})\zeta(s) = \sum_{k=0}^{\infty} \frac{(-1)^k}{k^s}` for `s>0` and by analytic continuation for `s \le 0`.
 
@@ -461,7 +461,7 @@ Dirichlet eta function, `\eta(s)`
 Dirichlet `\eta(s) - 1`
 -------------------------------------------------------------------------------
 
-.. method:: math53.dirichlet_eta_m1(s)
+.. method:: ctx.dirichlet_eta_m1(s)
 
     Returns the Dirichlet function `\eta(s)-1 = (\zeta(s)-1) - (2^{1-s} \zeta(s))`. 
 
@@ -521,7 +521,7 @@ Dirichlet `\eta(s) - 1`
 Dirichlet beta function, `\beta(s)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.dirichlet_beta(s) 
+.. method:: ctx.dirichlet_beta(s) 
 
     Returns the Dirichlet beta function, defined as `\displaystyle \beta(s) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)^s}`, for `s>0`, and by analytic continuation for `s \le 0`.
 
@@ -588,7 +588,7 @@ Dirichlet beta function, `\beta(s)`
 Dirichlet lambda function, `\lambda(s)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.dirichlet_lambda(s)
+.. method:: ctx.dirichlet_lambda(s)
 
     Returns the Dirichlet lambda function, defined as `\displaystyle \lambda(s) = \sum_{n=0}^{\infty} (2n+1)^{-s}, for `s>1`, and by analytic continuation for `s < 1`.
 
@@ -656,7 +656,7 @@ The function is calculated as
 Zeros of the Riemann zeta function
 -------------------------------------------------------------------------------
 
-.. method:: ctxflint.zeta_zero(n)
+.. method:: ctx.zeta_zero(n)
 
 
 

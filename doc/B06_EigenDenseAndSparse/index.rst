@@ -7,7 +7,6 @@
 Eigen: Dense and Sparse Matrices
 ************************************************************************************
 
-Text explaining this chapter
 
 
 
@@ -59,9 +58,11 @@ Part 4 contains the source code for test procedures which work only for real and
 
    C09_GeneralEigensystems.rst
 
-   C11_EigenFunctionsOfMatrixArgument.rst
+   C10_EigenPolynomials.rst
 
-   C12_EigenFFT.rst
+   C11_EigenFFT.rst
+
+   C12_EigenFunctionsOfMatrixArgument.rst
 
 
 

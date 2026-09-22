@@ -39,10 +39,6 @@ Scatter plot of bivariate normal
 
 
 
-**Left figure**: TestBivariateNormal_32.
-
-**Right figure**: 12_TestBivariateNormal_64
-
 
 
 
@@ -65,11 +61,6 @@ Scatter plot of surfaces
 .. |14_TestSurface2| image:: ../_static/ExplicitSurfaces/Scatterplots/14_TestSurface2.3D.xml.jpg
    :width: 30 %
 
-
-
-**Left figure**: 13_TestSurface1
-
-**Right figure**: 14_TestSurface2
 
 
 

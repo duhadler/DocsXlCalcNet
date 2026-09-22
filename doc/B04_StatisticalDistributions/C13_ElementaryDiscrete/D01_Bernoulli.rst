@@ -48,9 +48,7 @@ See also   Wikipedia :cite:p:`WikipediaDis31`, MathWorld :cite:p:`WolframDis31`,
 
 .. _Ctx_BernoulliPmf:
 
-.. method:: Ctx.bernoulli_pmf(k, p)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.bernoulli_pmf(p, k)
 
     Returns `\text{pmf}(x)`, the value of the probability mass function (:ref:`Pmf <Dist_Pmf>`) of the Bernoulli distribution. It is calculated using the relation `\text{pmf}(k) = 1 - p` for `k = 0`, else `p`.
 
@@ -70,9 +68,7 @@ See also   Wikipedia :cite:p:`WikipediaDis31`, MathWorld :cite:p:`WolframDis31`,
 
 .. _Ctx_BernoulliCdf:
 
-.. method:: Ctx.bernoulli_cdf(k, p)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.bernoulli_cdf(p, k)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the Bernoulli distribution. It is calculated using the relation `\text{cdf}(k) = 1 - p` for `k = 0`, else `1`.
 
@@ -93,9 +89,7 @@ See also   Wikipedia :cite:p:`WikipediaDis31`, MathWorld :cite:p:`WolframDis31`,
 
 .. _Ctx_BernoulliQtf:
 
-.. method:: Ctx.bernoulli_qtf(q, p)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.bernoulli_qtf(p, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the Bernoulli distribution.  It is calculated using the relation `\text{qtf}(k) = 0` for `k \le (1-p)`, else `1`.
 

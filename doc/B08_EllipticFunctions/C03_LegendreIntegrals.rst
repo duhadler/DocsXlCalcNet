@@ -53,7 +53,7 @@ Legendre complete elliptic integral of the first kind, `K(k)`
 
 
 
-    Note: the original names are: math53.compEllint1(k), ctxboost.Ellint_1_K(k), mathc53.Ellk(k), ctx.ellipticK(k).
+    Note: the original names are: ctx.compEllint1(k), ctxboost.Ellint_1_K(k), mathc53.Ellk(k), ctx.ellipticK(k).
 
     An example in Python
 
@@ -111,7 +111,7 @@ Legendre complete elliptic integral of the second kind, `E(k)`
 
     where ``ctx`` is ``math53``, ``mathc53``, ``ctxboost`` or ``ctxflint``.
 
-    Note: the original names are: math53.compEllint2(k), ctxboost.Ellint_2_K(k), mathc53.Elle(k), ctx.ellipticE(k).
+    Note: the original names are: ctx.compEllint2(k), ctxboost.Ellint_2_K(k), mathc53.Elle(k), ctx.ellipticE(k).
 
     Returns the Legendre complete elliptic integral of the  second kind,  `\displaystyle  E(k) = \int_0^{\pi/2} \sqrt{1-k^2 \sin^2(t)} \, \mathrm{d}t`. See also Wikipedia :cite:p:`WikipediaFun149`, MathWorld :cite:p:`WolframFun149`, NIST :cite:p:`DLMFun148`, BoostMath :cite:p:`BoostFun149`, :cite:t:`Ehrhardt2018` (3.2.1.2), :cite:t:`Ehrhardt2018` (4.2.29), Flint :cite:p:`FlintFun148`.
 
@@ -195,7 +195,7 @@ Legendre complete elliptic integral of the third kind, `\Pi(n; k)`
 
     where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
 
-    The original names are: math53.compEllint3(n, k), ctxboost.Ellint3K(n, k), ctx.ellipticPi(n, k).
+    The original names are: ctx.compEllint3(n, k), ctxboost.Ellint3K(n, k), ctx.ellipticPi(n, k).
 
     Returns the Legendre complete elliptic integral of the third kind,  `\displaystyle  \Pi(n; k) = \int_0^{\pi/2} \frac{\mathrm{d}t}{(1-n \sin^2(t)) \sqrt{1-k^2 \sin^2(t)}}`. See also Wikipedia :cite:p:`WikipediaFun150`, MathWorld :cite:p:`WolframFun150`, NIST :cite:p:`DLMFun148`, BoostMath :cite:p:`BoostFun150`, :cite:t:`Ehrhardt2018` (3.2.1.3), Flint :cite:p:`FlintFun148`.
 
@@ -262,7 +262,7 @@ Legendre incomplete elliptic integral of the first kind, `F(\phi,k)`
 
     where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
 
-    The original names are: math53.ellint1(phi, k), ctxboost.Ellint1F(phi, k), ctx.ellipticF(phi, k),
+    The original names are: ctx.ellint1(phi, k), ctxboost.Ellint1F(phi, k), ctx.ellipticF(phi, k),
 
     Returns the Legendre incomplete elliptic integral of the first kind,  `\displaystyle  F(\phi,k) = \int_0^{\phi} \frac{\mathrm{d}t}{\sqrt{1-k^2 \sin^2(t)}}`. See also Wikipedia :cite:p:`WikipediaFun151`, MathWorld :cite:p:`WolframFun151`, NIST :cite:p:`DLMFun148`, BoostMath :cite:p:`BoostFun148`, :cite:t:`Ehrhardt2018` (3.2.1.6), Flint :cite:p:`FlintFun151`, Mpmath :cite:p:`MpmathFun151`. 
 
@@ -325,7 +325,7 @@ Legendre incomplete elliptic integral of the second kind, `E(\phi,k)`
 
     where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
 
-    The original names are: math53.ellint2(phi, k), ctxboost.Ellint2E(phi, k), ctx.ellipticEInc(phi, k).
+    The original names are: ctx.ellint2(phi, k), ctxboost.Ellint2E(phi, k), ctx.ellipticEInc(phi, k).
 
     Returns the Legendre incomplete elliptic integral of the second kind,  `\displaystyle  E(\phi,k) = \int_0^{\phi} \sqrt{1-k^2 \sin^2(t)} \, \mathrm{d}t`. See also Wikipedia :cite:p:`WikipediaFun152`, MathWorld :cite:p:`WolframFun152`, NIST :cite:p:`DLMFun148`, BoostMath :cite:p:`BoostFun149`, :cite:t:`Ehrhardt2018` (3.2.1.7), Flint :cite:p:`FlintFun151`, Mpmath :cite:p:`MpmathFun152`.
 
@@ -388,7 +388,7 @@ Legendre incomplete elliptic integral of the third kind, `\Pi(n, \phi, k)`
 
     where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
 
-    The original names are: math53.ellint3(phi, n, k), ctxboost.Ellint3F(phi, n, k), ctx.ellipticPiInc(phi, n, k).
+    The original names are: ctx.ellint3(phi, n, k), ctxboost.Ellint3F(phi, n, k), ctx.ellipticPiInc(phi, n, k).
 
     Returns the Legendre incomplete elliptic integral of the third kind,  `\displaystyle  \Pi(n, \phi, k) = \int_0^{\phi} \frac{\mathrm{d}t}{(1-n \sin^2(t)) \sqrt{1-k^2 \sin^2(t)}}`. See also Wikipedia :cite:p:`WikipediaFun153`, MathWorld :cite:p:`WolframFun153`, NIST :cite:p:`DLMFun148`, BoostMath :cite:p:`BoostFun150`, :cite:t:`Ehrhardt2018` (3.2.1.8), Flint :cite:p:`FlintFun151`, Mpmath :cite:p:`MpmathFun153`. 
 

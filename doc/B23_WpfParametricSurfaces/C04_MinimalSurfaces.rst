@@ -33,6 +33,19 @@ Minimal surfaces
 Catenoid
 -----------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D01a_Catenoid.3D.xml (D01a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C04_MinimalSurfaces/D01a_Catenoid.3D.xml>`__.
+
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var c = 2;
+    var x = c * Math.Cosh(v / c) * Math.Cos(u);
+    var y = c * Math.Cosh(v / c) * Math.Sin(u);
+    var z = v;
+
 
 See also: https://mathworld.wolfram.com/Catenoid.html
 
@@ -57,7 +70,6 @@ See also: https://mathworld.wolfram.com/Catenoid.html
 
 
 
-**Left figure**: Catenoid
 
 
 
@@ -68,6 +80,20 @@ See also: https://mathworld.wolfram.com/Catenoid.html
 
 Helicoid
 -------------------------------------
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D02a_Helicoid.3D.xml (D02a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C04_MinimalSurfaces/D02a_Helicoid.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var x = u * Math.Cos(v);
+    var y = u * Math.Sin(v);
+    var z = v;
+
+
+
 
 
 See also: https://mathworld.wolfram.com/Helicoid.html
@@ -95,16 +121,6 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-
-.. code-block:: csharp
-
-    double a = 1;
-    x = u * Math.Cos(v);
-    z = u * Math.Sin(v);
-    y = v;
-
-
-
 References
 
 Gray, A. Modern Differential Geometry of Curves and Surfaces with Mathematica, 2nd ed. Boca Raton, FL: CRC Press, pp. 449 and 644, 1997.
@@ -120,25 +136,32 @@ Gray, A. Modern Differential Geometry of Curves and Surfaces with Mathematica, 2
 Bours minimal surface
 ------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D03a_Bour.3D.xml (D03a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C04_MinimalSurfaces/D03a_Bour.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var sv = Math.Sin(v);
+    var s2v = Math.Sin(2 * v);
+    var c32u = Math.Cos(1.5 * v);
+    var cv = Math.Cos(v);
+    var c2v = Math.Cos(2 * v);
+    var u2 = 0.5 * u * u;
+    var u32 = (4.0 / 3.0) * Math.Sqrt(u * u * u);
+
+    var x = u * cv - u2 * c2v;
+    var y = -u * sv - u2 * s2v;
+    var z = u32 * c32u;
+
+
+
 
 See also: https://mathworld.wolfram.com/BoursMinimalSurface.html
 
 See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
-
-
-.. code-block:: csharp
-
-    double sv = Math.Sin(v);
-    double s2v = Math.Sin(2*v);
-    double c32u = Math.Cos(1.5*v);
-    double cv = Math.Cos(v);
-    double c2v = Math.Cos(2*v);
-    double u2 = 0.5*u*u;
-    double u32 = (4/3)* Math.Sqrt(u*u*u);
-    x = u * cv - u2 * c2v;
-    y = -u * sv - u2 * s2v;
-    z = u32 * c32u;
 
 
 
@@ -170,6 +193,17 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 Catalan minimal surface
 --------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D04a_Catalan.3D.xml (D04a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C04_MinimalSurfaces/D04a_Catalan.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var x = u - Math.Sin(u) * Math.Cosh(v);
+    var y = 4 * Math.Sin(u / 2) * Math.Sinh(v / 2);
+    var z = 1 - Math.Cos(u) * Math.Cosh(v);
+
 
 See also: https://mathworld.wolfram.com/CatalanMinimalSurface.html
 
@@ -177,12 +211,6 @@ See also: https://en.wikipedia.org/wiki/Catalan%27s_minimal_surface
 
 See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
-
-.. code-block:: csharp
-
-    x = u - u * u * u / 3 + u * v * v;
-    y = u * u - v * v;
-    z = v - v * v * v / 3 + v * u * u;
 
 
 
@@ -217,6 +245,17 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 Ennepers first minimal surface
 -------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D05a_Enneper.3D.xml (D05a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C04_MinimalSurfaces/D05a_Enneper.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var x = u - u * u * u / 3 + u * v * v;
+    var y = u * u - v * v;
+    var z = v - v * v * v / 3 + v * u * u;
+
 
 See also: https://mathworld.wolfram.com/EnnepersMinimalSurface.html
 
@@ -226,14 +265,7 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-.. code-block:: csharp
 
-    x = u - u * u * u / 3 + u * v * v;
-    y = u * u - v * v;
-    z = v - v * v * v / 3 + v * u * u;
-
-
-    
 
 |05a_Enneper.3D| `\quad` |05b_Enneper.3D| `\quad` |05c_Enneper.3D|
 
@@ -262,6 +294,25 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 Enneper second minimal surface
 ------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D06a_Enneper2.3D.xml (D06a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C04_MinimalSurfaces/D06a_Enneper2.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var n = 2;
+    var a = 1;
+
+    Complex i = Complex.ImaginaryOne;
+    Complex w = new Complex(u, v);
+    Complex w2nm1 = Complex.Pow(w, 2 * n - 1) / (2 * n - 1);
+    Complex wn = Complex.Pow(w, n);
+
+    var x = a * (w - w2nm1).Real;
+    var y = a * (-i * (w + w2nm1)).Real;
+    var z = 2 * a * (wn / n).Real;
+
 
 See also: https://mathcurve.com/surfaces.gb/enneper/enneper.shtml
 
@@ -270,20 +321,6 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 
 
-.. code-block:: csharp
-
-    double n = 2;
-    double a = 1;
-                
-    Complex i = Complex.ImaginaryOne;
-    Complex w = new Complex(u, v);
-    Complex w2nm1 = Complex.Pow(w, 2*n-1)/(2*n-1);
-    Complex wn = Complex.Pow(w, n);
-    x = a * (w - w2nm1).Real;
-    y = a * (-i*(w + w2nm1)).Real;
-    z = 2 * a * (wn/n).Real;
-
-    
 
 |06a_Enneper2.3D| `\quad` |06b_Enneper2.3D| `\quad` |06c_Enneper2.3D|
 
@@ -311,6 +348,26 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 Hennebergs minimal surface
 ------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D07a_Henneberg.3D.xml (D07a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C04_MinimalSurfaces/D07a_Henneberg.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var sv = Math.Sin(v);
+    var s3v = Math.Sin(3 * v);
+    var cv = Math.Cos(v);
+    var c2v = Math.Cos(2 * v);
+    var c3v = Math.Cos(3 * v);
+    var shu = Math.Sinh(u);
+    var ch2u = Math.Cosh(2 * u);
+    var sh3u = Math.Sinh(3 * u);
+
+    var x = 2 * shu * cv - (2.0 / 3.0) * sh3u * c3v;
+    var y = 2 * shu * sv + (2.0 / 3.0) * sh3u * s3v;
+    var z = 2 * ch2u * c2v;
+
 
 See also: https://mathworld.wolfram.com/HennebergsMinimalSurface.html
 
@@ -318,21 +375,6 @@ See also: https://en.wikipedia.org/wiki/Henneberg_surface
 
 See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
-
-
-.. code-block:: csharp
-
-    double sv = Math.Sin(v);
-    double s3v = Math.Sin(3*v);
-    double cv = Math.Cos(v);
-    double c2v = Math.Cos(2*v);
-    double c3v = Math.Cos(3*v);
-    double shu = Math.Sinh(u);
-    double ch2u = Math.Cosh(2*u);
-    double sh3u = Math.Sinh(3*u);
-    x = 2*shu * cv - (2.0/3.0)*sh3u * c3v;
-    y = 2*shu * sv + (2.0/3.0)*sh3u * s3v;
-    z = 2*ch2u * c2v;
 
 
     
@@ -363,21 +405,24 @@ See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 Scherk’s first minimal surface
 -------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D08a_Scherk1.3D.xml (D08a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C04_MinimalSurfaces/D08a_Scherk1.3D.xml>`__.
+
+
+The example below uses the following code in C\#
+
+.. code-block:: csharp
+
+    var a = 1 / Math.PI;
+    var y = u;
+    var x = a * Math.Log(Math.Cos(v / a) / Math.Cos(u / a));
+    var z = v;
+
 
 See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
 
 See also https://mathcurve.com/surfaces.gb/scherk/scherk.shtml
 See also  :cite:t:`Krivoshapko2015`, p. 431
 
-
-
-.. code-block:: csharp
-
-    var a = 1 / Math.PI;
-    var x = u;
-    var z = v;
-    var y = a * Math.Log(Math.Cos(v / a) / Math.Cos(u / a));
-    z = -z;
 
 
 
@@ -408,14 +453,10 @@ See also  :cite:t:`Krivoshapko2015`, p. 431
 Scherk’s second minimal surface
 --------------------------------------------------
 
-
-See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
-
-See also https://mathworld.wolfram.com/ScherksMinimalSurfaces.html
-
-See also  :cite:t:`Krivoshapko2015`, p. 442
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D09a_Scherk2.3D.xml (D09a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C04_MinimalSurfaces/D09a_Scherk2.3D.xml>`__.
 
 
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -429,6 +470,12 @@ See also  :cite:t:`Krivoshapko2015`, p. 442
     var z = 2 * Math.Atan((2 * r2 * Math.Sin(2 * t)) / (r2 * r2 - 1));
     y = -y;
 
+
+See also  Wikipedia :cite:p:`Wikipedia2D101`,  MathWorld :cite:p:`Wolfram3D101`.
+
+See also https://mathworld.wolfram.com/ScherksMinimalSurfaces.html
+
+See also  :cite:t:`Krivoshapko2015`, p. 442
 
 
 
@@ -461,11 +508,10 @@ See also  :cite:t:`Krivoshapko2015`, p. 442
 Richmond minimal surface
 -------------------------------------------------------------------------
 
-
-// See also: http://www.3d-meier.de/tut3/Seite250.html  // Richmond Surface III
-// See also: https://en.wikipedia.org/wiki/Richmond_surface
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D10a_Richmond.3D.xml (D10a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C04_MinimalSurfaces/D10a_Richmond.3D.xml>`__.
 
 
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -476,8 +522,13 @@ Richmond minimal surface
     var z = Math.Pow(u, n) * Math.Cos(n * v) / n;
 
 
+// See also: http://www.3d-meier.de/tut3/Seite250.html  // Richmond Surface III
+// See also: https://en.wikipedia.org/wiki/Richmond_surface
 
-    
+
+
+
+
 
 
 |10a_Richmond.3D| `\quad` |10b_Richmond.3D| `\quad` |10c_Richmond.3D|
@@ -524,11 +575,10 @@ Richmond minimal surface
 Generalized Ennneper surfaces
 -------------------------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D11a_GenEnneper.3D.xml (D11a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B23_WpfParametricSurfaces/C04_MinimalSurfaces/D11a_GenEnneper.3D.xml>`__.
 
 
-// See also: http://www.3d-meier.de/tut3/Seite247.html  // Wavy Enneper Surface
-
-
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -540,7 +590,11 @@ Generalized Ennneper surfaces
 
 
 
-    
+// See also: http://www.3d-meier.de/tut3/Seite247.html  // Wavy Enneper Surface
+
+
+
+
 
 |11a_GenEnneper.3D| `\quad` |11b_GenEnneper.3D| `\quad` |11c_GenEnneper.3D|
 

@@ -31,9 +31,7 @@ See also  Wikipedia :cite:p:`WikipediaDis45`, MathWorld :cite:p:`WolframDis45`, 
 
 .. _Ctx_SkewnormalPdf:
 
-.. method:: Ctx.skewnormal_pdf(x, a, b, c)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.skewnormal_pdf(a, b, c, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the skew normal distribution:
 
@@ -55,9 +53,7 @@ See also  Wikipedia :cite:p:`WikipediaDis45`, MathWorld :cite:p:`WolframDis45`, 
 
 .. _Ctx_SkewnormalCdf:
 
-.. method:: Ctx.skewnormal_cdf(x, a, b, c)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.skewnormal_cdf(a, b, c, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the skew normal distribution:
 
@@ -79,9 +75,7 @@ See also  Wikipedia :cite:p:`WikipediaDis45`, MathWorld :cite:p:`WolframDis45`, 
 
 .. _Ctx_SkewnormalQtf:
 
-.. method:: Ctx.skewnormal_qtf(q, a, b, c)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.skewnormal_qtf(a, b, c, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the skew normal distribution:
 

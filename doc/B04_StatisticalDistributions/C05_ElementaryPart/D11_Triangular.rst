@@ -31,9 +31,7 @@ See also  Wikipedia :cite:p:`WikipediaDis23`, MathWorld :cite:p:`WolframDis23`, 
 
 .. _Ctx_TriangularPdf:
 
-.. method:: Ctx.triangular_pdf(x, lower, mode, upper)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.triangular_pdf(lower, mode, upper, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the triangular distribution:
 
@@ -61,9 +59,7 @@ See also  Wikipedia :cite:p:`WikipediaDis23`, MathWorld :cite:p:`WolframDis23`, 
 
 .. _Ctx_TriangularCdf:
 
-.. method:: Ctx.triangular_cdf(x, lower, mode, upper)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.triangular_cdf(lower, mode, upper, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the triangular distribution:
 
@@ -92,9 +88,7 @@ See also  Wikipedia :cite:p:`WikipediaDis23`, MathWorld :cite:p:`WolframDis23`, 
 
 .. _Ctx_TriangularQtf:
 
-.. method:: Ctx.triangular_qtf(q, lower, mode, upper)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.triangular_qtf(lower, mode, upper, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the triangular distribution:
 

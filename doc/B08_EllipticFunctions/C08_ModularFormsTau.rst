@@ -27,7 +27,7 @@ Dedekind eta function `\eta(\tau)`
 -------------------------------------------------------------------------------
 
 
-.. method:: ctxflint.dedekind_eta(tau) 
+.. method:: ctx.dedekind_eta(tau) 
 
 
 
@@ -91,7 +91,7 @@ Elliptic modular lambda function `\lambda(\tau)` (also DAMath)
 -------------------------------------------------------------------------------
 
 
-.. method:: ctxflint.math53.elliptic_modular_lambda(tau) 
+.. method:: ctx.ctx.elliptic_modular_lambda(tau) 
 
 
     Computes the lambda function `\lambda(\tau) = \theta_2^4(0,\tau) / \theta_3^4(0,\tau)` in terms of elliptic period ratio `\tau`. It is invariant under modular transformations `(a, b; c, d)` where `a, d` are odd and `b, c` are even.
@@ -152,7 +152,7 @@ Elliptic modular delta function `\Delta(\omega, \tau)`
 -------------------------------------------------------------------------------
 
 
-.. method:: ctxflint.math53.elliptic_modular_delta(omega, tau) 
+.. method:: ctx.ctx.elliptic_modular_delta(omega, tau) 
 
 
     Computes the modular discriminant `\Delta(\tau) = \eta(\tau)^{24}` in terms of half-period `\omega_1` and elliptic period ratio `\tau`.  It transforms as
@@ -227,7 +227,7 @@ Klein j-invariant `j(\tau )` (also DAMath)
 -------------------------------------------------------------------------------
 
 
-.. method:: ctxflint.klein_j(tau)
+.. method:: ctx.klein_j(tau)
 
 
     Returns the Klein `j`-invariant in terms of elliptic period ratio `\tau`. See also Wikipedia :cite:p:`WikipediaFun1006`, MathWorld :cite:p:`WolframFun1006`, NIST :cite:p:`DLMFun155`, Flint :cite:p:`FlintFun195`, Mpmath :cite:p:`MpmathFun1006`.

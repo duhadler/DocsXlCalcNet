@@ -29,7 +29,7 @@ Open Contourplot
 ------------------------------------------------------------------------------------------
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_ContourOpen.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D01_ContourOpen.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_ContourOpen.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D01_ContourOpen.py>`__, and the XML code in the file `D01_ContourOpen.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C07_Contours/D01_ContourOpen.2D.xml>`__.
 
 
 
@@ -53,7 +53,7 @@ Filled Contourplot
 ------------------------------------------------------------------------------------------
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_ContourFilled.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D02_ContourFilled.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02_ContourFilled.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D02_ContourFilled.py>`__, and the XML code in the file `D02_ContourFilled.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C07_Contours/D02_ContourFilled.2D.xml>`__.
 
 
 
@@ -77,7 +77,7 @@ The Python code for the example below can be found online in the ``DataXlCalcNet
 Electric dipole: field lines and open contours
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__, and the XML code in the file `D03_08_FieldLinesContours.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -113,7 +113,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Electric quadrupole: field lines and open contours
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__, and the XML code in the file `D03_08_FieldLinesContours.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -145,7 +145,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Electric dipoles: field lines and filled contours
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__, and the XML code in the file `D03_08_FieldLinesContours.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -178,7 +178,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Electric quadrupole: field lines and filled contours
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__, and the XML code in the file `D03_08_FieldLinesContours.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -208,7 +208,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Orthogonal electric dipoles: field lines and filled contours
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__, and the XML code in the file `D03_08_FieldLinesContours.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
@@ -238,7 +238,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Electric field lines around a point charge with grounded sphere
 ------------------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03_08_FieldLinesContours.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.py>`__, and the XML code in the file `D03_08_FieldLinesContours.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B18_FunctionsAndCurvesPlots/C07_Contours/D03_08_FieldLinesContours.2D.xml>`__.
 
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:

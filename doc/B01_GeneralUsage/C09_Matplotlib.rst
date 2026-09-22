@@ -129,8 +129,6 @@ Some text
 
 
 
-**Left figure**: picWorldFlight
-
 
 
 
@@ -153,9 +151,6 @@ Some text
 
 .. |picTravelling_Salesman| image:: ../_static/ParametricCurves/Networkx/Travelling_Salesman.*
 
-
-
-**Left figure**: Travelling_Salesman
 
 
 
@@ -191,7 +186,6 @@ See: https://s3dlib.org/tutorials/render_control/visualization3d.html
 
 .. |picHello_World_Example_2b| image:: ../_static/Graphics3D/S3dlib/Hello_World_Example_2b.png
 
-**Left figure**:  Hello_World_Example_2b.
 
 
 

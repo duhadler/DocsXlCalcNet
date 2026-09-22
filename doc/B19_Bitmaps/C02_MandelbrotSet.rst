@@ -50,10 +50,11 @@ Mandelbrot set, example 1, classical set: `z_{n+1} = z_n^2 + c`
 Classical formula: `z_{n+1} = z_n^2 + c`.
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01a_Mandelbrot1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D01a_Mandelbrot1.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01a_Mandelbrot1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D01a_Mandelbrot1.py>`__, and the XML code in the file `D01a_Mandelbrot1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C02_MandelbrotSet/D01a_Mandelbrot1.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01b_Mandelbrot1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D01b_Mandelbrot1.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01b_Mandelbrot1.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D01b_Mandelbrot1.py>`__, and the XML code in the file `D01b_Mandelbrot1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C02_MandelbrotSet/D01b_Mandelbrot1.2D.xml>`__.
+
 
 
 .. image:: ../_static/Combining2D3D/Mandelbrot/Mandelbrot1.*
@@ -74,10 +75,10 @@ Mandelbrot set, example 2: higher powers
 Recursion formula: `\displaystyle z_{n+1} = z_n^5 + c`.
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02a_Mandelbrot2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D02a_Mandelbrot2.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02a_Mandelbrot2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D02a_Mandelbrot2.py>`__, and the XML code in the file `D02a_Mandelbrot2.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C02_MandelbrotSet/D02a_Mandelbrot2.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02b_Mandelbrot2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D02b_Mandelbrot2.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D02b_Mandelbrot2.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D02b_Mandelbrot2.py>`__, and the XML code in the file `D02b_Mandelbrot2.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C02_MandelbrotSet/D02b_Mandelbrot2.2D.xml>`__.
 
 
 See also: https://paulbourke.net/fractals/mandelpower/
@@ -105,11 +106,10 @@ Recursion formula: `\displaystyle z_{n+1} = z_n^5 + \frac{c}{z_n}`.
 See also: http://www.3d-meier.de/, Mandelbrot und Julia Mengen
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03a_Mandelbrot3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D03a_Mandelbrot3.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03a_Mandelbrot3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D03a_Mandelbrot3.py>`__, and the XML code in the file `D03a_Mandelbrot3.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C02_MandelbrotSet/D03a_Mandelbrot3.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03b_Mandelbrot3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D03b_Mandelbrot3.py>`__.
-
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D03b_Mandelbrot3.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D03b_Mandelbrot3.py>`__, and the XML code in the file `D03b_Mandelbrot3.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C02_MandelbrotSet/D03b_Mandelbrot3.2D.xml>`__.
 
 
 .. image:: ../_static/Combining2D3D/Mandelbrot/Mandelbrot6.*
@@ -134,10 +134,10 @@ See also: http://www.3d-meier.de/, Mandelbrot und Julia Mengen
 
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04a_Mandelbrot4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D04a_Mandelbrot4.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04a_Mandelbrot4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D04a_Mandelbrot4.py>`__, and the XML code in the file `D04a_Mandelbrot4.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C02_MandelbrotSet/D04a_Mandelbrot4.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04b_Mandelbrot4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D04b_Mandelbrot4.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D04b_Mandelbrot4.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D04b_Mandelbrot4.py>`__, and the XML code in the file `D04b_Mandelbrot4.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C02_MandelbrotSet/D04b_Mandelbrot4.2D.xml>`__.
 
 
 
@@ -164,10 +164,10 @@ See also: http://www.3d-meier.de/, Mandelbrot und Julia Mengen
 
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05a_Mandelbrot5.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D05a_Mandelbrot5.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05a_Mandelbrot5.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D05a_Mandelbrot5.py>`__, and the XML code in the file `D05a_Mandelbrot5.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C02_MandelbrotSet/D05a_Mandelbrot5.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05b_Mandelbrot5.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D05b_Mandelbrot5.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D05b_Mandelbrot5.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D05b_Mandelbrot5.py>`__, and the XML code in the file `D05b_Mandelbrot5.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C02_MandelbrotSet/D05b_Mandelbrot5.2D.xml>`__.
 
 
 
@@ -197,10 +197,10 @@ See also: https://paulbourke.net/fractals/marek/
 
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06a_Mandelbrot6.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D06a_Mandelbrot6.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06a_Mandelbrot6.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D06a_Mandelbrot6.py>`__, and the XML code in the file `D06a_Mandelbrot6.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C02_MandelbrotSet/D06a_Mandelbrot6.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06b_Mandelbrot6.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D06b_Mandelbrot6.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D06b_Mandelbrot6.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D06b_Mandelbrot6.py>`__, and the XML code in the file `D06b_Mandelbrot6.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C02_MandelbrotSet/D06b_Mandelbrot6.2D.xml>`__.
 
 
 
@@ -231,10 +231,10 @@ See also: https://paulbourke.net/fractals/burnship/
 
 
 
-The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07a_Mandelbrot7.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D07a_Mandelbrot7.py>`__.
+The Python code for the example below, *without* using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07a_Mandelbrot7.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D07a_Mandelbrot7.py>`__, and the XML code in the file `D07a_Mandelbrot7.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C02_MandelbrotSet/D07a_Mandelbrot7.2D.xml>`__.
 
 
-The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07b_Mandelbrot7.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D07b_Mandelbrot7.py>`__.
+The Python code for the example below, using ``numba``, can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D07b_Mandelbrot7.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C02_MandelbrotSet/D07b_Mandelbrot7.py>`__, and the XML code in the file `D07b_Mandelbrot7.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C02_MandelbrotSet/D07b_Mandelbrot7.2D.xml>`__.
 
 
 

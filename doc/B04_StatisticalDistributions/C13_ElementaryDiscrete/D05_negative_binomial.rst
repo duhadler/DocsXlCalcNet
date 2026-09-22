@@ -32,9 +32,7 @@ See also   Wikipedia :cite:p:`WikipediaDis34`, MathWorld :cite:p:`WolframDis34`,
 
 .. _Ctx_NegbinomPmf:
 
-.. method:: Ctx.negbinomial_pmf(k, r, p)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.negbinomial_pmf(r, p, k)
 
     Returns `\text{pmf}(x)`, the value of the probability mass function (:ref:`Pmf <Dist_Pmf>`) of the negative binomial distribution:
 
@@ -56,7 +54,7 @@ See also   Wikipedia :cite:p:`WikipediaDis34`, MathWorld :cite:p:`WolframDis34`,
 
 .. _Ctx_NegbinomCdf:
 
-.. method:: Ctx.negbinomial_cdf(k, r, p)
+.. method:: math53.negbinomial_cdf(r, p, k)
 
     where ``Ctx`` is ``Math53`` or ``CtxBoost``.
 
@@ -83,9 +81,7 @@ See also   Wikipedia :cite:p:`WikipediaDis34`, MathWorld :cite:p:`WolframDis34`,
 
 .. _Ctx_NegbinomQtf:
 
-.. method:: Ctx.negbinomial_qtf(q, r, p)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.negbinomial_qtf(r, p, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the negative binomial distribution:
 

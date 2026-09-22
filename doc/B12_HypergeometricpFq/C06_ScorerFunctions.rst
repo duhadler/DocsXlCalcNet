@@ -24,7 +24,7 @@ Scorer functions
 Scorer function `\mathrm{Gi}(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.scorer_gi(x)
+.. method:: ctx.scorer_gi(x)
 
     Returns the Scorer function Gi, which gives a particular solution to the inhomogeneous Airy differential equation `f''(x) - x f(x) = 1/\pi`. 
 
@@ -99,7 +99,7 @@ Scorer function `\mathrm{Gi}(x)`
 Scorer function `\mathrm{Hi}(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.scorer_hi(x)
+.. method:: ctx.scorer_hi(x)
 
     Returns the Scorer function Hi, which gives a particular solution to the inhomogeneous Airy differential equation `f''(x) - x f(x) = 1/\pi`. 
 
@@ -173,7 +173,7 @@ Scorer function `\mathrm{Hi}(x)`
 First derivative of the Scorer function `\mathrm{Gi}(x)`, `\mathrm{Gi}'(x)`
 ---------------------------------------------------------------------------------------
 
-.. method:: math53.scorer_gi_prime(x)
+.. method:: ctx.scorer_gi_prime(x)
 
     Returns `\mathrm{Gi}'(x)`, the first derivative of the Airy (Scorer) function `\mathrm{Gi}(x)`.
 
@@ -241,7 +241,7 @@ First derivative of the Scorer function `\mathrm{Gi}(x)`, `\mathrm{Gi}'(x)`
 First derivative of the Scorer function `\mathrm{Hi}(x)`, `\mathrm{Hi}'(x)`
 ---------------------------------------------------------------------------------------
 
-.. method:: math53.scorer_hi_prime(x)
+.. method:: ctx.scorer_hi_prime(x)
 
     Returns `\mathrm{Hi}'(x)`, the first derivative of the Airy (Scorer) function `\mathrm{Hi}(x)`.
 

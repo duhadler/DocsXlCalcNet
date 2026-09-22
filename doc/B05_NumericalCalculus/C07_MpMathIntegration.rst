@@ -703,7 +703,7 @@ Verified numerical integration (Okayama)
 
 
 
-    If equation \ref{eq:gFormula} does not give a useful alternative representation of `f`, we set `\alpha = \beta = 1`, so that `f(x) = g(x)`. However, taking `a=0, b=1`, `\alpha=\tfrac{1}{2}` and `\beta=1` let us consider the integral 
+    If equation \ref{eq:gFormula} does not give a useful alternative representation of `f`, we set `\alpha = \beta = 1`, so that `f(x) = g(x)`. However, taking `a, b`, `\alpha=\tfrac{1}{2}` and `\beta=1` let us consider the integral 
 
     .. math:: I = \int_{0}^{1} \frac{\sin(\exp(x))}{\sqrt{x}} \mathrm{d} x = \int_{0}^{1} f(x) \mathrm{d} x =  \int_{0}^{1} \frac{g(x)}{\sqrt{x}} \mathrm{d} x, \text{ i.e}
 

@@ -37,9 +37,7 @@ See also  Wikipedia :cite:p:`WikipediaDis01`, MathWorld :cite:p:`WolframDis01`, 
 
 .. _Ctx_Chi2NcPdf:
 
-.. method:: Ctx.chi_squared_nc_pdf(x, n, lambda1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.chi2_nc_pdf(n, lambda1, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the noncentral chi-squared distribution:
 
@@ -74,9 +72,7 @@ See also  Wikipedia :cite:p:`WikipediaDis01`, MathWorld :cite:p:`WolframDis01`, 
 
 .. _Ctx_Chi2NcCdf:
 
-.. method:: Ctx.chi_squared_nc_cdf(x, n, lambda1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.chi2_nc_cdf(n, lambda1, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the noncentral chi-squared distribution:
 
@@ -98,7 +94,7 @@ See also  Wikipedia :cite:p:`WikipediaDis01`, MathWorld :cite:p:`WolframDis01`, 
 
 .. _Ctx_Chi2NcQtf:
 
-.. method:: Ctx.chi_squared_nc_qtf(q, n, lambda1)
+.. method:: math53.chi2_nc_qtf(n, lambda1, q)
 
     where ``Ctx`` is ``Math53`` or ``CtxBoost``.
 
@@ -123,21 +119,13 @@ See also  Wikipedia :cite:p:`WikipediaDis01`, MathWorld :cite:p:`WolframDis01`, 
 
 
 
-.. py:class:: ctx.dist_chi_squared_nc(n, lambda1)
+.. py:class:: ctx.dist_chi2_nc(n, lambda1)
 
     where ``ctx`` is ``fpm``, ``mpm``, ``ipm``, ``dec``, ``gmp`` or ``apm``.
 
     The noncentral chi-square distribution is a continuous probability distribution with degrees of freedom `n>0`, 
     noncentrality parameter `\lambda_1`, and support interval `(0, \infty)`.
     See also Wikipedia :cite:p:`WikipediaDis01`, MathWorld :cite:p:`WolframDis01`, :cite:t:`Patnaik1949`, :cite:t:`Penev2000`, :cite:t:`Wang1993`, :cite:t:`Winterbottom1979`, BoostMath :cite:p:`BoostDis01`, :cite:t:`CharfunDis01`, :cite:t:`Kerns2018`, R (Statistical System) :cite:p:`RDis01`, :cite:t:`Yu2011`.
-
-    See also: https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.chndtr.html#scipy.special.chndtr
-
-    See also: https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.chndtridf.html#scipy.special.chndtridf
-
-    See also: https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.chndtrinc.html#scipy.special.chndtrinc
-
-    See also: https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.chndtrix.html#scipy.special.chndtrix
 
 
 

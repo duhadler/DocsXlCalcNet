@@ -32,13 +32,13 @@ The source code for the C\# tests in Visual Studio using complex modules can be 
 
    C01_Hyper1F1.rst
 
-   C03_IncompleteGamma.rst
+   C02_IncompleteGamma.rst
 
-   C04_CoulombPcf.rst
+   C03_CoulombPcf.rst
 
-   C05_ErrorFunction.rst
+   C04_ErrorFunction.rst
 
-   C06_ExponentialIntegrals.rst
+   C05_ExponentialIntegrals.rst
 
 
 

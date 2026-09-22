@@ -27,6 +27,8 @@ Characteristic functions of statistical distributions
 Uniform distribution
 ---------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D01a_CfUniform.3D.xml (D01a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D01a_CfUniform.3D.xml>`__.
+
 
 The uniform distribution is a continuous probability distribution  on the support interval `[a, b]` with finite `a < b`.
 See also Wikipedia :cite:p:`WikipediaDis24`, MathWorld :cite:p:`WolframDis24`, BoostMath :cite:p:`BoostDis24`, :cite:t:`CharfunDis24`, R (Statistical System) :cite:p:`RDis24`.
@@ -40,7 +42,7 @@ Returns `C_X(t)`, the characteristic function of a random variable `X`, followin
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -90,6 +92,8 @@ An example in C\#
 Normal distribution
 -------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D02a_Path_Func_CfNormal.3D.xml (D02a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D02a_Path_Func_CfNormal.3D.xml>`__.
+
 
 The normal distribution is a continuous probability distribution with mean `\mu \in \mathbb{R}`,  standard deviation `\sigma > 0`, and the support interval `(-\infty, +\infty)`.
 See also Wikipedia :cite:p:`WikipediaDis20`, MathWorld :cite:p:`WolframDis20`, BoostMath :cite:p:`BoostDis20`, R (Statistical System) :cite:p:`RDis20`, Mpmath :cite:p:`MpmathFun07c`, Mpmath :cite:p:`MpmathFun07d`.
@@ -101,7 +105,7 @@ Returns `C_X(t)`, the characteristic function of a random variable `X`, followin
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -149,6 +153,10 @@ An example in C\#
 Chi-squared distribution
 ------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D03a_Path_Func_CfChiSquared.3D.xml (D03a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D03a_Path_Func_CfChiSquared.3D.xml>`__.
+
+
+
 The chi-squared distribution is a continuous probability distribution with `n > 0` degrees of freedom and the support interval `(0,+\infty)`.
 See also Wikipedia :cite:p:`WikipediaDis06`, MathWorld :cite:p:`WolframDis06`, BoostMath :cite:p:`BoostDis06`, :cite:t:`CharfunDis06`, R (Statistical System) :cite:p:`RDis06`.
 
@@ -159,7 +167,7 @@ Returns `C_X(t)`, the characteristic function of a random variable `X`, followin
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -205,6 +213,8 @@ An example in C\#
 Beta distribution
 -----------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D04a_Path_Func_CfBeta.3D.xml (D04a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D04a_Path_Func_CfBeta.3D.xml>`__.
+
 
 The beta distribution is a continuous probability distribution with parameters `a > 0`,  `b > 0`, and the support interval `(0, 1)`.
 See also Wikipedia :cite:p:`WikipediaDis08`, MathWorld :cite:p:`WolframDis08`, BoostMath :cite:p:`BoostDis08`, :cite:t:`CharfunDis08`, R (Statistical System) :cite:p:`RDis08`.
@@ -218,7 +228,7 @@ where `{}_1F_1()` is Kummer's confluent hypergeometric function (of the first ki
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -267,6 +277,8 @@ An example in C\#
 F distribution
 --------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D05a_Path_Func_CfFisherF.3D.xml (D05a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D05a_Path_Func_CfFisherF.3D.xml>`__.
+
 
 The Fisher `F`-distribution is a continuous probability distribution with `m > 0` and  `n > 0` degrees of freedom, and the support interval `(0, +\infty)`.
 See also Wikipedia :cite:p:`WikipediaDis09`, MathWorld :cite:p:`WolframDis09`, BoostMath :cite:p:`BoostDis09`, :cite:t:`CharfunDis09`, R (Statistical System) :cite:p:`RDis09`, :cite:t:`AbramowitzDis09`, :cite:t:`Butler2002`, :cite:t:`Chattamvelli1995`, :cite:t:`Witkovsky2001`.
@@ -280,13 +292,13 @@ where `U(\cdot)` denotes the confluent hypergeometric function of the second kin
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
     double nu = 21.0;
     double mu = 40.0;
-    double G = math53.gamma(mu / 2 + nu / 2) / math53.gamma(nu / 2);
+    double G = ctx.gamma(mu / 2 + nu / 2) / ctx.gamma(nu / 2);
     Complex i1 = Complex.ImaginaryOne;
     var fz = dcplx.zero();
     fz = G * cmath53.hyperg_u(mu / 2, 1 - nu / 2, -(nu / mu) * i1 * t);
@@ -331,6 +343,9 @@ An example in C\#
 Non-central Chi-squared distribution
 ----------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D06a_Path_Func_CfChiSquaredNc.3D.xml (D06a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D06a_Path_Func_CfChiSquaredNc.3D.xml>`__.
+
+
 The noncentral chi-square distribution is a continuous probability distribution with degrees of freedom `n>0`, 
 noncentrality parameter `\lambda_1`, and support interval `(0, \infty)`.
 See also Wikipedia :cite:p:`WikipediaDis01`, MathWorld :cite:p:`WolframDis01`, :cite:t:`Patnaik1949`, :cite:t:`Penev2000`, :cite:t:`Wang1993`, :cite:t:`Winterbottom1979`, BoostMath :cite:p:`BoostDis01`, :cite:t:`CharfunDis01`, :cite:t:`Kerns2018`, R (Statistical System) :cite:p:`RDis01`, :cite:t:`Yu2011`.
@@ -343,7 +358,7 @@ Returns `C_X(t)`, the characteristic function of a random variable `X`, followin
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -391,6 +406,8 @@ An example in C\#
 Binomial distribution
 -------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D07a_Path_Func_CfBinomial.3D.xml (D07a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D07a_Path_Func_CfBinomial.3D.xml>`__.
+
 
 The binomial distribution is a discrete (lattice) probability distribution  with number of trials `n \ge 0` and success probability `0 \le p \le 1`.
 See also  Wikipedia :cite:p:`WikipediaDis33`, MathWorld :cite:p:`WolframDis33`, BoostMath :cite:p:`BoostDis33`, :cite:t:`CharfunDis33`, R (Statistical System) :cite:p:`RDis33`.
@@ -402,7 +419,7 @@ Returns `C_X(t)`, the characteristic function of a random variable `X`, followin
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -453,6 +470,8 @@ An example in C\#
 Hypergeometric distribution
 ------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D08a_Path_Func_CfHypergeo.3D.xml (D08a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C03_CharacteristicFunctions/D08a_Path_Func_CfHypergeo.3D.xml>`__.
+
 
 The hypergeometric distribution is a discrete (lattice) probability distribution  with `k` successes (random draws for which the object drawn has a specified feature) in `n \in \{0, 1 ,2, \ldots, N \}` draws, without replacement, from a finite population of size `N \in \{0, 1 ,2, \ldots \}`` that contains exactly `K \in \{0, 1 ,2, \ldots, N \}` objects with that feature, wherein each draw is either a success or a failure, and the support interval `(\max(0,n+K-N), \min(K,n))`.
 See also  Wikipedia :cite:p:`WikipediaDis35`, MathWorld :cite:p:`WolframDis35`, BoostMath :cite:p:`BoostDis35`, R (Statistical System) :cite:p:`RDis35`, :cite:t:`Berkopec2007`, :cite:t:`Johnson2005` page 251.
@@ -466,7 +485,7 @@ where `{}_2F_1(\cdot)` is the Gauss hypergeometric function.
 
 
 
-An example in C\#
+The example below uses the following code in C\#
 
 .. code-block:: csharp
 
@@ -476,7 +495,7 @@ An example in C\#
     Complex i1 = Complex.ImaginaryOne;
     var fz = dcplx.zero();
     fz = cmath53.hyperg_2f1(-n1, -K, N - K - n1 + 1, cmath53.exp(i1 * t));
-    fz = fz * math53.binomial(N - K, n1) / math53.binomial(N, n1);
+    fz = fz * ctx.binomial(N - K, n1) / ctx.binomial(N, n1);
     var x = fz.Real;
     var y = -fz.Imaginary;
     var z = t;
@@ -508,24 +527,5 @@ An example in C\#
 
 
 
-
-
-
-
-
-|newpage|
-
-Distribution of Wilks' `\Lambda` 
------------------------------------------------------
-
-
-The Wilks' `\Lambda` distribution is a continuous probability distribution with `p \ge 1` predictor variables, error degress of freedom `m \ge 1` and `n \ge 1`, and the support interval `(0,1)`.
-See also: :cite:t:`Anderson2003`, :cite:t:`Muirhead1982`, :cite:t:`Butler2007`, :cite:t:`Pham-Gia2008`, :cite:t:`CharfunDis1001`, :cite:t:`CharfunDis1002`.
-
-
-
-Returns `C_X(t)`, the characteristic function of a random variable `X`, following the distribution of Wilks' Lambda:
-
-.. math:: C_X(t) = \frac{\Gamma_p(n/2  -it)\Gamma_p((n + m)/2)}{\Gamma_p(n/2)\Gamma_p((n + m)/2  -it)}.
 
 

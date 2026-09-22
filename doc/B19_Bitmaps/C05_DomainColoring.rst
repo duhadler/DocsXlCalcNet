@@ -53,7 +53,9 @@ Domain coloring without contours: `f(z) = (z^3-1)/z`
 --------------------------------------------------------------------------------
 
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__, and the XML code in the file `D01_DomainColoringRF1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C05_DomainColoring/D01_DomainColoringRF1.2D.xml>`__.
+
+
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
 
@@ -78,7 +80,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Domain coloring with contours of the phase: `f(z) = (z^3-1)/z`
 --------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__, and the XML code in the file `D01_DomainColoringRF1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C05_DomainColoring/D01_DomainColoringRF1.2D.xml>`__.
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
 
@@ -103,7 +105,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Domain coloring with contours of the modulus: `f(z) = (z^3-1)/z`
 --------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__, and the XML code in the file `D01_DomainColoringRF1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C05_DomainColoring/D01_DomainColoringRF1.2D.xml>`__.
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
 
@@ -127,7 +129,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Domain coloring with contours of phase and modulus: `f(z) = (z^3-1)/z`
 --------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__, and the XML code in the file `D01_DomainColoringRF1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C05_DomainColoring/D01_DomainColoringRF1.2D.xml>`__.
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
 
@@ -148,6 +150,30 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 
 
 
+|newpage|
+
+
+Domain coloring with contours of phase and modulus: `f(z) = z^5 + z`
+---------------------------------------------------------------------------------------
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__, and the XML code in the file `D01_DomainColoringRF1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C05_DomainColoring/D01_DomainColoringRF1.2D.xml>`__.
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            DomainColoring(func=lambda z:z**5 + z, style='pm', re=[-2, 2], 
+                im=[-2, 2], Title=r'$f(z)=(z^5+z)$', daxis=True)
+
+.. image:: ../_static/Combining2D3D/DomainColoring2/dc_z5_p_z.*
+
+
+
+
+
 
 
 |newpage|
@@ -156,7 +182,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Domain coloring with contours of phase and modulus: `f(z) = (z^6-1)/(z^{12}+1)`
 --------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__, and the XML code in the file `D01_DomainColoringRF1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C05_DomainColoring/D01_DomainColoringRF1.2D.xml>`__.
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
 
@@ -173,13 +199,40 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 
 
 
+
+
+
+|newpage|
+
+
+Domain coloring with contours of phase and modulus: `f(z) = (z-0.5(1+i))/z^2`
+---------------------------------------------------------------------------------------
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__, and the XML code in the file `D01_DomainColoringRF1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C05_DomainColoring/D01_DomainColoringRF1.2D.xml>`__.
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            DomainColoring(func=lambda z:(z - 0.5 - 0.5*1j) / z**2, style='pm', re=[-1.5, 1.5], 
+                im=[-1.5, 1.5], Title=r'$f(z)=\dfrac{z-0.5(1+i)}{z^2}$', daxis=True)
+
+.. image:: ../_static/Combining2D3D/DomainColoring2/dc_z-mhi_overz2.*
+
+
+
+
+
 |newpage|
 
 
 Domain coloring with contours of phase and modulus: `f(z) = \exp(1/z)`
 --------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__, and the XML code in the file `D01_DomainColoringRF1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C05_DomainColoring/D01_DomainColoringRF1.2D.xml>`__.
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
 
@@ -197,6 +250,29 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 
 
 
+|newpage|
+
+
+Domain coloring with contours of phase and modulus: `f(z) = z \exp(1/z)`
+--------------------------------------------------------------------------------
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__, and the XML code in the file `D01_DomainColoringRF1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C05_DomainColoring/D01_DomainColoringRF1.2D.xml>`__.
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            DomainColoring(func=lambda z:np.exp(1/z), style='pm', re=[-2.0, 2.0], 
+                im=[-2.0, 2.0], Title=r'$f(z)=\exp(1/z)$', daxis=True)
+
+
+.. image:: ../_static/Combining2D3D/DomainColoring2/dc_exp_1overz.*
+
+
+
 
 |newpage|
 
@@ -204,7 +280,7 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 Domain coloring with contours of phase and modulus: `f(z) = \exp(1/z^2)`
 --------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__, and the XML code in the file `D01_DomainColoringRF1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C05_DomainColoring/D01_DomainColoringRF1.2D.xml>`__.
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
 
@@ -226,10 +302,34 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 |newpage|
 
 
+Domain coloring with contours of phase and modulus: `f(z) = \sin(z)`
+--------------------------------------------------------------------------------
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__, and the XML code in the file `D01_DomainColoringRF1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C05_DomainColoring/D01_DomainColoringRF1.2D.xml>`__.
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            DomainColoring(func=lambda z:np.sin(z), style='pm', re=[-np.pi, np.pi], 
+                im=[-2, 2], Title=r'$f(z)=\sin(z)$', daxis=True)
+
+
+.. image:: ../_static/Combining2D3D/DomainColoring2/dc_sin_z.*
+
+
+
+
+|newpage|
+
+
 Domain coloring with contours of phase and modulus: `f(z) = z \sin(1/z)`
 --------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__, and the XML code in the file `D01_DomainColoringRF1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C05_DomainColoring/D01_DomainColoringRF1.2D.xml>`__.
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
 
@@ -247,14 +347,13 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 
 
 
-
 |newpage|
 
 
 Domain coloring with contours of phase and modulus: `f(z) = \sin(z) / (z-i)^2`
 --------------------------------------------------------------------------------
 
-The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__.
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__, and the XML code in the file `D01_DomainColoringRF1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C05_DomainColoring/D01_DomainColoringRF1.2D.xml>`__.
 
 To produce the figure as shown below, the try-block at the end of the file should look like this:
 
@@ -270,6 +369,30 @@ To produce the figure as shown below, the try-block at the end of the file shoul
 .. image:: ../_static/Combining2D3D/DomainColoring2/dc_z_sin_z_over_z-i_2.*
 
 
+
+
+
+
+|newpage|
+
+
+Domain coloring with contours of phase and modulus: `f(z) = \tan(z)`
+--------------------------------------------------------------------------------
+
+The Python code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the file `D01_DomainColoring.py <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B19_Bitmaps/C05_DomainColoring/D01_DomainColoring.py>`__, and the XML code in the file `D01_DomainColoringRF1.2D.xml <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/GalleryOfPlotsExamples/B19_Bitmaps/C05_DomainColoring/D01_DomainColoringRF1.2D.xml>`__.
+
+To produce the figure as shown below, the try-block at the end of the file should look like this:
+
+
+.. code-block:: python
+
+    try:
+        if __name__ == '__main__':
+            DomainColoring(func=lambda z:np.tan(z), style='pm', re=[-np.pi, np.pi], 
+                im=[-2, 2], Title=r'$f(z)=\tan(z)$', daxis=True)
+
+
+.. image:: ../_static/Combining2D3D/DomainColoring2/dc_tan_z.*
 
 
 

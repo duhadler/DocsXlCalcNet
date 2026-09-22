@@ -32,9 +32,7 @@ See also  Wikipedia :cite:p:`WikipediaDis19`, MathWorld :cite:p:`WolframDis19`, 
 
 .. _Ctx_LognormalPdf:
 
-.. method:: Ctx.lognormal_pdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.lognormal_pdf(a, b, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the lognormal distribution:
 
@@ -56,9 +54,7 @@ See also  Wikipedia :cite:p:`WikipediaDis19`, MathWorld :cite:p:`WolframDis19`, 
 
 .. _Ctx_LognormalCdf:
 
-.. method:: Ctx.lognormal_cdf(x, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.lognormal_cdf(a, b, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the lognormal distribution:
 
@@ -80,9 +76,7 @@ See also  Wikipedia :cite:p:`WikipediaDis19`, MathWorld :cite:p:`WolframDis19`, 
 
 .. _Ctx_LognormalQtf:
 
-.. method:: Ctx.lognormal_qtf(q, a=0, b=1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.lognormal_qtf(a, b, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the lognormal distribution:
 

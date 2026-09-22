@@ -69,7 +69,6 @@ Array Surface, general
        :width: 30 %
 
 
-**Figure**: parametric plot of Array Surface, general. 
 
 
 
@@ -91,7 +90,6 @@ Fractal Landscape surface
     .. |picFractalLandscape| image:: ../_static/ExplicitSurfaces/RealFunctions/FractalLandscape_small.jpg
        :width: 30 %
 
-**Figure**: parametric plot of Fractal Landscape surface.
 
 
 
@@ -117,7 +115,6 @@ See also: https://en.wikipedia.org/wiki/Sombrero_function
 
 
 
-    **Figure**: real The Sombrero function. 
 
 
 
@@ -139,7 +136,6 @@ General 3D Wave function
 
 
 
-**Figure**: The General 3D Wave function. 
 
 
 
@@ -160,11 +156,6 @@ Bivariate normal function
    :width: 30 %
 
 
-
-**Left Figure**: absolute value of the of the bivariate normal distribution function, with color-coded phase
-
-
-**Right figure**:  absolute value of the of the bivariate normal distribution function, with color-coded phase.
 
 
 

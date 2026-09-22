@@ -41,8 +41,7 @@
 
 
 
-
-
+|newpage|
 
 
 Numpy array manipulation: Adding and removing elements

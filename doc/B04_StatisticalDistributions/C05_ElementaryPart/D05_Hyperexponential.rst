@@ -29,9 +29,7 @@ See also  Wikipedia :cite:p:`WikipediaDis44`, MathWorld :cite:p:`WolframDis44`, 
 
 .. _Ctx_HyperexpPdf:
 
-.. method:: Ctx.hyperexponential_pdf(x, lambdaj)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.hyperexponential_pdf(lambdaj, wj, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the hyperexponential distribution:
 
@@ -52,9 +50,7 @@ See also  Wikipedia :cite:p:`WikipediaDis44`, MathWorld :cite:p:`WolframDis44`, 
 
 .. _Ctx_HyperexpCdf:
 
-.. method:: Ctx.hyperexponential_cdf(x, lambdaj)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.hyperexponential_cdf(lambdaj, wj, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the hyperexponential distribution:
 
@@ -76,9 +72,7 @@ See also  Wikipedia :cite:p:`WikipediaDis44`, MathWorld :cite:p:`WolframDis44`, 
 
 .. _Ctx_HyperexpQtf:
 
-.. method:: Ctx.hyperexponential_qtf(q, lambdaj)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.hyperexponential_qtf(lambdaj, wj, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the hyperexponential distribution:
 
@@ -99,7 +93,7 @@ See also  Wikipedia :cite:p:`WikipediaDis44`, MathWorld :cite:p:`WolframDis44`, 
 |cr|
 
 
-.. py:class:: ctx.dist_hyperexponential(k, wj, lambdaj)
+.. py:class:: ctx.dist_hyperexponential(wj, lambdaj)
 
     where ``ctx`` is ``fpm``, ``mpm``, ``ipm``, ``dec``, ``gmp`` or ``apm``.
 

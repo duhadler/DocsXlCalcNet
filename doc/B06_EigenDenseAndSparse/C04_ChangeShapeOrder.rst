@@ -35,9 +35,11 @@ Sorting  a whole matrix
 -------------------------------------------------------------------------------
 
 
-.. method:: mat.Sorted(SortOrder=0, SortCriterion=1)
+.. method:: ctx.mat_sort(matA, sort_order=0, sort_criterion=1)
 
-    Returns a sorted version of the matrix, sorted according to SortOrder and SortCriterion.
+    Returns a sorted version of the matrix, sorted according to SortOrder and SortCriterion. 
+
+    Writing ``matA.Sort(sort_order=0, sort_criterion=1)`` has the same effect
 
 
     .. code-block:: pycon
@@ -79,9 +81,11 @@ Sorting  a whole matrix
 Sorting the rows of a matrix by a given column
 -------------------------------------------------------------------------------
 
-.. method:: mat.SortedRowsByCol(ColumnToSortBy=0, SortOrder=0, SortCriterion=1)
+.. method:: ctx.mat_sort_rows_by_col(matA, column_to_sort_by=0, sort_order=0, sort_criterion=1)
 
     Returns a sorted version of the matrix, sorted by column ColumnToSortBy, according to SortOrder and SortCriterion.
+
+    Writing ``matA.SortRowsByCol(column_to_sort_by=0, sort_order=0, sort_criterion=1)`` has the same effect
 
 
     .. code-block:: pycon
@@ -121,102 +125,14 @@ Sorting the rows of a matrix by a given column
 
 
 
-Sorting a whole matrix in place
--------------------------------------------------------------------------------
-
-.. method:: mat.SortInplace(SortOrder=0, SortCriterion=1)
-
-    Sorts the matrix inplace, sorting according to SortOrder and SortCriterion.
-
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import *
-        >>> ctx = mp14.drf()
-        >>> A = ctx.read_from_sqlite(mp14.dbpath(), "DecTableA6x4", ""); A.show("A")
-        A: 
-        11, 12, 13, 14, 
-        21, 22, 23, 24, 
-        31, 32, 33, 34, 
-        41, 42, 43, 44, 
-        51, 52, 53, 54, 
-        61, 62, 63, 64, 
-
-        >>> # sorts the whole matrix in ascending order (SortOrder=0)
-        >>> A.sort(SortOrder=0); A.show("A")
-        A: 
-        11, 23, 41, 53, 
-        12, 24, 42, 54, 
-        13, 31, 43, 61, 
-        14, 32, 44, 62, 
-        21, 33, 51, 63, 
-        22, 34, 52, 64, 
-
-        >>> # sorts the whole matrix in descending order (SortOrder=1)
-        >>> A.sort(SortOrder=1); A.show("A")
-        A: 
-        64, 52, 34, 22, 
-        63, 51, 33, 21, 
-        62, 44, 32, 14, 
-        61, 43, 31, 13, 
-        54, 42, 24, 12, 
-        53, 41, 23, 11, 
-
-
-
-
-Sorting the rows of a matrix by a given column, in place
--------------------------------------------------------------------------------
-
-.. method:: mat.SortRowsByCol(ColumnToSortBy=0, SortOrder=0, SortCriterion=1)
-
-    Sorts the matrix inplace, sorting according to sortmode.
-
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import *
-        >>> ctx = mp14.drf()
-        >>> A = ctx.read_from_sqlite(mp14.dbpath(), "DecTableA6x4", ""); A.show("A")
-        A: 
-        11, 12, 13, 14, 
-        21, 22, 23, 24, 
-        31, 32, 33, 34, 
-        41, 42, 43, 44, 
-        51, 52, 53, 54, 
-        61, 62, 63, 64, 
-
-        >>> # sorts the whole matrix by column 0 in descending order (SortOrder=1)
-        >>> A.sort_rows_by_col(ColumnToSortBy=0, SortOrder=1); A.show("A")
-        A: 
-        61, 62, 63, 64, 
-        51, 52, 53, 54, 
-        41, 42, 43, 44, 
-        31, 32, 33, 34, 
-        21, 22, 23, 24, 
-        11, 12, 13, 14, 
-
-        >>> # sorts the whole matrix in descending order (SortOrder=0)
-        >>> A.sort(SortOrder=0); A.show("A")
-        A: 
-        11, 12, 13, 14, 
-        21, 22, 23, 24, 
-        31, 32, 33, 34, 
-        41, 42, 43, 44, 
-        51, 52, 53, 54, 
-        61, 62, 63, 64, 
-
-
-
-
-
 Resize a matrix
 -------------------------------------------------------------------------------
 
-.. method:: mat.Resize(r, c)
+.. method:: ctx.mat_resize(matA, r, c)
 
     Resizes the matrix inplace, setting values of coefficients to zero.
 
+    Writing ``matA.Resize(r, c)`` has the same effect
 
     .. code-block:: pycon
 
@@ -242,12 +158,47 @@ Resize a matrix
 
 
 
+Resize a matrix like another matrix
+-------------------------------------------------------------------------------
+
+.. method:: ctx.mat_resize_like(matA, matB)
+
+    Resizes the matrix inplace, setting values of coefficients to zero.
+
+    Writing ``matA.ResizeLike(matB)`` has the same effect
+
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> ctx = mp14.drf()
+        >>> A = ctx.read_from_sqlite(mp14.dbpath(), "DecTableA6x4", ""); A.show("A")
+        A: 
+        11, 12, 13, 14, 
+        21, 22, 23, 24, 
+        31, 32, 33, 34, 
+        41, 42, 43, 44, 
+        51, 52, 53, 54, 
+        61, 62, 63, 64, 
+
+        >>> # resizes the matrix to 3 rows and 2 columns, setting values of coefficients to zero.
+        >>> A.resize(3,2); A.show("A")
+        A: 
+        0, 0, 
+        0, 0, 
+        0, 0, 
+
+
+
+
 Conservatively resize a matrix
 -------------------------------------------------------------------------------
 
-.. method:: mat.ConservativeResize(r, c)
+.. method:: ctx.mat_conservative_resize(matA, r, c)
 
     Resizes the matrix inplace, retaining values of existing coefficients.
+
+    Writing ``matA.ConservativeResize(r, c)`` has the same effect
 
 
     .. code-block:: pycon
@@ -278,9 +229,11 @@ Conservatively resize a matrix
 Convert vector to diagonal matrix
 -------------------------------------------------------------------------------
 
-.. method:: mat.AsDiagonal()
+.. method:: ctx.mat_as_diagonal(matA)
 
     Returns the first column vector of a matrix as a diagonal matrix.
+
+    Writing ``matA.AsDiagonal()`` has the same effect
 
 
     .. code-block:: pycon
@@ -318,10 +271,11 @@ Convert vector to diagonal matrix
 Adjoint of a matrix
 -------------------------------------------------------------------------------
 
-.. method:: mat.Adjoint()
+.. method:: ctx.mat_adjoint(matA)
 
 
-    Returns the adjoint matrix of the matrix
+    Returns the adjoint matrix of the matrix.  Writing ``matA.Adjoint()`` has the same effect
+
 
 
     .. code-block:: pycon
@@ -381,9 +335,9 @@ Adjoint of a matrix
 Conjugate of a matrix
 -------------------------------------------------------------------------------
 
-.. method:: mat.Conjugate()
+.. method:: ctx.mat_conjugate(matA)
 
-    Returns the conjugate matrix of matrix ?matA.
+    Returns the conjugate matrix of matrix matA.  Writing ``matA.Conjugate()`` has the same effect
 
 
     .. code-block:: pycon
@@ -442,9 +396,9 @@ Conjugate of a matrix
 Transpose of a matrix
 -------------------------------------------------------------------------------
 
-.. method:: mat.Transpose()
+.. method:: ctx.mat_transpose(matA)
 
-    Returns the transposed matrix of matrix ?matA.
+    Returns the transposed matrix of matrix matA.  Writing ``matA.Transpose()`` has the same effect
 
 
     .. code-block:: pycon
@@ -476,9 +430,9 @@ Transpose of a matrix
 Full Reverse of a matrix
 -------------------------------------------------------------------------------
 
-.. method:: mat.ReverseFull()
+.. method:: ctx.mat_reverse_full(matA)
 
-    Returns the full reverse of matrix ?matA.
+    Returns the full reverse of matrix matA.  Writing ``matA.ReverseFull()`` has the same effect
 
 
     .. code-block:: pycon
@@ -512,10 +466,10 @@ Full Reverse of a matrix
 Row-wise Reverse of a matrix
 -------------------------------------------------------------------------------
 
-.. method:: mat.ReverseRowwise()
+.. method:: ctx.mat_reverse_row_wise(matA)
 
 
-    Returns the row-wise reverse of matrix ?matA.
+    Returns the row-wise reverse of matrix matA.  Writing ``matA.ReverseRowwise()`` has the same effect
 
 
     .. code-block:: pycon
@@ -546,9 +500,9 @@ Row-wise Reverse of a matrix
 Column-wise Reverse of a matrix
 -------------------------------------------------------------------------------
 
-.. method:: mat.ReverseColwise()
+.. method:: ctx.mat_reverse_col_wise(matA)
 
-    Returns the column-wise reverse of matrix ?matA.
+    Returns the column-wise reverse of matrix matA.  Writing ``matA.ReverseColwise()`` has the same effect
 
 
     .. code-block:: pycon
@@ -581,9 +535,9 @@ Column-wise Reverse of a matrix
 Full Replication of a matrix
 -------------------------------------------------------------------------------
 
-.. method:: mat.ReplicateFull(Vertical, Horizontal)
+.. method:: ctx.mat_replicate_full(matA, vertical, horizontal)
 
-    Returns a full replication of matrix ?matA.
+    Returns a full replication of matrix matA.  Writing ``matA.ReplicateFull(vertical, horizontal)`` has the same effect
 
 
     .. code-block:: pycon
@@ -623,9 +577,9 @@ Full Replication of a matrix
 Row-wise Replication of a matrix
 -------------------------------------------------------------------------------
 
-.. method:: mat.ReplicateRowwise(Horizontal)
+.. method:: ctx.mat_replicate_row_wise(matA, horizontal)
 
-    Returns a row-wise replication of matrix ?matA.
+    Returns a row-wise replication of matrix matA.  Writing ``matA.ReplicateRowwise(horizontal)`` has the same effect
 
 
     .. code-block:: pycon
@@ -659,9 +613,9 @@ Row-wise Replication of a matrix
 Column-wise Replication of a matrix
 -------------------------------------------------------------------------------
 
-.. method:: mat.ReplicateColwise(Vertical)
+.. method:: ctx.mat_replicate_col_wise(matA, vertical)
 
-    Returns a column-wise replication of matrix ?matA.
+    Returns a column-wise replication of matrix matA.  Writing ``matA.ReplicateColwise(vertical)`` has the same effect
 
 
     .. code-block:: pycon
@@ -699,9 +653,9 @@ Column-wise Replication of a matrix
 Horizontal concatenation of two matrices
 -------------------------------------------------------------------------------
 
-.. method:: mat.ConcatHorizontal(matB)
+.. method:: ctx.mat_concat_horizontal(matA, matB)
 
-    Returns the horizontal concatenation of matrix ?matA with matrix matB.
+    Returns the horizontal concatenation of matrix matA with matrix matB.  Writing ``matA.ConcatHorizontal(matB)`` has the same effect
 
 
     .. code-block:: pycon
@@ -744,10 +698,12 @@ Horizontal concatenation of two matrices
 Vertical concatenation of two matrices
 -------------------------------------------------------------------------------
 
-.. method:: mat.ConcatVertical(matB)
+.. method:: ctx.mat_concat_vertical(matA, matB)
 
 
-    Returns the vertical concatenation of matrix ?matA with matrix matB.
+    Returns the vertical concatenation of matrix matA with matrix matB.  
+    
+    Writing ``matA.ConcatVertical(matB)`` has the same effect
 
 
     .. code-block:: pycon

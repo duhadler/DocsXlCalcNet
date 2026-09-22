@@ -25,7 +25,7 @@ Struve functions
 Struve function `\mathbf{H}_n(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.struve_h(nu, x)
+.. method:: ctx.struve_h(nu, x)
 
     Returns the Struve function `H_{\nu}(x)`. See also  Wikipedia :cite:p:`WikipediaFun1044`, MathWorld :cite:p:`WolframFun1044`, NIST :cite:p:`DLMFun1044`, :cite:t:`Ehrhardt2018` (3.1.9.3), Mpmath :cite:p:`MpmathFun1044`.
 
@@ -105,7 +105,7 @@ Struve function `\mathbf{H}_n(x)`
 Struve function `\mathbf{L}_{\nu}(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.struveL(nu, x)
+.. method:: ctx.struve_l(nu, x)
 
 
     Returns the Struve function L. See also  Wikipedia :cite:p:`WikipediaFun1044`, MathWorld :cite:p:`WolframFun1045`, NIST :cite:p:`DLMFun1044`, :cite:t:`Ehrhardt2018` (3.1.9.4), Mpmath :cite:p:`MpmathFun1045`.
@@ -185,7 +185,7 @@ Struve function `\mathbf{L}_{\nu}(x)`
 Struve function `\mathbf{K}_{\nu}(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.struveK(nu, z)
+.. method:: ctx.struve_k(nu, z)
 
 
     Returns the Struve function K(nu, z) = H(nu,z) - Y(n, z). See also  Wikipedia :cite:p:`WikipediaFun1044`, MathWorld :cite:p:`WolframFun1045`, NIST :cite:p:`DLMFun1044`.
@@ -247,7 +247,7 @@ Struve function `\mathbf{K}_{\nu}(x)`
 Struve function `\mathbf{M}_{\nu}(x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.struveM(nu, z)
+.. method:: ctx.struve_m(nu, z)
 
     Returns the Struve function M(nu, z) = L(nu,z) - I(n, z).. See also  Wikipedia :cite:p:`WikipediaFun1044`, MathWorld :cite:p:`WolframFun1045`, NIST :cite:p:`DLMFun1044`.
 

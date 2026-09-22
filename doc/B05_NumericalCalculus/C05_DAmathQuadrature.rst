@@ -172,7 +172,7 @@ Global adaptive quadrature by Forsythe, Malcolm, Moler (quanc8)
 15-point Gauss-Kronrod rule, infinite interval (qagi)
 -------------------------------------------------------------------------------
 
-.. method:: math53.qagi(f, bound, inf, epsabs, epsrel, limit)
+.. method:: ctx.qagi(f, bound, inf, epsabs, epsrel, limit)
 
     where ``ctx`` is ``math53``. Performs a global adaptive quadrature of f over an infinite interval based on a transformed 15-point Gauss-Kronrod for the subintervals, with acceleration by Wynn's epsilon algorithm.
 
@@ -217,7 +217,7 @@ Global adaptive quadrature by Forsythe, Malcolm, Moler (quanc8)
 Cauchy principal value, finite interval (qawc)
 -------------------------------------------------------------------------------
 
-.. method:: math53.qawc(f, a, b, c, epsabs, epsrel, limit)
+.. method:: ctx.qawc(f, a, b, c, epsabs, epsrel, limit)
 
     where ``ctx`` is ``math53``. Performs an adaptive quadrature of `f(x)/(x-c)` over the finite interval `(a,b)` with the singularity at `c` and `c` not equal `a` or `b`. The routine calculates an approximation result to the Cauchy principal value.
 
@@ -263,7 +263,7 @@ Cauchy principal value, finite interval (qawc)
 Double Exponential (DE) transformation, finite interval (intde)
 -------------------------------------------------------------------------------
 
-.. method:: math53.intde(f, a, b, eps)
+.. method:: ctx.intde(f, a, b, eps)
 
     where ``ctx`` is ``math53``. Performs an automatic quadrature of f(x) over the finite interval (a,b)} using Double Exponential (DE) transformation.
 
@@ -303,7 +303,7 @@ Double Exponential (DE) transformation, finite interval (intde)
 DE transformation, infinite interval, no oscillatory factor (intdei)
 -------------------------------------------------------------------------------
 
-.. method:: math53.intdei(f, a, eps)
+.. method:: ctx.intdei(f, a, eps)
 
     where ``ctx`` is ``math53``. Performs an automatic quadrature of f(x) over (a,INF) using Double Exponential transformation when f(x) has no oscillatory factor.
 
@@ -344,7 +344,7 @@ DE transformation, infinite interval, no oscillatory factor (intdei)
 DE transformation, infinite interval, oscillatory factor (intdeo)
 -------------------------------------------------------------------------------
 
-.. method:: math53.intdeo(f, a, omega, eps)
+.. method:: ctx.intdeo(f, a, omega, eps)
 
     where ``ctx`` is ``math53``.     Performs an automatic quadrature of f(x) over (a,INF) using Double Exponential transformation when f(x) has an oscillatory factor.
 

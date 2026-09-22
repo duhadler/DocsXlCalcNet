@@ -44,7 +44,7 @@
 
 
 
-
+|newpage|
 
 Building special arrays for numerical work
 ==============================================================================

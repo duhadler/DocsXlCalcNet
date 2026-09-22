@@ -33,10 +33,10 @@ Creating scalars and matrices
 Creating a matrix, and converting from compatible data types
 -------------------------------------------------------------------------------
 
-.. method:: CtxEigen.MatT(x = None, y = None, eigen=False)
+.. method:: ctx.mat_t(x)
 
 
-    Creates a real or complex matrix of the data type corresponding to the context.
+    Converts from a real scalar of type dreal
 
 
 
@@ -45,7 +45,7 @@ Creating a matrix, and converting from compatible data types
 Creating a matrix of zeros
 -------------------------------------------------------------------------------
 
-.. method:: CtxEigen.MatZeros(n, m, complex=False, eigen=False)
+.. method:: ctx.mat_zeros(n, m)
 
 
     Creates a `n \times m` matrix of the indicated type and sets all entries to zero.
@@ -68,7 +68,7 @@ Creating a matrix of zeros
 Creating a matrix of ones
 -------------------------------------------------------------------------------
 
-.. method:: CtxEigen.MatOnes(n, m, complex=False, eigen=False)
+.. method:: ctx.mat_ones(n, m)
 
 
     Creates a `n \times m` matrix of the indicated type and sets all entries to one.
@@ -93,7 +93,7 @@ Creating a matrix of ones
 Creating an identity matrix
 -------------------------------------------------------------------------------
 
-.. method:: CtxEigen.MatIdentity(n, m, complex=False, eigen=False)
+.. method:: ctx.mat_identity(n, m)
 
 
     Creates a `n \times m` identity matrix of the indicated type.
@@ -117,34 +117,11 @@ Creating an identity matrix
 
 
 
-Creating a matrix with linearly increasing values
--------------------------------------------------------------------------------
-
-.. method:: CtxEigen.MatLinspace(n, m, x, complex=False, eigen=False)
-
-
-    Creates a `n \times m` matrix of the indicated type and sets all entries to incresing values `x`.
-
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import *
-        >>> ctx.dps = 15; n = 4; m = 4
-        >>> matA = ctx.mat_fill_linear(n, m)
-        >>> matA.show("matA, mat_fill_linear(n) :")
-        matA, mat_fill_linear(n) :
-         0,  0,  0,  0, 
-         0,  0,  0,  0, 
-         0,  0,  0,  0, 
-         0,  0,  0,  0, 
-
-
-
 
 Creating a general random matrix
 -------------------------------------------------------------------------------
 
-.. method:: CtxEigen.MatRandom(n, m, complex=False, eigen=False)
+.. method:: ctx.mat_random(n, m)
 
 
     Creates a `n \times m` matrix of the indicated type and sets all entries to random values.
@@ -170,7 +147,7 @@ Creating a general random matrix
 Creating a symmetric random matrix
 -------------------------------------------------------------------------------
 
-.. method:: CtxEigen.MatRandomSymmetric(n, complex=False, eigen=False)
+.. method:: ctx.mat_random_symmetric(n)
 
 
     Creates a `n \times n` symmetric matrix of the indicated type and sets all entries to random values.
@@ -181,9 +158,9 @@ Creating a symmetric random matrix
 
         >>> from xlcalcnet import *
         >>> ctx.dps = 15; n = 4; m = 4
-        >>> matA = ctx.mat_random_sym(n)
-        >>> matA.show("matA, mat_random_sym(n) :")
-        matA, mat_random_sym(n) :
+        >>> matA = ctx.mat_random_symmetric(n)
+        >>> matA.show("matA, mat_random_symmetric(n) :")
+        matA, mat_random_symmetric(n) :
          0.23816644795068,  0.53633228553118,  0.17514572588275,  0.43491927854244, 
          0.53633228553118,  1.1423688467055,  1.2648091067232,  1.2148503067110, 
          0.17514572588275,  1.2648091067232,  0.90157780693990,  1.1354411450545, 
@@ -196,10 +173,10 @@ Creating a symmetric random matrix
 Creating a self-adjoint random matrix
 -------------------------------------------------------------------------------
 
-.. method:: CtxEigen.MatRandomHermitian(n, complex=False, eigen=False)
+.. method:: ctx.mat_random_selfadjoint(n, complex=False, eigen=False)
 
 
-    Creates a `n \times n` hermitian matrix of the indicated type and sets all entries to random values.
+    Creates a `n \times n` selfadjoint matrix of the indicated type and sets all entries to random values.
 
 
 
@@ -223,7 +200,7 @@ Creating a self-adjoint random matrix
 Creating a positive definite self-adjoint matrix
 -------------------------------------------------------------------------------
 
-.. method:: CtxEigen.MatRandomPosDefinite(n, complex=False, eigen=False)
+.. method:: ctx.mat_random_selfadjoint_posdef(n, complex=False, eigen=False)
 
 
     Creates a `n \times n` positive definite random matrix of the indicated type.
@@ -244,6 +221,29 @@ Creating a positive definite self-adjoint matrix
 
 
 
+
+
+
+Creating a matrix with linearly increasing values
+-------------------------------------------------------------------------------
+
+.. method:: ctx.mat_fill_linear(n, m, x)
+
+
+    Creates a `n \times m` matrix of the indicated type and sets all entries to increasing values.
+
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> ctx.dps = 15; n = 4; m = 4
+        >>> matA = ctx.mat_linspace(n, m, x)
+        >>> matA.show("matA, mat_linspace(n, m, x) :")
+        matA, mat_linspace(n, m, x) :
+         0,  0,  0,  0, 
+         0,  0,  0,  0, 
+         0,  0,  0,  0, 
+         0,  0,  0,  0, 
 
 
 

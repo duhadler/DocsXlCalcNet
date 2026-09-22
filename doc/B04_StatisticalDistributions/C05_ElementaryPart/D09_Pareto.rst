@@ -30,9 +30,7 @@ See also  Wikipedia :cite:p:`WikipediaDis21`, MathWorld :cite:p:`WolframDis21`, 
 
 .. _Ctx_ParetoPdf:
 
-.. method:: Ctx.pareto_pdf(x, k, a)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.pareto_pdf(k, a, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the Pareto distribution:
 
@@ -54,9 +52,7 @@ See also  Wikipedia :cite:p:`WikipediaDis21`, MathWorld :cite:p:`WolframDis21`, 
 
 .. _Ctx_ParetoCdf:
 
-.. method:: Ctx.pareto_cdf(x, k, a)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.pareto_cdf(k, a, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the Pareto distribution:
 
@@ -78,9 +74,7 @@ See also  Wikipedia :cite:p:`WikipediaDis21`, MathWorld :cite:p:`WolframDis21`, 
 
 .. _Ctx_ParetoQtf:
 
-.. method:: Ctx.pareto_qtf(q, k, a)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.pareto_qtf(k, a, q)  
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the Pareto distribution:
 

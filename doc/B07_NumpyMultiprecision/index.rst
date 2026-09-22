@@ -61,19 +61,11 @@ Numpy: use with multiprecision data types
 
     C23_ArithmeticScalarsAndIterables.rst
 
-    C24_DescritiveStatistics.rst
+    C24_DescriptiveStatistics.rst
 
     C25_LinearSolving.rst
 
     C26_EigenAndSVD.rst
-
-    C27_MatrixFunctions.rst
-
-    C28_DFT.rst
-
-    C29_Flint_Matrices.rst
-
-
 
 
 

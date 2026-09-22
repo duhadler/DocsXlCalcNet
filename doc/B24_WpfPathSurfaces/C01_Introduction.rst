@@ -24,10 +24,14 @@ Introduction to path surfaces
 Borromean rings, A, B, C
 ---------------------------------------------------------
 
+
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D01a_Path_BorromeanA.3D.xml (D01a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C01_Introduction/D01a_Path_BorromeanA.3D.xml>`__.
+
+
 Some text explaining the importance of building the mesh in x-direction.
 
 
-An example in C\#, for A
+The example below uses the following code in C\#, for A
 
 .. code-block:: csharp
 
@@ -37,7 +41,7 @@ An example in C\#, for A
     var z = Math.Cos(3 * t) / 3;
 
 
-An example in C\#, for B
+The example below uses the following code in C\#, for B
 
 .. code-block:: csharp
 
@@ -47,7 +51,7 @@ An example in C\#, for B
     var z = Math.Cos(3 * t) / 3;
 
 
-An example in C\#, for C
+The example below uses the following code in C\#, for C
 
 .. code-block:: csharp
 
@@ -85,10 +89,13 @@ An example in C\#, for C
 Ellipses, A, B, C
 ---------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D02a_Path_Ellipses.3D.xml (D01a-i) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C01_Introduction/D02a_Path_Ellipses.3D.xml>`__.
+
+
 Some text explaining the importance of building the mesh in x-direction.
 
 
-An example in C\#, for A, B, C
+The example below uses the following code in C\#, for A, B, C
 
 .. code-block:: csharp
 
@@ -164,10 +171,12 @@ For C, the final rotations are: X=0, Y=90, Z=90.
 Trefoil 2
 ---------------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D03a_Path_Trefoil02.3D.xml (D01a-c) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C01_Introduction/D03a_Path_Trefoil02.3D.xml>`__.
+
 Some text explaining the importance of building the mesh in x-direction.
 
 
-An example in C\#, for A, B, C
+The example below uses the following code in C\#, for A, B, C
 
 .. code-block:: csharp
 
@@ -205,11 +214,13 @@ An example in C\#, for A, B, C
 Formatting options for path surfaces, Trefoil 5
 ----------------------------------------------------
 
+The XML code for the example below can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder in the files `D04a_Path_Trefoil05.3D.xml (D01a-f) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/Plots3DWpfExamples/B24_WpfPathSurfaces/C01_Introduction/D04a_Path_Trefoil05.3D.xml>`__.
+
 
 These are the rough versions
 
 
-An example in C\#, for A, B, C
+The example below uses the following code in C\#, for A, B, C
 
 .. code-block:: csharp
 

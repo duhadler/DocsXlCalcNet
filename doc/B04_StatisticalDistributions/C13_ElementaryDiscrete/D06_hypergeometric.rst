@@ -33,9 +33,7 @@ See also   Wikipedia :cite:p:`WikipediaDis35`, MathWorld :cite:p:`WolframDis35`,
 
 .. _Ctx_HypergeoPmf:
 
-.. method:: Ctx.hypergeometric_pmf(k, n, K, N)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.hypergeometric_pmf(r, n, N, k)
 
     Returns `\text{pmf}(k)`, the value of the probability mass function (:ref:`Pmf <Dist_Pmf>`) of the hypergeometric distribution. 
 
@@ -57,9 +55,7 @@ See also   Wikipedia :cite:p:`WikipediaDis35`, MathWorld :cite:p:`WolframDis35`,
 
 .. _Ctx_HypergeoCdf:
 
-.. method:: Ctx.hypergeometric_cdf(k, n, K, N)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.hypergeometric_cdf(r, n, N, k)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the hypergeometric distribution:
 
@@ -81,9 +77,7 @@ See also   Wikipedia :cite:p:`WikipediaDis35`, MathWorld :cite:p:`WolframDis35`,
 
 .. _Ctx_HypergeoQtf:
 
-.. method:: Ctx.hypergeometric_qtf(q, n, K, N)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.hypergeometric_qtf(r, n, N, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the hypergeometric distribution:
 
@@ -154,7 +148,7 @@ See also   Wikipedia :cite:p:`WikipediaDis35`, MathWorld :cite:p:`WolframDis35`,
 
     .. math:: \text{cdf}_X(k) = \sum_{j=\max(0,n+K-N)}^{k} \text{pmf}_X(j) = 1 - \text{pmf}_X(k+1) \times {}_3F_2(1,k+1-K,k+1-n;k+2,N+k+2-K-n;1),
 
-    where `{}_3F_2(\cdot)` is a generalized hypergeometric function (see  :ref:`hyp3f2() <rst_mpm_hyp3f2>`.)
+    where `{}_3F_2(\cdot)` is a generalized hypergeometric function.
 
 
 
@@ -177,7 +171,7 @@ See also   Wikipedia :cite:p:`WikipediaDis35`, MathWorld :cite:p:`WolframDis35`,
 
     .. math:: \text{sf}_X(k) = \sum_{j=k+1}^{\min(K,n)} \text{pmf}_X(j) = \text{pmf}_X(k+1) \times {}_3F_2(1,k+1-K,k+1-n;k+2,N+k+2-K-n;1),
 
-    where `{}_3F_2(\cdot)` is a generalized hypergeometric function (see  :ref:`hyp3f2() <rst_mpm_hyp3f2>`.)
+    where `{}_3F_2(\cdot)` is a generalized hypergeometric function.
 
 
     .. code-block:: python

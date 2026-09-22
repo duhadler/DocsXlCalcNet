@@ -68,7 +68,7 @@ Elliptic lattice invariants `g_2, g_3` from lattice roots `e_1, e_2, e_3`
 ------------------------------------------------------------------------------------------------
 
 
-.. method:: ctxflint.elliptic_invariants_from_roots(e1, e2)
+.. method:: ctx.elliptic_invariants_from_roots(e1, e2)
 
 
     Computes the lattice invariants `g_2, g_3`. The Weierstrass elliptic function satisfies the differential equation `[\wp'(z, \tau)]^2 = 4 [\wp(z,\tau)]^3 - g_2 \wp(z,\tau) - g_3`.  Up to constant factors, the lattice invariants are the first two Eisenstein series.
@@ -123,7 +123,7 @@ Elliptic lattice invariants `g_2, g_3` from `(\omega, \tau)`
 -------------------------------------------------------------------------------
 
 
-.. method:: ctxflint.g2g3_from_tau(omega, tau)
+.. method:: ctx.g2g3_from_tau(omega, tau)
 
 
     Computes the lattice invariants `g_2, g_3` in terms of half-period `\omega_1` and elliptic period ratio `\tau`.
@@ -170,7 +170,7 @@ Elliptic lattice roots `e_1, e_2, e_3` from (`\omega, \tau`)
 -------------------------------------------------------------------------------
 
 
-.. method:: ctxflint.elliptic_roots_from_tau(omega, tau)
+.. method:: ctx.elliptic_roots_from_tau(omega, tau)
 
 
     Computes the lattice roots `e_1, e_2, e_3`, in terms of half-period `\omega_1` and elliptic period ratio `\tau`. They are the roots of the polynomial `4z^3 - g_2 z - g_3`.

@@ -32,9 +32,7 @@ See also  Wikipedia :cite:p:`WikipediaDis02`, MathWorld :cite:p:`WolframDis02`, 
 
 .. _Ctx_FisherFNcPdf:
 
-.. method:: Ctx.fisher_f_nc_pdf(x, m, n, lambda1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.fisher_f_nc_pdf(m, n, lambda1, x)
 
     Returns `\text{pdf}(x)`, the value of the probability density function (:ref:`Pdf <Dist_Pdf>`) of the non-central Fisher F distribution:
 
@@ -68,9 +66,7 @@ See also  Wikipedia :cite:p:`WikipediaDis02`, MathWorld :cite:p:`WolframDis02`, 
 
 .. _Ctx_FisherFNcCdf:
 
-.. method:: Ctx.fisher_f_nc_cdf(x, m, n, lambda1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.fisher_f_nc_cdf(m, n, lambda1, x)
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the non-central Fisher F distribution:
 
@@ -98,9 +94,7 @@ See also  Wikipedia :cite:p:`WikipediaDis02`, MathWorld :cite:p:`WolframDis02`, 
 
 .. _Ctx_FisherFNcQtf:
 
-.. method:: Ctx.fisher_f_nc_qtf(q, m, n, lambda1)
-
-    where ``Ctx`` is ``Math53`` or ``CtxBoost``.
+.. method:: math53.fisher_f_nc_qtf(m, n, lambda1, q)
 
     Returns `\text{qtf}(q)`, the value of the quantile function (:ref:`Qtf <Dist_Qtf>`) of the non-central Fisher F distribution:
 
