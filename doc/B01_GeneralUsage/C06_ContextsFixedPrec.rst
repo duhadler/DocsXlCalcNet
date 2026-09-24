@@ -2928,6 +2928,9 @@ The above and additional examples can be found online in the ``DataXlCalcNet`` r
 
 
 
+
+
+
 Notes regarding the implementation in C\# and C++
 ........................................................
 
@@ -2946,6 +2949,19 @@ The C++ source code which interacts directly with Boost can be found here: `Boos
 The C++ source code supporting Eigen which is called from ``oreal.cs`` and ``ocplx.cs`` can be found here: `UseEigenSReal.cpp <https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/Addin/NET48/Source/C%2B%2B/xlcalcnet/mpNum/UseEigenOReal.cpp>`__.
 
 The C++ source code which interacts directly with Eigen can be found in the folder: `BoostEigenMath.cpp <https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/C%2B%2B/xlcalcnet/BoostEigenMath>`__.
+
+
+
+
+
+Use of Numpy with scalar functions written in C\#: ``np53``, ``np53c``
+----------------------------------------------------------------------------
+
+
+
+Some text
+
+
 
 
 

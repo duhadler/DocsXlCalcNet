@@ -12,8 +12,8 @@
 |newpage|
 
 
-More on XlCalcNet with MS Excel
-==================================================
+More on XlCalcNet with MS Excel and LibreOffice Calc
+============================================================
 
 
 

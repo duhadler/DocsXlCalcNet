@@ -22,7 +22,7 @@
     Overview
     ---------------------------------------------------------------------------
 
-    Welcome to the documentation of **XlCalcNet** (Microsoft E\ **X**\ ce\ **l** addin for **Calc**\ ulations in multiprecision, based on Python\ **Net**\ ), a python library that focusses on numerical calculations in multiple precision and data visualisation, which can also be used within MS Excel spreadsheet formulas. This edition of the documentation describes release |release|. The documentation can also be downloaded in PDF format from `here <https://github.com/duhadler/DocsXlCalcNet/blob/master/pdf/xlcalcnet.pdf>`__.
+    Welcome to the documentation of **XlCalcNet** (Microsoft E\ **x**\ ce\ **l** and LibreOffice **Calc** addin, based on Python\ **Net**\ ), a python library with focus on numerical calculations in multiple precision and data visualisation, which can also be used within MS Excel and LibreOffice Calc spreadsheet formulas. This edition of the documentation describes release |release|. The documentation can also be downloaded in PDF format from `here <https://github.com/duhadler/DocsXlCalcNet/raw/master/pdf/xlcalcnet.pdf>`__.
 
     XlCalcNet is free software released under the Mozilla Public License `2.0` (see  :ref:`License <rst_MPL_2.0_License>`). The git repository is https://github.com/duhadler/XlCalcNet.
 
@@ -30,7 +30,7 @@
     XlCalcNet can be installed as a python package from `PyPI <https://pypi.org/project/xlcalcnet/>`__. More detailed information regarding the installation and general usage of XlCalcNet can be found :ref:`here <rst_setting_up_XlCalcNet>`.
 
 
-    Since one of the main goals of XlCalcNet is to enable the use of functions written in Python or C# within spreadsheet formulas, it is assumed that Microsoft Excel (2010 or later, 64 bit) is installed on the users system, running under Windows (7.1 or later, 64 bit), with .NET Framework 4.8/4.8.1 installed.
+    Since one of the main goals of XlCalcNet is to enable the use of functions written in Python or C# within spreadsheet formulas, it is assumed that Microsoft Excel (2010 or later, 64 bit) and/or LibreOffice (version 7.0 or later, 64 bit) is installed on the users system, running under Windows (7.1 or later, 64 bit).
 
 
 
@@ -38,10 +38,10 @@
     Use with Microsoft Excel
     ---------------------------------------------------------------------------
 
-    Once MS Excel has been prepared for using XlCalcNet (see :ref:`here <rst_setting_up_Mpfunlab>` for details), one can call small Python scripts in spreadsheet formulas and pass parameters from other spreadsheet cells. If the example workbook "Simple.xlsx" has been loaded, the following dialog box will appear when the user clicks on the "Insert Function" button in Excel's formula bar:
+    Once MS Excel has been prepared for using XlCalcNet (see :ref:`here <rst_setting_up_MSExcel>` for details), one can run small Python scripts in spreadsheet formulas, using parameters which are passed from other spreadsheet cells. If the example workbook "Simple.xlsx" has been loaded, the following dialog box will appear when the user clicks on the "Insert Function" button in Excel's formula bar:
 
 
-    .. image:: _static/FunctionArguments.png
+    .. image:: _static/XL_FunctionArguments.png
         :align: center
         :width: 60%
 
@@ -49,9 +49,9 @@
 
     XlCalcNet can also be used for procedures. To access the relevant dialog, right-click anywhere on the spreadsheet. The following context menu will appear:
 
-    .. image:: _static/ContextMenu.png
+    .. image:: _static/XL_ContextMenu.png
         :align: center
-        :width: 50%
+        :width: 40%
 
     |vspace|
 
@@ -59,7 +59,7 @@
     Click on Navigator for XlCalcNet. The following dialog box will appear:
 
 
-    .. image:: _static/NavigatorXlCalcNet.png
+    .. image:: _static/XL_NavigatorXlCalcNet.png
         :align: center
         :width: 60%
 
@@ -70,6 +70,42 @@
 
     |vspace|
 
+
+
+    Use with LibreOffice Calc
+    ---------------------------------------------------------------------------
+
+    Once LibreOffice Calc has been prepared for using XlCalcNet (see :ref:`here <rst_setting_up_LOCalc>` for details), one can run small Python scripts in spreadsheet formulas, using parameters which are passed from other spreadsheet cells. If the example workbook "Simple.xlsx" has been loaded, the following dialog box will appear when the user clicks on the "Insert Function" button in LibreOffice Calc's formula bar:
+
+
+    .. image:: _static/LO_FunctionArguments.png
+        :align: center
+        :width: 80%
+
+    |vspace|
+
+    XlCalcNet can also be used for procedures. To access the relevant dialog, click on the XlCalcNet logo (in orange) on the main menu bar. The following context menu will appear:
+
+    .. image:: _static/LO_MainMenu.png
+        :align: center
+        :width: 40%
+
+    |vspace|
+
+
+    Click on Navigator for XlCalcNet. The following dialog box will appear:
+
+
+    .. image:: _static/LO_NavigatorXlCalcNet.png
+        :align: center
+        :width: 60%
+
+    |vspace|
+
+
+    This can be used to call external procedures, which are not used in spreadsheet formulas. The procedures can be used to generate plots, for example. The generated plots can be saved as bitmap files or as interactive 3D plots in a separate window.
+
+    |vspace|
 
 
 

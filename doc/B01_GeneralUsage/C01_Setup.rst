@@ -20,6 +20,7 @@ Setting up XlCalcNet
 Installing XlCalcNet
 -------------------------------------------------------------
 
+
 Although the Python language is available in many different implementations, we will focus on the "official" implementation of Python, which is called CPython. The official CPython implementation is available for download from https://www.python.org/downloads/.
 
 The XlCalcNet package is compatible with CPython versions 3.8 - 3.14. It is recommended to use a version of CPython, which is both mature and supported. In this manual, we will use CPython version 3.13.12.
@@ -133,11 +134,100 @@ The C\# source code for the IDE can be found here: https://github.com/duhadler/X
 
 
 
+|newpage|
 
+Installing and using Numpy, Matplotlib, Pandas and Scipy
+------------------------------------------------------------------
+
+
+Numpy
+...................................................................................
+
+Some text
+
+
+
+
+Matplotlib
+...................................................................................
+
+Some text
+
+
+
+Pandas
+...................................................................................
+
+Some text
+
+
+
+
+Scipy
+...................................................................................
+
+Some text
+
+
+
+
+|newpage|
+
+
+
+.. _rst_setting_up_LOCalc: 
+
+Preparing LibreOffice Calc for using XlCalcNet: first steps
+---------------------------------------------------------------------------------------------
+
+
+Describe the installation of the LibreOffice Calc extension: MpFunlab.oxt and MpfunlabLocal.oxt.
+
+
+
+LibreOffice Calc: LODemoAPY.xlsx and LODemoAPY.ods
+
+
+
+.. image:: ../_static/LO_FunctionArguments.png
+    :width: 50 %
+    :align: center
+
+
+
+LibreOffice Calc: LODemoAPY.xlsx and LODemoAPY.ods
+
+
+
+.. image:: ../_static/LO_MainMenu.png
+    :width: 30 %
+    :align: center
+
+
+
+LibreOffice Calc: LODemoAPY.xlsx and LODemoAPY.ods
+
+
+.. image:: ../_static/LO_NavigatorXlCalcNet.png
+    :width: 50 %
+    :align: center
+
+
+LibreOffice Calc: LODemoAPY.xlsx and LODemoAPY.ods
+
+
+
+
+
+
+
+
+
+|newpage|
 
 .. _rst_ClientServer: 
 
-Starting and calling the socket server
+Starting and calling the socket server from C\#
 --------------------------------------------------------------------------------
 
 A running socket server is critical for the use of XlCalcNet from Microsoft Excel.
@@ -230,7 +320,7 @@ The C\# source code for the socket client can be found here: https://github.com/
 
 
 
-.. _rst_setting_up_Mpfunlab: 
+.. _rst_setting_up_MSExcel: 
 
 Preparing MS Excel for using XlCalcNet: first steps
 ---------------------------------------------------------------------------------------------
@@ -251,7 +341,7 @@ MS Excel: TestCPython.xlsx
 
 
 
-.. image:: ../_static/FunctionArguments.png
+.. image:: ../_static/XL_FunctionArguments.png
     :width: 50 %
     :align: center
 
@@ -260,7 +350,7 @@ MS Excel: TestCPython.xlsx
 
 
 
-.. image:: ../_static/ContextMenu.png
+.. image:: ../_static/XL_ContextMenu.png
     :width: 30 %
     :align: center
 
@@ -268,7 +358,7 @@ MS Excel: TestCPython.xlsx
 MS Excel: TestCPython.xlsx
 
 
-.. image:: ../_static/NavigatorXlCalcNet.png
+.. image:: ../_static/XL_NavigatorXlCalcNet.png
     :width: 50 %
     :align: center
 

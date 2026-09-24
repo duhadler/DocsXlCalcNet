@@ -2269,3 +2269,17 @@ The Python source code for this module can be found here: `ctx_apm.py <https://g
 
 
 
+
+|newpage|
+
+
+Numpy support for multiprecision data types: ``npm``
+-------------------------------------------------------------------------------------
+
+
+
+Overview
+........................................................
+
+Numpy supports general objects as elements, and this can be used to use numpy functions for the above data types.
+
