@@ -84,7 +84,7 @@
 
     |vspace|
 
-    XlCalcNet can also be used for procedures. To access the relevant dialog, click on the XlCalcNet logo (in orange) on the main menu bar. The following context menu will appear:
+    XlCalcNet can also be used for procedures. To access the relevant dialog, click on the XlCalcNet logo (in orange) on the main menu bar:
 
     .. image:: _static/LO_MainMenu.png
         :align: center
@@ -93,7 +93,7 @@
     |vspace|
 
 
-    Click on Navigator for XlCalcNet. The following dialog box will appear:
+    The following dialog box will appear:
 
 
     .. image:: _static/LO_NavigatorXlCalcNet.png

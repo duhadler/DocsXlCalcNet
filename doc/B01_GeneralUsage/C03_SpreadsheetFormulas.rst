@@ -12,58 +12,8 @@
 |newpage|
 
 
-More on XlCalcNet with MS Excel and LibreOffice Calc
+Building user libraries and documenting them
 ============================================================
-
-
-
-
-Exploring with an example spreadsheet: simple formulas, multiple precision
------------------------------------------------------------------------------------
-
-
-MS Excel: TestCPython.xlsx
-
-
-
-
-Exploring with an example spreadsheet: array formulas
------------------------------------------------------------------------
-
-
-MS Excel: TestCPython.xlsx
-
-
-
-
-Exploring with an example spreadsheet: small Python programs, syntax rules
-------------------------------------------------------------------------------------
-
-
-MS Excel: TestCPython.xlsx
-
-
-
-
-
-
-
-
-Entering multi-precision data into a spreadsheet (text formatting and AsDouble)
-------------------------------------------------------------------------------------
-
-
-MS Excel: TestCPython.xlsx
-
-
-
-
-Managing procedures instead of functions
-------------------------------------------------------------------------------------
-
-
-MS Excel: TestCPython.xlsx
-
 
 
 
@@ -73,7 +23,7 @@ Building a library of user defined python functions
 ------------------------------------------------------------------------------------
 
 
-MS Excel: TestCPython.xlsx
+Describes building and using the user library.
 
 
 
