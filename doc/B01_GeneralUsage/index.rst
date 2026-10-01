@@ -38,11 +38,11 @@ XlCalcNet is intended to be used together with existing Python libraries like Nu
 
     C01_Setup.rst
 
-    C02_GuiFunctions.rst
+    C02_MSExcel.rst
 
-    C03_SpreadsheetFormulas.rst
+    C03_LibreOfficeCalc.rst
 
-    C04_PythonFromCSharp.rst
+    C04_GuiFunctions.rst
 
     C05_ContextsMpmath.rst
 
@@ -50,4 +50,5 @@ XlCalcNet is intended to be used together with existing Python libraries like Nu
 
     C07_ContextsXlCalcNet2.rst
 
+    C08_BuildingUserLibraries.rst
 
