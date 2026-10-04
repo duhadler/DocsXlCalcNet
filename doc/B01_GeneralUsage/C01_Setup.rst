@@ -646,32 +646,24 @@ Calling Python from C:\#: socket server vs in-process calls
 
 A running socket server is critical for the use of XlCalcNet from Microsoft Excel.
 
-When starting the socket server for the first time from a specific installation of python.exe, a dialog will appear to allow access of this version of Python to networks. Confirm, since this is required for the socket server to work properly. If you have multiple installations of Python, you may have to do this for each installation.
+When starting the socket server for the first time from a specific installation of python.exe, a dialog will appear to allow access of this version of Python to networks. 
 
+
+.. image:: ../_static/NetWorkAccess.png
+    :width: 40 %
+    :align: center
+
+
+
+
+Confirm, since this is required for the socket server to work properly. If you have multiple installations of Python, you may have to do this for each installation.
+
+
+
+The socketserver is started from the TinyIDE: in the main menu, click on ``Tools`` -> ``Start SocketServer``. 
 
 
 .. image:: ../_static/SocketServer.png
-    :width: 50 %
-    :align: center
-
-The socket server can be startet in various ways:
-
-
-Starting the socketserver from the TinyIDE or GalleryOfPlots application
-...................................................................................
-
-In both applications, in the main menu, click on ``Tools`` -> ``Start SocketServer``. The GalleryOfPlots application starts the socketserver automatically at startup.
-
-
-
-
-Starting the socketserver from the Navigator dialog in Excel
-...................................................................................
-
-The socketserver can also be started from the Navigator dialog in MS Excel, by clicking on the button ``Start socket server``.
-
-
-.. image:: ../_static/XL_NavigatorXlCalcNet.png
     :width: 50 %
     :align: center
 
