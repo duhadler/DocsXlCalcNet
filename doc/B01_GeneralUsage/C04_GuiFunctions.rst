@@ -24,28 +24,23 @@ Starting the output monitor
 --------------------------------------------------------------------------------
 
 
-.. method:: gui.outputmonitor()
-
-    Describe the start of the output monitor
+Describe the start of the output monitor
 
 
-    .. image:: ../_static/DataMo0nitor.png
-       :width: 50 %
-       :align: center
+.. image:: ../_static/DataMo0nitor.png
+    :width: 50 %
+    :align: center
 
 
-    The Python source code for starting the output monitor can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ShowOutputMonitor.py
-
-
-    The C\# source code for the output monitor can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/OutputMonitor
+The C\# source code for the output monitor can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/OutputMonitor
 
 
 
 
-    .. code-block:: pycon
+.. code-block:: pycon
 
-        >>> from xlcalcnet import gui
-        >>> gui.outputmonitor()
+    >>> from xlcalcnet import gui
+    >>> gui.outputmonitor()
 
 
 
@@ -61,27 +56,22 @@ Starting the gallery of plots
 --------------------------------------------------------------------------------
 
 
-.. method:: gui.plot2d()
+Describe the start of the gallery of plots
 
-    Describe the start of the gallery of plots
-
-    .. image:: ../_static/GalleryOfPlots.png
-       :width: 50 %
-       :align: center
+.. image:: ../_static/GalleryOfPlots.png
+    :width: 50 %
+    :align: center
 
 
-
-    The Python source code for starting the IDE can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ShowEditor.py
-
-    The C\# source code for the gallery of plots can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/TinyPlot2D
+The C\# source code for the gallery of plots can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/TinyPlot2D
 
 
 
 
-    .. code-block:: pycon
+.. code-block:: pycon
 
-        >>> from xlcalcnet import gui
-        >>> gui.plot2d(x)
+    >>> from xlcalcnet import gui
+    >>> gui.plot2d(x)
 
 
 
@@ -97,24 +87,20 @@ Starting the interactive 3D wpf plots
 --------------------------------------------------------------------------------
 
 
-.. method:: gui.plot3d()
+Describe the start of Interactive 3D Wpf plots
 
-    Describe the start of Interactive 3D Wpf plots
-
-    .. image:: ../_static/Wpf3D.png
-       :width: 50 %
-       :align: center
+.. image:: ../_static/Wpf3D.png
+    :width: 50 %
+    :align: center
 
 
-    The Python source code for starting the interactive 3D wpf plots can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ShowPlot3d.py
-
-    The C\# source code for the gallery of plots can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/TinyPlot3D
+The C\# source code for the gallery of plots can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/TinyPlot3D
 
 
-    .. code-block:: pycon
+.. code-block:: pycon
 
-        >>> from xlcalcnet import gui
-        >>> gui.plot3d(x)
+    >>> from xlcalcnet import gui
+    >>> gui.plot3d(x)
 
 
 
@@ -129,26 +115,21 @@ Starting the data viewer
 --------------------------------------------------------------------------------
 
 
-.. method:: gui.dataviewer()
+Describe the start of data viewer
 
-    Describe the start of data viewer
-
-    .. image:: ../_static/DataViewer.png
-       :width: 50 %
-       :align: center
+.. image:: ../_static/DataViewer.png
+    :width: 50 %
+    :align: center
 
 
-
-    The Python source code for starting the data viewer can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ShowDataViewer.py
-
-    The C\# source code for the data viewer can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/DataViewer
+The C\# source code for the data viewer can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/DataViewer
 
 
 
-    .. code-block:: pycon
+.. code-block:: pycon
 
-        >>> from xlcalcnet import gui
-        >>> gui.dataviewer(x)
+    >>> from xlcalcnet import gui
+    >>> gui.dataviewer(x)
 
 
 
@@ -156,29 +137,27 @@ Starting the data viewer
 
 |newpage|
 
+.. _rst_IDLE: 
+
+
 
 Starting IDLE
 --------------------------------------------------------------------------------
 
 
-.. method:: gui.idle()
+Describe the setup and use of IDLE
 
-    Describe the setup and use of IDLE
-
-    .. image:: ../_static/IDLE.png
-       :width: 50 %
-       :align: center
+.. image:: ../_static/IDLE.png
+    :width: 50 %
+    :align: center
 
 
+The C\# source code for the IDLE can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/IDLE
 
-    The Python source code for starting the data viewer can be found here: https://github.com/duhadler/XlCalcNet/blob/master/xlcalcnet/ShowDataViewer.py
+.. code-block:: pycon
 
-    The C\# source code for the data viewer can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/DataViewer
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import gui
-        >>> gui.idle(x)
+    >>> from xlcalcnet import gui
+    >>> gui.idle(x)
 
 
 

@@ -1656,6 +1656,12 @@ https://gmpy2.readthedocs.io/en/latest/
 
 
 
+Assuming that the Python batch files have been installed as described :ref:`here <rst_InstallationBatchFiles>`, gmpy2 can be installed by double-clicking on the batch file ``A11installgmpy2.bat`` in the ``C:\Python313`` folder.
+
+
+
+
+
 Examples for ``gpm``, real input
 ........................................................
 
@@ -1967,12 +1973,13 @@ Binary balls in arbitrary-precision and with arbitrary exponent: ``apm``
 
 The Python module ``apm`` provides support for real and complex binary balls in arbitrary-precision and with arbitrary exponent. The corresponding real and complex data types, ``float`` and ``complex``, are implemented in software.
 
-
-
 pythonflint is a C-coded Python extension module that supports multiple-precision arithmetic. 
 
 https://python-flint.readthedocs.io/en/latest/
 
+
+
+Assuming that the Python batch files have been installed as described :ref:`here <rst_InstallationBatchFiles>`, Python-flint can be installed by double-clicking on the batch file ``A12installpythonflint.bat`` in the ``C:\Python313`` folder.
 
 
 

@@ -60,11 +60,11 @@ First steps with XlCalcNet
 
 Since the path to ``C:\Python313`` is not added to the PATH environment variable, it is convenient to prepare, within the ``C:\Python313`` folder, batch files for the installation of the Python packages which one wishes to install and possibly update later.
 
-The first batch file will ensure that our version of pip is up to date. Right-click over any free space in the ``C:\Python313`` folder, select ``New`` -> ``Text Document``. Rename this document to ``A1upgradepip.bat``, ignoring the warning. Open this file for editing in the Windows standard editor. Type ``python -m pip install -U --no-warn-script-location pip`` as install command, begin a new line, type ``pause``, save the file, and close the editor.
+The first batch file will ensure that our version of pip is up to date. Right-click over any free space in the ``C:\Python313`` folder, select ``New`` -> ``Text Document``. Rename this document to ``A01upgradepip.bat``, ignoring the warning. Open this file for editing in the Windows standard editor. Type ``python -m pip install -U --no-warn-script-location pip`` as install command, begin a new line, type ``pause``, save the file, and close the editor.
 
-Now double-click on ``A1upgradepip.bat``. This will update pip as needed.
+Now double-click on ``A01upgradepip.bat``. This will update pip as needed.
 
-In the same way prepare a batch file named ``A2installxlcalcnet.bat``, using ``python -m pip install -U  xlcalcnet`` as install command. Double-click on ``A2installxlcalcnet.bat``. This will install the latest version of the XlCalcNet package.
+In the same way prepare a batch file named ``A02installxlcalcnet.bat``, using ``python -m pip install -U  xlcalcnet`` as install command. Double-click on ``A02installxlcalcnet.bat``. This will install the latest version of the XlCalcNet package.
 
 To check that this installation was successful, double-click on ``python.exe``, which will open the python console:
 
@@ -94,7 +94,18 @@ XlCalcNet uses the following 3 folders:
     It is crucial for the correct functioning of XlCalcNetThat that the ``DataXlCalcNet`` folder is located in the Documents folder. The ``DataXlCalcNet`` folder has already been downloaded during the installation of XlCalcNet; it is located in the installation folder (in our example ``C:\Python313\Lib\site-packages\xlcalcnet``). **The user needs to copy it manually from the installation folder into the Documents folder**.
 
 
-With the ``DataXlCalcNet`` folder in the Documents folder we are ready for the next step: installing Python.NET.
+
+
+
+.. _rst_InstallationBatchFiles: 
+
+Preparing the use of additional installation batch files for installing Python packages
+............................................................................................
+
+The ``DataXlCalcNet`` folder contains a number of batch files for installing additional Python packages which can be used with XlCalcNet. These batch files are located in the subfolder ``\PythonBatchFiles\BatchFiles``. The user can copy these batch files into the ``C:\Python313`` folder, and double-click on them to install the corresponding Python packages. The user can also create new batch files for installing additional Python packages, using the same procedure as described above for creating the batch files ``A01upgradepip.bat`` and ``A02installxlcalcnet.bat``.
+
+
+
 
 
 
@@ -107,9 +118,10 @@ Python.NET is a package that gives Python programmers nearly seamless integratio
 
 See https://github.com/pythonnet/pythonnet
 
-Right-click over any free space in the ``C:\Python313`` folder, select ``New`` -> ``Text Document``. Rename this document to ``A3installpythonnet.bat``, ignoring the warning. Open this file for editing in the Windows standard editor. Type ``python -m pip install pythonnet`` as install command, begin a new line, type ``pause``, save the file, and close the editor.
 
-Double-click on ``A3installpythonnet.bat``. This will install the latest version of the Python.NET package.
+Assuming that the Python batch files have been installed as described :ref:`here <rst_InstallationBatchFiles>`, Python.NET can be installed by double-clicking on the batch file ``A03installpythonnet.bat`` in the ``C:\Python313`` folder.
+
+
 
 To check that this installation was successful, double-click on ``python.exe``, which will open the python console. With Python.NET installed, we can access the C\# module ``qreal``, which provides functions in quadruple precision:
 
@@ -183,6 +195,485 @@ From now on, you can start the Tiny IDE by clicking on this Python symbol on the
 
 
 
+Overview
+..................................................................................
+
+The Tiny IDE is designed around the structure of the ``DataXlCalcNet`` folder, making it easy to navigate and manage existing code examples, as well a new code written by the user. The Tiny IDE can be used only to edit and run Python or C\# code examples which are located in the ``DataXlCalcNet`` folder and are located in subfolders beginning with ``A0``. The code examples are organized in a tree structure, which is shown in the top right panel (the "folder panel") of the Tiny IDE. 
+
+The top left panel (the "editor panel") of the Tiny IDE shows the code of the selected file, which can be edited and run. The Tiny IDE also provides features like syntax highlighting, autocompletion, bookmarks, code folding, and error highlighting to make coding easier.
+
+The output of the program is shown in the bottom panel (the "output panel") of the Tiny IDE, which has 4 tabs: the "Log" tab, which documents the progress of compiling and running the code (and also displays warning and error messages); the "Output" tab, which shows the text output of the program (if any); the "Function Info" tab, which provides information about the functions (if they belong to a module from XlCalcNet); and the "Search Results" tab, which shows the search results. 
+
+Each file in the ``DataXlCalcNet\A0*`` folders can be opened in the Tiny IDE by clicking on it. Per Tiny IDE instance, only one file can be opened, edited and run at a time (to open an additional file, you need to start a new instance of the Tiny IDE: ``Tools`` -> ``Tiny IDE (external)``). The Tiny IDE will load this file into the editor, and the code can be edited and run. To run the code, click on the "Run" button in the main menu. The output of the program (if any) is shown in the output tab of the output panel.
+
+The ordering and naming of the code examples in the subfolders ``A01_ExamplesPython`` and ``A02_ExamplesCSharp`` matches the ordering and naming of the corresponding chapters, sections and subsections in this manual, making it easy to find the code example which corresponds to a specific section of the manual. In addition, the "section help" feature (``Help`` -> ``Section Help``), which is available in the main menu of the Tiny IDE and opens the corresponding section of this manual in a web browser, depends on this ordering and naming.
+
+Also, in Python, the feature that code examples can be called like modules, using statements like ``from A01_ExamplesPython.B17_VisualisationOfDatasets.C01_BarCharts import D01_BarChartPart1``, depends on keeping this ordering and naming intact.
+
+Therefore the names of these folders and files should not be changed, and new code examples should be added to the appropriate folders, either ``A03_UserlibPython`` or ``A04_UserlibCSharp`` for user-defined libraries, or ``A05_UserExamplesPython`` or ``A06_UserExamplesCSharp`` for code examples which demonstrate the use of existing or user-defined libraries. The Tiny IDE will automatically detect new files and folders, and will update the tree structure accordingly.
+
+
+
+
+
+
+
+The menu bar of the Editor
+..................................................................................
+
+.. image:: ../_static/MenuBar.png
+   :width: 90 %
+   :align: center
+
+The Menubar of the Tiny IDE contains the following menus: ``File``, ``Edit``, ``View``, ``Search``, ``Tools``, and ``Help``. Each menu contains a number of items, which are described below.
+
+There are also two buttons (with green foreground color) in the menu bar: the "Run" button, which runs the code of the current file, and the "Show/Hide" button, which toggles the visibility of the folder panel.
+
+
+|br|
+
+.. image:: ../_static/FileMenu.png
+   :width: 30 %
+   :align: center
+
+In the ``File`` menu, two standard items are missing: "New" and "Open". 
+
+The "New" item is missing because the Tiny IDE is designed to work within the ``DataXlCalcNet`` folder, and therefore new files which are not in the current folder should be created in the appropriate subfolders of ``DataXlCalcNet``, which often have to be created manually first using the Windows Explorer. 
+
+There is, however, a ``Save As`` item in the file menu, which allows to save the current file under a new name in the current folder. This is useful for creating a copy of an existing file, and using this as a starting point for a new file.
+
+The "Open" item (which would typically open a dialog box with the functionally of the Windows Explorer) is missing because the Tiny IDE is limited to the ``DataXlCalcNet`` folder. Instead the folder panel allows to navigate through the ``DataXlCalcNet`` folder and open any file in it.
+
+Renaming or deleting files and folders is possible, but should be done with care, using the Windows Explorer, and not using the Tiny IDE. After these changes, when returning to the Tiny IDE, the tree structure will not be updated automatically, but has to be updated manually by clicking on the appropriate parent folder in the tree structure.
+
+``Open Containing Folder`` opens the Windows Explorer in the folder of the current file. This is useful for quickly accessing other files in the same folder, or for deleting files and folders.
+
+``Open Appdata Local Folder`` opens the Windows Explorer in the ``AppData\Local\XlCalcNetIDE`` folder. This is useful for quickly accessing files and folders which are generated by running Python or C\# code examples in the Tiny IDE.
+
+``Open Binary Folder`` opens the Windows Explorer in the ``Bin`` subfolder of the ``XlCalcNet`` installation. This is useful mostly for debugging purposes.
+
+``Page Setup`` opens the standard Windows dialog for setting up the page layout for printing. ``Print Preview`` opens a preview of the current file, which can be printed from there. ``Print`` opens the standard Windows dialog for printing the current file.
+
+``Save`` will just save the current file without any further action. ``Save As`` has been descibed above. ``Exit`` will close the Tiny IDE.
+
+
+|br|
+
+
+.. image:: ../_static/EditMenu.png
+   :width: 26 %
+   :align: center
+
+
+In the ``Edit`` menu, ``Undo``, ``Redo``, ``Cut``, ``Copy``, ``Paste``, ``Delete``, and ``Select All`` are standard items.  ``Insert BlockComment`` and ``Remove BlockComment`` allows to comment or uncomment a block of code, which is useful for testing purposes (these 2 items are available in the context menu as well). ``Indent`` and ``Unindent`` allow to indent or unindent a block of code, which is useful for formatting purposes. 
+
+``Character Map`` opens the standard Windows dialog for selecting special characters, which can be inserted into the code. ``Calculator`` opens the standard Windows calculator, which can be used for quick calculations. 
+
+
+
+
+
+|br|
+
+
+.. image:: ../_static/ViewMenu.png
+   :width: 26 %
+   :align: center
+
+In the ``View`` menu, ``Collapse Top Level Folds`` allows to collapse all top level folds in the code, which is useful for quickly navigating through the code. 
+
+``Expand All Folds`` allow to collapse or expand all folds in the code, which will make all code visible
+
+``Show Indentation Guides`` toggles the visibility of indentation guides in the editor panel.
+
+``Word Wrap`` toggles word wrap in the editor panel.
+
+``Show Whitespace`` toggles the visibility of whitespace characters in the editor panel.
+
+``Show EOL`` toggles the visibility of end of line markers in the editor panel.
+
+
+
+
+.. image:: ../_static/SearchMenu.png
+   :width: 30 %
+   :align: center
+
+In the ``Search`` menu, ``Find`` starts the search for a string in the code, ``Replace`` allows to replace a string in the code, and ``Goto`` allows to jump to a specific line number in the code. 
+
+The corresponding dialog boxes are shown below:
+
+
+
+.. image:: ../_static/Find.png
+   :width: 50 %
+   :align: center
+
+If the string is found, the first occurrence is highlighted in the code. If the string is not found, a message box appears which informs that the string was not found. The search can be continued by clicking on ``Find Next`` or ``Find Previous``. The search can be limited to the current selection, and it can be case sensitive or insensitive. The search can also be done using regular expressions.
+
+
+
+
+.. image:: ../_static/Replace.png
+   :width: 50 %
+   :align: center
+
+If the string is found, the first occurrence is highlighted in the code. If the string is not found, a message box appears which informs that the string was not found. The search can be continued by clicking on ``Find Next`` or ``Find Previous``. ``Replace Next``, ``Replace Previous`` or ``Replace All`` can be used to decide what to do with the found string. The search can be limited to the current selection, and it can be case sensitive or insensitive. The search can also be done using regular expressions.
+
+
+
+.. image:: ../_static/Goto.png
+   :width: 30 %
+   :align: center
+
+if the line number is valid, the cursor jumps to the specified line number. If the line number is invalid, a message box appears which informs that the line number is invalid.
+
+
+
+
+``Toggle Bookmark`` allows to set or delete a bookmark in the code, which can be used to quickly navigate through the code. 
+``Delete All Bookmarks`` deletes all bookmarks in the code.
+``Next Bookmark`` jumps to the next bookmark in the code.
+``Previous Bookmark`` jumps to the previous bookmark in the code.
+
+
+
+
+|br|
+
+
+.. image:: ../_static/ToolsMenu.png
+   :width: 26 %
+   :align: center
+
+In the ``Tools`` menu, ``Start Socket Server`` starts the socket server, see :ref:`here <rst_ClientServer>` for details.
+
+``Start Output Monitor`` starts the output monitor application, see :ref:`here <rst_OutputMonitor>` for details.
+
+``Tiny IDE (external)`` starts an additional instance of the Tiny IDE, which can be used to edit and run another file. 
+
+``Gallery of Plots`` starts the gallery of plots application, see :ref:`here <rst_GalleryOfPlots>` for details.
+
+``Interactive 3D Wpf Plots`` starts the Interactive 3D Wpf Plots application, see :ref:`here <rst_Wpf3D>` for details.
+
+``Tiny Data Viewer`` starts the Tiny Data Viewer application, see :ref:`here <rst_DataViewer>` for details.
+
+``Python IDLE`` starts the Python IDLE application, see :ref:`here <rst_IDLE>` for details.
+
+``Python Console`` starts the Python console.
+
+
+
+
+
+
+|br|
+
+
+.. image:: ../_static/HelpMenu.png
+   :width: 30 %
+   :align: center
+
+In the ``Help`` menu, ``XlCalcNet Manual (online)...`` displays the start page of the XlCalcNet online manual in a web browser.
+
+``XlCalcNet Section Help (online)...`` displays the section of the XlCalcNet.online manual which corresponds to the current file in a web browser. 
+
+``Tiny IDE Tutorial (online)...`` displays the section of the XlCalcNet.online manual which explains the use of the Tiny IDE in a web browser.
+
+``Python Tutorial (online)...`` displays the online tutorial for Python, which is available on the official Python website in a web browser.
+
+``C\# Tutorial (online)...`` displays the online tutorial for C\#, which is available on the official C\# website in a web browser.
+
+``About XlCalcNet...`` displays information about the XlCalcNet package, including version number and copyright information.
+
+
+
+
+
+
+The context menu and autocomplete feature of the Editor
+..................................................................................
+
+Right-clicking in the editor panel opens a context menu, which provides quick access to common actions like ``Insert Block``, ``Remove Block Comment``, ``Collapse Top Level Folds``, ``Expand All Folds``, ``Goto Previous Bookmark``, ``Goto Next Bookmark``, all of which are also available in the main menu.
+
+New in this context menu is the item ``Show Function Info``, which for functions which belong to a module from XlCalcNet, displays information about the function in the "Function Info" tab of the output panel.
+
+
+.. image:: ../_static/EditorContextMenu.png
+   :width: 50 %
+   :align: center
+
+
+In the screenshot above, the context menu is shown after right-clicking on the function ``dreal.bessel_jv`` (with the curser to the right of the dot). The item ``Show Function Info`` is highlighted, and the corresponding information about this function is shown in the "Function Info" tab of the output panel below.
+
+
+.. image:: ../_static/ShowInManual.png
+   :width: 50 %
+   :align: center
+
+Just to the upper left of the ``Show Function Info`` item, the button ``Show in Manual`` is visible. Clicking on this button opens the corresponding section of the XlCalcNet online manual in a web browser.
+
+
+
+.. image:: ../_static/AutoCompleteModule.png
+   :width: 50 %
+   :align: center
+
+
+This works in combination with the autocomplete feature, which is activated by pressing ``Ctrl + Space``. The autocomplete feature shows a list of functions which belong to a module from XlCalcNet, and for each function, the corresponding information is shown in the "Function Info" tab of the output panel. This allows to quickly find the function which is needed, and to see how it can be used.
+
+
+
+
+.. image:: ../_static/AutoCompleteLibrary.png
+   :width: 50 %
+   :align: center
+
+The autocomplete feature also works for user-defined libraries, however in these cases no additional information is shown in the "Function Info" tab of the output panel.
+
+
+
+
+
+
+
+
+The Python development cycle in the Tiny IDE
+..................................................................................
+
+Here we describe the Python development cycle in the Tiny IDE for producing and running python programs.  The process for producing a Python library is similar but different, and is described :ref:`here <rst_makingPythonLib>`.
+
+Overall, the Python development cycle in the Tiny IDE consists of the following steps: The file is opened in the editor panel, and the code is edited as needed. The code can be run by clicking on the "Run" button in the main menu bar. If there are any errors or warnings, they are shown in the "Log" tab of the output panel. When clicking on the error messages in the "Log" tab, they are also highlighted in the code. After correcting the errors, the "Run" button can be clicked again. If there are no errors, the code is  is executed. Any text output of the program is shown in the "Output" tab of the output panel after the program has finished running.
+
+These steps are illustrated in the following screenshots, which show the Python development cycle in the Tiny IDE for producing and running python programs.
+
+
+.. image:: ../_static/PythonCodeFolded.png
+   :width: 50 %
+   :align: center
+
+Directly after loading the Python code example, the code is folded, and the "Log" tab of the output panel is empty. The "Output" tab of the output panel is also empty, since the program has not been run yet. The unfolded code looks like this:
+
+
+
+.. code-block:: python
+
+    # See: https://python-graph-gallery.com/80-contour-plot-with-seaborn/
+
+    from xlcalcnet import gui
+    from pathlib import Path
+    import os, time
+    import seaborn as sns 
+    import pandas as pd
+
+    def KdePlot3(**kwargs):
+        OutputDir = kwargs['OutputDir'] if 'OutputDir' in kwargs else 'OutputMonitor'
+        Title = kwargs['Title'] if 'Title' in kwargs else 'KdePlot3'
+        PlotStyle = kwargs['PlotStyle'] if 'PlotStyle' in kwargs else 'default'
+        OutputMode = kwargs['OutputMode'] if 'OutputMode' in kwargs else 'svg'
+        FigSizeX = float(kwargs['FigSizeX']) if 'FigSizeX' in kwargs else 4
+        FigSizeY = float(kwargs['FigSizeY']) if 'FigSizeY' in kwargs else 4
+        Resolution = int(kwargs['Resolution']) if 'Resolution' in kwargs else 300
+    # End of standard key word arguments
+
+        # Choose 'Agg' as backend unless we want to display the graphics
+        if (OutputMode != 'gui'):
+            import matplotlib
+            matplotlib.use('Agg')
+        import matplotlib.pyplot as plt
+        plt.style.use(PlotStyle)
+
+        fn = gui.get_dataxlcalcnet()
+        fn += r'\DataExamples\MainExamples\Workbooks\Datasets.xlsx'
+        datasets = pd.ExcelFile(fn)
+        df = pd.read_excel(datasets, 'iris')
+
+        sns.set_style('white')
+        sns.kdeplot(x=df.sepal_width, y=df.sepal_length,
+                    cmap='Blues', fill=True, bw_adjust=0.5)
+
+        fig = plt.gcf()
+        fig.tight_layout()
+
+
+    # Start of output choices
+        if (OutputMode == 'plt'):
+            plt.show()
+        elif (OutputMode == 'gui'):
+            gui.plot(fig, __file__, Title)
+        else:
+            FName = 'Temp'
+            if OutputDir != 'Temp': FName = (Path(__file__).stem)
+            LocalDir = gui.get_local_appdata_xlcalcnet()
+            FullPath = os.sep.join([LocalDir, OutputDir, FName + '.' + OutputMode])
+            plt.savefig(FullPath,  bbox_inches='tight')
+            if OutputDir != 'Temp': print('Graphics written to: ', FullPath)
+        plt.close('all')
+
+    try:
+        if __name__ == '__main__':
+            start0 = time.time()
+            KdePlot3(OutputMode = 'gui')
+            end0 = time.time()
+            print('Elapsed time:', format(end0 - start0, '.4g'), 'seconds' )
+
+
+    except Exception:
+        import traceback
+        print(traceback.format_exc())
+
+
+
+
+Folding in Python works on code blocks which are defined by indentation. At the top of the file are the import statements, followed by a ``def funcname(**kwargs)`` statement, where "funcname" in this case is ``KdePlot3``. The body of this function is the place where "the real work" is done. 
+
+This function also has two standardized parts (for Matplotlib graphic code examples), one at the beginning, which takes care of the keyword arguments and ensures that the 'Agg' backend is used unless one wants to display the graphics (this is necessary to ensure this function can be called from older versions of Libreoffice like 7.4); and another at the end ("# Start of output choices"), which makes sure that interactive use, output to the OutputMonitor folder, or output to another folder is possible in verious formats (like jpg, png, svg, pdf).
+
+At the end of the file, the ``try ... except`` block makes sure that exceptions are dealt with properly, that the time for actually running the code (as opposed to the time required to load and initialize the imported libraries) is printed, and that we have the chance to call the function with a specific set of keyword arguments (in this case ``OutputMode = 'gui'``).
+
+Python files with this overall structure are well suited for calls from within spreadsheet functions.
+
+
+
+.. image:: ../_static/PythonFoldedOutput.png
+   :width: 50 %
+   :align: center
+
+The output of the program is shown in the "Output" tab of the output panel after the program has finished running. Lengthy text output can be folded and unfolded, and the context menu allows to copy the output to the clipboard, clear the output, or save the output to a file.
+
+
+.. image:: ../_static/PythonLog.png
+   :width: 50 %
+   :align: center
+
+
+The "Log" tab of the output panel contains additional information after successfully running the program.
+
+
+
+.. image:: ../_static/PythonErrorBeforeRun.png
+   :width: 50 %
+   :align: center
+
+The snapshot above shows a code snippet which contains an error (``print`` is misspelled as print2``)
+
+.. image:: ../_static/PythonErrorMsgInLog.png
+   :width: 50 %
+   :align: center
+
+This error is detected by the Python interpreter, and is reported in the Log tab of the output panel.
+
+
+.. image:: ../_static/PythonErrorMsgInCode.png
+   :width: 50 %
+   :align: center
+
+After double-clicking in the Log tab on the first line in red color, the error is also indicated in the editor, with a full error message below the line where the error occured.
+
+
+
+
+
+
+
+
+
+
+
+The CSharp development cycle in the Tiny IDE
+..................................................................................
+
+Here we describe the C\# development cycle in the Tiny IDE for producing ``*.exe`` files which are stored in the ``AppData\Local\XlCalcNetIDE\Bin`` folder, and which can be run immediately. The process for producing  ``*.dll`` files which can be called from Python is similar but different, and is described :ref:`here <rst_makingCSharpDlls>`.
+
+Overall, the C\# development cycle in the Tiny IDE consists of the following steps: The file is opened in the editor panel, and the code is edited as needed. The code can be compiled by clicking on the "Run" button in the main menu bar. If there are any errors or warnings, they are shown in the "Log" tab of the output panel. When clicking on the error messages in the "Log" tab, they are also highlighted in the code. After correcting the errors, the "Run" button can be clicked again to compile the code. If there are no errors, the code is compiled into a ``*.exe`` file, which is stored in the ``AppData\Local\XlCalcNetIDE\Bin`` folder and which is executed automatically after successful compilation. Any text output of the program is shown in the "Output" tab of the output panel after the program has finished running.
+
+These steps are illustrated in the following screenshots, which show the C\# development cycle in the Tiny IDE for producing ``*.exe`` files:
+
+
+
+.. image:: ../_static/CSharpFolding.png
+   :width: 50 %
+   :align: center
+
+Directly after loading the C\# code example, the code is folded, and the "Log" tab of the output panel is empty. The "Output" tab of the output panel is also empty, since the program has not been run yet.
+
+Folding in C\# works both on regions and on code blocks. Overall, the folding of regions is more important than the folding of code blocks, since it allows to hide the implementation of functions and classes, and to focus on the overall structure of the code. The folding of code blocks is useful for hiding the implementation of loops and conditional statements, and to focus on the overall structure of the code.
+
+The screenshot above shows the overall structure of the C\# code examples in XlCalcNet, which are organized into regions. The first region contains the using statements, followed (outside of any region) by a ``static class Program`` statement, and the first function in this class, which always has the form ``public static void MainTests()``. The body of this function contains calls to the functions where "the real work" is done. 
+
+The implementations of these functions are located in the following regions (in this example the regions "ScplxTest0" and "ScplxTest1"), which are organized according to the functionality of the functions. The next region is called "Main", and contains the implementation of the ``Main`` function, which is the entry point of the program, and contains a lot of necessary boilerplate code, which makes sure that the program can run without a project file (which Visual Studio would require). The last region is called "EOF", and makes sure that code folding is working properly (adressing a small bug in the underlying ScintillaNet library). These last two regions should never be changed by the user during normal use.
+
+.. image:: ../_static/CSharpOutput.png
+   :width: 50 %
+   :align: center
+
+The output of the program is shown in the "Output" tab of the output panel after the program has finished running. The output can be folded and unfolded, and the context menu allows to copy the output to the clipboard, clear the output, or save the output to a file.
+
+
+.. image:: ../_static/CSharpRun.png
+   :width: 50 %
+   :align: center
+
+
+The "Log" tab of the output panel contains additional information after successfully compiling and running the program.
+
+
+
+.. image:: ../_static/CSharpErrorBeforeCompile.png
+   :width: 50 %
+   :align: center
+
+The snapshot above shows a code snippet which contains an error (the variable ``res1`` is defined twice)
+
+.. image:: ../_static/CSharpErrorLogAfterCompile.png
+   :width: 50 %
+   :align: center
+
+This error is detected by the compiler, and is reported in the Log tab of the output panel.
+
+
+.. image:: ../_static/CSharpErrorMsgInCode.png
+   :width: 50 %
+   :align: center
+
+After double-clicking in the Log tab on the first line in red color, the error is also indicated in the editor, with a full error message below the line where the error occured.
+
+
+
+
+
+.. image:: ../_static/CSharpWarningMsgInCode.png
+   :width: 50 %
+   :align: center
+
+Warnings are treated in a way similar to errors: in this case the program is compiled (in the absence of errors), but is not run. Instead the warning is shown in the Log tab, and after double-clicking on it the warning is also indicated in the editor, with a full error message below the line where the warning was triggered.
+
+
+
+
+
+
+The Output tab in the Output Panel
+..................................................................................
+
+Describe the toolbar on top of the Output tab.
+
+Note that the Output tab in the Output Panel can be used to display any text output of a Python or C\# program. The output can be folded and unfolded, and the context menu allows to copy the output to the clipboard, clear the output, or save the output to a file.
+
+.. image:: ../_static/OutputFoldingContextMenu.png
+   :width: 50 %
+   :align: center
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -201,8 +692,8 @@ The C\# source code for the IDE can be found here: https://github.com/duhadler/X
 
 |newpage|
 
-Installing and using Numpy, Matplotlib, Pandas, Scipy and Seaborn
----------------------------------------------------------------------
+Installing and using Numpy, Matplotlib, Pandas, Scipy, Seaborn, Statsmodels and Scikit-learn
+-----------------------------------------------------------------------------------------------------
 
 
 Numpy
@@ -210,11 +701,8 @@ Numpy
 
 Numpy is "The fundamental package for scientific computing with Python". For more information, see  https://numpy.org/ and https://en.wikipedia.org/wiki/NumPy.
 
-To install Numpy, follow these steps:
 
-Right-click over any free space in the ``C:\Python313`` folder, select ``New`` -> ``Text Document``. Rename this document to ``A4installnumpy.bat``, ignoring the warning. Open this file for editing in the Windows standard editor. Type ``python -m pip install -U --no-warn-script-location numpy`` as install command, begin a new line, type ``pause``, save the file, and close the editor.
-
-Double-click on ``A4installnumpy.bat``. This will install the latest version of Numpy.
+Assuming that the Python batch files have been installed as described :ref:`here <rst_InstallationBatchFiles>`, Numpy can be installed by double-clicking on the batch file ``A04installnumpy.bat`` in the ``C:\Python313`` folder.
 
 
 
@@ -297,11 +785,8 @@ Matplotlib
 Matplotlib is "a comprehensive library for creating static, animated, and interactive visualizations in Python". For more information, see  https://matplotlib.org/ and https://en.wikipedia.org/wiki/Matplotlib.
 
 
-To install Matplotlib, follow these steps:
+Assuming that the Python batch files have been installed as described :ref:`here <rst_InstallationBatchFiles>`, Matplotlib can be installed by double-clicking on the batch file ``A05installmatplotlib.bat`` in the ``C:\Python313`` folder.
 
-Right-click over any free space in the ``C:\Python313`` folder, select ``New`` -> ``Text Document``. Rename this document to ``A5installmatplotlib.bat``, ignoring the warning. Open this file for editing in the Windows standard editor. Type ``python -m pip install -U --no-warn-script-location matplotlib`` as install command, begin a new line, type ``pause``, save the file, and close the editor.
-
-Double-click on ``A5installmatplotlib.bat``. This will install the latest version of Matplotlib.
 
 
 The following example shows how Matplotlib can be used to produce a boxplot. This code example shows how parameters can be passed:
@@ -392,11 +877,8 @@ Pandas is "a fast, powerful, flexible and easy to use open source data analysis 
 built on top of the Python programming language". For more information, see  https://pandas.pydata.org/ and https://en.wikipedia.org/wiki/Pandas_(software) 
 
 
-To install Pandas, follow these steps:
+Assuming that the Python batch files have been installed as described :ref:`here <rst_InstallationBatchFiles>`, Pandas can be installed by double-clicking on the batch file ``A06installpandas.bat`` in the ``C:\Python313`` folder.
 
-Right-click over any free space in the ``C:\Python313`` folder, select ``New`` -> ``Text Document``. Rename this document to ``A6installpandas.bat``, ignoring the warning. Open this file for editing in the Windows standard editor. Type ``python -m pip install -U "pandas[excel]`` as install command, begin a new line, type ``pause``, save the file, and close the editor.
-
-Double-click on ``A6installpandas.bat``. This will install the latest version of Pandas.
 
 
 The following example shows how Pandas can be used to access data in an Excel workbook:
@@ -487,11 +969,7 @@ Scipy is "a fast, powerful, flexible and easy to use open source data analysis a
 built on top of the Python programming language". For more information, see  https://scipy.org/ and https://en.wikipedia.org/wiki/SciPy.
 
 
-To install Scipy, follow these steps:
-
-Right-click over any free space in the ``C:\Python313`` folder, select ``New`` -> ``Text Document``. Rename this document to ``A7installscipy.bat``, ignoring the warning. Open this file for editing in the Windows standard editor. Type ``python -m pip install scipy`` as install command, begin a new line, type ``pause``, save the file, and close the editor.
-
-Double-click on ``A7installscipy.bat``. This will install the latest version of Scipy.
+Assuming that the Python batch files have been installed as described :ref:`here <rst_InstallationBatchFiles>`, Scipy can be installed by double-clicking on the batch file ``A07installscipy.bat`` in the ``C:\Python313`` folder.
 
 
 The following example shows how Scipy can be used for fitting data:
@@ -562,11 +1040,8 @@ Seaborn
 Seaborn is "a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics". For more information, see  https://seaborn.pydata.org/.
 
 
-To install Seaborn, follow these steps:
+Assuming that the Python batch files have been installed as described :ref:`here <rst_InstallationBatchFiles>`, Seaborn can be installed by double-clicking on the batch file ``A08installseaborn.bat`` in the ``C:\Python313`` folder.
 
-Right-click over any free space in the ``C:\Python313`` folder, select ``New`` -> ``Text Document``. Rename this document to ``A8installseaborn.bat``, ignoring the warning. Open this file for editing in the Windows standard editor. Type ``python -m pip install seaborn`` as install command, begin a new line, type ``pause``, save the file, and close the editor.
-
-Double-click on ``A8installseaborn.bat``. This will install the latest version of Seaborn.
 
 
 The following example shows how Seaborn can be used to produce a scatterplot matrix:
@@ -631,6 +1106,213 @@ This produces the following output:
 .. image:: ../_static/Seaborn/scatterplot_matrix.*
     :align: center
 
+
+
+
+|newpage|
+
+
+Statsmodels
+...................................................................................
+
+Statsmodels is a Python package for statistical computations. For more information, see https://www.statsmodels.org/stable/index.html.
+
+
+Assuming that the Python batch files have been installed as described :ref:`here <rst_InstallationBatchFiles>`, Statsmodels can be installed by double-clicking on the batch file ``A09installstatsmodels.bat`` in the ``C:\Python313`` folder.
+
+
+
+
+The following example shows how Statsmodels can be used for ordinary least squares calculations:
+
+
+.. code-block:: python
+
+    import time
+    import numpy as np
+    import pandas as pd
+    import statsmodels.api as sm
+
+    # See also: https://www.statsmodels.org/stable/examples/notebooks/generated/ols.html
+
+
+    def OLS(**kwargs):
+
+    # End of standard key word arguments
+
+        nsample = 100
+        x = np.linspace(0, 10, 100)
+        X = np.column_stack((x, x**2))
+        beta = np.array([1, 0.1, 10])
+        e = np.random.normal(size=nsample)
+
+        X = sm.add_constant(X)
+        y = np.dot(X, beta) + e
+
+        model = sm.OLS(y, X)
+        results = model.fit()
+        print(results.summary())
+
+
+    try:
+        if __name__ == '__main__':
+            start0 = time.time()
+            OLS()
+            end0 = time.time()
+            print('Elapsed time:', format(end0 - start0, '.4g'), 'seconds' )
+
+    except Exception:
+        import traceback
+        print(traceback.format_exc())
+
+The output looks like this
+
+
+.. code-block:: none
+
+                                OLS Regression Results                            
+    ==============================================================================
+    Dep. Variable:                      y   R-squared:                       1.000
+    Model:                            OLS   Adj. R-squared:                  1.000
+    Method:                 Least Squares   F-statistic:                 4.027e+06
+    Date:                Sun, 11 Oct 2026   Prob (F-statistic):          2.61e-239
+    Time:                        08:43:02   Log-Likelihood:                -146.41
+    No. Observations:                 100   AIC:                             298.8
+    Df Residuals:                      97   BIC:                             306.6
+    Df Model:                           2                                         
+    Covariance Type:            nonrobust                                         
+    ==============================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+    ------------------------------------------------------------------------------
+    const          1.6938      0.312      5.422      0.000       1.074       2.314
+    x1            -0.1856      0.144     -1.286      0.202      -0.472       0.101
+    x2            10.0215      0.014    717.320      0.000       9.994      10.049
+    ==============================================================================
+    Omnibus:                        2.046   Durbin-Watson:                   2.207
+    Prob(Omnibus):                  0.359   Jarque-Bera (JB):                1.489
+    Skew:                          -0.065   Prob(JB):                        0.475
+    Kurtosis:                       2.416   Cond. No.                         144.
+    ==============================================================================
+
+    Notes:
+    [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+    Elapsed time: 0.005406 seconds
+
+
+
+
+
+
+|newpage|
+
+
+Scikit-learn
+...................................................................................
+
+Scikit-learn is a Python package for machine learning. For more information, see https://scikit-learn.org/stable/index.html.
+
+
+Assuming that the Python batch files have been installed as described :ref:`here <rst_InstallationBatchFiles>`, Scikit-learn can be installed by double-clicking on the batch file ``A10install_scikit_learn.bat`` in the ``C:\Python313`` folder.
+
+
+
+
+The following example shows how Scikit-learn can be used for a Principal Component Analysis (PCA) on the Iris dataset.:
+
+
+
+.. code-block:: python
+
+    from xlcalcnet import gui
+    from pathlib import Path
+    import os, time
+    import numpy as np
+    from sklearn.decomposition import PCA
+
+    # see https://scikit-learn.org/stable/auto_examples/decomposition/plot_pca_iris.html
+
+    def PlotPCA(**kwargs):
+        OutputDir = kwargs['OutputDir'] if 'OutputDir' in kwargs else 'OutputMonitor'
+        Title = kwargs['Title'] if 'Title' in kwargs else 'First three principal components'
+        PlotStyle = kwargs['PlotStyle'] if 'PlotStyle' in kwargs else 'default'
+        OutputMode = kwargs['OutputMode'] if 'OutputMode' in kwargs else 'svg'
+        FigSizeX = float(kwargs['FigSizeX']) if 'FigSizeX' in kwargs else 8
+        FigSizeY = float(kwargs['FigSizeY']) if 'FigSizeY' in kwargs else 6
+        Resolution = int(kwargs['Resolution']) if 'Resolution' in kwargs else 300
+    # End of standard key word arguments
+    
+        # Choose 'Agg' as backend unless we want to display the graphics
+        if (OutputMode != 'gui'):
+            import matplotlib
+            matplotlib.use('Agg')
+        import matplotlib.pyplot as plt
+        plt.style.use(PlotStyle)
+
+        from sklearn.datasets import load_iris
+        iris = load_iris(as_frame=True)
+        #print(iris.keys())
+        fig = plt.figure(1, figsize=(FigSizeX, FigSizeY))
+        ax = fig.add_subplot(111, projection='3d', elev=-150, azim=110)
+
+        X_reduced = PCA(n_components=3).fit_transform(iris.data)
+        scatter = ax.scatter(
+            X_reduced[:, 0],
+            X_reduced[:, 1],
+            X_reduced[:, 2],
+            c=iris.target,
+            s=40,
+        )
+        ax.set(
+            title=Title,
+            xlabel='1st Principal Component',
+            ylabel='2nd Principal Component',
+            zlabel='3rd Principal Component',
+        )
+        ax.xaxis.set_ticklabels([])
+        ax.yaxis.set_ticklabels([])
+        ax.zaxis.set_ticklabels([])
+
+        # Add a legend
+        legend1 = ax.legend(
+            scatter.legend_elements()[0],
+            iris.target_names.tolist(),
+            loc='upper right',
+            title='Classes',
+        )
+        ax.add_artist(legend1)
+
+    # Start of output choices
+        if (OutputMode == 'plt'):
+            plt.show()
+        elif (OutputMode == 'gui'):
+            gui.plot(fig, __file__, Title)
+        else:
+            FName = 'Temp'
+            if OutputDir != 'Temp': FName = (Path(__file__).stem)
+            LocalDir = gui.get_local_appdata_xlcalcnet()
+            FullPath = os.sep.join([LocalDir, OutputDir, FName + '.' + OutputMode])
+            plt.savefig(FullPath,  bbox_inches='tight')
+            if OutputDir != 'Temp': print('Graphics written to: ', FullPath)
+        plt.close('all')
+
+    try:
+        if __name__ == '__main__':
+            start0 = time.time()
+            PlotPCA(OutputMode = 'gui')
+            end0 = time.time()
+            print('Elapsed time:', format(end0 - start0, '.4g'), 'seconds' )
+
+    except Exception:
+        import traceback
+        print(traceback.format_exc())
+
+The output looks like this:
+
+
+
+.. image:: ../_static/SciKitLearn_PCA.*
+    :width: 90 %
+    :align: center
 
 
 

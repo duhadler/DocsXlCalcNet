@@ -20,6 +20,27 @@
 Using XlCalcNet within MS Excel
 ===========================================
 
+Compared to Microsofts "Python in Excel" (see https://support.microsoft.com/en-us/excel/python/introduction-to-python-in-excel), XlCalcNet has the following features:
+
+*  Every thing is open source and can be modified by the user.
+
+*  The user can use any (locally installed) Python version from 3.8 to 3.15, and any Python package, including packages which are not supported by Microsoft.
+
+*  Both MS Excel 365 and MS Excel 2010 - 2024 are supported.
+
+*  Everything stays local. No data and no code leave the computer of the user. An internet connection is not necessary.
+
+*  Using Python.NET, code written in C\# can also be used from Python, and therefore from MS Excel.
+
+*  The user can use any Python IDE, including the Tiny IDE which is part of XlCalcNet.
+
+*  The user can write functions of arbitrary length and complexity in Python using an external editor, and call them in a short Python script in a spreadsheet cell.
+
+*  Such functions can also be called as procedures from VBA.
+
+*  There is extensive support for calculations in multiprecision, including arbitrary precision.
+
+
 
 
 .. _rst_setting_up_MSExcel: 
@@ -62,7 +83,7 @@ Using the Python standard library functions within spreadsheet formulas
 ------------------------------------------------------------------------------------------
 
 .. note::
-    In the following subsections, we will work with the file ``XlDemoCPYstd.xlsx``, which contains examples for using the Python standard library. More advanced examples using Numpy, Matplotlib, Pandas, Scipy, Seaborn and XlCalcNet start  :ref:`here <rst_XL_functions_advanced>`.
+    In the following subsections, we will work with the file ``XlDemoCPYstd.xlsx``, which contains examples for using the Python standard library. More advanced examples using Numpy, Matplotlib, Pandas, Scipy, Seaborn and XlCalcNet start  :ref:`here <rst_XL_functions_advanced>`, and examples for using dynamic arrays in MS Excel with XlCalcNet start  :ref:`here <rst_XL_functions_dynamic>`.
 
 
 Within MS Excel, open from the main menu ``File`` -> ``Open`` in the Documents folder the MS Excel workbook ``DataXlCalcNet\DataExamples\MainExamples\Workbooks\XlDemoCPYstd.xlsx``.
@@ -173,7 +194,7 @@ Using Numpy, Matplotlib, Pandas, Scipy, Seaborn and XlCalcNet within spreadsheet
 ------------------------------------------------------------------------------------------
 
 .. note::
-    In the following subsections. we will work with the file ``XlDemoCPYadv.xlsx``, which contains more advanced examples using Numpy, Matplotlib, Pandas, Scipy, Seaborn and XlCalcNet. Examples for using MS Excel with the Python standard library start :ref:`here <rst_XL_functions_standard>`.
+    In the following subsections we will work with the file ``XlDemoCPYadv.xlsx``, which contains more advanced examples using Numpy, Matplotlib, Pandas, Scipy, Seaborn and XlCalcNet. Examples for using MS Excel with the Python standard library start :ref:`here <rst_XL_functions_standard>`, and an example of using dynamic arrays in MS Excel starts :ref:`here <rst_XL_functions_dynamic>`.
 
 
 Within MS Excel, open from the main menu ``File`` -> ``Open`` in the Documents folder the MS Excel workbook ``DataXlCalcNet\DataExamples\MainExamples\Workbooks\XlDemoCPYadv.xlsx``.
@@ -455,9 +476,15 @@ And this is the Output Monitor showing the result (with the project panel hidden
 
 
 
+.. _rst_XL_functions_dynamic: 
 
 Using dynamic arrrays in MS Excel
 ---------------------------------------------
+
+.. note::
+    In the following subsection we will work with the file ``XlDemoCPYdyn.xlsx``, which contains an example of using dynamic arrays in MS Excel with XlCalcNet. Examples for using MS Excel with the Python standard library start :ref:`here <rst_XL_functions_standard>`, and more advanced examples using Numpy, Matplotlib, Pandas, Scipy, Seaborn and XlCalcNet start  :ref:`here <rst_XL_functions_advanced>`.
+
+
 
 
 The worksheet "Student_t_1sample_test"

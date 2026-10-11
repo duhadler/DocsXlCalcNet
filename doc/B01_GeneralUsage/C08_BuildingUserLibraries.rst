@@ -25,6 +25,8 @@ Examples of using the user libraries are provided in the subfolders of the ``A06
 
 
 
+.. _rst_makingPythonLib: 
+
 Building a library of user defined Python functions
 ------------------------------------------------------------------------------------
 
@@ -37,6 +39,7 @@ These functions can be tested  in the subfolders of the ``A06_UserlibExamplesPyt
 
 
 
+.. _rst_makingCSharpDlls: 
 
 Building a library of user defined functions in C\#
 ----------------------------------------------------------------------------------------
@@ -55,20 +58,17 @@ Sphinx: building documentation for software with Python (html and pdf)
 
 This manual is written in reStructuredText (reST) format, which is a lightweight markup language. The manual is built using Sphinx, which is a tool that makes it easy to create intelligent and beautiful documentation for Python projects (or other software projects). Sphinx uses reStructuredText as its markup language and can generate output in various formats, including HTML and PDF.
 
-To build the documentation, you need to have Sphinx installed. You can install Sphinx using pip: 
-
-``python -m pip install sphinx``
+To build the documentation, you need to have Sphinx installed.
 
 See also: https://www.sphinx-doc.org/en/master/
 
 
-You also need to install 3 additional Sphinx extensions that are used in this manual: the Sphinx Book Theme, the Sphinx Copybutton extension, and the Sphinx Contrib Bibtex extension. They can be installed using pip:
+You also need to install 3 additional Sphinx extensions that are used in this manual: the Sphinx Book Theme, the Sphinx Copybutton extension, and the Sphinx Contrib Bibtex extension
 
-``python -m pip install sphinx-book-theme``
 
-``python -m pip install sphinx-copybutton``
+Assuming that the Python batch files have been installed as described :ref:`here <rst_InstallationBatchFiles>`, these four packages can be installed by double-clicking on the batch files ``A14installSphinx.bat``, ``A15install_sphinx_book_theme.bat``, ``A16install_sphinx_copybutton.bat``, ``A17install_sphinxcontribute_bibtex.bat``,  in the ``C:\Python313`` folder.
 
-``python -m pip install sphinxcontrib-bibtex``
+
 
 
 With these packages installed, you can build the documentation of the user library by opening in the Tiny IDE the file ``A05_UserlibDocs\B01_Lib01\_static\builddoc.py``. In the Tiny IDE main menu, click on ``Run``. The HTML documentation will then be built in the subfolder ``html`` in the ``XlCalcNetIDE`` folder in the AppData\Local folder. If built has succeded, the documentation will be opened automatically. The html documentation can be viewed by opening the file ``index.html`` in a web browser. 

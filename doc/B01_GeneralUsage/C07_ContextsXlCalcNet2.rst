@@ -24,7 +24,7 @@ Mathematical functions based on XlCalcNet2 (C\#, can be called from Python)
 =================================================================================
 
 
-Describe installing from PyPI
+Assuming that the Python batch files have been installed as described :ref:`here <rst_InstallationBatchFiles>`, XlCalcNet2 can be installed by double-clicking on the batch file ``A13installxlcalcnet2.bat`` in the ``C:\Python313`` folder.
 
 
 
