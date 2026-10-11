@@ -20,13 +20,13 @@
 Using XlCalcNet within MS Excel
 ===========================================
 
-Compared to Microsofts "Python in Excel" (see https://support.microsoft.com/en-us/excel/python/introduction-to-python-in-excel), XlCalcNet has the following features:
+Compared to Microsofts "Python in Excel" (see https://support.microsoft.com/en-us/excel/python/introduction-to-python-in-excel), the following features of XlCalcNet can be highlighted:
 
-*  Every thing is open source and can be modified by the user.
+*  Everything is open source and can be modified by the user.
 
 *  The user can use any (locally installed) Python version from 3.8 to 3.15, and any Python package, including packages which are not supported by Microsoft.
 
-*  Both MS Excel 365 and MS Excel 2010 - 2024 are supported.
+*  MS Excel 2010 - 2024 are supported.
 
 *  Everything stays local. No data and no code leave the computer of the user. An internet connection is not necessary.
 
@@ -382,7 +382,7 @@ The formula in the cell ``B1``. is
 
 .. code-block:: none
 
-    =CPY_0(TEXTJOIN(" ",1,"from A06_UserlibExamplesPython.B29_InferentialStatistics.C01_BasicTests1Sample import D01_StudentT_PValues $n D01_StudentT_PValues.stats_student_t_1sample_test(n=",B3,", mu0=",B4,", mean=",B5,", std=",B6,", alpha=", B7, B8, ")"," $n result='Students t-test, 1 sample'"))
+    =CPY_0(TEXTJOIN(" ",1,"from A06_UserlibExamplesPython.B29_InferentialStatistics.C01_BasicTests1Sample import D01_StudentT_PValues $n importlib.reload(D01_StudentT_PValues) $n D01_StudentT_PValues.stats_student_t_1sample_test(n=",B3,", mu0=",B4,", mean=",B5,", std=",B6,", alpha=", B7, B8, ")"," $n result='Students t-test, 1 sample'"))
 
 
 This formula calls the function ``stats_student_t_1sample_test`` from the module ``D01_StudentT_PValues`` in the package ``A06_UserlibExamplesPython.B29_InferentialStatistics.C01_BasicTests1Sample``. The parameters of this function are taken from the cells ``B3`` to ``B8``. The result is a CSV file named ``TTest1External.csv`` which is written to the Output Monitor folder.  The corresponding Python code with conventional formatting and substitution of the referenced cell values would look like this:
@@ -391,9 +391,13 @@ This formula calls the function ``stats_student_t_1sample_test`` from the module
 .. code-block:: python
 
     from A06_UserlibExamplesPython.B29_InferentialStatistics.C01_BasicTests1Sample import D01_StudentT_PValues
+    importlib.reload(D01_StudentT_PValues)
     D01_StudentT_PValues.stats_student_t_1sample_test(n=[10, 20, 30], mu0=1.0, mean=[4.5,4.7], std=[1,2,3,14], alpha=0.015, I=True, D=True, T=True, C=True, Onesided=True, Twosided=True, OutputMode='csv')
     result='Students t-test, 1 sample'
 
+
+.. note::
+    Here we are using ``importlib.reload`` to make sure that any changes in the code of the module ``D01_StudentT_PValues`` which may have occured since the last use of this spreadsheet function become effective without restarting the Python interpreter.
 
 
 
@@ -441,7 +445,7 @@ The formula in the cell ``B1``. is
 
 .. code-block:: none
 
-    ==CPY_0(TEXTJOIN(" ",1,"from A01_ExamplesPython.B18_FunctionsAndCurvesPlots.C01_Intro_Parametric2D import D07_DistPlotContinuous $n D07_DistPlotContinuous.DistPlotBeta(target=",B3,", a=",B4,", b=",B5,", Title=",B6,", OutputMode = 'svg'",  ")"," $n result='Beta distribution'"))
+    ==CPY_0(TEXTJOIN(" ",1,"from A01_ExamplesPython.B18_FunctionsAndCurvesPlots.C01_Intro_Parametric2D import D07_DistPlotContinuous $n importlib.reload(D07_DistPlotContinuous) $n  D07_DistPlotContinuous.DistPlotBeta(target=",B3,", a=",B4,", b=",B5,", Title=",B6,", OutputMode = 'svg'",  ")"," $n result='Beta distribution'"))
 
 
 This formula calls the function ``DistPlotBeta`` from the module ``D07_DistPlotContinuous`` in the package ``A01_ExamplesPython.B18_FunctionsAndCurvesPlots.C01_Intro_Parametric2D``. The parameters of this function are taken from the cells ``B3`` to ``B8``. The result is a CSV file named ``TTest1External.csv`` which is written to the Output Monitor folder. The corresponding Python code with conventional formatting and substitution of the referenced cell values would look like this:
@@ -450,8 +454,13 @@ This formula calls the function ``DistPlotBeta`` from the module ``D07_DistPlotC
 .. code-block:: python
 
     from A01_ExamplesPython.B18_FunctionsAndCurvesPlots.C01_Intro_Parametric2D import D07_DistPlotContinuous 
+    importlib.reload(D07_DistPlotContinuous)
     D07_DistPlotContinuous.DistPlotBeta(target='pdf', a=[5, 10.0, 20.5], b=[20.5, 10.0, 5], Title='Beta distribution', OutputMode = 'svg')
     result='Beta distribution'
+
+
+.. note::
+    Here we are using ``importlib.reload`` to make sure that any changes in the code of the module ``D07_DistPlotContinuous`` which may have occured since the last use of this spreadsheet function become effective without restarting the Python interpreter.
 
 
 
@@ -507,7 +516,7 @@ The formula in the cell ``A11`` is
 
 .. code-block:: none
 
-    =CPY_0(TEXTJOIN(" ",1,"from A06_UserlibExamplesPython.B29_InferentialStatistics.C01_BasicTests1Sample import D01_StudentT_PValues $n D01_StudentT_PValues.stats_student_t_1sample_test(n=",B3,", mu0=",B4,", mean=",B5,", std=",B6,", alpha=", B7, B8, ")"," $n result='Students t-test, 1 sample'"))
+    =CPY_0(TEXTJOIN(" ",1,"from A06_UserlibExamplesPython.B29_InferentialStatistics.C01_BasicTests1Sample import D01_StudentT_PValues $n importlib.reload(D01_StudentT_PValues) $n  D01_StudentT_PValues.stats_student_t_1sample_test(n=",B3,", mu0=",B4,", mean=",B5,", std=",B6,", alpha=", B7, B8, ")"," $n result='Students t-test, 1 sample'"))
 
 
 This formula calls the function ``stats_student_t_1sample_test`` from the module ``D01_StudentT_PValues`` in the package ``A06_UserlibExamplesPython.B29_InferentialStatistics.C01_BasicTests1Sample``. The parameters of this function are taken from the cells ``B3`` to ``B8``. The result is a Python list, which is displayed as a dynamic array.  The corresponding Python code with conventional formatting and substitution of the referenced cell values would look like this:
@@ -516,8 +525,14 @@ This formula calls the function ``stats_student_t_1sample_test`` from the module
 .. code-block:: python
 
     from A06_UserlibExamplesPython.B29_InferentialStatistics.C01_BasicTests1Sample import D01_StudentT_PValues
+    importlib.reload(D01_StudentT_PValues)
     D01_StudentT_PValues.stats_student_t_1sample_test(n=[10, 20, 30], mu0=1.0, mean=[4.5,4.7], std=[1,2,3,14], alpha=0.015, I=True, D=True, T=True, C=True, Onesided=True, Twosided=True, OutputMode='list')
     result='Students t-test, 1 sample'
+
+
+.. note::
+    Here we are using ``importlib.reload`` to make sure that any changes in the code of the module ``D01_StudentT_PValues`` which may have occured since the last use of this spreadsheet function become effective without restarting the Python interpreter.
+
 
 
 

@@ -135,31 +135,6 @@ The C\# source code for the data viewer can be found here: https://github.com/du
 
 
 
-|newpage|
-
-.. _rst_IDLE: 
-
-
-
-Starting IDLE
---------------------------------------------------------------------------------
-
-
-Describe the setup and use of IDLE
-
-.. image:: ../_static/IDLE.png
-    :width: 50 %
-    :align: center
-
-
-The C\# source code for the IDLE can be found here: https://github.com/duhadler/XlCalcNet/tree/master/xlcalcnet/Addin/NET48/Source/IDLE
-
-.. code-block:: pycon
-
-    >>> from xlcalcnet import gui
-    >>> gui.idle(x)
-
-
 
 |newpage|
 

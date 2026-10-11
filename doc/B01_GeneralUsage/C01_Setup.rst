@@ -358,7 +358,7 @@ In the ``Tools`` menu, ``Start Socket Server`` starts the socket server, see :re
 
 ``Tiny Data Viewer`` starts the Tiny Data Viewer application, see :ref:`here <rst_DataViewer>` for details.
 
-``Python IDLE`` starts the Python IDLE application, see :ref:`here <rst_IDLE>` for details.
+``Python IDLE`` starts the Python IDLE application.
 
 ``Python Console`` starts the Python console.
 
