@@ -391,7 +391,7 @@ In the ``Help`` menu, ``XlCalcNet Manual (online)...`` displays the start page o
 
 
 
-The context menu and autocomplete feature of the Editor
+The context menu of the editor
 ..................................................................................
 
 Right-clicking in the editor panel opens a context menu, which provides quick access to common actions like ``Insert Block``, ``Remove Block Comment``, ``Collapse Top Level Folds``, ``Expand All Folds``, ``Goto Previous Bookmark``, ``Goto Next Bookmark``, all of which are also available in the main menu.

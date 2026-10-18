@@ -360,7 +360,7 @@ Gegenbauer (ultraspherical) polynomial, `C_{n}^{\alpha}(x)`
 
 |newpage|
 
-Jacobi polynomials, `P_{n}^{(a, b)}`
+Jacobi polynomials, `P_{n}^{(a, b)}(x)`
 -------------------------------------------------------------------------------
 
 .. method:: ctx.jacobi_p(n, a, b, x)
