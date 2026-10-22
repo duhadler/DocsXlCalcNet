@@ -113,6 +113,35 @@ One
 
 
 
+Imaginary One
+-------------------------------------------------------------------------------
+
+.. property:: ctx.onej
+
+    where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
+
+    Returns the imaginary unit.
+
+
+    In extended precision (32 bit version of xlcalcnet)
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import ereal
+        >>> ereal.ConstDegree()
+        ereal('1.7453292519943295769E-2')
+
+
+    In double precision (64 bit version of xlcalcnet)
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import ereal
+        >>> ereal.ConstDegree()
+        0.0174532925199433
+
+
+
 
 
 Positive infinity

@@ -31,7 +31,7 @@ The Weierstrass functions take real values on the real axis iff the lattice is f
 
 
 
-Weierstrass function `\wp_e(x,e_1,e_2)` (also DAMath)
+Weierstrass function `\wp_e(x,e_1,e_2)`
 -------------------------------------------------------------------------------
 
 .. method:: ctx.weierstrass_p_e(x,e1,e2)  
@@ -72,7 +72,7 @@ Weierstrass function `\wp_e(x,e_1,e_2)` (also DAMath)
 
 
 
-Weierstrass function `\wp'_e(x,e_1,e_2)` (also DAMath)
+Weierstrass function `\wp'_e(x,e_1,e_2)`
 -------------------------------------------------------------------------------
 
 .. method:: ctx.weierstrass_pprime_e(x,e1,e2)
@@ -99,41 +99,6 @@ Weierstrass function `\wp'_e(x,e_1,e_2)` (also DAMath)
         ereal('5.3518479027559984754E-1')
 
 
-
-
-
-
-
-
-
-Inverse Weierstrass function `\wp^{-1}_e(y,e_1,e_2)` (also DAMath)
--------------------------------------------------------------------------------
-
-.. method:: ctx.weierstrass_p_inv_e(y,e1,e2) 
-
-    Returns the functional inverse `\wp^{-1}_e` of the Weierstrass function for `y \ge e_1`, i.e. the smallest positive `x` with `\wp_e(x,e_1,e_2) = y`. The result is computed with the symmetric Carlson integral,
-
-    .. math:: \wp^{-1}_e(y,e_1,e_2) = \frac{1}{2} \int_y^{\infty} \frac{\mathrm{d}t}{\sqrt{(t-e_1)(t-e_2)(t-e_3)}} = R_F(y-e_1, y-e_2, y-e_3)
-
-    See also: MathWorld :cite:p:`WolframFun192`, :cite:t:`Ehrhardt2018` (3.2.17.8).
-
-
-    .. math ::  g_{2}=2({e_{1}}^{2}+{e_{2}}^{2}+{e_{3}}^{2}),
-
-    .. math ::  g_{3}=4e_{1}e_{2}e_{3}.
-
-
-
-
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ereal
-        >>> ereal.WpeInv(2.5, 1.5, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.WpeInv(2.5, 1.5, '0.51')
-        ereal('5.3518479027559984754E-1')
 
 
 
@@ -193,6 +158,40 @@ Weierstrass Sigma function `\sigma_e(z, e_1, e_2)`
     .. math ::  g_{2}=2({e_{1}}^{2}+{e_{2}}^{2}+{e_{3}}^{2}),
 
     .. math ::  g_{3}=4e_{1}e_{2}e_{3}=.
+
+
+
+
+
+Inverse Weierstrass function `\wp^{-1}_e(y,e_1,e_2)`
+-------------------------------------------------------------------------------
+
+.. method:: ctx.weierstrass_p_inv_e(y,e1,e2) 
+
+    Returns the functional inverse `\wp^{-1}_e` of the Weierstrass function for `y \ge e_1`, i.e. the smallest positive `x` with `\wp_e(x,e_1,e_2) = y`. The result is computed with the symmetric Carlson integral,
+
+    .. math:: \wp^{-1}_e(y,e_1,e_2) = \frac{1}{2} \int_y^{\infty} \frac{\mathrm{d}t}{\sqrt{(t-e_1)(t-e_2)(t-e_3)}} = R_F(y-e_1, y-e_2, y-e_3)
+
+    See also: MathWorld :cite:p:`WolframFun192`, :cite:t:`Ehrhardt2018` (3.2.17.8).
+
+
+    .. math ::  g_{2}=2({e_{1}}^{2}+{e_{2}}^{2}+{e_{3}}^{2}),
+
+    .. math ::  g_{3}=4e_{1}e_{2}e_{3}.
+
+
+
+
+    An example in Python
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import ereal
+        >>> ereal.WpeInv(2.5, 1.5, 0.5)
+        ereal('5.2359877559829887307E-1')
+        >>> ereal.WpeInv(2.5, 1.5, '0.51')
+        ereal('5.3518479027559984754E-1')
+
 
 
 

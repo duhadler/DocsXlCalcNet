@@ -3,7 +3,7 @@
 
 
 
-Distribution functions
+Complex functions
 ***********************************
 
 Text explaining this chapter
@@ -16,7 +16,7 @@ Text explaining this chapter
    :maxdepth: 5
 
 
-   C07_WeierstrassTau.rst
+   D01_EllipticK.rst
 
 
 

@@ -26,14 +26,11 @@ Weierstrass elliptic functions, in terms of (real) lattice invariants `g_2, g_3`
 
 The Weierstrass functions take real values on the real axis iff the lattice is fixed under complex conjugation, or, equivalently, when `g_2, g_3 \in \mathbb{R}`.
 
-See also: https://gist.github.com/stla/d771e0a8c351d16d186c79bc838b6c48
-
-
 
 
 .. _rst_mpm_wpg: 
 
-Weierstrass function `\wp_g(z, g_2, g_3)` (also DAMath)
+Weierstrass function `\wp_g(z, g_2, g_3)`
 -------------------------------------------------------------------------------
 
 
@@ -99,8 +96,8 @@ Weierstrass function `\wp_g(z, g_2, g_3)` (also DAMath)
 
 
 
-    For `\Delta = g_2^3 - 27 g_3^2 \ne 0`, we first compute the elliptic half periods `\omega_1, \omega_2` from the lattice  invariants `g_2, g_3`  (see :ref:`EllipticHalfPeriodsG <rst_mpm_elliptic_halfperiods_from_invariants>`), and set `\omega = \omega_1, \tau = \omega_2/\omega_1`. 
-    Then `\wp_g(z; g_2, g_3) = \wp(z| \omega, \tau)` (see :ref:`WeierstrassP <rst_mpm_wpg_by_tau>`).
+    For `\Delta = g_2^3 - 27 g_3^2 \ne 0`, we first compute the elliptic half periods `\omega_1, \omega_2` from the lattice  invariants `g_2, g_3` , and set `\omega = \omega_1, \tau = \omega_2/\omega_1`. 
+    Then `\wp_g(z; g_2, g_3) = \wp(z| \omega, \tau)`.
 
 
     For `\Delta = 0, g_2 > 0, g_3 \ne 0`, the function `\wp_g(\cdot)` degenerates to a simply periodic function, which can be expressed in closed form in terms of elementary functions:
@@ -210,7 +207,7 @@ Weierstrass function, first derivative: `\wp_g'(z, g_2, g_3)`
 
 
 
-    For `\Delta = g_2^3 - 27 g_3^2 \ne 0`, we first compute the elliptic half periods `\omega_1, \omega_2` from the lattice  invariants `g_2, g_3` (see :ref:`EllipticHalfPeriodsG <rst_mpm_elliptic_halfperiods_from_invariants>`), and set `\omega = \omega_1, \tau = \omega_2/\omega_1`. Then `\wp_g'(z; g_2, g_3) = \wp'(z| \omega, \tau)` (see :ref:`WeierstrassPPrime <rst_mpm_wpg_prime_by_tau>`).
+    For `\Delta = g_2^3 - 27 g_3^2 \ne 0`, we first compute the elliptic half periods `\omega_1, \omega_2` from the lattice  invariants `g_2, g_3`, and set `\omega = \omega_1, \tau = \omega_2/\omega_1`. Then `\wp_g'(z; g_2, g_3) = \wp'(z| \omega, \tau)`.
 
 
     For `\Delta = 0, g_2 > 0, g_3 \ne 0`, the function `\wp_g'(\cdot)` degenerates to a simply periodic function, which can be expressed in closed form in terms of elementary functions:
@@ -268,69 +265,6 @@ Weierstrass function, first derivative: `\wp_g'(z, g_2, g_3)`
 
 
 
-
-|newpage|
-
-.. _rst_mpm_wpg_inv: 
-
-Inverse Weierstrass function `\wp_g^{-1}(z, g_2, g_3)`
--------------------------------------------------------------------------------
-
-
-.. method:: ctx.weierstrass_p_invG(z, g2, g3)
-
-
-    Computes the Inverse Weierstrass function `\wp_g^{-1}(z, g_2, g_3)`
-
-    See also MathWorld :cite:p:`WolframFun192`, Flint :cite:p:`FlintFun190`.
-
-
-    .. math :: \wp_g^{-1}(z; g_2, g_3) = \wp^{-1}(z| \tau = \omega_2/\omega_1, \omega = \omega_1)
-
-
-    Returns the functional inverse `\wp^{-1}_g` of the Weierstrass function for `y \ge e_1`, i.e. the smallest positive `x` with `\wp^{-1}_g(y,g_2,g_3) = y`, if it exists. See also: MathWorld :cite:p:`WolframFun192`, :cite:t:`Ehrhardt2018` (3.2.17.9).
-
-
-
-    An example with real input for `z` and with purely imaginary input for `\tau`, producing real output:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; z = '100'; tau = '0.0 + 0.9j'
-        >>> \mathrm{d}x = dec.weierstrass_p_inv(z, tau); mx = mpm.weierstrass_p_inv(z, tau)
-        >>> gx = gmp.weierstrass_p_inv(z, tau)
-        >>> fx = fpm.weierstrass_p_inv(z, tau); ax = apm.weierstrass_p_inv(z, tau)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  1.000602721184701332310197413726890982085E-1
-        mpm:  1.000602721184701332310197413726890982085e-1
-        gmp:  1.000602721184701332310197413726890982085E-01
-        fpm:  1.00060272118470E-01
-        apm:  1.000602721184701332310197413726890982085e-1 (7.17e-40%)
-
-
-
-
-    An example with complex input for `z` and `\tau`:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; z = '0.1 + 0.5j'; tau = '0.7 + 0.9j'
-        >>> \mathrm{d}x = dec.weierstrass_p_inv(z, tau); mx = mpm.weierstrass_p_inv(z, tau)
-        >>> gx = gmp.weierstrass_p_inv(z, tau)
-        >>> fx = fpm.weierstrass_p_inv(z, tau); ax = apm.weierstrass_p_inv(z, tau)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax], aligned=True)
-        dec: 4.2630465458606458544E-1              - 3.0967048559182771279E-1j
-        mpm: 4.2630465458606458544e-1              - 3.0967048559182771279e-1j
-        gmp: 4.2630465458606458544E-01             - 3.0967048559182771279E-01j
-        fpm: 4.26304654586065E-01                  - 3.09670485591828E-01j
-        apm: 4.2630465458606458544e-1 (1.265e-16%) - 3.0967048559182771279e-1 (-1.063e-16%)j
-
-
-
-
-
     
 |newpage|
 
@@ -384,7 +318,7 @@ Weierstrass Zeta function `\zeta_g(z, g_2, g_3)`
 
 
 
-    For `\Delta = g_2^3 - 27 g_3^2 \ne 0`, we first compute the elliptic half periods `\omega_1, \omega_2` from the lattice  invariants `g_2, g_3` (see :ref:`EllipticHalfPeriodsG <rst_mpm_elliptic_halfperiods_from_invariants>`), and set `\omega = \omega_1, \tau = \omega_2/\omega_1`. Then `\zeta_g(z; g_2, g_3) = \zeta(z| \omega, \tau)` (see :ref:`WeierstrassZeta <rst_mpm_weierstrass_zeta_by_tau>`).
+    For `\Delta = g_2^3 - 27 g_3^2 \ne 0`, we first compute the elliptic half periods `\omega_1, \omega_2` from the lattice  invariants `g_2, g_3`, and set `\omega = \omega_1, \tau = \omega_2/\omega_1`. Then `\zeta_g(z; g_2, g_3) = \zeta(z| \omega, \tau)`.
 
 
     For `\Delta = 0, g_2 > 0, g_3 \ne 0`, the function `\zeta_g(\cdot)` can be expressed in closed form in terms of elementary functions:
@@ -475,7 +409,7 @@ Weierstrass Sigma function `\sigma_g(z, g_2, g_3`)
 
 
 
-    For `\Delta = g_2^3 - 27 g_3^2 \ne 0`, we first compute the elliptic half periods `\omega_1, \omega_2` from the lattice  invariants `g_2, g_3` (see :ref:`EllipticHalfPeriodsG <rst_mpm_elliptic_halfperiods_from_invariants>`), and set `\omega = \omega_1, \tau = \omega_2/\omega_1`. Then `\sigma_g(z; g_2, g_3) = \sigma(z| \omega, \tau)` (see :ref:`WeierstrassSigma <rst_mpm_weierstrass_sigma_by_tau>`).
+    For `\Delta = g_2^3 - 27 g_3^2 \ne 0`, we first compute the elliptic half periods `\omega_1, \omega_2` from the lattice  invariants `g_2, g_3`, and set `\omega = \omega_1, \tau = \omega_2/\omega_1`. Then `\sigma_g(z; g_2, g_3) = \sigma(z| \omega, \tau)`.
 
 
     For `\Delta = 0, g_2 > 0, g_3 \ne 0`, the function `\sigma_g(\cdot)` can be expressed in closed form in terms of elementary functions:
@@ -510,6 +444,68 @@ Weierstrass Sigma function `\sigma_g(z, g_2, g_3`)
         gmp:  9.998992989830383649264433694319757846077E-02
         fpm:  9.99899298983038E-02
         apm:  9.998992989830383649264433694319757846077e-2 (5.023e-39%)
+
+
+
+
+
+|newpage|
+
+.. _rst_mpm_wpg_inv: 
+
+Inverse Weierstrass function `\wp_g^{-1}(z, g_2, g_3)`
+-------------------------------------------------------------------------------
+
+
+.. method:: ctx.weierstrass_p_invG(z, g2, g3)
+
+
+    Computes the Inverse Weierstrass function `\wp_g^{-1}(z, g_2, g_3)`
+
+    See also MathWorld :cite:p:`WolframFun192`, Flint :cite:p:`FlintFun190`.
+
+
+    .. math :: \wp_g^{-1}(z; g_2, g_3) = \wp^{-1}(z| \tau = \omega_2/\omega_1, \omega = \omega_1)
+
+
+    Returns the functional inverse `\wp^{-1}_g` of the Weierstrass function for `y \ge e_1`, i.e. the smallest positive `x` with `\wp^{-1}_g(y,g_2,g_3) = y`, if it exists. See also: MathWorld :cite:p:`WolframFun192`, :cite:t:`Ehrhardt2018` (3.2.17.9).
+
+
+
+    An example with real input for `z` and with purely imaginary input for `\tau`, producing real output:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
+        >>> mpm.dps = 40; z = '100'; tau = '0.0 + 0.9j'
+        >>> \mathrm{d}x = dec.weierstrass_p_inv(z, tau); mx = mpm.weierstrass_p_inv(z, tau)
+        >>> gx = gmp.weierstrass_p_inv(z, tau)
+        >>> fx = fpm.weierstrass_p_inv(z, tau); ax = apm.weierstrass_p_inv(z, tau)
+        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
+        dec:  1.000602721184701332310197413726890982085E-1
+        mpm:  1.000602721184701332310197413726890982085e-1
+        gmp:  1.000602721184701332310197413726890982085E-01
+        fpm:  1.00060272118470E-01
+        apm:  1.000602721184701332310197413726890982085e-1 (7.17e-40%)
+
+
+
+
+    An example with complex input for `z` and `\tau`:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
+        >>> mpm.dps = 20; z = '0.1 + 0.5j'; tau = '0.7 + 0.9j'
+        >>> \mathrm{d}x = dec.weierstrass_p_inv(z, tau); mx = mpm.weierstrass_p_inv(z, tau)
+        >>> gx = gmp.weierstrass_p_inv(z, tau)
+        >>> fx = fpm.weierstrass_p_inv(z, tau); ax = apm.weierstrass_p_inv(z, tau)
+        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax], aligned=True)
+        dec: 4.2630465458606458544E-1              - 3.0967048559182771279E-1j
+        mpm: 4.2630465458606458544e-1              - 3.0967048559182771279e-1j
+        gmp: 4.2630465458606458544E-01             - 3.0967048559182771279E-01j
+        fpm: 4.26304654586065E-01                  - 3.09670485591828E-01j
+        apm: 4.2630465458606458544e-1 (1.265e-16%) - 3.0967048559182771279e-1 (-1.063e-16%)j
 
 
 

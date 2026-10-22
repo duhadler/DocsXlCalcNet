@@ -494,10 +494,10 @@ Voigt function H
 Voigt Profile distribution, pdf
 -------------------------------------------------------------------------------
 
-.. method:: math53.voigt_profile_pdf(q, a, b)
+.. method:: math53.voigt_profile_pdf(x, sigma, gamma)
 
 
-    Returns `\text{pdf}(x)`, the probability density function of a random variable `X`, following a Voigt Profile distribution with shape `a > 0`, scale `b > 0`, and the support interval `(0, +\infty)`.
+    Returns `\text{pdf}(x)`, the probability density function of a random variable `X`, following a Voigt Profile distribution with shape `sigma > 0`, scale `gamma > 0`, and the support interval `(0, +\infty)`.
     See also  Wikipedia :cite:p:`WikipediaDis56`.
 
 

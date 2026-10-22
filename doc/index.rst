@@ -250,12 +250,12 @@
         :caption: Additional functions in double precision
         :maxdepth: 5
 
-        B26_MoreElementary/index.rst
-        B27_MoreElliptic/index.rst
-        B28_MoreLerchPhi/index.rst
-        B29_More0F1/index.rst
-        B30_More1F1AndOther/index.rst
-        B31_MoreComplex/index.rst
+        B26_Math53Elementary/index.rst
+        B27_Math53Elliptic/index.rst
+        B28_Math53LerchPhi/index.rst
+        B29_Math530F1/index.rst
+        B30_Math531F1/index.rst
+        B31_Cmath53/index.rst
 
 
 

@@ -22,14 +22,18 @@ Logarithms and related functions
 
 
 
-Natural logarithm `\log(x)`
+Logarithm `\log(x[, base])`
 -------------------------------------------------------------------------------
 
-.. method:: ctx.log(x)
+.. method:: ctx.log(x[, base])
 
     where ``ctx`` is ``math53``, ``mathc53``, ``ctxcpp``, ``ctxflint``.
 
-    Returns the natural logarithm of `x`, `\log(x) = \log(x)`. See also Wikipedia :cite:p:`WikipediaFun16`,  MathWorld :cite:p:`WolframFun17`,  NIST :cite:p:`DLMFun15`, :cite:t:`Ehrhardt2018` (4.2.41), Flint :cite:p:`FlintFun15`, Flint :cite:p:`FlintFun16`, Mpmath :cite:p:`MpmathFun23b`.
+    With one argument, returns the natural logarithm of x (to base e).
+
+    With two arguments, returns the logarithm of x to the given base, calculated as `\log(x)/\log(base)`.
+
+    See also Wikipedia :cite:p:`WikipediaFun16`,  MathWorld :cite:p:`WolframFun17`,  NIST :cite:p:`DLMFun15`, :cite:t:`Ehrhardt2018` (4.2.41), Flint :cite:p:`FlintFun15`, Flint :cite:p:`FlintFun16`, Mpmath :cite:p:`MpmathFun23b`.
 
     .. math::  \log(x) = \int_1^x \frac{1}{t} \, \mathrm{d}t.
 
@@ -250,79 +254,6 @@ Logarithm with base `2`, `\mathrm{log2}(x) = \log_{2}(x)`
         fpm: 1.96119877030151E-01                  + 6.82188176920921E-01j
         gmp: 1.9611987703015082905E-01             + 6.8218817692092067374E-01j
         apm: 1.9611987703015082905e-1 (2.159e-19%) + 6.8218817692092067374e-1 (6.208e-20%)j
-
-
-
-
-
-
-Logarithm with base `b`, `\mathrm{logbase}(x, b) = \log_{b}(x)`
--------------------------------------------------------------------------------
-
-.. method:: ctx.logbase(x, b)
-
-    where ``ctx`` is ``math53``, ``mathc53``, ``ctxcpp`` or ``ctxflint``.
-
-    Returns the base-`b` logarithm of `x`, `\log_{b}(x) = \log(x)/\log(b)`. See also  Wikipedia :cite:p:`WikipediaFun15`,  Wikipedia :cite:p:`WikipediaFun16`,  MathWorld :cite:p:`WolframFun15`,  NIST :cite:p:`DLMFun15`, :cite:t:`Ehrhardt2018` (4.2.45), Flint :cite:p:`FlintFun15`, Flint :cite:p:`FlintFun16`, Mpmath :cite:p:`MpmathFun23a`.
-
-
-    The principal branch of the complex logarithm is used, meaning that `\Im(\log(z)) = -\pi < \arg(z) \le \pi`.
-
-
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ereal
-        >>> ereal.Logb(0.5, 2)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Logb('0.51', 2)
-        ereal('5.3518479027559984754E-1')
-
-
-
-    An example with real input:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 40; x = '3'; b = 2
-        >>> \mathrm{d}x = dec.logb(x, b); mx = mpm.logb(x, b); ix = ipm.logb(x, b)
-        >>> mpm.show([\mathrm{d}x, mx, ix])
-        dec:  1.584962500721156181453738943947816508760E+0
-        mpm:  1.584962500721156181453738943947816508760e+0
-        ipm:  1.584962500721156181453738943947816508760e+0 (7.243e-40%)
-
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 40; x = '3'
-        >>> fx = fpm.logb(x, b); gx = gmp.logb(x, b); ax = apm.logb(x, b)
-        >>> mpm.show([fx, gx, ax])
-        fpm:  1.58496250072116E+00
-        gmp:  1.584962500721156181453738943947816508760E+00
-        apm:  1.584962500721156181453738943947816508760e+0 (4.346e-39%)
-
-
-    The following example with complex input shows that the relative error can be high in double precision:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 20; z = '3 + 1.57079632679489j'; b = 2
-        >>> \mathrm{d}z = dec.logb(z, b); mz = mpm.logb(z, b); iz = ipm.logb(z, b)
-        >>> mpm.show([\mathrm{d}z, mz, iz], aligned=True)
-        dec: 1.7597332799736771780E+0              + 6.9588093355781665181E-1j
-        mpm: 1.7597332799736771780e+0              + 6.9588093355781665181e-1j
-        ipm: 1.7597332799736771780e+0 (4.813e-20%) + 6.9588093355781665181e-1 (1.217e-19%)j
-
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 20; z = '3 + 1.57079632679489j'; b = 2
-        >>> fz = fpm.logb(z, b); gz = gmp.logb(z, b); az = apm.logb(z, b)
-        >>> mpm.show([fz, gz, az], aligned=True)
-        fpm: 1.75973327997368E+00                  + 6.95880933557817E-01j
-        gmp: 1.7597332799736771780E+00             + 6.9588093355781665181E-01j
-        apm: 1.7597332799736771780e+0 (4.813e-19%) + 6.9588093355781665181e-1 (5.477e-19%)j
-
-
 
 
 

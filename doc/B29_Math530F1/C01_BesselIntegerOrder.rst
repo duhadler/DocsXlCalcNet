@@ -192,33 +192,4 @@ Bessel function of the 2nd kind, integer order `n, Y_{n}(x)`
 
 
 
-|newpage|
-
-
-Bessel Lambda function, `\Lambda(\nu,x)`
--------------------------------------------------------------------------------
-
-.. method:: math53.bessel_lambda(v,x)
-
-    Returns the Bessel `\Lambda_{\nu}(x)` function, defined for `x, \nu \ge 0` as
-
-    .. math:: \Lambda(\nu,x) = \Gamma(\nu+1) \frac{J_{\nu}(x)}{(x/2)^{\nu}}
-
-    See also: :cite:t:`Ehrhardt2018` (3.1.3.3).
-
-
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselLambda(3, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselLambda(3, '0.51')
-        ereal('5.3518479027559984754E-1')
-
-
-
-
-
 

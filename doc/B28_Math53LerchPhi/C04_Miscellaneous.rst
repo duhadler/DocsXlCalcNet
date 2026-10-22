@@ -26,10 +26,10 @@ Log-series distribution, pmf
 -------------------------------------------------------------------------------
 
 
-.. method:: math53.logseries_pmf(k, mu)
+.. method:: math53.logseries_pmf(p, k)
 
 
-    Returns `\text{pmf}(x)`, the value of the probability mass function (:ref:`Pmf <Dist_Pmf>`) of the log-series distribution with mean `mu` and the support interval `(0,+\infty)`, and `0 \le q \le 1`.
+    Returns `\text{pmf}(x)`, the value of the probability mass function (:ref:`Pmf <Dist_Pmf>`) of the log-series distribution with shape parameters `p, 0 \le p \le 1`, `k>1`. and the support interval `(0,+\infty)`.
 
     See also  Wikipedia :cite:p:`WikipediaDis97`, MathWorld :cite:p:`WolframDis97`, :cite:t:`Johnson2005`, :cite:t:`Ehrhardt2018` (3.9.17).
 
@@ -37,7 +37,7 @@ Log-series distribution, pmf
 
 
 
-    .. math:: \text{pmf}(x) = \frac{-1}{\ln(1-p)} \frac{p^k}{k}.
+    .. math:: \text{pmf}(x) = \frac{-1}{\log(1-p)} \frac{p^k}{k}.
 
     The following example shows both forms of the syntax: 
 
@@ -59,13 +59,15 @@ Log-series distribution, cdf
 -------------------------------------------------------------------------------
 
 
-.. method:: math53.logseries_cdf(k, mu)
+.. method:: math53.logseries_cdf(p, k)
 
-    Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the log-series distribution with mean `mu` and the support interval `(0,+\infty)`, and `0 \le q \le 1`.
+    Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the log-series distribution with shape parameters `p, 0 \le p \le 1`, `k>1`. and the support interval `(0,+\infty)`.
 
     See also  Wikipedia :cite:p:`WikipediaDis97`, MathWorld :cite:p:`WolframDis97`, :cite:t:`Johnson2005`, :cite:t:`Ehrhardt2018` (3.9.17).
 
-    .. math::  \text{cdf}(x) = 1 + \frac{B(p; k+1, 0)}{\ln(1-p)}.
+    .. math::  \text{cdf}(x) = 1 + \frac{B(p; k+1, 0)}{\log(1-p)} = 1 + \frac{a^k (\Phi(p,1,k)-1/k)}{\log(1-p)}, 
+
+    where `B(\cdot)` is the incomplete beta function, and `\Phi(\cdot)` is Lerch's transcendent.
 
     The following example shows both forms of the syntax:
 
@@ -87,7 +89,7 @@ Zeta distribution, pmf
 -------------------------------------------------------------------------------
 
 
-.. method:: math53.zeta_pmf(k, r)
+.. method:: math53.zeta_pmf(r, k)
 
 
     Returns `\text{pmf}(x)`, the value of the probability mass function (:ref:`Pmf <Dist_Pmf>`) of the zeta distribution with parameter `r`, and `0 \le q \le 1`.
@@ -117,7 +119,7 @@ Zeta distribution, cdf
 -------------------------------------------------------------------------------
 
 
-.. method:: math53.zeta_cdf(k, r)
+.. method:: math53.zeta_cdf(r, k)
 
 
     Returns `\text{cdf}(x)`, the value of the cumulative distribution function (:ref:`Cdf <Dist_Cdf>`) of the zeta distribution:

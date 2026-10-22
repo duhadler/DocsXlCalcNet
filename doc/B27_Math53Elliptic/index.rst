@@ -37,5 +37,8 @@ Real elliptic functions
     C07_LemniscateFunctions.rst
 
 
+    C08_NevilleThetaFunctions.rst
+
+
 
 

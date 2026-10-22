@@ -18,8 +18,6 @@
 
 
 
-|newpage|
-
 Additional elementary complex functions
 ===============================================================================
 

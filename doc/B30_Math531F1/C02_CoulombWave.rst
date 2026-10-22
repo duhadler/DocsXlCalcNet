@@ -223,7 +223,7 @@ Regular Coulomb wave functions `F_l(\eta, x), F'_l(\eta, x)`
 
 
 
-Irregular Coulomb wave functions `G_l(\eta,z), x), G'_l(\eta,z)`
+Irregular Coulomb wave functions `G_l(\eta,x), G'_l(\eta,x)`
 -------------------------------------------------------------------------------
 
 .. method:: math53.coulomb_g(L, eta, x)
