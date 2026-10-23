@@ -12,9 +12,6 @@
 
 
 
-
-|newpage|
-
 Conversions of parameters of elliptic functions
 ===============================================================================
 
@@ -37,11 +34,13 @@ Elliptic nome `q(k)` (DAMath)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticNome(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticNome('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.elliptic_nome(-0.9333)
+        0.12535593275727377
+        >>> math53.elliptic_nome(0.0)
+        0.0
+        >>> math53.elliptic_nome(0.9333)
+        0.12535593275727377
 
 
 
@@ -62,11 +61,13 @@ Elliptic modulus `k(q)` (DAMath)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticModulus(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticModulus('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.elliptic_modulus(0.0)
+        0.0
+        >>> math53.elliptic_modulus(0.01)
+        0.3845443947629648
+        >>> math53.elliptic_modulus(0.6333)
+        0.9999999966889508
 
 
 
@@ -88,11 +89,13 @@ Jacobi amplitude, `\mathrm{am}(x, k)` (DAMath)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiAmplitude(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiAmplitude(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_amplitude(1.2, -4.333)
+        -0.21310912002774368
+        >>> math53.jacobi_amplitude(2.4, 0.0)
+        2.4
+        >>> math53.jacobi_amplitude(3.7, 4.333)
+        -0.024983643980939094
 
 
 

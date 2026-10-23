@@ -33,11 +33,13 @@ Jacobi theta function `\theta'_1(q)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiTheta1p(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiTheta1p('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_theta1p(0.01)
+        0.632265795377228
+        >>> math53.jacobi_theta1p(0.5)
+        0.5489785325603408
+        >>> math53.jacobi_theta1p(0.9333)
+        1.8387255175389385e-13
 
 
 
@@ -58,11 +60,13 @@ Jacobi theta function `\theta_2(q)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiTheta2(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiTheta2('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_theta02(0.01)
+        0.6325187775875117
+        >>> math53.jacobi_theta02(0.5)
+        2.128931250513028
+        >>> math53.jacobi_theta02(0.9333)
+        6.74621917080838
 
 
 
@@ -82,11 +86,13 @@ Jacobi theta function `\theta_3(q)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiTheta3(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiTheta3('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_theta03(0.01)
+        1.0200000200000001
+        >>> math53.jacobi_theta03(0.5)
+        2.128936827211877
+        >>> math53.jacobi_theta03(0.9333)
+        6.74621917080838
 
 
 
@@ -107,11 +113,13 @@ Jacobi theta function `\theta_4(q)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiTheta4(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiTheta4('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_theta04(0.01)
+        0.98000002
+        >>> math53.jacobi_theta04(0.5)
+        0.12112420800258053
+        >>> math53.jacobi_theta04(0.9333)
+        4.040136238779326e-15
 
 
 

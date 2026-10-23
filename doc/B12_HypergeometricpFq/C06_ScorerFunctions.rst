@@ -50,10 +50,10 @@ Scorer function `\mathrm{Gi}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.AiryGi(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.AiryGi(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.AiryGi('0.51')
+        >>> math53.AiryGi('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -125,10 +125,10 @@ Scorer function `\mathrm{Hi}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.AiryHi(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.AiryHi(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.AiryHi('0.51')
+        >>> math53.AiryHi('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -192,10 +192,10 @@ First derivative of the Scorer function `\mathrm{Gi}(x)`, `\mathrm{Gi}'(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.AiryGi(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.AiryGi(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.AiryGi('0.51')
+        >>> math53.AiryGi('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -266,10 +266,10 @@ First derivative of the Scorer function `\mathrm{Hi}(x)`, `\mathrm{Hi}'(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.AiryHi(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.AiryHi(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.AiryHi('0.51')
+        >>> math53.AiryHi('0.51')
         ereal('5.3518479027559984754E-1')
 
 

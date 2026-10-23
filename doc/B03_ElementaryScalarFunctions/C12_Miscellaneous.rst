@@ -59,10 +59,10 @@ Lambert `W` function, `W_0(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LambertW(3.4)
+        >>> from xlcalcnet import math53
+        >>> math53.LambertW(3.4)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.LambertW(13.4)
+        >>> math53.LambertW(13.4)
         ereal('5.3518479027559984754E-1')
 
 
@@ -115,10 +115,10 @@ Lambert `W` function, `W_{-1}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LambertW1(0.2)
+        >>> from xlcalcnet import math53
+        >>> math53.LambertW1(0.2)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.LambertW1(0.21)
+        >>> math53.LambertW1(0.21)
         ereal('5.3518479027559984754E-1')
 
 

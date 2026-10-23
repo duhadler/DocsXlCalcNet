@@ -61,8 +61,8 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmaxRhoPdf(x, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmaxRhoPdf(x, rho, k)
     ereal('5.2359877559829887307E-1')
 
 
@@ -70,20 +70,20 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmaxRhoPdf(x, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmaxRhoPdf(x, rho, k)
     ereal('5.2359877559829887307E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmaxRhoCdf(x, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmaxRhoCdf(x, rho, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NmaxRhoCdf(x, rho, k)
+    >>> math53.NmaxRhoCdf(x, rho, k)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmaxRhoQtf(q, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmaxRhoQtf(q, rho, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NmaxRhoQtf(q, rho, k)
+    >>> math53.NmaxRhoQtf(q, rho, k)
     ereal('5.3518479027559984754E-1')
 
 
@@ -134,27 +134,27 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmmRhoPdf(x, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmmRhoPdf(x, rho, k)
     ereal('5.2359877559829887307E-1')
 
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmmRhoPdf(x, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmmRhoPdf(x, rho, k)
     ereal('5.2359877559829887307E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmmRhoCdf(x, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmmRhoCdf(x, rho, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NmmRhoCdf(x, rho, k)
+    >>> math53.NmmRhoCdf(x, rho, k)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmmRhoQtf(q, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmmRhoQtf(q, rho, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NmmRhoQtf(q, rho, k)
+    >>> math53.NmmRhoQtf(q, rho, k)
     ereal('5.3518479027559984754E-1')
 
 
@@ -220,31 +220,31 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmaxRhoijPdf(q, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmaxRhoijPdf(q, rho, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NmaxRhoijPdf(q, rho, k)
+    >>> math53.NmaxRhoijPdf(q, rho, k)
     ereal('5.3518479027559984754E-1')
 
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmaxRhoijPdf(q, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmaxRhoijPdf(q, rho, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NmaxRhoijPdf(q, rho, k)
+    >>> math53.NmaxRhoijPdf(q, rho, k)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmaxRhoijCdf(q, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmaxRhoijCdf(q, rho, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NmaxRhoijCdf(q, rho, k)
+    >>> math53.NmaxRhoijCdf(q, rho, k)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmaxRhoijQtf(q, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmaxRhoijQtf(q, rho, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NmaxRhoijQtf(q, rho, k)
+    >>> math53.NmaxRhoijQtf(q, rho, k)
     ereal('5.3518479027559984754E-1')
 
 
@@ -306,32 +306,32 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmmRhoijPdf(x, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmmRhoijPdf(x, rho, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NmmRhoijPdf(x, rho, k)
+    >>> math53.NmmRhoijPdf(x, rho, k)
     ereal('5.3518479027559984754E-1')
 
 
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmmRhoijPdf(x, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmmRhoijPdf(x, rho, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NmmRhoijPdf(x, rho, k)
+    >>> math53.NmmRhoijPdf(x, rho, k)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmmRhoijCdf(x, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmmRhoijCdf(x, rho, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NmmRhoijCdf(x, rho, k)
+    >>> math53.NmmRhoijCdf(x, rho, k)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NmmRhoijQtf(q, rho, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NmmRhoijQtf(q, rho, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NmmRhoijQtf(q, rho, k)
+    >>> math53.NmmRhoijQtf(q, rho, k)
     ereal('5.3518479027559984754E-1')
 
 
@@ -394,32 +394,32 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NrangePdf(x, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NrangePdf(x, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NrangePdfxq, k)
+    >>> math53.NrangePdfxq, k)
     ereal('5.3518479027559984754E-1')
 
 
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NrangePdf(x, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NrangePdf(x, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NrangePdfxq, k)
+    >>> math53.NrangePdfxq, k)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NrangeCdf(x, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NrangeCdf(x, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NrangePdf(x, k)
+    >>> math53.NrangePdf(x, k)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NrangeQtf(q, k)
+    >>> from xlcalcnet import math53
+    >>> math53.NrangeQtf(q, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NrangeQtf(q, k)
+    >>> math53.NrangeQtf(q, k)
     ereal('5.3518479027559984754E-1')
 
 
@@ -468,32 +468,32 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.SmaxPdf(x, k)
+    >>> from xlcalcnet import math53
+    >>> math53.SmaxPdf(x, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.SmaxPdf(x, k)
+    >>> math53.SmaxPdf(x, k)
     ereal('5.3518479027559984754E-1')
 
 
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.SmaxPdf(x, k)
+    >>> from xlcalcnet import math53
+    >>> math53.SmaxPdf(x, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.SmaxPdf(x, k)
+    >>> math53.SmaxPdf(x, k)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.SmaxCdf(x, k)
+    >>> from xlcalcnet import math53
+    >>> math53.SmaxCdf(x, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.SmaxCdf(x, k)
+    >>> math53.SmaxCdf(x, k)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.SmaxQtf(q, k)
+    >>> from xlcalcnet import math53
+    >>> math53.SmaxQtf(q, k)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.SmaxQtf(q, k)
+    >>> math53.SmaxQtf(q, k)
     ereal('5.3518479027559984754E-1')
 
 
@@ -543,32 +543,32 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.SmmPdf(x, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.SmmPdf(x, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.SmmPdf(x, k, nu)
+    >>> math53.SmmPdf(x, k, nu)
     ereal('5.3518479027559984754E-1')
 
 
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.SmmPdf(x, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.SmmPdf(x, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.SmmPdf(x, k, nu)
+    >>> math53.SmmPdf(x, k, nu)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.SmmCdf(x, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.SmmCdf(x, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.SmmCdf(x, k, nu)
+    >>> math53.SmmCdf(x, k, nu)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.SmmQtf(q, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.SmmQtf(q, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.SmmQtf(q, k, nu)
+    >>> math53.SmmQtf(q, k, nu)
     ereal('5.3518479027559984754E-1')
 
 
@@ -621,32 +621,32 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.Dunnett1Pdf(x, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.Dunnett1Pdf(x, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.Dunnett1Pdf(x, rho, k, nu)
+    >>> math53.Dunnett1Pdf(x, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
 
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.Dunnett1Pdf(x, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.Dunnett1Pdf(x, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.Dunnett1Pdf(x, rho, k, nu)
+    >>> math53.Dunnett1Pdf(x, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.Dunnett1Cdf(x, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.Dunnett1Cdf(x, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.Dunnett1Cdf(x, rho, k, nu)
+    >>> math53.Dunnett1Cdf(x, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.Dunnett1Cdf(q, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.Dunnett1Cdf(q, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.Dunnett1Cdf(q, rho, k, nu)
+    >>> math53.Dunnett1Cdf(q, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
 
@@ -698,32 +698,32 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.Dunnett2Pdf(x, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.Dunnett2Pdf(x, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.Dunnett2Pdf(x, rho, k, nu)
+    >>> math53.Dunnett2Pdf(x, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
 
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.Dunnett2Pdf(x, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.Dunnett2Pdf(x, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.Dunnett2Pdf(x, rho, k, nu)
+    >>> math53.Dunnett2Pdf(x, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.Dunnett2Cdf(x, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.Dunnett2Cdf(x, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.Dunnett2Cdf(x, rho, k, nu)
+    >>> math53.Dunnett2Cdf(x, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.Dunnett2Qtf(q, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.Dunnett2Qtf(q, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.Dunnett2Qtf(q, rho, k, nu)
+    >>> math53.Dunnett2Qtf(q, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
 
@@ -774,32 +774,32 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NairPdf(x, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.NairPdf(x, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NairPdf(x, rho, k, nu)
+    >>> math53.NairPdf(x, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
 
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NairPdf(x, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.NairPdf(x, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NairPdf(x, rho, k, nu)
+    >>> math53.NairPdf(x, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NairCdf(x, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.NairCdf(x, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NairCdf(x, rho, k, nu)
+    >>> math53.NairCdf(x, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.NairQtf(q, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.NairQtf(q, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.NairQtf(q, rho, k, nu)
+    >>> math53.NairQtf(q, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
 
@@ -861,32 +861,32 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.HalperinPdf(x, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.HalperinPdf(x, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.HalperinPdf(x, rho, k, nu)
+    >>> math53.HalperinPdf(x, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
 
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.HalperinPdf(x, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.HalperinPdf(x, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.HalperinPdf(x, rho, k, nu)
+    >>> math53.HalperinPdf(x, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.HalperinCdf(x, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.HalperinCdf(x, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.HalperinCdf(x, rho, k, nu)
+    >>> math53.HalperinCdf(x, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.HalperinQtf(q, rho, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.HalperinQtf(q, rho, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.HalperinQtf(q, rho, k, nu)
+    >>> math53.HalperinQtf(q, rho, k, nu)
     ereal('5.3518479027559984754E-1')
 
 
@@ -945,32 +945,32 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.StdrangePdf(x, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.StdrangePdf(x, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.StdrangePdf(x, k, nu)
+    >>> math53.StdrangePdf(x, k, nu)
     ereal('5.3518479027559984754E-1')
 
 
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.StdrangePdf(x, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.StdrangePdf(x, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.StdrangePdf(x, k, nu)
+    >>> math53.StdrangePdf(x, k, nu)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.StdrangeCdf(x, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.StdrangeCdf(x, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.StdrangeCdf(x, k, nu)
+    >>> math53.StdrangeCdf(x, k, nu)
     ereal('5.3518479027559984754E-1')
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.StdrangeQtf(q, k, nu)
+    >>> from xlcalcnet import math53
+    >>> math53.StdrangeQtf(q, k, nu)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.StdrangeQtf(q, k, nu)
+    >>> math53.StdrangeQtf(q, k, nu)
     ereal('5.3518479027559984754E-1')
 
 

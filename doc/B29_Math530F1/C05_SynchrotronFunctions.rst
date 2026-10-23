@@ -34,10 +34,10 @@ First synchrotron function `F(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.SynchF(2.25)
+        >>> from xlcalcnet import math53
+        >>> math53.SynchF(2.25)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.SynchF(12.25)
+        >>> math53.SynchF(12.25)
         ereal('5.3518479027559984754E-1')
 
 
@@ -61,10 +61,10 @@ Second synchrotron function `G(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.SynchG(2.25)
+        >>> from xlcalcnet import math53
+        >>> math53.SynchG(2.25)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.SynchG(12.25)
+        >>> math53.SynchG(12.25)
         ereal('5.3518479027559984754E-1')
 
 

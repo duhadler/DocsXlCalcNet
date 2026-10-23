@@ -76,10 +76,10 @@ Modified spherical Bessel function of the first kind, `i_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.SphBesselin(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.SphBesselin(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.SphBesselin(3, '0.51')
+        >>> math53.SphBesselin(3, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -139,10 +139,10 @@ Modified Spherical Bessel function of the second kind, `k_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.SphBesselkn(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.SphBesselkn(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.SphBesselkn(3, '0.51')
+        >>> math53.SphBesselkn(3, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -184,10 +184,10 @@ First derivative of the modified spherical Bessel function of the first kind, `i
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.SphBesselin(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.SphBesselin(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.SphBesselin(3, '0.51')
+        >>> math53.SphBesselin(3, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -225,10 +225,10 @@ First derivative of the modified spherical Bessel function of the second kind, `
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.SphBesselkn(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.SphBesselkn(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.SphBesselkn(3, '0.51')
+        >>> math53.SphBesselkn(3, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -288,10 +288,10 @@ Bessel polynomials `y_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselPoly(4, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselPoly(4, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselPoly(4, '0.51')
+        >>> math53.BesselPoly(4, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -347,10 +347,10 @@ Reverse Bessel polynomials `\theta_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselPoly(4, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselPoly(4, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselPoly(4, '0.51')
+        >>> math53.BesselPoly(4, '0.51')
         ereal('5.3518479027559984754E-1')
 
 

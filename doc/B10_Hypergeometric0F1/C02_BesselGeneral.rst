@@ -81,10 +81,10 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.BesselJ(3, 0.5)
+    >>> from xlcalcnet import math53
+    >>> math53.BesselJ(3, 0.5)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.BesselJ(3, '0.51')
+    >>> math53.BesselJ(3, '0.51')
     ereal('5.3518479027559984754E-1')
 
 
@@ -198,10 +198,10 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.BesselY(3, 0.5)
+    >>> from xlcalcnet import math53
+    >>> math53.BesselY(3, 0.5)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.BesselY(3, '0.51')
+    >>> math53.BesselY(3, '0.51')
     ereal('5.3518479027559984754E-1')
 
 
@@ -275,10 +275,10 @@ First derivative of the Bessel function of the first kind, `J'_{\nu}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselJPrime(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselJPrime(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselJPrime(3, '0.51')
+        >>> math53.BesselJPrime(3, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -309,10 +309,10 @@ First derivative of the Bessel function of the second kind, `Y'_{\nu}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselYPrime(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselYPrime(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselYPrime(3, '0.51')
+        >>> math53.BesselYPrime(3, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -341,10 +341,10 @@ Boost: Zeros `j_{\nu, m}` of the Bessel function of the first kind: `J_{\nu}(j_{
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselJZero(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselJZero(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselJZero(3, '0.51')
+        >>> math53.BesselJZero(3, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -373,10 +373,10 @@ Boost: Zeros `y_{\nu, m}` of the Bessel function of the first kind: `Y_{\nu}(y_{
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselJZero(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselJZero(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselJZero(3, '0.51')
+        >>> math53.BesselJZero(3, '0.51')
         ereal('5.3518479027559984754E-1')
 
 

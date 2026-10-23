@@ -36,8 +36,8 @@ Zero, positive zero
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Zero()
+        >>> from xlcalcnet import math53
+        >>> math53.Zero()
         ereal('0.0000000000000000000)
 
 
@@ -45,8 +45,8 @@ Zero, positive zero
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Zero()
+        >>> from xlcalcnet import math53
+        >>> math53.Zero()
         0.0
 
 
@@ -66,8 +66,8 @@ Negative zero
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Zero()
+        >>> from xlcalcnet import math53
+        >>> math53.Zero()
         ereal('0.0000000000000000000)
 
 
@@ -75,8 +75,8 @@ Negative zero
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Zero()
+        >>> from xlcalcnet import math53
+        >>> math53.Zero()
         0.0
 
 
@@ -96,8 +96,8 @@ One
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.One()
+        >>> from xlcalcnet import math53
+        >>> math53.One()
         ereal('1.0000000000000000000')
 
 
@@ -105,8 +105,8 @@ One
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.One()
+        >>> from xlcalcnet import math53
+        >>> math53.One()
         1.0
 
 
@@ -127,8 +127,8 @@ Imaginary One
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstDegree()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstDegree()
         ereal('1.7453292519943295769E-2')
 
 
@@ -136,8 +136,8 @@ Imaginary One
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstDegree()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstDegree()
         0.0174532925199433
 
 
@@ -158,8 +158,8 @@ Positive infinity
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.PositiveInfinity()
+        >>> from xlcalcnet import math53
+        >>> math53.PositiveInfinity()
         ereal('+Inf')
 
 
@@ -167,8 +167,8 @@ Positive infinity
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.PositiveInfinity()
+        >>> from xlcalcnet import math53
+        >>> math53.PositiveInfinity()
         +Inf
 
 
@@ -188,8 +188,8 @@ Negative infinity
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.NegativeInfinity()
+        >>> from xlcalcnet import math53
+        >>> math53.NegativeInfinity()
         ereal('-Inf')
 
 
@@ -197,8 +197,8 @@ Negative infinity
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.NegativeInfinity()
+        >>> from xlcalcnet import math53
+        >>> math53.NegativeInfinity()
         -Inf
 
 
@@ -220,8 +220,8 @@ NaN (Not a Number)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Nan()
+        >>> from xlcalcnet import math53
+        >>> math53.Nan()
         ereal('Nan')
 
 
@@ -229,8 +229,8 @@ NaN (Not a Number)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Nan()
+        >>> from xlcalcnet import math53
+        >>> math53.Nan()
         Nan
 
 

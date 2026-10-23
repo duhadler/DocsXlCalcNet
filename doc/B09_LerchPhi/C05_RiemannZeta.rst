@@ -64,10 +64,10 @@ Riemann zeta function, `\zeta(s)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Zeta(1.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Zeta(1.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Zeta('1.51')
+        >>> math53.Zeta('1.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -126,10 +126,10 @@ Riemann `\zeta(s)-1`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Zetam1(12)
+        >>> from xlcalcnet import math53
+        >>> math53.Zetam1(12)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Zetam1('10.0001')
+        >>> math53.Zetam1('10.0001')
         ereal('5.3518479027559984754E-1')
 
 
@@ -413,10 +413,10 @@ Dirichlet eta function, `\eta(s)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.DirichletEta(12)
+        >>> from xlcalcnet import math53
+        >>> math53.DirichletEta(12)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.DirichletEta('10.0001')
+        >>> math53.DirichletEta('10.0001')
         ereal('5.3518479027559984754E-1')
 
 
@@ -473,10 +473,10 @@ Dirichlet `\eta(s) - 1`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.DirichletEtam1(5)
+        >>> from xlcalcnet import math53
+        >>> math53.DirichletEtam1(5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.DirichletEtam1('51')
+        >>> math53.DirichletEtam1('51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -538,10 +538,10 @@ Dirichlet beta function, `\beta(s)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.DirichletBeta(5)
+        >>> from xlcalcnet import math53
+        >>> math53.DirichletBeta(5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.DirichletBeta('51')
+        >>> math53.DirichletBeta('51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -604,10 +604,10 @@ The function is calculated as
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.DirichletLambda(5)
+        >>> from xlcalcnet import math53
+        >>> math53.DirichletLambda(5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.DirichletLambda('51')
+        >>> math53.DirichletLambda('51')
         ereal('5.3518479027559984754E-1')
 
 

@@ -37,16 +37,18 @@ Riemann `\zeta(n)` for integer arguments
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ZetaInt(5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.ZetaInt('51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.zeta_i(2)
+        1.6449340668482264
+        >>> math53.zeta_i(3)
+        1.2020569031595942
+        >>> math53.zeta_i(4)
+        1.0823232337111381
 
 
 
 
-        
+
 
 
 Riemann `\zeta(1+x)`
@@ -63,11 +65,13 @@ Riemann `\zeta(1+x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Zeta1p(0.004)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Zeta1p('0.0001')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.zeta1p(0.01)
+        100.57794333849687
+        >>> math53.zeta1p(10.5)
+        1.0003486558834918
+        >>> math53.zeta1p(20.9333)
+        1.0000002497344977
 
 
 
@@ -92,11 +96,13 @@ Dirichlet eta function for integer argument,  `\eta(n)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.DirichletEtaInt(5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.DirichletEtaInt('51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.dirichlet_eta_i(2)
+        0.8224670334241132
+        >>> math53.dirichlet_eta_i(3)
+        0.9015426773696957
+        >>> math53.dirichlet_eta_i(4)
+        0.9470328294972459
 
 
 
@@ -105,7 +111,7 @@ Dirichlet eta function for integer argument,  `\eta(n)`
 Prime zeta function
 -------------------------------------------------------------------------------
 
-.. method:: math53.prime_zeta(s)
+.. method:: math53.primezeta(s)
 
     Returns for `x > 0.2` the prime zeta function `\displaystyle P(x) = \sum_{p \text{ prime}} p^{-x}`,  or its real part for `x<1`.
 
@@ -116,22 +122,13 @@ Prime zeta function
 
     .. code-block:: pycon
 
-        >>> from mpfebnet import XReal
-        >>> XReal.PrimeZeta(12)
-        XReal('5.2359877559829887307E-1')
-        >>> XReal.PrimeZeta('10.0001')
-        XReal('5.3518479027559984754E-1')
-
-
-    An example in Visual Basic 
-
-    .. code-block:: pycon
-
-        >>> from mpfebnet import Gpr
-        >>> Gpr.PrimeZeta(12)
-        Gpr('5.2359877559829887307E-1')
-        >>> Gpr.PrimeZeta('10.0001')
-        Gpr('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.primezeta(2.01)
+        0.4473533160988981
+        >>> math53.primezeta(10.5)
+        0.0006898729399747471
+        >>> math53.primezeta(20.9333)
+        4.995031614994917e-07
 
 
 
@@ -151,22 +148,13 @@ Riemann prime counting function, `R(x)`
 
     .. code-block:: pycon
 
-        >>> from mpfebnet import XReal
-        >>> XReal.RiemannR(44)
-        XReal('5.2359877559829887307E-1')
-        >>> XReal.RiemannR(4440.4)
-        XReal('5.3518479027559984754E-1')
-
-
-    An example in Visual Basic 
-
-    .. code-block:: pycon
-
-        >>> from mpfebnet import Gpr
-        >>> Gpr.RiemannR(44)
-        Gpr('5.2359877559829887307E-1')
-        >>> Gpr.RiemannR(4440.4)
-        Gpr('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.riemann_r(2.01)
+        1.5459341840849095
+        >>> math53.riemann_r(10.5)
+        4.725293716386582
+        >>> math53.riemann_r(220.9333)
+        48.32330658563835
 
 
 
@@ -190,11 +178,14 @@ Inverse of the Riemann prime counting function, `R^{-1}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.RiemannRInv(44)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.RiemannRInv(4440.4)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.riemann_r_inv(2.01)
+        3.0121183149089292
+        >>> math53.riemann_r_inv(10.5)
+        31.308893414099234
+        >>> math53.riemann_r_inv(220.9333)
+        1378.8514211496115
+
 
 
 
@@ -215,11 +206,13 @@ Rogers-Ramanujan continued fraction
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.RogersRamanujanCF(0.44)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.RogersRamanujanCF(0.14404)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.rogers_ramanujan_cf(0.01)
+        0.3941659056233625
+        >>> math53.rogers_ramanujan_cf(0.5)
+        0.6180183781955219
+        >>> math53.rogers_ramanujan_cf(0.9333)
+        0.6180339887498949
 
 
 
@@ -239,26 +232,18 @@ Moebius function, `\mu(n)`
     https://en.wikipedia.org/wiki/M%C3%B6bius_function
 
 
+
     An example in Python
 
     .. code-block:: pycon
 
-        >>> from mpfebnet import XReal
-        >>> XReal.Moebius(3)
-        XReal('5.2359877559829887307E-1')
-        >>> XReal.Moebius)
-        XReal('5.3518479027559984754E-1')
-
-
-    An example in Visual Basic 
-
-    .. code-block:: pycon
-
-        >>> from mpfebnet import Gpr
-        >>> Gpr.Moebius(3)
-        Gpr('5.2359877559829887307E-1')
-        >>> Gpr.Moebius)
-        Gpr('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.moebius(21)
+        1
+        >>> math53.moebius(30)
+        -1
+        >>> math53.moebius(40)
+        0
 
 
 
@@ -282,11 +267,13 @@ q-Pochhammer Euler function, `(q)_{\infty}`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EulerQ(-0.4)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EulerQ(0.4)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.euler_q(0.01)
+        0.98990000010001
+        >>> math53.euler_q(0.5)
+        0.2887880950866024
+        >>> math53.euler_q(0.9333)
+        4.2824759927091205e-10
 
 
 

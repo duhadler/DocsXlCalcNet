@@ -47,10 +47,10 @@ Integral value nearest `x` (rounding to nearest): `\mathrm{nearbyint}(x), \mathr
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Rint(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Rint(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Rint('0.51')
+        >>> math53.Rint('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -81,10 +81,10 @@ Integral value nearest `x` (rounding to nearest): `\mathrm{nearbyint}(x), \mathr
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Rint(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Rint(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Rint('0.51')
+        >>> math53.Rint('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -107,10 +107,10 @@ Integral value nearest `x` (rounding to nearest): `\mathrm{nearbyint}(x), \mathr
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Rint(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Rint(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Rint('0.51')
+        >>> math53.Rint('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -136,10 +136,10 @@ Smallest integral value not less than `x: \mathrm{ceil}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Ceil(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Ceil(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Ceil('0.51')
+        >>> math53.Ceil('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -161,10 +161,10 @@ Largest integral value not greater than `x: \mathrm{floor}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Floor(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Floor(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Floor('0.51')
+        >>> math53.Floor('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -189,10 +189,10 @@ Nearest integral value not greater in magnitude than `x: \mathrm{trunc}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Truncate(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Truncate(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Truncate('0.51')
+        >>> math53.Truncate('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -217,10 +217,10 @@ Nearest integral value, rounding halfway cases away from zero: `\mathrm{round}(x
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Round(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Round(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Round('0.51')
+        >>> math53.Round('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -243,10 +243,10 @@ Nearest 32 bit integer, rounding halfway cases away from zero: `\mathrm{lround}(
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Round(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Round(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Round('0.51')
+        >>> math53.Round('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -270,10 +270,10 @@ Nearest 64 bit integer, rounding halfway cases away from zero: `\mathrm{llround}
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Round(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Round(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Round('0.51')
+        >>> math53.Round('0.51')
         ereal('5.3518479027559984754E-1')
 
 

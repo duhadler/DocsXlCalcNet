@@ -20,28 +20,6 @@ Neville theta functions
 
 
 
-Neville `\theta_s(x,k)`
--------------------------------------------------------------------------------
-
-.. method:: math53.neville_theta_s(x, k)
-
-    Returns the Neville theta function `\displaystyle \theta_s(x,k) = \frac{2K(k)}{\pi} \frac{\theta_1(v,q(k))}{\theta'_1(0,q(k))}, \quad v = \frac{\pi x}{2K(k)}, |k| \le  1`, and `q(k)` is the elliptic nome.
-
-    See also: Wikipedia :cite:p:`WikipediaFun170a`, MathWorld :cite:p:`WolframFun170s`, :cite:t:`Ehrhardt2018` (3.2.15.1).
-
-
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ereal
-        >>> ereal.NevilleThetaS(1.5, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.NevilleThetaS(1.5, '0.51')
-        ereal('5.3518479027559984754E-1')
-
-
-
 
 
 
@@ -60,11 +38,13 @@ Neville `\theta_c(x,k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.NevilleThetaC(1.5, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.NevilleThetaC(1.5, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.neville_theta_c(0.01, 0.5)
+        0.999956474832081
+        >>> math53.neville_theta_c(0.5, 0.9333)
+        0.9436331810661398
+        >>> math53.neville_theta_c(0.9333, 0.5)
+        0.6446023742055126
 
 
 
@@ -86,11 +66,13 @@ Neville `\theta_d(x,k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.NevilleThetaD(1.5, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.NevilleThetaD(1.5, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.neville_theta_d(0.01, 0.5)
+        0.9999939746842494
+        >>> math53.neville_theta_d(0.5, 0.9333)
+        0.9602114827440184
+        >>> math53.neville_theta_d(0.9333, 0.5)
+        0.9594825353083286
 
 
 
@@ -112,12 +94,38 @@ Neville `\theta_n(x,k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.NevilleThetaN(1.5, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.NevilleThetaN(1.5, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.neville_theta_n(0.01, 0.5)
+        1.0000064743224766
+        >>> math53.neville_theta_n(0.5, 0.9333)
+        1.065460920528952
+        >>> math53.neville_theta_n(0.9333, 0.5)
+        1.0435380078392624
 
+
+
+
+Neville `\theta_s(x,k)`
+-------------------------------------------------------------------------------
+
+.. method:: math53.neville_theta_s(x, k)
+
+    Returns the Neville theta function `\displaystyle \theta_s(x,k) = \frac{2K(k)}{\pi} \frac{\theta_1(v,q(k))}{\theta'_1(0,q(k))}, \quad v = \frac{\pi x}{2K(k)}, |k| \le  1`, and `q(k)` is the elliptic nome.
+
+    See also: Wikipedia :cite:p:`WikipediaFun170a`, MathWorld :cite:p:`WolframFun170s`, :cite:t:`Ehrhardt2018` (3.2.15.1).
+
+
+    An example in Python
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import math53
+        >>> math53.neville_theta_s(0.01, 0.5)
+        0.009999856412344637
+        >>> math53.neville_theta_s(0.5, 0.9333)
+        0.4947356796971494
+        >>> math53.neville_theta_s(0.9333, 0.5)
+        0.8206456927162612
 
 
 

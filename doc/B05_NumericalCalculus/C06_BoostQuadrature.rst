@@ -57,7 +57,7 @@ Trapezoidal Quadrature
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> f = lambda x: 1 / (5 - 4 * ereal.Cos(x))
         >>> result2 = ereal.Trapezoidal(f, a, b)
         >>> print("res: ", res)
@@ -112,7 +112,7 @@ Gauss-Legendre quadrature
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> a = 0.0; b = 1.0; tol = 1.0E-9
         >>> f = lambda x: x * x * ereal.Atan(x)
         >>> res = ereal.GaussLegendre(f, a, b)
@@ -173,7 +173,7 @@ Gauss-Kronrod Quadrature
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> a = 0.0; b = float('+inf')
         >>> f = lambda x: ereal.Exp(-x * x / 2)
         >>> result3 = ereal.GaussKronrod(f, a, b)
@@ -227,7 +227,7 @@ Double-exponential quadrature: tanh_sinh
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> a = -1.0; b = 1.0
         >>> f = lambda x: 5 * x + 7
         >>> res = ereal.TanhSinh(f, a, b)
@@ -276,7 +276,7 @@ Double-exponential quadrature: sinh_sinh
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> f = lambda x: math.exp(-x * x)
         >>> res = ereal.SinhSinh(f)
         >>> print("res: ", res)
@@ -327,7 +327,7 @@ Double-exponential quadrature: exp_sinh
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> f = lambda x: math.exp(-3 * x)
         >>> result3 = ereal.ExpSinh(f)
         >>> print("result3: ", result3)
@@ -373,7 +373,7 @@ Fourier Integral, Cosine
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> f = lambda x: 1 / (x * x + 1)
         >>> result3 = ereal.Ooura_Cos(f)
         >>> print("result3: ", result3)
@@ -415,7 +415,7 @@ Fourier Integral, Sine
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> f = lambda x: 1 / x
         >>> result3 = ereal.Ooura_Sin(f)
         >>> print("result3: ", result3)

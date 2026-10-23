@@ -57,11 +57,13 @@ Complete elliptic integral of the 1st kind `\mathrm{cel1}(k_c)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Cel1(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Cel1('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.cel1(-0.9333)
+        1.6254736111454573
+        >>> math53.cel1(0.01)
+        5.991589340506996
+        >>> math53.cel1(0.9333)
+        1.6254736111454573
 
 
 
@@ -86,11 +88,13 @@ Complete elliptic integral of the 2nd kind `\mathrm{cel2}(k_c, a, b)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Cel2(0.5, 3, 4)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Cel2('0.51', 3, 4)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.cel2(1.2, -4.333, -1.333)
+        -4.151578844884948
+        >>> math53.cel2(3.7, -4.333, 0.0)
+        -2.078160086136537
+        >>> math53.cel2(4.8, 4.333, 1.333)
+        2.082811909491336
 
 
 
@@ -113,11 +117,13 @@ General complete elliptic integral `\mathrm{cel}(k_c, p, a, b)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Cel(0.5, 2, 3, 4)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Cel('0.51', 2, 3, 4)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.cel(1.2, -4.333, -1.333, -1.333)
+        -0.0708205057509719
+        >>> math53.cel(3.7, -4.333, 0.0,  -1.333)
+        0.12075231537983412
+        >>> math53.cel(4.8, 4.333, 1.333, 1.333)
+        0.5162685345242685
 
 
 
@@ -139,11 +145,13 @@ Incomplete elliptic integral of the 1st kind `\mathrm{el1}(x, k_c)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.El1(2, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.El1(2, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.el1(1.2, -4.333)
+        0.49012453573756454
+        >>> math53.el1(3.7, -4.333)
+        0.6025865718715321
+        >>> math53.el1(4.8, 4.333)
+        0.6164652942503261
 
 
 
@@ -166,11 +174,13 @@ Incomplete elliptic integral of the 2nd kind `\mathrm{el2}(x, k_c, a, b)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.El2(2, 0.5, 3, 4)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.El2(2, '0.51', 3, 4)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.el2(1.2, -4.333, -1.333, -1.333)
+        -0.6533360061381738
+        >>> math53.el2(3.7, -4.333, 0.0,  -1.333)
+        -0.21559574153402697
+        >>> math53.el2(4.8, 4.333, 1.333, 1.333)
+        0.8217482372356851
 
 
 
@@ -191,11 +201,13 @@ Incomplete elliptic integral of the 3rd kind `\mathrm{el3}(x, k_c, p)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.El3(2, 0.5, 3)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.El3(2, '0.51', 3)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.el3(1.2, -4.333, -1.333)
+        0.5440817141850122
+        >>> math53.el3(3.7, -4.333, 0.0)
+        1.2433057985726927
+        >>> math53.el3(4.8, 4.333, 1.333)
+        0.5677080218351377
 
 
 

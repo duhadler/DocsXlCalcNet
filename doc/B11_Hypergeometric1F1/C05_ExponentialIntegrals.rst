@@ -44,10 +44,10 @@ Exponential integral `E_1(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.E1(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.E1(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.E1('0.51')
+        >>> math53.E1('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -144,10 +144,10 @@ Exponential integral `\mathrm{Ei}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Ei(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Ei(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Ei('0.51')
+        >>> math53.Ei('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -230,10 +230,10 @@ Logarithmic integral `\mathrm{li}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Li(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Li(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Li('0.51')
+        >>> math53.Li('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -303,10 +303,10 @@ Hyperbolic sine integral `\mathrm{Shi}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Shi(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Shi(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Shi('0.51')
+        >>> math53.Shi('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -376,10 +376,10 @@ Hyperbolic cosine integral `\mathrm{Chi}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Chi(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Chi(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Chi('0.51')
+        >>> math53.Chi('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -447,10 +447,10 @@ Generalized exponential integral `E_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.En(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.En(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.En(3, '0.51')
+        >>> math53.En(3, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -551,10 +551,10 @@ Sine integral `\mathrm{Si}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Si(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Si(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Si('0.51')
+        >>> math53.Si('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -646,10 +646,10 @@ Cosine integral `\mathrm{Ci}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Ci(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Ci(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Ci('0.51')
+        >>> math53.Ci('0.51')
         ereal('5.3518479027559984754E-1')
 
 

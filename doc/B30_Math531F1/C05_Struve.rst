@@ -36,10 +36,10 @@ Struve function `\mathbf{H}_0(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.StruveH0(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.StruveH0(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.StruveH0('0.51')
+        >>> math53.StruveH0('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -63,10 +63,10 @@ Struve function `\mathbf{H}_1(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.StruveH1(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.StruveH1(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.StruveH1('0.51')
+        >>> math53.StruveH1('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -88,10 +88,10 @@ Struve function `\mathbf{L}_0(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.StruveL0(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.StruveL0(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.StruveL0('0.51')
+        >>> math53.StruveL0('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -114,10 +114,10 @@ Struve function `\mathbf{L}_1(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.StruveL1(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.StruveL1(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.StruveL1('0.51')
+        >>> math53.StruveL1('0.51')
         ereal('5.3518479027559984754E-1')
 
 

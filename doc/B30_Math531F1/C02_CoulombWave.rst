@@ -62,10 +62,10 @@ Normalizing Gamow constant for Coulomb wave functions
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.CoulombCL(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.CoulombCL(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.CoulombCL(3, '0.51')
+        >>> math53.CoulombCL(3, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -123,10 +123,10 @@ Coulomb phase shift `\sigma_L(\eta)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.CoulombSL(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.CoulombSL(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.CoulombSL(3, '0.51')
+        >>> math53.CoulombSL(3, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -174,10 +174,10 @@ Regular Coulomb wave functions `F_l(\eta, x), F'_l(\eta, x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.CoulombFFp(3, 0.5, 2.25)
+        >>> from xlcalcnet import math53
+        >>> math53.CoulombFFp(3, 0.5, 2.25)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.CoulombFFp(3, 0.5, 8.25)
+        >>> math53.CoulombFFp(3, 0.5, 8.25)
         ereal('5.3518479027559984754E-1')
 
 
@@ -247,10 +247,10 @@ Irregular Coulomb wave functions `G_l(\eta,x), G'_l(\eta,x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.CoulombGGp(3, 0.5, 2.25)
+        >>> from xlcalcnet import math53
+        >>> math53.CoulombGGp(3, 0.5, 2.25)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.CoulombGGp(3, 0.5, 8.25)
+        >>> math53.CoulombGGp(3, 0.5, 8.25)
         ereal('5.3518479027559984754E-1')
 
 

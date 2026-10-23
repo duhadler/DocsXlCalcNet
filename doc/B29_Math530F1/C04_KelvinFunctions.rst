@@ -190,10 +190,10 @@ First derivative of the Kelvin function `\mathrm{ber0}, \mathrm{ber0}'(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.KelvinBerPrime(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.KelvinBerPrime(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.KelvinBerPrime('0.51')
+        >>> math53.KelvinBerPrime('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -218,10 +218,10 @@ First derivative of the Kelvin function `\mathrm{bei0}, \mathrm{bei0}'(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.KelvinBeiPrime(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.KelvinBeiPrime(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.KelvinBeiPrime('0.51')
+        >>> math53.KelvinBeiPrime('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -246,10 +246,10 @@ First derivative of the Kelvin function `\mathrm{ker0}, \mathrm{ker0}'(\nu, x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.KelvinKerPrime(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.KelvinKerPrime(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.KelvinKerPrime('0.51')
+        >>> math53.KelvinKerPrime('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -271,10 +271,10 @@ First derivative of the Kelvin function `\mathrm{kei0}, \mathrm{kei0}'(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.KelvinKeiPrime(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.KelvinKeiPrime(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.KelvinKeiPrime('0.51')
+        >>> math53.KelvinKeiPrime('0.51')
         ereal('5.3518479027559984754E-1')
 
 

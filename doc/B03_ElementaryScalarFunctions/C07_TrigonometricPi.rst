@@ -43,10 +43,10 @@ Auxiliary function `\mathrm{sinpi}(x) = \sin(\pi x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.SinPi(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.SinPi(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.SinPi('0.51')
+        >>> math53.SinPi('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -123,10 +123,10 @@ Auxiliary function `\mathrm{cospi}(x) = \cos(\pi x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.CosPi(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.CosPi(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.CosPi('0.51')
+        >>> math53.CosPi('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -198,10 +198,10 @@ Auxiliary function `\mathrm{tanpi}(x) = \tan(\pi x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.TanPi(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.TanPi(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.TanPi('0.51')
+        >>> math53.TanPi('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -230,10 +230,10 @@ Auxiliary function `\mathrm{cotpi}(x) = \cot(\pi x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.TanPi(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.TanPi(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.TanPi('0.51')
+        >>> math53.TanPi('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -256,10 +256,10 @@ Auxiliary function `\mathrm{cscpi}(x) = \mathrm{csc}(\pi x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.TanPi(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.TanPi(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.TanPi('0.51')
+        >>> math53.TanPi('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -282,10 +282,10 @@ Auxiliary function `\mathrm{secpi}(x) = \mathrm{sec}(\pi x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.TanPi(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.TanPi(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.TanPi('0.51')
+        >>> math53.TanPi('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -326,10 +326,10 @@ Auxiliary function `\mathrm{sincpi}(x) = \mathrm{sinc}(\pi x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.SincPi(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.SincPi(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.SincPi('0.51')
+        >>> math53.SincPi('0.51')
         ereal('5.3518479027559984754E-1')
 
 

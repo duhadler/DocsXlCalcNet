@@ -35,8 +35,8 @@ Degree
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstDegree()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstDegree()
         ereal('1.7453292519943295769E-2')
 
 
@@ -44,8 +44,8 @@ Degree
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstDegree()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstDegree()
         0.0174532925199433
 
 
@@ -67,8 +67,8 @@ Golden ratio phi
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstPhi()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstPhi()
         ereal('1.6180339887498948482')
 
 
@@ -76,8 +76,8 @@ Golden ratio phi
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstPhi()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstPhi()
         1.61803398874989
 
 
@@ -100,8 +100,8 @@ Natural logarithm of 2
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstLog2()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstLog2()
         ereal('6.9314718055994530943E-1')
 
 
@@ -109,8 +109,8 @@ Natural logarithm of 2
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstLog2()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstLog2()
         0.693147180559945
 
 
@@ -131,8 +131,8 @@ Natural logarithm of 10
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstLog10()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstLog10()
         ereal('2.3025850929940456840')
 
 
@@ -140,8 +140,8 @@ Natural logarithm of 10
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstLog10()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstLog10()
         2.30258509299405
 
 
@@ -165,8 +165,8 @@ Pi (`\pi`)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Pi()
+        >>> from xlcalcnet import math53
+        >>> math53.Pi()
         ereal('3.1415926535897932385')
 
 
@@ -174,8 +174,8 @@ Pi (`\pi`)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Pi()
+        >>> from xlcalcnet import math53
+        >>> math53.Pi()
         3.14159265358979
 
 
@@ -198,8 +198,8 @@ Euler e
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstE()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstE()
         ereal('3.1415926535897932385')
 
 
@@ -207,8 +207,8 @@ Euler e
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstE()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstE()
         2.71828182845905
 
 
@@ -232,8 +232,8 @@ Euler-Mascheroni constant `\gamma`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstEulerGamma()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstEulerGamma()
         ereal('5.7721566490153286062E-1')
 
 
@@ -241,8 +241,8 @@ Euler-Mascheroni constant `\gamma`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstEulerGamma()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstEulerGamma()
         0.577215664901533
 
 
@@ -269,8 +269,8 @@ Apéry's constant
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstApery()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstApery()
         ereal('1.2020569031595942854')
 
 
@@ -278,8 +278,8 @@ Apéry's constant
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstApery()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstApery()
         1.20205690315959
 
 
@@ -305,8 +305,8 @@ Catalan's constant
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstCatalan()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstCatalan()
         ereal('9.1596559417721901505E-1')
 
 
@@ -314,8 +314,8 @@ Catalan's constant
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstCatalan()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstCatalan()
         0.915965594177219
 
 
@@ -340,8 +340,8 @@ Glaisher's constant
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstGlaisher()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstGlaisher()
         ereal('1.2824271291006226369')
 
 
@@ -349,8 +349,8 @@ Glaisher's constant
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstGlaisher()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstGlaisher()
         1.28242712910062
 
 
@@ -373,8 +373,8 @@ Khinchin's constant
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstKhinchin()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstKhinchin()
         ereal('2.6854520010653064454')
 
 
@@ -382,8 +382,8 @@ Khinchin's constant
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ConstKhinchin()
+        >>> from xlcalcnet import math53
+        >>> math53.ConstKhinchin()
         2.68545200106531
 
 

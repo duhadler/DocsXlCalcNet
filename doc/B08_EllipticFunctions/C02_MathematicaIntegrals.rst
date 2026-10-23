@@ -40,10 +40,10 @@ Legendre complete elliptic integral of the first kind, `K(m)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MEllipticK(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.MEllipticK(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.MEllipticK('0.51')
+        >>> math53.MEllipticK('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -109,10 +109,10 @@ Legendre complete elliptic integral of the second kind, `E(m)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MEllipticEC(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.MEllipticEC(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.MEllipticEC('0.51')
+        >>> math53.MEllipticEC('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -174,10 +174,10 @@ Legendre complete elliptic integral of the third kind, `\Pi(n, m)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MEllipticPiC(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.MEllipticPiC(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.MEllipticPiC(3, 0.5)
+        >>> math53.MEllipticPiC(3, 0.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -240,10 +240,10 @@ Legendre incomplete elliptic integral of the first kind, `F(\phi, m)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MEllipticF(0.12, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.MEllipticF(0.12, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.MEllipticF(0.12, 0.5)
+        >>> math53.MEllipticF(0.12, 0.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -306,10 +306,10 @@ Legendre incomplete elliptic integral of the second kind, `E(\phi, m)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MEllipticE(0.12, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.MEllipticE(0.12, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.MEllipticE(0.12, 0.5)
+        >>> math53.MEllipticE(0.12, 0.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -374,10 +374,10 @@ Legendre incomplete elliptic integral of the third kind, `\Pi(n,\phi, m)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MEllipticPi(0.3, 0.12, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.MEllipticPi(0.3, 0.12, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.MEllipticPi(0.3, 0.12, 0.5)
+        >>> math53.MEllipticPi(0.3, 0.12, 0.5)
         ereal('5.3518479027559984754E-1')
 
 

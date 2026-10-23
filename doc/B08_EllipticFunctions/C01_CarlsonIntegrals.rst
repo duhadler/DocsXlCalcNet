@@ -39,10 +39,10 @@ Carlson symmetric elliptic integral of the first kind, `R_F(x,y,z)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticRF(0.12, 0.5, 3.5)
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticRF(0.12, 0.5, 3.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticRF(0.12, 0.5, 3.5)
+        >>> math53.EllipticRF(0.12, 0.5, 3.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -101,10 +101,10 @@ Carlson completely symmetric elliptic integral of the second kind, `R_G(x,y,z)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticRG(0.12, 0.5, 3.5)
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticRG(0.12, 0.5, 3.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticRG(0.12, 0.5, 3.5)
+        >>> math53.EllipticRG(0.12, 0.5, 3.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -164,10 +164,10 @@ Carlson symmetric elliptic integral of the third kind, `R_J(x,y,z,p)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticRJ(0.12, 0.5, 3.5, 0.4)
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticRJ(0.12, 0.5, 3.5, 0.4)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticRJ(0.12, 0.5, 3.5, 0.4)
+        >>> math53.EllipticRJ(0.12, 0.5, 3.5, 0.4)
         ereal('5.3518479027559984754E-1')
 
 
@@ -224,10 +224,10 @@ Carlson symmetric elliptic integral of the second kind, `R_D(x,y,z)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticRD(0.12, 0.5, 3.5)
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticRD(0.12, 0.5, 3.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticRD(0.12, 0.5, 3.5)
+        >>> math53.EllipticRD(0.12, 0.5, 3.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -283,10 +283,10 @@ Carlson degenerate symmetric elliptic integral of the first kind, `R_C(x,y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticRC(0.12, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticRC(0.12, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticRC(0.12, 0.5)
+        >>> math53.EllipticRC(0.12, 0.5)
         ereal('5.3518479027559984754E-1')
 
 

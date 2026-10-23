@@ -60,10 +60,10 @@ Jacobi elliptic function `\mathrm{sn}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiSN(0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiSN(0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiSN(0.8, '0.51')
+        >>> math53.JacobiSN(0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -147,10 +147,10 @@ Jacobi elliptic function `\mathrm{cn}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiCN(0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiCN(0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiCN(0.8, '0.51')
+        >>> math53.JacobiCN(0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -235,10 +235,10 @@ Jacobi elliptic function `\mathrm{dn}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiDN(0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiDN(0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiDN(0.8, '0.51')
+        >>> math53.JacobiDN(0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -299,10 +299,10 @@ Jacobi elliptic function `\mathrm{nc}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiNC(0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiNC(0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiNC(0.8, '0.51')
+        >>> math53.JacobiNC(0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -364,10 +364,10 @@ Jacobi elliptic function `\mathrm{sc}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiSC(0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiSC(0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiSC(0.8, '0.51')
+        >>> math53.JacobiSC(0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -429,10 +429,10 @@ Jacobi elliptic function `\mathrm{dc}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiDC(0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiDC(0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiDC(0.8, '0.51')
+        >>> math53.JacobiDC(0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -493,10 +493,10 @@ Jacobi elliptic function `\mathrm{nd}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiNC(0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiNC(0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiNC(0.8, '0.51')
+        >>> math53.JacobiNC(0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -558,10 +558,10 @@ Jacobi elliptic function `\mathrm{sd}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiSD(0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiSD(0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiSD(0.8, '0.51')
+        >>> math53.JacobiSD(0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -623,10 +623,10 @@ Jacobi elliptic function `\mathrm{cd}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiCD(0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiCD(0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiCD(0.8, '0.51')
+        >>> math53.JacobiCD(0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -688,10 +688,10 @@ Jacobi elliptic function `\mathrm{ns}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiNS(0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiNS(0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiNS(0.8, '0.51')
+        >>> math53.JacobiNS(0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -753,10 +753,10 @@ Jacobi elliptic function `\mathrm{cs}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiCS(0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiCS(0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiCS(0.8, '0.51')
+        >>> math53.JacobiCS(0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -817,10 +817,10 @@ Jacobi elliptic function `\mathrm{ds}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiDS(0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiDS(0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiDS(0.8, '0.51')
+        >>> math53.JacobiDS(0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 

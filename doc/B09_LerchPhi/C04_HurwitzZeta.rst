@@ -115,10 +115,10 @@ Hurwitz zeta function, `\zeta(s,a)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.HurwitzZeta(2,5)
+        >>> from xlcalcnet import math53
+        >>> math53.HurwitzZeta(2,5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.HurwitzZeta(2,'51')
+        >>> math53.HurwitzZeta(2,'51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -180,10 +180,10 @@ Generalized harmonic number function, `H_x^{(r)}`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Harmonic2(5, 10.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Harmonic2(5, 10.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Harmonic2(5, '10.1')
+        >>> math53.Harmonic2(5, '10.1')
         ereal('5.3518479027559984754E-1')
 
 
@@ -253,10 +253,10 @@ Bernoulli numbers, `B_n`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Bernoulli(8)
+        >>> from xlcalcnet import math53
+        >>> math53.Bernoulli(8)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Bernoulli(14)
+        >>> math53.Bernoulli(14)
         ereal('5.3518479027559984754E-1')
 
 
@@ -302,10 +302,10 @@ Bernoulli polynomials, `B_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Bernpoly(3,4)
+        >>> from xlcalcnet import math53
+        >>> math53.Bernpoly(3,4)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Bernpoly(13,14)
+        >>> math53.Bernpoly(13,14)
         ereal('5.3518479027559984754E-1')
 
 
@@ -408,10 +408,10 @@ Euler polynomials, `E_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Eulerpoly(3, 4)
+        >>> from xlcalcnet import math53
+        >>> math53.Eulerpoly(3, 4)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Eulerpoly(3, 12)
+        >>> math53.Eulerpoly(3, 12)
         ereal('5.3518479027559984754E-1')
 
 
@@ -541,10 +541,10 @@ Logarithm of Barnes G function
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LogBarnesG(7.1)
+        >>> from xlcalcnet import math53
+        >>> math53.LogBarnesG(7.1)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.LogBarnesG('4.51')
+        >>> math53.LogBarnesG('4.51')
         ereal('5.3518479027559984754E-1')
 
 

@@ -110,7 +110,7 @@ Global adaptive quadrature by Forsythe, Malcolm, Moler (quanc8)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> a = 0.0; b = 2.0; epsabs = 1E-8; epsrel = 0.0; limit = 0
         >>> f = lambda x: ereal.Exp(-x * x / 2)
         >>> result, abserr, neval, ier = ereal.Qags(f, a, b, epsabs, epsrel, limit)
@@ -150,7 +150,7 @@ Global adaptive quadrature by Forsythe, Malcolm, Moler (quanc8)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> a = 0.0; b = 2.0; epsabs = 1E-8; epsrel = 0.0; limit = 0
         >>> f = lambda x: ereal.Exp(-x * x / 2)
         >>> result, abserr, neval, ier = ereal.Qags(f, a, b, epsabs, epsrel, limit)
@@ -197,7 +197,7 @@ Global adaptive quadrature by Forsythe, Malcolm, Moler (quanc8)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> bound = 0.0; infcode = 2; epsabs = 1E-8; epsrel = 0.0; limit = 0
         >>> f = lambda x: ereal.Exp(-x * x / 2)
         >>> result, abserr, neval, ier = ereal.Qagi(f, bound, infcode, epsabs, epsrel, limit)
@@ -284,7 +284,7 @@ Double Exponential (DE) transformation, finite interval (intde)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> a = 0.0; b = 2.0; eps = 1E-8
         >>> f = lambda x: ereal.Exp(-x * x / 2)
         >>> result, abserr, neval, ier = ereal.Intde(f, a, b, eps)
@@ -325,7 +325,7 @@ DE transformation, infinite interval, no oscillatory factor (intdei)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> a = 0.0; eps = 1E-8
         >>> f = lambda x: ereal.Exp(-x * x / 2)
         >>> result, abserr, neval, ier = ereal.Intdei(f, a, eps)

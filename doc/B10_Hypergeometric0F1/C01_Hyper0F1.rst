@@ -67,10 +67,10 @@ Confluent Hypergeometric Limit Function `{}_0F_1(b,x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Hyperg0F1(5.1,0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Hyperg0F1(5.1,0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Hyperg0F1(15.2,0.5)
+        >>> math53.Hyperg0F1(15.2,0.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -135,10 +135,10 @@ Regularized Confluent Hypergeometric Limit Function `{}_0\widetilde{F}_1(b;x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Hyperg0F1r(5.1,0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Hyperg0F1r(5.1,0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Hyperg0F1r(15.2,0.5)
+        >>> math53.Hyperg0F1r(15.2,0.5)
         ereal('5.3518479027559984754E-1')
 
 

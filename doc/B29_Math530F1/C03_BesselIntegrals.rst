@@ -34,10 +34,10 @@ Integral of `J_0`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselJ0Int(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselJ0Int(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselJ0Int('0.51')
+        >>> math53.BesselJ0Int('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -55,10 +55,10 @@ Integral of `Y_0`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselY0Int(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselY0Int(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselY0Int('0.51')
+        >>> math53.BesselY0Int('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -76,10 +76,10 @@ Integral of `I_0`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselI0Int(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselI0Int(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselI0Int('0.51')
+        >>> math53.BesselI0Int('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -100,10 +100,10 @@ Integral of `K_0`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselK0Int(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselK0Int(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselK0Int('0.51')
+        >>> math53.BesselK0Int('0.51')
         ereal('5.3518479027559984754E-1')
 
 

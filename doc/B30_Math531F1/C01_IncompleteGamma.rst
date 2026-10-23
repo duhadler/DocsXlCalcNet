@@ -98,10 +98,10 @@ Truncated exponential function, `e_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Expn(2,3)
+        >>> from xlcalcnet import math53
+        >>> math53.Expn(2,3)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Expn(4,13)
+        >>> math53.Expn(4,13)
         ereal('5.3518479027559984754E-1')
 
 
@@ -122,10 +122,10 @@ Relative exponential, `\mathrm{exprel}_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Expreln(3, 4)
+        >>> from xlcalcnet import math53
+        >>> math53.Expreln(3, 4)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Expreln(3, 12)
+        >>> math53.Expreln(3, 12)
         ereal('5.3518479027559984754E-1')
 
 

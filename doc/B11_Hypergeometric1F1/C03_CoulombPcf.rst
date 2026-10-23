@@ -64,10 +64,10 @@ Regular Coulomb wave function `F_{\ell}(\eta,x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.CoulombF(3, 0.5, 2.25)
+        >>> from xlcalcnet import math53
+        >>> math53.CoulombF(3, 0.5, 2.25)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.CoulombF(3, 0.5, 8.25)
+        >>> math53.CoulombF(3, 0.5, 8.25)
         ereal('5.3518479027559984754E-1')
 
 
@@ -285,10 +285,10 @@ Whittaker function `M_{\kappa, \mu}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.WhittakerM(5.1,0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.WhittakerM(5.1,0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.WhittakerM(15.2,0.5)
+        >>> math53.WhittakerM(15.2,0.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -353,10 +353,10 @@ Whittaker function `W_{\kappa, \mu}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.WhittakerW(5.1,0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.WhittakerW(5.1,0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.WhittakerW(15.2,0.5)
+        >>> math53.WhittakerW(15.2,0.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -414,12 +414,12 @@ Parabolic cylinder function `D_{\nu}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.CylinderD(5.1,0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.CylinderD(5.1,0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.CylinderD(15.2,0.5)
+        >>> math53.CylinderD(15.2,0.5)
         ereal('5.3518479027559984754E-1')
-        >>> ereal.CylinderD(15.2,0.5)
+        >>> math53.CylinderD(15.2,0.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -500,12 +500,12 @@ Parabolic cylinder function `U(a, x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.CylinderU(5.1,0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.CylinderU(5.1,0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.CylinderU(15.2,0.5)
+        >>> math53.CylinderU(15.2,0.5)
         ereal('5.3518479027559984754E-1')
-        >>> ereal.CylinderU(15.2,0.5)
+        >>> math53.CylinderU(15.2,0.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -572,12 +572,12 @@ Parabolic cylinder function `V(a,x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.CylinderV(5.1,0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.CylinderV(5.1,0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.CylinderV(15.2,0.5)
+        >>> math53.CylinderV(15.2,0.5)
         ereal('5.3518479027559984754E-1')
-        >>> ereal.CylinderV(15.2,0.5)
+        >>> math53.CylinderV(15.2,0.5)
         ereal('5.3518479027559984754E-1')
 
 

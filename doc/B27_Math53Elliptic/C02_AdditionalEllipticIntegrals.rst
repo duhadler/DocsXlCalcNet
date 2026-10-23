@@ -33,11 +33,13 @@ Legendre complete elliptic integral `B(k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.CompEllintB(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.CompEllintB(0.5)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.elliptic_b(-0.9333)
+        0.9305395801783577
+        >>> math53.elliptic_b(0.0)
+        0.7853981633974483
+        >>> math53.elliptic_b(0.9333)
+        0.9305395801783577
 
 
 
@@ -57,11 +59,13 @@ Legendre complete elliptic integral `D(k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.CompEllintD(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.CompEllintD(0.5)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.elliptic_d(-0.9333)
+        1.5285669226805516
+        >>> math53.elliptic_d(0.0)
+        0.7853981633974483
+        >>> math53.elliptic_d(0.9333)
+        1.5285669226805516
 
 
 
@@ -80,11 +84,13 @@ Legendre incomplete elliptic integral `B(\phi, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllintB(0.12, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllintB(0.12, 0.5)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.elliptic_b_inc(0.4, -0.9333)
+        0.3880334013629784
+        >>> math53.elliptic_b_inc(0.7, 0.0)
+        0.5963624324971151
+        >>> math53.elliptic_b_inc(1.2, 0.9333)
+        0.8930544029455502
 
 
 
@@ -104,11 +110,13 @@ Legendre incomplete elliptic integral `D(\phi, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllintD(0.12, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllintD(0.12, 0.5)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.elliptic_d_inc(0.4, -0.9333)
+        0.021551828843784506
+        >>> math53.elliptic_d_inc(0.7, 0.0)
+        0.10363756750288494
+        >>> math53.elliptic_d_inc(1.2, 0.9333)
+        0.6473333304003238
 
 
 
@@ -130,45 +138,13 @@ Heuman's Lambda function, `\Lambda_0(\phi,k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.HeumanLambda(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.HeumanLambda(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
-
-
-
-
-    An example with real input:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; phi = '0.3'; m = '0.7'
-        >>> \mathrm{d}x = dec.heuman_lambda(phi, m); mx = mpm.heuman_lambda(phi, m); gx = gmp.heuman_lambda(phi, m)
-        >>> fx = fpm.heuman_lambda(phi, m); ax = apm.heuman_lambda(phi, m)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  2.346706205795989147266165089161797155226E-1
-        mpm:  2.346706205795989147266165089161797155226e-1
-        gmp:  2.346706205795989147266165089161797155226E-01
-        fpm:  2.34670620579599E-01
-        apm:  2.346706205795989147266165089161797156135e-1 (4.07e-34%)
-
-
-    An example with complex input:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; phi = '7.0 + 3.0j'; m = '11.0 + 3.0j'
-        >>> \mathrm{d}z = dec.heuman_lambda(phi, m); mz = mpm.heuman_lambda(phi, m); gz = gmp.heuman_lambda(phi, m)
-        >>> fz = fpm.heuman_lambda(phi, m); az = apm.heuman_lambda(phi, m)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az], aligned=True)
-        dec: -1.1345920286482140753E+1               - 6.3944316931048323564E+0j
-        mpm: -1.1345920286482140753e+1               - 6.3944316931048323564e+0j
-        gmp: -1.1345920286482140753E+01              - 6.3944316931048323564E+00j
-        fpm: -1.13459202864821E+01                   - 6.39443169310483E+00j
-        apm: -1.1345920286482157538e+1 (-5.813e-13%) - 6.3944316931048395085e+0 (-5.749e-13%)j
+        >>> from xlcalcnet import math53
+        >>> math53.heuman_lambda(0.4, -0.9333)
+        0.28392272091599396
+        >>> math53.heuman_lambda(0.7, 0.0)
+        0.644217687237691
+        >>> math53.heuman_lambda(1.2, 0.9333)
+        0.7921071008822748
 
 
 
@@ -188,45 +164,15 @@ Jacobi Zeta function, `Z(\phi,k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiZeta(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiZeta(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_zeta(0.4, -0.9333)
+        0.2029927800760033
+        >>> math53.jacobi_zeta(0.7, 0.0)
+        0.0
+        >>> math53.jacobi_zeta(1.2, 0.9333)
+        0.2701672377293978
 
 
-
-
-    An example with real input:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; phi = '0.3'; m = '0.7'
-        >>> \mathrm{d}x = dec.jacobi_zeta(phi, m); mx = mpm.jacobi_zeta(phi, m); gx = gmp.jacobi_zeta(phi, m)
-        >>> fx = fpm.jacobi_zeta(phi, m); ax = apm.jacobi_zeta(phi, m)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  1.154857111268923923475571636423888535609E-1
-        mpm:  1.154857111268923923475571636423888535609e-1
-        gmp:  1.154857111268923923475571636423888535609E-01
-        fpm:  1.15485711126892E-01
-        apm:  1.154857111268923923475571636423888535611e-1 (3.902e-37%)
-
-
-    An example with complex input:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; phi = '7.0 + 3.0j'; m = '11.0 + 3.0j'
-        >>> \mathrm{d}z = dec.jacobi_zeta(phi, m); mz = mpm.jacobi_zeta(phi, m); gz = gmp.jacobi_zeta(phi, m)
-        >>> fz = fpm.jacobi_zeta(phi, m); az = apm.jacobi_zeta(phi, m)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az], aligned=True)
-        dec: 1.7328120796787527800E+1              + 2.7272085822071339357E+1j
-        mpm: 1.7328120796787527800e+1              + 2.7272085822071339357e+1j
-        gmp: 1.7328120796787527800E+01             + 2.7272085822071339357E+01j
-        fpm: 1.73281207967875E+01                  + 2.72720858220713E+01j
-        apm: 1.7328120796787527800e+1 (1.063e-16%) + 2.7272085822071339356e+1 (8.617e-17%)j
 
 
 

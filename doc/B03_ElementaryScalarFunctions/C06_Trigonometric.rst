@@ -214,10 +214,10 @@ Cosine, `\cos(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Cos(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Cos(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Cos('0.51')
+        >>> math53.Cos('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -317,10 +317,10 @@ Tangent, `\tan(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Tan(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Tan(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Tan('0.51')
+        >>> math53.Tan('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -431,10 +431,10 @@ Cotangent, `\cot(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Cot(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Cot(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Cot('0.51')
+        >>> math53.Cot('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -533,10 +533,10 @@ Cosecant, `\mathrm{csc}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Csc(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Csc(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Csc('0.51')
+        >>> math53.Csc('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -634,10 +634,10 @@ Secant, `\mathrm{sec}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Sec(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Sec(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Sec('0.51')
+        >>> math53.Sec('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -707,10 +707,10 @@ Cardinal sine,  `\mathrm{sinc}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Sinc(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Sinc(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Sinc('0.51')
+        >>> math53.Sinc('0.51')
         ereal('5.3518479027559984754E-1')
 
 

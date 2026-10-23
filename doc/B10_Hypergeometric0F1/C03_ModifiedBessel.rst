@@ -85,10 +85,10 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.BesselI(3, 0.5)
+    >>> from xlcalcnet import math53
+    >>> math53.BesselI(3, 0.5)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.BesselI(3, '0.51')
+    >>> math53.BesselI(3, '0.51')
     ereal('5.3518479027559984754E-1')
 
 
@@ -198,10 +198,10 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.BesselK(3, 0.5)
+    >>> from xlcalcnet import math53
+    >>> math53.BesselK(3, 0.5)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.BesselK(3, '0.51')
+    >>> math53.BesselK(3, '0.51')
     ereal('5.3518479027559984754E-1')
 
 
@@ -275,10 +275,10 @@ First derivative of the modified Bessel function of the first kind `I'_{\nu}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselIPrime(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselIPrime(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselIPrime(3, '0.51')
+        >>> math53.BesselIPrime(3, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -382,10 +382,10 @@ Marcum Q function, `Q_m(a,b)`  (up to octuple precision)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MarcumQ(2, 3 ,0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.MarcumQ(2, 3 ,0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.MarcumQ(2.4, 3.6, ' 0.51')
+        >>> math53.MarcumQ(2.4, 3.6, ' 0.51')
         ereal('5.3518479027559984754E-1')
 
 

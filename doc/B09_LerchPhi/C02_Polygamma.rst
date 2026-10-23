@@ -78,10 +78,10 @@ Polygamma function, `\psi^{(n)}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.PolyGamma(6, 7.1)
+        >>> from xlcalcnet import math53
+        >>> math53.PolyGamma(6, 7.1)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.PolyGamma(12, '4.51')
+        >>> math53.PolyGamma(12, '4.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -144,10 +144,10 @@ TriGamma function, `\psi'(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.TriGamma(7)
+        >>> from xlcalcnet import math53
+        >>> math53.TriGamma(7)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.TriGamma('4.51')
+        >>> math53.TriGamma('4.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -244,10 +244,10 @@ DiGamma function `\psi(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Psi(7)
+        >>> from xlcalcnet import math53
+        >>> math53.Psi(7)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Psi('4.51')
+        >>> math53.Psi('4.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -316,10 +316,10 @@ Harmonic number function, `H_x`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Harmonic(10.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Harmonic(10.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Harmonic('10.1')
+        >>> math53.Harmonic('10.1')
         ereal('5.3518479027559984754E-1')
 
 

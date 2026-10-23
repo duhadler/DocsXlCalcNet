@@ -65,10 +65,10 @@ Error function, `\mathrm{erf}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Dawson(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Dawson(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Dawson('0.51')
+        >>> math53.Dawson('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -157,10 +157,10 @@ Complementary error function, `\mathrm{erfc}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Erfc(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Erfc(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Erfc('0.51')
+        >>> math53.Erfc('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -409,10 +409,10 @@ Imaginary error function, `\mathrm{erfi}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Erfi(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Erfi(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Erfi('0.51')
+        >>> math53.Erfi('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -493,10 +493,10 @@ Dawson integral, `F(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Dawson(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Dawson(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Dawson('0.51')
+        >>> math53.Dawson('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -672,10 +672,10 @@ Fresnel sine integral, `S(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.FresnelS(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.FresnelS(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.FresnelS('0.51')
+        >>> math53.FresnelS('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -762,10 +762,10 @@ Fresnel cosine integral, `C(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.FresnelC(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.FresnelC(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.FresnelC('0.51')
+        >>> math53.FresnelC('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -844,10 +844,10 @@ Owen's T function, `T(h,a)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.OwenT(2.5, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.OwenT(2.5, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.OwenT(2.5, '0.51')
+        >>> math53.OwenT(2.5, '0.51')
         ereal('5.3518479027559984754E-1')
 
 

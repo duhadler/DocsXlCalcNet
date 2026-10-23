@@ -49,10 +49,10 @@ Chebyshev polynomial (or function) of the first kind, `T_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ChebyshevT(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.ChebyshevT(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.ChebyshevT('6, 0.51')
+        >>> math53.ChebyshevT('6, 0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -124,10 +124,10 @@ Chebyshev polynomial of the second kind, `U_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ChebyshevU(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.ChebyshevU(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.ChebyshevU('6, 0.51')
+        >>> math53.ChebyshevU('6, 0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -207,10 +207,10 @@ Chebyshev polynomials of the third kind, `V_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ChebyshevV(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.ChebyshevV(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.ChebyshevV('6, 0.51')
+        >>> math53.ChebyshevV('6, 0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -253,10 +253,10 @@ Chebyshev polynomials of the fourth kind, `W_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ChebyshevW(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.ChebyshevW(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.ChebyshevW('6, 0.51')
+        >>> math53.ChebyshevW('6, 0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -310,10 +310,10 @@ Gegenbauer (ultraspherical) polynomial, `C_{n}^{\alpha}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.GegenbauerC(3, 2, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.GegenbauerC(3, 2, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.GegenbauerC('6, 2, 0.51')
+        >>> math53.GegenbauerC('6, 2, 0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -406,10 +406,10 @@ Jacobi polynomials, `P_{n}^{(a, b)}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiP(2, 3, 2, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiP(2, 3, 2, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiP('6, 2, 0.51')
+        >>> math53.JacobiP('6, 2, 0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -476,10 +476,10 @@ Zernike radial polynomials `R_n^m(r)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ZernikeR(4, 5, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.ZernikeR(4, 5, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.ZernikeR(4, 5,'0.51')
+        >>> math53.ZernikeR(4, 5,'0.51')
         ereal('5.3518479027559984754E-1')
 
 

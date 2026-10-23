@@ -45,7 +45,7 @@ Root Finding Without Derivatives (TOM 748 algorithm)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> f = lambda x: x * x * x - 28
         >>> guess = 2.33;  factor = 2.0; is_rising = True; get_digits = 64;  maxit = 20
         >>> res = ereal.BracketRoot(f, guess, factor, is_rising, get_digits, maxit)
@@ -98,7 +98,7 @@ Root Finding With Derivatives: Newton-Raphson
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> f = lambda x: x * x * x - 28
         >>> df1 = lambda x: 3 * x * x
         >>> guess = 2.33; xmin = 1.0; xmax = 4.0; get_digits = 64;  maxit = 20
@@ -151,7 +151,7 @@ Root Finding With Derivatives: Halley
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> f = lambda x: x * x * x - 28
         >>> df1 = lambda x: 3 * x * x
         >>> df2 = lambda x: 6 * x
@@ -203,7 +203,7 @@ Root Finding With Derivatives: Schröder
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> f = lambda x: x * x * x - 28
         >>> df1 = lambda x: 3 * x * x
         >>> df2 = lambda x: 6 * x
@@ -255,7 +255,7 @@ Locating Function Minima using Brent's algorithm
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> f = lambda x: (x + 3) * (x - 1) * (x - 1)
         >>> bracket_min = 0.5; bracket_max = 1.5;  bits = 125;  maxit = 20
         >>> res = ereal.Brent_Minimum(f, bracket_min, bracket_max, bits, maxit)

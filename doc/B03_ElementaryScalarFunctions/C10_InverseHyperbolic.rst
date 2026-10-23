@@ -66,10 +66,10 @@ Inverse hyperbolic sine, `\mathrm{asinh}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Asinh(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Asinh(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Asinh('0.51')
+        >>> math53.Asinh('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -162,10 +162,10 @@ Inverse hyperbolic cosine, `\mathrm{acosh}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Acosh(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Acosh(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Acosh('0.51')
+        >>> math53.Acosh('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -263,10 +263,10 @@ Inverse hyperbolic tangent, `\mathrm{atanh}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Atanh(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Atanh(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Atanh('0.51')
+        >>> math53.Atanh('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -361,10 +361,10 @@ Inverse hyperbolic cotangent, `\mathrm{acoth}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Acoth(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Acoth(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Acoth('0.51')
+        >>> math53.Acoth('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -460,10 +460,10 @@ Inverse hyperbolic secant, `\mathrm{asech}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Asech(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Asech(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Asech('0.51')
+        >>> math53.Asech('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -560,10 +560,10 @@ Inverse Hyperbolic Cosecant, `\mathrm{acsch}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Acsch(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Acsch(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Acsch('0.51')
+        >>> math53.Acsch('0.51')
         ereal('5.3518479027559984754E-1')
 
 

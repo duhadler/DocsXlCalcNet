@@ -33,11 +33,13 @@ Complete integral of the 1st kind, `\mathrm{EllipticK}(k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticK(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticK('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticK(-0.9333)
+        2.459106502858909
+        >>> math53.EllipticK(0.01)
+        1.570835598912152
+        >>> math53.EllipticK(0.9333)
+        2.459106502858909
 
 
 
@@ -59,11 +61,13 @@ Complete integral of the 1st kind for imaginary modulus, `\mathrm{EllipticKim}(k
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticKim(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticKim('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticKim(-0.9333)
+        1.334879017781761
+        >>> math53.EllipticKim(0.01)
+        1.5707570590955058
+        >>> math53.EllipticKim(0.9333)
+        1.334879017781761
 
 
 
@@ -88,11 +92,13 @@ Complementary complete integral of the 1st kind, `\mathrm{EllipticCK}(k) = K'(k)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticCK(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticCK('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticCK(-0.9333)
+        1.6254736111454573
+        >>> math53.EllipticCK(0.01)
+        5.991589340506996
+        >>> math53.EllipticCK(0.9333)
+        1.6254736111454573
 
 
 
@@ -114,11 +120,13 @@ Complete integral of the 2nd kind, `\mathrm{EllipticEC}(k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticEC(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticEC('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticEC(-0.9333)
+        1.127649981567299
+        >>> math53.EllipticEC(0.01)
+        1.5707570561503852
+        >>> math53.EllipticEC(0.9333)
+        1.127649981567299
 
 
 
@@ -141,11 +149,13 @@ Complete integral of the 2nd kind for imaginary modulus, `\mathrm{EllipticECim}(
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticECim(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticECim('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticECim(-0.9333)
+        1.870953551376072
+        >>> math53.EllipticECim(0.01)
+        1.5708355959667861
+        >>> math53.EllipticECim(0.9333)
+        1.870953551376072
 
 
 
@@ -168,11 +178,13 @@ Complementary complete integral of the 2nd kind, `\mathrm{EllipticCE}(k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticCE(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticCE('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticCE(-0.9333)
+        1.5188621404561577
+        >>> math53.EllipticCE(0.01)
+        1.0002745824306631
+        >>> math53.EllipticCE(0.9333)
+        1.5188621404561577
 
 
 
@@ -195,11 +207,13 @@ Complete integral of the 3rd kind, `\mathrm{EllipticPiC}(\nu, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticPiC(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticPiC(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticPiC(-0.9333, 0.01)
+        1.129742159472719
+        >>> math53.EllipticPiC(0.01, -0.9333)
+        2.4745180633508044
+        >>> math53.EllipticPiC(0.9333, 0.01)
+        6.0823893714986585
 
 
 
@@ -223,11 +237,13 @@ Complete integral of the 3rd kind for imaginary modulus, `\mathrm{EllipticPiCim}
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticPiCim(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticPiCim(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticPiCim(-0.9333, 0.01)
+        1.1296948994491276
+        >>> math53.EllipticPiCim(0.01, -0.9333)
+        1.3410787572966438
+        >>> math53.EllipticPiCim(0.9333, 0.01)
+        6.08190599516054
 
 
 
@@ -250,11 +266,13 @@ Complementary complete integral of the 3rd kind, `\mathrm{EllipticCPi}(\nu, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticCPi(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticCPi(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticCPi(-0.9333, 0.01)
+        3.4829363034929215
+        >>> math53.EllipticCPi(0.01, -0.9333)
+        1.6338040919783785
+        >>> math53.EllipticCPi(0.9333, 0.01)
+        60.46495296527363
 
 
 
@@ -277,11 +295,13 @@ Incomplete integral of the 1st kind, `\mathrm{EllipticF}(z, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticF(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticF(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticF(-0.9333, 0.01)
+        -1.2035171794595962
+        >>> math53.EllipticF(0.01, -0.9333)
+        0.010000311859028539
+        >>> math53.EllipticF(0.9333, 0.01)
+        1.2035171794595962
 
 
 
@@ -304,11 +324,13 @@ Incomplete integral of the 2nd kind, `\mathrm{EllipticE}(z, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticE(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticE(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticE(-0.9333, 0.01)
+        -1.2034737607138424
+        >>> math53.EllipticE(0.01, -0.9333)
+        0.01000002149309969
+        >>> math53.EllipticE(0.9333, 0.01)
+        1.2034737607138424
 
 
 
@@ -331,11 +353,13 @@ Incomplete integral of the 3rd kind, `\mathrm{EllipticPi}(z, \nu, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.EllipticPi(0.6, 0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.EllipticPi(0.6, 0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.EllipticPi(-0.9333, 0.01, 0.9333)
+        -1.5540650009536827
+        >>> math53.EllipticPi(0.01, -0.9333, 0.9333)
+        0.010000000758985845
+        >>> math53.EllipticPi(0.9333, 0.01, -0.9333)
+        1.5540650009536827
 
 
 

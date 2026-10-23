@@ -57,10 +57,10 @@ Square root, `\mathrm{sqrt}(x) = \sqrt{x}`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Sqrt(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Sqrt(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Sqrt('0.51')
+        >>> math53.Sqrt('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -127,10 +127,10 @@ Reciprocal square root, `\mathrm{rsqrt}(x) = 1/\sqrt{x}`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Rsqrt(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Rsqrt(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Rsqrt('0.51')
+        >>> math53.Rsqrt('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -200,10 +200,10 @@ Auxiliary function `\mathrm{sqrt1pm1}(x) = \sqrt{1+x}-1`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Sqrt1pm1(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Sqrt1pm1(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Sqrt1pm1('0.51')
+        >>> math53.Sqrt1pm1('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -273,10 +273,10 @@ Cube root, `\mathrm{cbrt}(x) = \sqrt[3]{x}`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Cbrt(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Cbrt(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Cbrt('0.51')
+        >>> math53.Cbrt('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -377,10 +377,10 @@ Nth root, `\mathrm{nroot}(x, n) = \sqrt[n]{x}`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Nroot(0.5, 4)
+        >>> from xlcalcnet import math53
+        >>> math53.Nroot(0.5, 4)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Nroot('0.51', 4)
+        >>> math53.Nroot('0.51', 4)
         ereal('5.3518479027559984754E-1')
 
 

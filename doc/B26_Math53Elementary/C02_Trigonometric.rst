@@ -34,11 +34,14 @@ Sine, `x` in degrees, `\mathrm{sind}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Sind(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Sind('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.sind(-4.333)
+        -0.07555305176474306
+        >>> math53.sind(0.0)
+        0.0
+        >>> math53.sind(4.333)
+        0.07555305176474306
+
 
 
 
@@ -54,6 +57,18 @@ Inverse sine, input in degrees, `\mathrm{asind}(x)`
     Returns the inverse sine of `x`, `\mathrm{asin}(x)`. See also  Wikipedia :cite:p:`WikipediaFun50`,  MathWorld :cite:p:`WolframFun51`,  NIST :cite:p:`DLMFun50`, :cite:t:`Ehrhardt2018` (4.2.13), Mpmath :cite:p:`MpmathFun51`.
 
 
+    An example in Python
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import math53
+        >>> math53.asind(-0.333)
+        -19.45096478286684
+        >>> math53.asind(0.0)
+        0.0
+        >>> math53.asind(0.333)
+        19.45096478286684
+
 
 
 Cosine, `x` in degrees, `\mathrm{cosd}(x)`
@@ -68,11 +83,13 @@ Cosine, `x` in degrees, `\mathrm{cosd}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Cosd(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Cosd('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.cosd(-4.333)
+        0.99714178348369
+        >>> math53.cosd(0.0)
+        1.0
+        >>> math53.cosd(4.333)
+        0.99714178348369
 
 
 
@@ -86,6 +103,18 @@ Inverse cosine, input in degrees, `\mathrm{acosd}(x)`
     where ``ctx`` is ``math53``, ``mathc53``, ``ctxcpp``, ``ctxflint``.
 
     Returns the inverse cosine of `x`, `\mathrm{acos}(x)`. See also  Wikipedia :cite:p:`WikipediaFun50`,  MathWorld :cite:p:`WolframFun52`,  NIST :cite:p:`DLMFun50`, :cite:t:`Ehrhardt2018` (4.2.3), Flint :cite:p:`FlintFun50`, Flint :cite:p:`FlintFun51`, Mpmath :cite:p:`MpmathFun52`.
+
+    An example in Python
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import math53
+        >>> math53.acosd(-0.333)
+        109.45096478286685
+        >>> math53.acosd(0.0)
+        90.0
+        >>> math53.acosd(0.333)
+        70.54903521713317
 
 
 
@@ -103,11 +132,13 @@ Tangent, with `x` in degrees, `\mathrm{tand}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Tand(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Tand('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.tand(-4.333)
+        -0.07576961773759515
+        >>> math53.tand(0.0)
+        0.0
+        >>> math53.tand(4.333)
+        0.07576961773759515
 
 
 
@@ -122,6 +153,18 @@ Inverse tangent, input in degrees, `\mathrm{atand}(x)`
 
     Returns the inverse tangent of `x`, `\mathrm{atan}(x)`. See also  Wikipedia :cite:p:`WikipediaFun50`,  MathWorld :cite:p:`WolframFun53`,  NIST :cite:p:`DLMFun50`, :cite:t:`Ehrhardt2018` (4.2.15), Flint :cite:p:`FlintFun50`, Flint :cite:p:`FlintFun51`, Mpmath :cite:p:`MpmathFun53`.
 
+
+    An example in Python
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import math53
+        >>> math53.atand(-4.333)
+        -77.00441747834749
+        >>> math53.atand(0.0)
+        0.0
+        >>> math53.atand(4.333)
+        77.00441747834749
 
 
 
@@ -143,11 +186,13 @@ Cotangent, with `x` in degrees, `\mathrm{cotd}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Cotd(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Cotd('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.cotd(-4.333)
+        -13.197902138865127
+        >>> math53.cotd(0.0)
+        inf
+        >>> math53.cotd(4.333)
+        13.197902138865127
 
 
 
@@ -163,6 +208,18 @@ Inverse cotangent, input in degrees, `\mathrm{acotd}(x)`
 
     Returns the inverse cotangent of `x`, `\mathrm{acot}(x)`. See also  Wikipedia :cite:p:`WikipediaFun50`,  MathWorld :cite:p:`WolframFun56`,  NIST :cite:p:`DLMFun50`, :cite:t:`Ehrhardt2018` (4.2.5).
 
+
+    An example in Python
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import math53
+        >>> math53.acotd(-4.333)
+        -12.995582521652512
+        >>> math53.acotd(0.0)
+        90.0
+        >>> math53.acotd(4.333)
+        12.995582521652512
 
 
 
@@ -182,11 +239,13 @@ Auxiliary function,  `\mathrm{acos}(1-x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Acos1m(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Acos1m('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.acos1m(-0.333)
+        nan
+        >>> math53.acos1m(0.0)
+        0.0
+        >>> math53.acos1m(0.333)
+        0.8406213674789956
 
 
 
@@ -208,11 +267,13 @@ Haversine function `\mathrm{hav}(x) = (1 - \cos(x))/2`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Haversine(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Haversine('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.hav(-4.333)
+        0.6851764839496324
+        >>> math53.hav(0.0)
+        0.0
+        >>> math53.hav(4.333)
+        0.6851764839496324
 
 
 
@@ -231,11 +292,13 @@ Inverse haversine function `\mathrm{archav}(x) = \mathrm{acos}(1-2x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ArcHaversine(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.ArcHaversine('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.archav(-0.333)
+        nan
+        >>> math53.archav(0.0)
+        0.0
+        >>> math53.archav(0.333)
+        1.2302522220901777
 
 
 
@@ -257,11 +320,13 @@ Versine function `\mathrm{vers}(x) = 1 - \cos(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Versine(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Versine('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.vers(-4.333)
+        1.3703529678992648
+        >>> math53.vers(0.0)
+        0.0
+        >>> math53.vers(4.333)
+        1.3703529678992648
 
 
 
@@ -279,11 +344,13 @@ Coversine, `\mathrm{covers}(x) = 1 - \sin(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Covers(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Covers('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.covers(-4.333)
+        0.07110889811119075
+        >>> math53.covers(0.0)
+        1.0
+        >>> math53.covers(4.333)
+        1.928891101888809
 
 
 
@@ -303,11 +370,13 @@ Versint function `\mathrm{versint}(x) = x - \sin(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Versint(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Versint('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.versint(-4.333)
+        -5.26189110188881
+        >>> math53.versint(0.0)
+        0.0
+        >>> math53.versint(4.333)
+        5.26189110188881
 
 
 
@@ -332,11 +401,13 @@ Integral of cos powers, `\mathrm{cosint}(n,x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.CosInt(3, 4)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.CosInt(3, 12)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.cosint(2, 4.333)
+        2.33850878821987
+        >>> math53.cosint(3, 0.0)
+        0.0
+        >>> math53.cosint(4, -4.333)
+        -1.7656780674583596
 
 
 
@@ -360,11 +431,13 @@ Integral of sin powers, `\mathrm{sinint}(n,x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.SinInt(3, 4)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.SinInt(3, 12)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.sinint(2, 4.333)
+        1.9944912117801308
+        >>> math53.sinint(3, 0.0)
+        0.0
+        >>> math53.sinint(4, -4.333)
+        -1.421660491018621
 
 
 

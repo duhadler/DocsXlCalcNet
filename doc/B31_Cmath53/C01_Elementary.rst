@@ -106,10 +106,10 @@ Continuous inverse cotangent, `\mathrm{acotc}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Acotc(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Acotc(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Acotc('0.51')
+        >>> math53.Acotc('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -130,10 +130,10 @@ Continuous inverse hyperbolic cotangent, `\mathrm{acothc}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Acotc(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Acotc(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Acotc('0.51')
+        >>> math53.Acotc('0.51')
         ereal('5.3518479027559984754E-1')
 
 

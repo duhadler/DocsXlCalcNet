@@ -32,10 +32,10 @@ Modified Bessel function of the 1st kind, order `0, I_{0}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselI0(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselI0(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselI0('0.51')
+        >>> math53.BesselI0('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -56,10 +56,10 @@ Modified Bessel function of the 1st kind, order `1, I_{1}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselI1(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselI1(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselI1('0.51')
+        >>> math53.BesselI1('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -82,10 +82,10 @@ Modified Bessel function of the 1st kind, integer order `n, I_{n}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselIn(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselIn(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselIn(3, '0.51')
+        >>> math53.BesselIn(3, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -106,10 +106,10 @@ Modified Bessel function of the 2nd kind, order 0, `K_{0}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselK0(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselK0(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselK0('0.51')
+        >>> math53.BesselK0('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -130,10 +130,10 @@ Modified Bessel function of the 2nd kind, order `1, K_{1}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselK1(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselK1(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselK1('0.51')
+        >>> math53.BesselK1('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -162,10 +162,10 @@ Modified Bessel function of the 2nd kind, integer order `n, K_{n}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselKn(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselKn(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselKn(3, '0.51')
+        >>> math53.BesselKn(3, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -185,10 +185,10 @@ Exponentially scaled modified Bessel function of the 1st kind, order `0, I_{0,e}
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselI0e(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselI0e(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselI0e('0.51')
+        >>> math53.BesselI0e('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -208,10 +208,10 @@ Exponentially scaled modified Bessel function of the 1st kind, order `1, I_{1,e}
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselI1e(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselI1e(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselI1e('0.51')
+        >>> math53.BesselI1e('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -231,10 +231,10 @@ Exponentially scaled modified Bessel function of the 2nd kind, order 0, `K_{0,e}
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselK0e(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselK0e(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselK0e('0.51')
+        >>> math53.BesselK0e('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -253,10 +253,10 @@ Exponentially scaled modified Bessel function of the 2nd kind, order `1, K_{1,e}
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselK1e(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.BesselK1e(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselK1e('0.51')
+        >>> math53.BesselK1e('0.51')
         ereal('5.3518479027559984754E-1')
 
 

@@ -48,11 +48,13 @@ Polylogarithm of integer order, `\mathrm{Li}_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Polylog(2, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Polylog(2, '0.1')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.polylog_i(2, 0.01)
+        0.010025111740139094
+        >>> math53.polylog_i(3, 10.5)
+        5.66534093854826
+        >>> math53.polylog_i(4, 20.9333)
+        13.767054582329026
 
 
 
@@ -92,11 +94,13 @@ Fermi-Dirac integrals of integer order, `F_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.FermiDirac(2,5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.FermiDirac(2,'51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.fermi_dirac_i(2, 0.01)
+        0.9098020885004644
+        >>> math53.fermi_dirac_i(3, 10.5)
+        599.031966057601
+        >>> math53.fermi_dirac_i(4, 20.9333)
+        36051.591345246416
 
 
 
@@ -116,11 +120,13 @@ Fermi-Dirac integral `F_{-1/2}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.FermiDiracm05(2,5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.FermiDiracm05('5.1')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.fermi_dirac_m05(0.01)
+        0.608705610911171
+        >>> math53.fermi_dirac_m05(10.5)
+        3.6420723652672895
+        >>> math53.fermi_dirac_m05(20.9333)
+        5.157769932482041
 
 
 
@@ -140,11 +146,13 @@ Fermi-Dirac integral `F_{1/2}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.FermiDiracp05(2,5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.FermiDiracp05('5.1')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.fermi_dirac_p05(0.01)
+        0.7712150360437194
+        >>> math53.fermi_dirac_p05(10.5)
+        25.88346611317671
+        >>> math53.fermi_dirac_p05(20.9333)
+        72.25098647441794
 
 
 
@@ -165,11 +173,13 @@ Fermi-Dirac integral `F_{3/2}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.FermiDiracp15(2,5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.FermiDiracp15('5.1')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.fermi_dirac_p15(0.01)
+        0.874881667590789
+        >>> math53.fermi_dirac_p15(10.5)
+        113.49527140479812
+        >>> math53.fermi_dirac_p15(20.9333)
+        611.7653726268513
 
 
 
@@ -189,15 +199,17 @@ Fermi-Dirac integral `F_{5/2}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.FermiDiracp25(2,5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.FermiDiracp25('5.1')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.fermi_dirac_p25(0.01)
+        0.9362639349902176
+        >>> math53.fermi_dirac_p25(10.5)
+        364.9252593211593
+        >>> math53.fermi_dirac_p25(20.9333)
+        3726.9235556746216
 
 
 
-        
+
 
 
 Inverse tangent integral, `\mathrm{Ti}_2(x)`
@@ -214,11 +226,13 @@ Inverse tangent integral, `\mathrm{Ti}_2(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.TangentInt2(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.TangentInt2('0.1')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.tangent_int_2(0.01)
+        0.009999888892888685
+        >>> math53.tangent_int_2(10.5)
+        3.788674042119505
+        >>> math53.tangent_int_2(20.9333)
+        4.8250862474762
 
 
 
@@ -239,11 +253,13 @@ Lobachevsky's log-cos integral, `L(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LobachevskyC(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.LobachevskyC('0.1')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.lobachevsky_c(0.01)
+        1.6666833336508016e-07
+        >>> math53.lobachevsky_c(10.5)
+        6.7712697858797855
+        >>> math53.lobachevsky_c(20.9333)
+        15.017229619310305
 
 
 
@@ -263,11 +279,13 @@ Lobachevsky's log-sin integral, `\Lambda(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LobachevskyS(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.LobachevskyS('0.1')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.lobachevsky_s(0.01)
+        0.049120285609948126
+        >>> math53.lobachevsky_s(10.5)
+        0.3226979802070858
+        >>> math53.lobachevsky_s(20.9333)
+        -0.33243071505340765
 
 
 
@@ -330,11 +348,13 @@ Debye functions, `\mathrm{D}_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Debye(1,3)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Debye(2,13)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.debye(2, 0.01)
+        0.9966708333287038
+        >>> math53.debye(3, 10.5)
+        0.016717989806569248
+        >>> math53.debye(4, 20.9333)
+        0.0005184007550452067
 
 
 
@@ -359,11 +379,13 @@ Transport integral, `\mathrm{J}_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.TransportJn(2,3)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.TransportJn(4,13)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.transport_jn(2, 0.01)
+        0.009999972222305555
+        >>> math53.transport_jn(3, 10.5)
+        7.169455825440913
+        >>> math53.transport_jn(4, 20.9333)
+        25.97556753445377
 
 
 

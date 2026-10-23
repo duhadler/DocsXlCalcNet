@@ -82,10 +82,10 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.AiryAi(0.5)
+    >>> from xlcalcnet import math53
+    >>> math53.AiryAi(0.5)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.AiryAi('0.51')
+    >>> math53.AiryAi('0.51')
     ereal('5.3518479027559984754E-1')
 
 
@@ -161,10 +161,10 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.AiryBi(0.5)
+    >>> from xlcalcnet import math53
+    >>> math53.AiryBi(0.5)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.AiryBi('0.51')
+    >>> math53.AiryBi('0.51')
     ereal('5.3518479027559984754E-1')
 
 
@@ -210,10 +210,10 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.AiryAiPrime(0.5)
+    >>> from xlcalcnet import math53
+    >>> math53.AiryAiPrime(0.5)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.AiryAiPrime('0.51')
+    >>> math53.AiryAiPrime('0.51')
     ereal('5.3518479027559984754E-1')
 
 
@@ -254,10 +254,10 @@ An example in Python
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
-    >>> ereal.AiryAiPrime(0.5)
+    >>> from xlcalcnet import math53
+    >>> math53.AiryAiPrime(0.5)
     ereal('5.2359877559829887307E-1')
-    >>> ereal.AiryAiPrime('0.51')
+    >>> math53.AiryAiPrime('0.51')
     ereal('5.3518479027559984754E-1')
 
 
@@ -282,10 +282,10 @@ Real zeros `a_k` of the Airy function `\mathrm{Ai}`, `\mathrm{Ai}(a_k)=0`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.AiryAiZero(5)
+        >>> from xlcalcnet import math53
+        >>> math53.AiryAiZero(5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.AiryAiZero(17)
+        >>> math53.AiryAiZero(17)
         ereal('5.3518479027559984754E-1')
 
 
@@ -312,10 +312,10 @@ Real zeros `b_k` of the Airy function `\mathrm{Bi}`, `\mathrm{Bi}(b_k)=0`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.AiryBiZero(5)
+        >>> from xlcalcnet import math53
+        >>> math53.AiryBiZero(5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.AiryBiZero(17)
+        >>> math53.AiryBiZero(17)
         ereal('5.3518479027559984754E-1')
 
 

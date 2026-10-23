@@ -34,11 +34,13 @@ Lemniscate sine function, `\mathrm{sinlemn}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.SinLemniscate(1.5, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.SinLemniscate(1.5, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.sinlemn(0.01)
+        0.00999999999
+        >>> math53.sinlemn(0.5)
+        0.496891190419312
+        >>> math53.sinlemn(0.9333)
+        0.8666952283443882
 
 
 
@@ -60,11 +62,13 @@ Lemniscate cosine function, `\mathrm{coslemn}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.CosLemniscate(1.5, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.CosLemniscate(1.5, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.coslemn(0.01)
+        0.9999000049996999
+        >>> math53.coslemn(0.5)
+        0.7771594206519663
+        >>> math53.coslemn(0.9333)
+        0.3769611253836269
 
 
 
@@ -87,11 +91,13 @@ Inverse lemniscate sine function, `\mathrm{arcsl}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.AcosLemniscate(1.5, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.AcosLemniscate(1.5, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.arcsl(0.01)
+        1.3010287771360596
+        >>> math53.arcsl(0.5)
+        0.8078193339687287
+        >>> math53.arcsl(0.9333)
+        0.2626495240692557
 
 
 
@@ -114,11 +120,13 @@ Inverse lemniscate cosine function, `\mathrm{arccl}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.AsinLemniscate(1.5, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.AsinLemniscate(1.5, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.arccl(0.01)
+        0.010000000010000001
+        >>> math53.arccl(0.5)
+        0.5032094431773307
+        >>> math53.arccl(0.9333)
+        1.0483792530768037
 
 
 

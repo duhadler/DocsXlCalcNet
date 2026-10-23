@@ -135,7 +135,7 @@ Brent's algorithm for finding a local minimum
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> a = -10.0; b = 20.0; eps = 1E-8; tol = 1E-8
         >>> f = lambda x: -ereal.Exp(-x * x)
         >>> res = ereal.LocalMin(f, a, b, eps, tol)
@@ -292,7 +292,7 @@ Modified Brent’s algorithm for finding a local minimum
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> a = -10.0; b = 20.0; tol = 1E-8
         >>> f = lambda x: -ereal.Exp(-x * x)
         >>> res = ereal.MBrent(f, a, b, tol)
@@ -337,7 +337,7 @@ Rootfinding: Brent/Dekker algorithm
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> a = -20.0; b = 20.0; tol = 1E-8
         >>> f = lambda x: ereal.Exp(x) - 10
         >>> res = ereal.ZBrent(f, a, b, tol)
@@ -379,7 +379,7 @@ Rootfinding: Simplified Brent/Dekker algorithm
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
+        >>> from xlcalcnet import math53
         >>> a = -20.0; b = 20.0; tol = 1E-8
         >>> f = lambda x: ereal.Exp(x) - 10
         >>> x0 = ereal.ZeroIn(f, a, b, tol)

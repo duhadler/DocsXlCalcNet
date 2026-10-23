@@ -13,8 +13,6 @@
 
 
 
-|newpage|
-
 Polygamma, and related functions
 ===============================================================================
 
@@ -35,11 +33,13 @@ Pentagamma function `\psi'''(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Pentagamma(7)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Pentagamma('4.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.pentagamma(0.01)
+        600000006.2510617
+        >>> math53.pentagamma(10.5)
+        0.001990086237144355
+        >>> math53.pentagamma(20.9333)
+        0.00023415053202383002
 
 
 
@@ -60,11 +60,13 @@ Tetragamma function, `\psi''(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Tetragamma(7)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Tetragamma('4.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.tetragamma(0.01)
+        -2000002.3403986772
+        >>> math53.tetragamma(10.5)
+        -0.009975144247715168
+        >>> math53.tetragamma(20.9333)
+        -0.0023936641630670093
 
 
 
@@ -83,11 +85,13 @@ Auxiliary function `\psi^{*}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.PsiStar(7)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.PsiStar('4.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.psistar(0.01)
+        -95.95571527188056
+        >>> math53.psistar(10.5)
+        -0.04837422286579131
+        >>> math53.psistar(20.9333)
+        -0.024075515594002023
 
 
 
@@ -110,11 +114,13 @@ Inverse digamma function `\psi^{-1}(y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.PsiInv(7.1)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.PsiInv('4.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.psi_inv(0.01)
+        1.4720152539294011
+        >>> math53.psi_inv(10.5)
+        36316.00267309933
+        >>> math53.psi_inv(20.9333)
+        1233720207.3863456
 
 
 
@@ -133,11 +139,13 @@ Bateman function `G(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BatemanG(7.1)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.BatemanG('4.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.bateman_g(0.01)
+        198.6299765458315
+        >>> math53.bateman_g(10.5)
+        0.09975303466039102
+        >>> math53.bateman_g(20.9333)
+        0.048910504209268506
 
 
 

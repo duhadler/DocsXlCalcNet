@@ -47,10 +47,10 @@ Non-normalized lower incomplete beta function, `B_{\mathrm{lower}}(a,b;x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Beta3(3.1, 0.5, 0.3)
+        >>> from xlcalcnet import math53
+        >>> math53.Beta3(3.1, 0.5, 0.3)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Beta3(3.4, '0.51', 0.3)
+        >>> math53.Beta3(3.4, '0.51', 0.3)
         ereal('5.3518479027559984754E-1')
 
 
@@ -112,10 +112,10 @@ Normalized incomplete beta function, `I_{x}(a,b)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IBeta(3.1, 0.5, 0.3)
+        >>> from xlcalcnet import math53
+        >>> math53.IBeta(3.1, 0.5, 0.3)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.IBeta(3.4, '0.51', 0.3)
+        >>> math53.IBeta(3.4, '0.51', 0.3)
         ereal('5.3518479027559984754E-1')
 
 
@@ -218,10 +218,10 @@ Real non-normalized upper incomplete beta function, `B_{\mathrm{upper}}(a,b;x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Betac(3.1, 0.5, 0.3)
+        >>> from xlcalcnet import math53
+        >>> math53.Betac(3.1, 0.5, 0.3)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Betac(3.4, '0.51', 0.3)
+        >>> math53.Betac(3.4, '0.51', 0.3)
         ereal('5.3518479027559984754E-1')
 
 
@@ -272,10 +272,10 @@ Real normalized complementory incomplete beta function, `I_{1-x}(a,b)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Ibetac(3.1, 0.5, 0.3)
+        >>> from xlcalcnet import math53
+        >>> math53.Ibetac(3.1, 0.5, 0.3)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Ibetac(3.4, '0.51', 0.3)
+        >>> math53.Ibetac(3.4, '0.51', 0.3)
         ereal('5.3518479027559984754E-1')
 
 

@@ -80,10 +80,10 @@ Gauss Hypergeometric Function, `{}_2F_1(a,b;c;x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Hyperg2F1(3,4,5,0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Hyperg2F1(3,4,5,0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Hyperg2F1(13,14,15,0.5)
+        >>> math53.Hyperg2F1(13,14,15,0.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -160,10 +160,10 @@ Regularized Hypergeometric Function, `{}_2\widetilde{F}_1(a,b;c;x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Hyperg2F1r(3,4,5,0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Hyperg2F1r(3,4,5,0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Hyperg2F1r(13,14,15,0.5)
+        >>> math53.Hyperg2F1r(13,14,15,0.5)
         ereal('5.3518479027559984754E-1')
 
 

@@ -51,10 +51,10 @@ Integral and fractional part of a floating point number: `\mathrm{modf}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Modf(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Modf(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Modf('0.51')
+        >>> math53.Modf('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -135,10 +135,10 @@ Floating point remainder: `\mathrm{fmod}(x, y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Fmod(0.5, 2)
+        >>> from xlcalcnet import math53
+        >>> math53.Fmod(0.5, 2)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Fmod('0.51', 2)
+        >>> math53.Fmod('0.51', 2)
         ereal('5.3518479027559984754E-1')
 
 
@@ -183,10 +183,10 @@ IEEE floating point remainder: `\mathrm{remainder}(x, y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Remainder(0.5, 2)
+        >>> from xlcalcnet import math53
+        >>> math53.Remainder(0.5, 2)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Remainder('0.51', 2)
+        >>> math53.Remainder('0.51', 2)
         ereal('5.3518479027559984754E-1')
 
 
@@ -225,10 +225,10 @@ IEEE floating point remainder and part of quotient: `\mathrm{remquo}(x, y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Remainder(0.5, 2)
+        >>> from xlcalcnet import math53
+        >>> math53.Remainder(0.5, 2)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Remainder('0.51', 2)
+        >>> math53.Remainder('0.51', 2)
         ereal('5.3518479027559984754E-1')
 
 

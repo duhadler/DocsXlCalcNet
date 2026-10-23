@@ -49,10 +49,10 @@ Legendre polynomial (or function) of the first kind, `P_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LegendreP(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.LegendreP(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.LegendreP(6, '0.51')
+        >>> math53.LegendreP(6, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -133,10 +133,10 @@ Associated Legendre function of the first kind, `P^m_l(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LegendrePlm(2, 3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.LegendrePlm(2, 3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.LegendrePlm(2, 6, '0.51')
+        >>> math53.LegendrePlm(2, 6, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -217,10 +217,10 @@ Legendre function of the second kind, `Q_l(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LegendreQ(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.LegendreQ(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.LegendreQ(6, '0.51')
+        >>> math53.LegendreQ(6, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -331,10 +331,10 @@ Associated Legendre function of the second kind, `Q^m_l(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LegendrePlm(2, 3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.LegendrePlm(2, 3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.LegendrePlm(2, 6, '0.51')
+        >>> math53.LegendrePlm(2, 6, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -365,10 +365,10 @@ Spherical harmonics, `Y_n^m(\theta, \phi)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.SpherHarm(2, 3, 5, 4)
+        >>> from xlcalcnet import math53
+        >>> math53.SpherHarm(2, 3, 5, 4)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.SpherHarm(2.1, 3.1, 5.1, 4.1)
+        >>> math53.SpherHarm(2.1, 3.1, 5.1, 4.1)
         ereal('5.3518479027559984754E-1')
 
 
@@ -430,14 +430,14 @@ Toroidal harmonics `P^m_{l-1/2}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ToroidalPlm(0, 0, 1.5)
+        >>> from xlcalcnet import math53
+        >>> math53.ToroidalPlm(0, 0, 1.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.ToroidalPlm(0, 1, 1.5)
+        >>> math53.ToroidalPlm(0, 1, 1.5)
         ereal('5.3518479027559984754E-1')
-        >>> ereal.ToroidalPlm(1, 0, 1.5)
+        >>> math53.ToroidalPlm(1, 0, 1.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.ToroidalPlm(1, 1, 1.5)
+        >>> math53.ToroidalPlm(1, 1, 1.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -461,14 +461,14 @@ Toroidal harmonics `Q^m_{l-1/2}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ToroidalQlm(0, 0, 1.5)
+        >>> from xlcalcnet import math53
+        >>> math53.ToroidalQlm(0, 0, 1.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.ToroidalQlm(0, 1, 1.5)
+        >>> math53.ToroidalQlm(0, 1, 1.5)
         ereal('5.3518479027559984754E-1')
-        >>> ereal.ToroidalQlm(1, 0, 1.5)
+        >>> math53.ToroidalQlm(1, 0, 1.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.ToroidalQlm(1, 1, 1.5)
+        >>> math53.ToroidalQlm(1, 1, 1.5)
         ereal('5.3518479027559984754E-1')
 
 

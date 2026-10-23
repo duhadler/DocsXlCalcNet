@@ -58,10 +58,10 @@ Weierstrass function `\wp_e(x,e_1,e_2)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Wpe(2.5, 1.5, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Wpe(2.5, 1.5, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Wpe(2.5, 1.5, '0.51')
+        >>> math53.Wpe(2.5, 1.5, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -92,10 +92,10 @@ Weierstrass function `\wp'_e(x,e_1,e_2)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.WpeDer(2.5, 1.5, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.WpeDer(2.5, 1.5, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.WpeDer(2.5, 1.5, '0.51')
+        >>> math53.WpeDer(2.5, 1.5, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -186,10 +186,10 @@ Inverse Weierstrass function `\wp^{-1}_e(y,e_1,e_2)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.WpeInv(2.5, 1.5, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.WpeInv(2.5, 1.5, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.WpeInv(2.5, 1.5, '0.51')
+        >>> math53.WpeInv(2.5, 1.5, '0.51')
         ereal('5.3518479027559984754E-1')
 
 

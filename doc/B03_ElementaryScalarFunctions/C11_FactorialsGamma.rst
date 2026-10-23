@@ -60,10 +60,10 @@ Gamma function, `\Gamma(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Gamma(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Gamma(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Gamma('0.51')
+        >>> math53.Gamma('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -200,10 +200,10 @@ Log-gamma function, `\log\Gamma(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LogGamma(1.5)
+        >>> from xlcalcnet import math53
+        >>> math53.LogGamma(1.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.LogGamma('1.51')
+        >>> math53.LogGamma('1.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -322,17 +322,17 @@ Reciprocal Gamma function, `1/\Gamma(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.RGamma(1)
+        >>> from xlcalcnet import math53
+        >>> math53.RGamma(1)
         1.0
-        >>> ereal.RGamma(4)
+        >>> math53.RGamma(4)
         0.1666666666666666666666667
-        >>> ereal.RGamma(0); ereal.RGamma(-1)
+        >>> math53.RGamma(0); ereal.RGamma(-1)
         0.0
         0.0
-        >>> ereal.RGamma(1000)
+        >>> math53.RGamma(1000)
         2.485168143266784862783596e-2565
-        >>> ereal.RGamma('inf')
+        >>> math53.RGamma('inf')
         0.0
 
 
@@ -420,10 +420,10 @@ Factorial,  `x!`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Factorial(3)
+        >>> from xlcalcnet import math53
+        >>> math53.Factorial(3)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Factorial('0.51')
+        >>> math53.Factorial('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -463,10 +463,10 @@ Double factorial, `x!!`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.DFactorial(3)
+        >>> from xlcalcnet import math53
+        >>> math53.DFactorial(3)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.DFactorial('0.51')
+        >>> math53.DFactorial('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -507,10 +507,10 @@ Rising factorial `a^{\overline{n}} = (a)_n`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Pochhammer(13, 7)
+        >>> from xlcalcnet import math53
+        >>> math53.Pochhammer(13, 7)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.RisingFactorial(12.6, '4.51')
+        >>> math53.RisingFactorial(12.6, '4.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -591,10 +591,10 @@ Falling factorial, `(a)^{\underline{n}} = (a-n+1)^{\overline{n}}`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.FallingFactorial(13, 7)
+        >>> from xlcalcnet import math53
+        >>> math53.FallingFactorial(13, 7)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.FallingFactorial(12.6, '4.51')
+        >>> math53.FallingFactorial(12.6, '4.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -759,10 +759,10 @@ Binomial coefficient, `{}_nC_k = (k \cdot B(k, n-k+1))^{-1}`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Binomial(13, 7)
+        >>> from xlcalcnet import math53
+        >>> math53.Binomial(13, 7)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Binomial(12.6, '4.51')
+        >>> math53.Binomial(12.6, '4.51')
         ereal('5.3518479027559984754E-1')
 
 

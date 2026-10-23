@@ -34,10 +34,10 @@ Exponentially scaled complementary error function, `\mathrm{erfcx}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Erfce(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Erfce(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Erfce('0.51')
+        >>> math53.Erfce('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -61,10 +61,10 @@ Difference of error functions, `\mathrm{erfh}(x,h) = \mathrm{erf}(x+h)-\mathrm{e
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Erfh(0.5, 0.6)
+        >>> from xlcalcnet import math53
+        >>> math53.Erfh(0.5, 0.6)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Erfh('0.51', 0.61)
+        >>> math53.Erfh('0.51', 0.61)
         ereal('5.3518479027559984754E-1')
 
 
@@ -87,10 +87,10 @@ Difference of error functions, `\mathrm{erf2}(x_1,x_2) = \mathrm{erf}(x_2)-\math
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Erf2(0.5, 0.6)
+        >>> from xlcalcnet import math53
+        >>> math53.Erf2(0.5, 0.6)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Erf2('0.51', 0.61)
+        >>> math53.Erf2('0.51', 0.61)
         ereal('5.3518479027559984754E-1')
 
 
@@ -115,10 +115,10 @@ Probability function `Q(x) = \Phi(-x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ErfQ(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.ErfQ(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.ErfQ('0.51')
+        >>> math53.ErfQ('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -140,10 +140,10 @@ Inverse of the exponentially scaled complementary error function, `\mathrm{erfcx
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ErfceInv(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.ErfceInv(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.ErfceInv('0.51')
+        >>> math53.ErfceInv('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -167,10 +167,10 @@ Inverse of the imaginary error function, `\mathrm{erfi}^{-1}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.ErfiInv(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.ErfiInv(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.ErfiInv('0.51')
+        >>> math53.ErfiInv('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -193,10 +193,10 @@ Generalized Dawson integral, `F(p, x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Dawson2(1.5, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Dawson2(1.5, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Dawson2(1.5, '0.51')
+        >>> math53.Dawson2(1.5, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -217,10 +217,10 @@ Generalized error function, `\mathrm{erfg}(p, x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Erfg(1.5, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Erfg(1.5, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Erfg(1.5, '0.51')
+        >>> math53.Erfg(1.5, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -239,10 +239,10 @@ Expint3, `\mathrm{erfg}(3, x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Expint3(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Expint3(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Expint3('0.51')
+        >>> math53.Expint3('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -288,10 +288,10 @@ Scaled repeated integrals of  the complementary error function, `i^n \mathrm{erf
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.InErfc(3, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.InErfc(3, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.InErfc(3, '0.51')
+        >>> math53.InErfc(3, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -346,10 +346,10 @@ Fresnel auxiliary function `\mathrm{f}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.FresnelF(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.FresnelF(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.FresnelF('0.51')
+        >>> math53.FresnelF('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -372,10 +372,10 @@ Fresnel auxiliary function `\mathrm{g}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.FresnelG(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.FresnelG(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.FresnelG('0.51')
+        >>> math53.FresnelG('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -398,10 +398,10 @@ Goodwin-Staton integral, `G(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.GoodwinStaton(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.GoodwinStaton(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.GoodwinStaton('0.51')
+        >>> math53.GoodwinStaton('0.51')
         ereal('5.3518479027559984754E-1')
 
 

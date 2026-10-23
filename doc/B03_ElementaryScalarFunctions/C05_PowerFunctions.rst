@@ -57,10 +57,10 @@ Square, `x^2`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Square(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Square(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Square('0.51')
+        >>> math53.Square('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -101,10 +101,10 @@ Cube, `x^3`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Square(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Square(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Square('0.51')
+        >>> math53.Square('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -128,10 +128,10 @@ Auxiliary function `\mathrm{powi}(x,n) = x^n`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Intpower(0.5, 2)
+        >>> from xlcalcnet import math53
+        >>> math53.Intpower(0.5, 2)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Intpower('0.51', 2)
+        >>> math53.Intpower('0.51', 2)
         ereal('5.3518479027559984754E-1')
 
 
@@ -202,10 +202,10 @@ Auxiliary function `\mathrm{hypot}(x,y) = \sqrt{x^2 + y^2}`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Hypot(0.5, 2)
+        >>> from xlcalcnet import math53
+        >>> math53.Hypot(0.5, 2)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Hypot(0.5, 2)
+        >>> math53.Hypot(0.5, 2)
         ereal('5.3518479027559984754E-1')
 
 
@@ -279,10 +279,10 @@ Power function, `\mathrm{pow}(x, y) = x^y`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Pow(0.5, 3)
+        >>> from xlcalcnet import math53
+        >>> math53.Pow(0.5, 3)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Pow('0.51', 3)
+        >>> math53.Pow('0.51', 3)
         ereal('5.3518479027559984754E-1')
 
 
@@ -351,10 +351,10 @@ Auxiliary function, `\mathrm{powm1}(x, y) = x^y-1`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Powm1(0.5, 3)
+        >>> from xlcalcnet import math53
+        >>> math53.Powm1(0.5, 3)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Powm1(0.5, 3)
+        >>> math53.Powm1(0.5, 3)
         ereal('5.3518479027559984754E-1')
 
 
@@ -435,10 +435,10 @@ Auxiliary function, `\mathrm{pow1p}(x, y) = (1+x)^y`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Pow1p(0.5, 3)
+        >>> from xlcalcnet import math53
+        >>> math53.Pow1p(0.5, 3)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Pow1p(0.5, 3)
+        >>> math53.Pow1p(0.5, 3)
         ereal('5.3518479027559984754E-1')
 
 
@@ -510,10 +510,10 @@ Auxiliary function, `\mathrm{pow1pm1}(x, y) = (1+x)^y - 1`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Sqrt(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Sqrt(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Sqrt('0.51')
+        >>> math53.Sqrt('0.51')
         ereal('5.3518479027559984754E-1')
 
 

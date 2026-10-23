@@ -65,10 +65,10 @@ Polylogarithm, `\mathrm{Li}_s(z)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.PolylogR(2, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.PolylogR(2, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.PolylogR(2, '0.1')
+        >>> math53.PolylogR(2, '0.1')
         ereal('5.3518479027559984754E-1')
 
 
@@ -123,10 +123,10 @@ Trilogarithm Function, `\mathrm{Li}_3(z)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Trilog(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Trilog(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Trilog('0.1')
+        >>> math53.Trilog('0.1')
         ereal('5.3518479027559984754E-1')
 
 
@@ -177,10 +177,10 @@ Dilogarithm Function, `\mathrm{Li}_2(z)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Dilog(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Dilog(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Dilog('0.1')
+        >>> math53.Dilog('0.1')
         ereal('5.3518479027559984754E-1')
 
 
@@ -415,10 +415,10 @@ Classical Clausen function, `\mathrm{Cl}_2(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Clausen2(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Clausen2(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Clausen2('0.1')
+        >>> math53.Clausen2('0.1')
         ereal('5.3518479027559984754E-1')
 
 
@@ -450,10 +450,10 @@ Bose-Einstein integrals, `G_s(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BoseEinstein(2,5)
+        >>> from xlcalcnet import math53
+        >>> math53.BoseEinstein(2,5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.BoseEinstein(2,'51')
+        >>> math53.BoseEinstein(2,'51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -513,10 +513,10 @@ Fermi-Dirac integrals, `F_s(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.FermiDiracR(2,5)
+        >>> from xlcalcnet import math53
+        >>> math53.FermiDiracR(2,5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.FermiDiracR(2,'51')
+        >>> math53.FermiDiracR(2,'51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -599,10 +599,10 @@ Legendre's Chi function, `\chi_s(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LegendreChi(2,5, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.LegendreChi(2,5, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.LegendreChi('5.1', 0.5)
+        >>> math53.LegendreChi('5.1', 0.5)
         ereal('5.3518479027559984754E-1')
 
 

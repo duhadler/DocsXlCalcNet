@@ -115,10 +115,10 @@ See also: https://fredrikj.net/blog/2022/02/computing-the-lerch-transcendent/
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LerchPhi(2,5, 0.5, 3)
+        >>> from xlcalcnet import math53
+        >>> math53.LerchPhi(2,5, 0.5, 3)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.LerchPhi('5.1', 0.5, 3)
+        >>> math53.LerchPhi('5.1', 0.5, 3)
         ereal('5.3518479027559984754E-1')
 
 

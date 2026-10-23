@@ -33,12 +33,13 @@ Auxiliary function `\mathrm{sqrt1pmx}(x) = \sqrt{1+x^2}-x`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Sqrt1pmx(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Sqrt1pmx('0.51')
-        ereal('5.3518479027559984754E-1')
-
+        >>> from xlcalcnet import math53
+        >>> math53.sqrt1pmx(-4.333)
+        8.779896558275222
+        >>> math53.sqrt1pmx(0.0)
+        1.0
+        >>> math53.sqrt1pmx(4.333)
+        0.1138965582752203
 
 
 
@@ -60,11 +61,13 @@ Bring radical
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Bring(3)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Bring(13)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.bring(-4.333)
+        1.252357338752218
+        >>> math53.bring(0.0)
+        0.0
+        >>> math53.bring(4.333)
+        -1.252357338752218
 
 
 
@@ -83,11 +86,13 @@ Auxiliary function `\mathrm{expmx2h}(x) = \exp(-x^2 / 2)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Expmx2h(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Expmx2h('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.expmx2h(-4.333)
+        8.376925527113537e-05
+        >>> math53.expmx2h(0.0)
+        1.0
+        >>> math53.expmx2h(4.333)
+        8.376925527113537e-05
 
 
 
@@ -119,58 +124,13 @@ Relative error exponential  `\mathrm{exprel}(x) = (\exp(x) - 1)/x`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Exprel(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Exprel('0.51')
-        ereal('5.3518479027559984754E-1')
-
-
-
-    An example with real input:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 40; x = '1.0E-100'
-        >>> \mathrm{d}x = dec.exprel(x); mx = mpm.exprel(x); ix = ipm.exprel(x)
-        >>> mpm.show([\mathrm{d}x, mx, ix])
-        dec:  1.000000000000000000000000000000000000000E+0
-        mpm:  1.000000000000000000000000000000000000000e+0
-        ipm:  1.000000000000000000000000000000000000000e+0 (3.444e-39%)
-
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 40; x = '1.0E-100'
-        >>> fx = fpm.exprel(x); gx = gmp.exprel(x); ax = apm.exprel(x)
-        >>> mpm.show([fx, gx, ax])
-        fpm:  1.0
-        gmp:  1.000000000000000000000000000000000000000E+00
-        apm:  1.000000000000000000000000000000000000000e+0 (2.87e-39%)
-
-
-    The following example with complex input shows that the relative error can be high in double precision:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 20; z = '1.0E-100 + 1.57079632679489j'
-        >>> \mathrm{d}z = dec.exprel(z); mz = mpm.exprel(z); iz = ipm.exprel(z)
-        >>> mpm.show([\mathrm{d}z, mz, iz], aligned=True)
-        dec: 6.3661977236758402575E-1              + 6.3661977236757981182E-1j
-        mpm: 6.3661977236758402575e-1              + 6.3661977236757981182e-1j
-        ipm: 6.3661977236758402575e-1 (2.661e-19%) + 6.3661977236757981182e-1 (3.992e-19%)j
-
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 20; z = '1.0E-100 + 1.57079632679489j'
-        >>> fz = fpm.exprel(z); gz = gmp.exprel(z); az = apm.exprel(z)
-        >>> mpm.show([fz, gz, az], aligned=True)
-        fpm: 6.36619772367584E-01                  + 6.36619772367580E-01j
-        gmp: 6.3661977236758402575E-01             + 6.3661977236757981182E-01j
-        apm: 6.3661977236758402575e-1 (3.326e-19%) + 6.3661977236757981182e-1 (3.992e-19%)j
-
-
-
-
+        >>> from xlcalcnet import math53
+        >>> math53.exprel(-4.333)
+        0.22775718808161466
+        >>> math53.exprel(0.0)
+        1.0
+        >>> math53.exprel(4.333)
+        17.348825645093516
 
 
 
@@ -190,11 +150,13 @@ Auxiliary function   `\mathrm{expx2}(x) = \exp(x \cdot |x|)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Expx2(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Expx2('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.expx2(-4.333)
+        7.01728812868064e-09
+        >>> math53.expx2(0.0)
+        1.0
+        >>> math53.expx2(4.333)
+        142505193.1262249
 
 
 
@@ -211,11 +173,13 @@ Auxiliary function `\mathrm{logistic}(x) = 1/(1+\exp(-x))`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Logistic(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Logistic('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.logistic(-4.333)
+        0.012957990198853193
+        >>> math53.logistic(0.0)
+        0.5
+        >>> math53.logistic(4.333)
+        0.9870420098011469
 
 
 
@@ -240,91 +204,40 @@ Einstein functions
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Einstein(1,3)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Einstein(2,13)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.einstein(1,4.333)
+        0.253079999702088
+        >>> math53.einstein(2,4.333)
+        0.05764078909184343
+        >>> math53.einstein(3,4.333)
+        -0.013215039301928083
+        >>> math53.einstein(4,4.333)
+        0.07085582839377151
 
 
 
 
-        
 
 
-Auxiliary function `\mathrm{log1mexp}(x) = \log(1-\exp(-|x|))`
+Auxiliary function `\mathrm{log1mexp}(x) = \log(1-\exp(x))`
 -------------------------------------------------------------------------------
 
 .. method:: math53.log1mexp(x)
 
-    Returns `\log(1-\exp(-|x|))`, calculated in an accurate and efficient way. See also  :cite:t:`Mächler2012`.
-
-    .. math ::
-
-        \mathrm{log1mexp}(x) = \begin{cases}
-            (\log(-\mathrm{expm1}(-x)), & \mbox{if } 0 < |x| < \log(2) \\
-            \mathrm{log1p}(-\exp(-x))   & \mbox{if } |x| > \log(2).
-        \end{cases}
-
-    See also :ref:`expm1() <rst_xreal_expm1>` and :ref:`log1p() <rst_xreal_log1p>`.
+    Returns `\log(1-\exp(x)), x<0`, calculated in an accurate and efficient way.
 
 
     An example in Python
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Log1mexp(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Log1mexp('0.51')
-        ereal('5.3518479027559984754E-1')
-
-
-
-    An example with real input:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 40; x = '0.6'
-        >>> \mathrm{d}x = dec.log1mexp(x); mx = mpm.log1mexp(x); ix = ipm.log1mexp(x)
-        >>> mpm.show([\mathrm{d}x, mx, ix])
-        dec:  -7.958703683463195607196841782149965866867E-1
-        mpm:  -7.958703683463195607196841782149965866867e-1
-        ipm:  -7.958703683463195607196841782149965866867e-1 (-2.164e-39%)
-
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 40; x = '0.6'
-        >>> fx = fpm.log1mexp(x); gx = gmp.log1mexp(x); ax = apm.log1mexp(x)
-        >>> mpm.show([fx, gx, ax])
-        fpm:  -7.95870368346320E-01
-        gmp:  -7.958703683463195607196841782149965866867E-01
-        apm:  -7.958703683463195607196841782149965866867e-1 (-9.375e-39%)
-
-
-    A example with complex input (the output is always real)
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 40; z = '0.6 + 0.1j'
-        >>> \mathrm{d}z = dec.log1mexp(z); mz = mpm.log1mexp(z); iz = ipm.log1mexp(z)
-        >>> mpm.show([\mathrm{d}z, mz, iz], aligned=True)
-        dec: -7.858948539926141692017366665318550523032E-1
-        mpm: -7.858948539926141692017366665318550523032e-1
-        ipm: -7.858948539926141692017366665318550523032e-1 (-4.382e-39%)
-
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 40; z = '0.6 + 0.1j'
-        >>> fz = fpm.log1mexp(z); gz = gmp.log1mexp(z); az = apm.log1mexp(z)
-        >>> mpm.show([fz, gz, az], aligned=True)
-        fpm: -7.85894853992614E-01
-        gmp: -7.858948539926141692017366665318550523032E-01
-        apm: -7.858948539926141692017366665318550523031e-1 (-9.494e-39%)
-
-
-
-
+        >>> from xlcalcnet import math53
+        >>> math53.log1mexp(-4.333)
+        -0.013215039301928083
+        >>> math53.log1mexp(0.0)
+        -inf
+        >>> math53.log1mexp(4.333)
+        nan
 
 
 
@@ -346,11 +259,13 @@ Auxiliary function `\mathrm{log1pexp}(x) = \log(1+\exp(x))`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Log1pexp(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Log1pexp('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.log1pexp(-4.333)
+        0.013042677332710145
+        >>> math53.log1pexp(0.0)
+        0.6931471805599453
+        >>> math53.log1pexp(4.333)
+        4.3460426773327105
 
 
 
@@ -370,11 +285,13 @@ Auxiliary function `\mathrm{log1pmx}(x) = \log(1+x)-x`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Log1pmx(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Log1pmx('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.log1pmx(-4.333)
+        nan
+        >>> math53.log1pmx(0.0)
+        0.0
+        >>> math53.log1pmx(4.333)
+        -2.659086068381535
 
 
 
@@ -398,11 +315,13 @@ Auxiliary function `\mathrm{logaddexp}(x, y) = \log[\exp(x) + \exp(y)]`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Logaddexp(0.5, 2)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Logaddexp('0.51', 2)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.logaddexp(1.2, -4.333)
+        1.203946312008691
+        >>> math53.logaddexp(3.7, 0)
+        3.724422845933779
+        >>> math53.logaddexp(4.8, 4.333)
+        5.2866641257129325
 
 
 
@@ -420,11 +339,13 @@ Auxiliary function `\mathrm{logsubexp}(x, y) = \log[\exp(x) - \exp(y)]`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Logsubexp(20.5, 4)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Logsubexp(20.5, 4)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.logsubexp(1.2, -4.333)
+        1.1960380528914856
+        >>> math53.logsubexp(3.7, 0)
+        3.6749657144139602
+        >>> math53.logsubexp(4.8, 4.333)
+        3.8141445624254304
 
 
 
@@ -444,11 +365,13 @@ Auxiliary function `\mathrm{logit}(x) = \log(x/(1.0-x))`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Logit(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Logit('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.logit(-0.333)
+        nan
+        >>> math53.logit(0.0)
+        -inf
+        >>> math53.logit(0.333)
+        -0.6946475559351799
 
 
 
@@ -472,11 +395,13 @@ Wright `\omega` function
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.WrightOmega(2,3)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.WrightOmega(4,13)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.wright_omega(-0.333)
+        0.4548304865283553
+        >>> math53.wright_omega(0.0)
+        0.5671432904097838
+        >>> math53.wright_omega(0.333)
+        0.695756104553223
 
 
 
@@ -486,7 +411,7 @@ Wright `\omega` function
 Auxiliary function `\mathrm{compound}(x,n) = (1+x)^n`
 -------------------------------------------------------------------------------
 
-.. method:: ctx.compound(a, b)
+.. method:: ctx.compound_si(x, n)
 
     Returns `(1+x)^n`, computed accurately also when `x` is very close to 0. 
 
@@ -495,11 +420,13 @@ Auxiliary function `\mathrm{compound}(x,n) = (1+x)^n`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Compound(0.5, 2)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Compound('0.51', 2)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.compound_si(-4.333, 3)
+        -37.02592703700001
+        >>> math53.compound_si(0.0, 2)
+        1.0
+        >>> math53.compound_si(4.333, 3)
+        151.675261037
 
 
 
@@ -519,11 +446,13 @@ Auxiliary function `\mathrm{comprel}(x,n) = (1+x)^n - 1`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Comprel(0.5, 2)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Comprel('0.51', 2)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.comprel(-4.333, 3)
+        8.775889000000001
+        >>> math53.comprel(0.0, 2)
+        2.0
+        >>> math53.comprel(4.333, 3)
+        34.773889000000004
 
 
 
@@ -542,11 +471,13 @@ Auxiliary function `\mathrm{hypot3}(x,y,z) = \sqrt{x^2 + y^2 + z^2}`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Hypot3(0.5, 3, 5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Hypot3(0.5, 3, 5)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.hypot3(1.2, -4.333, -1.333)
+        4.689539209773174
+        >>> math53.hypot3(2.4, 0, 0)
+        2.4
+        >>> math53.hypot3(4.8, -4.333, -1.333)
+        6.602406985334969
 
 
 
@@ -578,26 +509,19 @@ Fibonacci polynomials, `\mathrm{fibpoly}(n, x)`
 
 
 
-    An example with real input:
+    An example in Python
 
     .. code-block:: pycon
 
-        >>> from mpaddin import dec, mpm, ipm
-        >>> mpm.dps = 40; n = '10'; x = '20.4'
-        >>> \mathrm{d}x = dec.fibpoly(n, x); mx = mpm.fibpoly(n, x); ix = ipm.fibpoly(n, x)
-        >>> mpm.show([\mathrm{d}x, mx, ix])
-        dec:  6.237243004966068541440000000000000000000E+11
-        mpm:  6.237243004966068541440000000000000000001e+11
-        ipm:  6.237243004966068541440000000000000000000e+11 (2.327e-38%)
+    .. code-block:: pycon
 
-        >>> from mpaddin import mpm, fpm, gmp, apm
-        >>> mpm.dps = 40; n = '10'; x = '20.4'
-        >>> fx = fpm.fibpoly(n, x); gx = gmp.fibpoly(n, x); ax = apm.fibpoly(n, x)
-        >>> mpm.show([fx, gx, ax])
-        fpm:  6.23724300496606E+11
-        gmp:  6.237243004966068541440000000000000000001E+11
-        apm:  6.237243004966068541440000000000000000000e+11 (2.226e-38%)
-
+        >>> from xlcalcnet import math53
+        >>> math53.fibpoly(2, -4.333)
+        -4.333
+        >>> math53.fibpoly(3, -4.333)
+        19.774889
+        >>> math53.fibpoly(4, 4.333)
+        90.01759403700001
 
 
 
@@ -607,10 +531,10 @@ Fibonacci polynomials, `\mathrm{fibpoly}(n, x)`
 
 .. _rst_mpm_lucaspoly: 
 
-Lucas polynomials, `\mathrm{lucaspoly}(n, x)`
+Lucas polynomials, `\mathrm{lucpoly}(n, x)`
 -------------------------------------------------------------------------------
 
-.. method:: math53.lucaspoly(n, x)
+.. method:: math53.lucpoly(n, x)
 
     where ``ctx`` is ``math53``, ``ctxcpp`` or ``ctxflint``.
 
@@ -624,26 +548,17 @@ Lucas polynomials, `\mathrm{lucaspoly}(n, x)`
 
 
 
-    An example with real input:
+    An example in Python
 
     .. code-block:: pycon
 
-        >>> from mpaddin import dec, mpm, ipm
-        >>> mpm.dps = 40; n = '10'; x = '20.4'
-        >>> \mathrm{d}x = dec.lucaspoly(n, x); mx = mpm.lucaspoly(n, x); ix = ipm.lucaspoly(n, x)
-        >>> mpm.show([\mathrm{d}x, mx, ix])
-        dec:  1.278497893596532436725760000000000000000E+13
-        mpm:  1.278497893596532436725760000000000000000e+13
-        ipm:  1.278497893596532436725760000000000000000e+13 (1.895e-38%)
-
-        >>> from mpaddin import mpm, fpm, gmp, apm
-        >>> mpm.dps = 40; n = '10'; x = '20.4'
-        >>> fx = fpm.lucaspoly(n, x); gx = gmp.lucaspoly(n, x); ax = apm.lucaspoly(n, x)
-        >>> mpm.show([fx, gx, ax])
-        fpm:  1.27849789359653E+13
-        gmp:  1.278497893596532436725760000000000000000E+13
-        apm:  1.278497893596532436725760000000000000000e+13 (1.895e-38%)
-
+        >>> from xlcalcnet import math53
+        >>> math53.lucpoly(2, -4.333)
+        20.774889
+        >>> math53.lucpoly(3, -4.333)
+        -94.35059403700001
+        >>> math53.lucpoly(4, 4.333)
+        429.5960129623211
 
 
 
@@ -664,11 +579,13 @@ Fibonacci function, `F_{\nu}(x)`,  of real index `\nu`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Fibfun(3, 4)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Fibfun(3, 12)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.fibfun(1.2, -4.333)
+        1.0790638603231733
+        >>> math53.fibfun(3.7, -4.333)
+        -33.57833497912526
+        >>> math53.fibfun(4.8, 4.333)
+        302.6505730178296
 
 
 

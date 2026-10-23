@@ -37,8 +37,8 @@ Machine Epsilon
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MachineEps()
+        >>> from xlcalcnet import math53
+        >>> math53.MachineEps()
         ereal('1.0842021724855044340E-19')
 
 
@@ -46,8 +46,8 @@ Machine Epsilon
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MachineEps()
+        >>> from xlcalcnet import math53
+        >>> math53.MachineEps()
         2.22044604925031e-16
 
 
@@ -73,8 +73,8 @@ Unit in the last place
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MachineEps()
+        >>> from xlcalcnet import math53
+        >>> math53.MachineEps()
         ereal('1.0842021724855044340E-19')
 
 
@@ -82,8 +82,8 @@ Unit in the last place
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MachineEps()
+        >>> from xlcalcnet import math53
+        >>> math53.MachineEps()
         2.22044604925031e-16
 
 
@@ -105,8 +105,8 @@ Largest representable number
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MaxValue()
+        >>> from xlcalcnet import math53
+        >>> math53.MaxValue()
         ereal('1.1897314953572317650E+4932')
 
 
@@ -114,8 +114,8 @@ Largest representable number
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MaxValue()
+        >>> from xlcalcnet import math53
+        >>> math53.MaxValue()
         1.79769313486232E+308
 
 
@@ -135,8 +135,8 @@ Lowest representable number
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MaxValue()
+        >>> from xlcalcnet import math53
+        >>> math53.MaxValue()
         ereal('-1.1897314953572317650E+4932')
 
 
@@ -144,8 +144,8 @@ Lowest representable number
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MaxValue()
+        >>> from xlcalcnet import math53
+        >>> math53.MaxValue()
         -1.79769313486232E+308
 
 
@@ -167,8 +167,8 @@ Smallest representable positive number
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MinValue()
+        >>> from xlcalcnet import math53
+        >>> math53.MinValue()
         ereal('3.3621031431120935063E-4932') 
 
 
@@ -176,8 +176,8 @@ Smallest representable positive number
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.MinValue()
+        >>> from xlcalcnet import math53
+        >>> math53.MinValue()
         2.22507385850720e-308
 
 
@@ -204,10 +204,10 @@ Next representable floating point number: `\mathrm{nexttowards}(x, y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Succ(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Succ(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Succ('0.51')
+        >>> math53.Succ('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -240,10 +240,10 @@ Next representable floating point number: `\mathrm{nextabove}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Succ(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Succ(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Succ('0.51')
+        >>> math53.Succ('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -270,10 +270,10 @@ Next representable floating point number: `\mathrm{nextbelow}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Succ(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Succ(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Succ('0.51')
+        >>> math53.Succ('0.51')
         ereal('5.3518479027559984754E-1')
 
 

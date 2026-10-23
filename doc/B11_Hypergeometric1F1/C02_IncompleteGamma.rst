@@ -39,10 +39,10 @@ Lower normalized incomplete gamma function, `P(a,x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IncGammaP(3.1, 1.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IncGammaP(3.1, 1.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.IncGammaP(3.4, '1.51')
+        >>> math53.IncGammaP(3.4, '1.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -145,10 +145,10 @@ Upper normalized incomplete gamma functions , `Q(a,x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IncGammaQ(3.1, 1.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IncGammaQ(3.1, 1.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.IncGammaQ(3.4, '1.51')
+        >>> math53.IncGammaQ(3.4, '1.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -209,10 +209,10 @@ Lower non-normalized incomplete gamma function, `\gamma(a,x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IncgammaL(3.1, 1.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IncgammaL(3.1, 1.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.IncgammaL(3.4, '1.51')
+        >>> math53.IncgammaL(3.4, '1.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -242,10 +242,10 @@ Upper non-normalized incomplete gamma function, `\Gamma(a,x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IncGammaU(3.1, 1.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IncGammaU(3.1, 1.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.IncGammaU(3.4, '1.51')
+        >>> math53.IncGammaU(3.4, '1.51')
         ereal('5.3518479027559984754E-1')
 
 

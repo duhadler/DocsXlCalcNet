@@ -66,10 +66,10 @@ Logarithm `\log(x[, base])`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Log(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Log(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Log('0.51')
+        >>> math53.Log('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -139,10 +139,10 @@ Logarithm with base `10`, `\mathrm{log10}(x) = \log_{10}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Log10(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Log10(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Log10('0.51')
+        >>> math53.Log10('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -206,10 +206,10 @@ Logarithm with base `2`, `\mathrm{log2}(x) = \log_{2}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Log2(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Log2(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Log2('0.51')
+        >>> math53.Log2('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -277,10 +277,10 @@ Auxiliary function `\mathrm{log1p}(x) = \log(x+1)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Log1p(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Log1p(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Log1p('0.51')
+        >>> math53.Log1p('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -363,10 +363,10 @@ Auxiliary function `\mathrm{log10p1}(x) = \log_{10}(1+x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Log10p1(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Log10p1(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Log10p1('0.51')
+        >>> math53.Log10p1('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -433,10 +433,10 @@ Auxiliary function `\mathrm{log2p1}(x) = \log_2(1+x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Log2p1(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Log2p1(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Log2p1('0.51')
+        >>> math53.Log2p1('0.51')
         ereal('5.3518479027559984754E-1')
 
 

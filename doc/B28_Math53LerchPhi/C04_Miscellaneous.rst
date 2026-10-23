@@ -34,20 +34,21 @@ Log-series distribution, pmf
     See also  Wikipedia :cite:p:`WikipediaDis97`, MathWorld :cite:p:`WolframDis97`, :cite:t:`Johnson2005`, :cite:t:`Ehrhardt2018` (3.9.17).
 
 
-
-
-
     .. math:: \text{pmf}(x) = \frac{-1}{\log(1-p)} \frac{p^k}{k}.
 
-    The following example shows both forms of the syntax: 
+
+
+    An example in Python
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import *
-        >>> a = 0; b = 1; t = 0.3; x = 0.6;
-        >>> print ("LogseriesPdf(x, a, b): ", LogseriesPdf(x, a, b))
-        >>> print ("dist_logseries(a, b).pdf(x): ", dist_logseries(a, b).pdf(x))
-        6.3563523462564525615615615614561356E+00
+        >>> from xlcalcnet import math53
+        >>> math53.logseries_pmf(0.01, 1)
+        0.9949916247342216
+        >>> math53.logseries_pmf(0.5, 2)
+        0.18033688011112042
+        >>> math53.logseries_pmf(0.9333, 3)
+        0.10008431129451109
 
 
 
@@ -69,15 +70,19 @@ Log-series distribution, cdf
 
     where `B(\cdot)` is the incomplete beta function, and `\Phi(\cdot)` is Lerch's transcendent.
 
-    The following example shows both forms of the syntax:
+
+
+    An example in Python
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import *
-        >>> a = 0; b = 1; t = 0.3; x = 0.6;
-        >>> print ("LogseriesCdf(x, a, b): ", LogseriesCdf(x, a, b))
-        >>> print ("dist_logseries(a, b).cdf(x): ", dist_logseries(a, b).cdf(x))
-        6.3563523462564525615615615614561356E+00
+        >>> from xlcalcnet import math53
+        >>> math53.logseries_cdf(0.01, 1)
+        0.9949916247342216
+        >>> math53.logseries_cdf(0.5, 2)
+        0.9016844005556022
+        >>> math53.logseries_cdf(0.9333, 3)
+        0.6056425762046286
 
 
 
@@ -100,15 +105,18 @@ Zeta distribution, pmf
 
     .. math:: \text{pmf}_X(k) = \frac{k^{-(r+1)}}{\zeta(r+1)}.
 
-    The following example shows both forms of the syntax: 
+
+    An example in Python
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import *
-        >>> a = 0; b = 1; t = 0.3; x = 0.6;
-        >>> print ("ZetaPdf(x, a, b): ", ZetaPdf(x, a, b))
-        >>> print ("dist_zeta(a, b).pdf(x): ", dist_zeta(a, b).pdf(x))
-        6.3563523462564525615615615614561356E+00
+        >>> from xlcalcnet import math53
+        >>> math53.zeta_pmf(0.01, 1)
+        0.009942537765307869
+        >>> math53.zeta_pmf(0.5, 2)
+        0.1353378988096703
+        >>> math53.zeta_pmf(0.9333, 3)
+        0.0698271086340029
 
 
 
@@ -126,15 +134,19 @@ Zeta distribution, cdf
 
     .. math:: \text{cdf}(x) = \frac{H_k^{r+1}}{\zeta(r+1)} = 1 - \frac{\zeta(r+1, k+1)}{\zeta(r+1)}.
 
-    The following example shows both forms of the syntax:
+
+
+    An example in Python
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import *
-        >>> a = 0; b = 1; t = 0.3; x = 0.6;
-        >>> print ("ZetaCdf(x, a, b): ", ZetaCdf(x, a, b))
-        >>> print ("dist_zeta(a, b).cdf(x): ", dist_zeta(a, b).cdf(x))
-        6.3563523462564525615615615614561356E+00
+        >>> from xlcalcnet import math53
+        >>> math53.zeta_cdf(0.01, 1)
+        0.009942537765308734
+        >>> math53.zeta_cdf(0.5, 2)
+        0.5181312828090969
+        >>> math53.zeta_cdf(0.9333, 3)
+        0.806786037677741
 
 
 

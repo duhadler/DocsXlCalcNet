@@ -72,10 +72,10 @@ Jacobi theta function `\theta_1(z, q)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiTheta(1, 0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiTheta(1, 0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiTheta(2, 0.8, '0.51')
+        >>> math53.JacobiTheta(2, 0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -151,10 +151,10 @@ Jacobi theta function `\theta_2(z, q)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiTheta(1, 0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiTheta(1, 0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiTheta(2, 0.8, '0.51')
+        >>> math53.JacobiTheta(2, 0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -235,10 +235,10 @@ Jacobi theta function `\theta_3(z, q)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiTheta(1, 0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiTheta(1, 0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiTheta(2, 0.8, '0.51')
+        >>> math53.JacobiTheta(2, 0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -317,10 +317,10 @@ Jacobi theta function `\theta_4(z, q)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiTheta(1, 0.8, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.JacobiTheta(1, 0.8, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiTheta(2, 0.8, '0.51')
+        >>> math53.JacobiTheta(2, 0.8, '0.51')
         ereal('5.3518479027559984754E-1')
 
 

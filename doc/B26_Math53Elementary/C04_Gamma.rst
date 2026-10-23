@@ -34,11 +34,13 @@ Sign of the gamma function
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.SignGamma(1.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.SignGamma('1.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.signgamma(-4.333)
+        -1.0
+        >>> math53.signgamma(0.0)
+        1.0
+        >>> math53.signgamma(4.333)
+        1.0
 
 
 
@@ -61,11 +63,13 @@ Logarithm and sign of the gamma function
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LogGammaS(1.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.LogGammaS('1.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> print(math53.lgamma_s(-4.333))
+        (-2.40239615347222, -1)
+        >>> print(math53.lgamma_s(0.0))
+        (NaN, 1)
+        >>> print(math53.lgamma_s(4.333))
+        (2.22531226395457, 1)
 
 
 
@@ -86,11 +90,13 @@ Logarithm of `\Gamma(1 + x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LogGamma1p(1.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.LogGamma1p('1.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.lgamma1p(-4.333)
+        -0.9361360107144484
+        >>> math53.lgamma1p(0.0)
+        0.0
+        >>> math53.lgamma1p(4.333)
+        3.691572406712339
 
 
 
@@ -108,11 +114,13 @@ Logarithm of factorials: `\log(x!)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LogFactorial(3)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.LogFactorial('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.logfactorial(2)
+        0.6931471805599453
+        >>> math53.logfactorial(5)
+        4.787491742782046
+        >>> math53.logfactorial(15)
+        27.89927138384089
 
 
 
@@ -131,11 +139,13 @@ Logarithm of the binomial coefficient
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LogBinomial(13, 7)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.LogBinomial(12.6, '4.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.logbinomial(13, 3)
+        5.655991810819852
+        >>> math53.logbinomial(24, 8)
+        13.508266389286396
+        >>> math53.logbinomial(37, 12)
+        21.33979273614502
 
 
 
@@ -159,11 +169,13 @@ Log-Beta function
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LogBeta(3.1, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.LogBeta(3.4, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.logbeta(1.2, -4.333)
+        -2.573142285269107
+        >>> math53.logbeta(3.7, 0.1)
+        2.134462769230688
+        >>> math53.logbeta(4.8, 4.333)
+        -5.783706647804463
 
 
 
@@ -183,11 +195,13 @@ Inverse of the gamma function, `\Gamma^{-1}(y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.GammaInv(1.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.GammaInv('1.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.gamma_inv(0.9)
+        1.6492265028621345
+        >>> math53.gamma_inv(1.5)
+        2.662766345320147
+        >>> math53.gamma_inv(4.333)
+        3.7325782628811806
 
 
 
@@ -211,11 +225,13 @@ Inverse of the logarithm of the gamma function, `\log\Gamma^{-1}(y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.LogGammaInv(1.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.LogGammaInv('1.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.lgamma_inv(0.9)
+        3.214573262668465
+        >>> math53.lgamma_inv(1.5)
+        3.7611332794709584
+        >>> math53.lgamma_inv(4.333)
+        5.729662140740046
 
 
 
@@ -237,11 +253,13 @@ Temme's regulated gamma function, `\Gamma^{*}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.GammaStar(1.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.GammaStar('1.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.gammastar(0.9)
+        1.093716919051002
+        >>> math53.gammastar(1.5)
+        1.05634424426856
+        >>> math53.gammastar(4.333)
+        1.0193840818217619
 
 
 
@@ -264,11 +282,13 @@ Relative Pochhammer symbol, `((a)_x - 1)/x`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Poch1(13, 7)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.Poch1(12.6, '4.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.poch1(1.2, -4.333)
+        -0.04297013038959621
+        >>> math53.poch1(2.4, 0)
+        0.6529011697005977
+        >>> math53.poch1(4.8, 4.333)
+        693.9682866581799
 
 
 
@@ -290,31 +310,15 @@ Catalan function `C(x)`
     See also:  MathWorld :cite:p:`WolframFun301`,  Wikipedia :cite:p:`WikipediaFun301`, :cite:t:`Ehrhardt2018` (3.10.5).
 
 
-
-    An example with real input:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, ipm
-        >>> mpm.dps = 40; x = '10.5'
-        >>> \mathrm{d}x = dec.catalan(x); mx = mpm.catalan(x); ix = ipm.catalan(x)
-        >>> mpm.show([\mathrm{d}x, mx, ix])
-        dec:  3.137576033650317681318411712507890972194E+4
-        mpm:  3.137576033650317681318411712507890972194e+4
-        ipm:  3.137576033650317681318411712507890972194e+4 (3.597e-39%)
-
-        >>> from xlcalcnet import mpm, fpm, gmp, apm
-        >>> mpm.dps = 40; x = '10.5'
-        >>> fx = fpm.catalan(x); gx = gmp.catalan(x); ax = apm.catalan(x)
-        >>> mpm.show([fx, gx, ax])
-        fpm:  3.13757603365032E+04
-        gmp:  3.137576033650317681318411712507890972194E+04
-        apm:  3.137576033650317681318411712507890972194e+4 (3.597e-39%)
+        >>> from xlcalcnet import math53
+        >>> math53.catalan_c(0.9)
+        0.9539132521406414
+        >>> math53.catalan_c(1.5)
+        1.3581221810508415
+        >>> math53.catalan_c(4.333)
+        20.057821670219337
 
 
-
-
-|newpage|
 
 
 Bessel Lambda function, `\Lambda(\nu,x)`
@@ -333,11 +337,13 @@ Bessel Lambda function, `\Lambda(\nu,x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.BesselLambda(3, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.BesselLambda(3, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.bessel_lambda(1.2, 1.333)
+        0.8116122406406188
+        >>> math53.bessel_lambda(2.4, 0)
+        1.0
+        >>> math53.bessel_lambda(4.8, 4.333)
+        0.4208160109325211
 
 
 

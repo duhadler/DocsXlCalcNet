@@ -72,10 +72,10 @@ Inverse sine, `\mathrm{asin}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Asin(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Asin(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Asin('0.51')
+        >>> math53.Asin('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -192,10 +192,10 @@ Inverse cosine, `\mathrm{acos}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Acos(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Acos(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Acos('0.51')
+        >>> math53.Acos('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -315,10 +315,10 @@ Inverse tangent, `\mathrm{atan}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Atan(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Atan(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Atan('0.51')
+        >>> math53.Atan('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -404,14 +404,14 @@ Inverse tangent, 2 arguments, `\mathrm{atan2}(y, x)`
 
     An example in Python
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Atan2(1,1), ereal.Atan(1/1.)
+        >>> from xlcalcnet import math53
+        >>> math53.Atan2(1,1), ereal.Atan(1/1.)
         (0.785398163397448, 0.785398163397448)
-        >>> ereal.Atan2(1,-1), ereal.Atan(1/-1.)
+        >>> math53.Atan2(1,-1), ereal.Atan(1/-1.)
         (2.35619449019234, -0.785398163397448)
-        >>> ereal.Atan2(-1,1), ereal.Atan(-1/1.)
+        >>> math53.Atan2(-1,1), ereal.Atan(-1/1.)
         (-0.785398163397448, -0.785398163397448)
-        >>> ereal.Atan2(-1,-1), ereal.Atan(-1/-1.)
+        >>> math53.Atan2(-1,-1), ereal.Atan(-1/-1.)
         (-2.35619449019234, 0.785398163397448)
 
 
@@ -463,10 +463,10 @@ Inverse cotangent, `\mathrm{acot}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Acot(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Acot(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Acot('0.51')
+        >>> math53.Acot('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -561,10 +561,10 @@ Inverse cosecant, `\mathrm{acsc}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Acsc(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Acsc(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Acsc('0.51')
+        >>> math53.Acsc('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -658,10 +658,10 @@ Inverse secant, `\mathrm{asec}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Asec(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Asec(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Asec('0.51')
+        >>> math53.Asec('0.51')
         ereal('5.3518479027559984754E-1')
 
 

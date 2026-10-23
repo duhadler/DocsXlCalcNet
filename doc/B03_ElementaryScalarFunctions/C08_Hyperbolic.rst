@@ -65,10 +65,10 @@ Hyperbolic sine, `\mathrm{sinh}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Sinh(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Sinh(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Sinh('0.51')
+        >>> math53.Sinh('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -179,10 +179,10 @@ Hyperbolic cosine, `\mathrm{cosh}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Cosh(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Cosh(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Cosh('0.51')
+        >>> math53.Cosh('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -295,10 +295,10 @@ Hyperbolic tangent, `\mathrm{tanh}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Tanh(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Tanh(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Tanh('0.51')
+        >>> math53.Tanh('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -394,10 +394,10 @@ Hyperbolic cotangent, `\mathrm{coth}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Coth(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Coth(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Coth('0.51')
+        >>> math53.Coth('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -495,10 +495,10 @@ Hyperbolic cosecant, `\mathrm{csch}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Csch(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Csch(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Csch('0.51')
+        >>> math53.Csch('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -600,10 +600,10 @@ Hyperbolic secant, `\mathrm{sech}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Sech(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Sech(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Sech('0.51')
+        >>> math53.Sech('0.51')
         ereal('5.3518479027559984754E-1')
 
 

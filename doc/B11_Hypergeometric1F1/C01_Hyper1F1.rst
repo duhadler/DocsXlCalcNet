@@ -62,10 +62,10 @@ Kummer's Confluent Hypergeometric Function `{}_1F_1(a,b;x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Hyperg1F1(4,5,0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Hyperg1F1(4,5,0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Hyperg1F1(14,15,0.5)
+        >>> math53.Hyperg1F1(14,15,0.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -133,10 +133,10 @@ Regularized Kummer Confluent Hypergeometric Function, `{}_1\widetilde{F}_1(a,b;x
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Hyperg1F1r(4,5,0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Hyperg1F1r(4,5,0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Hyperg1F1r(14,15,0.5)
+        >>> math53.Hyperg1F1r(14,15,0.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -225,10 +225,10 @@ Tricomi's Confluent Hypergeometric Function, `U(a,b;x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.HypergU(4,5.1,0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.HypergU(4,5.1,0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.HypergU(14,15.2,0.5)
+        >>> math53.HypergU(14,15.2,0.5)
         ereal('5.3518479027559984754E-1')
 
 
@@ -302,10 +302,10 @@ Generalized Laguerre polynomials, `L^{(a)}_n (x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Laguerre(2, 3, 2, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Laguerre(2, 3, 2, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Laguerre('6, 2, 0.51')
+        >>> math53.Laguerre('6, 2, 0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -344,10 +344,10 @@ Hermite polynomial (physicist), `H_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.HermiteH(2, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.HermiteH(2, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.HermiteH(6, 0.51)
+        >>> math53.HermiteH(6, 0.51)
         ereal('5.3518479027559984754E-1')
 
 
@@ -386,10 +386,10 @@ Hermite polynomials (probabilist) `\operatorname{He}_n(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.HermiteHe(2, 0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.HermiteHe(2, 0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.HermiteHe(6, 0.51)
+        >>> math53.HermiteHe(6, 0.51)
         ereal('5.3518479027559984754E-1')
 
 

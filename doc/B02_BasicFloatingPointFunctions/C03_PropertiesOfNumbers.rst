@@ -36,10 +36,10 @@ Test for signbit
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IsInfinity(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IsInfinity(0.5)
         False
-        >>> ereal.IsInfinity('inf')
+        >>> math53.IsInfinity('inf')
         True
 
 
@@ -60,10 +60,10 @@ Test for a finite number
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IsFinite(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IsFinite(0.5)
         False
-        >>> ereal.IsFinite('inf')
+        >>> math53.IsFinite('inf')
         True
 
 
@@ -86,10 +86,10 @@ Test for infinity
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IsInfinity(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IsInfinity(0.5)
         False
-        >>> ereal.IsInfinity('inf')
+        >>> math53.IsInfinity('inf')
         True
 
 
@@ -109,10 +109,10 @@ Test for positive infinity
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IsPositiveInfinity(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IsPositiveInfinity(0.5)
         False
-        >>> ereal.IsPositiveInfinity('inf')
+        >>> math53.IsPositiveInfinity('inf')
         True
 
 
@@ -134,10 +134,10 @@ Test for negative infinity
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IsNegativeInfinity(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IsNegativeInfinity(0.5)
         False
-        >>> ereal.IsNegativeInfinity('inf')
+        >>> math53.IsNegativeInfinity('inf')
         True
 
 
@@ -157,10 +157,10 @@ Test for NaN
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IsNan(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IsNan(0.5)
         False
-        >>> ereal.IsNan('inf')
+        >>> math53.IsNan('inf')
         True
 
 
@@ -182,10 +182,10 @@ Test for zero
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IsNan(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IsNan(0.5)
         False
-        >>> ereal.IsNan('inf')
+        >>> math53.IsNan('inf')
         True
 
 
@@ -206,10 +206,10 @@ Test for one
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IsNan(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IsNan(0.5)
         False
-        >>> ereal.IsNan('inf')
+        >>> math53.IsNan('inf')
         True
 
 
@@ -232,10 +232,10 @@ Test if a number is an integer
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IsNan(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IsNan(0.5)
         False
-        >>> ereal.IsNan('inf')
+        >>> math53.IsNan('inf')
         True
 
 
@@ -256,10 +256,10 @@ Test if a number is a simple number (not an infinity or NaN)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IsNan(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IsNan(0.5)
         False
-        >>> ereal.IsNan('inf')
+        >>> math53.IsNan('inf')
         True
 
 
@@ -280,10 +280,10 @@ Test if a number is a regular number (not zero, an infinity or NaN)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IsNan(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IsNan(0.5)
         False
-        >>> ereal.IsNan('inf')
+        >>> math53.IsNan('inf')
         True
 
 
@@ -303,10 +303,10 @@ Test if a number is a normal number (not subnormal, zero, an infinity or NaN)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IsNan(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IsNan(0.5)
         False
-        >>> ereal.IsNan('inf')
+        >>> math53.IsNan('inf')
         True
 
 
@@ -330,10 +330,10 @@ Test if 2 numbers are unordered
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IsNan(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IsNan(0.5)
         False
-        >>> ereal.IsNan('inf')
+        >>> math53.IsNan('inf')
         True
 
 
@@ -356,10 +356,10 @@ Test if a number fits in a signed 32 bit integer
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IsNan(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IsNan(0.5)
         False
-        >>> ereal.IsNan('inf')
+        >>> math53.IsNan('inf')
         True
 
 
@@ -380,10 +380,10 @@ Test if a number fits in a signed 64 bit integer
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.IsNan(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.IsNan(0.5)
         False
-        >>> ereal.IsNan('inf')
+        >>> math53.IsNan('inf')
         True
 
 

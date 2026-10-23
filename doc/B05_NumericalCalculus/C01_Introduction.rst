@@ -68,7 +68,7 @@ The routine in Python, using a local function definition. This form allows monit
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import ereal
+    >>> from xlcalcnet import math53
     >>> a = -10.0; b = 20.0; eps = 1E-8; tol = 1E-8
     >>> f = lambda x: -ereal.Exp(-x * x)
     >>> res = ereal.LocalMin(f, a, b, eps, tol)

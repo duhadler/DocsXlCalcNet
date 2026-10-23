@@ -253,10 +253,10 @@ Fused multiplication and addition: `\mathrm{fma}(x, y, z)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Copysign(0.5, 2)
+        >>> from xlcalcnet import math53
+        >>> math53.Copysign(0.5, 2)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Copysign('0.51', 2)
+        >>> math53.Copysign('0.51', 2)
         ereal('5.3518479027559984754E-1')
 
 
@@ -291,10 +291,10 @@ Maximum of two floating point numbers: `\mathrm{fmax}(x, y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Max(0.5, 2)
+        >>> from xlcalcnet import math53
+        >>> math53.Max(0.5, 2)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Max('0.51', 2)
+        >>> math53.Max('0.51', 2)
         ereal('5.3518479027559984754E-1')
 
 
@@ -321,10 +321,10 @@ Minimum of two floating point numbers: `\mathrm{fmin}(x, y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Min(0.5, 2)
+        >>> from xlcalcnet import math53
+        >>> math53.Min(0.5, 2)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Min('0.51', 2)
+        >>> math53.Min('0.51', 2)
         ereal('5.3518479027559984754E-1')
 
 

@@ -36,11 +36,13 @@ Inverse Jacobi elliptic function `\mathrm{arcsn}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiArcSN(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiArcSN(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_arcsn(0.01, 0.5)
+        0.010000208342552622
+        >>> math53.jacobi_arcsn(0.5, 0.9333)
+        0.5455929205316519
+        >>> math53.jacobi_arcsn(0.9333, 0.5)
+        1.2646631607926928
 
 
 
@@ -63,11 +65,13 @@ Inverse Jacobi elliptic function `\mathrm{arccn}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiArcCN(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiArcCN(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_arccn(0.01, 0.5)
+        1.6742032211210454
+        >>> math53.jacobi_arccn(0.5, 0.9333)
+        1.2569383151950466
+        >>> math53.jacobi_arccn(0.9333, 0.5)
+        0.3693405114569477
 
 
 
@@ -89,11 +93,13 @@ Inverse Jacobi elliptic function `\mathrm{arcdn}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiArcDN(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiArcDN(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_arcdn(0.81, 0.85)
+        0.818383723341855
+        >>> math53.jacobi_arcdn(0.85, 0.9333)
+        0.6333740262678361
+        >>> math53.jacobi_arcdn(0.9333, 0.85)
+        0.44639702745946724
 
 
 
@@ -116,11 +122,13 @@ Inverse Jacobi elliptic function `\mathrm{arccd}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiArcCD(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiArcCD(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_arccd(0.01, 0.5)
+        1.6757501464700435
+        >>> math53.jacobi_arccd(0.5, 0.9333)
+        1.9135135823272573
+        >>> math53.jacobi_arccd(0.9333, 0.5)
+        0.4210871940199031
 
 
 
@@ -143,11 +151,13 @@ Inverse Jacobi elliptic function `\mathrm{arcsd}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiArcSD(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiArcSD(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_arcsd(1.01, 1.5)
+        0.01000008333708349
+        >>> math53.jacobi_arcsd(1.5, 1.9333)
+        0.48599631639488927
+        >>> math53.jacobi_arcsd(1.9333, 1.5)
+        1.0461374961953611
 
 
 
@@ -170,11 +180,13 @@ Inverse Jacobi elliptic function `\mathrm{arcnd}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiArcND(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiArcND(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_arcnd(1.01, 1.5)
+        0.09402852893196235
+        >>> math53.jacobi_arcnd(1.5, 1.9333)
+        0.44786848710680505
+        >>> math53.jacobi_arcnd(1.9333, 1.5)
+        0.7366908030186489
 
 
 
@@ -195,11 +207,13 @@ Inverse Jacobi elliptic function `\mathrm{arcdc}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiArcDC(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiArcDC(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_arcdc(0.01, 1.5)
+        1.1997781698230954
+        >>> math53.jacobi_arcdc(0.5, 1.9333)
+        0.602871393168387
+        >>> math53.jacobi_arcdc(0.9333, 1.5)
+        0.3230254324880706
 
 
 
@@ -221,11 +235,13 @@ Inverse Jacobi elliptic function `\mathrm{arcnc}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiArcNC(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiArcNC(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_arcnc(1.01, 0.5)
+        0.1409520642226382
+        >>> math53.jacobi_arcnc(1.5, 0.9333)
+        0.9408474060083183
+        >>> math53.jacobi_arcnc(1.9333, 0.5)
+        1.0673523684807162
 
 
 
@@ -249,11 +265,13 @@ Inverse Jacobi elliptic function `\mathrm{arcsc}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiArcSC(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiArcSC(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_arcsc(0.01, 0.5)
+        0.009999708348801099
+        >>> math53.jacobi_arcsc(0.5, 0.9333)
+        0.4787388167314662
+        >>> math53.jacobi_arcsc(0.9333, 0.5)
+        0.7675883759164223
 
 
 
@@ -277,11 +295,13 @@ Inverse Jacobi elliptic function `\mathrm{arcns}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiArcNS(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiArcNS(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_arcns(1.01, 0.5)
+        1.523305059639121
+        >>> math53.jacobi_arcns(1.5, 0.9333)
+        0.7925159210200553
+        >>> math53.jacobi_arcns(1.9333, 0.5)
+        0.5501460517169048
 
 
 
@@ -305,11 +325,13 @@ Inverse Jacobi elliptic function `\mathrm{arcds}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiArcDS(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiArcDS(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_arcds(0.01, 1.5)
+        1.2004822727201372
+        >>> math53.jacobi_arcds(0.5, 1.9333)
+        0.7245630486544666
+        >>> math53.jacobi_arcds(0.9333, 1.5)
+        0.7261996704910932
 
 
 
@@ -332,11 +354,13 @@ Inverse Jacobi elliptic function `\mathrm{arccs}(x, k)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.JacobiArcCS(0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> ereal.JacobiArcCS(0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.jacobi_arccs(0.01, 0.5)
+        1.6742037984472615
+        >>> math53.jacobi_arccs(0.5, 0.9333)
+        1.3622156081449894
+        >>> math53.jacobi_arccs(0.9333, 0.5)
+        0.8413253980268582
 
 
 

@@ -38,10 +38,10 @@ Efficient computation of `|x| \cdot \mathrm{sign}(y): \mathrm{copysign}(x, y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Copysign(0.5, 2)
+        >>> from xlcalcnet import math53
+        >>> math53.Copysign(0.5, 2)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Copysign('0.51', 2)
+        >>> math53.Copysign('0.51', 2)
         ereal('5.3518479027559984754E-1')
 
 
@@ -90,10 +90,10 @@ Decomposition of `x` as `x = m \cdot 2^e; 0.5<m<1: \mathrm{frexp}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Frexp(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Frexp(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Frexp('0.51')
+        >>> math53.Frexp('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -142,10 +142,10 @@ Integral value `e`, from the decomposition of `x` as `x = m \cdot 2^e; 1<m<2: \m
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Frexp(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Frexp(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Frexp('0.51')
+        >>> math53.Frexp('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -193,10 +193,10 @@ Integral value `e`, from the decomposition of `x` as `x = m \cdot 2^e; 1<m<2: \m
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Frexp(0.5)
+        >>> from xlcalcnet import math53
+        >>> math53.Frexp(0.5)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Frexp('0.51')
+        >>> math53.Frexp('0.51')
         ereal('5.3518479027559984754E-1')
 
 
@@ -237,10 +237,10 @@ Efficient computation of `x \cdot 2^e: \mathrm{ldexp}(x,e), \mathrm{scalbn}(x,e)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Ldexp(0.5, 2)
+        >>> from xlcalcnet import math53
+        >>> math53.Ldexp(0.5, 2)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Ldexp('0.51', 2)
+        >>> math53.Ldexp('0.51', 2)
         ereal('5.3518479027559984754E-1')
 
 
@@ -272,10 +272,10 @@ Positive difference between `x` and `y`: `\mathrm{fdim}(x, y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ereal
-        >>> ereal.Copysign(0.5, 2)
+        >>> from xlcalcnet import math53
+        >>> math53.Copysign(0.5, 2)
         ereal('5.2359877559829887307E-1')
-        >>> ereal.Copysign('0.51', 2)
+        >>> math53.Copysign('0.51', 2)
         ereal('5.3518479027559984754E-1')
 
 
