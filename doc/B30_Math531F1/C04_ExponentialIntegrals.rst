@@ -36,10 +36,12 @@ Entire cosine integral `\mathrm{Cin}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.Cin(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Cin('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.cin(-4.333)
+        2.2259335713533317
+        >>> math53.cin(0.0)
+        0.0
+        >>> math53.cin(4.333)
+        2.2259335713533317
 
 
 
@@ -62,10 +64,12 @@ Entire hyperbolic cosine integral `\mathrm{Cinh}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.Cinh(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Cinh('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.cinh(-4.333)
+        10.3553644776616
+        >>> math53.cinh(0.0)
+        0.0
+        >>> math53.cinh(4.333)
+        10.3553644776616
 
 
 
@@ -88,10 +92,12 @@ Entire exponential integral `\displaystyle \mathrm{Ein}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.Ein(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Ein('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.ein(-4.333)
+        -22.756735632456937
+        >>> math53.ein(0.0)
+        0.0
+        >>> math53.ein(4.333)
+        2.046006677133737
 
 
 
@@ -114,10 +120,12 @@ Scaled exponential integral `\mathrm{e1s}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.E1s(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.E1s('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.exp_integral_e1_scaled(-4.333)
+        -24.800211440116243
+        >>> math53.exp_integral_e1_scaled(0.1)
+        1.8229239584193906
+        >>> math53.exp_integral_e1_scaled(4.333)
+        0.002530869474431569
 
 
 
@@ -141,10 +149,12 @@ Scaled exponential integral `\mathrm{eis}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.Eis(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Eis('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.exp_integral_ei_scaled(-4.333)
+        -0.19278255765376273
+        >>> math53.exp_integral_ei_scaled(0.1)
+        -1.46838175654763
+        >>> math53.exp_integral_ei_scaled(4.333)
+        0.3255797560584637
 
 
 
@@ -168,10 +178,12 @@ Scaled exponential integral `\mathrm{eisx2}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.Eisx2(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Eisx2('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.eisx2(-4.333)
+        0.056464567713243055
+        >>> math53.eisx2(0.1)
+        -3.977950399261558
+        >>> math53.eisx2(4.333)
+        0.056464567713243055
 
 
 
@@ -196,10 +208,12 @@ Inverse of the exponential integral, `\mathrm{Ei}^{-1}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.EiInv(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.EiInv('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.ei_inv(-4.333)
+        0.056464567713243055
+        >>> math53.ei_inv(0.1)
+        0.39872353634725033
+        >>> math53.ei_inv(4.333)
+        1.8245993296832108
 
 
 
@@ -222,10 +236,12 @@ Generalized exponential integral `E_p(p,x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.Gei(3.1, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Gei(3.1, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.gei(-4.333, 0.333)
+        14126.353468990947
+        >>> math53.gei(0.1, 2.1)
+        0.05633928555021888
+        >>> math53.gei(4.333, 4.333)
+        0.0015971422905912734
 
 
 
@@ -249,10 +265,12 @@ Exponential integral `\displaystyle \beta_n(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.Eibeta(3, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Eibeta(3, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.eibeta(2, 0.333)
+        0.6889912735534381
+        >>> math53.eibeta(3, 2.1)
+        -1.3634776730533458
+        >>> math53.eibeta(4, 4.333)
+        8.588862944132174
 
 
 
@@ -275,10 +293,12 @@ Inverse of the logarithmic integral, `\mathrm{li}^{-1}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.LiInv(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.LiInv('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.log_integral_inv(-4.333)
+        1.0073438990424428
+        >>> math53.log_integral_inv(0.1)
+        1.4899216524808407
+        >>> math53.log_integral_inv(4.333)
+        6.2003102410812225
 
 
 
@@ -299,10 +319,12 @@ Shifted sine integral `\mathrm{si}(x) =  \mathrm{Si}(x) - \pi/2`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.ShiftedSi(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.ShiftedSi('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.shifted_sin_integral(-4.333)
+        -3.2610627580571516
+        >>> math53.shifted_sin_integral(0.1)
+        -1.4708518656866196
+        >>> math53.shifted_sin_integral(4.333)
+        0.11947010446735848
 
 
 

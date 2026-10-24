@@ -29,17 +29,17 @@ Bessel function of the 1st kind, order `0, J_{0}(x)`
     Returns `J_0(x)`, the Bessel function of the 1st kind, order zero.  See also Wikipedia :cite:p:`WikipediaFun84`, MathWorld :cite:p:`WolframFun84`, NIST :cite:p:`DLMFun84`,  BoostMath :cite:p:`BoostFun84`,  :cite:t:`Ehrhardt2018`  (3.1.1.1).
 
 
-
-
     An example in Python
 
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.BesselJ0(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.BesselJ0('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.bessel_j0(0.01)
+        0.9999750001562496
+        >>> math53.bessel_j0(10.5)
+        -0.23664819446234708
+        >>> math53.bessel_j0(20.9333)
+        0.04792105881068816
 
 
 
@@ -62,10 +62,12 @@ Bessel function of the 1st kind, order `1, J_{1}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.BesselJ1(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.BesselJ1('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.bessel_j1(0.01)
+        0.004999937500260415
+        >>> math53.bessel_j1(10.5)
+        -0.07885001422733144
+        >>> math53.bessel_j1(20.9333)
+        0.16884230112872245
 
 
 
@@ -91,10 +93,12 @@ Bessel function of the 1st kind, integer order `n, J_{n}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.BesselJn(3, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.BesselJn(3, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.bessel_jn(2, 0.01)
+        1.2499895833658854e-05
+        >>> math53.bessel_jn(3, 10.5)
+        0.1632801643733625
+        >>> math53.bessel_jn(4, 20.9333)
+        -0.01834585303578947
 
 
 
@@ -117,10 +121,12 @@ Bessel function of the 2nd kind, order `0, Y_{0}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.BesselY0(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.BesselY0('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.bessel_y0(0.01)
+        -3.005455637083646
+        >>> math53.bessel_y0(10.5)
+        -0.06753037249787641
+        >>> math53.bessel_y0(20.9333)
+        0.1676506814275376
 
 
 
@@ -142,10 +148,12 @@ Bessel function of the 2nd kind, order `1, Y_{1}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.BesselY1(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.BesselY1('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.bessel_y1(0.01)
+        -63.67859628206066
+        >>> math53.bessel_y1(10.5)
+        0.23370422835726862
+        >>> math53.bessel_y1(20.9333)
+        -0.04393254669288505
 
 
 
@@ -172,21 +180,12 @@ Bessel function of the 2nd kind, integer order `n, Y_{n}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.BesselYn(3, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.BesselYn(3, '0.51')
-        ereal('5.3518479027559984754E-1')
-
-
-    An example in double precision (32 bit version of xlcalcnet)
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import math53
-        >>> math53.BesselYn(3, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.BesselYn(3, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.bessel_yn(2, 0.01)
+        -12732.71380077505
+        >>> math53.bessel_yn(3, 10.5)
+        -0.19102024221877467
+        >>> math53.bessel_yn(4, 20.9333)
+        0.17502824733280994
 
 
 

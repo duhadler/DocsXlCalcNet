@@ -30,15 +30,18 @@ Exponentially scaled complementary error function, `\mathrm{erfcx}(x)`
     Returns the exponentially scaled complementary error function `\displaystyle \mathrm{erfcx}(z) = \exp(z^2) \cdot \mathrm{erfc}(z) = w(iz)`. See also :cite:t:`Ehrhardt2018` (3.3.6).
 
 
+
     An example in Python
 
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.Erfce(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Erfce('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.erfcx(-4.333)
+        285010386.1254641
+        >>> math53.erfcx(0.0)
+        1.0
+        >>> math53.erfcx(4.333)
+        0.12698575347883756
 
 
 
@@ -62,10 +65,12 @@ Difference of error functions, `\mathrm{erfh}(x,h) = \mathrm{erf}(x+h)-\mathrm{e
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.Erfh(0.5, 0.6)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Erfh('0.51', 0.61)
-        ereal('5.3518479027559984754E-1')
+        >>> math53.erfh(-4.333, -4.3)
+        -0.9627769999250788
+        >>> math53.erfh(0.0, 0.1)
+        0.2249258320365698
+        >>> math53.erfh(4.333, 4.3)
+        0.9627769999250788
 
 
 
@@ -88,10 +93,12 @@ Difference of error functions, `\mathrm{erf2}(x_1,x_2) = \mathrm{erf}(x_2)-\math
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.Erf2(0.5, 0.6)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Erf2('0.51', 0.61)
-        ereal('5.3518479027559984754E-1')
+        >>> math53.erf2(-4.333, -4.3)
+        3.023761733234312e-10
+        >>> math53.erf2(0.0, 0.1)
+        0.1124629160182849
+        >>> math53.erf2(4.333, 4.3)
+        -3.023761733234312e-10
 
 
 
@@ -116,10 +123,12 @@ Probability function `Q(x) = \Phi(-x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.ErfQ(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.ErfQ('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.erfq(-4.333)
+        0.999992645444505
+        >>> math53.erfq(0.0)
+        0.5
+        >>> math53.erfq(4.333)
+        7.3545554950826356e-06
 
 
 
@@ -141,10 +150,12 @@ Inverse of the exponentially scaled complementary error function, `\mathrm{erfcx
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.ErfceInv(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.ErfceInv('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.erfcx_inv(0.133)
+        4.12712473131774
+        >>> math53.erfcx_inv(0.210)
+        2.51088550998549
+        >>> math53.erfcx_inv(4.333)
+        -0.9333744710363929
 
 
 
@@ -168,10 +179,12 @@ Inverse of the imaginary error function, `\mathrm{erfi}^{-1}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.ErfiInv(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.ErfiInv('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.erfi_inv(0.133)
+        0.11732758262007195
+        >>> math53.erfi_inv(0.210)
+        0.18400956197700832
+        >>> math53.erfi_inv(4.333)
+        1.475620575243282
 
 
 
@@ -194,14 +207,16 @@ Generalized Dawson integral, `F(p, x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.Dawson2(1.5, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Dawson2(1.5, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.dawson2(0.133, 0.2)
+        0.18253875263386812
+        >>> math53.dawson2(0.20, 1.2)
+        1.0197368694644748
+        >>> math53.dawson2(4.333, 4.3)
+        0.0017883958128242687
 
 
 
-        
+
 
 
 
@@ -218,10 +233,12 @@ Generalized error function, `\mathrm{erfg}(p, x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.Erfg(1.5, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Erfg(1.5, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.erfg(0.133, 0.2)
+        0.0984423713670484
+        >>> math53.erfg(0.20, 1.2)
+        0.5113754785616778
+        >>> math53.erfg(4.333, 4.3)
+        0.9105748355517699
 
 
 
@@ -240,10 +257,12 @@ Expint3, `\mathrm{erfg}(3, x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.Expint3(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Expint3('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.expint3(0.333)
+        0.32995806253817933
+        >>> math53.expint3(2.1)
+        0.8929727701083042
+        >>> math53.expint3(4.333)
+        0.8929795115692493
 
 
 
@@ -289,48 +308,18 @@ Scaled repeated integrals of  the complementary error function, `i^n \mathrm{erf
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.InErfc(3, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.InErfc(3, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.inerfc(2, -4.3)
+        18.98999999998569
+        >>> math53.inerfc(3, 0.01)
+        0.09156879696249248
+        >>> math53.inerfc(4, 4.3)
+        1.6897530115750235e-05
 
 
 
 
-    An example with real input:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; n = '4'; x = '5.0'
-        >>> \mathrm{d}x = dec.inerfc(n, x); mx = mpm.inerfc(n, x); gx = gmp.inerfc(n, x)
-        >>> fx = fpm.inerfc(n, x); ax = apm.inerfc(n, x)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  8.631401306269731883125812071651943647995E-6
-        mpm:  8.631401306269731883125812071651943647995e-6
-        gmp:  8.631401306269731883125812071651943647995E-06
-        fpm:  8.63140130626973E-06
-        apm:  8.631401306269731883125812071651943657349e-6 (1.945e-32%)
 
 
-    An example with complex input:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; n = '4'; z = '5.0 + 3.0j'
-        >>> \mathrm{d}z = dec.inerfc(n, z); mz = mpm.inerfc(n, z); gz = gmp.inerfc(n, z)
-        >>> fz = fpm.inerfc(n, z); az = apm.inerfc(n, z)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az], aligned=True)
-        dec: -3.8136067248438755019E-6               - 2.7044284620493310438E-6j
-        mpm: -3.8136067248438755019e-6               - 2.7044284620493310438e-6j
-        gmp: -3.8136067248438755019E-06              - 2.7044284620493310438E-06j
-        fpm: -3.81360672484388E-06                   - 2.70442846204933E-06j
-        apm: -3.8136067248438754005e-6 (-2.848e-13%) - 2.7044284620493310996e-6 (-3.025e-13%)j
-
-
-
-        
 
 Fresnel auxiliary function `\mathrm{f}(x)`
 -------------------------------------------------------------------------------
@@ -347,10 +336,12 @@ Fresnel auxiliary function `\mathrm{f}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.FresnelF(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.FresnelF('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.fresnel_f(-4.333)
+        0.5184512886301054
+        >>> math53.fresnel_f(0.0)
+        0.5
+        >>> math53.fresnel_f(4.333)
+        0.0733990512696557
 
 
 
@@ -373,10 +364,12 @@ Fresnel auxiliary function `\mathrm{g}(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.FresnelG(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.FresnelG('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.fresnel_g(-4.333)
+        -1.2856518027760035
+        >>> math53.fresnel_g(0.0)
+        0.5
+        >>> math53.fresnel_g(4.333)
+        0.0012401961792171978
 
 
 
@@ -399,10 +392,12 @@ Goodwin-Staton integral, `G(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.GoodwinStaton(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.GoodwinStaton('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.goodwin_staton(-4.333)
+        -0.2387165659508476
+        >>> math53.goodwin_staton(0.1)
+        2.1650436618898743
+        >>> math53.goodwin_staton(4.333)
+        0.18225199823760455
 
 
 
@@ -412,7 +407,7 @@ Goodwin-Staton integral, `G(x)`
 Voigt function U
 -------------------------------------------------------------------------------
 
-.. method:: math53.voigt_u(z)
+.. method:: math53.voigt_u(x, t)
 
     Returns the Voigt function U. See also  Wikipedia :cite:p:`WikipediaFun185`, NIST :cite:p:`DLMFun185`.
 
@@ -433,11 +428,13 @@ Voigt function U
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.VoigtU(0.5)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.VoigtU('0.1')
-        ecplx('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.voigt_u(-4.333, 0.13)
+        0.05254336595640464
+        >>> math53.voigt_u(0.0, 0.21)
+        0.7811438005184261
+        >>> math53.voigt_u(4.333, 4.3)
+        0.1490998347762494
 
 
 
@@ -457,11 +454,13 @@ Voigt function V
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.VoigtV(0.5)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.VoigtV('0.1')
-        ecplx('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.voigt_v(-4.333, 0.13)
+        -0.22146326272595282
+        >>> math53.voigt_v(0.0, 0.21)
+        0.0
+        >>> math53.voigt_v(4.333, 4.3)
+        0.19560699319119224
 
 
 
@@ -471,7 +470,7 @@ Voigt function V
 Voigt function H
 -------------------------------------------------------------------------------
 
-.. method:: math53.voigt_h(x, t)
+.. method:: math53.voigt_h(a, u)
 
     Returns the Voigt function H. See also Wikipedia :cite:p:`WikipediaFun185`, NIST :cite:p:`DLMFun185`.
 
@@ -480,11 +479,13 @@ Voigt function H
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.VoigtH(0.5)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.VoigtH('0.1')
-        ecplx('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.voigt_h(-4.333, 0.13)
+        -0.1268843321935899
+        >>> math53.voigt_h(0.1, 0.21)
+        0.861821897691752
+        >>> math53.voigt_h(4.333, 4.3)
+        0.06643025352849169
 
 
 
@@ -509,11 +510,13 @@ Voigt Profile distribution, pdf
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.VoigtProfilePdf(0.5)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.VoigtProfilePdf('0.1')
-        ecplx('5.3518479027559984754E-1')
+        >>> from xlcalcnet import math53
+        >>> math53.voigt_profile_pdf(-4.333, 0.13, 1.13)
+        0.022564184036184317
+        >>> math53.voigt_profile_pdf(0.0, 0.21, 1.21)
+        0.31591913104142727
+        >>> math53.voigt_profile_pdf(4.333, 4.3, 14.3)
+        0.023604268551340794
 
 
 

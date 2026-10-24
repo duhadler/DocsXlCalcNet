@@ -30,15 +30,18 @@ First synchrotron function `F(x)`
     See also: :cite:t:`Ehrhardt2018` (3.1.11.1). 
 
 
+
     An example in Python
 
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.SynchF(2.25)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.SynchF(12.25)
-        ereal('5.3518479027559984754E-1')
+        >>> math53.synchrotron_f(0.01)
+        0.4449725041142106
+        >>> math53.synchrotron_f(10.5)
+        0.00011914762875805393
+        >>> math53.synchrotron_f(20.9333)
+        4.808211886821304e-09
 
 
 
@@ -62,10 +65,12 @@ Second synchrotron function `G(x)`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.SynchG(2.25)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.SynchG(12.25)
-        ereal('5.3518479027559984754E-1')
+        >>> math53.synchrotron_g(0.01)
+        0.2309807734222628
+        >>> math53.synchrotron_g(10.5)
+        0.0001128256550353819
+        >>> math53.synchrotron_g(20.9333)
+        4.669098611060105e-09
 
 
 

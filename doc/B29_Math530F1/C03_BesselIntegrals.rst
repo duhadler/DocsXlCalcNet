@@ -35,10 +35,12 @@ Integral of `J_0`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.BesselJ0Int(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.BesselJ0Int('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.bessel_j0_int(0.01)
+        0.009999916666979166
+        >>> math53.bessel_j0_int(10.5)
+        0.9438066255262282
+        >>> math53.bessel_j0_int(20.9333)
+        1.1661904476467662
 
 
 
@@ -56,10 +58,12 @@ Integral of `Y_0`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.BesselY0Int(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.BesselY0Int('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.bessel_y0_int(0.01)
+        -0.03642134343346274
+        >>> math53.bessel_y0_int(10.5)
+        0.23800420896642513
+        >>> math53.bessel_y0_int(20.9333)
+        -0.0517899620038398
 
 
 
@@ -77,10 +81,12 @@ Integral of `I_0`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.BesselI0Int(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.BesselI0Int('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.bessel_i0_int(0.01)
+        0.010000083333645833
+        >>> math53.bessel_i0_int(10.5)
+        4794.898946365337
+        >>> math53.bessel_i0_int(20.9333)
+        111070471.99595156
 
 
 
@@ -101,10 +107,12 @@ Integral of `K_0`
     .. code-block:: pycon
 
         >>> from xlcalcnet import math53
-        >>> math53.BesselK0Int(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.BesselK0Int('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> math53.bessel_k0_int(0.01)
+        0.057211521554724545
+        >>> math53.bessel_k0_int(10.5)
+        1.5707862309450589
+        >>> math53.bessel_k0_int(20.9333)
+        1.5707963265790326
 
 
 
