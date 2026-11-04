@@ -47,11 +47,31 @@ Integral value nearest `x` (rounding to nearest): `\mathrm{nearbyint}(x), \mathr
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Rint(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Rint('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -5.1; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.rint(x)))
+            fpm:  -5
+            mpm:  -5.0
+            dpm:  -5
+            ipm: [-5.0,
+                  -5.0]
+            gpm:  -5.0
+            apm: -5.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+         math53:  -5
+          sreal:  -5
+          dreal:  -5
+          ereal:  -5
+          qreal:  -5
+          oreal:  -5
+          mreal:  -5
+         sflint:  -5
+         dflint:  -5
+         eflint:  -5
+         qflint:  -5
+         oflint:  -5
+         mflint:  -5
+         aflint:  -5.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
 
 
 
@@ -81,11 +101,29 @@ Integral value nearest `x` (rounding to nearest): `\mathrm{nearbyint}(x), \mathr
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Rint(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Rint('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -5345346.7; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + str(ctx.lrint(x)))
+            fpm: -5345347
+            mpm: -5345347
+            dpm: -5345347
+            ipm: -5345347
+            gpm: -5345347
+            apm: -5345347
+         math53: -5345347
+          sreal: -5345346
+          dreal: -5345347
+          ereal: -5345347
+          qreal: -5345347
+          oreal: -5345347
+          mreal: -5345347
+         sflint: -5345346
+         dflint: -5345347
+         eflint: -5345347
+         qflint: -5345347
+         oflint: -5345347
+         mflint: -5345347
+         aflint: -5345347
 
 
 
@@ -107,11 +145,29 @@ Integral value nearest `x` (rounding to nearest): `\mathrm{nearbyint}(x), \mathr
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Rint(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Rint('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = '-9223372036854775807.2'; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + str(ctx.llrint(x)))
+            fpm: -9223372036854775808
+            mpm: -9223372036854775807
+            dpm: -9223372036854775807
+            ipm: -9223372036854775807
+            gpm: -9223372036854775807
+            apm: -9223372036854775807
+         math53: -9223372036854775808
+          sreal: -9223372036854775808
+          dreal: -9223372036854775808
+          ereal: -9223372036854775807
+          qreal: -9223372036854775807
+          oreal: -9223372036854775807
+          mreal: -9223372036854775807
+         sflint: -9223372036854775808
+         dflint: -9223372036854775808
+         eflint: -9223372036854775807
+         qflint: -9223372036854775807
+         oflint: -9223372036854775807
+         mflint: -9223372036854775807
+         aflint: -9223372036854775807
 
 
 
@@ -136,11 +192,30 @@ Smallest integral value not less than `x: \mathrm{ceil}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Ceil(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Ceil('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -5.1; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.ceil(x)))
+            fpm:  -5
+            mpm:  -5.0
+            dpm:  -5
+            ipm: [-5.0,
+                  -5.0]
+            gpm:  -5.0
+            apm: -5.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+         math53:  -5
+          sreal:  -5
+          dreal:  -5
+          ereal:  -5
+          qreal:  -5
+          oreal:  -5
+          mreal:  -5
+         sflint:  -5
+         dflint:  -5
+         eflint:  -5
+         qflint:  -5
+         oflint:  -5
+         mflint:  -5
+         aflint:  -5.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 
 
 
@@ -157,15 +232,35 @@ Largest integral value not greater than `x: \mathrm{floor}(x)`
 
     See also: https://en.cppreference.com/w/cpp/numeric/math/floor
 
+
     An example in Python
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Floor(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Floor('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -5.1; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.floor(x)))
+            fpm:  -5
+            mpm:  -5.0
+            dpm:  -5
+            ipm: [-5.0,
+                  -5.0]
+            gpm:  -5.0
+            apm: -5.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+         math53:  -5
+          sreal:  -5
+          dreal:  -5
+          ereal:  -5
+          qreal:  -5
+          oreal:  -5
+          mreal:  -5
+         sflint:  -5
+         dflint:  -5
+         eflint:  -5
+         qflint:  -5
+         oflint:  -5
+         mflint:  -5
+         aflint:  -5.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 
 
 
@@ -189,11 +284,30 @@ Nearest integral value not greater in magnitude than `x: \mathrm{trunc}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Truncate(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Truncate('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -5.1; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.trunc(x)))
+            fpm:  -5
+            mpm:  -5.0
+            dpm:  -5
+            ipm: [-5.0,
+                  -5.0]
+            gpm:  -5.0
+            apm: -5.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+         math53:  -5
+          sreal:  -5
+          dreal:  -5
+          ereal:  -5
+          qreal:  -5
+          oreal:  -5
+          mreal:  -5
+         sflint:  -5
+         dflint:  -5
+         eflint:  -5
+         qflint:  -5
+         oflint:  -5
+         mflint:  -5
+         aflint:  -5.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 
 
 
@@ -213,15 +327,35 @@ Nearest integral value, rounding halfway cases away from zero: `\mathrm{round}(x
 
     See also: https://en.cppreference.com/w/cpp/numeric/math/round
 
+
     An example in Python
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Round(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Round('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -5.1; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.round(x)))
+            fpm:  -5
+            mpm:  -5.0
+            dpm:  -5
+            ipm: [-5.0,
+                  -5.0]
+            gpm:  -5.0
+            apm: -5.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+         math53:  -5
+          sreal:  -5
+          dreal:  -5
+          ereal:  -5
+          qreal:  -5
+          oreal:  -5
+          mreal:  -5
+         sflint:  -5
+         dflint:  -5
+         eflint:  -5
+         qflint:  -5
+         oflint:  -5
+         mflint:  -5
+         aflint:  -5.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 
 
 
@@ -239,15 +373,35 @@ Nearest 32 bit integer, rounding halfway cases away from zero: `\mathrm{lround}(
 
     See also: https://en.cppreference.com/w/cpp/numeric/math/round
 
+
     An example in Python
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Round(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Round('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -5345346.7; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + str(ctx.lround(x)))
+            fpm: -5345347
+            mpm: -5345347
+            dpm: -5345347
+            ipm: -5345347
+            gpm: -5345347
+            apm: -5345347
+         math53: -5345347
+          sreal: -5345347
+          dreal: -5345347
+          ereal: -5345347
+          qreal: -5345347
+          oreal: -5345347
+          mreal: -5345347
+         sflint: -5345347
+         dflint: -5345347
+         eflint: -5345347
+         qflint: -5345347
+         oflint: -5345347
+         mflint: -5345347
+         aflint: -5345347
+
 
 
 
@@ -266,15 +420,34 @@ Nearest 64 bit integer, rounding halfway cases away from zero: `\mathrm{llround}
 
     See also: https://en.cppreference.com/w/cpp/numeric/math/round
 
+
     An example in Python
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Round(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Round('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = '-9223372036854775807.2'; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + str(ctx.llround(x)))
+            fpm: -9223372036854775808
+            mpm: -9223372036854775807
+            dpm: -9223372036854775807
+            ipm: -9223372036854775807
+            gpm: -9223372036854775807
+            apm: -9223372036854775807
+         math53: -9223372036854775808
+          sreal: -9223372036854775808
+          dreal: -9223372036854775808
+          ereal: -9223372036854775807
+          qreal: -9223372036854775807
+          oreal: -9223372036854775807
+          mreal: -9223372036854775807
+         sflint: -9223372036854775808
+         dflint: -9223372036854775808
+         eflint: -9223372036854775807
+         qflint: -9223372036854775807
+         oflint: -9223372036854775807
+         mflint: -9223372036854775807
+         aflint: -9223372036854775807
 
 
 

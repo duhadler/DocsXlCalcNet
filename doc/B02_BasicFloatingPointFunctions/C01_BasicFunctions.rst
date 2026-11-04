@@ -16,221 +16,8 @@
 
 
 
-Operator overloading, general real functions
+General real functions
 ===============================================================================
-
-
-
-
-
-Operator overloading: scope and restrictions
--------------------------------------------------------------------
-
-Compatible operators
-
-
-
-
-
-The cost of creating and destroying objects
--------------------------------------------------------------------
-
-Some text
-
-
-
-
-
-Raw addition of two floating point numbers
-----------------------------------------------
-
-.. method:: ctx.rawadd(res, x, y )
-
-    where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
-
-    Sets ``res`` to  the sum of the floating point number ``x`` and ``y``.
-
-
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.Abs(0.5)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.Abs('0.1')
-        ecplx('5.3518479027559984754E-1')
-
-
-
-
-Raw subtraction of two floating point numbers
------------------------------------------------------
-
-.. method:: ctx.rawsub(res, x, y )
-
-    where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
-
-    Sets ``res`` to  the difference of the floating point numbers ``x`` and ``y``.
-
-
-
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.Abs(0.5)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.Abs('0.1')
-        ecplx('5.3518479027559984754E-1')
-
-
-
-
-Raw multiplication of two floating point numbers
-------------------------------------------------------------
-
-.. method:: ctx.rawmul(res, x, y )
-
-    where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
-
-    Sets ``res`` to  the product of the floating point numbers ``x`` and ``y``.
-
-
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.Abs(0.5)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.Abs('0.1')
-        ecplx('5.3518479027559984754E-1')
-
-
-
-
-Raw division of two floating point numbers
-----------------------------------------------
-
-.. method:: ctx.rawdiv(res, x, y )
-
-    where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
-
-    Sets ``res`` to  the quotient of the floating point numbers ``x`` and ``y``.
-
-
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.Abs(0.5)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.Abs('0.1')
-        ecplx('5.3518479027559984754E-1')
-
-
-
-
-
-Raw addition of a floating point number and a signed 32 bit integer
--------------------------------------------------------------------------
-
-.. method:: ctx.rawaddint32(res, x, i)
-
-    where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
-
-    Sets ``res`` to  the sum of the floating point number ``x`` and the signed 32 bit integer ``i``.
-
-
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.Abs(0.5)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.Abs('0.1')
-        ecplx('5.3518479027559984754E-1')
-
-
-
-
-Raw subtraction of a floating point number and a signed 32 bit integer
--------------------------------------------------------------------------------
-
-.. method:: ctx.rawsubint32(res, x, i)
-
-.. method:: ctx.rawint32sub(res, x, i)
-
-    where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
-
-    Sets ``res`` to  the difference of the floating point number ``x`` and the signed 32 bit integer ``i`` (``SubInt``) or to the difference of the signed 32 bit integer ``i`` the floating point number ``x`` (``IntSub``).
-
-
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.Abs(0.5)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.Abs('0.1')
-        ecplx('5.3518479027559984754E-1')
-
-
-
-
-Raw multiplication of a floating point number and a signed 32 bit integer
--------------------------------------------------------------------------
-
-.. method:: ctx.rawmulint32(res, x, i)
-
-    where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
-
-    Sets ``res`` to the product of the floating point number ``x`` and the signed 32 bit integer ``i``.
-
-
-
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.Abs(0.5)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.Abs('0.1')
-        ecplx('5.3518479027559984754E-1')
-
-
-
-
-Raw division of a floating point number and a signed 32 bit integer
--------------------------------------------------------------------------------
-
-.. method:: ctx.rawdivint32(res, x, i)
-
-.. method:: ctx.rawint32div(res, i, x)
-
-
-    where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
-
-
-    Sets ``res`` to the quotient of the floating point number ``x`` and the signed 32 bit integer ``i`` (``DivInt``) or to the quotient of the signed 32 bit integer ``i`` the floating point number ``x`` (``IntDiv``).
-
-
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.Abs(0.5)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.Abs('0.1')
-        ecplx('5.3518479027559984754E-1')
-
 
 
 
@@ -253,11 +40,30 @@ Fused multiplication and addition: `\mathrm{fma}(x, y, z)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Copysign(0.5, 2)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Copysign('0.51', 2)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = 5.1; y = 2.7;  z = 3.5; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.fma(x, y, z)))
+            fpm:  17.27
+            mpm:  17.27
+            dpm:  17.27
+            ipm: [17.269999999999999999999999999999999999999999999999999999999999999999999999999999999999999998272,
+                  17.270000000000000000000000000000000000000000000000000000000000000000000000000000000000000002199]
+            gpm:  17.269999999999999999999999999999999999999999999999999999999999999999999999999999999999999998
+            apm: [17.2700000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 5.66e-90]
+         math53:  17.27
+          sreal:  17.27
+          dreal:  17.27
+          ereal:  17.27
+          qreal:  17.27
+          oreal:  17.27
+          mreal:  17.27
+         sflint:  17.27
+         dflint:  17.27
+         eflint:  17.27
+         qflint:  17.27
+         oflint:  17.27
+         mflint:  17.27
+         aflint: [17.2700000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 2.56e-89]
 
 
 
@@ -291,11 +97,31 @@ Maximum of two floating point numbers: `\mathrm{fmax}(x, y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Max(0.5, 2)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Max('0.51', 2)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = 5.1; y = 2.7; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.fmax(x, y)))
+            fpm:  5.1
+            mpm:  5.1
+            dpm:  5.1
+            ipm: [5.0999999999999999999999999999999999999999999999999999999999999999999999999999999999999999992145,
+                  5.1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001964]
+            gpm:  5.1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002
+            apm: [5.10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.77e-90]
+         math53:  5.1
+          sreal:  5.1
+          dreal:  5.1
+          ereal:  5.0999999999999999999
+          qreal:  5.1
+          oreal:  5.1
+          mreal:  5.1
+         sflint:  5.1
+         dflint:  5.1
+         eflint:  5.0999999999999999999
+         qflint:  5.1
+         oflint:  5.1
+         mflint:  5.1
+         aflint: [5.10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.58e-90]
+
 
 
 
@@ -321,11 +147,30 @@ Minimum of two floating point numbers: `\mathrm{fmin}(x, y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Min(0.5, 2)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Min('0.51', 2)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = 5.1; y = 2.7; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.fmin(x, y)))
+            fpm:  2.7
+            mpm:  2.7
+            dpm:  2.7
+            ipm: [2.6999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999018,
+                  2.7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003927]
+            gpm:  2.6999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+            apm: [2.70000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 5.90e-91]
+         math53:  2.7
+          sreal:  5.1
+          dreal:  2.7
+          ereal:  2.7
+          qreal:  2.7
+          oreal:  2.7
+          mreal:  2.7
+         sflint:  5.1
+         dflint:  2.7
+         eflint:  2.7
+         qflint:  2.7
+         oflint:  2.7
+         mflint:  2.7
+         aflint: [2.70000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 7.88e-91]
 
 
 

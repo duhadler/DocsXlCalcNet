@@ -901,3 +901,37 @@ Rectangular coordinates calculated from the polar representation of a real or co
          oflint:  (-5.0955892663937252689111178781614779404668725167345079920780515110023443, 0.21206137840978195389296118514303281282852845711541442830484590390601119)
          mflint:  (-5.095589266393725268911117878161477940467, 0.2120613784097819538929611851430328128281)
          aflint: ([-5.09558926639372526891111787816147794047 +/- 5.67e-39], [0.212061378409781953892961185143032812828 +/- 5.58e-40])
+
+
+
+
+
+
+Imaginary One
+-------------------------------------------------------------------------------
+
+.. property:: ctx.onej
+
+    where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
+
+    Returns the imaginary unit.
+
+
+    In extended precision (32 bit version of xlcalcnet)
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import math53
+        >>> math53.ConstDegree()
+        ereal('1.7453292519943295769E-2')
+
+
+    In double precision (64 bit version of xlcalcnet)
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import math53
+        >>> math53.ConstDegree()
+        0.0174532925199433
+
+

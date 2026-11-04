@@ -51,11 +51,29 @@ Integral and fractional part of a floating point number: `\mathrm{modf}(x)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Modf(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Modf('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -5.1; gui.setdps(30)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ', ctx.modf(x))
+            fpm:  (-5.0, -0.09999999999999964)
+            mpm:  (mpf('-5.0'), mpf('-0.100000000000000000000000000000316'))
+            dpm:  (Decimal('-5'), Decimal('-0.1'))
+            ipm:  (mpi('-5.0', '-5.0'), mpi('-0.100000000000000000000000000000316', '-0.0999999999999999999999999999995267'))
+            gpm:  (mpfr('-5.0',103), mpfr('-0.100000000000000000000000000000316',103))
+            apm:  (-5.00000000000000000000000000000, [-0.1000000000000000000000000000 +/- 1.30e-30])
+         math53:  (-5, -0.0999999999999996)
+          sreal:  (-5, -0.0999999)
+          dreal:  (-5, -0.0999999999999996)
+          ereal:  (-5, -0.099999999999999999913)
+          qreal:  (-5, -0.0999999999999999999999999999999997)
+          oreal:  (-5, -0.099999999999999999999999999999999999999999999999999999999999999999999986)
+          mreal:  (-5, -0.0999999999999999999999999999987)
+         sflint:  (-5, -0.0999999)
+         dflint:  (-5, -0.0999999999999996)
+         eflint:  (-5, -0.099999999999999999913)
+         qflint:  (-5, -0.0999999999999999999999999999999997)
+         oflint:  (-5, -0.099999999999999999999999999999999999999999999999999999999999999999999986)
+         mflint:  (-5, -0.0999999999999999999999999999987)
+         aflint:  ( -5.00000000000000000000000000000, [-0.1000000000000000000000000000 +/- 2.53e-30])
 
 
 
@@ -72,45 +90,9 @@ Floating point remainder: `\mathrm{fmod}(x, y)`
 .. method:: ctx.fmod(x, y)
 
 
-
-    where ``ctx`` is ``fpm``, ``mpm``, ``ipm``, ``dec``, ``gmp`` or ``apm``. See also  Mpmath :cite:p:`MpmathFun907`.
-
-
-    !!! TypeError: unsupported operand type(s) for %: 'ivmpf' and 'ivmpf' !!!
-
-    !!! TypeError: unsupported operand type(s) for %: 'arb3_t' and 'arb3_t' !!!
-
-
-    Converts `x` and `y` to mpmath numbers and returns `x \mod y`.
-    For mpmath numbers, this is equivalent to ``x % y``.
-
-
-        >>> from xlcalcnet import fp, mp, iv, dp, gp, ap
-        >>> for ctx in [fp, mp, dp, gp]: ctx.dps = 15;  print(repr(ctx.fmod(100, +ctx.pi)))
-        2.6106277387164134
-        mpf('2.6106277387164134')
-        Decimal('2.61062773871651')
-        mpfr('2.6106277387164134')
-
-
-    You can use :func:`~fmod` to compute fractional parts of numbers:
-
-    .. code-block:: python
-
-        >>> for ctx in [fp, mp, dp, gp]: ctx.dps = 15;  print(repr(ctx.fmod(10.25, 1)), end=', ')
-        0.25, mpf('0.25'), Decimal('0.25'), mpfr('0.25'), 
-
-
-
-
-
-
     where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
 
-
-    Returns `x` mod `y`, `y \ne 0`, sign(result) = sign(`x`).
-
-    The floating-point remainder of the division operation ``x / y`` calculated by this function is exactly the value ``x - rem * y``, where ``rem`` is ``x / y`` with its fractional part truncated.
+    Returns the floating-point remainder of the division operation ``x / y`` calculated by this function is exactly the value ``x - rem * y``, where ``rem`` is ``x / y`` with its fractional part truncated.
 
     The returned value has the same sign as x and is less than y in magnitude.
 
@@ -130,16 +112,34 @@ Floating point remainder: `\mathrm{fmod}(x, y)`
     See also: https://en.cppreference.com/w/cpp/numeric/math/fmod
 
 
-
     An example in Python
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Fmod(0.5, 2)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Fmod('0.51', 2)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = 7.5; y = 2.1; gui.setdps(30)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.fmod(x, y)))
+            fpm:  1.2
+            mpm:  1.2
+            dpm:  1.2
+            ipm: [1.1999999999999999999999999999990534,
+                  1.2000000000000000000000000000002367]
+            gpm:  1.20000000000000000000000000000024
+            apm: [1.20000000000000000000000000000 +/- 2.61e-30]
+         math53:  1.2
+          sreal:  1.2
+          dreal:  1.2
+          ereal:  1.2000000000000000003
+          qreal:  1.2
+          oreal:  1.2
+          mreal:  1.2
+         sflint:  1.2
+         dflint:  1.2
+         eflint:  1.2000000000000000003
+         qflint:  1.2
+         oflint:  1.2
+         mflint:  1.2
+         aflint: [1.20000000000000000000000000000 +/- 7.58e-30]
 
 
 
@@ -183,11 +183,30 @@ IEEE floating point remainder: `\mathrm{remainder}(x, y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Remainder(0.5, 2)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Remainder('0.51', 2)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = 7.5; y = 2.1; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.remainder(x, y)))
+            fpm:  -0.9
+            mpm:  -0.900000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+            dpm:  -0.9
+            ipm: [-0.90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000078545,
+                  -0.89999999999999999999999999999999999999999999999999999999999999999999999999999999999999999882182]
+            gpm:  -0.90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000079
+            apm: [-0.90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 3.15e-90]
+         math53:  -0.9
+          sreal:  -0.8999996
+          dreal:  -0.9
+          ereal:  -0.89999999999999999965
+          qreal:  -0.9
+          oreal:  -0.90000000000000000000000000000000000000000000000000000000000000000000001
+          mreal:  -0.899999999999999999999999999999999999999999999999999999999999999999999999999999999999999997
+         sflint:  -0.8999996
+         dflint:  -0.9
+         eflint:  -0.89999999999999999965
+         qflint:  -0.9
+         oflint:  -0.90000000000000000000000000000000000000000000000000000000000000000000001
+         mflint:  -0.899999999999999999999999999999999999999999999999999999999999999999999999999999999999999997
+         aflint: [-0.90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 6.29e-90]
 
 
 
@@ -201,9 +220,9 @@ IEEE floating point remainder and part of quotient: `\mathrm{remquo}(x, y)`
 
     where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
 
-    Returns the IEEE754 remainder x REM y = x - rmNearest(x/y)*y.
+    Returns the IEEE floating point remainder and part of the quotient.
 
-    Computes the floating-point remainder of the division operation `x / y` as the ``std::remainder`` function does. Additionally, the sign and at least three of the last bits of `x / y` will be stored in quo, sufficient to determine the octant of the result within a period.(formally, stores a value whose sign is the sign of `x / y` and whose magnitude is congruent modulo `2^n` to the magnitude of the integral quotient of `x / y`, where `n` is an implementation-defined integer greater than or equal to 3).
+    Computes the floating-point remainder of the division operation `x / y` as the ``std::remainder`` function does. Additionally, the sign and at least three of the last bits of `x / y` will be stored in quo, sufficient to determine the octant of the result within a period. Formally, stores a value whose sign is the sign of `x / y` and whose magnitude is congruent modulo `2^n` to the magnitude of the integral quotient of `x / y`, where `n` is an implementation-defined integer greater than or equal to 3.
 
     If the implementation supports IEEE floating-point arithmetic (IEC 60559),
 
@@ -225,14 +244,114 @@ IEEE floating point remainder and part of quotient: `\mathrm{remquo}(x, y)`
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Remainder(0.5, 2)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Remainder('0.51', 2)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = '7.5'; y = '2.1'; gui.setdps(30)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ', ctx.remquo(x, y))
+            fpm:  (-0.9000000000000004, 4)
+            mpm:  (mpf('-0.899999999999999999999999999999684'), 4)
+            dpm:  (Decimal('-0.9'), 4)
+            ipm:  (mpi('-0.900000000000000000000000000001262', '-0.899999999999999999999999999999684'), 4)
+            gpm:  (mpfr('-0.899999999999999999999999999999684',103), 4)
+            apm:  ([-0.90000000000000000000000000000 +/- 1.90e-30], 4)
+         math53:  (-0.9, 4)
+          sreal:  (-0.8999996, 4)
+          dreal:  (-0.9, 4)
+          ereal:  (-0.89999999999999999965, 4)
+          qreal:  (-0.9, 4)
+          oreal:  (-0.90000000000000000000000000000000000000000000000000000000000000000000001, 4)
+          mreal:  (-0.899999999999999999999999999995, 4)
+         sflint:  (-0.8999996, 4)
+         dflint:  (-0.9, 4)
+         eflint:  (-0.89999999999999999965, 4)
+         qflint:  (-0.9, 4)
+         oflint:  (-0.90000000000000000000000000000000000000000000000000000000000000000000001, 4)
+         mflint:  (-0.899999999999999999999999999995, 4)
+         aflint:  ([-0.9000000000000000000000000000 +/- 1.02e-29], 4)
 
 
 
 
 
+
+Fractional part of a floating point number: `\mathrm{frac}(x)`
+-------------------------------------------------------------------------------
+
+.. method:: ctx.frac(x)
+
+    where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
+
+    Returns the fractional part of `x`, that is, `\mathrm{frac}(x) = x - floor(x)`.
+
+
+    An example in Python
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> x = -5.1; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.frac(x)))
+            fpm:  0.9
+            mpm:  0.9
+            dpm:  0.9
+            ipm: [0.89999999999999999999999999999999999999999999999999999999999999999999999999999999999999999980364,
+                  0.90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000078545]
+            gpm:  0.8999999999999999999999999999999999999999999999999999999999999999999999999999999999999999998
+            apm: [0.90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.77e-90]
+         math53:  0.9
+          sreal:  0.9000001
+          dreal:  0.9
+          ereal:  0.90000000000000000009
+          qreal:  0.9
+          oreal:  0.90000000000000000000000000000000000000000000000000000000000000000000001
+          mreal:  0.900000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+         sflint:  0.9000001
+         dflint:  0.9
+         eflint:  0.90000000000000000009
+         qflint:  0.9
+         oflint:  0.90000000000000000000000000000000000000000000000000000000000000000000001
+         mflint:  0.900000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+         aflint: [0.90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.58e-90]
+
+
+
+Fractional part of a floating point number (symmetric function): `\mathrm{fractionalpart}(x)`
+------------------------------------------------------------------------------------------------
+
+.. method:: ctx.fractionalpart(x)
+
+    where ``ctx`` is ``math53``, ``ctxboost`` or ``ctxflint``.
+
+    Returns the fractional part of x as a symmetric function: 
+
+    `\mathrm{fractionalpart}(x) = \mathrm{frac}(x)` for `x \geq 0` and `\mathrm{fractionalpart}(x) = -\mathrm{frac}(-x)` for `x < 0`.
+
+
+    An example in Python
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> x = -5.1; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.fractionalpart(x)))
+            fpm:  -0.0999999999999996
+            mpm:  -0.1
+            dpm:  -0.1
+            ipm: [-0.10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019636,
+                  -0.099999999999999999999999999999999999999999999999999999999999999999999999999999999999999999214545]
+            gpm:  -0.1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002
+            apm: [-0.1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.81e-90]
+         math53:  -0.0999999999999996
+          sreal:  -0.0999999
+          dreal:  -0.0999999999999996
+          ereal:  -0.099999999999999999913
+          qreal:  -0.0999999999999999999999999999999997
+          oreal:  -0.099999999999999999999999999999999999999999999999999999999999999999999986
+          mreal:  -0.0999999999999999999999999999999999999999999999999999999999999999999999999999999999999999992
+         sflint:  -0.0999999
+         dflint:  -0.0999999999999996
+         eflint:  -0.099999999999999999913
+         qflint:  -0.0999999999999999999999999999999997
+         oflint:  -0.099999999999999999999999999999999999999999999999999999999999999999999986
+         mflint:  -0.0999999999999999999999999999999999999999999999999999999999999999999999999999999999999999992
+         aflint: [-0.1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.58e-90]
 

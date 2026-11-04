@@ -34,15 +34,36 @@ Efficient computation of `|x| \cdot \mathrm{sign}(y): \mathrm{copysign}(x, y)`
 
     See also: https://en.cppreference.com/w/cpp/numeric/math/copysign
 
+
     An example in Python
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Copysign(0.5, 2)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Copysign('0.51', 2)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -5.1; gui.setdps(90)
+        >>> y = 1.0
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.copysign(x, y)))
+            fpm:  5.1
+            mpm:  5.1
+            dpm:  5.1
+            ipm: [5.0999999999999999999999999999999999999999999999999999999999999999999999999999999999999999992145,
+                  5.1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001964]
+            gpm:  5.1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002
+            apm: [5.10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.77e-90]
+         math53:  5.1
+          sreal:  5.1
+          dreal:  5.1
+          ereal:  5.0999999999999999999
+          qreal:  5.1
+          oreal:  5.1
+          mreal:  5.1
+         sflint:  5.1
+         dflint:  5.1
+         eflint:  5.0999999999999999999
+         qflint:  5.1
+         oflint:  5.1
+         mflint:  5.1
+         aflint: [5.10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.58e-90]
 
 
 
@@ -85,16 +106,33 @@ Decomposition of `x` as `x = m \cdot 2^e; 0.5<m<1: \mathrm{frexp}(x)`
 
 
 
-
     An example in Python
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Frexp(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Frexp('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -5.1; gui.setdps(30)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ', ctx.frexp(x))
+            fpm:  (-0.6375, 3)
+            mpm:  (mpf('-0.637500000000000000000000000000039'), 3)
+            dpm:  (Decimal('-0.6375'), 3)
+            ipm:  (mpi('-0.637500000000000000000000000000039', '-0.637499999999999999999999999999941'), 3)
+            gpm:  (mpfr('-0.637500000000000000000000000000039',103), 3)
+            apm:  ([-0.637500000000000000000000000000 +/- 1.58e-31], 3)
+         math53:  (-0.6375, 3)
+          sreal:  (-0.6375, 3)
+          dreal:  (-0.6375, 3)
+          ereal:  (-0.63749999999999999999, 3)
+          qreal:  (-0.6375, 3)
+          oreal:  (-0.6375, 3)
+          mreal:  (-0.6375, 3)
+         sflint:  (-0.6375, 3)
+         dflint:  (-0.6375, 3)
+         eflint:  (-0.63749999999999999999, 3)
+         qflint:  (-0.6375, 3)
+         oflint:  (-0.6375, 3)
+         mflint:  (-0.6375, 3)
+         aflint:  ([-0.637500000000000000000000000000 +/- 9.47e-31], 3)
 
 
 
@@ -136,17 +174,34 @@ Integral value `e`, from the decomposition of `x` as `x = m \cdot 2^e; 1<m<2: \m
     In all other cases, the result is exact (FE_INEXACT is never raised) and the current rounding mode is ignored.
 
 
-
-
     An example in Python
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Frexp(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Frexp('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -5.1; gui.setdps(30)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.logb(x)))
+            fpm:  2
+            mpm:  2.0
+            dpm:  2
+            ipm: [2.0,
+                  2.0]
+            gpm:  2.0
+            apm: 2.00000000000000000000000000000
+         math53:  2
+          sreal:  2
+          dreal:  2
+          ereal:  2
+          qreal:  2
+          oreal:  2
+          mreal:  2
+         sflint:  2
+         dflint:  2
+         eflint:  2
+         qflint:  2
+         oflint:  2
+         mflint:  2
+         aflint:  2.00000000000000000000000000000
 
 
 
@@ -188,16 +243,34 @@ Integral value `e`, from the decomposition of `x` as `x = m \cdot 2^e; 1<m<2: \m
 
 
 
-
     An example in Python
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Frexp(0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Frexp('0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -5.1; gui.setdps(30)
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ', ctx.ilogb(x))
+            fpm:  2
+            mpm:  2
+            dpm:  2
+            ipm:  2
+            gpm:  2
+            apm:  2
+         math53:  2
+          sreal:  2
+          dreal:  2
+          ereal:  2
+          qreal:  2
+          oreal:  2
+          mreal:  2
+         sflint:  2
+         dflint:  2
+         eflint:  2
+         qflint:  2
+         oflint:  2
+         mflint:  2
+         aflint:  2
+
 
 
 
@@ -237,11 +310,31 @@ Efficient computation of `x \cdot 2^e: \mathrm{ldexp}(x,e), \mathrm{scalbn}(x,e)
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Ldexp(0.5, 2)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Ldexp('0.51', 2)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -5.1; gui.setdps(90)
+        >>> e = 10
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.ldexp(x, e)))
+            fpm:  -5222.4
+            mpm:  -5222.4
+            dpm:  -5222.4
+            ipm: [-5222.4000000000000000000000000000000000000000000000000000000000000000000000000000000000000002011,
+                  -5222.3999999999999999999999999999999999999999999999999999999999999999999999999999999999999991957]
+            gpm:  -5222.4000000000000000000000000000000000000000000000000000000000000000000000000000000000000002
+            apm: [-5222.40000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.81e-87]
+         math53:  -5222.4
+          sreal:  -5222.4
+          dreal:  -5222.4
+          ereal:  -5222.3999999999999999
+          qreal:  -5222.4
+          oreal:  -5222.4
+          mreal:  -5222.4
+         sflint:  -5222.4
+         dflint:  -5222.4
+         eflint:  -5222.3999999999999999
+         qflint:  -5222.4
+         oflint:  -5222.4
+         mflint:  -5222.4
+         aflint: [-5222.40000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.61e-87]
 
 
 
@@ -268,14 +361,36 @@ Positive difference between `x` and `y`: `\mathrm{fdim}(x, y)`
 
     See also: https://en.cppreference.com/w/cpp/numeric/math/fdim
 
+
+
     An example in Python
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Copysign(0.5, 2)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Copysign('0.51', 2)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = 5.1; gui.setdps(90)
+        >>> y = 1.0
+        >>> for ctx in gui.ctxlist_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.fdim(x, y)))
+            fpm:  4.1
+            mpm:  4.1
+            dpm:  4.1
+            ipm: [4.0999999999999999999999999999999999999999999999999999999999999999999999999999999999999999992145,
+                  4.1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001964]
+            gpm:  4.1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002
+            apm: [4.10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.77e-90]
+         math53:  4.1
+          sreal:  4.1
+          dreal:  4.1
+          ereal:  4.0999999999999999999
+          qreal:  4.1
+          oreal:  4.1
+          mreal:  4.1
+         sflint:  4.1
+         dflint:  4.1
+         eflint:  4.0999999999999999999
+         qflint:  4.1
+         oflint:  4.1
+         mflint:  4.1
+         aflint: [4.10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.58e-90]
 
 

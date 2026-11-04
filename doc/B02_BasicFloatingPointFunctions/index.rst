@@ -32,7 +32,7 @@ The source code for the C\# tests in Visual Studio can be found online in the ``
 
    C06_FractionRemainder.rst
 
-   C07_MachineConstants.rst
+   C07_FractionMantissa.rst
 
    C08_MathConstants.rst
 
