@@ -68,49 +68,97 @@ Jacobi theta function `\theta_1(z, q)`
     See also Wikipedia :cite:p:`WikipediaFun170`, MathWorld :cite:p:`WolframFun170`, MathWorld :cite:p:`WolframFun170a`, NIST :cite:p:`DLMFun170`, :cite:t:`Ehrhardt2018` (3.2.13), Flint :cite:p:`FlintFun170`.
 
 
-    An example in Python
+    An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.JacobiTheta(1, 0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.JacobiTheta(2, 0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -1.5; q = 0.5; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noipm_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.jacobi_theta1(x, q)))
+            fpm:  -2.11359196642346
+            mpm:  -2.11359196642346138066904857916181790184266045594995231683646916266980968688255037484693934
+            dpm:  -2.11359196642346138066904857916181790184266045594995231683646916266980968688255037484693934
+            gpm:  -2.11359196642346138066904857916181790184266045594995231683646916266980968688255037484693934
+            apm: [-2.1135919664234613806690485791618179018426604559499523168364691626698096868825503748469393 +/- 7.76e-89]
+         math53:  -2.11359196642346
+          sreal:  -2.113592
+          dreal:  -2.11359196642346
+          ereal:  -2.1135919664234613807
+          qreal:  -2.11359196642346138066904857916182
+          oreal:  -2.1135919664234613806690485791618179018426604559499523168364691626698097
+          mreal:  -2.11359196642346138066904857916181790184266045594995231683646916266980968688255037484693934
+         sflint:  -2.113592
+         dflint:  -2.11359196642346
+         eflint:  -2.1135919664234613807
+         qflint:  -2.11359196642346138066904857916182
+         oflint:  -2.1135919664234613806690485791618179018426604559499523168364691626698097
+         mflint:  -2.11359196642346138066904857916181790184266045594995231683646916266980968688255037484693933
+         aflint: [-2.113591966423461380669048579161817901842660455949952316836469162669809686882550374846939 +/- 4.90e-88]
 
 
 
-    An example with real input for `\theta_1(z,q)`:
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; x = '3.8'; q = '0.7'
-        >>> \mathrm{d}x = dec.jtheta(1, x, q); mx = mpm.jtheta(1, x, q); gx = gmp.jtheta(1, x, q)
-        >>> fx = fpm.jtheta(1, x, q); ax = apm.jtheta(1, x, q)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  -2.876223175938890139154258006053690969477E-1
-        mpm:  -2.876223175938890139154258006053690969477e-1
-        gmp:  -2.876223175938890139154258006053690969477E-01
-        fpm:  -2.87622317593889E-01
-        apm:  -2.876223175938890139154258006053690969480e-1 (-2.326e-35%)
+        >>> from xlcalcnet import *
+        >>> x = 1.0+2j;  q = 0.5+0.2j; gui.setdps(40)
+        >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.jacobi_theta1(x, q)))
+            fpm:  (-50.780836605528, 124.989381403456)
+            mpm:  (-50.78083660552799331037816040836444156409, 124.9893814034556349615115347045906543912)
+        cmath53:  (-50.7808366055273, 124.989381403456)
 
 
 
-    An example with complex input for `\theta_1(z,q)`:
+    An example with the same complex input as above, showing only the real part of the result:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; z = '11.0 + 3.0j'; q = '0.7 + 0.1j'
-        >>> \mathrm{d}z = dec.jtheta(1, z, q); mz = mpm.jtheta(1, z, q); gz = gmp.jtheta(1, z, q)
-        >>> fz = fpm.jtheta(1, z, q); az = apm.jtheta(1, z, q)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az], aligned=True)
-        dec: 1.3257637053506044723E+10              - 2.5508683032905869130E+9j
-        mpm: 1.3257637053506044723e+10              - 2.5508683032905869130e+9j
-        gmp: 1.3257637053506044723E+10              - 2.5508683032905869130E+09j
-        fpm: 1.32576370535060E+10                   - 2.55086830329060E+09j
-        apm: 1.3257637053506044630e+10 (4.315e-14%) - 2.5508683032905869160e+9 (-2.258e-13%)j
+        >>> from xlcalcnet import *
+        >>> x = 1.0+2j;  q = 0.5+0.2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.jacobi_theta1(x, q)))))
+            fpm:  -50.780836605528
+            mpm:  -50.7808366055279933103781604083644415640894604639170041582783080926866965607619206945120548
+            dpm:  -50.7808366055279933103781604083644415640894604639170041582783080926866965607619206945120548
+            gpm:  -50.780836605527993310378160408364441564089460463917004158278308092686696560761920694512054802
+            apm: [-50.7808366055279933103781604083644415640894604639170041582783080926866965607619206945121 +/- 5.76e-86]
+        cmath53:  -50.7808366055273
+        sflintc:  -50.78085
+        dflintc:  -50.7808366055281
+        eflintc:  -50.780836605527993326
+        qflintc:  -50.7808366055279933103781604083645
+        oflintc:  -50.780836605527993310378160408364441564089460463917004158278308092686699
+        mflintc:  -50.7808366055279933103781604083644415640894604639170041582783080926866965607619206945120544
+        aflintc: [-50.7808366055279933103781604083644415640894604639170041582783080926866965607619206945121 +/- 9.10e-86]
+
+
+    An example with the same complex input as above, showing only the imaginary part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> x = 1.0+2j;  q = 0.5+0.2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.jacobi_theta1(x, q))))
+            fpm:  124.989381403456
+            mpm:  124.989381403455634961511534704590654391193462966251350143993404798085540658482487179649021
+            dpm:  124.989381403455634961511534704590654391193462966251350143993404798085540658482487179649021
+            gpm:  124.98938140345563496151153470459065439119346296625135014399340479808554065848248717964902101
+            apm: [124.9893814034556349615115347045906543911934629662513501439934047980855406584824871796490 +/- 3.23e-86]
+        cmath53:  124.989381403456
+        sflintc:  124.9894
+        dflintc:  124.989381403456
+        eflintc:  124.98938140345563497
+        qflintc:  124.989381403455634961511534704591
+        oflintc:  124.98938140345563496151153470459065439119346296625135014399340479808554
+        mflintc:  124.98938140345563496151153470459065439119346296625135014399340479808554065848248717964902
+        aflintc: [124.9893814034556349615115347045906543911934629662513501439934047980855406584824871796490 +/- 6.51e-86]
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B08_EllipticFunctions/C05_JacobiThetafunctions/D01a_JacobiTheta1Real.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B08_EllipticFunctions/C05_JacobiThetafunctions/D01b_JacobiTheta1Cplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B08_EllipticFunctions/C05_JacobiThetafunctions/D01_JacobiTheta1.cs>`__. 
+
+
 
 
 
@@ -147,48 +195,98 @@ Jacobi theta function `\theta_2(z, q)`
     See also Wikipedia :cite:p:`WikipediaFun170`, MathWorld :cite:p:`WolframFun170`, MathWorld :cite:p:`WolframFun170a`, NIST :cite:p:`DLMFun170`, :cite:t:`Ehrhardt2018` (3.2.13), Flint :cite:p:`FlintFun170`.
 
 
-    An example in Python
+    An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.JacobiTheta(1, 0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.JacobiTheta(2, 0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -1.5; q = 0.5; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noipm_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.jacobi_theta2(x, q)))
+            fpm:  0.0392511904453161
+            mpm:  0.0392511904453160541241090737285952043842825247841919631803697983896127042847128388887346914
+            dpm:  0.0392511904453160541241090737285952043842825247841919631803697983896127042847128388887346914
+            gpm:  0.039251190445316054124109073728595204384282524784191963180369798389612704284712838888734691399
+            apm: [0.03925119044531605412410907372859520438428252478419196318036979838961270428471283888873469 +/- 3.05e-90]
+         math53:  0.039251190445316
+          sreal:  0.03925122
+          dreal:  0.039251190445316
+          ereal:  0.039251190445316054144
+          qreal:  0.0392511904453160541241090737285952
+          oreal:  0.039251190445316054124109073728595204384282524784191963180369798389612703
+          mreal:  0.0392511904453160541241090737285952043842825247841919631803697983896127042847128388887346915
+         sflint:  0.03925119
+         dflint:  0.0392511904453161
+         eflint:  0.039251190445316054124
+         qflint:  0.0392511904453160541241090737285952
+         oflint:  0.039251190445316054124109073728595204384282524784191963180369798389612704
+         mflint:  0.0392511904453160541241090737285952043842825247841919631803697983896127042847128388887346925
+         aflint: [0.03925119044531605412410907372859520438428252478419196318036979838961270428471283888873469 +/- 9.18e-90]
 
 
-    An example with real input for `\theta_2(z,q)`:
+
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; x = '3.8'; q = '0.7'
-        >>> \mathrm{d}x = dec.jtheta(2, x, q); mx = mpm.jtheta(2, x, q); gx = gmp.jtheta(2, x, q)
-        >>> fx = fpm.jtheta(2, x, q); ax = apm.jtheta(2, x, q)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  -8.802379983271747955434299445752594240170E-1
-        mpm:  -8.802379983271747955434299445752594240170e-1
-        gmp:  -8.802379983271747955434299445752594240170E-01
-        fpm:  -8.80237998327175E-01
-        apm:  -8.802379983271747955434299445752594240180e-1 (-1.375e-35%)
+        >>> from xlcalcnet import *
+        >>> x = 1.0+2j;  q = 0.5+0.2j; gui.setdps(40)
+        >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.jacobi_theta2(x, q)))
+            fpm:  (-788.730030824563, -973.103865381616)
+            mpm:  (-788.730030824562882021701528729479717359, -973.1038653816155973430758747938973577377)
+        cmath53:  (-788.730030824566, -973.103865381615)
 
 
 
-    An example with complex input for `\theta_2(z,q)`:
+    An example with the same complex input as above, showing only the real part of the result:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; z = '11.0 + 3.0j'; q = '0.7 + 0.1j'
-        >>> \mathrm{d}z = dec.jtheta(2, z, q); mz = mpm.jtheta(2, z, q); gz = gmp.jtheta(2, z, q)
-        >>> fz = fpm.jtheta(2, z, q); az = apm.jtheta(2, z, q)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az], aligned=True)
-        dec: 2.6679401530814916188E+11              - 3.0867614993820689042E+11j
-        mpm: 2.6679401530814916188e+11              - 3.0867614993820689042e+11j
-        gmp: 2.6679401530814916188E+11              - 3.0867614993820689042E+11j
-        fpm: 2.66794015308149E+11                   - 3.08676149938205E+11j
-        apm: 2.6679401530814916130e+11 (4.123e-14%) - 3.0867614993820688890e+11 (-3.758e-14%)j
+        >>> from xlcalcnet import *
+        >>> x = 1.0+2j;  q = 0.5+0.2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.jacobi_theta2(x, q)))))
+            fpm:  -788.730030824563
+            mpm:  -788.730030824562882021701528729479717359057533221038303968344425731569663005345603872930402
+            dpm:  -788.730030824562882021701528729479717359057533221038303968344425731569663005345603872930402
+            gpm:  -788.73003082456288202170152872947971735905753322103830396834442573156966300534560387293040204
+            apm: [-788.7300308245628820217015287294797173590575332210383039683444257315696630053456038729304 +/- 3.73e-86]
+        cmath53:  -788.730030824566
+        sflintc:  -788.73
+        dflintc:  -788.730030824563
+        eflintc:  -788.73003082456288199
+        qflintc:  -788.73003082456288202170152872948
+        oflintc:  -788.73003082456288202170152872947971735905753322103830396834442573156965
+        mflintc:  -788.730030824562882021701528729479717359057533221038303968344425731569663005345603872930394
+        aflintc: [-788.730030824562882021701528729479717359057533221038303968344425731569663005345603872930 +/- 5.33e-85]
+
+
+    An example with the same complex input as above, showing only the imaginary part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> x = 1.0+2j;  q = 0.5+0.2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.jacobi_theta2(x, q))))
+            fpm:  -973.103865381616
+            mpm:  -973.103865381615597343075874793897357737695783789144158174270424078377380553945366633288522
+            dpm:  -973.103865381615597343075874793897357737695783789144158174270424078377380553945366633288522
+            gpm:  -973.10386538161559734307587479389735773769578378914415817427042407837738055394536663328852196
+            apm: [-973.1038653816155973430758747938973577376957837891441581742704240783773805539453666332885 +/- 5.46e-86]
+        cmath53:  -973.103865381615
+        sflintc:  -973.1039
+        dflintc:  -973.103865381616
+        eflintc:  -973.10386538161559739
+        qflintc:  -973.103865381615597343075874793897
+        oflintc:  -973.10386538161559734307587479389735773769578378914415817427042407837739
+        mflintc:  -973.103865381615597343075874793897357737695783789144158174270424078377380553945366633288514
+        aflintc: [-973.103865381615597343075874793897357737695783789144158174270424078377380553945366633289 +/- 6.22e-85]
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B08_EllipticFunctions/C05_JacobiThetafunctions/D02a_JacobiTheta2Real.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B08_EllipticFunctions/C05_JacobiThetafunctions/D02b_JacobiTheta2Cplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B08_EllipticFunctions/C05_JacobiThetafunctions/D02_JacobiTheta2.cs>`__. 
+
+
+
 
 
 
@@ -231,50 +329,101 @@ Jacobi theta function `\theta_3(z, q)`
     See also Wikipedia :cite:p:`WikipediaFun170`, MathWorld :cite:p:`WolframFun170`, MathWorld :cite:p:`WolframFun170a`, NIST :cite:p:`DLMFun170`, :cite:t:`Ehrhardt2018` (3.2.13), Flint :cite:p:`FlintFun170`.
 
 
-    An example in Python
+    An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.JacobiTheta(1, 0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.JacobiTheta(2, 0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -1.5; q = 0.5; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noipm_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.jacobi_theta3(x, q)))
+            fpm:  0.126495393762763
+            mpm:  0.126495393762762598701888433352100380638483071560362656246275916619695793139049359803626692
+            dpm:  0.126495393762762598701888433352100380638483071560362656246275916619695793139049359803626692
+            gpm:  0.126495393762762598701888433352100380638483071560362656246275916619695793139049359803626692
+            apm: [0.12649539376276259870188843335210038063848307156036265624627591661969579313904935980362669 +/- 3.48e-90]
+         math53:  0.126495393762763
+          sreal:  0.1264954
+          dreal:  0.126495393762763
+          ereal:  0.12649539376276259869
+          qreal:  0.1264953937627625987018884333521
+          oreal:  0.12649539376276259870188843335210038063848307156036265624627591661969579
+          mreal:  0.126495393762762598701888433352100380638483071560362656246275916619695793139049359803626691
+         sflint:  0.1264954
+         dflint:  0.126495393762763
+         eflint:  0.1264953937627625987
+         qflint:  0.1264953937627625987018884333521
+         oflint:  0.12649539376276259870188843335210038063848307156036265624627591661969579
+         mflint:  0.126495393762762598701888433352100380638483071560362656246275916619695793139049359803626691
+         aflint: [0.1264953937627625987018884333521003806384830715603626562462759166196957931390493598036267 +/- 1.82e-89]
 
 
 
-    An example with real input for `\theta_3(z,q)`:
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; x = '3.8'; q = '0.7'
-        >>> \mathrm{d}x = dec.jtheta(3, x, q); mx = mpm.jtheta(3, x, q); gx = gmp.jtheta(3, x, q)
-        >>> fx = fpm.jtheta(3, x, q); ax = apm.jtheta(3, x, q)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  8.802381825612654435491537366191521291923E-1
-        mpm:  8.802381825612654435491537366191521291923e-1
-        gmp:  8.802381825612654435491537366191521291923E-01
-        fpm:  8.80238182561266E-01
-        apm:  8.802381825612654435491537366191521291940e-1 (1.375e-35%)
+        >>> from xlcalcnet import *
+        >>> x = 1.0+2j;  q = 0.5+0.2j; gui.setdps(40)
+        >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.jacobi_theta3(x, q)))
+            fpm:  (-788.853981893901, -973.061264832878)
+            mpm:  (-788.8539818939012432600295903235863318626, -973.0612648328778632847669709840011675127)
+        cmath53:  (-788.853981893904, -973.061264832879)
 
 
 
-
-    An example with complex input for `\theta_3(z,q)`:
+    An example with the same complex input as above, showing only the real part of the result:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; z = '11.0 + 3.0j'; q = '0.7 + 0.1j'
-        >>> \mathrm{d}z = dec.jtheta(3, z, q); mz = mpm.jtheta(3, z, q); gz = gmp.jtheta(3, z, q)
-        >>> fz = fpm.jtheta(3, z, q); az = apm.jtheta(3, z, q)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az], aligned=True)
-        dec: -2.6679401441538351941E+11               + 3.0867614546580330581E+11j
-        mpm: -2.6679401441538351941e+11               + 3.0867614546580330581e+11j
-        gmp: -2.6679401441538351941E+11               + 3.0867614546580330581E+11j
-        fpm: -2.66794014415383E+11                    + 3.08676145465801E+11j
-        apm: -2.6679401441538351880e+11 (-4.086e-14%) + 3.0867614546580330430e+11 (3.758e-14%)j
+        >>> from xlcalcnet import *
+        >>> x = 1.0+2j;  q = 0.5+0.2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.jacobi_theta3(x, q)))))
+            fpm:  -788.853981893901
+            mpm:  -788.853981893901243260029590323586331862572558924085902768235801520210016453593987078971379
+            dpm:  -788.853981893901243260029590323586331862572558924085902768235801520210016453593987078971379
+            gpm:  -788.85398189390124326002959032358633186257255892408590276823580152021001645359398707897137906
+            apm: [-788.8539818939012432600295903235863318625725589240859027682358015202100164535939870789714 +/- 6.04e-86]
+        cmath53:  -788.853981893904
+        sflintc:  -788.8539
+        dflintc:  -788.853981893901
+        eflintc:  -788.85398189390124324
+        qflintc:  -788.853981893901243260029590323586
+        oflintc:  -788.85398189390124326002959032358633186257255892408590276823580152021001
+        mflintc:  -788.853981893901243260029590323586331862572558924085902768235801520210016453593987078971371
+        aflintc: [-788.853981893901243260029590323586331862572558924085902768235801520210016453593987078971 +/- 5.11e-85]
+
+
+    An example with the same complex input as above, showing only the imaginary part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> x = 1.0+2j;  q = 0.5+0.2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.jacobi_theta3(x, q))))
+            fpm:  -973.061264832878
+            mpm:  -973.061264832877863284766970984001167512672246578896662701689828132385101085389051573377376
+            dpm:  -973.061264832877863284766970984001167512672246578896662701689828132385101085389051573377376
+            gpm:  -973.06126483287786328476697098400116751267224657889666270168982813238510108538905157337737601
+            apm: [-973.0612648328778632847669709840011675126722465788966627016898281323851010853890515733774 +/- 6.32e-86]
+        cmath53:  -973.061264832879
+        sflintc:  -973.0613
+        dflintc:  -973.061264832878
+        eflintc:  -973.06126483287786333
+        qflintc:  -973.061264832877863284766970984001
+        oflintc:  -973.06126483287786328476697098400116751267224657889666270168982813238511
+        mflintc:  -973.061264832877863284766970984001167512672246578896662701689828132385101085389051573377368
+        aflintc: [-973.061264832877863284766970984001167512672246578896662701689828132385101085389051573377 +/- 5.05e-85]
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B08_EllipticFunctions/C05_JacobiThetafunctions/D03a_JacobiTheta3Real.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B08_EllipticFunctions/C05_JacobiThetafunctions/D03b_JacobiTheta3Cplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B08_EllipticFunctions/C05_JacobiThetafunctions/D03_JacobiTheta3.cs>`__. 
+
+
+
+
+
+
 
 
 
@@ -313,49 +462,99 @@ Jacobi theta function `\theta_4(z, q)`
     See also Wikipedia :cite:p:`WikipediaFun170`, MathWorld :cite:p:`WolframFun170`, MathWorld :cite:p:`WolframFun170a`, NIST :cite:p:`DLMFun170`, :cite:t:`Ehrhardt2018` (3.2.13), Flint :cite:p:`FlintFun170`.
 
 
-    An example in Python
+    An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.JacobiTheta(1, 0.8, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.JacobiTheta(2, 0.8, '0.51')
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> x = -1.5; q = 0.5; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noipm_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.jacobi_theta4(x, q)))
+            fpm:  2.11359868269649
+            mpm:  2.11359868269648781628303165240842491940069427464811703149818811558563778179460529781768584
+            dpm:  2.11359868269648781628303165240842491940069427464811703149818811558563778179460529781768584
+            gpm:  2.1135986826964878162830316524084249194006942746481170314981881155856377817946052978176858401
+            apm: [2.1135986826964878162830316524084249194006942746481170314981881155856377817946052978176858 +/- 7.57e-89]
+         math53:  2.11359868269649
+          sreal:  2.113599
+          dreal:  2.11359868269649
+          ereal:  2.1135986826964878163
+          qreal:  2.11359868269648781628303165240842
+          oreal:  2.1135986826964878162830316524084249194006942746481170314981881155856378
+          mreal:  2.11359868269648781628303165240842491940069427464811703149818811558563778179460529781768584
+         sflint:  2.113599
+         dflint:  2.11359868269649
+         eflint:  2.1135986826964878163
+         qflint:  2.11359868269648781628303165240842
+         oflint:  2.1135986826964878162830316524084249194006942746481170314981881155856378
+         mflint:  2.11359868269648781628303165240842491940069427464811703149818811558563778179460529781768583
+         aflint: [2.113598682696487816283031652408424919400694274648117031498188115585637781794605297817686 +/- 3.37e-88]
 
 
 
-    An example with real input for `\theta_4(z,q)`:
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; x = '3.8'; q = '0.7'
-        >>> \mathrm{d}x = dec.jtheta(4, x, q); mx = mpm.jtheta(4, x, q); gx = gmp.jtheta(4, x, q)
-        >>> fx = fpm.jtheta(4, x, q); ax = apm.jtheta(4, x, q)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  2.876275982849924933190081281315277893390E-1
-        mpm:  2.876275982849924933190081281315277893390e-1
-        gmp:  2.876275982849924933190081281315277893390E-01
-        fpm:  2.87627598284992E-01
-        apm:  2.876275982849924933190081281315277893400e-1 (2.587e-35%)
+        >>> from xlcalcnet import *
+        >>> x = 1.0+2j;  q = 0.5+0.2j; gui.setdps(40)
+        >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.jacobi_theta4(x, q)))
+            fpm:  (97.0420581423974, -162.552773270404)
+            mpm:  (97.04205814239744070936237059955972078898, -162.5527732704038409081633683852591175902)
+        cmath53:  (97.0420581423972, -162.552773270404)
 
 
 
-    An example with complex input for `\theta_4(z,q)`:
+    An example with the same complex input as above, showing only the real part of the result:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; z = '11.0 + 3.0j'; q = '0.7 + 0.1j'
-        >>> \mathrm{d}z = dec.jtheta(4, z, q); mz = mpm.jtheta(4, z, q); gz = gmp.jtheta(4, z, q)
-        >>> fz = fpm.jtheta(4, z, q); az = apm.jtheta(4, z, q)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az], aligned=True)
-        dec: -1.3378357586306498825E+10               + 2.5798286002171674621E+9j
-        mpm: -1.3378357586306498825e+10               + 2.5798286002171674621e+9j
-        gmp: -1.3378357586306498825E+10               + 2.5798286002171674621E+09j
-        fpm: -1.33783575863064E+10                    + 2.57982860021718E+09j
-        apm: -1.3378357586306498730e+10 (-4.313e-14%) + 2.5798286002171674650e+9 (2.252e-13%)j
+        >>> from xlcalcnet import *
+        >>> x = 1.0+2j;  q = 0.5+0.2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.jacobi_theta4(x, q)))))
+            fpm:  97.0420581423974
+            mpm:  97.0420581423974407093623705995597207889784394122898731971128570177755528004071376783754542
+            dpm:  97.0420581423974407093623705995597207889784394122898731971128570177755528004071376783754542
+            gpm:  97.042058142397440709362370599559720788978439412289873197112857017775552800407137678375454201
+            apm: [97.0420581423974407093623705995597207889784394122898731971128570177755528004071376783755 +/- 6.04e-86]
+        cmath53:  97.0420581423972
+        sflintc:  97.04208
+        dflintc:  97.0420581423975
+        eflintc:  97.042058142397440726
+        qflintc:  97.0420581423974407093623705995598
+        oflintc:  97.042058142397440709362370599559720788978439412289873197112857017775555
+        mflintc:  97.0420581423974407093623705995597207889784394122898731971128570177755528004071376783754532
+        aflintc: [97.042058142397440709362370599559720788978439412289873197112857017775552800407137678375 +/- 5.07e-85]
+
+
+    An example with the same complex input as above, showing only the imaginary part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> x = 1.0+2j;  q = 0.5+0.2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.jacobi_theta4(x, q))))
+            fpm:  -162.552773270404
+            mpm:  -162.552773270403840908163368385259117590182379208164746903702433461088193073238559000409487
+            dpm:  -162.552773270403840908163368385259117590182379208164746903702433461088193073238559000409487
+            gpm:  -162.552773270403840908163368385259117590182379208164746903702433461088193073238559000409487
+            apm: [-162.5527732704038409081633683852591175901823792081647469037024334610881930732385590004095 +/- 2.86e-86]
+        cmath53:  -162.552773270404
+        sflintc:  -162.5528
+        dflintc:  -162.552773270404
+        eflintc:  -162.55277327040384092
+        qflintc:  -162.552773270403840908163368385259
+        oflintc:  -162.55277327040384090816336838525911759018237920816474690370243346108819
+        mflintc:  -162.552773270403840908163368385259117590182379208164746903702433461088193073238559000409485
+        aflintc: [-162.5527732704038409081633683852591175901823792081647469037024334610881930732385590004095 +/- 6.86e-86]
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B08_EllipticFunctions/C05_JacobiThetafunctions/D04a_JacobiTheta4Real.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B08_EllipticFunctions/C05_JacobiThetafunctions/D04b_JacobiTheta4Cplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B08_EllipticFunctions/C05_JacobiThetafunctions/D04_JacobiTheta4.cs>`__. 
+
+
+
+
 
 
 

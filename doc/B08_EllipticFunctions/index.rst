@@ -75,10 +75,8 @@ The source code for the C\# tests in Visual Studio using complex modules can be 
 
    C05_JacobiThetafunctions.rst
 
-   C06_WeierstrassConversions.rst
+   C06_WeierstrassTau.rst
 
-   C07_WeierstrassTau.rst
-
-   C08_ModularFormsTau.rst
+   C07_ModularFormsTau.rst
 
 
