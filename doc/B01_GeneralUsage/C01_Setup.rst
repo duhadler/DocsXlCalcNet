@@ -91,7 +91,7 @@ XlCalcNet uses the following 3 folders:
 
 
 .. important::
-    It is crucial for the correct functioning of XlCalcNetThat that the ``DataXlCalcNet`` folder is located in the Documents folder. The ``DataXlCalcNet`` folder has already been downloaded during the installation of XlCalcNet; it is located in the installation folder (in our example ``C:\Python313\Lib\site-packages\xlcalcnet``). **The user needs to copy it manually from the installation folder into the Documents folder**.
+    It is crucial for the correct functioning of XlCalcNet that the ``DataXlCalcNet`` folder is located in the Documents folder. The ``DataXlCalcNet`` folder has already been downloaded during the installation of XlCalcNet; it is located in the installation folder (in our example ``C:\Python313\Lib\site-packages\xlcalcnet``). **The user needs to copy it manually from the installation folder into the Documents folder**.
 
 
 

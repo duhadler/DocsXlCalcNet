@@ -42,9 +42,9 @@ Lerch's transcendent, `\Phi(x,s,a)`
 
     The Amath implementation requires `x \le 1, s \ge -1, a \ge 0`. We have also `\Phi(x,0,a) = 1/(1-x)` and `\Phi(x,s,0) = \text{Li}_s(x)`.
 
-    
 
-See also: https://fredrikj.net/blog/2022/02/computing-the-lerch-transcendent/
+
+    See also: https://fredrikj.net/blog/2022/02/computing-the-lerch-transcendent/
 
 
 
@@ -111,98 +111,94 @@ See also: https://fredrikj.net/blog/2022/02/computing-the-lerch-transcendent/
 
 
 
-    An example in Python
+    An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.LerchPhi(2,5, 0.5, 3)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.LerchPhi('5.1', 0.5, 3)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> z = -0.8; s = -0.5; a = 0.3; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.lerch_phi(z, s, a)))
+            fpm:  0.123808328418779
+            mpm:  0.123808328418778929202068596100771367142889320531989172565355231698781813985907582795703294
+            dpm:  0.123808328418778929202068596100771367142889320531989172565355231698781813985907582795703294
+            gpm:  0.12380832841877892920206859610077136714288932053198917256535523169878181398590758279570329399
+            apm: [0.1238083284187789292020685961007713671428893205319891725653552316987818139859075827957033 +/- 1.52e-89]
+         math53:  0.123808328418779
+         sflint:  0.1238083
+         dflint:  0.123808328418779
+         eflint:  0.12380832841877892921
+         qflint:  0.123808328418778929202068596100771
+         oflint:  0.12380832841877892920206859610077136714288932053198917256535523169878181
+         mflint:  0.123808328418778929202068596100771367142889320531989172565355231698781813985907582795703294
+         aflint: [0.1238083284187789292020685961007713671428893205319891725653552316987818139859075827957033 +/- 1.36e-89]
 
 
 
-
-
-    An example with real input, `x=1` (same result as Hurwitz zeta):
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; x = '1.0'; s = '2.5'; a = '3.0'
-        >>> \mathrm{d}x = dec.lerchphi(x, s, a); mx = mpm.lerchphi(x, s, a); gx = gmp.lerchphi(x, s, a)
-        >>> fx = fpm.lerchphi(x, s, a); ax = apm.lerchphi(x, s, a)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax], aligned=True)
-        dec: 1.647105619542802986565586028223998768018E-1
-        mpm: 1.647105619542802986565586028223998768018e-1
-        gmp: 1.647105619542802986565586028223998768018E-01
-        fpm: 1.64710561954280E-01
-        apm: 1.647105619542802986565586028223998768018e-1 (1.742e-39%)
-
-
-    An example with real input, `x<1, s \geq 0, a>0` (real result for real `x, s, a`):
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; x = '-11.5'; s = '2.5'; a = '7'
-        >>> \mathrm{d}x = dec.lerchphi(x, s, a); mx = mpm.lerchphi(x, s, a); gx = gmp.lerchphi(x, s, a)
-        >>> fx = fpm.lerchphi(x, s, a); ax = apm.lerchphi(x, s, a)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax], aligned=True)
-        dec: 8.683791984836949848109532607614130875396E-4
-        mpm: 8.683791984836949848109532607614130875396e-4
-        gmp: 8.683791984836949848109532607614130875396E-04
-        fpm: 8.68379198483695E-04
-        apm: 8.683791984836949848109532607614130875396e-4 (4.518e-39%)
+        >>> from xlcalcnet import *
+        >>> z = -5.1+2j;  s = 2.7+2j; a = 1.3+2j;  gui.setdps(40)
+        >>> for ctx in [fpm, mpm]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.lerch_phi(z, s, a)))
+            fpm:  (-0.0627085773238789, 0.285173796041804)
+            mpm:  (-0.06270857732387887100910083293243429602788, 0.2851737960418038082249546738603097815877)
 
 
-    An example with real input, complex result because `x>1` :
+
+    An example with the same complex input as above, showing only the real part of the result:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; z = '11.5'; s = '2.5'; a = '7'
-        >>> \mathrm{d}z = dec.lerchphi(z, s, a); mz = mpm.lerchphi(z, s, a); gz = gmp.lerchphi(z, s, a)
-        >>> fz = fpm.lerchphi(z, s, a); az = apm.lerchphi(z, s, a)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az], aligned=True)
-        dec: -1.1467900536878642113E-3               - 3.3910941716939727021E-7j
-        mpm: -1.1467900536878642113e-3               - 3.3910941716939727021e-7j
-        gmp: -1.1467900536878642113E-03              - 3.3910941716939727021E-07j
-        fpm: -1.14679005368786E-03                   - 3.39109417169397E-07j
-        apm: -1.1467900536878642113e-3 (-3.607e-19%) - 3.3910941716939727021e-7 (-2.263e-18%)j
+        >>> from xlcalcnet import *
+        >>> z = -5.1+2j;  s = 2.7+2j; a = 1.3+2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.lerch_phi(z, s, a))))
+            fpm:  -0.0627085773238789
+            mpm:  -0.0627085773238788710091008329324342960278883509709070343376000077605998033488008546398116272
+            dpm:  -0.0627085773238788710091008329324342960278883509709070343376000077605998033488008546398116272
+            gpm:  -0.062708577323878871009100832932434296027888350970907034337600007760599803348800854639811627196
+            apm: [-0.0627085773238788710091008329324342960278883509709070343376000077605998033488008546398116 +/- 9.36e-89]
+        cmath53:  NaN
+        sflintc:  -0.06270856
+        dflintc:  -0.0627085773238788
+        eflintc:  -0.062708577323878870987
+        qflintc:  -0.0627085773238788710091008329324342
+        oflintc:  -0.062708577323878871009100832932434296027888350970907034337600007760599801
+        mflintc:  -0.0627085773238788710091008329324342960278883509709070343376000077605998033488008546398116277
+        aflintc: [-0.062708577323878871009100832932434296027888350970907034337600007760599803348800854639812 +/- 5.97e-88]
 
 
-    An example with complex input for `z` and `s`, but integer `a`:
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; z = '11.0 + 2.0j'; s = '12.0 + 3.0j'; a = '7'
-        >>> \mathrm{d}z = dec.lerchphi(z, s, a); mz = mpm.lerchphi(z, s, a); gz = gmp.lerchphi(z, s, a)
-        >>> fz = fpm.lerchphi(z, s, a); az = apm.lerchphi(z, s, a)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az], aligned=True)
-        dec: -1.3719753001137308013E-10              - 4.4570178228236195866E-12j
-        mpm: -1.3719753001137308013e-10              - 4.4570178228236195866e-12j
-        gmp: -1.3719753001137308013E-10              - 4.4570178228236195866E-12j
-        fpm: -1.37197530011373E-10                   - 4.45701782282362E-12j
-        apm: -1.3719752964740320417e-10 (-0.002002%) - 4.4570185825924147934e-12 (-0.06162%)j
-
-
-
-
-    Evaluation works for complex arguments for  `z`, `s`, `a`, and `|z| \ge 1`, currently only for ``mpm``:
+    An example with the same complex input as above, showing only the imaginary part of the result:
 
     .. code-block:: pycon
 
-        >>> mpm.lerchphi(1+2j, 3-j, 4+2j)
-        (0.002025009957009908600539469 + 0.003327897536813558807438089j)
-        >>> mpm.lerchphi(-2,2,-2.5)
-        -12.28676272353094275265944
-        >>> mpm.lerchphi(10,10,10)
-        (-4.462130727102185701817349e-11 - 1.575172198981096218823481e-12j)
-        >>> mpm.lerchphi(10,10,-10.5)
-        (112658784011940.5605789002 - 498113185.5756221777743631j)
+        >>> from xlcalcnet import *
+        >>> z = -5.1+2j;  s = 2.7+2j; a = 1.3+2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.lerch_phi(z, s, a))))
+            fpm:  0.285173796041804
+            mpm:  0.285173796041803808224954673860309781587704300529277183606049018295125045429867544686889185
+            dpm:  0.285173796041803808224954673860309781587704300529277183606049018295125045429867544686889185
+            gpm:  0.285173796041803808224954673860309781587704300529277183606049018295125045429867544686889185
+            apm: [0.2851737960418038082249546738603097815877043005292771836060490182951250454298675446868892 +/- 8.01e-89]
+        cmath53:  NaN
+        sflintc:  0.2851738
+        dflintc:  0.285173796041804
+        eflintc:  0.28517379604180380823
+        qflintc:  0.28517379604180380822495467386031
+        oflintc:  0.28517379604180380822495467386030978158770430052927718360604901829512504
+        mflintc:  0.285173796041803808224954673860309781587704300529277183606049018295125045429867544686889191
+        aflintc: [0.285173796041803808224954673860309781587704300529277183606049018295125045429867544686889 +/- 4.18e-88]
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C01_LerchPhi/D01a_LerchPhiReal.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C01_LerchPhi/D01b_LerchPhiCplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B09_LerchPhi/C01_LerchPhi/D01_LerchPhi.cs>`__. 
+
+
+
+
+
+
 
 
 |newpage|
@@ -236,21 +232,68 @@ Lerch's zeta
 
 
 
-    An example with complex input for `\lambda_1` and `s`, but integer `\alpha`:
+
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; lambda1 = '1.0 + 0.5j'; s = '1.0 + 0.5j'; alpha = '1'
-        >>> \mathrm{d}z = dec.lerch_zeta(lambda1, alpha, s); mz = mpm.lerch_zeta(lambda1, alpha, s)
-        >>> gz = gmp.lerch_zeta(lambda1, alpha, s)
-        >>> fz = fpm.lerch_zeta(lambda1, alpha, s); az = apm.lerch_zeta(lambda1, alpha, s)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az], aligned=True)
-        dec: 1.0208691797881172335E+0              - 7.6777982868597598415E-3j
-        mpm: 1.0208691797881172335e+0              - 7.6777982868597598415e-3j
-        gmp: 1.0208691797881172335E+00             - 7.6777982868597598415E-03j
-        fpm: 1.02086917978812E+00                  - 7.67779828685976E-03j
-        apm: 1.0208691797881172333e+0 (5.128e-17%) - 7.6777982868597598352e-3 (-4.862e-16%)j
+        >>> from xlcalcnet import *
+        >>> lambda1 = -5.1+2j;  alpha = 2.7+2j; s = 1.3+2j;  gui.setdps(40)
+        >>> for ctx in [fpm, mpm]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.lerch_zeta(lambda1, alpha, s)))
+            fpm:  (-0.735918248768655, 0.0821281539931932)
+            mpm:  (-0.7359182487686553128664233111902630210224, 0.08212815399319318865207981672221221256608)
+
+
+
+    An example with the same complex input as above, showing only the real part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> lambda1 = -5.1+2j;  alpha = 2.7+2j; s = 1.3+2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.lerch_zeta(lambda1, alpha, s))))
+            fpm:  -0.735918248768655
+            mpm:  -0.735918248768655312866423311190263021022352264694369727202201322123643908010177136691707872
+            dpm:  -0.735918248768655312866423311190263021022352264694369727202201322123643908010177136691707872
+            gpm:  -0.73591824876865531286642331119026302102235226469436972720220132212364390801017713669170787203
+            apm: [-0.735918248768655312866423311190263021022352264694369727202201322123643908010177136691707872 +/- 8.39e-91]
+        cmath53:  NaN
+        sflintc:  -0.7359183
+        dflintc:  -0.735918248768655
+        eflintc:  -0.7359182487686553129
+        qflintc:  -0.735918248768655312866423311190263
+        oflintc:  -0.7359182487686553128664233111902630210223522646943697272022013221236439
+        mflintc:  -0.735918248768655312866423311190263021022352264694369727202201322123643908010177136691707872
+        aflintc: [-0.73591824876865531286642331119026302102235226469436972720220132212364390801017713669170787 +/- 2.64e-90]
+
+
+    An example with the same complex input as above, showing only the imaginary part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> lambda1 = -5.1+2j;  alpha = 2.7+2j; s = 1.3+2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.lerch_zeta(lambda1, alpha, s))))
+            fpm:  0.0821281539931932
+            mpm:  0.0821281539931931886520798167222122125660847272863618298052586518730029623613629007457575332
+            dpm:  0.0821281539931931886520798167222122125660847272863618298052586518730029623613629007457575332
+            gpm:  0.082128153993193188652079816722212212566084727286361829805258651873002962361362900745757533207
+            apm: [0.082128153993193188652079816722212212566084727286361829805258651873002962361362900745757533 +/- 4.95e-91]
+        cmath53:  NaN
+        sflintc:  0.08212814
+        dflintc:  0.0821281539931932
+        eflintc:  0.082128153993193188639
+        qflintc:  0.0821281539931931886520798167222122
+        oflintc:  0.082128153993193188652079816722212212566084727286361829805258651873002964
+        mflintc:  0.082128153993193188652079816722212212566084727286361829805258651873002962361362900745757533
+        aflintc: [0.082128153993193188652079816722212212566084727286361829805258651873002962361362900745757533 +/- 5.28e-91]
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C01_LerchPhi/D02b_LerchZetaCplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B09_LerchPhi/C01_LerchPhi/D02_LerchZeta.cs>`__. 
+
+
 
 
 

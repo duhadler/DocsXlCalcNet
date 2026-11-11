@@ -111,49 +111,89 @@ Hurwitz zeta function, `\zeta(s,a)`
 
 
 
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import math53
-        >>> math53.HurwitzZeta(2,5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.HurwitzZeta(2,'51')
-        ereal('5.3518479027559984754E-1')
-
-
-
-
     An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; s = '10'; a = '1.5'
-        >>> \mathrm{d}x = dec.hurwitz(s, a); mx = mpm.hurwitz(s, a); gx = gmp.hurwitz(s, a)
-        >>> fx = fpm.hurwitz(s, a); ax = apm.hurwitz(s, a)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  1.745035575790129990031595502635439715798E-2
-        mpm:  1.745035575790129990031595502635439715798e-2
-        gmp:  1.745035575790129990031595502635439715798E-02
-        fpm:  1.74503557579013E-02
-        apm:  1.745035575790129990031595502635439715798e-2 (1.028e-39%)
+        >>> from xlcalcnet import *
+        >>> s = 3; a = 0.3; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.hurwitz_zeta(s, a)))
+            fpm:  37.636268294363
+            mpm:  37.6362682943630153333846652574957033323512012672705829910377515404933650440486247990956452
+            dpm:  37.6362682943630153333846652574957033323512012672705829910377515404933650440486247990956452
+            gpm:  37.636268294363015333384665257495703332351201267270582991037751540493365044048624799095645201
+            apm: ([37.6362682943630153333846652574957033323512012672705829910377515404933650440486247990956452 +/- 6.65e-89], 0)
+         math53:  37.636268294363
+         sflint:  37.63626
+         dflint:  37.636268294363
+         eflint:  37.636268294363015328
+         qflint:  37.6362682943630153333846652574957
+         oflint:  37.636268294363015333384665257495703332351201267270582991037751540493365
+         mflint:  37.6362682943630153333846652574957033323512012672705829910377515404933650440486247990956451
+         aflint: [37.6362682943630153333846652574957033323512012672705829910377515404933650440486247990956451 +/- 5.61e-89]
 
 
-    An example with complex input:
+
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; s = '10 + 5j'; a = '5.0 + 3j'
-        >>> \mathrm{d}z = dec.hurwitz(s, a); mz = mpm.hurwitz(s, a); gz = gmp.hurwitz(s, a)
-        >>> fz = fpm.hurwitz(s, a); az = apm.hurwitz(s, a)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az],  aligned=True)
-        dec: -2.9834537360028672178E-8               - 3.9761878565611985695E-7j
-        mpm: -2.9834537360028672178e-8               - 3.9761878565611985695e-7j
-        gmp: -2.9834537360028672178E-08              - 3.9761878565611985695E-07j
-        fpm: -2.98345373600287E-08                   - 3.97618785656120E-07j
-        apm: -2.9834537360028672177e-8 (-8.461e-20%) - 3.9761878565611985695e-7 (-5.079e-20%)j
+        >>> from xlcalcnet import *
+        >>> s = 3; z = -5.1+2j;  gui.setdps(50)
+        >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.hurwitz_zeta(s, z)))
+            fpm:  (0.0111748869624824, 0.00921098444064709)
+            mpm:  (0.011174886962482443982994786732550832143817085284742, 0.0092109844406470893156030729594993856027169293681661)
+        cmath53:  (0.0111748869624825, 0.00921098444064707)
+
+
+
+    An example with the same complex input as above, showing only the real part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> s = 3; z = -5.1+2j;  gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.hurwitz_zeta(s, z))))
+            fpm:  0.0111748869624824
+            mpm:  0.0111748869624824439829947867325508321438170852847421677355709908733292318429159366335844799
+            dpm:  0.0111748869624824439829947867325508321438170852847421677355709908733292318429159366335844799
+            gpm:  0.0111748869624824439829947867325508321438170852847421677355709908733292318429159366335844799
+            apm: [0.011174886962482443982994786732550832143817085284742167735570990873329231842915936633584480 +/- 7.94e-91]
+        cmath53:  0.0111748869624825
+        sflintc:  0.01117489
+        dflintc:  0.0111748869624824
+        eflintc:  0.011174886962482443983
+        qflintc:  0.0111748869624824439829947867325508
+        oflintc:  0.011174886962482443982994786732550832143817085284742167735570990873329232
+        mflintc:  0.0111748869624824439829947867325508321438170852847421677355709908733292318429159366335844799
+        aflintc: [0.011174886962482443982994786732550832143817085284742167735570990873329231842915936633584480 +/- 6.56e-91]
+
+
+    An example with the same complex input as above, showing only the imaginary part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> s = 3; z = -5.1+2j;  gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.hurwitz_zeta(s, z))))
+            fpm:  0.00921098444064709
+            mpm:  0.00921098444064708931560307295949938560271692936816603015932873274623325066914898488979236219
+            dpm:  0.00921098444064708931560307295949938560271692936816603015932873274623325066914898488979236219
+            gpm:  0.0092109844406470893156030729594993856027169293681660301593287327462332506691489848897923621897
+            apm: [0.009210984440647089315603072959499385602716929368166030159328732746233250669148984889792362 +/- 6.87e-91]
+        cmath53:  0.00921098444064707
+        sflintc:  0.009210985
+        dflintc:  0.00921098444064709
+        eflintc:  0.0092109844406470893158
+        qflintc:  0.00921098444064708931560307295949939
+        oflintc:  0.0092109844406470893156030729594993856027169293681660301593287327462332507
+        mflintc:  0.0092109844406470893156030729594993856027169293681660301593287327462332506691489848897923622
+        aflintc: [0.009210984440647089315603072959499385602716929368166030159328732746233250669148984889792362 +/- 5.89e-91]
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D01a_HurwitzZetaReal.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D01b_HurwitzZetaCplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B09_LerchPhi/C04_HurwitzZeta/D01_HurwitzZeta.cs>`__. 
 
 
 
@@ -176,51 +216,93 @@ Generalized harmonic number function, `H_x^{(r)}`
 
 
 
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import math53
-        >>> math53.Harmonic2(5, 10.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Harmonic2(5, '10.1')
-        ereal('5.3518479027559984754E-1')
-
-
-
-
 
 
     An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; x = '10'; r = '1.5'
-        >>> \mathrm{d}x = dec.harmonic2(x, r); mx = mpm.harmonic2(x, r); gx = gmp.harmonic2(x, r)
-        >>> fx = fpm.harmonic2(x, r); ax = apm.harmonic2(x, r)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  1.995336493345601714521693592714339476261E+0
-        mpm:  1.995336493345601714521693592714339476261e+0
-        gmp:  1.995336493345601714521693592714339476261E+00
-        fpm:  1.99533649334560E+00
-        apm:  1.995336493345601714521693592714339476261e+0 (1.668e-38%)
+        >>> from xlcalcnet import *
+        >>> z = 3; r = 4.3; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.harmonic2(z, r)))
+            fpm:  1.05964507222072
+            mpm:  1.05964507222071983579913543278551384074306940162974178313345689098004276049712108304330178
+            dpm:  1.05964507222071983579913543278551384074306940162974178313345689098004276049712108304330178
+            gpm:  1.0596450722207198357991354327855138407430694016297417831334568909800427604971210830433017801
+            apm: ([1.05964507222071983579913543278551384074306940162974178313345689098004276049712108304330178 +/- 3.57e-90], 0)
+         math53:  1.05964507222072
+         sflint:  1.059645
+         dflint:  1.05964507222072
+         eflint:  1.0596450722207198358
+         qflint:  1.05964507222071983579913543278551
+         oflint:  1.0596450722207198357991354327855138407430694016297417831334568909800428
+         mflint:  1.05964507222071983579913543278551384074306940162974178313345689098004276049712108304330178
+         aflint: [1.05964507222071983579913543278551384074306940162974178313345689098004276049712108304330178 +/- 3.85e-90]
 
 
-    An example with complex input:
+
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; z = '10 + 5j'; r = '5.0 + 3j'
-        >>> \mathrm{d}z = dec.harmonic2(z, r); mz = mpm.harmonic2(z, r); gz = gmp.harmonic2(z, r)
-        >>> fz = fpm.harmonic2(z, r); az = apm.harmonic2(z, r)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az],  aligned=True)
-        dec: 9.8046716104400925422E-1              - 2.5426375920749034566E-2j
-        mpm: 9.8046716104400925422e-1              - 2.5426375920749034566e-2j
-        gmp: 9.8046716104400925422E-01             - 2.5426375920749034566E-02j
-        fpm: 9.80467161044009E-01                  - 2.54263759207490E-02j
-        apm: 9.8046716104400925422e-1 (8.639e-20%) - 2.5426375920749034566e-2 (-1.041e-19%)j
+        >>> from xlcalcnet import *
+        >>> s = 3; z = -5.1+2j;  gui.setdps(50)
+        >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.harmonic2(s, z)))
+            fpm:  (-151.710872341689, -253.435525342544)
+            mpm:  (-151.7108723416894252214187665145810606372224252752, -253.43552534254381371474190372572360694604058759049)
+        cmath53:  (-151.710872341671, -253.435525342526)
+
+
+
+    An example with the same complex input as above, showing only the real part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> s = 3; z = -5.1+2j;  gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.harmonic2(s, z))))
+            fpm:  -151.710872341689
+            mpm:  -151.710872341689425221418766514581060637222425275200569604163721964559323390870191608327818
+            dpm:  -151.710872341689425221418766514581060637222425275200569604163721964559323390870191608327818
+            gpm:  -151.71087234168942522141876651458106063722242527520056960416372196455932339087019160832781799
+            apm: [-151.7108723416894252214187665145810606372224252752005696041637219645593233908701916 +/- 1.96e-80]
+        cmath53:  -151.710872341671
+        sflintc:  -151.7109
+        dflintc:  -151.710872341689
+        eflintc:  -151.7108723416894252
+        qflintc:  -151.710872341689425221418766514581
+        oflintc:  -151.71087234168942522141876651458106063722242527520056960416372196455932
+        mflintc:  -151.710872341689425221418766514581060637222425275200569604163721964559323390870191608327705
+        aflintc: [-151.7108723416894252214187665145810606372224252752005696041637219645593233908701916 +/- 1.74e-80]
+
+
+    An example with the same complex input as above, showing only the imaginary part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> s = 3; z = -5.1+2j;  gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.harmonic2(s, z))))
+            fpm:  -253.435525342544
+            mpm:  -253.435525342543813714741903725723606946040587590490596981419066634364019427577397349486819
+            dpm:  -253.435525342543813714741903725723606946040587590490596981419066634364019427577397349486819
+            gpm:  -253.435525342543813714741903725723606946040587590490596981419066634364019427577397349486819
+            apm: [-253.4355253425438137147419037257236069460405875904905969814190666343640194275773973 +/- 8.39e-80]
+        cmath53:  -253.435525342526
+        sflintc:  -253.4355
+        dflintc:  -253.435525342544
+        eflintc:  -253.4355253425438137
+        qflintc:  -253.435525342543813714741903725724
+        oflintc:  -253.43552534254381371474190372572360694604058759049059698141906663436402
+        mflintc:  -253.435525342543813714741903725723606946040587590490596981419066634364019427577397349485136
+        aflintc: [-253.4355253425438137147419037257236069460405875904905969814190666343640194275773973 +/- 7.71e-80]
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D02a_Harmonic2Real.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D02b_Harmonic2Cplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B09_LerchPhi/C04_HurwitzZeta/D02_Harmonic2.cs>`__. 
+
+
 
 
 
@@ -247,35 +329,39 @@ Bernoulli numbers, `B_n`
 
 
 
-
-
-    An example in Python
+    An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.Bernoulli(8)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Bernoulli(14)
-        ereal('5.3518479027559984754E-1')
+        >>> from xlcalcnet import *
+        >>> n = 16; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noipm_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.bernoulli(n)))
+            fpm:  -7.0921568627451
+            mpm:  -7.09215686274509803921568627450980392156862745098039215686274509803921568627450980392156863
+            dpm:  -7.09215686274509803921568627450980392156862745098039215686274509803921568627450980392156863
+            gpm:  -7.0921568627450980392156862745098039215686274509803921568627450980392156862745098039215686297
+            apm: [-7.09215686274509803921568627450980392156862745098039215686274509803921568627450980392156863 +/- 4.26e-90]
+         math53:  -7.0921568627451
+          sreal:  -7.092157
+          dreal:  -7.0921568627451
+          ereal:  -7.0921568627450980392
+          qreal:  -7.0921568627450980392156862745098
+          oreal:  -7.0921568627450980392156862745098039215686274509803921568627450980392157
+          mreal:  -7.09215686274509803921568627450980392156862745098039215686274509803921568627450980392156863
+         sflint:  -7.092157
+         dflint:  -7.0921568627451
+         eflint:  -7.0921568627450980392
+         qflint:  -7.0921568627450980392156862745098
+         oflint:  -7.0921568627450980392156862745098039215686274509803921568627450980392157
+         mflint:  -7.09215686274509803921568627450980392156862745098039215686274509803921568627450980392156863
+         aflint: [-7.09215686274509803921568627450980392156862745098039215686274509803921568627450980392156863 +/- 7.21e-90]
 
 
 
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D03a_BernoulliReal.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B09_LerchPhi/C04_HurwitzZeta/D03_Bernoulli.cs>`__. 
 
-    An example:
 
-    .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; n = '16'
-        >>> \mathrm{d}x = dec.bernoulli(n); mx = mpm.bernoulli(n); gx = gmp.bernoulli(n)
-        >>> fx = fpm.bernoulli(n); ax = apm.bernoulli(n)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  -7.092156862745098039215686274509803921569E+0
-        mpm:  -7.092156862745098039215686274509803921569e+0
-        gmp:  -7.092156862745098039215686274509803921569E+00
-        fpm:  -7.09215686274510E+00
-        apm:  -7.092156862745098039215686274509803921569e+0 (-1.295e-39%)
 
 
 
@@ -298,49 +384,93 @@ Bernoulli polynomials, `B_n(x)`
 
 
 
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import math53
-        >>> math53.Bernpoly(3,4)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Bernpoly(13,14)
-        ereal('5.3518479027559984754E-1')
-
-
 
 
     An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; n = '16'; x = '1.5'
-        >>> \mathrm{d}x = dec.bernpoly(n, x); mx = mpm.bernpoly(n, x); gx = gmp.bernpoly(n, x)
-        >>> fx = fpm.bernpoly(n, x); ax = apm.bernpoly(n, x)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  7.092428708543964460784313725490196078431E+0
-        mpm:  7.092428708543964460784313725490196078431e+0
-        gmp:  7.092428708543964460784313725490196078431E+00
-        fpm:  7.09242870854397E+00
-        apm:  7.092428708543964460784313725490196078432e+0 (1.457e-37%)
+        >>> from xlcalcnet import *
+        >>> n = 12; z = 4.3; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.bernpoly(n, z)))
+            fpm:  6179605.09011217
+            mpm:  6179605.09011216976744688644688644688644688644688644688644688644688644688644688644688644688
+            dpm:  6179605.09011216976744688644688644688644688644688644688644688644688644688644688644688644688
+            gpm:  6179605.0901121697674468864468864468864468864468864468864468864468864468864468864468864468799
+            apm: [6179605.090112169767446886446886446886446886446886446886446886446886446886446886446886447 +/- 2.07e-82]
+         math53:  6179605.09011217
+         sflint:  6179609
+         dflint:  6179605.09011217
+         eflint:  6179605.0901121697711
+         qflint:  6179605.09011216976744688644688644
+         oflint:  6179605.0901121697674468864468864468864468864468864468864468864468864467
+         mflint:  6179605.09011216976744688644688644688644688644688644688644688644688644688644688644688644689
+         aflint: [6179605.090112169767446886446886446886446886446886446886446886446886446886446886446886447 +/- 2.98e-82]
 
 
-    An example with complex input:
+
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; n = '16'; z = '10 + 5j'
-        >>> \mathrm{d}z = dec.bernpoly(n, z); mz = mpm.bernpoly(n, z); gz = gmp.bernpoly(n, z)
-        >>> fz = fpm.bernpoly(n, z); az = apm.bernpoly(n, z)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az],  aligned=True)
-        dec: 9.1935042603632624118E+14              + 2.9617209867479000000E+16j
-        mpm: 9.1935042603632624118e+14              + 2.9617209867479000000e+16j
-        gmp: 9.1935042603632624118E+14              + 2.9617209867479000000E+16j
-        fpm: 9.19350426036326E+14                   + 2.96172098674790E+16j
-        apm: 9.1935042603632624118e+14 (1.089e-18%) + 2.9617209867479000000e+16 (1.03e-19%)j
+        >>> from xlcalcnet import *
+        >>> n = 3; z = -5.1+2j;  gui.setdps(50)
+        >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.bernpoly(n, z)))
+            fpm:  (-107.016, 179.66)
+            mpm:  (-107.016, 179.66)
+        cmath53:  (-107.016, 179.66)
+
+
+
+    An example with the same complex input as above, showing only the real part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> n = 3; z = -5.1+2j;  gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.bernpoly(n, z))))
+            fpm:  -107.016
+            mpm:  -107.016
+            dpm:  -107.016
+            gpm:  -107.016
+            apm: [-107.016000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 2.42e-88]
+        cmath53:  -107.016
+        sflintc:  -107.016
+        dflintc:  -107.016
+        eflintc:  -107.01599999999999999
+        qflintc:  -107.016
+        oflintc:  -107.016
+        mflintc:  -107.016
+        aflintc: [-107.016000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 3.45e-88]
+
+
+    An example with the same complex input as above, showing only the imaginary part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> n = 3; z = -5.1+2j;  gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.bernpoly(n, z))))
+            fpm:  179.66
+            mpm:  179.66
+            dpm:  179.66
+            gpm:  179.65999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+            apm: [179.660000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.90e-88]
+        cmath53:  179.66
+        sflintc:  179.66
+        dflintc:  179.66
+        eflintc:  179.65999999999999999
+        qflintc:  179.66
+        oflintc:  179.66
+        mflintc:  179.66
+        aflintc: [179.660000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 3.89e-88]
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D04a_BernpolyReal.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D04b_BernpolyCplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B09_LerchPhi/C04_HurwitzZeta/D04_Bernpoly.cs>`__. 
+
+
 
 
 
@@ -365,20 +495,32 @@ Euler numbers
 
 
 
-    An example:
+    An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; n = '16'
-        >>> \mathrm{d}x = dec.eulernum(n); mx = mpm.eulernum(n); gx = gmp.eulernum(n)
-        >>> fx = fpm.eulernum(n); ax = apm.eulernum(n)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  1.939151214500000000000000000000000000000E+10
-        mpm:  1.939151214500000000000000000000000000000e+10
-        gmp:  1.939151214500000000000000000000000000000E+10
-        fpm:  1.93915121450000E+10
-        apm:  1.939151214500000000000000000000000000000e+10 (0.0%)
+        >>> from xlcalcnet import *
+        >>> n = 16; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.eulernum(n)))
+            fpm:  19391512145
+            mpm:  19391512145.0
+            dpm:  19391512145.0
+            gpm:  19391512145.0
+            apm: [19391512145.0000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 3.01e-80]
+         math53:  19391512145
+         sflint:  1.939151E+10
+         dflint:  19391512145
+         eflint:  19391512145
+         qflint:  19391512145
+         oflint:  19391512145
+         mflint:  19391512145
+         aflint:  19391512145.0000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D05a_EulernumReal.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B09_LerchPhi/C04_HurwitzZeta/D05_Eulernum.cs>`__. 
+
+
 
 
 
@@ -404,49 +546,90 @@ Euler polynomials, `E_n(x)`
 
 
 
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import math53
-        >>> math53.Eulerpoly(3, 4)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.Eulerpoly(3, 12)
-        ereal('5.3518479027559984754E-1')
-
-
-
-
     An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; n = '16'; x = '1.5'
-        >>> \mathrm{d}x = dec.eulerpoly(n, x); mx = mpm.eulerpoly(n, x); gx = gmp.eulerpoly(n, x)
-        >>> fx = fpm.eulerpoly(n, x); ax = apm.eulerpoly(n, x)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  -2.958909933929443359375000000000000000000E+5
-        mpm:  -2.958909933929443359375000000000000000000e+5
-        gmp:  -2.958909933929443359375000000000000000000E+05
-        fpm:  -2.95890993392944E+05
-        apm:  -2.958909933929443359375000000000000000000e+5 (-3.254e-38%)
+        >>> from xlcalcnet import *
+        >>> n = 12; z = 4.3; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.eulerpoly(n, z)))
+            fpm:  6179605.09011217
+            mpm:  6179605.09011216976744688644688644688644688644688644688644688644688644688644688644688644688
+            dpm:  6179605.09011216976744688644688644688644688644688644688644688644688644688644688644688644688
+            gpm:  6179605.0901121697674468864468864468864468864468864468864468864468864468864468864468864468799
+            apm: [6179605.090112169767446886446886446886446886446886446886446886446886446886446886446886447 +/- 2.07e-82]
+         math53:  6179605.09011217
+         sflint:  6179609
+         dflint:  6179605.09011217
+         eflint:  6179605.0901121697711
+         qflint:  6179605.09011216976744688644688644
+         oflint:  6179605.0901121697674468864468864468864468864468864468864468864468864467
+         mflint:  6179605.09011216976744688644688644688644688644688644688644688644688644688644688644688644689
+         aflint: [6179605.090112169767446886446886446886446886446886446886446886446886446886446886446886447 +/- 2.98e-82]
 
 
-    An example with complex input:
+
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; n = '16'; z = '10 + 5j'
-        >>> \mathrm{d}z = dec.eulerpoly(n, z); mz = mpm.eulerpoly(n, z); gz = gmp.eulerpoly(n, z)
-        >>> fz = fpm.eulerpoly(n, z); az = apm.eulerpoly(n, z)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az],  aligned=True)
-        dec: -2.7730057139461850000E+15               + 2.6625051419981595000E+16j
-        mpm: -2.7730057139461850000e+15               + 2.6625051419981595000e+16j
-        gmp: -2.7730057139461850000E+15               + 2.6625051419981595000E+16j
-        fpm: -2.77300571394618E+15                    + 2.66250514199816E+16j
-        apm: -2.7730057139461850000e+15 (-6.053e-18%) + 2.6625051419981595000e+16 (7.45e-19%)j
+        >>> from xlcalcnet import *
+        >>> n = 3; z = -5.1+2j;  gui.setdps(50)
+        >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.eulerpoly(n, z)))
+            fpm:  (-104.216, 178.66)
+            mpm:  (-104.216, 178.66)
+        cmath53:  (-104.216, 178.66)
+
+
+
+    An example with the same complex input as above, showing only the real part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> n = 3; z = -5.1+2j;  gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.eulerpoly(n, z))))
+            fpm:  -104.216
+            mpm:  -104.216
+            dpm:  -104.216
+            gpm:  -104.216
+            apm: [-104.21600000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.32e-87]
+        cmath53:  -104.216
+        sflintc:  -104.216
+        dflintc:  -104.216
+        eflintc:  -104.21599999999999999
+        qflintc:  -104.216
+        oflintc:  -104.216
+        mflintc:  -104.216
+        aflintc: [-104.21600000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 2.46e-87]
+
+
+    An example with the same complex input as above, showing only the imaginary part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> n = 3; z = -5.1+2j;  gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.eulerpoly(n, z))))
+            fpm:  178.66
+            mpm:  178.66
+            dpm:  178.66
+            gpm:  178.65999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+            apm: [178.66000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 1.26e-87]
+        cmath53:  178.66
+        sflintc:  178.66
+        dflintc:  178.66
+        eflintc:  178.65999999999999999
+        qflintc:  178.66
+        oflintc:  178.66
+        mflintc:  178.66
+        aflintc: [178.66000000000000000000000000000000000000000000000000000000000000000000000000000000000000 +/- 2.76e-87]
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D06a_EulerpolyReal.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D06b_EulerpolyCplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B09_LerchPhi/C04_HurwitzZeta/D06_Eulerpoly.cs>`__. 
+
 
 
 
@@ -475,39 +658,91 @@ Barnes G-function
     For positive integers `n`, we have have relation to superfactorials `G(n) = \mathrm{sf}(n-2) = 0! \cdot 1! \cdots (n-2)!`.
 
 
-
-
+    
 
     An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; x = '1.5'
-        >>> \mathrm{d}x = dec.barnesg(x); mx = mpm.barnesg(x); gx = gmp.barnesg(x)
-        >>> fx = fpm.barnesg(x); ax = apm.barnesg(x)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  1.069222649266412949543008878697891604653E+0
-        mpm:  1.069222649266412949543008878697891604653e+0
-        gmp:  1.069222649266412949543008878697891604653E+00
-        fpm:  1.06922264926641E+00
-        apm:  1.069222649266412949543008878697891604653e+0 (2.147e-39%)
+        >>> from xlcalcnet import *
+        >>> x = 5.1; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.barnes_g(x)))
+            fpm:  15.4289500100001
+            mpm:  15.4289500100001297442758321153010070641263964210469924923969319066094138106886093708816721
+            dpm:  15.4289500100001297442758321153010070641263964210469924923969319066094138106886093708816721
+            gpm:  15.4289500100001297442758321153010070641263964210469924923969319066094138106886093708816721
+            apm: [15.4289500100001297442758321153010070641263964210469924923969319066094138106886093708817 +/- 3.60e-86]
+         math53:  15.4289500100001
+         sflint:  15.42895
+         dflint:  15.4289500100001
+         eflint:  15.42895001000012974
+         qflint:  15.428950010000129744275832115301
+         oflint:  15.428950010000129744275832115301007064126396421046992492396931906609413
+         mflint:  15.428950010000129744275832115301007064126396421046992492396931906609413810688609370881672
+         aflint: [15.42895001000012974427583211530100706412639642104699249239693190660941381068860937088167 +/- 8.69e-87]
 
 
-    An example with complex input:
+
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; z = '10 + 5j'
-        >>> \mathrm{d}z = dec.barnesg(z); mz = mpm.barnesg(z); gz = gmp.barnesg(z)
-        >>> fz = fpm.barnesg(z); az = apm.barnesg(z)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az],  aligned=True)
-        dec: 4.0615260490805827996E+3              - 1.5756073051910381056E+3j
-        mpm: 4.0615260490805827996e+3              - 1.5756073051910381056e+3j
-        gmp: 4.0615260490805827996E+03             - 1.5756073051910381056E+03j
-        fpm: 4.06152604908058E+03                  - 1.57560730519104E+03j
-        apm: 4.0615260490805827996e+3 (8.969e-19%) - 1.5756073051910381056e+3 (-2.808e-18%)j
+        >>> from xlcalcnet import *
+        >>> x = -5.1+2j; gui.setdps(50)
+        >>> for ctx in [fpm, mpm]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.barnes_g(x)))
+            fpm:  (955251104405502, 136041869824361)
+            mpm:  (955251104405501.51861286680456826683757610281610739, 136041869824361.01029551822708512296857118729189902)
+
+
+
+    An example with the same complex input as above, showing only the real part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> x = -5.1+2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.barnes_g(x))))
+            fpm:  955251104405502
+            mpm:  955251104405501.518612866804568266837576102816107417803111259338942662927206555907929044994
+            dpm:  955251104405501.518612866804568266837576102816107417803111259338942662927206555907929044994
+            gpm:  955251104405501.51861286680456826683757610281610741780311125933894266292720655590792904499397
+            apm: [955251104405501.518612866804568266837576102816107417803111259338942662927206555907929045 +/- 6.84e-73]
+        cmath53:  NaN
+        sflintc:  9.552504E+14
+        dflintc:  955251104405499
+        eflintc:  955251104405501.51794
+        qflintc:  955251104405501.518612866804568265
+        oflintc:  955251104405501.51861286680456826683757610281610741780311125933894266282
+        mflintc:  955251104405501.518612866804568266837576102816107417803111259338942662927206555907929044878
+        aflintc: [955251104405501.518612866804568266837576102816107417803111259338942662927206555907929045 +/- 9.22e-73]
+
+
+    An example with the same complex input as above, showing only the imaginary part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> x = -5.1+2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.barnes_g(x))))
+            fpm:  136041869824361
+            mpm:  136041869824361.010295518227085122968571187291899088504392529320098187794252984214379774482
+            dpm:  136041869824361.010295518227085122968571187291899088504392529320098187794252984214379774482
+            gpm:  136041869824361.01029551822708512296857118729189908850439252932009818779425298421437977448199
+            apm: [136041869824361.010295518227085122968571187291899088504392529320098187794252984214379774 +/- 7.68e-73]
+        cmath53:  NaN
+        sflintc:  1.360403E+14
+        dflintc:  136041869824355
+        eflintc:  136041869824361.0089
+        qflintc:  136041869824361.010295518227085118
+        oflintc:  136041869824361.01029551822708512296857118729189908850439252932009818757
+        mflintc:  136041869824361.010295518227085122968571187291899088504392529320098187794252984214379774331
+        aflintc: [136041869824361.01029551822708512296857118729189908850439252932009818779425298421437977 +/- 4.97e-72]
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D07a_BarnesGReal.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D07b_BarnesGCplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B09_LerchPhi/C04_HurwitzZeta/D07_BarnesG.cs>`__. 
+
 
 
 
@@ -537,50 +772,91 @@ Logarithm of Barnes G function
 
 
 
-    An example in Python
-
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import math53
-        >>> math53.LogBarnesG(7.1)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.LogBarnesG('4.51')
-        ereal('5.3518479027559984754E-1')
-
-
-
-
 
     An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; x = '1.5'
-        >>> \mathrm{d}x = dec.Logbarnesg(x); mx = mpm.Logbarnesg(x); gx = gmp.Logbarnesg(x)
-        >>> fx = fpm.Logbarnesg(x); ax = apm.Logbarnesg(x)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  6.693188843500470427402868586818440410225E-2
-        mpm:  6.693188843500470427402868586818440410225e-2
-        gmp:  6.693188843500470427402868586818440410225E-02
-        fpm:  6.69318884350047E-02
-        apm:  6.693188843500470427402868586818440410225e-2 (2.144e-39%)
+        >>> from xlcalcnet import *
+        >>> x = 5.1; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.logbarnes_g(x)))
+            fpm:  2.73624561545306
+            mpm:  2.73624561545305590972765696606161446700473560346862111616949454055398302456938402774845081
+            dpm:  2.73624561545305590972765696606161446700473560346862111616949454055398302456938402774845081
+            gpm:  2.7362456154530559097276569660616144670047356034686211161694945405539830245693840277484508102
+            apm: ([2.736245615453055909727656966061614467004735603468621116169494540553983024569384027748451 +/- 7.10e-88], 0)
+         math53:  2.73624561545306
+         sflint:  2.736245
+         dflint:  2.73624561545306
+         eflint:  2.7362456154530559096
+         qflint:  2.73624561545305590972765696606161
+         oflint:  2.736245615453055909727656966061614467004735603468621116169494540553983
+         mflint:  2.7362456154530559097276569660616144670047356034686211161694945405539830245693840277484508
+         aflint: [2.736245615453055909727656966061614467004735603468621116169494540553983024569384027748451 +/- 6.33e-88]
 
 
-    An example with complex input:
+
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; z = '10 + 5j'
-        >>> \mathrm{d}z = dec.Logbarnesg(z); mz = mpm.Logbarnesg(z); gz = gmp.Logbarnesg(z)
-        >>> fz = fpm.Logbarnesg(z); az = apm.Logbarnesg(z)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az],  aligned=True)
-        dec: 8.3794095077852315352E+0              - 3.7006227106476637064E-1j
-        mpm: 8.3794095077852315352e+0              - 3.7006227106476637064e-1j
-        gmp: 8.3794095077852315352E+00             - 3.7006227106476637064E-01j
-        fpm: 8.37940950778523E+00                  - 3.70062271064766E-01j
-        apm: 8.3794095077852315352e+0 (1.617e-19%) + 5.6178605493551511922e+1 (4.825e-20%)j
+        >>> from xlcalcnet import *
+        >>> x = -5.1+2j; gui.setdps(50)
+        >>> for ctx in [fpm, mpm]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.logbarnes_g(x)))
+            fpm:  (34.5030348724336, 0.141463505969766)
+            mpm:  (34.503034872433602194826950347768778315231717587928, 0.14146350596976563842094295473783855798131148590705)
+
+
+
+    An example with the same complex input as above, showing only the real part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> x = -5.1+2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.logbarnes_g(x))))
+            fpm:  34.5030348724336
+            mpm:  34.5030348724336021948269503477687783152317175879277447071939461541438677719827600408073197
+            dpm:  34.5030348724336021948269503477687783152317175879277447071939461541438677719827600408073197
+            gpm:  34.503034872433602194826950347768778315231717587927744707193946154143867771982760040807319697
+            apm: [34.50303487243360219482695034776877831523171758792774470719394615414386777198276004080732 +/- 9.41e-88]
+        cmath53:  NaN
+        sflintc:  34.50303
+        dflintc:  34.5030348724336
+        eflintc:  34.503034872433602193
+        qflintc:  34.5030348724336021948269503477688
+        oflintc:  34.503034872433602194826950347768778315231717587927744707193946154143868
+        mflintc:  34.5030348724336021948269503477687783152317175879277447071939461541438677719827600408073196
+        aflintc: [34.50303487243360219482695034776877831523171758792774470719394615414386777198276004080732 +/- 1.16e-87]
+
+
+    An example with the same complex input as above, showing only the imaginary part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> x = -5.1+2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.logbarnes_g(x))))
+            fpm:  0.141463505969766
+            mpm:  0.141463505969765638420942954737838557981311485907118897211077886219912213294864396637133194
+            dpm:  0.141463505969765638420942954737838557981311485907118897211077886219912213294864396637133194
+            gpm:  0.14146350596976563842094295473783855798131148590711889721107788621991221329486439663713319401
+            apm: [44.123760656226870976897950320650878936741683077158600390860302178529341901301790377429621 +/- 5.37e-88]
+        cmath53:  NaN
+        sflintc:  44.12376
+        dflintc:  44.1237606562269
+        eflintc:  44.123760656226870977
+        qflintc:  44.1237606562268709768979503206509
+        oflintc:  44.123760656226870976897950320650878936741683077158600390860302178529342
+        mflintc:  44.1237606562268709768979503206508789367416830771586003908603021785293419013017903774296206
+        aflintc: [44.123760656226870976897950320650878936741683077158600390860302178529341901301790377429621 +/- 9.41e-88]
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D08a_LogBarnesGReal.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D08b_LogBarnesGCplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B09_LerchPhi/C04_HurwitzZeta/D08_LogBarnesG.cs>`__. 
+
+
 
 
 
@@ -602,7 +878,7 @@ Hyperfactorial
 
     The hyperfactorial satisfies the recurrence formula `H(z) = z^z H(z-1)`. It can be defined more generally in terms of the Barnes G-function (see :ref:`barnesg() <rst_mpm_barnesg>`) and the gamma function by the formula
 
-    .. math ::   H(z) = \frac{\Gamma(z+1)^z}{G(z+1)}.
+    .. math ::   H(z) = \frac{\exp(z \log \Gamma(z+1))}{G(z+1)}, \Re(z) > 0.
 
 
 
@@ -610,32 +886,85 @@ Hyperfactorial
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; x = '1.5'
-        >>> \mathrm{d}x = dec.hyperfac(x); mx = mpm.hyperfac(x); gx = gmp.hyperfac(x)
-        >>> fx = fpm.hyperfac(x); ax = apm.hyperfac(x)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  1.617488527948946062817035460231792759012E+0
-        mpm:  1.617488527948946062817035460231792759012e+0
-        gmp:  1.617488527948946062817035460231792759012E+00
-        fpm:  1.61748852794895E+00
-        apm:  1.617488527948946062817035460231792771778e+0 (2.059e-33%)
+        >>> from xlcalcnet import *
+        >>> x = 5.1; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.hyperfactorial(x)))
+            fpm:  223498269.200776
+            mpm:  223498269.200775938550264073130441902651247196008262461448933367843736551163069681458306295
+            dpm:  223498269.200775938550264073130441902651247196008262461448933367843736551163069681458306295
+            gpm:  223498269.20077593855026407313044190265124719600826246144893336784373655116306968145830629501
+            apm: [223498269.200775938550264073130441902651247196008262461448933367843736551163069681458306 +/- 4.18e-79]
+         math53:  223498269.200775
+         sflint:  2.234981E+08
+         dflint:  223498269.200775
+         eflint:  223498269.20077593837
+         qflint:  223498269.200775938550264073130441
+         oflint:  223498269.20077593855026407313044190265124719600826246144893336784373652
+         mflint:  223498269.200775938550264073130441902651247196008262461448933367843736551163069681458306291
+         aflint: [223498269.200775938550264073130441902651247196008262461448933367843736551163069681458306 +/- 4.02e-79]
 
 
-    An example with complex input:
+
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; z = '10.5 + 1j'
-        >>> \mathrm{d}z = dec.hyperfac(z); mz = mpm.hyperfac(z); gz = gmp.hyperfac(z)
-        >>> fz = fpm.hyperfac(z); az = apm.hyperfac(z)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az],  aligned=True)
-        dec: 4.6669290555030590228E+48              + 1.2961711093304818907E+49j
-        mpm: 4.6669290555030590228e+48              + 1.2961711093304818907e+49j
-        gmp: 4.6669290555030590228E+48              + 1.2961711093304818907E+49j
-        fpm: 4.66692905550306E+48                   + 1.29617110933048E+49j
-        apm: 4.6669290555030590228e+48 (5.257e-17%) + 1.2961711093304818907e+49 (3.064e-17%)j
+        >>> from xlcalcnet import *
+        >>> x = 5.1+2j; gui.setdps(50)
+        >>> for ctx in [fpm, mpm]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.hyperfactorial(x)))
+            fpm:  (924326.966619702, 183519.866637836)
+            mpm:  (924326.96661970239447632946735859563871720247113209, 183519.86663783549899960275008771838190864444529318)
+
+
+
+    An example with the same complex input as above, showing only the real part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> x = 5.1+2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.hyperfactorial(x))))
+            fpm:  924326.966619702
+            mpm:  924326.96661970239447632946735859563871720247113212270107202770606374387024527042904429445
+            dpm:  924326.96661970239447632946735859563871720247113212270107202770606374387024527042904429445
+            gpm:  924326.96661970239447632946735859563871720247113212270107202770606374387024527042904429445001
+            apm: [924326.96661970239447632946735859563871720247113212270107202770606374387024527042904429 +/- 5.15e-81]
+        cmath53:  NaN
+        sflintc:  924326.3
+        dflintc:  924326.9666197
+        eflintc:  924326.96661970239381
+        qflintc:  924326.966619702394476329467358593
+        oflintc:  924326.96661970239447632946735859563871720247113212270107202770606374377
+        mflintc:  924326.966619702394476329467358595638717202471132122701072027706063743870245270429044294444
+        aflintc: [924326.96661970239447632946735859563871720247113212270107202770606374387024527042904429 +/- 5.12e-81]
+
+
+    An example with the same complex input as above, showing only the imaginary part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> x = 5.1+2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.hyperfactorial(x))))
+            fpm:  183519.866637836
+            mpm:  183519.86663783549899960275008771838190864444529320883206757218979144062013964730365481298
+            dpm:  183519.86663783549899960275008771838190864444529320883206757218979144062013964730365481298
+            gpm:  183519.86663783549899960275008771838190864444529320883206757218979144062013964730365481297999
+            apm: [183519.866637835498999602750087718381908644445293208832067572189791440620139647303654813 +/- 5.39e-82]
+        cmath53:  NaN
+        sflintc:  183519.2
+        dflintc:  183519.866637833
+        eflintc:  183519.86663783549841
+        qflintc:  183519.866637835498999602750087716
+        oflintc:  183519.86663783549899960275008771838190864444529320883206757218979144052
+        mflintc:  183519.86663783549899960275008771838190864444529320883206757218979144062013964730365481296
+        aflintc: [183519.866637835498999602750087718381908644445293208832067572189791440620139647303654813 +/- 5.61e-82]
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D09a_HyperfactorialReal.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D09b_HyperfactorialCplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B09_LerchPhi/C04_HurwitzZeta/D09_Hyperfactorial.cs>`__. 
+
 
 
 
@@ -662,36 +991,90 @@ Superfactorial
     .. math ::  \mathrm{sf}(z) = G(z+2)
 
 
+
     An example with real input:
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; x = '1.5'
-        >>> \mathrm{d}x = dec.superfac(x); mx = mpm.superfac(x); gx = gmp.superfac(x)
-        >>> fx = fpm.superfac(x); ax = apm.superfac(x)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-        dec:  1.259648257495192144086307951096069825563E+0
-        mpm:  1.259648257495192144086307951096069825563e+0
-        gmp:  1.259648257495192144086307951096069825563E+00
-        fpm:  1.25964825749519E+00
-        apm:  1.259648257495192144086307951096069825563e+0 (9.113e-40%)
+        >>> from xlcalcnet import *
+        >>> x = 5.1; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.superfactorial(x)))
+            fpm:  61390.7525055667
+            mpm:  61390.7525055666621033591716009106645891804596382641042324465197765494980863960281341562546
+            dpm:  61390.7525055666621033591716009106645891804596382641042324465197765494980863960281341562546
+            gpm:  61390.752505566662103359171600910664589180459638264104232446519776549498086396028134156254597
+            apm: [61390.7525055666621033591716009106645891804596382641042324465197765494980863960281341563 +/- 7.72e-83]
+         math53:  61390.7525055665
+         sflint:  61390.72
+         dflint:  61390.7525055665
+         eflint:  61390.752505566662073
+         qflint:  61390.7525055666621033591716009106
+         oflint:  61390.752505566662103359171600910664589180459638264104232446519776549493
+         mflint:  61390.7525055666621033591716009106645891804596382641042324465197765494980863960281341562537
+         aflint: [61390.7525055666621033591716009106645891804596382641042324465197765494980863960281341563 +/- 7.41e-83]
 
 
-    An example with complex input:
+
+    An example with complex input, using C\#-style formatting for complex numbers for the result 
 
     .. code-block:: pycon
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; z = '10.5 + 1j'
-        >>> \mathrm{d}z = dec.superfac(z); mz = mpm.superfac(z); gz = gmp.superfac(z)
-        >>> fz = fpm.superfac(z); az = apm.superfac(z)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az],  aligned=True)
-        dec: 1.8638249390462723001E+30             - 8.9432323302755030353E+30j
-        mpm: 1.8638249390462723001e+30             - 8.9432323302755030353e+30j
-        gmp: 1.8638249390462723001E+30             - 8.9432323302755030353E+30j
-        fpm: 1.86382493904627E+30                  - 8.94323233027550E+30j
-        apm: 1.8638249390462723001e+30 (2.42e-18%) - 8.9432323302755030353e+30 (-1.345e-18%)j
+        >>> from xlcalcnet import *
+        >>> x = 5.1+2j; gui.setdps(50)
+        >>> for ctx in [fpm, mpm]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.superfactorial(x)))
+            fpm:  (717.807523199199, -1445.95038920532)
+            mpm:  (717.80752319919902520871358716645024151415288810656, -1445.9503892053177384553903805949515615662672270998)
+
+
+
+    An example with the same complex input as above, showing only the real part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> x = 5.1+2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.superfactorial(x))))
+            fpm:  717.807523199199
+            mpm:  717.807523199199025208713587166450241514152888106600562965029242744565634006513377578654885
+            dpm:  717.807523199199025208713587166450241514152888106600562965029242744565634006513377578654885
+            gpm:  717.80752319919902520871358716645024151415288810660056296502924274456563400651337757865488495
+            apm: [717.807523199199025208713587166450241514152888106600562965029242744565634006513377578655 +/- 7.04e-85]
+        cmath53:  NaN
+        sflintc:  717.8066
+        dflintc:  717.807523199196
+        eflintc:  717.80752319919902443
+        qflintc:  717.807523199199025208713587166447
+        oflintc:  717.8075231991990252087135871664502415141528881066005629650292427445655
+        mflintc:  717.807523199199025208713587166450241514152888106600562965029242744565634006513377578654817
+        aflintc: [717.807523199199025208713587166450241514152888106600562965029242744565634006513377578655 +/- 7.87e-85]
+
+
+    An example with the same complex input as above, showing only the imaginary part of the result:
+
+    .. code-block:: pycon
+
+        >>> from xlcalcnet import *
+        >>> x = 5.1+2j; gui.setdps(90)
+        >>> for ctx in gui.ctxlist_noboost_cplx: 
+        ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.superfactorial(x))))
+            fpm:  -1445.95038920532
+            mpm:  -1445.95038920531773845539038059495156156626722709980970165112326137367633089654736239210195
+            dpm:  -1445.95038920531773845539038059495156156626722709980970165112326137367633089654736239210195
+            gpm:  -1445.95038920531773845539038059495156156626722709980970165112326137367633089654736239210195
+            apm: [-1445.950389205317738455390380594951561566267227099809701651123261373676330896547362392102 +/- 9.43e-85]
+        cmath53:  NaN
+        sflintc:  -1445.95
+        dflintc:  -1445.95038920532
+        eflintc:  -1445.950389205317738
+        qflintc:  -1445.95038920531773845539038059495
+        oflintc:  -1445.9503892053177384553903805949515615662672270998097016511232613736763
+        mflintc:  -1445.95038920531773845539038059495156156626722709980970165112326137367633089654736239210193
+        aflintc: [-1445.950389205317738455390380594951561566267227099809701651123261373676330896547362392102 +/- 9.37e-85]
+
+
+    The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D10a_SuperfactorialReal.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B09_LerchPhi/C04_HurwitzZeta/D10b_SuperfactorialCplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B09_LerchPhi/C04_HurwitzZeta/D10_Superfactorial.cs>`__. 
+
 
 
 
