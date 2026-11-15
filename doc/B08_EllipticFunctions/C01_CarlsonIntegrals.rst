@@ -474,7 +474,7 @@ Carlson degenerate symmetric elliptic integral of the first kind, `R_C(x,y)`
 
     Returns the Carlson degenerate symmetric elliptic integral of the first kind, `R_C(x,y) = R_F(x,y,y)`, for `x \ge 0, y \ne 0`. See also Wikipedia :cite:p:`WikipediaFun154`, NIST :cite:p:`DLMFun154`, BoostMath :cite:p:`BoostFun154`, :cite:t:`Ehrhardt2018` (3.2.2.1), Flint :cite:p:`FlintFun154`, Mpmath :cite:p:`MpmathFun154b`. 
 
-    
+
 
     An example with real input:
 

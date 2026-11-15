@@ -39,47 +39,98 @@ Hankel function of the first kind `H^{(1)}_{\nu}(x)`
 
 
 
-    .. code-block:: pycon
 
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.HankelH1(10.5, 6.3)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.HankelH1(10.5, 6.3)
-        ecplx('5.3518479027559984754E-1')
+An example with real input:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = 5.1; x = 2.7; gui.setdps(40)
+    >>> for ctx in gui.ctxlist_noipm_real: print(ctx.fmtname + ': ' + ctx.cplxctx.fmt(ctx.hankel_h1(nu, x, scaled=False)))
+        fpm:  (0.0239004453102261, -3.13767826537971)
+        mpm:  (0.02390044531022607781718241181284764644696, -3.137678265379708257076691766724110580898)
+        dpm:  (0.02390044531022607781718241181284764644696, -3.137678265379708257076691766724110580898)
+        gpm:  (0.02390044531022607781718241181284764644696, -3.13767826537970825707669176672411058089799)
+        apm: ([0.023900445310226077817182411812847646447 +/- 1.07e-40], [-3.1376782653797082570766917667241105809 +/- 2.47e-38])
+     math53:  (0.0239004453102261, -3.1376782653797)
+      sreal:  (0.02390045, -3.137678)
+      dreal:  (0.0239004453102261, -3.13767826537971)
+      ereal:  (0.02390044531022607785, -3.1376782653797082568)
+      qreal:  (0.0239004453102260778171824118128477, -3.13767826537970825707669176672411)
+      oreal:  (0.023900445310226077817182411812847646446962291892034415965676329390551645, -3.1376782653797082570766917667241105808985669230644643225412487974389585)
+      mreal:  (0.02390044531022607781718241181284764644685, -3.137678265379708257076691766724110580898)
+     sflint:  (0.02390045, -3.137678)
+     dflint:  (0.0239004453102261, -3.13767826537971)
+     eflint:  (0.023900445310226077822, -3.1376782653797082566)
+     qflint:  (0.0239004453102260778171824118128477, -3.13767826537970825707669176672411)
+     oflint:  (0.023900445310226077817182411812847646446962291892034415965676329390551636, -3.1376782653797082570766917667241105808985669230644643225412487974389586)
+     mflint:  (0.02390044531022607781718241181284764644698, -3.137678265379708257076691766724110580897)
+     aflint: ([0.023900445310226077817182411812847646447 +/- 4.43e-40], [-3.137678265379708257076691766724110581 +/- 2.04e-37])
 
 
 
+An example with complex input, using C\#-style formatting for complex numbers for the result 
 
-    An example with real input:
+.. code-block:: pycon
 
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; n= 10; x = 30
-        >>> \mathrm{d}x = dec.hankel1(n, x); mx = mpm.hankel1(n, x); gx = gmp.hankel1(n, x)
-        >>> fx = fpm.hankel1(n, x); ax = apm.hankel1(n, x)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax],  aligned=True)
-        dec: -1.2987689399858876819E-1               + 7.5056702122397113289E-2j
-        mpm: -1.2987689399858876819e-1               + 7.5056702122397113289e-2j
-        gmp: -1.2987689399858876819E-01              + 7.5056702122397113289E-02j
-        fpm: -1.29876893998589E-01                   + 7.50567021223971E-02j
-        apm: -1.2987689399889094748e-1 (-9.932e-10%) + 7.5056702113900822249e-2 (2.838e-6%)j
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(40)
+    >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.hankel_h1(nu, x, scaled=False)))
+        fpm:  (0.553513029400475, -0.458108538929633)
+        mpm:  (0.5535130294004753451539866140802354202485, -0.4581085389296331657650782138772903708147)
+    cmath53:  (0.553513029400475, -0.458108538929633)
 
 
-    An example with complex input:
 
-    .. code-block:: pycon
+An example with the same complex input as above, showing only the real part of the result:
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; n= 10; z = '3 + 4j'
-        >>> \mathrm{d}z = dec.hankel1(n, z); mz = mpm.hankel1(n, z); gz = gmp.hankel1(n, z)
-        >>> fz = fpm.hankel1(n, z); az = apm.hankel1(n, z)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az],  aligned=True)
-        dec: -6.9984001073685610955E+0              + 6.7915518863025118064E+0j
-        mpm: -6.9984001073685610955e+0              + 6.7915518863025118064e+0j
-        gmp: -6.9984001073685610955E+00             + 6.7915518863025118064E+00j
-        fpm: -6.99840010736856E+00                  + 6.79155188630251E+00j
-        apm: -6.9984001073685610955e+0 (-2.13e-18%) + 6.7915518863025118064e+0 (2.145e-18%)j
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.hankel_h1(nu, x, scaled=False))))
+        fpm:  0.553513029400475
+        mpm:  0.55351302940047534515398661408023542024849544473801961621508840815324296975360147862450677
+        dpm:  0.55351302940047534515398661408023542024849544473801961621508840815324296975360147862450677
+        gpm:  0.55351302940047534515398661408023542024849544473801961621508840815324296975360147862450677
+        apm: [0.553513029400475345153986614080235420248495444738019616215088408153242969753601478624507 +/- 3.04e-88]
+    cmath53:  0.553513029400475
+    sflintc:  0.5535129
+    dflintc:  0.553513029400475
+    eflintc:  0.55351302940047534499
+    qflintc:  0.553513029400475345153986614080235
+    oflintc:  0.55351302940047534515398661408023542024849544473801961621508840815324297
+    mflintc:  0.553513029400475345153986614080235420248495444738019616215088408153242969753601478624506769
+    aflintc: [0.553513029400475345153986614080235420248495444738019616215088408153242969753601478624507 +/- 4.14e-88]
+
+
+An example with the same complex input as above, showing only the imaginary part of the result:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.hankel_h1(nu, x, scaled=False))))
+        fpm:  -0.458108538929633
+        mpm:  -0.458108538929633165765078213877290370814666322386327948328279538248955839395945515581769005
+        dpm:  -0.458108538929633165765078213877290370814666322386327948328279538248955839395945515581769005
+        gpm:  -0.458108538929633165765078213877290370814666322386327948328279538248955839395945515581769005
+        apm: [-0.458108538929633165765078213877290370814666322386327948328279538248955839395945515581769 +/- 1.07e-88]
+    cmath53:  -0.458108538929633
+    sflintc:  -0.4581086
+    dflintc:  -0.458108538929633
+    eflintc:  -0.45810853892963316578
+    qflintc:  -0.45810853892963316576507821387729
+    oflintc:  -0.45810853892963316576507821387729037081466632238632794832827953824895584
+    mflintc:  -0.458108538929633165765078213877290370814666322386327948328279538248955839395945515581769005
+    aflintc: [-0.458108538929633165765078213877290370814666322386327948328279538248955839395945515581769 +/- 2.70e-88]
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C06_HankelFunctions/D01a_HankelH1Real.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C06_HankelFunctions/D01b_HankelH1Cplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B10_Hypergeometric0F1/C06_HankelFunctions/D01_HankelH1.cs>`__. 
+
+
 
 
 
@@ -105,47 +156,98 @@ Hankel function of the second kind `H^{(2)}_{\nu}(x)`
 
 
 
-    .. code-block:: pycon
 
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.HankelH2(10.5, 6.3)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.HankelH2(10.5, 6.3)
-        ecplx('5.3518479027559984754E-1')
+An example with real input:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = 5.1; x = 2.7; gui.setdps(40)
+    >>> for ctx in gui.ctxlist_noipm_real: print(ctx.fmtname + ': ' + ctx.cplxctx.fmt(ctx.hankel_h2(nu, x, scaled=False)))
+        fpm:  (0.0239004453102261, 3.13767826537971)
+        mpm:  (0.02390044531022607781718241181284764644696, 3.137678265379708257076691766724110580898)
+        dpm:  (0.02390044531022607781718241181284764644696, 3.137678265379708257076691766724110580898)
+        gpm:  (0.02390044531022607781718241181284764644696, 3.13767826537970825707669176672411058089799)
+        apm: ([0.023900445310226077817182411812847646447 +/- 1.07e-40], [3.1376782653797082570766917667241105809 +/- 2.47e-38])
+     math53:  (0.0239004453102261, 3.1376782653797)
+      sreal:  (0.02390045, 3.137678)
+      dreal:  (0.0239004453102261, 3.13767826537971)
+      ereal:  (0.02390044531022607785, 3.1376782653797082568)
+      qreal:  (0.0239004453102260778171824118128477, 3.13767826537970825707669176672411)
+      oreal:  (0.023900445310226077817182411812847646446962291892034415965676329390551645, 3.1376782653797082570766917667241105808985669230644643225412487974389585)
+      mreal:  (0.02390044531022607781718241181284764644685, 3.137678265379708257076691766724110580898)
+     sflint:  (0.02390045, 3.137678)
+     dflint:  (0.0239004453102261, 3.13767826537971)
+     eflint:  (0.023900445310226077822, 3.1376782653797082566)
+     qflint:  (0.0239004453102260778171824118128477, 3.13767826537970825707669176672411)
+     oflint:  (0.023900445310226077817182411812847646446962291892034415965676329390551636, 3.1376782653797082570766917667241105808985669230644643225412487974389586)
+     mflint:  (0.02390044531022607781718241181284764644698, 3.137678265379708257076691766724110580897)
+     aflint: ([0.023900445310226077817182411812847646447 +/- 4.43e-40], [-3.137678265379708257076691766724110581 +/- 2.04e-37])
 
 
 
+An example with complex input, using C\#-style formatting for complex numbers for the result 
 
-    An example with real input:
+.. code-block:: pycon
 
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; n= 10; x = 30
-        >>> \mathrm{d}x = dec.hankel2(n, x); mx = mpm.hankel2(n, x); gx = gmp.hankel2(n, x)
-        >>> fx = fpm.hankel2(n, x); ax = apm.hankel2(n, x)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax],  aligned=True)
-        dec: -1.2987689399858876819E-1               - 7.5056702122397113289E-2j
-        mpm: -1.2987689399858876819e-1               - 7.5056702122397113289e-2j
-        gmp: -1.2987689399858876819E-01              - 7.5056702122397113289E-02j
-        fpm: -1.29876893998589E-01                   - 7.50567021223971E-02j
-        apm: -1.2987689399889094748e-1 (-9.932e-10%) - 7.5056702113900822249e-2 (-2.838e-6%)j
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(40)
+    >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.hankel_h2(nu, x, scaled=False)))
+        fpm:  (-0.039472912472708, 0.589270222079381)
+        mpm:  (-0.03947291247270798345360409154872685478406, 0.5892702220793809979677982801612831474944)
+    cmath53:  (-0.0394729124727087, 0.58927022207938)
 
 
-    An example with complex input:
 
-    .. code-block:: pycon
+An example with the same complex input as above, showing only the real part of the result:
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; n= 10; z = '3 + 4j'
-        >>> \mathrm{d}z = dec.hankel2(n, z); mz = mpm.hankel2(n, z); gz = gmp.hankel2(n, z)
-        >>> fz = fpm.hankel2(n, z); az = apm.hankel2(n, z)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az],  aligned=True)
-        dec: 6.9935943604463042143E+0              - 6.7875888598187273523E+0j
-        mpm: 6.9935943604463042143e+0              - 6.7875888598187273523e+0j
-        gmp: 6.9935943604463042143E+00             - 6.7875888598187273523E+00j
-        fpm: 6.99359436044630E+00                  - 6.78758885981873E+00j
-        apm: 6.9935943604463042143e+0 (2.132e-18%) - 6.7875888598187273523e+0 (-2.146e-18%)j
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.hankel_h2(nu, x, scaled=False))))
+        fpm:  -0.039472912472708
+        mpm:  -0.0394729124727079834536040915487268547840164986158937292380015883370184365691027694706895519
+        dpm:  -0.0394729124727079834536040915487268547840164986158937292380015883370184365691027694706895519
+        gpm:  -0.039472912472707983453604091548726854784016498615893729238001588337018436569102769470689551901
+        apm: [-0.039472912472707983453604091548726854784016498615893729238001588337018436569102769470690 +/- 5.18e-88]
+    cmath53:  -0.0394729124727087
+    sflintc:  -0.03947315
+    dflintc:  -0.039472912472708
+    eflintc:  -0.039472912472707983668
+    qflintc:  -0.0394729124727079834536040915487276
+    oflintc:  -0.039472912472707983453604091548726854784016498615893729238001588337018436
+    mflintc:  -0.0394729124727079834536040915487268547840164986158937292380015883370184365691027694706895543
+    aflintc: [-0.039472912472707983453604091548726854784016498615893729238001588337018436569102769470690 +/- 6.25e-88]
+
+
+An example with the same complex input as above, showing only the imaginary part of the result:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.hankel_h2(nu, x, scaled=False))))
+        fpm:  0.589270222079381
+        mpm:  0.589270222079380997967798280161283147494409275011223163214134066587805977018790393845889366
+        dpm:  0.589270222079380997967798280161283147494409275011223163214134066587805977018790393845889366
+        gpm:  0.58927022207938099796779828016128314749440927501122316321413406658780597701879039384588936605
+        apm: [0.589270222079380997967798280161283147494409275011223163214134066587805977018790393845889 +/- 4.67e-88]
+    cmath53:  0.58927022207938
+    sflintc:  0.5892701
+    dflintc:  0.589270222079381
+    eflintc:  0.5892702220793809978
+    qflintc:  0.589270222079380997967798280161283
+    oflintc:  0.58927022207938099796779828016128314749440927501122316321413406658780598
+    mflintc:  0.589270222079380997967798280161283147494409275011223163214134066587805977018790393845889364
+    aflintc: [0.589270222079380997967798280161283147494409275011223163214134066587805977018790393845889 +/- 6.31e-88]
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C06_HankelFunctions/D02a_HankelH2Real.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C06_HankelFunctions/D02b_HankelH2Cplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B10_Hypergeometric0F1/C06_HankelFunctions/D02_HankelH2.cs>`__. 
+
+
 
 
 
@@ -174,47 +276,101 @@ Spherical Hankel function of the first kind, `h^{(1)}_{\nu}(x)`
 
 
 
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.SphHankelH1(10.5, 6.3)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.SphHankelH1(10.5, 6.3)
-        ecplx('5.3518479027559984754E-1')
 
 
+An example with real input:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> n = 5; x = 2.7; gui.setdps(40)
+    >>> for ctx in gui.ctxlist_noipm_real: print(ctx.fmtname + ': ' + ctx.cplxctx.fmt(ctx.sph_hankel_h1(n, x, scaled=False)))
+        fpm:  (0.0103715220821118, -3.77254209230478)
+        mpm:  (0.01037152208211175116555759695690409647603, -3.772542092304783685313311975972348145207)
+        dpm:  (0.01037152208211175116555759695690409647603, -3.772542092304783685313311975972348145207)
+        gpm:  (0.01037152208211175116555759695690409647603, -3.77254209230478368531331197597234814520702)
+        apm: ([0.01037152208211175116555759695690409647603 +/- 5.20e-42], [-3.77254209230478368531331197597234814521 +/- 4.60e-39])
+     math53:  (0.0103715220821118, -3.77254209230478)
+      sreal:  (0.01037152, -3.772542)
+      dreal:  (0.0103715220821117, -3.77254209230478)
+      ereal:  (0.010371522082111751166, -3.772542092304783685)
+      qreal:  (0.0103715220821117511655575969569041, -3.77254209230478368531331197597235)
+      oreal:  (0.010371522082111751165557596956904096476029439027472912896664143483650511, -3.7725420923047836853133119759723481452066910159327490865545044676388325)
+      mreal:  (0.01037152208211175116555759695690409647603, -3.772542092304783685313311975972348145206)
+     sflint:  (0.01037152, -3.772542)
+     dflint:  (0.0103715220821118, -3.77254209230478)
+     eflint:  (0.010371522082111751166, -3.772542092304783685)
+     qflint:  (0.0103715220821117511655575969569041, -3.77254209230478368531331197597235)
+     oflint:  (0.010371522082111751165557596956904096476029439027472912896664143483650508, -3.7725420923047836853133119759723481452066910159327490865545044676388325)
+     mflint:  (0.01037152208211175116555759695690409647603, -3.772542092304783685313311975972348145206)
+     aflint: ([0.0103715220821117511655575969569040964760 +/- 4.43e-41], [-3.77254209230478368531331197597234814520 +/- 9.82e-39])
 
 
-    An example with real input:
 
-    .. code-block:: pycon
+An example with complex input, using C\#-style formatting for complex numbers for the result 
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 40; n= 10; x = 30
-        >>> \mathrm{d}x = dec.sph_bessel_yn(n, x); mx = mpm.sph_bessel_yn(n, x); gx = gmp.sph_bessel_yn(n, x)
-        >>> fx = fpm.sph_bessel_yn(n, x); ax = apm.sph_bessel_yn(n, x)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax],  aligned=True)
-        dec: 3.121959106475493540775038911812539791138E-2
-        mpm: 3.121959106475493540775038911812539791138e-2
-        gmp: 3.121959106475493540775038911812539791138E-02
-        fpm: 3.12195910647549E-02
-        apm: 3.121959106475493540775038911819736737226e-2 (1.048e-27%)
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> n = -5.1;  x = 2.7+2j; gui.setdps(40)
+    >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.sph_hankel_h1(n, x, scaled=False)))
+        fpm:  (-0.171828028618029, -0.250044868730532)
+        mpm:  (-0.1718280286180292497501863236237420507468, -0.2500448687305324342747186424664706430483)
+    cmath53:  (-0.171828028618029, -0.250044868730532)
 
 
-    An example with complex input:
 
-    .. code-block:: pycon
+An example with the same complex input as above, showing only the real part of the result:
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; n= 10; z = '3 + 4j'
-        >>> \mathrm{d}z = dec.sph_bessel_yn(n, z); mz = mpm.sph_bessel_yn(n, z); gz = gmp.sph_bessel_yn(n, z)
-        >>> fz = fpm.sph_bessel_yn(n, z); az = apm.sph_bessel_yn(n, z)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az],  aligned=True)
-        dec: 1.0803151721461599990E+1              - 1.7336496520486643470E+0j
-        mpm: 1.0803151721461599990e+1              - 1.7336496520486643470e+0j
-        gmp: 1.0803151721461599990E+01             - 1.7336496520486643470E+00j
-        fpm: 1.08031517214616E+01                  - 1.73364965204866E+00j
-        apm: 1.0803151721461599990e+1 (6.962e-18%) - 1.7336496520486643470e+0 (-3.835e-17%)j
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> n = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.sph_hankel_h1(n, x, scaled=False))))
+        fpm:  -0.171828028618029
+        mpm:  -0.171828028618029249750186323623742050746752171699064108510539263521452280902578011679828725
+        dpm:  -0.171828028618029249750186323623742050746752171699064108510539263521452280902578011679828725
+        gpm:  -0.171828028618029249750186323623742050746752171699064108510539263521452280902578011679828725
+        apm: [-0.1718280286180292497501863236237420507467521716990641085105392635214522809025780116798287 +/- 5.27e-89]
+    cmath53:  -0.171828028618029
+    sflintc:  -0.171828
+    dflintc:  -0.171828028618029
+    eflintc:  -0.17182802861802924977
+    qflintc:  -0.171828028618029249750186323623742
+    oflintc:  -0.17182802861802924975018632362374205074675217169906410851053926352145228
+    mflintc:  -0.171828028618029249750186323623742050746752171699064108510539263521452280902578011679828725
+    aflintc: [-0.171828028618029249750186323623742050746752171699064108510539263521452280902578011679829 +/- 3.62e-88]
+
+
+An example with the same complex input as above, showing only the imaginary part of the result:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> n = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.sph_hankel_h1(n, x, scaled=False))))
+        fpm:  -0.250044868730532
+        mpm:  -0.250044868730532434274718642466470643048281719202266822292039772788223323371625927207787515
+        dpm:  -0.250044868730532434274718642466470643048281719202266822292039772788223323371625927207787515
+        gpm:  -0.25004486873053243427471864246647064304828171920226682229203977278822332337162592720778751503
+        apm: [-0.2500448687305324342747186424664706430482817192022668222920397727882233233716259272077875 +/- 4.31e-89]
+    cmath53:  -0.250044868730532
+    sflintc:  -0.2500448
+    dflintc:  -0.250044868730532
+    eflintc:  -0.25004486873053243423
+    qflintc:  -0.25004486873053243427471864246647
+    oflintc:  -0.25004486873053243427471864246647064304828171920226682229203977278822332
+    mflintc:  -0.250044868730532434274718642466470643048281719202266822292039772788223323371625927207787514
+    aflintc: [-0.250044868730532434274718642466470643048281719202266822292039772788223323371625927207788 +/- 5.79e-88]
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C06_HankelFunctions/D03a_SphHankelH1Real.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C06_HankelFunctions/D03b_SphHankelH1Cplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B10_Hypergeometric0F1/C06_HankelFunctions/D03_SphHankelH1.cs>`__. 
+
+
+
+
 
 
 
@@ -240,47 +396,97 @@ Spherical Hankel function of the second kind, `h^{(2)}_{\nu}(x)`
 
 
 
-    .. code-block:: pycon
 
-        >>> from xlcalcnet import ecplx
-        >>> ecplx.SphHankelH1(10.5, 6.3)
-        ecplx('5.2359877559829887307E-1')
-        >>> ecplx.SphHankelH1(10.5, 6.3)
-        ecplx('5.3518479027559984754E-1')
+An example with real input:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> n = 5; x = 2.7; gui.setdps(40)
+    >>> for ctx in gui.ctxlist_noipm_real: print(ctx.fmtname + ': ' + ctx.cplxctx.fmt(ctx.sph_hankel_h2(n, x, scaled=False)))
+        fpm:  (0.0103715220821118, -3.77254209230478)
+        mpm:  (0.01037152208211175116555759695690409647603, 3.772542092304783685313311975972348145207)
+        dpm:  (0.01037152208211175116555759695690409647603, -3.772542092304783685313311975972348145207)
+        gpm:  (0.01037152208211175116555759695690409647603, -3.77254209230478368531331197597234814520702)
+        apm: ([0.01037152208211175116555759695690409647603 +/- 5.20e-42], [3.77254209230478368531331197597234814521 +/- 4.60e-39])
+     math53:  (0.0103715220821118, 3.77254209230478)
+      sreal:  (0.01037152, 3.772542)
+      dreal:  (0.0103715220821117, 3.77254209230478)
+      ereal:  (0.010371522082111751166, 3.772542092304783685)
+      qreal:  (0.0103715220821117511655575969569041, 3.77254209230478368531331197597235)
+      oreal:  (0.010371522082111751165557596956904096476029439027472912896664143483650511, 3.7725420923047836853133119759723481452066910159327490865545044676388325)
+      mreal:  (0.01037152208211175116555759695690409647603, 3.772542092304783685313311975972348145206)
+     sflint:  (0.01037152, 3.772542)
+     dflint:  (0.0103715220821118, 3.77254209230478)
+     eflint:  (0.010371522082111751166, 3.772542092304783685)
+     qflint:  (0.0103715220821117511655575969569041, 3.77254209230478368531331197597235)
+     oflint:  (0.010371522082111751165557596956904096476029439027472912896664143483650508, 3.7725420923047836853133119759723481452066910159327490865545044676388325)
+     mflint:  (0.01037152208211175116555759695690409647603, 3.772542092304783685313311975972348145206)
+     aflint: ([0.0103715220821117511655575969569040964760 +/- 4.43e-41], [-3.77254209230478368531331197597234814520 +/- 9.82e-39])
 
 
 
+An example with complex input, using C\#-style formatting for complex numbers for the result 
 
-    An example with real input:
+.. code-block:: pycon
 
-    .. code-block:: pycon
-
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; n= 10; x = 30
-        >>> \mathrm{d}x = dec.hankel2(n, x); mx = mpm.hankel2(n, x); gx = gmp.hankel2(n, x)
-        >>> fx = fpm.hankel2(n, x); ax = apm.hankel2(n, x)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax],  aligned=True)
-        dec: -1.2987689399858876819E-1               - 7.5056702122397113289E-2j
-        mpm: -1.2987689399858876819e-1               - 7.5056702122397113289e-2j
-        gmp: -1.2987689399858876819E-01              - 7.5056702122397113289E-02j
-        fpm: -1.29876893998589E-01                   - 7.50567021223971E-02j
-        apm: -1.2987689399889094748e-1 (-9.932e-10%) - 7.5056702113900822249e-2 (-2.838e-6%)j
+    >>> from xlcalcnet import *
+    >>> n = -5.1;  x = 2.7+2j; gui.setdps(40)
+    >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.sph_hankel_h2(n, x, scaled=False)))
+        fpm:  (-0.0797081913781384, -0.051387991658319)
+        mpm:  (-0.07970819137813844921518997434789671528742, -0.05138799165831897654059872915009199052747)
+    cmath53:  (-0.0797081913781378, -0.0513879916583191)
 
 
-    An example with complex input:
 
-    .. code-block:: pycon
+An example with the same complex input as above, showing only the real part of the result:
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; n= 10; z = '3 + 4j'
-        >>> \mathrm{d}z = dec.hankel2(n, z); mz = mpm.hankel2(n, z); gz = gmp.hankel2(n, z)
-        >>> fz = fpm.hankel2(n, z); az = apm.hankel2(n, z)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az],  aligned=True)
-        dec: 6.9935943604463042143E+0              - 6.7875888598187273523E+0j
-        mpm: 6.9935943604463042143e+0              - 6.7875888598187273523e+0j
-        gmp: 6.9935943604463042143E+00             - 6.7875888598187273523E+00j
-        fpm: 6.99359436044630E+00                  - 6.78758885981873E+00j
-        apm: 6.9935943604463042143e+0 (2.132e-18%) - 6.7875888598187273523e+0 (-2.146e-18%)j
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> n = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.sph_hankel_h2(n, x, scaled=False))))
+        fpm:  -0.0797081913781384
+        mpm:  -0.0797081913781384492151899743478967152874386746814131482151581119437433891273104705500172577
+        dpm:  -0.0797081913781384492151899743478967152874386746814131482151581119437433891273104705500172577
+        gpm:  -0.079708191378138449215189974347896715287438674681413148215158111943743389127310470550017257705
+        apm: [-0.0797081913781384492151899743478967152874386746814131482151581119437433891273104705500173 +/- 7.12e-89]
+    cmath53:  -0.0797081913781378
+    sflintc:  -0.07970809
+    dflintc:  -0.0797081913781384
+    eflintc:  -0.079708191378138449123
+    qflintc:  -0.0797081913781384492151899743478964
+    oflintc:  -0.079708191378138449215189974347896715287438674681413148215158111943743389
+    mflintc:  -0.0797081913781384492151899743478967152874386746814131482151581119437433891273104705500172566
+    aflintc: [-0.079708191378138449215189974347896715287438674681413148215158111943743389127310470550017 +/- 3.40e-88]
+
+
+An example with the same complex input as above, showing only the imaginary part of the result:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> n = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.sph_hankel_h2(n, x, scaled=False))))
+        fpm:  -0.051387991658319
+        mpm:  -0.0513879916583189765405987291500919905274525212092262210601300328353939963548283683357127811
+        dpm:  -0.0513879916583189765405987291500919905274525212092262210601300328353939963548283683357127811
+        gpm:  -0.051387991658318976540598729150091990527452521209226221060130032835393996354828368335712781101
+        apm: [-0.0513879916583189765405987291500919905274525212092262210601300328353939963548283683357128 +/- 4.76e-89]
+    cmath53:  -0.0513879916583191
+    sflintc:  -0.05138806
+    dflintc:  -0.051387991658319
+    eflintc:  -0.051387991658318976603
+    qflintc:  -0.0513879916583189765405987291500922
+    oflintc:  -0.051387991658318976540598729150091990527452521209226221060130032835393996
+    mflintc:  -0.0513879916583189765405987291500919905274525212092262210601300328353939963548283683357127818
+    aflintc: [-0.051387991658318976540598729150091990527452521209226221060130032835393996354828368335713 +/- 3.08e-88]
+
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C06_HankelFunctions/D04a_SphHankelH2Real.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C06_HankelFunctions/D04b_SphHankelH2Cplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B10_Hypergeometric0F1/C06_HankelFunctions/D04_SphHankelH2.cs>`__. 
 
 
 

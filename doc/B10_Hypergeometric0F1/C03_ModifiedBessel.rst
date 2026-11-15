@@ -80,51 +80,96 @@ The corresponding scaled function looks like this:
 
 
 
-
-An example in Python
-
-.. code-block:: pycon
-
-    >>> from xlcalcnet import math53
-    >>> math53.BesselI(3, 0.5)
-    ereal('5.2359877559829887307E-1')
-    >>> math53.BesselI(3, '0.51')
-    ereal('5.3518479027559984754E-1')
-
-
-
-
-
 An example with real input:
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-    >>> mpm.dps = 40; n= 10; x = 30
-    >>> \mathrm{d}x = dec.besseli(n, x); mx = mpm.besseli(n, x); gx = gmp.besseli(n, x)
-    >>> fx = fpm.besseli(n, x); ax = apm.besseli(n, x)
-    >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-    dec:  1.458318099759671237651634761704819246948E+11
-    mpm:  1.458318099759671237651634761704819246948e+11
-    gmp:  1.458318099759671237651634761704819246948E+11
-    fpm:  1.45831809975967E+11
-    apm:  1.458318099759671237651634761704819246948e+11 (2.164e-39%)
+    >>> from xlcalcnet import *
+    >>> nu = 5.1; x = 2.7; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noipm_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.bessel_iv(nu, x, scaled=False)))
+        fpm:  0.0434694842377312
+        mpm:  0.0434694842377312073534103918235828356904494954117926910342894148302065668060004525484813936
+        dpm:  0.0434694842377312073534103918235828356904494954117926910342894148302065668060004525484813936
+        gpm:  0.043469484237731207353410391823582835690449495411792691034289414830206566806000452548481393598
+        apm: [0.04346948423773120735341039182358283569044949541179269103428941483020656680600045254848139 +/- 5.38e-90]
+     math53:  0.0434694842377312
+      sreal:  0.0434695
+      dreal:  0.0434694842377312
+      ereal:  0.043469484237731207353
+      qreal:  0.0434694842377312073534103918235828
+      oreal:  0.043469484237731207353410391823582835690449495411792691034289414830206561
+      mreal:  0.0434694842377312073534103918235828356904494954117926910342894148302065668060004525484813932
+     sflint:  0.0434695
+     dflint:  0.0434694842377312
+     eflint:  0.043469484237731207364
+     qflint:  0.0434694842377312073534103918235829
+     oflint:  0.043469484237731207353410391823582835690449495411792691034289414830206567
+     mflint:  0.0434694842377312073534103918235828356904494954117926910342894148302065668060004525484813937
+     aflint: [0.0434694842377312073534103918235828356904494954117926910342894148302065668060004525484814 +/- 1.39e-89]
 
 
-An example with complex input:
+
+An example with complex input, using C\#-style formatting for complex numbers for the result 
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-    >>> mpm.dps = 20; n= 10; z = '3 + 4j'
-    >>> \mathrm{d}z = dec.besseli(n, z); mz = mpm.besseli(n, z); gz = gmp.besseli(n, z)
-    >>> fz = fpm.besseli(n, z); az = apm.besseli(n, z)
-    >>> mpm.show([\mathrm{d}z, mz, gz, fz, az],  aligned=True)
-    dec: -2.0890476012080940545E-3               - 8.8394935038889455024E-4j
-    mpm: -2.0890476012080940545e-3               - 8.8394935038889455024e-4j
-    gmp: -2.0890476012080940545E-03              - 8.8394935038889455024E-04j
-    fpm: -2.08904760120809E-03                   - 8.83949350388895E-04j
-    apm: -2.0890476012080940545e-3 (-7.919e-20%) - 8.8394935038889455024e-4 (-9.358e-20%)j
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(40)
+    >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.bessel_iv(nu, x, scaled=False)))
+        fpm:  (0.016900173220067, -0.160170196849101)
+        mpm:  (0.01690017322006700345883672989570509799631, -0.160170196849101174173806056456738757786)
+    cmath53:  (0.016900173220066, -0.1601701968491)
+
+
+
+An example with the same complex input as above, showing only the real part of the result:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.bessel_iv(nu, x, scaled=False))))
+        fpm:  0.016900173220067
+        mpm:  0.0169001732200670034588367298957050979963422355156025534964552219856080058879971268316243824
+        dpm:  0.0169001732200670034588367298957050979963422355156025534964552219856080058879971268316243824
+        gpm:  0.016900173220067003458836729895705097996342235515602553496455221985608005887997126831624382401
+        apm: [0.0169001732200670034588367298957050979963422355156025534964552219856080058879971268316244 +/- 2.75e-89]
+    cmath53:  0.016900173220066
+    sflintc:  0.01690003
+    dflintc:  0.016900173220067
+    eflintc:  0.01690017322006700333
+    qflintc:  0.0169001732200670034588367298957046
+    oflintc:  0.016900173220067003458836729895705097996342235515602553496455221985608006
+    mflintc:  0.016900173220067003458836729895705097996342235515602553496455221985608005887997126831624381
+    aflintc: [0.0169001732200670034588367298957050979963422355156025534964552219856080058879971268316244 +/- 3.60e-89]
+
+
+An example with the same complex input as above, showing only the imaginary part of the result:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.bessel_iv(nu, x, scaled=False))))
+        fpm:  -0.160170196849101
+        mpm:  -0.160170196849101174173806056456738757786005471343219670363649787195370844923864595585549048
+        dpm:  -0.160170196849101174173806056456738757786005471343219670363649787195370844923864595585549048
+        gpm:  -0.16017019684910117417380605645673875778600547134321967036364978719537084492386459558554904799
+        apm: [-0.1601701968491011741738060564567387577860054713432196703636497871953708449238645955855490 +/- 6.17e-89]
+    cmath53:  -0.1601701968491
+    sflintc:  -0.1601701
+    dflintc:  -0.160170196849101
+    eflintc:  -0.16017019684910117406
+    qflintc:  -0.160170196849101174173806056456738
+    oflintc:  -0.16017019684910117417380605645673875778600547134321967036364978719537085
+    mflintc:  -0.160170196849101174173806056456738757786005471343219670363649787195370844923864595585549047
+    aflintc: [-0.1601701968491011741738060564567387577860054713432196703636497871953708449238645955855490 +/- 8.34e-89]
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C03_ModifiedBessel/D01a_BesselIvReal.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C03_ModifiedBessel/D01b_BesselIvCplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B10_Hypergeometric0F1/C03_ModifiedBessel/D01_BesselIv.cs>`__. 
+
 
 
 
@@ -194,50 +239,96 @@ The corresponding scaled function looks like this:
 
 
 
-An example in Python
-
-.. code-block:: pycon
-
-    >>> from xlcalcnet import math53
-    >>> math53.BesselK(3, 0.5)
-    ereal('5.2359877559829887307E-1')
-    >>> math53.BesselK(3, '0.51')
-    ereal('5.3518479027559984754E-1')
-
-
-
 
 An example with real input:
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-    >>> mpm.dps = 40; n= 10; x = 30
-    >>> \mathrm{d}x = dec.besselk(n, x); mx = mpm.besselk(n, x); gx = gmp.besselk(n, x)
-    >>> fx = fpm.besselk(n, x); ax = apm.besselk(n, x)
-    >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax])
-    dec:  1.084281694222297391103753613581684920880E-13
-    mpm:  1.084281694222297391103753613581684920880e-13
-    gmp:  1.084281694222297391103753613581684920880E-13
-    fpm:  1.08428169422230E-13
-    apm:  1.084281694222297390843838224178185275164e-13 (1.245e-14%)
+    >>> from xlcalcnet import *
+    >>> nu = 5.1; x = 2.7; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noipm_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.bessel_kv(nu, x, scaled=False)))
+        fpm:  1.98858962407752
+        mpm:  1.98858962407751854880797961385042513868175087335792910381894335630323508957065913447413126
+        dpm:  1.98858962407751854880797961385042513868175087335792910381894335630323508957065913447413126
+        gpm:  1.98858962407751854880797961385042513868175087335792910381894335630323508957065913447413126
+        apm: [1.988589624077518548807979613850425138681750873357929103818943356303235089570659134474131 +/- 3.97e-88]
+     math53:  1.98858962407752
+      sreal:  1.988589
+      dreal:  1.98858962407752
+      ereal:  1.9885896240775185487
+      qreal:  1.98858962407751854880797961385043
+      oreal:  1.9885896240775185488079796138504251386817508733579291038189433563032354
+      mreal:  1.98858962407751854880797961385042513868175087335792910381894335630323508957065913447413128
+     sflint:  1.988589
+     dflint:  1.98858962407752
+     eflint:  1.9885896240775185484
+     qflint:  1.98858962407751854880797961385042
+     oflint:  1.9885896240775185488079796138504251386817508733579291038189433563032351
+     mflint:  1.98858962407751854880797961385042513868175087335792910381894335630323508957065913447413126
+     aflint: [1.988589624077518548807979613850425138681750873357929103818943356303235089570659134474131 +/- 6.45e-88]
 
 
-An example with complex input:
+
+An example with complex input, using C\#-style formatting for complex numbers for the result 
 
 .. code-block:: pycon
 
-    >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-    >>> mpm.dps = 20; n= 10; z = '3 + 4j'
-    >>> \mathrm{d}z = dec.besselk(n, z); mz = mpm.besselk(n, z); gz = gmp.besselk(n, z)
-    >>> fz = fpm.besselk(n, z); az = apm.besselk(n, z)
-    >>> mpm.show([\mathrm{d}z, mz, gz, fz, az],  aligned=True)
-    dec: -1.9416209202983682785E+1               + 1.1318334583389307477E+1j
-    mpm: -1.9416209202983682785e+1               + 1.1318334583389307477e+1j
-    gmp: -1.9416209202983682785E+01              + 1.1318334583389307477E+01j
-    fpm: -1.94162092029837E+01                   + 1.13183345833893E+01j
-    apm: -1.9416209202983682785e+1 (-2.792e-19%) + 1.1318334583389307477e+1 (3.592e-19%)j
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(40)
+    >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.bessel_kv(nu, x, scaled=False)))
+        fpm:  (-0.584337586266497, 0.513026027889269)
+        mpm:  (-0.58433758626649685448039516555907823033, 0.5130260278892691179956516897260840995879)
+    cmath53:  (-0.584337586266497, 0.513026027889268)
 
+
+
+An example with the same complex input as above, showing only the real part of the result:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.bessel_kv(nu, x, scaled=False))))
+        fpm:  -0.584337586266497
+        mpm:  -0.58433758626649685448039516555907823033005644315177073918163082214331697228472077858545503
+        dpm:  -0.58433758626649685448039516555907823033005644315177073918163082214331697228472077858545503
+        gpm:  -0.58433758626649685448039516555907823033005644315177073918163082214331697228472077858545503005
+        apm: [-0.584337586266496854480395165559078230330056443151770739181630822143316972284720778585455 +/- 1.05e-88]
+    cmath53:  -0.584337586266497
+    sflintc:  -0.5843375
+    dflintc:  -0.584337586266497
+    eflintc:  -0.5843375862664968544
+    qflintc:  -0.584337586266496854480395165559078
+    oflintc:  -0.58433758626649685448039516555907823033005644315177073918163082214331697
+    mflintc:  -0.58433758626649685448039516555907823033005644315177073918163082214331697228472077858545503
+    aflintc: [-0.584337586266496854480395165559078230330056443151770739181630822143316972284720778585455 +/- 2.35e-88]
+
+
+An example with the same complex input as above, showing only the imaginary part of the result:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.bessel_kv(nu, x, scaled=False))))
+        fpm:  0.513026027889269
+        mpm:  0.513026027889269117995651689726084099587946795864575982326898705437040313702817305657770566
+        dpm:  0.513026027889269117995651689726084099587946795864575982326898705437040313702817305657770566
+        gpm:  0.51302602788926911799565168972608409958794679586457598232689870543704031370281730565777056602
+        apm: [0.513026027889269117995651689726084099587946795864575982326898705437040313702817305657771 +/- 5.35e-88]
+    cmath53:  0.513026027889268
+    sflintc:  0.5130259
+    dflintc:  0.513026027889269
+    eflintc:  0.51302602788926911784
+    qflintc:  0.513026027889269117995651689726084
+    oflintc:  0.51302602788926911799565168972608409958794679586457598232689870543704031
+    mflintc:  0.513026027889269117995651689726084099587946795864575982326898705437040313702817305657770565
+    aflintc: [0.513026027889269117995651689726084099587946795864575982326898705437040313702817305657771 +/- 6.89e-88]
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C03_ModifiedBessel/D02a_BesselKvReal.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C03_ModifiedBessel/D02b_BesselKvCplx.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B10_Hypergeometric0F1/C03_ModifiedBessel/D02_BesselKv.cs>`__. 
 
 
 
@@ -271,15 +362,101 @@ First derivative of the modified Bessel function of the first kind `I'_{\nu}(x)`
     The function is calculated as  `I'_{\nu}(x) = \tfrac{1}{2} (I_{\nu-1}(x) + I_{\nu+1}(x))`. 
 
 
-    An example in Python
 
-    .. code-block:: pycon
+An example with real input:
 
-        >>> from xlcalcnet import math53
-        >>> math53.BesselIPrime(3, 0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.BesselIPrime(3, '0.51')
-        ereal('5.3518479027559984754E-1')
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = 5.1; x = 2.7; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noipm_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.bessel_iv_prime(nu, x, scaled=False)))
+        fpm:  0.0913520448477437
+        mpm:  0.0913520448477437243746041899878402209545699777192941010173134128156743435844400871825998583
+        dpm:  0.0913520448477437243746041899878402209545699777192941010173134128156743435844400871825998583
+        gpm:  0.091352044847743724374604189987840220954569977719294101017313412815674343584440087182599858304
+        apm: [0.09135204484774372437460418998784022095456997771929410101731341281567434358444008718259986 +/- 5.46e-90]
+     math53:  0.0913520448477438
+      sreal:  0.09135206
+      dreal:  0.0913520448477438
+      ereal:  0.091352044847743724384
+      qreal:  0.0913520448477437243746041899878401
+      oreal:  0.091352044847743724374604189987840220954569977719294101017313412815674331
+      mreal:  0.0913520448477437243746041899878402209545699777192941010173134128156743435844400871825998576
+     sflint:  0.09135206
+     dflint:  0.0913520448477437
+     eflint:  0.091352044847743724391
+     qflint:  0.0913520448477437243746041899878403
+     oflint:  0.091352044847743724374604189987840220954569977719294101017313412815674343
+     mflint:  0.0913520448477437243746041899878402209545699777192941010173134128156743435844400871825998585
+     aflint: [0.0913520448477437243746041899878402209545699777192941010173134128156743435844400871825999 +/- 5.77e-89]
+
+
+
+An example with complex input, using C\#-style formatting for complex numbers for the result 
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(40)
+    >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.bessel_iv_prime(nu, x, scaled=False)))
+        fpm:  (-0.290892499433961, 0.228501281902868)
+        mpm:  (-0.2908924994339605087319696863791633161403, 0.2285012819028680066552123576914964313566)
+    cmath53:  (-0.29089249943396, 0.228501281902866)
+
+
+
+An example with the same complex input as above, showing only the real part of the result:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.bessel_iv_prime(nu, x, scaled=False))))
+        fpm:  -0.290892499433961
+        mpm:  -0.290892499433960508731969686379163316140320774280772886206116572882977565571284427834820434
+        dpm:  -0.290892499433960508731969686379163316140320774280772886206116572882977565571284427834820434
+        gpm:  -0.290892499433960508731969686379163316140320774280772886206116572882977565571284427834820434
+        apm: [-0.2908924994339605087319696863791633161403207742807728862061165728829775655712844278348204 +/- 7.06e-89]
+    cmath53:  -0.29089249943396
+    sflintc:  -0.2908925
+    dflintc:  -0.290892499433961
+    eflintc:  -0.29089249943396050868
+    qflintc:  -0.290892499433960508731969686379163
+    oflintc:  -0.29089249943396050873196968637916331614032077428077288620611657288297756
+    mflintc:  -0.290892499433960508731969686379163316140320774280772886206116572882977565571284427834820433
+    aflintc: [-0.290892499433960508731969686379163316140320774280772886206116572882977565571284427834820 +/- 5.33e-88]
+
+
+An example with the same complex input as above, showing only the imaginary part of the result:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.bessel_iv_prime(nu, x, scaled=False))))
+        fpm:  0.228501281902868
+        mpm:  0.228501281902868006655212357691496431356683575146681423442682662536937297205523747778624651
+        dpm:  0.228501281902868006655212357691496431356683575146681423442682662536937297205523747778624651
+        gpm:  0.228501281902868006655212357691496431356683575146681423442682662536937297205523747778624651
+        apm: [0.2285012819028680066552123576914964313566835751466814234426826625369372972055237477786246 +/- 8.35e-89]
+    cmath53:  0.228501281902866
+    sflintc:  0.228501
+    dflintc:  0.228501281902868
+    eflintc:  0.22850128190286800641
+    qflintc:  0.228501281902868006655212357691496
+    oflintc:  0.2285012819028680066552123576914964313566835751466814234426826625369373
+    mflintc:  0.228501281902868006655212357691496431356683575146681423442682662536937297205523747778624648
+    aflintc: [0.228501281902868006655212357691496431356683575146681423442682662536937297205523747778625 +/- 4.47e-88]
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C03_ModifiedBessel/D03a_BesselIvRealPrime.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C03_ModifiedBessel/D03b_BesselIvCplxPrime.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B10_Hypergeometric0F1/C03_ModifiedBessel/D03_BesselIvPrime.cs>`__. 
+
+
+
+
+
 
 
 
@@ -311,36 +488,99 @@ First derivative of the modified Bessel function of the second kind `K'_{\nu}(x)
 
 
 
-    An example with real input:
 
-    .. code-block:: pycon
+An example with real input:
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; n= 10; x = 30
-        >>> \mathrm{d}x = dec.hankel1(n, x); mx = mpm.hankel1(n, x); gx = gmp.hankel1(n, x)
-        >>> fx = fpm.hankel1(n, x); ax = apm.hankel1(n, x)
-        >>> mpm.show([\mathrm{d}x, mx, gx, fx, ax],  aligned=True)
-        dec: -1.2987689399858876819E-1               + 7.5056702122397113289E-2j
-        mpm: -1.2987689399858876819e-1               + 7.5056702122397113289e-2j
-        gmp: -1.2987689399858876819E-01              + 7.5056702122397113289E-02j
-        fpm: -1.29876893998589E-01                   + 7.50567021223971E-02j
-        apm: -1.2987689399889094748e-1 (-9.932e-10%) + 7.5056702113900822249e-2 (2.838e-6%)j
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = 5.1; x = 2.7; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noipm_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.bessel_kv_prime(nu, x, scaled=False)))
+        fpm:  -4.34117508309623
+        mpm:  -4.34117508309623064501224420014982028888022099335052959538761810805925027920544206832712634
+        dpm:  -4.34117508309623064501224420014982028888022099335052959538761810805925027920544206832712634
+        gpm:  -4.3411750830962306450122442001498202888802209933505295953876181080592502792054420683271263399
+        apm: [-4.341175083096230645012244200149820288880220993350529595387618108059250279205442068327126 +/- 6.82e-88]
+     math53:  -4.34117508309623
+      sreal:  -4.341174
+      dreal:  -4.34117508309623
+      ereal:  -4.3411750830962306446
+      qreal:  -4.34117508309623064501224420014983
+      oreal:  -4.3411750830962306450122442001498202888802209933505295953876181080592508
+      mreal:  -4.34117508309623064501224420014982028888022099335052959538761810805925027920544206832712637
+     sflint:  -4.341174
+     dflint:  -4.34117508309623
+     eflint:  -4.3411750830962306442
+     qflint:  -4.34117508309623064501224420014982
+     oflint:  -4.3411750830962306450122442001498202888802209933505295953876181080592503
+     mflint:  -4.34117508309623064501224420014982028888022099335052959538761810805925027920544206832712633
+     aflint: [-4.34117508309623064501224420014982028888022099335052959538761810805925027920544206832713 +/- 4.72e-87]
 
 
-    An example with complex input:
 
-    .. code-block:: pycon
+An example with complex input, using C\#-style formatting for complex numbers for the result 
 
-        >>> from xlcalcnet import dec, mpm, gmp, fpm, apm
-        >>> mpm.dps = 20; n= 10; z = '3 + 4j'
-        >>> \mathrm{d}z = dec.hankel1(n, z); mz = mpm.hankel1(n, z); gz = gmp.hankel1(n, z)
-        >>> fz = fpm.hankel1(n, z); az = apm.hankel1(n, z)
-        >>> mpm.show([\mathrm{d}z, mz, gz, fz, az],  aligned=True)
-        dec: -6.9984001073685610955E+0              + 6.7915518863025118064E+0j
-        mpm: -6.9984001073685610955e+0              + 6.7915518863025118064e+0j
-        gmp: -6.9984001073685610955E+00             + 6.7915518863025118064E+00j
-        fpm: -6.99840010736856E+00                  + 6.79155188630251E+00j
-        apm: -6.9984001073685610955e+0 (-2.13e-18%) + 6.7915518863025118064e+0 (2.145e-18%)j
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(40)
+    >>> for ctx in [fpm, mpm, cmath53]: print(ctx.fmtname + ': ' + ctx.fmt(ctx.bessel_kv_prime(nu, x, scaled=False)))
+        fpm:  (0.530658136909571, -1.21973745621088)
+        mpm:  (0.5306581369095710510631868972600959541927, -1.219737456210877088437750435445865869908)
+    cmath53:  (0.530658136909571, -1.21973745621088)
+
+
+
+An example with the same complex input as above, showing only the real part of the result:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.real(ctx.bessel_kv_prime(nu, x, scaled=False))))
+        fpm:  0.530658136909571
+        mpm:  0.530658136909571051063186897260095954192723434602209318603004711572434085788080104165335963
+        dpm:  0.530658136909571051063186897260095954192723434602209318603004711572434085788080104165335963
+        gpm:  0.53065813690957105106318689726009595419272343460220931860300471157243408578808010416533596299
+        apm: [0.530658136909571051063186897260095954192723434602209318603004711572434085788080104165336 +/- 2.91e-88]
+    cmath53:  0.530658136909571
+    sflintc:  0.5306581
+    dflintc:  0.530658136909571
+    eflintc:  0.53065813690957105108
+    qflintc:  0.530658136909571051063186897260096
+    oflintc:  0.53065813690957105106318689726009595419272343460220931860300471157243409
+    mflintc:  0.530658136909571051063186897260095954192723434602209318603004711572434085788080104165335963
+    aflintc: [0.530658136909571051063186897260095954192723434602209318603004711572434085788080104165336 +/- 7.38e-88]
+
+
+An example with the same complex input as above, showing only the imaginary part of the result:
+
+.. code-block:: pycon
+
+    >>> from xlcalcnet import *
+    >>> nu = -5.1;  x = 2.7+2j; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_noboost_cplx: 
+    ...     print(ctx.fmtname + ': ' +  ctx.realctx.fmt(ctx.imag(ctx.bessel_kv_prime(nu, x, scaled=False))))
+        fpm:  -1.21973745621088
+        mpm:  -1.21973745621087708843775043544586586990785102635589936727215055032347651661588646421762393
+        dpm:  -1.21973745621087708843775043544586586990785102635589936727215055032347651661588646421762393
+        gpm:  -1.21973745621087708843775043544586586990785102635589936727215055032347651661588646421762393
+        apm: [-1.219737456210877088437750435445865869907851026355899367272150550323476516615886464217624 +/- 3.05e-88]
+    cmath53:  -1.21973745621088
+    sflintc:  -1.219737
+    dflintc:  -1.21973745621088
+    eflintc:  -1.2197374562108770882
+    qflintc:  -1.21973745621087708843775043544586
+    oflintc:  -1.2197374562108770884377504354458658699078510263558993672721505503234765
+    mflintc:  -1.21973745621087708843775043544586586990785102635589936727215055032347651661588646421762393
+    aflintc: [-1.219737456210877088437750435445865869907851026355899367272150550323476516615886464217624 +/- 7.35e-88]
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C03_ModifiedBessel/D04a_BesselKvRealPrime.py>`__, `Python (complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C03_ModifiedBessel/D04b_BesselKvCplxPrime.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B10_Hypergeometric0F1/C03_ModifiedBessel/D04_BesselKvPrime.cs>`__. 
+
+
+
 
 
 
@@ -349,7 +589,7 @@ First derivative of the modified Bessel function of the second kind `K'_{\nu}(x)
 |newpage|
 
 
-Marcum Q function, `Q_m(a,b)`  (up to octuple precision)
+Marcum Q function, `Q_m(a,b)`
 -------------------------------------------------------------------------------
 
 .. method:: ctx.marcum_q(m,a,b)
@@ -378,15 +618,31 @@ Marcum Q function, `Q_m(a,b)`  (up to octuple precision)
 
 
 
-    An example in Python
+An example:
 
-    .. code-block:: pycon
+.. code-block:: pycon
 
-        >>> from xlcalcnet import math53
-        >>> math53.MarcumQ(2, 3 ,0.5)
-        ereal('5.2359877559829887307E-1')
-        >>> math53.MarcumQ(2.4, 3.6, ' 0.51')
-        ereal('5.3518479027559984754E-1')
+    >>> from xlcalcnet import *
+    >>> m = 1; a = 1.5; b = 2.1; gui.setdps(90)
+    >>> for ctx in gui.ctxlist_boost_real: print(ctx.fmtname + ': ' + ctx.fmt(ctx.marcum_q(m, a, b)))
+        fpm:  0.381470914849348
+        mpm:  0.38147091484934796020501251202180058782938714369116234243288064991903034715440061986470335
+        dpm:  0.38147091484934796020501251202180058782938714369116234243288064991903034715440061986470335
+        gpm:  0.38147091484934796020501251202180058782938714369116234243288064991903034715440061986470334999
+        apm: [0.381470914849347960205012512021800587829387143691162342432880649919030347154400619864703350 +/- 7.10e-92]
+     math53:  0.381470914849348
+      sreal:  0.381471
+      dreal:  0.381470914849348
+      ereal:  0.38147091484934796018
+      qreal:  0.381470914849347960205012512021801
+      oreal:  0.38147091484934796020501251202180058782938714369116234243288064991903034
+      mreal:  0.381470914849347960205012512021800587829387143691162342432880649919030347154400619864703353
+
+
+
+The above and additional examples can be found online in the ``DataXlCalcNet`` repository or in the corresponding local ``DataXlCalcNet`` folder for `Python (real input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A01_ExamplesPython/B10_Hypergeometric0F1/C03_ModifiedBessel/D05a_MarcumQReal.py>`__, and `C\# (real or complex input) <https://github.com/duhadler/DataXlCalcNet/blob/master/DataXlCalcNet/A02_ExamplesCSharp/B10_Hypergeometric0F1/C03_ModifiedBessel/D05_MarcumQ.cs>`__. 
+
+
 
 
 

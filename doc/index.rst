@@ -27,7 +27,13 @@
     XlCalcNet is free software released under the Mozilla Public License `2.0` (see  :ref:`License <rst_MPL_2.0_License>`). The git repository is https://github.com/duhadler/XlCalcNet.
 
 
-    XlCalcNet can be installed as a python package from `PyPI <https://pypi.org/project/xlcalcnet/>`__. More detailed information regarding the installation and general usage of XlCalcNet can be found :ref:`here <rst_setting_up_XlCalcNet>`.
+    XlCalcNet can be installed under Windows (7.1 or later, 64 bit) as a python package from `PyPI <https://pypi.org/project/xlcalcnet/>`__: 
+
+    .. code-block:: none
+
+        pip install xlcalcnet
+
+    The XlCalcNet package is compatible with Python versions 3.8 - 3.15. More detailed information regarding the installation and general usage of XlCalcNet can be found :ref:`here <rst_setting_up_XlCalcNet>`.
 
 
     Since one of the main goals of XlCalcNet is to enable the use of functions written in Python or C# within spreadsheet formulas, it is assumed that Microsoft Excel (2010 or later, 64 bit) and/or LibreOffice (version 7.0 or later, 64 bit) is installed on the users system, running under Windows (7.1 or later, 64 bit).
