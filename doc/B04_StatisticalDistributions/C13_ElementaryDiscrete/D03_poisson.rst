@@ -86,7 +86,7 @@ See also   Wikipedia :cite:p:`WikipediaDis32`, MathWorld :cite:p:`WolframDis32`,
 
     .. math:: \text{qtf}(q) = \mathrm{gammaq\_inva}(\mu, p) - 1.
 
-    Here `\mathrm{gammaq\_inva}(\cdot)` denotes the inverse (on parameter `a`) of the real upper normalised incomplete gamma function (:ref:`RealGammaQInva <rst_mpm_real_gamma_q_inva>`).
+    Here `\mathrm{gammaq\_inva}(\cdot)` denotes the inverse (on parameter `a`) of the real upper normalised incomplete gamma function.
 
 
     The following example shows both forms of the syntax:

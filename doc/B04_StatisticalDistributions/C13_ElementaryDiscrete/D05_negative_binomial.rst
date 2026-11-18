@@ -87,7 +87,7 @@ See also   Wikipedia :cite:p:`WikipediaDis34`, MathWorld :cite:p:`WolframDis34`,
 
     .. math:: \text{qtf}(q) = \mathrm{ibeta\_invb}(r, p, q) - 1.
 
-    Here `\mathrm{ibeta\_invb}(\cdot)` denotes the inverse (on parameter b) of the real normalised incomplete beta function (:ref:`RealIBetaInvb <rst_mpm_real_ibeta_invb>`).
+    Here `\mathrm{ibeta\_invb}(\cdot)` denotes the inverse (on parameter b) of the real normalised incomplete beta function.
 
 
     The following example shows both forms of the syntax:
