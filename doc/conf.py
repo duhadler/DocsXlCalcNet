@@ -84,9 +84,9 @@ copyright = '2026, Dietrich Hadler. '
 # other places throughout the built documents.
 #
 # The short X.Y version.
-version = '1.4'
+version = '1.5'
 # The full version, including alpha/beta/rc tags.
-release = '1.4.0'
+release = '1.5.0'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
